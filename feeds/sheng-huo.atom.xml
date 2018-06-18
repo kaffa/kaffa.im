@@ -1,2 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 生活</title><link href="/" rel="alternate"></link><link href="/feeds/sheng-huo.atom.xml" rel="self"></link><id>/</id><updated>2018-06-06T10:20:00+08:00</updated><entry><title>新博客</title><link href="/my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:None,2018-06-06:/my-new-blog.html</id><summary type="html">&lt;p&gt;我的新博客&lt;/p&gt;</summary><content type="html">&lt;p&gt;2016-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。&lt;/p&gt;</content><category term="about"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 生活</title><link href="http://kaffa.github.io/" rel="alternate"></link><link href="http://kaffa.github.io/feeds/sheng-huo.atom.xml" rel="self"></link><id>http://kaffa.github.io/</id><updated>2018-06-06T10:20:00+08:00</updated><entry><title>新博客</title><link href="http://kaffa.github.io/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;关于本博客&lt;/h2&gt;
+&lt;p&gt;2016-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;关于本博客的技术&lt;/h2&gt;
+&lt;p&gt;本博客采用基于 &lt;a class="reference external" href="https://www.python.org/"&gt;Python&lt;/a&gt; 语言的 &lt;a class="reference external" href="https://getpelican.com/"&gt;Pelican&lt;/a&gt; 库的 &lt;a class="reference external" href="https://github.com/MrSenko/pelican-octopress-theme"&gt;octopress 主题&lt;/a&gt; 来生成。&lt;/p&gt;
+&lt;p&gt;一般来说，静态博客就是一堆按目录存放的 html/css/js 及图片等静态文件组成的页面。在互联网刚兴起的那些年，第一批互联网站长利用 Microsoft Frontpage 和 Adobe Dreamewaver 等开发工具制作网站，随着 Web 的发展，几乎每一种语言都有人编写了专门的库用来维护这样的 &lt;a class="reference external" href="https://staticsitegenerators.net/"&gt;静态站点&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;我近些年主要用 Python 完成一些代码，因此选用了 Python 语言的 Pelican 库，类似的托管在 Github Pages 的默认库是基于 &lt;a class="reference external" href="https://www.ruby-lang.org/"&gt;Ruby&lt;/a&gt; 语言的 &lt;a class="reference external" href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;，而 Pelican 更有优势的地方是除了支持 &lt;a class="reference external" href="https://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;，还支持 &lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 和 &lt;a class="reference external" href="http://www.methods.co.nz/asciidoc/"&gt;AsciiDoc&lt;/a&gt; 格式&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;关于本博客的技术的资源&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://blog.getpelican.com/"&gt;Pelican blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/getpelican"&gt;Pelican dev team&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/getpelican/pelican-plugins"&gt;Pelican plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/getpelican/pelican-themes"&gt;Pelican themes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="todo"&gt;
+&lt;h2&gt;和很多静态博客一样也留下 TODO 吧&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;采用渐进增强添加国家地理的 &lt;a class="reference external" href="https://www.nationalgeographic.com/photography/photo-of-the-day/?source=sitenavpod"&gt;每日一图&lt;/a&gt; 作为随机背景&lt;/li&gt;
+&lt;li&gt;将 Jekyll 的 &lt;a class="reference external" href="https://taylantatli.github.io/Moon/"&gt;Moon 主题&lt;/a&gt; 迁移到 Pelican&lt;/li&gt;
+&lt;li&gt;添加一些需要 &lt;a class="reference external" href="https://github.com/getpelican/pelican-plugins"&gt;Pelican plugins&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content><category term="life"></category></entry></feed>
