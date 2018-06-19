@@ -2,14 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 技术</title><link href="http://kaffa.github.io/" rel="alternate"></link><link href="http://kaffa.github.io/feeds/ji-zhu.atom.xml" rel="self"></link><id>http://kaffa.github.io/</id><updated>2018-06-19T17:17:00+08:00</updated><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="http://kaffa.github.io/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2018-06-19T17:17:00+08:00</published><updated>2018-06-19T17:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-19:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;添加独立域名的步骤&lt;/h2&gt;
-&lt;p&gt;1. 注册一个域名
-选择你喜欢的域名商注册一个域名。
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;注册一个域名&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;选择你喜欢的域名商注册一个域名。
 例如，我注册的是 kaffa.im&lt;/p&gt;
-&lt;p&gt;2. 域名解析
-在域名配置中添加一条 CNAME 记录。
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;域名解析&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在域名配置中添加一条 CNAME 记录。
 例如，将 kaffa.im 指向 kaffa.github.io，此时，访问 kaffa.im 会得到 Github 反馈的 404 错误页面&lt;/p&gt;
-&lt;p&gt;3. 添加 CNAME 文件
-在 Github 仓库 master 的根目录下添加一个名称为 &lt;strong&gt;CNAME&lt;/strong&gt; 的文件，文件内容为你注册的域名。
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;添加 CNAME 文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在 Github 仓库 master 的根目录下添加一个名称为 &lt;strong&gt;CNAME&lt;/strong&gt; 的文件，文件内容为你注册的域名。
 例如，在 kaffa.github.io 仓库 master 的根目录新建一个 &lt;a class="reference external" href="https://github.com/kaffa/kaffa.github.io/blob/master/CNAME"&gt;CNAME&lt;/a&gt; 文件，文件内容为 kaffa.im，刷新刚才的 404 页面即打开了原先的 kaffa.github.io 站点&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="technology"></category></entry><entry><title>解决编程领域难题的有效方法</title><link href="http://kaffa.github.io/the-effective-way-to-find-answers-to-programming-questions.html" rel="alternate"></link><published>2018-06-18T02:22:00+08:00</published><updated>2018-06-18T02:22:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-18:/the-effective-way-to-find-answers-to-programming-questions.html</id><summary type="html">&lt;p&gt;解决编程领域难题的有效方法是推演和搜索&lt;/p&gt;</summary><content type="html">&lt;h2&gt;为什么会有编程领域的难题？&lt;/h2&gt;
