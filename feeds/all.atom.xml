@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="http://kaffa.github.io/" rel="alternate"></link><link href="http://kaffa.github.io/feeds/all.atom.xml" rel="self"></link><id>http://kaffa.github.io/</id><updated>2018-06-19T17:17:00+08:00</updated><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="http://kaffa.github.io/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2018-06-19T17:17:00+08:00</published><updated>2018-06-19T17:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-19:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="http://kaffa.github.io/" rel="alternate"></link><link href="http://kaffa.github.io/feeds/all.atom.xml" rel="self"></link><id>http://kaffa.github.io/</id><updated>2018-06-20T02:52:00+08:00</updated><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="http://kaffa.github.io/vscode-restructuredtext.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-20:/vscode-restructuredtext.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;问题出现的场景&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;使用 VSCode 编辑 *.rst 文件时，会提示安装 doc8 ，于是使用 pip 安装 doc8，执行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+pip install doc8
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;重新打开文件，全文会出现两条警告 D002 和 D004，如下:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+'D002 Trailing whitespace'
+'D004 Found literal carriage return'
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;D002 信息按字面意思是行尾有空格，稍作思考，感觉可能和 Windows 的换行符 CRLF 有关，
+于是点击 VSCode 状态栏，修改 &lt;tt class="docutils literal"&gt;CRLF&lt;/tt&gt; 为 &lt;tt class="docutils literal"&gt;LF&lt;/tt&gt;，之后错误提示消失。请参考：&lt;a class="reference external" href="https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/84"&gt;issues-84&lt;/a&gt;&lt;/p&gt;
+&lt;ol class="arabic" start="3"&gt;
+&lt;li&gt;&lt;p class="first"&gt;又产生新的警告 D001，如下:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+'D001 Line Too Long'
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在 &lt;a class="reference external" href="https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/83"&gt;issues-83&lt;/a&gt; 中给的解决方法是，在 VSCode 的用户配置中提供一个更大的行宽度值。
+于是 &lt;tt class="docutils literal"&gt;Ctrl + P&lt;/tt&gt;，选择 &lt;tt class="docutils literal"&gt;Preferences: Open Settings&lt;/tt&gt;，在 &lt;tt class="docutils literal"&gt;User Settings&lt;/tt&gt; 标签页，
+也就是 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C:\Users\username\AppData\Roaming\Code\User\settings.json&lt;/span&gt;&lt;/tt&gt; 文件加入如下配置:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;quot;restructuredtext.linter.extraArgs&amp;quot;: [
+    &amp;quot;--max-line-length 80&amp;quot;
+]
+&lt;/pre&gt;
+&lt;p&gt;我的理解是，这个最大行宽在 *.rst 文件中不建议设置太大，大约每行最多 80 个字符就差不多了，
+这个和可维护性代码的最佳实践是一致的。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="technology"></category></entry><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="http://kaffa.github.io/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2018-06-19T17:17:00+08:00</published><updated>2018-06-19T17:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-19:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;添加独立域名的步骤&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
