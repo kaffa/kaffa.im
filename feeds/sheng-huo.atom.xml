@@ -5,13 +5,13 @@
 &lt;p&gt;2016-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id3"&gt;
-&lt;h2&gt;关于本博客的技术&lt;/h2&gt;
+&lt;h2&gt;本博客采用的技术&lt;/h2&gt;
 &lt;p&gt;本博客采用基于 &lt;a class="reference external" href="https://www.python.org/"&gt;Python&lt;/a&gt; 语言的 &lt;a class="reference external" href="https://getpelican.com/"&gt;Pelican&lt;/a&gt; 库的 &lt;a class="reference external" href="https://github.com/MrSenko/pelican-octopress-theme"&gt;octopress 主题&lt;/a&gt; 来生成。&lt;/p&gt;
 &lt;p&gt;一般来说，静态博客就是一堆按目录存放的 html/css/js 及图片等静态文件组成的页面。在互联网刚兴起的那些年，第一批互联网站长利用 Microsoft FrontPage 和 Adobe Dreamweaver 等开发工具制作网站，随着 Web 的发展，几乎每一种语言都有人编写了专门的库用来维护这样的 &lt;a class="reference external" href="https://staticsitegenerators.net/"&gt;静态站点&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;我近些年主要用 Python 完成一些代码，因此选用了 Python 语言的 Pelican 库，类似的托管在 Github Pages 的默认库是基于 &lt;a class="reference external" href="https://www.ruby-lang.org/"&gt;Ruby&lt;/a&gt; 语言的 &lt;a class="reference external" href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;，而 Pelican 更有优势的地方是除了支持 &lt;a class="reference external" href="https://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;，还支持 &lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 和 &lt;a class="reference external" href="http://www.methods.co.nz/asciidoc/"&gt;AsciiDoc&lt;/a&gt; 格式&lt;/p&gt;
+&lt;p&gt;我近些年主要用 Python 完成一些代码，因此选用了 Python 语言的 Pelican 库，类似的托管在 Github Pages 的默认库是基于 &lt;a class="reference external" href="https://www.ruby-lang.org/"&gt;Ruby&lt;/a&gt; 语言的 &lt;a class="reference external" href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;，而 Pelican 更有优势的地方是除了支持 &lt;a class="reference external" href="https://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;，还支持 &lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 和 &lt;a class="reference external" href="http://www.methods.co.nz/asciidoc/"&gt;AsciiDoc&lt;/a&gt; 格式。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
-&lt;h2&gt;关于本博客的技术的资源&lt;/h2&gt;
+&lt;h2&gt;本博客采用的技术的相关链接&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://blog.getpelican.com/"&gt;Pelican blog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/getpelican"&gt;Pelican dev team&lt;/a&gt;&lt;/li&gt;
