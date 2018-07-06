@@ -1,5 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="http://kaffa.github.io/" rel="alternate"></link><link href="http://kaffa.github.io/feeds/all.atom.xml" rel="self"></link><id>http://kaffa.github.io/</id><updated>2018-06-20T02:52:00+08:00</updated><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="http://kaffa.github.io/vscode-restructuredtext.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-20:/vscode-restructuredtext.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="http://kaffa.github.io/" rel="alternate"></link><link href="http://kaffa.github.io/feeds/all.atom.xml" rel="self"></link><id>http://kaffa.github.io/</id><updated>2018-07-06T13:00:00+08:00</updated><entry><title>升级 CentOS Linux Kernel</title><link href="http://kaffa.github.io/update-centos-linux-kernel.html" rel="alternate"></link><published>2018-07-06T13:00:00+08:00</published><updated>2018-07-06T13:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-06:/update-centos-linux-kernel.html</id><summary type="html">&lt;p class="first last"&gt;本文描述升级 CentOS Linux Kernel 的方法&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;升级 CentOS Linux Kernel 的方法&lt;/h2&gt;
+&lt;p&gt;升级命令:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+yum clean all
+yum update
+&lt;/pre&gt;
+&lt;p&gt;查看 Kernel 版本命令:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+cat /etc/redhat-release
+&lt;/pre&gt;
+&lt;p&gt;升级前:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+CentOS Linux release 7.4.1708 (Core)
+&lt;/pre&gt;
+&lt;p&gt;升级后:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+CentOS Linux release 7.5.1804 (Core)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;升级 CentOS Linux Kernel 后要做的事&lt;/h2&gt;
+&lt;p&gt;升级完成后，我的开机菜单变成了:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+CentOS Linux (3.10.0-862.6.3.e17.x86_64) 7 (Core)
+CentOS Linux (3.10.0-693.21.1.e17.x86_64) 7 (Core)
+CentOS Linux (3.10.0-693.e17.x86_64) 7 (Core)
+CentOS Linux (0-rescue-4a8a974112aw410ea531fd24c60220bf) 7 (Core)
+&lt;/pre&gt;
+&lt;p&gt;可以看到多出了一个选项外，依然包括旧版本 Kernel，少数几个也不妨碍什么，只是多占用一点硬盘空间。&lt;/p&gt;
+&lt;p&gt;如果想清理，可以先查看待删除的内核，命令如下:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+rpm -qa | grep kernel
+&lt;/pre&gt;
+&lt;p&gt;再删除旧版本的内核包:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+yum autoremove kernel-.el7.x86_64
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;闲话几句&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Linux &lt;a class="reference external" href="https://www.kernel.org/"&gt;Kernel&lt;/a&gt; 即操作系统核心软件。有数据表示50%+的互联网服务器是 Linux，加上移动时代的 Android 占据半壁江山。可以这么说，&lt;em&gt;一半以上大部分计算设备内都运行了一份 Linux 核心&lt;/em&gt;。&lt;/li&gt;
+&lt;li&gt;论贡献，豪不夸张，这个由神级人物 Linus Torvalds 领导开发了27年的软件，是现代文明的重度的坚实依赖，它是实用者的胜利，也是 Linus Torvalds 价值观的成功检验；&lt;/li&gt;
+&lt;li&gt;Linux 的历史和文化值得慢慢了解、品位和思考，但现在大多情况下，云端机器 Linux 内核都是 3.x 版本，是不用升级的，除非你知道为什么要升级，或者你认为升级内核不重启机器的能力确实很酷；&lt;/li&gt;
+&lt;li&gt;在国内，除非天时地利人和，研究 Linux Kernel 并没什么太多商业价值，只是领域情怀或“我乐意”；&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.elrepo.org"&gt;https://www.elrepo.org&lt;/a&gt; 和 &lt;a class="reference external" href="https://kernelnewbies.org"&gt;https://kernelnewbies.org&lt;/a&gt; 可能对你有用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content><category term="technology"></category><category term="CentOS"></category><category term="Linux Kernel"></category></entry><entry><title>在 Linux 上安装 VSCode 遇到的问题和解决思路</title><link href="http://kaffa.github.io/install-vscode-on-linux-error.html" rel="alternate"></link><published>2018-07-05T12:30:00+08:00</published><updated>2018-07-05T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-05:/install-vscode-on-linux-error.html</id><summary type="html">&lt;p class="first last"&gt;本文描述在 Linux 上安装 VSCode 遇到的问题和解决思路&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;为什么在 Linux 上安装 VSCode？&lt;/h2&gt;
+&lt;p&gt;近期计划使用搭建 telegram bot，了解原理后，发现是基本的 http 开发。&lt;/p&gt;
+&lt;p&gt;计划使用轻量级 Web 框架，就项目需求来说，选择 Python 微框架 或 Go 语言比较适宜，加上前不久了解到类似 &lt;a class="reference external" href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; 的框架 &lt;a class="reference external" href="https://vibora.io/"&gt;Vibora&lt;/a&gt;，其官方介绍中的性能基准测试结果惊人难以置信，于是选择尝试，饶有兴致运行官方 hello world:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from vibora import Vibora, Response
+
+app = Vibora()
+
+&amp;#64;app.route('/')
+async def home():
+    return Response(b'Hello world')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+&lt;/pre&gt;
+&lt;p&gt;却发现无法在 Windows 下运行，提示:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Traceback (most recent call last):
+File &amp;quot;test_vibora.py&amp;quot;, line 1, in &amp;lt;module&amp;gt;
+    from vibora import Vibora, JsonResponse
+File &amp;quot;C:\Python36\lib\site-packages\vibora\__init__.py&amp;quot;, line 7, in &amp;lt;module&amp;gt;
+    from .server import *
+File &amp;quot;C:\Python36\lib\site-packages\vibora\server.py&amp;quot;, line 5, in &amp;lt;module&amp;gt;
+    from signal import pause
+ImportError: cannot import name 'pause'
+&lt;/pre&gt;
+&lt;p&gt;查看源代码，是因为 vibora 使用了 Linux signal 的原因，看来，虽然其文档中称支持 Windows 是其目标，但目前还不支持。&lt;/p&gt;
+&lt;p&gt;由于服务器是 CentOS，于是选择在本地虚机装上桌面，直接采用 VSCode 或 PyCharm 进行开发调试。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;遇到的问题&lt;/h2&gt;
+&lt;p&gt;按照微软官方 &lt;cite&gt;VSCode 的 Linux 安装帮助&lt;/cite&gt;，本应该四个命令就可以搞定:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e &amp;quot;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;quot; &amp;gt; /etc/yum.repos.d/vscode.repo'
+yum check-update
+sudo yum install code
+&lt;/pre&gt;
+&lt;p&gt;可是在执行最后一个命令时，出现了一系列的 404 错误，安装终止了，提示:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Error downloading packages:  libXScrnSaver-1.2.2-6.1.el7.x86_64
+&lt;/pre&gt;
+&lt;p&gt;看样子是因为VSCode所依赖的某个软件包，提示资源不存在，yum 命令没能下载成功。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;解决思路&lt;/h2&gt;
+&lt;p&gt;笼统的说，之前写过一篇 &lt;a class="reference external" href="http://kaffa.im/the-effective-way-to-find-answers-to-programming-questions.html"&gt;解决编程领域难题的有效方法&lt;/a&gt;，提到 StackOverflow，但此问题并不能很直接搜索到解决思路，所以只能自己思考。&lt;/p&gt;
+&lt;p&gt;按照 yum 的提示去对应 &lt;a class="reference external" href="http://mirror.centos.org/centos-7/"&gt;CentOS 7&lt;/a&gt; 目录才发现，原来是 &lt;a class="reference external" href="http://mirror.centos.org/centos-7/7.5.1804/"&gt;CentOS 7.5.1804&lt;/a&gt; 到 Main Line 版本了。&lt;/p&gt;
+&lt;p&gt;于是这个包依赖问题可以从 &lt;a class="reference external" href="http://mirror.centos.org/centos-7/7.4.1708/readme"&gt;CentOS 7.4.1708 readme&lt;/a&gt; 得到解答，即 &lt;a class="reference external" href="https://kaffa.im/update-centos-linux-kernel/"&gt;升级 CentOS 7.4 到 CentOS 7.5&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;升级完成后，再次运行 &lt;tt class="docutils literal"&gt;sudo yum install code&lt;/tt&gt;，即成功。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="technology"></category><category term="CentOS"></category><category term="VSCode"></category></entry><entry><title>数据与信息的描述与差别</title><link href="http://kaffa.github.io/data-vs-information.html" rel="alternate"></link><published>2018-06-28T10:55:00+08:00</published><updated>2018-06-28T10:55:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-28:/data-vs-information.html</id><summary type="html">&lt;p class="first last"&gt;本文描述数据和信息两个概念的差别&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;编写文档时，大家常把 &lt;strong&gt;数据&lt;/strong&gt; 和 &lt;strong&gt;信息&lt;/strong&gt; 两个词混用，如管理信息系统（Management Information System）、数据导入（Data Import）等，可见，日常大家并不太在意两者的区别。&lt;/p&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;描述&lt;/h2&gt;
+&lt;p&gt;数据是原始的、未经组织的、待处理的客观事实，数据在组织前，可能是简单的、看起来随机的和无用的，当把数据处理、组织或在上下文中呈现而变得有用后，数据就成为信息。&lt;/p&gt;
+&lt;p&gt;举个例子，每隔 1 小时记录某地点的气温，可以得到 24 个数据，而连续记录很多天后计算这个地点的平均气温，或将这些数据画在一张分布图上用来做什么时，就可称之为信息。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;起源&lt;/h2&gt;
+&lt;p&gt;“数据”这个词来源于拉丁语 datum 的单数形式, 最初表示“已知数”，最早被用于 17 世纪，后来 &amp;quot;数据&amp;quot; 变迁为 datum 的复数形式。&lt;/p&gt;
+&lt;p&gt;“信息” 是一个更老的词汇，最早可以追溯到 14 世纪的法国和英国中部，通常指 “通知行为” 本身, 经常用在教育和知识领域。&lt;/p&gt;
+&lt;p&gt;在语言的发展中，可能有一些约定的说法，比如“大数据时代”、“信息大爆炸”，从这些词也可以大概分出，由原始的数据可以组织出更可观的信息。&lt;/p&gt;
+&lt;p&gt;数据和信息是讨论很多问题时的基础，因此有此篇。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="technology"></category></entry><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="http://kaffa.github.io/vscode-restructuredtext.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-20:/vscode-restructuredtext.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;问题出现的场景&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
