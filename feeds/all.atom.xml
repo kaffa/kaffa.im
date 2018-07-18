@@ -12,9 +12,9 @@
 &lt;dt&gt;安装 Python 2.7&lt;/dt&gt;
 &lt;dd&gt;因为 node-gyp 依赖 Python 2.7 和 windows-build-tools，node 在安装中多采用源代码编译安装，这种的好处是跨平台。
 安装好 Python 2.7 以后，需要设置环境变量::
-PYTHON=c:Python27python.exe&lt;/dd&gt;
+PYTHON=c:\Python27\python.exe&lt;/dd&gt;
 &lt;dt&gt;文本二维码&lt;/dt&gt;
-&lt;dd&gt;QR 在移动世界盛行，但 Windows 依然缺少官方提供的文本二维码方案，控制台的文本二维码支持的不好，启动二维码以后，也许格式错乱无法扫描，此时可以复制张贴到记事本中，采用合适的等宽字体进行*反选*扫描登录。&lt;/dd&gt;
+&lt;dd&gt;QR 在移动世界盛行，但 Windows 依然缺少官方提供的文本二维码方案，控制台的文本二维码支持的不好，启动二维码以后，也许格式错乱无法扫描，此时可以复制张贴到记事本中，采用合适的等宽字体进行 &lt;strong&gt;反选&lt;/strong&gt; 扫描登录。&lt;/dd&gt;
 &lt;dt&gt;ts-node&lt;/dt&gt;
 &lt;dd&gt;如果采用 TypeScript 版本的 Wechaty，那么 ts-node 的路径在 wechatynode_modules.bints-node 下。&lt;/dd&gt;
 &lt;dt&gt;docker Wechaty&lt;/dt&gt;
