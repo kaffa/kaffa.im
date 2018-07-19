@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 技术</title><link href="http://kaffa.github.io/" rel="alternate"></link><link href="http://kaffa.github.io/feeds/ji-zhu.atom.xml" rel="self"></link><id>http://kaffa.github.io/</id><updated>2018-07-17T12:00:00+08:00</updated><entry><title>Windows 下安装 Wechaty 的注意点(keng)</title><link href="http://kaffa.github.io/install-wechaty-on-windows.html" rel="alternate"></link><published>2018-07-17T12:00:00+08:00</published><updated>2018-07-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-17:/install-wechaty-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的注意点(keng)&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 技术</title><link href="http://kaffa.github.io/" rel="alternate"></link><link href="http://kaffa.github.io/feeds/ji-zhu.atom.xml" rel="self"></link><id>http://kaffa.github.io/</id><updated>2018-07-18T12:30:00+08:00</updated><entry><title>用 VSCode 预览 reStructureText 文件</title><link href="http://kaffa.github.io/preview-restructuretext-file-in-vscode.html" rel="alternate"></link><published>2018-07-18T12:30:00+08:00</published><updated>2018-07-18T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-18:/preview-restructuretext-file-in-vscode.html</id><summary type="html">&lt;p class="first last"&gt;本文描述用 VSCode 预览 reStructureText 文件的配置办法&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;通识&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;得益于拥抱开源，微软 VSCode 成为了最热门的 IDE，广泛用于各种场景的编程，比如编辑 reStructureText 文件。&lt;/li&gt;
+&lt;li&gt;reStructureText 是 Python 官方文档的格式，属于 Sphinx 项目的一部分，Sphinx 是 Python 文档生成器。&lt;/li&gt;
+&lt;li&gt;从 reStructureText 的文件格式 rst，方便转化为各种文件格式。&lt;/li&gt;
+&lt;li&gt;MS Code 自带 reStructureText 插件，类似于 Markdown，安装后可以用于预览 rst 格式。&lt;/li&gt;
+&lt;li&gt;可安装后并不能直接预览，还需要配置一番，于是就有了下面的部分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;配置&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;依据 reStructureText 文档，先 pip 安装 doc8 和 sphinx-build&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;再上 MSCode 配置:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+// Points to the doc8 exectuable.
+&amp;quot;restructuredtext.linter.executablePath&amp;quot;: &amp;quot;doc8&amp;quot;,
+// Extra arguments to doc8.
+&amp;quot;restructuredtext.linter.extraArgs&amp;quot;: [&amp;quot;--max-line-length 1024&amp;quot;],
+// The full path of sphinx-build utility. This is an absolute path, and you can use ${workspaceRoot} to represent workspace root folder.
+&amp;quot;restructuredtext.sphinxBuildPath&amp;quot;: &amp;quot;sphinx-build&amp;quot;,
+// Flag to control whether text changed event triggers preview update.
+&amp;quot;restructuredtext.updateOnTextChanged&amp;quot;: &amp;quot;true&amp;quot;,
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;在项目根目录下运行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+sphinx-quickstart
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;一路回车下去，即生成了如下文件:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+_build
+_static
+_templates
+conf.py
+index.rst
+make.bat
+Makefile
+&lt;/pre&gt;
+&lt;p&gt;此时可以通过 Ctrl+Shift+R 来预览了&lt;/p&gt;
+&lt;ol class="arabic simple" start="4"&gt;
+&lt;li&gt;最后提供一份快速参考 &lt;a class="reference external" href="http://www.pythondoc.com/sphinx/rest.html"&gt;sphinx-rest&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content><category term="technology"></category><category term="VSCode"></category><category term="reStructureText"></category></entry><entry><title>Windows 下安装 Wechaty 的注意点(keng)</title><link href="http://kaffa.github.io/install-wechaty-on-windows.html" rel="alternate"></link><published>2018-07-17T12:00:00+08:00</published><updated>2018-07-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-17:/install-wechaty-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的注意点(keng)&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;摘要&lt;/h2&gt;
 &lt;p&gt;本文对于在 Windows 下安装 &lt;a class="reference external" href="https://github.com/Chatie/wechaty"&gt;Wechaty&lt;/a&gt; 的坑作个临时记录，但其中涉及的处理方式随着项目的升级或依赖软件的升级可能会变得不再需要。&lt;/p&gt;
