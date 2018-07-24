@@ -360,8 +360,6 @@ WECHATY_PUPPET=padchat
 WECHATY_PUPPET_PADCHAT_TOKEN=*YOUR-TOKEN*
 &lt;/pre&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol class="arabic" start="3"&gt;
 &lt;li&gt;&lt;p class="first"&gt;至此，应该可以顺利运行起步项目:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 npm install &amp;amp; npm start
