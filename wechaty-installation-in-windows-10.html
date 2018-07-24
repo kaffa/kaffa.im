@@ -68,16 +68,17 @@
 <dd>Wechaty 起步</dd>
 <dt><a class="reference external" href="https://chatie.io/wechaty/">Wechaty Documents</a></dt>
 <dd>Wechaty 文档</dd>
-<dt>Puppet</dt>
+<dt><a class="reference external" href="https://github.com/Chatie/wechaty/wiki/Puppet">Puppet</a></dt>
 <dd>一个包含了机器人对话逻辑的抽象类，是 Wechaty 技术架构的一部分。继承实现 Puppet 抽象类（协议）的组件，即可实现更广泛的与联系人、消息/一对一对话、群组/聊天室/多对多对话等相关逻辑。Puppet 的中文是木偶，用在这里相当传神。</dd>
 <dt><a class="reference external" href="https://www.npmjs.com/package/node-gyp">node-gyp</a></dt>
 <dd>基于 gyp 编写的用来编译 node 本地扩展模块的 node 包，而 gpy 是 Chromium 项目上用于实现跨平台编译的工具。
 安装文档：<a class="reference external" href="https://github.com/nodejs/node-gyp#installation">https://github.com/nodejs/node-gyp#installation</a></dd>
 <dt><a class="reference external" href="https://www.npmjs.com/package/windows-build-tools">windows-build-tools</a></dt>
-<dd>node 包装的 Windows 平台的编译工具</dd>
+<dd>node 包装的 Windows 平台的编译工具
+安装文档：<a class="reference external" href="https://github.com/felixrieseberg/windows-build-tools">https://github.com/felixrieseberg/windows-build-tools</a></dd>
 <dt><a class="reference external" href="https://www.npmjs.com/package/node-expat">node-expat</a></dt>
 <dd>基于 <a class="reference external" href="https://libexpat.github.io/">libexpat</a> 的用来处理 XML 的 node 包，libexpat 是一个号称最快的 XML 解析库，纯 C 语言编写。Wechaty 使用它解析基于 XML 的通讯。
-安装文档：<a class="reference external" href="https://github.com/felixrieseberg/windows-build-tools">https://github.com/felixrieseberg/windows-build-tools</a></dd>
+安装文档：<a class="reference external" href="https://www.npmjs.com/package/node-expat">https://www.npmjs.com/package/node-expat</a></dd>
 <dt><a class="reference external" href="https://www.python.org/downloads/">Python 2.7</a></dt>
 <dd>一门愈久弥新的语言，node-gyp 的依赖 Python 2.7 实现跨平台编译</dd>
 <dt><a class="reference external" href="https://github.com/GoogleChrome/puppeteer">puppeteer</a></dt>
@@ -408,7 +409,7 @@ D:\code\wechaty-getting-started\node_modules\_puppeteer&#64;1.6.0&#64;puppeteer\
 </dd>
 </dl>
 </li>
-<li><p class="first">如果使用的是 PadChat 组件的 Wechaty，且 token 则还需要设置以下几个环境变量:</p>
+<li><p class="first">如果使用的是 PadChat 组件的 Wechaty，且已有相应 token 则还需要设置以下几个环境变量:</p>
 <pre class="literal-block">
 WECHATY_LOG=silly
 WECHATY_PUPPET=padchat
