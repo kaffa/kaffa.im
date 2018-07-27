@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="https://kaffa.github.io/" rel="alternate"></link><link href="https://kaffa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.github.io/</id><updated>2018-07-24T12:00:00+08:00</updated><entry><title>在 Windows 10 下安装 Wechaty</title><link href="https://kaffa.github.io/wechaty-installation-in-windows-10.html" rel="alternate"></link><published>2018-07-24T12:00:00+08:00</published><updated>2018-07-24T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-24:/wechaty-installation-in-windows-10.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的细节&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-07-24T12:00:00+08:00</updated><entry><title>在 Windows 10 下安装 Wechaty</title><link href="https://kaffa.im/wechaty-installation-in-windows-10.html" rel="alternate"></link><published>2018-07-24T12:00:00+08:00</published><updated>2018-07-24T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-24:/wechaty-installation-in-windows-10.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的细节&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;介绍&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/Chatie/wechaty"&gt;Wechaty&lt;/a&gt; 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 &lt;tt class="docutils literal"&gt;git clone&lt;/tt&gt; 源代码，再使用 node 的 npm 命令 &lt;tt class="docutils literal"&gt;npm install &amp;amp; npm start&lt;/tt&gt; 实现开箱即用，同时官方也提供了入门案例：&lt;a class="reference external" href="https://github.com/Chatie/wechaty-getting-started"&gt;Wechaty getting started&lt;/a&gt;。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：&lt;/p&gt;
@@ -373,7 +373,7 @@ npm install &amp;amp; npm start
 解决办法基本上一一查阅上述出现错误的软件的文档，应该可以独立解决。&lt;/p&gt;
 &lt;p&gt;当然，如果你遇到了任何其他问题，也欢迎 &lt;a class="reference external" href="https://github.com/Kaffa"&gt;我的Github&lt;/a&gt; 上联系我。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="wechaty"></category><category term="node"></category></entry><entry><title>用 VSCode 预览 reStructureText 文件</title><link href="https://kaffa.github.io/preview-restructuretext-file-in-vscode.html" rel="alternate"></link><published>2018-07-18T12:30:00+08:00</published><updated>2018-07-18T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-18:/preview-restructuretext-file-in-vscode.html</id><summary type="html">&lt;p class="first last"&gt;本文描述用 VSCode 预览 reStructureText 文件的配置办法&lt;/p&gt;
+</content><category term="technology"></category><category term="wechaty"></category><category term="node"></category></entry><entry><title>用 VSCode 预览 reStructureText 文件</title><link href="https://kaffa.im/preview-restructuretext-file-in-vscode.html" rel="alternate"></link><published>2018-07-18T12:30:00+08:00</published><updated>2018-07-18T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-18:/preview-restructuretext-file-in-vscode.html</id><summary type="html">&lt;p class="first last"&gt;本文描述用 VSCode 预览 reStructureText 文件的配置办法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;通识&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -422,7 +422,7 @@ Makefile
 &lt;li&gt;最后提供一份快速参考 &lt;a class="reference external" href="http://www.pythondoc.com/sphinx/rest.html"&gt;sphinx-rest&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="VSCode"></category><category term="reStructureText"></category></entry><entry><title>Windows 下安装 Wechaty 的注意点(keng)</title><link href="https://kaffa.github.io/install-wechaty-on-windows.html" rel="alternate"></link><published>2018-07-17T12:00:00+08:00</published><updated>2018-07-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-17:/install-wechaty-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的注意点(keng)&lt;/p&gt;
+</content><category term="technology"></category><category term="VSCode"></category><category term="reStructureText"></category></entry><entry><title>Windows 下安装 Wechaty 的注意点(keng)</title><link href="https://kaffa.im/install-wechaty-on-windows.html" rel="alternate"></link><published>2018-07-17T12:00:00+08:00</published><updated>2018-07-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-17:/install-wechaty-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的注意点(keng)&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;摘要&lt;/h2&gt;
 &lt;p&gt;本文对于在 Windows 下安装 &lt;a class="reference external" href="https://github.com/Chatie/wechaty"&gt;Wechaty&lt;/a&gt; 的坑作个临时记录，但其中涉及的处理方式随着项目的升级或依赖软件的升级可能会变得不再需要。&lt;/p&gt;
@@ -453,7 +453,7 @@ PYTHON=c:\Python27\python.exe&lt;/dd&gt;
 &lt;li&gt;已经 2018 年了，大部分库都用 six 支持了 Python 2 和 3 版本，很多人都转到 Python 3.6+，对于安装时出现 Python 相关的错误时，可能不会想到是 node-gyp 依赖 Python 2.7 的原因。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="wechaty"></category><category term="node"></category></entry><entry><title>升级 CentOS Linux Kernel</title><link href="https://kaffa.github.io/update-centos-linux-kernel.html" rel="alternate"></link><published>2018-07-06T13:00:00+08:00</published><updated>2018-07-06T13:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-06:/update-centos-linux-kernel.html</id><summary type="html">&lt;p class="first last"&gt;本文描述升级 CentOS Linux Kernel 的方法&lt;/p&gt;
+</content><category term="technology"></category><category term="wechaty"></category><category term="node"></category></entry><entry><title>升级 CentOS Linux Kernel</title><link href="https://kaffa.im/update-centos-linux-kernel.html" rel="alternate"></link><published>2018-07-06T13:00:00+08:00</published><updated>2018-07-06T13:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-06:/update-centos-linux-kernel.html</id><summary type="html">&lt;p class="first last"&gt;本文描述升级 CentOS Linux Kernel 的方法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;升级 CentOS Linux Kernel 的方法&lt;/h2&gt;
 &lt;p&gt;升级命令:&lt;/p&gt;
@@ -503,7 +503,7 @@ yum autoremove kernel-.el7.x86_64
 &lt;li&gt;&lt;a class="reference external" href="https://www.elrepo.org"&gt;https://www.elrepo.org&lt;/a&gt; 和 &lt;a class="reference external" href="https://kernelnewbies.org"&gt;https://kernelnewbies.org&lt;/a&gt; 可能对你有用。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="CentOS"></category><category term="Linux Kernel"></category></entry><entry><title>在 Linux 上安装 VSCode 遇到的问题和解决思路</title><link href="https://kaffa.github.io/install-vscode-on-linux-error.html" rel="alternate"></link><published>2018-07-05T12:30:00+08:00</published><updated>2018-07-05T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-07-05:/install-vscode-on-linux-error.html</id><summary type="html">&lt;p class="first last"&gt;本文描述在 Linux 上安装 VSCode 遇到的问题和解决思路&lt;/p&gt;
+</content><category term="technology"></category><category term="CentOS"></category><category term="Linux Kernel"></category></entry><entry><title>在 Linux 上安装 VSCode 遇到的问题和解决思路</title><link href="https://kaffa.im/install-vscode-on-linux-error.html" rel="alternate"></link><published>2018-07-05T12:30:00+08:00</published><updated>2018-07-05T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-05:/install-vscode-on-linux-error.html</id><summary type="html">&lt;p class="first last"&gt;本文描述在 Linux 上安装 VSCode 遇到的问题和解决思路&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;为什么在 Linux 上安装 VSCode？&lt;/h2&gt;
 &lt;p&gt;近期计划使用搭建 telegram bot，了解原理后，发现是基本的 http 开发。&lt;/p&gt;
@@ -556,7 +556,7 @@ Error downloading packages:  libXScrnSaver-1.2.2-6.1.el7.x86_64
 &lt;p&gt;于是这个包依赖问题可以从 &lt;a class="reference external" href="http://mirror.centos.org/centos-7/7.4.1708/readme"&gt;CentOS 7.4.1708 readme&lt;/a&gt; 得到解答，即 &lt;a class="reference external" href="https://kaffa.im/update-centos-linux-kernel/"&gt;升级 CentOS 7.4 到 CentOS 7.5&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;升级完成后，再次运行 &lt;tt class="docutils literal"&gt;sudo yum install code&lt;/tt&gt;，即成功。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="CentOS"></category><category term="VSCode"></category></entry><entry><title>数据与信息的描述与差别</title><link href="https://kaffa.github.io/data-vs-information.html" rel="alternate"></link><published>2018-06-28T10:55:00+08:00</published><updated>2018-06-28T10:55:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-28:/data-vs-information.html</id><summary type="html">&lt;p class="first last"&gt;本文描述数据和信息两个概念的差别&lt;/p&gt;
+</content><category term="technology"></category><category term="CentOS"></category><category term="VSCode"></category></entry><entry><title>数据与信息的描述与差别</title><link href="https://kaffa.im/data-vs-information.html" rel="alternate"></link><published>2018-06-28T10:55:00+08:00</published><updated>2018-06-28T10:55:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-28:/data-vs-information.html</id><summary type="html">&lt;p class="first last"&gt;本文描述数据和信息两个概念的差别&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;编写文档时，大家常把 &lt;strong&gt;数据&lt;/strong&gt; 和 &lt;strong&gt;信息&lt;/strong&gt; 两个词混用，如管理信息系统（Management Information System）、数据导入（Data Import）等，可见，日常大家并不太在意两者的区别。&lt;/p&gt;
 &lt;div class="section" id="id2"&gt;
 &lt;h2&gt;描述&lt;/h2&gt;
@@ -570,7 +570,7 @@ Error downloading packages:  libXScrnSaver-1.2.2-6.1.el7.x86_64
 &lt;p&gt;在语言的发展中，可能有一些约定的说法，比如“大数据时代”、“信息大爆炸”，从这些词也可以大概分出，由原始的数据可以组织出更可观的信息。&lt;/p&gt;
 &lt;p&gt;数据和信息是讨论很多问题时的基础，因此有此篇。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category></entry><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="https://kaffa.github.io/vscode-restructuredtext.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-20:/vscode-restructuredtext.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
+</content><category term="technology"></category></entry><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="https://kaffa.im/vscode-restructuredtext.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-20:/vscode-restructuredtext.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;问题出现的场景&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
@@ -606,7 +606,7 @@ pip install doc8
 &lt;p&gt;我的理解是，这个最大行宽在 *.rst 文件中不建议设置太大，大约每行最多 80 个字符就差不多了，
 这个和可维护性代码的最佳实践是一致的。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category></entry><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="https://kaffa.github.io/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2018-06-19T17:17:00+08:00</published><updated>2018-06-19T17:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-19:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
+</content><category term="technology"></category></entry><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="https://kaffa.im/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2018-06-19T17:17:00+08:00</published><updated>2018-06-19T17:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-19:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;添加独立域名的步骤&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -625,7 +625,7 @@ pip install doc8
 &lt;p&gt;在 Github 仓库 master 的根目录下添加一个名称为 &lt;strong&gt;CNAME&lt;/strong&gt; 的文件，文件内容为你注册的域名。
 例如，在 kaffa.github.io 仓库 master 的根目录新建一个 &lt;a class="reference external" href="https://github.com/kaffa/kaffa.github.io/blob/master/CNAME"&gt;CNAME&lt;/a&gt; 文件，文件内容为 kaffa.im，刷新刚才的 404 页面即打开了原先的 kaffa.github.io 站点&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category></entry><entry><title>解决编程领域难题的有效方法</title><link href="https://kaffa.github.io/the-effective-way-to-find-answers-to-programming-questions.html" rel="alternate"></link><published>2018-06-18T02:22:00+08:00</published><updated>2018-06-18T02:22:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-18:/the-effective-way-to-find-answers-to-programming-questions.html</id><summary type="html">&lt;p&gt;解决编程领域难题的有效方法是推演和搜索&lt;/p&gt;</summary><content type="html">&lt;h2&gt;为什么会有编程领域的难题？&lt;/h2&gt;
+</content><category term="technology"></category></entry><entry><title>解决编程领域难题的有效方法</title><link href="https://kaffa.im/the-effective-way-to-find-answers-to-programming-questions.html" rel="alternate"></link><published>2018-06-18T02:22:00+08:00</published><updated>2018-06-18T02:22:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-18:/the-effective-way-to-find-answers-to-programming-questions.html</id><summary type="html">&lt;p&gt;解决编程领域难题的有效方法是推演和搜索&lt;/p&gt;</summary><content type="html">&lt;h2&gt;为什么会有编程领域的难题？&lt;/h2&gt;
 &lt;p&gt;现实世界很复杂，编程是世界的抽象和理想模型，理想和现实的差距存在于细节上，编程经常会遇到这些细节带来的鸿沟。&lt;/p&gt;
 &lt;h2&gt;解决编程领域难题的有效方法是什么？&lt;/h2&gt;
 &lt;ol&gt;
@@ -793,7 +793,7 @@ pip install doc8
 &lt;p&gt;搜索
     除了依赖自我，更多的是依赖外部&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content><category term="technology"></category></entry><entry><title>新博客</title><link href="https://kaffa.github.io/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.github.io,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
+&lt;/ol&gt;</content><category term="technology"></category></entry><entry><title>新博客</title><link href="https://kaffa.im/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;关于本博客&lt;/h2&gt;
 &lt;p&gt;2016-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。&lt;/p&gt;
