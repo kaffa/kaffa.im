@@ -507,19 +507,18 @@ yum autoremove kernel-.el7.x86_64
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;为什么在 Linux 上安装 VSCode？&lt;/h2&gt;
 &lt;p&gt;近期计划使用搭建 telegram bot，了解原理后，发现是基本的 http 开发。&lt;/p&gt;
-&lt;p&gt;计划使用轻量级 Web 框架，就项目需求来说，选择 Python 微框架 或 Go 语言比较适宜，加上前不久了解到类似 &lt;a class="reference external" href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; 的框架 &lt;a class="reference external" href="https://vibora.io/"&gt;Vibora&lt;/a&gt;，其官方介绍中的性能基准测试结果惊人难以置信，于是选择尝试，饶有兴致运行官方 hello world:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-from vibora import Vibora, Response
+&lt;p&gt;计划使用轻量级 Web 框架，就项目需求来说，选择 Python 微框架 或 Go 语言比较适宜，加上前不久了解到类似 &lt;a class="reference external" href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; 的框架 &lt;a class="reference external" href="https://vibora.io/"&gt;Vibora&lt;/a&gt;，其官方介绍中的性能基准测试结果惊人难以置信，于是选择尝试，饶有兴致运行官方 hello world&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;vibora&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Vibora&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Response&lt;/span&gt;
 
-app = Vibora()
+&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Vibora&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
-&amp;#64;app.route('/')
-async def home():
-    return Response(b'Hello world')
+&lt;span class="nd"&gt;@app.route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;home&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;Response&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;b&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Hello world&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-if __name__ == '__main__':
-    app.run(debug=True)
-&lt;/pre&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;却发现无法在 Windows 下运行，提示:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 Traceback (most recent call last):
