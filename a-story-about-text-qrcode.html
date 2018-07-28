@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>关于文本二维码这件小事 &mdash; kaFFa fORest</title>
+  <meta name="author" content="kaFFa">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">kaFFa fORest</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+    <li><a href="#">首页</a></li>
+      <li class="active">
+        <a href="./category/ji-zhu.html">技术</a>
+      </li>
+      <li >
+        <a href="./category/sheng-huo.html">生活</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">关于文本二维码这件小事</h1>
+    <p class="meta">
+<time datetime="2018-07-27T12:00:00+08:00" pubdate>2018-07-27(周五)</time>    </p>
+</header>
+
+  <div class="entry-content"><div class="section" id="id2">
+<h2>文本二维码</h2>
+<p>简单讲，二维码是一个算法，可以把信息编码为0和1，也就是白和黑，也就是常见的二维码。大多情况下，二维码用一个方形的图片表达，可以跨各种介质传播。</p>
+<p>但由于一个很特殊的软件，我们有将二维码从远程机器传递到本地文本终端的需求。因此，引出了文本二维码这个议题。:</p>
+<pre class="literal-block">
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▀▄█▀ █▀ █▀█▄▀█ ▄▄▄▄▄ █
+█ █   █ █▄   ▄▀ ▀▄▄█▀▀█ █   █ █
+█ █▄▄▄█ █ ▀█▀█▄█▀   ▀▀█ █▄▄▄█ █
+█▄▄▄▄▄▄▄█ ▀▄█ █ ▀▄▀▄▀ █▄▄▄▄▄▄▄█
+█▄▄█▄▀▀▄▄▀█ ▀█▀ ▀ ▀█▄█▀ ▄▄▀▄▄▀█
+█ ▀▀▀▄▀▄ █▄▄██ ██ ▄ ▄▄  ▄ ▄  ██
+█▄ ▄███▄███▀▀ █▀▀█▄█  ▀▄██▄█▄▄█
+██▄▄ ▄█▄ ▄▀██ ▀▀█ ▀▀▀▄ ▀██ ▄ ▄█
+█▄▀▀▄▄ ▄▄▄ ▀▄██▄█▄ ██▄▄▀▀█▀█▄▀█
+█▄█▄▀▀ ▄▀▄█▄▀██▀█▄▀▀█▄▄▄▄▀██  █
+█▄██▄▄▄▄█  ▀  ▄▀█ █▄▄ ▄▄▄ █ ▀▀█
+█ ▄▄▄▄▄ █▄█▄   █▀▀▄▀█ █▄█ ▀▀ ▀█
+█ █   █ █▀▄▄ █▀▄█▀▄█▀▄▄   ▀▀▀██
+█ █▄▄▄█ █▀ █ █▄▄█▀ █▀ ██▀▄▄▄▀▄█
+█▄▄▄▄▄▄▄█▄█▄█▄▄█▄█▄▄█▄▄█▄█▄█▄██
+</pre>
+<p>上述即一个文本二维码，通常两行一列编码为一个半角字符，这个二维码的显示需要两个前提：</p>
+<ol class="arabic simple">
+<li>等宽字符，例如 Lucida Console</li>
+<li>行间距尽量小，让整体显示为正方形</li>
+</ol>
+<p>当然，能否扫描出结果，也取决于扫描时的容差。</p>
+<p>在 Windows 平台，如果终端控制台中出现文本二维码散乱情况，请调整控制台字体为等宽字体，或者打开记事本，字体选择为：Lucida Console 5号字，再进行全选，即可显示出可扫描的二维码。</p>
+</div>
+</div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    发布人： <span class="fn">
+        Kaffa
+    </span>
+  </span>
+<time datetime="2018-07-27T12:00:00+08:00" pubdate>2018-07-27(周五)</time>  <span class="categories">
+    <a class='category' href='./category/ji-zhu.html'>技术</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/technology.html">technology</a>,    <a class="category" href="./tag/qrcode.html">QRCode</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>最近博文</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./a-story-about-text-qrcode.html">关于文本二维码这件小事</a>
+      </li>
+      <li class="post">
+          <a href="./wechaty-installation-in-windows-10.html">在 Windows 10 下安装 Wechaty</a>
+      </li>
+      <li class="post">
+          <a href="./preview-restructuretext-file-in-vscode.html">用 VSCode 预览 reStructureText 文件</a>
+      </li>
+      <li class="post">
+          <a href="./install-wechaty-on-windows.html">Windows 下安装 Wechaty 的注意点(keng)</a>
+      </li>
+      <li class="post">
+          <a href="./update-centos-linux-kernel.html">升级 CentOS Linux Kernel</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+
+    <h1>分类</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/ji-zhu.html">技术</a></li>
+        <li><a href="./category/sheng-huo.html">生活</a></li>
+    </ul>
+  </section>
+
+  <section>
+  <h1>标签</h1>
+    <a href="./tag/technology.html">technology</a>,    <a href="./tag/qrcode.html">QRCode</a>,    <a href="./tag/wechaty.html">wechaty</a>,    <a href="./tag/node.html">node</a>,    <a href="./tag/open-source.html">open source</a>,    <a href="./tag/vscode.html">VSCode</a>,    <a href="./tag/restructuretext.html">reStructureText</a>,    <a href="./tag/centos.html">CentOS</a>,    <a href="./tag/linux-kernel.html">Linux Kernel</a>,    <a href="./tag/life.html">life</a>  </section>
+
+
+    <section>
+        <h1>社区</h1>
+        <ul>
+            <li><a href="https://github.com/kaffa" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>链接</h1>
+        <ul>
+            <li><a href="//paulgraham.com" target="_blank">Paul Graham</a></li>
+            <li><a href="https://kaffa.im" target="_blank">kaFFa</a></li>
+            <li><a href="https://python.org" target="_blank">Python.org</a></li>
+            <li><a href="//jinja.pocoo.org" target="_blank">Jinja2</a></li>
+            <li><a href="https://getpelican.com" target="_blank">Pelican</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    版权所有 &copy;  2018  kaFFa &mdash;
+  <span class="credit">自豪地采用 <a href="http://getpelican.com">Pelican</a> 技术</span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  
+</body>
+</html>
