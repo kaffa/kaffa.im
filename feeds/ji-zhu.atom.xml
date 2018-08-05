@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 技术</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/ji-zhu.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-07-27T12:00:00+08:00</updated><entry><title>关于文本二维码这件小事</title><link href="https://kaffa.im/a-story-about-text-qrcode.html" rel="alternate"></link><published>2018-07-27T12:00:00+08:00</published><updated>2018-07-27T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-27:/a-story-about-text-qrcode.html</id><summary type="html">&lt;p class="first last"&gt;本文随意聊聊文本二维码&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 技术</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/ji-zhu.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-08-06T12:00:00+08:00</updated><entry><title>关于 NW.js 与 Electron 的技术选择</title><link href="https://kaffa.im/nwjs-and-electron-how-to-choose.html" rel="alternate"></link><published>2018-08-06T12:00:00+08:00</published><updated>2018-08-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/nwjs-and-electron-how-to-choose.html</id><summary type="html">&lt;p class="first last"&gt;本文顺便写上 NW.js 与 Electron 的技术选择和一些无关的文字&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;技术选择&lt;/h2&gt;
+&lt;p&gt;这么多年，我很少写技术博文，通常记录的目的都是归于实用，即遇到一个问题，然后给予解决。原则是，不从问题作无止的延伸，但给予一个清晰的解答。之所以有此原则，是因实用主义，因生命有限，无法耗时在细节上，细节是熵递增，与生命的目的刚好相反。&lt;/p&gt;
+&lt;p&gt;那么我们从怎样的方法论去讨论技术选择问题呢？&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;NW.js 与 Electron&lt;/h2&gt;
+&lt;p&gt;在两者的选择之间：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;从目前来看，选择 Electron&lt;/li&gt;
+&lt;li&gt;从目前来看，根据场景，大多时候选择 Electron 即可，特殊情况，选择合适的即可。&lt;/li&gt;
+&lt;li&gt;而 Electron 和 NW.js，当你充分了解它们时，它们有区别，又或则不能选其他？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;关于两种跨平台技术的选择，说完了？&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;选择的法门&lt;/h2&gt;
+&lt;p&gt;因人的思维本质，因那个创造者，那个“神”、“神性”、“中心”而具共性。“法门”的表述可能不同，但内核相似，主要是人的思维和意识相似共性。&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;初遇技术选择的问题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;儿时父母初教：“你记下，当人对你说‘你好’时，你就答一句‘你好’”，这叫，习得的问题解决方案。&lt;/p&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;反复遇到相同技术选择的问题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;生活中，遇到很多人对你说“你好”，回答开始可能是“你好”，但后面也会根据具体情境给不同回答。&lt;/p&gt;
+&lt;p&gt;例如，对陌生人回答“你是谁？”，对密友回答“你好个P，你脑子坏了！”，对客户答“你好你好你好！”&lt;/p&gt;
+&lt;p&gt;你会发现，进入场景，戴上身份后，你好的回答并不只是你好，会根据不同而进行“恰当”回答了。&lt;/p&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;无数技术选择后，眼里不再有问题时&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;你会发现一句淡定的回答“你好”，其实还是儿时那句“你好”，竟是所有“你好”的回答。&lt;/p&gt;
+&lt;p&gt;你也许听过：&lt;/p&gt;
+&lt;blockquote&gt;
+第一重境界：昨夜西风凋碧树。独上高楼，望尽天涯路；
+第二重境界：衣带渐宽终不悔，为伊消得人憔悴；
+第三重境界：众里寻他千百度，蓦然回首，那人却在灯火阑珊处。&lt;/blockquote&gt;
+&lt;p&gt;也许还听过：&lt;/p&gt;
+&lt;blockquote&gt;
+看山是山，看山不是山，看山还是山。&lt;/blockquote&gt;
+&lt;p&gt;也许还听过：&lt;/p&gt;
+&lt;blockquote&gt;
+非有，非无，非有非无。&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;心理学&lt;/h2&gt;
+&lt;p&gt;人会从各个视角对世界给予解释，其实是人的大脑生物机制本身决定的，动物脑以及灵性脑，感性与理性，象与骑象人的对话，你的骑象人总在回答（大多是解释）你的大象，而一旁的观察者很关键。&lt;/p&gt;
+&lt;p&gt;此处，象即1，骑象人即2，观察者即3；象即问题的直接答案，骑象人即问题的周全答案，而观察者眼里并没有问和答，它归于沉默。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;其实已经说完了&lt;/h2&gt;
+&lt;p&gt;四维生物，二不行，但三基本就够了。其实已经说完了。&lt;/p&gt;
+&lt;p&gt;“人往往需要说很多话，然后才能归入潜默。” 是有此篇。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="technology"></category><category term="psychology"></category><category term="philosophy"></category><category term="nw.js"></category><category term="electron"></category></entry><entry><title>关于文本二维码这件小事</title><link href="https://kaffa.im/a-story-about-text-qrcode.html" rel="alternate"></link><published>2018-07-27T12:00:00+08:00</published><updated>2018-07-27T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-27:/a-story-about-text-qrcode.html</id><summary type="html">&lt;p class="first last"&gt;本文随意聊聊文本二维码&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;文本二维码&lt;/h2&gt;
 &lt;p&gt;简单讲，二维码是一个算法，可以把信息编码为0和1，也就是白和黑，也就是常见的二维码。大多情况下，二维码用一个方形的图片表达，可以跨各种介质传播。&lt;/p&gt;
@@ -354,7 +409,7 @@ Can't find Python executable &amp;quot;C:\Python36\python.EXE&amp;quot;, you can
 &lt;/ol&gt;
 &lt;p&gt;由于网络原因，puppeteer 依赖的 &lt;a class="reference external" href="https://www.chromium.org/"&gt;Chromium&lt;/a&gt; 并不能顺利安装。此时，我们可以借助一个阿里巴巴公司提供的 &lt;a class="reference external" href="https://npm.taobao.org/"&gt;cnpm&lt;/a&gt; 特色工具安装:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-npm install -g cnpm --registry=https://registry.npm.taobao.org``
+npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm install puppeteer
 &lt;/pre&gt;
 &lt;p&gt;如果你遇到 &lt;tt class="docutils literal"&gt;Chromium revision is not downloaded.&lt;/tt&gt; 时，在解决办法中看到的设置 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD 其实是一个误导，
@@ -387,7 +442,7 @@ npm install &amp;amp; npm start
 &lt;li&gt;&lt;p class="first"&gt;运行后，程序会在控制台窗口打开一个文本的二维码，在二维码下方是该二维码的网址。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;如果你对扫面控制台的文本二维码遇到问题，可以参考我的 &lt;a class="reference external" href="https://kaffa.im/a-story-about-text-qrcode.html"&gt;一篇关于二维码的博文&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;如果你对扫描控制台的文本二维码遇到问题，可以参考我的 &lt;a class="reference external" href="https://kaffa.im/a-story-about-text-qrcode.html"&gt;一篇关于二维码的博文&lt;/a&gt;。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id5"&gt;
 &lt;h2&gt;总结&lt;/h2&gt;
