@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Windows 下 Node 的路径配置 &mdash; kaFFa fORest</title>
+  <meta name="author" content="kaFFa">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">kaFFa fORest</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+    <li><a href="#">首页</a></li>
+      <li class="active">
+        <a href="./category/ji-zhu.html">技术</a>
+      </li>
+      <li >
+        <a href="./category/sheng-huo.html">生活</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">Windows 下 Node 的路径配置</h1>
+    <p class="meta">
+<time datetime="2018-08-06T22:00:00+08:00" pubdate>2018-08-06(周一)</time>    </p>
+</header>
+
+  <div class="entry-content"><div class="section" id="windows-nodejs">
+<h2>在 Windows 下安装 nodejs</h2>
+<ol class="arabic simple">
+<li>浏览器打开 nodejs 官方网站 <a class="reference external" href="https://nodejs.org/">https://nodejs.org/</a>，选择 LTS 或者 Current 版本。</li>
+<li>用下载软件（如迅雷）下载目前的最新版 <tt class="docutils literal"><span class="pre">https://nodejs.org/dist/v10.8.0/node-v10.8.0-x64.msi</span></tt>，下载到本地后，双击安装。</li>
+<li>个人推荐将运行时安装在根路径下，因为当需要进入运行时目录查看时，每次会比进入 Program Files 少进一层，这样可以节省时间。我的安装目录是 <tt class="docutils literal"><span class="pre">C:\nodejs</span></tt></li>
+</ol>
+</div>
+<div class="section" id="id1">
+<h2>在 Windows 下配置 nodejs</h2>
+<ol class="arabic simple">
+<li>至此 nodejs 就已经安装好了，其中 npm 是 nodejs 的包管理器，此时已经在 <tt class="docutils literal"><span class="pre">C:\nodejs\node_modules\npm</span></tt> 之下</li>
+<li>然后在 Windows 下 nodejs 还需要配置两个总要的路径：</li>
+</ol>
+<p>一个是 node_global，这个目录用来放全局安装命令 <tt class="docutils literal">npm install [PACKAGE_NAME] <span class="pre">-g</span></tt> 安装的包，通常将很多基础的共用包可以安装到这个目录，例如 nw</p>
+<p>一个是 node_cache，这个目录是 node 缓存</p>
+<p>我们用 <tt class="docutils literal">npm install [PACKAGE_NAME]</tt> 命令安装的内容，会安装在每个目录下，这就是 node 来管理依赖的方式。</p>
+<p>运行下面命令:</p>
+<pre class="literal-block">
+C:\&gt;cd nodejs
+C:\nodejs&gt;mkdir node_global
+C:\nodejs&gt;mkdir node_cache
+C:\nodejs&gt;npm config set prefix &quot;C:\nodejs\node_global&quot;
+C:\nodejs&gt;npm config set cache &quot;C:\nodejs\node_cache&quot;
+</pre>
+<ol class="arabic simple" start="3">
+<li>配置环境变量 <tt class="docutils literal"><span class="pre">NODE_PATH=C:\nodejs\</span></tt></li>
+<li>在 PATH 中 加入 %NODE_PATH% 和 %NODE_PATH%node_global，顺便推荐使用 <a class="reference external" href="https://www.rapidee.com">Rapid Environment Editor</a></li>
+<li>至此，Windows 下的 nodejs 配置完毕</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>补充说明</h2>
+<p>本文推荐的路径是最简单的方法，下面对 Windows 路径本身的机制加以说明:</p>
+<pre class="literal-block">
+1. 应用数据全局目录：C:\ProgramData
+2. 应用数据用户目录：C:\Users\USER_NAME\AppData\Roaming
+3. 用户根目录：C:\Users\USER_NAME\
+4. 64位程序目录：C:\Program Files，非管理员权限不可写
+5. 32位程序目录：C:\Program Files (x86)，非管理员权限不可写
+</pre>
+<p>如果 npm 出现警告 Missing write access，接着出现错误 npm ERR! code ENOENT，和上述权限有关:</p>
+<pre class="literal-block">
+pm WARN checkPermissions Missing write access
+...
+npm ERR! code ENOENT
+npm ERR! errno -2
+npm ERR! syscall access
+npm ERR! enoent ENOENT: no such file or directory, access '/usr/local/lib/node_modules/webpack/node_modules/[XXX]'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+</pre>
+<p>如果忘记将 nodejs 放入PATH，那么可能会出现以下错误提示，因为程序调用 node 时， Windows 找不到 node.exe 或 node.cmd 或 node.bat:</p>
+<pre class="literal-block">
+'node' 不是内部或外部命令，也不是可运行的程序或批处理文件
+</pre>
+<p>另外，当然也可以参考官方文档 <a class="reference external" href="https://docs.npmjs.com/files/folders">npm-folders</a>，但可能有更新不及时，node 社区还年轻且贡献者有很多个人，有时并不太照顾 Windows 平台，这点不比 python 社区发展了那么久，且那么多机构贡献者。</p>
+</div>
+</div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    发布人： <span class="fn">
+        Kaffa
+    </span>
+  </span>
+<time datetime="2018-08-06T22:00:00+08:00" pubdate>2018-08-06(周一)</time>  <span class="categories">
+    <a class='category' href='./category/ji-zhu.html'>技术</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/technology.html">technology</a>,    <a class="category" href="./tag/node.html">node</a>,    <a class="category" href="./tag/windows.html">windows</a>,    <a class="category" href="./tag/path.html">path</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>最近博文</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./config-nodejs-path-in-windows.html">Windows 下 Node 的路径配置</a>
+      </li>
+      <li class="post">
+          <a href="./nwjs-and-electron-how-to-choose.html">关于 NW.js 与 Electron 的技术选择</a>
+      </li>
+      <li class="post">
+          <a href="./a-story-about-text-qrcode.html">关于文本二维码这件小事</a>
+      </li>
+      <li class="post">
+          <a href="./wechaty-installation-in-windows-10.html">在 Windows 10 下安装 Wechaty</a>
+      </li>
+      <li class="post">
+          <a href="./preview-restructuretext-file-in-vscode.html">用 VSCode 预览 reStructureText 文件</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+
+    <h1>分类</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/ji-zhu.html">技术</a></li>
+        <li><a href="./category/sheng-huo.html">生活</a></li>
+    </ul>
+  </section>
+
+  <section>
+  <h1>标签</h1>
+    <a href="./tag/technology.html">technology</a>,    <a href="./tag/node.html">node</a>,    <a href="./tag/windows.html">windows</a>,    <a href="./tag/path.html">path</a>,    <a href="./tag/psychology.html">psychology</a>,    <a href="./tag/philosophy.html">philosophy</a>,    <a href="./tag/nwjs.html">nw.js</a>,    <a href="./tag/electron.html">electron</a>,    <a href="./tag/qrcode.html">QRCode</a>,    <a href="./tag/wechaty.html">wechaty</a>,    <a href="./tag/open-source.html">open source</a>,    <a href="./tag/vscode.html">VSCode</a>,    <a href="./tag/restructuretext.html">reStructureText</a>,    <a href="./tag/centos.html">CentOS</a>,    <a href="./tag/linux-kernel.html">Linux Kernel</a>,    <a href="./tag/life.html">life</a>  </section>
+
+
+    <section>
+        <h1>社区</h1>
+        <ul>
+            <li><a href="https://github.com/kaffa" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>链接</h1>
+        <ul>
+            <li><a href="//paulgraham.com" target="_blank">Paul Graham</a></li>
+            <li><a href="https://kaffa.im" target="_blank">kaFFa</a></li>
+            <li><a href="https://python.org" target="_blank">Python.org</a></li>
+            <li><a href="//jinja.pocoo.org" target="_blank">Jinja2</a></li>
+            <li><a href="https://getpelican.com" target="_blank">Pelican</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    版权所有 &copy;  2018  kaFFa &mdash;
+  <span class="credit">自豪地采用 <a href="http://getpelican.com">Pelican</a> 技术</span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  
+</body>
+</html>
