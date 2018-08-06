@@ -53,7 +53,7 @@
 <header>
       <h1 class="entry-title">Windows 下 Node 的路径配置</h1>
     <p class="meta">
-<time datetime="2018-08-06T22:00:00+08:00" pubdate>2018-08-06(周一)</time>    </p>
+<time datetime="2018-08-07T22:00:00+08:00" pubdate>2018-08-07(周二)</time>    </p>
 </header>
 
   <div class="entry-content"><div class="section" id="windows-nodejs">
@@ -83,7 +83,7 @@ C:\nodejs&gt;npm config set cache &quot;C:\nodejs\node_cache&quot;
 </pre>
 <ol class="arabic simple" start="3">
 <li>配置环境变量 <tt class="docutils literal"><span class="pre">NODE_PATH=C:\nodejs\</span></tt></li>
-<li>在 PATH 中 加入 %NODE_PATH% 和 %NODE_PATH%node_global，顺便推荐使用 <a class="reference external" href="https://www.rapidee.com">Rapid Environment Editor</a></li>
+<li>在 PATH 中 加入 <tt class="docutils literal">%NODE_PATH%</tt> 和 <tt class="docutils literal"><span class="pre">%NODE_PATH%\node_global</span></tt>，顺便推荐使用 <a class="reference external" href="https://www.rapidee.com">Rapid Environment Editor</a></li>
 <li>至此，Windows 下的 nodejs 配置完毕</li>
 </ol>
 </div>
@@ -91,13 +91,13 @@ C:\nodejs&gt;npm config set cache &quot;C:\nodejs\node_cache&quot;
 <h2>补充说明</h2>
 <p>本文推荐的路径是最简单的方法，下面对 Windows 路径本身的机制加以说明:</p>
 <pre class="literal-block">
-1. 应用数据全局目录：C:\ProgramData
-2. 应用数据用户目录：C:\Users\USER_NAME\AppData\Roaming
+1. 应用数据全局目录：C:\ProgramData\
+2. 应用数据用户目录：C:\Users\USER_NAME\AppData\Roaming\
 3. 用户根目录：C:\Users\USER_NAME\
-4. 64位程序目录：C:\Program Files，非管理员权限不可写
-5. 32位程序目录：C:\Program Files (x86)，非管理员权限不可写
+4. 64位程序目录：C:\Program Files\，非管理员权限不可写
+5. 32位程序目录：C:\Program Files (x86)\，非管理员权限不可写
 </pre>
-<p>如果 npm 出现警告 Missing write access，接着出现错误 npm ERR! code ENOENT，和上述权限有关:</p>
+<p>如果 npm 出现警告 <tt class="docutils literal">Missing write access</tt>，接着出现错误 <tt class="docutils literal">npm ERR! code ENOENT</tt>，则和上述权限有关，这里的 ENOENT 是 Error NO ENTry 的意思:</p>
 <pre class="literal-block">
 pm WARN checkPermissions Missing write access
 ...
@@ -122,7 +122,7 @@ npm ERR! enoent
         Kaffa
     </span>
   </span>
-<time datetime="2018-08-06T22:00:00+08:00" pubdate>2018-08-06(周一)</time>  <span class="categories">
+<time datetime="2018-08-07T22:00:00+08:00" pubdate>2018-08-07(周二)</time>  <span class="categories">
     <a class='category' href='./category/ji-zhu.html'>技术</a>
   </span>
   <span class="categories">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-08-06T22:00:00+08:00</updated><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-06T22:00:00+08:00</published><updated>2018-08-06T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-08-07T22:00:00+08:00</updated><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-07T22:00:00+08:00</published><updated>2018-08-07T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-07:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="windows-nodejs"&gt;
 &lt;h2&gt;在 Windows 下安装 nodejs&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -27,7 +27,7 @@ C:\nodejs&amp;gt;npm config set cache &amp;quot;C:\nodejs\node_cache&amp;quot;
 &lt;/pre&gt;
 &lt;ol class="arabic simple" start="3"&gt;
 &lt;li&gt;配置环境变量 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;NODE_PATH=C:\nodejs\&lt;/span&gt;&lt;/tt&gt;&lt;/li&gt;
-&lt;li&gt;在 PATH 中 加入 %NODE_PATH% 和 %NODE_PATH%node_global，顺便推荐使用 &lt;a class="reference external" href="https://www.rapidee.com"&gt;Rapid Environment Editor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在 PATH 中 加入 &lt;tt class="docutils literal"&gt;%NODE_PATH%&lt;/tt&gt; 和 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;%NODE_PATH%\node_global&lt;/span&gt;&lt;/tt&gt;，顺便推荐使用 &lt;a class="reference external" href="https://www.rapidee.com"&gt;Rapid Environment Editor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;至此，Windows 下的 nodejs 配置完毕&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -35,13 +35,13 @@ C:\nodejs&amp;gt;npm config set cache &amp;quot;C:\nodejs\node_cache&amp;quot;
 &lt;h2&gt;补充说明&lt;/h2&gt;
 &lt;p&gt;本文推荐的路径是最简单的方法，下面对 Windows 路径本身的机制加以说明:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-1. 应用数据全局目录：C:\ProgramData
-2. 应用数据用户目录：C:\Users\USER_NAME\AppData\Roaming
+1. 应用数据全局目录：C:\ProgramData\
+2. 应用数据用户目录：C:\Users\USER_NAME\AppData\Roaming\
 3. 用户根目录：C:\Users\USER_NAME\
-4. 64位程序目录：C:\Program Files，非管理员权限不可写
-5. 32位程序目录：C:\Program Files (x86)，非管理员权限不可写
+4. 64位程序目录：C:\Program Files\，非管理员权限不可写
+5. 32位程序目录：C:\Program Files (x86)\，非管理员权限不可写
 &lt;/pre&gt;
-&lt;p&gt;如果 npm 出现警告 Missing write access，接着出现错误 npm ERR! code ENOENT，和上述权限有关:&lt;/p&gt;
+&lt;p&gt;如果 npm 出现警告 &lt;tt class="docutils literal"&gt;Missing write access&lt;/tt&gt;，接着出现错误 &lt;tt class="docutils literal"&gt;npm ERR! code ENOENT&lt;/tt&gt;，则和上述权限有关，这里的 ENOENT 是 Error NO ENTry 的意思:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 pm WARN checkPermissions Missing write access
 ...
