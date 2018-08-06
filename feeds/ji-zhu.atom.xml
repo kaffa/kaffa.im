@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 技术</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/ji-zhu.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-08-07T22:00:00+08:00</updated><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-07T22:00:00+08:00</published><updated>2018-08-07T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-07:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 技术</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/ji-zhu.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-08-06T22:00:00+08:00</updated><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-06T22:00:00+08:00</published><updated>2018-08-06T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="windows-nodejs"&gt;
 &lt;h2&gt;在 Windows 下安装 nodejs&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -12,7 +12,7 @@
 &lt;h2&gt;在 Windows 下配置 nodejs&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;至此 nodejs 就已经安装好了，其中 npm 是 nodejs 的包管理器，此时已经在 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C:\nodejs\node_modules\npm&lt;/span&gt;&lt;/tt&gt; 之下&lt;/li&gt;
-&lt;li&gt;然后在 Windows 下 nodejs 还需要配置两个总要的路径：&lt;/li&gt;
+&lt;li&gt;然后在 Windows 下 nodejs 还需要配置两个重要的路径：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;一个是 node_global，这个目录用来放全局安装命令 &lt;tt class="docutils literal"&gt;npm install [PACKAGE_NAME] &lt;span class="pre"&gt;-g&lt;/span&gt;&lt;/tt&gt; 安装的包，通常将很多基础的共用包可以安装到这个目录，例如 nw&lt;/p&gt;
 &lt;p&gt;一个是 node_cache，这个目录是 node 缓存&lt;/p&gt;
