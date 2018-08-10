@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>为博客添加评论系统 &mdash; kaFFa fORest</title>
+  <meta name="author" content="kaFFa">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">kaFFa fORest</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+    <li><a href="#">首页</a></li>
+      <li >
+        <a href="./category/ji-zhu.html">技术</a>
+      </li>
+      <li class="active">
+        <a href="./category/sheng-huo.html">生活</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">为博客添加评论系统</h1>
+    <p class="meta">
+<time datetime="2018-08-10T12:20:00+08:00" pubdate>2018-08-10(周五)</time>    </p>
+</header>
+
+  <div class="entry-content"><div class="section" id="id2">
+<h2>评论系统</h2>
+<p>通俗地说，不同人在一起评论一个事时，就像对混沌系统作预测，最可能的结果就是一团糟。
+好在评论系统有效的过滤了人群，原来的多说，网易云跟帖，以及被蔷的 <a class="reference external" href="https://www.disqus.com/">Disqus</a>。</p>
+<p>时下，如果想欣赏真正的“杠精”，要去“即刻”看评论，去网易新闻看跟帖；因为 <a class="reference external" href="https://www.disqus.com/">Disqus</a> 不存在，
+Google <a class="reference external" href="https://firebase.google.com/">Firebase</a> 方案也不存在，那 GitHub 静态博客的评论，就剩下几个为数不多的免费方案，
+例如 <a class="reference external" href="https://github.com/imsun/gitment">gitment</a> 和 <a class="reference external" href="https://github.com/gitalk/gitalk">gitalk</a>，gitment 是鼻祖，gitalk 是后来者，看起来两者差不太多，
+相当于利用 GitHub 应用授权 api 编写了一个跨域提 issue 的客户端。</p>
+<p>论安全性，这种做法的安全前提是服务端对提交信息的安全验证，且有人已提交一个次级域名利用方式。
+但我相信伪造评论、越权访问普通人的私有库并无太大价值，这其中只见伤害，并无收益。
+所以，这种安全性是可以定为相对安全。</p>
+<p>在“深网”的世界里，人性恶的一面使然，什么都会发生，如果完全不限安全，多少有一些理想主义，
+但可以相信人性也有善面，在软件的世界里，建造永远比破坏更难，建造是一个工程，而破坏只是一次行动。</p>
+<p>为 Pelican 添加 Gitalk 评论系统最简单的方式，莫过于在 <tt class="docutils literal">theme\templates\article.html</tt> 中直接修改，
+亦或编写一个 Pelican 插件，实现 <a class="reference external" href="http://docs.getpelican.com/en/stable/plugins.html#list-of-signals">article_generator_finalized</a> signal，
+读取 clientID 和 clientSecret 等配置在文后插入，如果手动插入，则是在 <tt class="docutils literal">&lt;/article&gt;</tt> 之前:</p>
+<pre class="literal-block">
+&lt;div id=&quot;gitalk-container&quot;&gt;&lt;/div&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gitalk/dist/gitalk.css&quot;&gt;
+&lt;script src=&quot;https://unpkg.com/gitalk/dist/gitalk.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+var gitalk = new Gitalk({
+    clientID: 'your client id here',
+    clientSecret: 'your client secret here',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+});
+gitalk.render('gitalk-container');
+&lt;/script&gt;
+</pre>
+<p>想为 Pelican 添加 Gitalk 评论的人，如果遇到问题，可以本文 issue 我，网上并不容易找着傻瓜教程。</p>
+</div>
+<div class="section" id="id3">
+<h2>博客历史</h2>
+<ul class="simple">
+<li>2018-06-06，博客启动，添加域名 <a class="reference external" href="https://kaffa.im">https://kaffa.im</a></li>
+<li>2018-08-07，<a class="reference external" href="https://github.com/MrSenko/pelican-octopress-theme">octopress 主题</a> 中文化：<a class="reference external" href="https://github.com/kaffa/pelican-octopress-theme-cn">pelican-octopress-theme-cn</a></li>
+<li>2018-08-10，添加 gitalk 评论系统。</li>
+</ul>
+</div>
+</div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    发布人： <span class="fn">
+        Kaffa
+    </span>
+  </span>
+<time datetime="2018-08-10T12:20:00+08:00" pubdate>2018-08-10(周五)</time>  <span class="categories">
+    <a class='category' href='./category/sheng-huo.html'>生活</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/life.html">life</a>,    <a class="category" href="./tag/blog.html">blog</a>,    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/gitalk.html">gitalk</a>,    <a class="category" href="./tag/gitment.html">gitment</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+    <div id="gitalk-container"></div>
+  </article>
+
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '47c6091c4039fb3df197',
+    clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+<aside class="sidebar">
+  <section>
+    <h1>最近博文</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./add-comments-system-to-my-blog.html">为博客添加评论系统</a>
+      </li>
+      <li class="post">
+          <a href="./update-my-new-blog-s-theme.html">更新博客主题</a>
+      </li>
+      <li class="post">
+          <a href="./config-nodejs-path-in-windows.html">Windows 下 Node 的路径配置</a>
+      </li>
+      <li class="post">
+          <a href="./nwjs-and-electron-how-to-choose.html">关于 NW.js 与 Electron 的技术选择</a>
+      </li>
+      <li class="post">
+          <a href="./a-story-about-text-qrcode.html">关于文本二维码这件小事</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+
+    <h1>分类</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/ji-zhu.html">技术</a></li>
+        <li><a href="./category/sheng-huo.html">生活</a></li>
+    </ul>
+  </section>
+
+  <section>
+  <h1>标签</h1>
+    <a href="./tag/life.html">life</a>,    <a href="./tag/blog.html">blog</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/gitalk.html">gitalk</a>,    <a href="./tag/gitment.html">gitment</a>,    <a href="./tag/pelican-octopress-theme.html">pelican-octopress-theme</a>,    <a href="./tag/pelican-octopress-theme-cn.html">pelican-octopress-theme-cn</a>,    <a href="./tag/technology.html">technology</a>,    <a href="./tag/node.html">node</a>,    <a href="./tag/windows.html">windows</a>,    <a href="./tag/path.html">path</a>,    <a href="./tag/psychology.html">psychology</a>,    <a href="./tag/philosophy.html">philosophy</a>,    <a href="./tag/nwjs.html">nw.js</a>,    <a href="./tag/electron.html">electron</a>,    <a href="./tag/qrcode.html">QRCode</a>,    <a href="./tag/wechaty.html">wechaty</a>,    <a href="./tag/open-source.html">open source</a>,    <a href="./tag/vscode.html">VSCode</a>,    <a href="./tag/restructuretext.html">reStructureText</a>,    <a href="./tag/centos.html">CentOS</a>,    <a href="./tag/linux-kernel.html">Linux Kernel</a>  </section>
+
+
+    <section>
+        <h1>社区</h1>
+        <ul>
+            <li><a href="https://github.com/kaffa" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>链接</h1>
+        <ul>
+            <li><a href="//paulgraham.com" target="_blank">Paul Graham</a></li>
+            <li><a href="https://kaffa.im" target="_blank">kaFFa</a></li>
+            <li><a href="https://python.org" target="_blank">Python.org</a></li>
+            <li><a href="//jinja.pocoo.org" target="_blank">Jinja2</a></li>
+            <li><a href="https://getpelican.com" target="_blank">Pelican</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    版权所有 &copy;  2018  kaFFa &mdash;
+  <span class="credit">自豪地采用 <a href="http://getpelican.com">Pelican</a> 技术</span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  
+</body>
+</html>
