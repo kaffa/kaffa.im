@@ -1,5 +1,298 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 技术</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/ji-zhu.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-08-06T22:00:00+08:00</updated><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-06T22:00:00+08:00</published><updated>2018-08-06T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest - 技术</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/ji-zhu.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-08-14T12:00:00+08:00</updated><entry><title>Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux</title><link href="https://kaffa.im/jekyll-msys2-vibora-and-use-linux-on-windows.html" rel="alternate"></link><published>2018-08-14T12:00:00+08:00</published><updated>2018-08-14T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-14:/jekyll-msys2-vibora-and-use-linux-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文聊聊 Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux 的话题&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;故事&lt;/h2&gt;
+&lt;p&gt;故事开始于我需要在 Windows 下用 Jekyll 转化一篇 Markdown 的博文，于是在 Windows 下安装了 Jekyll，其中涉及一些 MSYS2 的安装坑。
+接下来想到 MSYS2 其实可以解决 Vibora 的问题，于是将这两个过程中的难点记录一下，再谈谈在 Windows 下使用 Linux 的话题。&lt;/p&gt;
+&lt;p&gt;本文旨在为正使用 Windows 同时又想使用 Linux 功能的人列举一些可能的途径，本文适用于对 Windows 和 Linux 具备一定了解的人。
+另有计划写 Windows、macOS、Linux 操作系统比较的博文，但本文的范围不涉及比较。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="widnows-jekyll"&gt;
+&lt;h2&gt;Widnows 下用 Jekyll&lt;/h2&gt;
+&lt;p&gt;Jekyll 依赖于 Ruby Runtime 和一些 Gem 包，而 Ruby Runtime 在 Windows 下推荐用于 &lt;a class="reference external" href="https://rubyinstaller.org/"&gt;RubyInstaller&lt;/a&gt;，
+某些 Gem 包需要本地编译，官方推荐 &lt;a class="reference external" href="http://www.msys2.org/"&gt;MSYS2&lt;/a&gt; 安装 Windows 上的编译工具链。
+因为众所周知的原因，国内安装这些软件时也会遇到一些问题。下面叙述步骤并给予问题的解决办法。&lt;/p&gt;
+&lt;div class="section" id="ruby"&gt;
+&lt;h3&gt;安装 Ruby&lt;/h3&gt;
+&lt;p&gt;运行下载好的 RubyInstaller，基于少一层目录的原因，建议直接安装在根目录下，例如 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C:\Ruby25\&lt;/span&gt;&lt;/tt&gt;，并将此目录加入安装目录到 PATH。在最后点击结束按钮后，会提示安装 MSYS2，它用来编译 Ruby 本地包，官方说它的下载由一个全球 CDN 提供，但它在国内的访问真是无力吐槽。&lt;/p&gt;
+&lt;p&gt;也许你等待龟速网络很久可以将 MSYS2 安装成功，也许你会遭遇反复失败，不知如何是好。但如果你需要使用 Jekyll，而它使用了本地二进制包，那么这个问题是无法跳过的。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="msys2"&gt;
+&lt;h3&gt;安装 MSYS2 的小技巧&lt;/h3&gt;
+&lt;p&gt;如果你跳过了 MSYS2 安装，那么在后续的 gem install 时，会提示：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;MSYS2 could not be found. Please run &amp;#39;ridk install&amp;#39; or download and install MSYS2 manually from https://msys2.github.io/
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;当你执行 &lt;tt class="docutils literal"&gt;ridk install&lt;/tt&gt; 时，会显示下载 &lt;a class="reference external" href="http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20180531.exe"&gt;http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20180531.exe&lt;/a&gt; 失败，我的解决办法是用迅雷下载 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;msys2-x86_64-20180531.exe&lt;/span&gt;&lt;/tt&gt;，并用 IIS 或 Apache 等服务器，在本地配置一个站点下载，这样做需要管理员权限修改 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C:\Windows\System32\drivers\etc\hosts&lt;/span&gt;&lt;/tt&gt; 文件，临时加入一行配置：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;127.0.0.1    repo.msys2.org
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;此时确保访问 &lt;a class="reference external" href="http://127.0.0.1/distrib/x86_64/msys2-x86_64-20180531.exe"&gt;http://127.0.0.1/distrib/x86_64/msys2-x86_64-20180531.exe&lt;/a&gt; 时可以正常下载。那么再次运行 &lt;tt class="docutils literal"&gt;ridk install&lt;/tt&gt; 时，就会通过本机下载了。&lt;/p&gt;
+&lt;p&gt;然后，当 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;msys2-x86_64-20180531.exe&lt;/span&gt;&lt;/tt&gt; 下载完毕时，需要及时把上述 hosts 配置行删除，因为本机并没有 &lt;tt class="docutils literal"&gt;repo.msys2.org&lt;/tt&gt; 站点下的其他文件。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;配置 MSYS2 镜像地址&lt;/h3&gt;
+&lt;p&gt;同时，为了 MSYS2 其他包方便下载，建议配置国内镜像，分别修改下面三个文件，在配置的最上加入 清华大学 与 中科大镜像地址&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C:\msys64\etc\pacman.d\mirrorlist.mingw64&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;##
+## 64-bit Mingw-w64 repository mirrorlist
+##
+## 清华大学软件镜像
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/x86_64/
+## 中科大镜像
+Server = http://mirrors.ustc.edu.cn/msys2/mingw/x86_64/
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C:\msys64\etc\pacman.d\mirrorlist.mingw32&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;##
+## 32-bit Mingw-w64 repository mirrorlist
+##
+## 清华大学软件镜像
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/i686/
+## 中科大镜像
+Server = http://mirrors.ustc.edu.cn/msys2/mingw/i686/
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C:\msys64\etc\pacman.d\mirrorlist.msys&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;##
+## MSYS2 repository mirrorlist
+##
+## 清华大学软件镜像
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/msys/$arch/
+## 中科大镜像
+Server = http://mirrors.ustc.edu.cn/msys2/msys/$arch/
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;如果你及时删除了 hosts 文件中的配置行，那么 NSYS2 即可以顺利完成安装。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;测试 MSYS2 安装是否成功&lt;/h3&gt;
+&lt;p&gt;可以再次运行 &lt;tt class="docutils literal"&gt;ridk install&lt;/tt&gt;，命令行会打开&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RubyInstaller2 for Windows
+
+1 - MSYS2 base installation
+2 - MSYS2 system update
+3 - MSYS2 and MINGW development toolchain
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;试试 1、2、3 三个选项，如果全部没有可更新项时，就证明 MSYS2 安装已经成功了。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="gem"&gt;
+&lt;h3&gt;配置 Gem 镜像地址&lt;/h3&gt;
+&lt;p&gt;对于有价值的开源技术，国内一般都进行了镜像，一般都建议直接使用国内镜像地址。运行下面命令配置镜像&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gem sources –remove https://rubygems.org/
+gem sources -a https://ruby.taobao.org/
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;运行下面命令查看，并更新&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gem sources -l
+gem update
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="jekyll"&gt;
+&lt;h3&gt;安装 Jekyll&lt;/h3&gt;
+&lt;p&gt;下面是官方网站优雅的几行介绍&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;~ $ gem install bundler jekyll
+~ $ jekyll new my-awesome-site
+~ $ cd my-awesome-site
+~/my-awesome-site $ bundle exec jekyll serve
+# =&lt;span class="p"&gt;&amp;gt;&lt;/span&gt; Now browse to http://localhost:4000
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;有了上面步骤的铺垫，至此，Jekyll 可以优雅的运行了。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h3&gt;关于 Ruby 的感叹&lt;/h3&gt;
+&lt;p&gt;十年前，曾在 Ruby 语言通过 Web 2.0 的需求爆发时，借 Web 敏捷框架 Rails 大红大紫了解过它，对这些年一直没有再有机会使用，如果没有 Rails，Ruby 就不会红，定位于 Python 和 Perl 之间，如今它也许会有所发展，但综合来看，都会逐渐变成先前使用了 RoR 公司的技术遗产，市场上 Ruby 的技术人员也会越来越少，加上它本身并未和现在大前端、移动互联网、大数据、云计算、人工智能、VR等任何一个热点沾边，也不具备后端编译语言的规模成本优势，从系统论视角思考，没有生态，就会走向低谷，但在它擅长的 Web 领域内，还是一种有智慧的解决方案。&lt;/p&gt;
+&lt;p&gt;相比来说，经常能先于时代的 Python 的好运气并不是偶然，因为重视科研领域，它借着大数据分析和人工智能一飞冲天，如今生态广阔的 Python，相比来说就有着更稳固的护城河，这种就好比持续增长的公司拥有的竞争优势一样，更值得长期看好。所以，下面就说说 Python Web Framework：Vibora&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="widnows-vibora"&gt;
+&lt;h2&gt;Widnows 下用 Vibora&lt;/h2&gt;
+&lt;p&gt;Vibora 性能闪瞎眼，为了不让 MSYS2 环境浪费，于是尝试是否可以通过 MSYS2 将它运行起来。&lt;/p&gt;
+&lt;div class="section" id="msys2-python3"&gt;
+&lt;h3&gt;MSYS2 安装 python3&lt;/h3&gt;
+&lt;p&gt;首先，打开 MSYS2 运行 python 或 python3，提示&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-bash: python: 未找到命令
+-bash: python3: 未找到命令
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;于是我们需要在 MSYS2 中添加软件包，请出 pacman，它移植于著名 LFS ———— Arch Linux 发行版&lt;/p&gt;
+&lt;p&gt;首先，安装一些依赖和编译工具&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pacman --needed -Sy bash pacman pacman-mirrors msys2-runtime
+pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-make tmux zsh git mingw64/mingw-w64-x86_64-cmake winpty
+pacman -S mingw-w64-x86_64-python3-bsddb3 mingw-w64-x86_64-gexiv2 mingw-w64-x86_64-ghostscript mingw-w64-x86_64-python3-cairo mingw-w64-x86_64-python3-gobject mingw-w64-x86_64-python3-icu mingw-w64-x86_64-iso-codes mingw-w64-x86_64-hunspell mingw-w64-x86_64-hunspell-en mingw-w64-x86_64-enchant
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;接下来安装 python3 和 pip3&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pacman -S mingw-w64-x86_64-python3
+pacman -S python3-pip
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;此时 python3 和 pip3 已经安装，顺便把 pip3 升个级，最近它的版本号也像 Chrome 一样一发不可收拾。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip3 install --upgrade pip
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="msys2-vibora"&gt;
+&lt;h3&gt;MSYS2 安装 vibora&lt;/h3&gt;
+&lt;p&gt;再安装 vibora&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip3 install vibora
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;提示错误：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Running setup.py install for vibora ... error
+Complete output from command /usr/bin/python3 -u -c &lt;span class="s2"&gt;&amp;quot;import setuptools, toke&lt;/span&gt;
+nize;__file__=&amp;#39;/tmp/pip-install-rawskw89/vibora/setup.py&amp;#39;;f=getattr(tokenize, &amp;#39;o
+pen&amp;#39;, open)(__file__);code=f.read().replace(&amp;#39;\r\n&amp;#39;, &amp;#39;\n&amp;#39;);f.close();exec(compile
+&lt;span class="p"&gt;(&lt;/span&gt;code, __file__, &amp;#39;exec&amp;#39;&lt;span class="p"&gt;)&lt;/span&gt;)&lt;span class="s2"&gt;&amp;quot; install --record /tmp/pip-record-9rnpdvhe/install-rec&lt;/span&gt;
+ord.txt --single-version-externally-managed --compile:
+
+...
+
+unable to execute &amp;#39;x86_64-pc-msys-gcc&amp;#39;: No such file or directory
+error: command &amp;#39;x86_64-pc-msys-gcc&amp;#39; failed with exit status 1
+
+...
+
+Command &lt;span class="s2"&gt;&amp;quot;/usr/bin/python3 -u -c &amp;quot;&lt;/span&gt;import setuptools, tokenize;__file__=&amp;#39;/tmp/pip-
+install-rawskw89/vibora/setup.py&amp;#39;;f=getattr(tokenize, &amp;#39;open&amp;#39;, open)(__file__);co
+de=f.read().replace(&amp;#39;\r\n&amp;#39;, &amp;#39;\n&amp;#39;);f.close();exec(compile(code, __file__, &amp;#39;exec&amp;#39;)
+)&lt;span class="s2"&gt;&amp;quot; install --record /tmp/pip-record-9rnpdvhe/install-record.txt --single-version&lt;/span&gt;
+-externally-managed --compile&lt;span class="s2"&gt;&amp;quot; failed with error code 1 in /tmp/pip-install-raws&lt;/span&gt;
+kw89/vibora/
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;想来原因是 Vibora 依赖本地二进制程序进行异步通信。&lt;/p&gt;
+&lt;p&gt;再安装 x86_64-pc-msys-gcc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pacman -S gcc
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;之后，再次运行 &lt;tt class="docutils literal"&gt;pip3 install vibora&lt;/tt&gt;，提示&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;In file included from vibora/parsers/parser.c:4:0:
+/usr/include/python3.6m/Python.h:39:10: 致命错误：crypt.h：No such file or d
+irectory
+ #include &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;crypt.h&amp;gt;
+          &lt;span class="se"&gt;^~&lt;/span&gt;~~~~~~~
+编译中断。
+error: command &amp;#39;x86_64-pc-msys-gcc&amp;#39; failed with exit status 1
+
+----------------------------------------
+Command &lt;span class="s2"&gt;&amp;quot;/usr/bin/python3 -u -c &amp;quot;&lt;/span&gt;import setuptools, tokenize;__file__=&amp;#39;/tmp/pip-install-t22lx1u7/vibora/setup.py&amp;#39;;f=getattr(tokenize, &amp;#39;open&amp;#39;, open)(__file__);code=f.read().replace(&amp;#39;\r\n&amp;#39;, &amp;#39;\n&amp;#39;);f.close();exec(compile(code, __file__, &amp;#39;exec&amp;#39;))&lt;span class="s2"&gt;&amp;quot; install --record /tmp/pip-record-f8i8_k06/install-record.txt --single-version-externally-managed --compile&amp;quot;&lt;/span&gt; failed with error code 1 in /tmp/pip-install-t22lx1u7/vibora/
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;StackOverflow 大法好，提示缺少的 头文件 crypt.h 在 libcrypt-devel 包中，于是再安装 x86_64-pc-msys-gcc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pacman -S libcrypt-devel
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;第三次运行  &lt;tt class="docutils literal"&gt;pip3 install vibora&lt;/tt&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip3 install vibora
+Collecting vibora
+Using cached https://files.pythonhosted.org/packages/1c/db/c42998b106b89d67ce0                                            fe256320454ca224e4d3d05f56dd518514a5b738c/vibora-0.0.6.tar.gz
+Requirement already satisfied: pendulum in /usr/lib/python3.6/site-packages (from vibora) (2.0.3)
+Requirement already satisfied: python-dateutil&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;3.0,&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;=2.6 in /usr/lib/python3.6/site-packages (from pendulum-&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;vibora) (2.7.3)
+Requirement already satisfied: pytzdata&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;=2018.3 in /usr/lib/python3.6/site-packages (from pendulum-&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;vibora) (2018.5)
+Requirement already satisfied: six&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;=1.5 in /usr/lib/python3.6/site-packages (from python-dateutil&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;3.0,&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;=2.6-&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;pendulum-&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;vibora) (1.10.0)
+Installing collected packages: vibora
+Running setup.py install for vibora ... done
+Successfully installed vibora-0.0.6
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;我的天，成功了！于是试了试官方 hello-world.py&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="vibora-hello-world"&gt;
+&lt;h3&gt;运行 vibora hello world&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;vibora&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Vibora&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Request&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;vibora.responses&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;JsonResponse&lt;/span&gt;
+
+&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Vibora&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="nd"&gt;@app.route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;async&lt;/span&gt; &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;home&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Request&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;JsonResponse&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;world&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;0.0.0.0&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;8000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;xxx@yyyy MSYS /d/code/vibora
+$ python hello-world.py
+Traceback (most recent call last):
+File &lt;span class="s2"&gt;&amp;quot;hello-world.py&amp;quot;&lt;/span&gt;, line 1, in &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;module&amp;gt;
+    from vibora import Vibora, Request
+File &lt;span class="s2"&gt;&amp;quot;/usr/lib/python3.6/site-packages/vibora/__init__.py&amp;quot;&lt;/span&gt;, line 7, in &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;module&amp;gt;
+    from .server import *
+File &lt;span class="s2"&gt;&amp;quot;/usr/lib/python3.6/site-packages/vibora/server.py&amp;quot;&lt;/span&gt;, line 11, in &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;module&amp;gt;
+    from .workers.handler import RequestHandler
+File &lt;span class="s2"&gt;&amp;quot;/usr/lib/python3.6/site-packages/vibora/workers/handler.py&amp;quot;&lt;/span&gt;, line 3, in &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;module&amp;gt;
+    from socket import IPPROTO_TCP, TCP_NODELAY, SO_REUSEADDR, SOL_SOCKET, SO_REUSEPORT, socket
+ImportError: cannot import name &amp;#39;SO_REUSEPORT&amp;#39;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;google 错误提示，居然来到了 &lt;a class="reference external" href="https://github.com/vibora-io/vibora/issues/106"&gt;vibora-issues-106&lt;/a&gt;，状态是关闭的，作者 &amp;#64;frnkvieira 说 &amp;#64;zzeric 已经修复，他已合入最新版，下面又有人要求打开这个 issues，说经过测试依然存在。&lt;/p&gt;
+&lt;p&gt;&amp;#64;zzeric_ 的解决办法是升级到 python 3.7.0，我个人认为这并非一个好的办法。
+&amp;#64;danieldaeschle_ 的解决办法是 &lt;a class="reference external" href="https://github.com/vibora-io/vibora/pull/157"&gt;vibora-pull-157&lt;/a&gt; ，不过作者并未接受。&lt;/p&gt;
+&lt;p&gt;我暂时采用了 &lt;a class="reference external" href="https://github.com/danieldaeschle"&gt;danieldaeschle&lt;/a&gt; 的方法修改，再次运行，提示：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;OSError: [Errno 112] Address already in use
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;不过，此时浏览器打开 &lt;a class="reference external" href="http://localhost:8000"&gt;http://localhost:8000&lt;/a&gt; 已经可以正常显示:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+{'hello': 'world'}
+&lt;/pre&gt;
+&lt;p&gt;本文的第三部分，剩下的就是作个总结。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="windows-linux"&gt;
+&lt;h2&gt;Windows 下用 Linux 的途径&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;虚拟机&lt;/dt&gt;
+&lt;dd&gt;虚拟机是在物理宿主机上虚拟一台机器，再将 Linux 安装进去。Windows 平台的虚拟机软件也有不少选择，而且微软也内置了一种虚拟机 Hyper-V&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;类Linux / POSIX API 方案&lt;/dt&gt;
+&lt;dd&gt;这类方案是在 Windows 核心上实现一种 类Linux / POSIX 标准的中间翻译层，要么对接到 Windows 原生动态链接库，要么对接到自带的库。&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Windows Subsystem for Linux&lt;/dt&gt;
+&lt;dd&gt;这是基于市场博弈和市场的发展，微软官方基于 Hyper-V 给出了一个解决方案，这个方案可以从微软商店中下载 Linux，目前官方支持 5 种比较常见的发行版。&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;下面是我的一些理解&lt;/p&gt;
+&lt;div class="section" id="virtualbox"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://www.virtualbox.org/"&gt;VirtualBox&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在普通需求上，这是我最愿意使用的一种便携方案，比如国内银行的 usb key 只支持 Windows 时，使用虚拟机也是挺好的，适合个人。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="vmware"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://www.vmware.com/"&gt;VMWare&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;他们具备成熟的生产环境商业方案，但其实更适合开发环境和测试环境构建一套安全、灵活、可扩展的系统环境。但现在虚拟化的趋势中有所过气，XEN 算是 Linux 上对标的方案。但他们家显卡驱动实在不行。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hyper-v"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v"&gt;Hyper-V&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在虚拟微软自家系统旧版本时，这个是最佳方案，一些微软自家新技术，也是以此虚拟机发布的。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="docker"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://www.docker.com/"&gt;Docker&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;它不是虚拟机，但是目前很不错的容器虚拟化技术，但它需要 Widnows Pro 版本以上，且不能与 VirtualBox 和 VMWare 及一些 Android 模拟器共存。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cygwin-mingw"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://www.cygwin.com/"&gt;Cygwin&lt;/a&gt; &amp;amp; &lt;a class="reference external" href="http://www.mingw.org/"&gt;MinGW&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Cygwin 通过动态链接库 cygwin1.dll，提供一个 POSIX API 子集，编译出 Linux 下的程序通过这个库对接 Windows 底层动态链接库。&lt;/p&gt;
+&lt;p&gt;MinGW 是 GCC 在 Windows 的实现，通过编译器，把诸如 Linux 系统调用 如 fork 翻译成 Windows API 如 CreateProcess 这样。这种没有引入运行时的中间层，会比 Cygwin 更紧凑。&lt;/p&gt;
+&lt;p&gt;通俗的说 Cygwin 属于运行时适配，MinGW 属于编译时转化，从技术纯粹来说，我更喜欢 MinGW，但对于绝大多数小的程序，Cygwin 虽然多了中间层，但可移植性比 MinGW 强。&lt;/p&gt;
+&lt;p&gt;跨平台属于商业鸿沟，技术上也是一个复杂问题，之所以跨平台这个问题这么难，是因为平台差异导致的，比如可执行文件格式差异，Windows 是 PE 文件，Linux 是 ELF 文件，于是需要分别编译。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="msys-msys2"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="http://www.mingw.org/wiki/MSYS"&gt;MSYS&lt;/a&gt; &amp;amp; &lt;a class="reference external" href="http://www.msys2.org/"&gt;MSYS2&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;MSYS 这个项目，由多年前的 MinGW 团队开始，并成为 Cygwin 的一个分支，一个从来没有跟上 Cygwin 发展的分支，目前已不活跃，如果有选择，请选择 MSYS2。&lt;/p&gt;
+&lt;p&gt;MSYS2 是 MSYS 的一个升级版，它集成了 pacman 和 &lt;a class="reference external" href="http://mingw-w64.org/"&gt;Mingw-w64&lt;/a&gt; 的 Cygwin 升级版, 提供了 Bash 等 Linux 环境、版本控制软件（Git/hg）和 MinGW-w64 工具链。
+它是由 mingw-builds 团队（也是MinGW-w64工具链的官方包装商）的 Alexey Pavlov 开发的一个项目，密切更新到最新的 Cygwin，使其不会过时。&lt;/p&gt;
+&lt;p&gt;MSYS2 不完全是基于 MinGW 的，至少其原生工具都是链接到自带的一套特定版本的 Cygwin DLL ，基本上只是用 libalpm 管理 MSYS2、MinGW-w64 和 MinGW 三个不同子系统的软件包。
+Cygwin、MSYS 和 Git for Windows（前称 msysgit）里各有一套 Cygwin DLL 而且互不兼容，而 MinGW 那两个子系统都不需要链接到任何版本的 Cygwin DLL。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="windows-subsystem-for-linux"&gt;
+&lt;h3&gt;&lt;a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/about"&gt;Windows Subsystem for Linux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;下载安装都很容易，可以在 Windows Store 下载，其中的坑在评论中都已解决。&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;用户可以使用 Linux 常见工具：grep, sed, awk, Bash, vim, emacs, tmux 等&lt;/li&gt;
+&lt;li&gt;可以支持很多运行时：Javascript/node.js, Ruby, Python, C/C++, C# &amp;amp; F#, Rust, Go&lt;/li&gt;
+&lt;li&gt;以及很多 Linux 的服务端软件：sshd, MySQL, Apache, lighttpd&lt;/li&gt;
+&lt;li&gt;还可以使用包管理器，如 apt-get 等&lt;/li&gt;
+&lt;li&gt;支持 Linux 和 Windows 程序的双向调用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我有安装过 WSL Ubuntu，其性能不高，图形包等并未尝试，相比虚拟机，觉得目前不具太大意义。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;总结&lt;/h2&gt;
+&lt;p&gt;总的来说，本文讲了 Windows 下用 Linux 的两个例子，再总结了一些 Windows 下 使用 Linux 的方法，整体内容很多。&lt;/p&gt;
+&lt;p&gt;最后来说，一个更好的方案可能是一台高配 macOS 运行 Parallels Desktop，再其中运行 Windows ;)&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="technology"></category><category term="windows"></category><category term="linux"></category><category term="jekyll"></category><category term="ruby"></category><category term="msys2"></category><category term="vibora"></category><category term="cygwin"></category><category term="mingw"></category><category term="virtualpc"></category><category term="vmware"></category><category term="docker"></category><category term="msys"></category><category term="msysgit"></category></entry><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-06T22:00:00+08:00</published><updated>2018-08-06T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="windows-nodejs"&gt;
 &lt;h2&gt;在 Windows 下安装 nodejs&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
