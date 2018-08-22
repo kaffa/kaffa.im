@@ -74,7 +74,7 @@ Server = http://mirrors.ustc.edu.cn/msys2/msys/$arch/
 &lt;div class="section" id="gem"&gt;
 &lt;h3&gt;配置 Gem 镜像地址&lt;/h3&gt;
 &lt;p&gt;对于有价值的开源技术，国内一般都进行了镜像，一般都建议直接使用国内镜像地址。运行下面命令配置镜像&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gem sources –remove https://rubygems.org/
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gem sources –r https://rubygems.org/
 gem sources -a https://ruby.taobao.org/
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;运行下面命令查看，并更新&lt;/p&gt;
@@ -292,14 +292,14 @@ Cygwin、MSYS 和 Git for Windows（前称 msysgit）里各有一套 Cygwin DLL 
 &lt;p&gt;总的来说，本文讲了 Windows 下用 Linux 的两个例子，再总结了一些 Windows 下 使用 Linux 的方法，整体内容很多。&lt;/p&gt;
 &lt;p&gt;最后来说，一个更好的方案可能是一台高配 macOS 运行 Parallels Desktop，再其中运行 Windows ;)&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="windows"></category><category term="linux"></category><category term="jekyll"></category><category term="ruby"></category><category term="msys2"></category><category term="vibora"></category><category term="cygwin"></category><category term="mingw"></category><category term="virtualpc"></category><category term="vmware"></category><category term="docker"></category><category term="msys"></category><category term="msysgit"></category></entry><entry><title>为博客添加评论系统</title><link href="https://kaffa.im/add-comments-system-to-my-blog.html" rel="alternate"></link><published>2018-08-10T12:20:00+08:00</published><updated>2018-08-10T12:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-10:/add-comments-system-to-my-blog.html</id><summary type="html">&lt;p class="first last"&gt;为博客添加评论系统&lt;/p&gt;
+</content><category term="Technology"></category><category term="Windows"></category><category term="Linux"></category><category term="Jekyll"></category><category term="Ruby"></category><category term="MSYS2"></category><category term="Vibora"></category><category term="Cygwin"></category><category term="MinGW"></category><category term="Virtualpc"></category><category term="VMWare"></category><category term="Docker"></category><category term="MSYS"></category><category term="msysgit"></category></entry><entry><title>为博客添加评论系统</title><link href="https://kaffa.im/add-comments-system-to-my-blog.html" rel="alternate"></link><published>2018-08-10T12:20:00+08:00</published><updated>2018-08-10T12:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-10:/add-comments-system-to-my-blog.html</id><summary type="html">&lt;p class="first last"&gt;为博客添加评论系统&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;评论系统&lt;/h2&gt;
 &lt;p&gt;通俗地说，不同人在一起评论一个事时，就像对混沌系统作预测，最可能的结果就是一团糟。
 好在评论系统有效的过滤了人群，原来的多说，网易云跟帖，以及被蔷的 &lt;a class="reference external" href="https://www.disqus.com/"&gt;Disqus&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;时下，如果想欣赏真正的“杠精”，要去“即刻”看评论，去网易新闻看跟帖；因为 &lt;a class="reference external" href="https://www.disqus.com/"&gt;Disqus&lt;/a&gt; 不存在，
 Google &lt;a class="reference external" href="https://firebase.google.com/"&gt;Firebase&lt;/a&gt; 方案也不存在，那 GitHub 静态博客的评论，就剩下几个为数不多的免费方案，
-例如 &lt;a class="reference external" href="https://github.com/imsun/gitment"&gt;gitment&lt;/a&gt; 和 &lt;a class="reference external" href="https://github.com/gitalk/gitalk"&gt;gitalk&lt;/a&gt;，gitment 是鼻祖，gitalk 是后来者，看起来两者差不太多，
+例如 &lt;a class="reference external" href="https://github.com/imsun/gitment"&gt;Gitment&lt;/a&gt; 和 &lt;a class="reference external" href="https://github.com/gitalk/gitalk"&gt;Gitalk&lt;/a&gt;，gitment 是鼻祖，gitalk 是后来者，看起来两者差不太多，
 相当于利用 GitHub 应用授权 api 编写了一个跨域提 issue 的客户端。&lt;/p&gt;
 &lt;p&gt;论安全性，这种做法的安全前提是服务端对提交信息的安全验证，且有人已提交一个次级域名利用方式。
 但我相信伪造评论、越权访问普通人的私有库并无太大价值，这其中只见伤害，并无收益。
@@ -336,7 +336,7 @@ gitalk.render('gitalk-container');
 &lt;li&gt;2018-08-10，添加 gitalk 评论系统。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="life"></category><category term="blog"></category><category term="pelican"></category><category term="gitalk"></category><category term="gitment"></category></entry><entry><title>更新博客主题</title><link href="https://kaffa.im/update-my-new-blog-s-theme.html" rel="alternate"></link><published>2018-08-07T08:20:00+08:00</published><updated>2018-08-07T08:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-07:/update-my-new-blog-s-theme.html</id><summary type="html">&lt;p class="first last"&gt;更新博客主题&lt;/p&gt;
+</content><category term="Life"></category><category term="My Blog"></category><category term="Pelican"></category><category term="Gitalk"></category><category term="Gitment"></category></entry><entry><title>更新博客主题</title><link href="https://kaffa.im/update-my-new-blog-s-theme.html" rel="alternate"></link><published>2018-08-07T08:20:00+08:00</published><updated>2018-08-07T08:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-07:/update-my-new-blog-s-theme.html</id><summary type="html">&lt;p class="first last"&gt;更新博客主题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;关于本博客&lt;/h2&gt;
 &lt;p&gt;2018-06-06，开始这个新博客&lt;/p&gt;
@@ -345,7 +345,7 @@ gitalk.render('gitalk-container');
 pelican-octopress-theme-cn_
 &lt;/pre&gt;
 &lt;/div&gt;
-</content><category term="life"></category><category term="blog"></category><category term="pelican-octopress-theme"></category><category term="pelican-octopress-theme-cn"></category></entry><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-06T22:00:00+08:00</published><updated>2018-08-06T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
+</content><category term="Life"></category><category term="My Blog"></category><category term="Pelican Octopress Theme"></category><category term="pelican-octopress-theme-cn"></category></entry><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-06T22:00:00+08:00</published><updated>2018-08-06T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="windows-nodejs"&gt;
 &lt;h2&gt;在 Windows 下安装 nodejs&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -404,7 +404,7 @@ npm ERR! enoent
 &lt;/pre&gt;
 &lt;p&gt;另外，当然也可以参考官方文档 &lt;a class="reference external" href="https://docs.npmjs.com/files/folders"&gt;npm-folders&lt;/a&gt;，但可能有更新不及时，node 社区还年轻且贡献者有很多个人，有时并不太照顾 Windows 平台，这点不比 python 社区发展了那么久，且那么多机构贡献者。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="node"></category><category term="windows"></category><category term="path"></category></entry><entry><title>关于 NW.js 与 Electron 的技术选择</title><link href="https://kaffa.im/nwjs-and-electron-how-to-choose.html" rel="alternate"></link><published>2018-08-06T12:00:00+08:00</published><updated>2018-08-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/nwjs-and-electron-how-to-choose.html</id><summary type="html">&lt;p class="first last"&gt;本文顺便写上 NW.js 与 Electron 的技术选择和一些无关的文字&lt;/p&gt;
+</content><category term="Technology"></category><category term="Node"></category><category term="Node.js"></category><category term="Windows"></category><category term="Path"></category></entry><entry><title>关于 NW.js 与 Electron 的技术选择</title><link href="https://kaffa.im/nwjs-and-electron-how-to-choose.html" rel="alternate"></link><published>2018-08-06T12:00:00+08:00</published><updated>2018-08-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/nwjs-and-electron-how-to-choose.html</id><summary type="html">&lt;p class="first last"&gt;本文顺便写上 NW.js 与 Electron 的技术选择和一些无关的文字&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;技术选择&lt;/h2&gt;
 &lt;p&gt;这么多年，我很少写技术博文，通常记录的目的都是归于实用，即遇到一个问题，然后给予解决。原则是，不从问题作无止的延伸，但给予一个清晰的解答。之所以有此原则，是因实用主义，因生命有限，无法耗时在细节上，细节是熵递增，与生命的目的刚好相反。&lt;/p&gt;
@@ -459,7 +459,7 @@ npm ERR! enoent
 &lt;p&gt;四维生物，二不行，但三基本就够了。其实已经说完了。&lt;/p&gt;
 &lt;p&gt;“人往往需要说很多话，然后才能归入潜默。” 是有此篇。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="psychology"></category><category term="philosophy"></category><category term="nw.js"></category><category term="electron"></category></entry><entry><title>关于文本二维码这件小事</title><link href="https://kaffa.im/a-story-about-text-qrcode.html" rel="alternate"></link><published>2018-07-27T12:00:00+08:00</published><updated>2018-07-27T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-27:/a-story-about-text-qrcode.html</id><summary type="html">&lt;p class="first last"&gt;本文随意聊聊文本二维码&lt;/p&gt;
+</content><category term="Technology"></category><category term="Psychology"></category><category term="Philosophy"></category><category term="NW.js"></category><category term="Electron"></category></entry><entry><title>关于文本二维码这件小事</title><link href="https://kaffa.im/a-story-about-text-qrcode.html" rel="alternate"></link><published>2018-07-27T12:00:00+08:00</published><updated>2018-07-27T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-27:/a-story-about-text-qrcode.html</id><summary type="html">&lt;p class="first last"&gt;本文随意聊聊文本二维码&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;文本二维码&lt;/h2&gt;
 &lt;p&gt;简单讲，二维码是一个算法，可以把信息编码为0和1，也就是白和黑，也就是常见的二维码。大多情况下，二维码用一个方形的图片表达，可以跨各种介质传播。&lt;/p&gt;
@@ -490,7 +490,7 @@ npm ERR! enoent
 &lt;p&gt;当然，能否扫描出结果，也取决于扫描时的容差。&lt;/p&gt;
 &lt;p&gt;在 Windows 平台，如果终端控制台中出现文本二维码散乱情况，请调整控制台字体为等宽字体，或者打开记事本，字体选择为：Lucida Console 5号字，再进行全选，即可显示出可扫描的二维码。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="QRCode"></category></entry><entry><title>在 Windows 10 下安装 Wechaty</title><link href="https://kaffa.im/wechaty-installation-in-windows-10.html" rel="alternate"></link><published>2018-07-24T12:00:00+08:00</published><updated>2018-07-24T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-24:/wechaty-installation-in-windows-10.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的细节&lt;/p&gt;
+</content><category term="Technology"></category><category term="QRCode"></category><category term="Text QRCode"></category></entry><entry><title>在 Windows 10 下安装 Wechaty</title><link href="https://kaffa.im/wechaty-installation-on-windows-10.html" rel="alternate"></link><published>2018-07-24T12:00:00+08:00</published><updated>2018-07-24T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-24:/wechaty-installation-on-windows-10.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的细节&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;介绍&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/Chatie/wechaty"&gt;Wechaty&lt;/a&gt; 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 &lt;tt class="docutils literal"&gt;git clone&lt;/tt&gt; 源代码，再使用 node 的 npm 命令 &lt;tt class="docutils literal"&gt;npm install &amp;amp; npm start&lt;/tt&gt; 实现开箱即用，同时官方也提供了入门案例：&lt;a class="reference external" href="https://github.com/Chatie/wechaty-getting-started"&gt;Wechaty getting started&lt;/a&gt;。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：&lt;/p&gt;
@@ -855,7 +855,7 @@ npm install &amp;amp; npm start
 解决办法基本上一一查阅上述出现错误的软件的文档，应该可以独立解决。&lt;/p&gt;
 &lt;p&gt;当然，如果你遇到了任何其他问题，也欢迎 &lt;a class="reference external" href="https://github.com/kaffa"&gt;我的Github&lt;/a&gt; 上联系我。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="wechaty"></category><category term="node"></category><category term="open source"></category></entry><entry><title>用 VSCode 预览 reStructureText 文件</title><link href="https://kaffa.im/preview-restructuretext-file-in-vscode.html" rel="alternate"></link><published>2018-07-18T12:30:00+08:00</published><updated>2018-07-18T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-18:/preview-restructuretext-file-in-vscode.html</id><summary type="html">&lt;p class="first last"&gt;本文描述用 VSCode 预览 reStructureText 文件的配置办法&lt;/p&gt;
+</content><category term="Technology"></category><category term="Wechaty"></category><category term="Node"></category><category term="Node.js"></category><category term="Open Source"></category></entry><entry><title>用 VSCode 预览 reStructureText 文件</title><link href="https://kaffa.im/preview-restructuretext-file-in-vscode.html" rel="alternate"></link><published>2018-07-18T12:30:00+08:00</published><updated>2018-07-18T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-18:/preview-restructuretext-file-in-vscode.html</id><summary type="html">&lt;p class="first last"&gt;本文描述用 VSCode 预览 reStructureText 文件的配置办法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;通识&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -904,7 +904,7 @@ Makefile
 &lt;li&gt;最后提供一份快速参考 &lt;a class="reference external" href="http://www.pythondoc.com/sphinx/rest.html"&gt;sphinx-rest&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="VSCode"></category><category term="reStructureText"></category></entry><entry><title>Windows 下安装 Wechaty 的注意点(keng)</title><link href="https://kaffa.im/install-wechaty-on-windows.html" rel="alternate"></link><published>2018-07-17T12:00:00+08:00</published><updated>2018-07-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-17:/install-wechaty-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的注意点(keng)&lt;/p&gt;
+</content><category term="Technology"></category><category term="VSCode"></category><category term="reStructureText"></category></entry><entry><title>Windows 下安装 Wechaty 的注意点(keng)</title><link href="https://kaffa.im/install-wechaty-on-windows.html" rel="alternate"></link><published>2018-07-17T12:00:00+08:00</published><updated>2018-07-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-17:/install-wechaty-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的注意点(keng)&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;摘要&lt;/h2&gt;
 &lt;p&gt;本文对于在 Windows 下安装 &lt;a class="reference external" href="https://github.com/Chatie/wechaty"&gt;Wechaty&lt;/a&gt; 的坑作个临时记录，但其中涉及的处理方式随着项目的升级或依赖软件的升级可能会变得不再需要。&lt;/p&gt;
@@ -935,7 +935,7 @@ PYTHON=c:\Python27\python.exe&lt;/dd&gt;
 &lt;li&gt;已经 2018 年了，大部分库都用 six 支持了 Python 2 和 3 版本，很多人都转到 Python 3.6+，对于安装时出现 Python 相关的错误时，可能不会想到是 node-gyp 依赖 Python 2.7 的原因。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="wechaty"></category><category term="node"></category></entry><entry><title>升级 CentOS Linux Kernel</title><link href="https://kaffa.im/update-centos-linux-kernel.html" rel="alternate"></link><published>2018-07-06T13:00:00+08:00</published><updated>2018-07-06T13:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-06:/update-centos-linux-kernel.html</id><summary type="html">&lt;p class="first last"&gt;本文描述升级 CentOS Linux Kernel 的方法&lt;/p&gt;
+</content><category term="Technology"></category><category term="Wechaty"></category><category term="Node"></category><category term="Node.js"></category></entry><entry><title>升级 CentOS Linux Kernel</title><link href="https://kaffa.im/update-centos-linux-kernel.html" rel="alternate"></link><published>2018-07-06T13:00:00+08:00</published><updated>2018-07-06T13:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-06:/update-centos-linux-kernel.html</id><summary type="html">&lt;p class="first last"&gt;本文描述升级 CentOS Linux Kernel 的方法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;升级 CentOS Linux Kernel 的方法&lt;/h2&gt;
 &lt;p&gt;升级命令:&lt;/p&gt;
@@ -985,7 +985,7 @@ yum autoremove kernel-.el7.x86_64
 &lt;li&gt;&lt;a class="reference external" href="https://www.elrepo.org"&gt;https://www.elrepo.org&lt;/a&gt; 和 &lt;a class="reference external" href="https://kernelnewbies.org"&gt;https://kernelnewbies.org&lt;/a&gt; 可能对你有用。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="CentOS"></category><category term="Linux Kernel"></category></entry><entry><title>在 Linux 上安装 VSCode 遇到的问题和解决思路</title><link href="https://kaffa.im/install-vscode-on-linux-error.html" rel="alternate"></link><published>2018-07-05T12:30:00+08:00</published><updated>2018-07-05T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-05:/install-vscode-on-linux-error.html</id><summary type="html">&lt;p class="first last"&gt;本文描述在 Linux 上安装 VSCode 遇到的问题和解决思路&lt;/p&gt;
+</content><category term="Technology"></category><category term="CentOS"></category><category term="Linux Kernel"></category></entry><entry><title>在 Linux 上安装 VSCode 遇到的问题和解决思路</title><link href="https://kaffa.im/install-vscode-on-linux-error.html" rel="alternate"></link><published>2018-07-05T12:30:00+08:00</published><updated>2018-07-05T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-05:/install-vscode-on-linux-error.html</id><summary type="html">&lt;p class="first last"&gt;本文描述在 Linux 上安装 VSCode 遇到的问题和解决思路&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;为什么在 Linux 上安装 VSCode？&lt;/h2&gt;
 &lt;p&gt;近期计划使用搭建 telegram bot，了解原理后，发现是基本的 http 开发。&lt;/p&gt;
@@ -1037,7 +1037,7 @@ Error downloading packages:  libXScrnSaver-1.2.2-6.1.el7.x86_64
 &lt;p&gt;于是这个包依赖问题可以从 &lt;a class="reference external" href="http://mirror.centos.org/centos-7/7.4.1708/readme"&gt;CentOS 7.4.1708 readme&lt;/a&gt; 得到解答，即 &lt;a class="reference external" href="https://kaffa.im/update-centos-linux-kernel/"&gt;升级 CentOS 7.4 到 CentOS 7.5&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;升级完成后，再次运行 &lt;tt class="docutils literal"&gt;sudo yum install code&lt;/tt&gt;，即成功。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category><category term="CentOS"></category><category term="VSCode"></category></entry><entry><title>数据与信息的描述与差别</title><link href="https://kaffa.im/data-vs-information.html" rel="alternate"></link><published>2018-06-28T10:55:00+08:00</published><updated>2018-06-28T10:55:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-28:/data-vs-information.html</id><summary type="html">&lt;p class="first last"&gt;本文描述数据和信息两个概念的差别&lt;/p&gt;
+</content><category term="Technology"></category><category term="CentOS"></category><category term="VSCode"></category><category term="Linux"></category></entry><entry><title>数据与信息的描述与差别</title><link href="https://kaffa.im/data-vs-information.html" rel="alternate"></link><published>2018-06-28T10:55:00+08:00</published><updated>2018-06-28T10:55:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-28:/data-vs-information.html</id><summary type="html">&lt;p class="first last"&gt;本文描述数据和信息两个概念的差别&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;编写文档时，大家常把 &lt;strong&gt;数据&lt;/strong&gt; 和 &lt;strong&gt;信息&lt;/strong&gt; 两个词混用，如管理信息系统（Management Information System）、数据导入（Data Import）等，可见，日常大家并不太在意两者的区别。&lt;/p&gt;
 &lt;div class="section" id="id2"&gt;
 &lt;h2&gt;描述&lt;/h2&gt;
@@ -1051,7 +1051,7 @@ Error downloading packages:  libXScrnSaver-1.2.2-6.1.el7.x86_64
 &lt;p&gt;在语言的发展中，可能有一些约定的说法，比如“大数据时代”、“信息大爆炸”，从这些词也可以大概分出，由原始的数据可以组织出更可观的信息。&lt;/p&gt;
 &lt;p&gt;数据和信息是讨论很多问题时的基础，因此有此篇。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category></entry><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="https://kaffa.im/vscode-restructuredtext.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-20:/vscode-restructuredtext.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
+</content><category term="Technology"></category><category term="Data"></category><category term="Information"></category></entry><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="https://kaffa.im/vscode-restructuredtext.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-20:/vscode-restructuredtext.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;问题出现的场景&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
@@ -1087,7 +1087,7 @@ pip install doc8
 &lt;p&gt;我的理解是，这个最大行宽在 *.rst 文件中不建议设置太大，大约每行最多 80 个字符就差不多了，
 这个和可维护性代码的最佳实践是一致的。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category></entry><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="https://kaffa.im/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2018-06-19T17:17:00+08:00</published><updated>2018-06-19T17:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-19:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
+</content><category term="Technology"></category><category term="VSCode"></category><category term="reStructuredText"></category><category term="rst"></category></entry><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="https://kaffa.im/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2018-06-19T17:17:00+08:00</published><updated>2018-06-19T17:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-19:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;添加独立域名的步骤&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -1106,7 +1106,7 @@ pip install doc8
 &lt;p&gt;在 Github 仓库 master 的根目录下添加一个名称为 &lt;strong&gt;CNAME&lt;/strong&gt; 的文件，文件内容为你注册的域名。
 例如，在 kaffa.github.io 仓库 master 的根目录新建一个 &lt;a class="reference external" href="https://github.com/kaffa/kaffa.github.io/blob/master/CNAME"&gt;CNAME&lt;/a&gt; 文件，文件内容为 kaffa.im，刷新刚才的 404 页面即打开了原先的 kaffa.github.io 站点&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="technology"></category></entry><entry><title>解决编程领域难题的有效方法</title><link href="https://kaffa.im/the-effective-way-to-find-answers-to-programming-questions.html" rel="alternate"></link><published>2018-06-18T02:22:00+08:00</published><updated>2018-06-18T02:22:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-18:/the-effective-way-to-find-answers-to-programming-questions.html</id><summary type="html">&lt;p&gt;解决编程领域难题的有效方法是推演和搜索&lt;/p&gt;</summary><content type="html">&lt;h2&gt;为什么会有编程领域的难题？&lt;/h2&gt;
+</content><category term="Technology"></category><category term="Custom Domain"></category><category term="GitHub Pages"></category></entry><entry><title>解决编程领域难题的有效方法</title><link href="https://kaffa.im/the-effective-way-to-find-answers-to-programming-problems.html" rel="alternate"></link><published>2018-06-18T02:22:00+08:00</published><updated>2018-06-18T02:22:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-18:/the-effective-way-to-find-answers-to-programming-problems.html</id><summary type="html">&lt;p&gt;解决编程领域难题的有效方法是推演和搜索&lt;/p&gt;</summary><content type="html">&lt;h2&gt;为什么会有编程领域的难题？&lt;/h2&gt;
 &lt;p&gt;现实世界很复杂，编程是世界的抽象和理想模型，理想和现实的差距存在于细节上，编程经常会遇到这些细节带来的鸿沟。&lt;/p&gt;
 &lt;h2&gt;解决编程领域难题的有效方法是什么？&lt;/h2&gt;
 &lt;ol&gt;
@@ -1274,7 +1274,7 @@ pip install doc8
 &lt;p&gt;搜索
     除了依赖自我，更多的是依赖外部&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content><category term="technology"></category></entry><entry><title>新博客</title><link href="https://kaffa.im/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
+&lt;/ol&gt;</content><category term="Technology"></category><category term="Technology Category"></category><category term="Problems Solving"></category></entry><entry><title>新博客</title><link href="https://kaffa.im/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;关于本博客&lt;/h2&gt;
 &lt;p&gt;2016-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。&lt;/p&gt;
@@ -1302,4 +1302,4 @@ pip install doc8
 &lt;li&gt;添加一些需要 &lt;a class="reference external" href="https://github.com/getpelican/pelican-plugins"&gt;Pelican plugins&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</content><category term="life"></category></entry></feed>
+</content><category term="Life"></category><category term="My Blog"></category></entry></feed>

@@ -6,7 +6,7 @@
 好在评论系统有效的过滤了人群，原来的多说，网易云跟帖，以及被蔷的 &lt;a class="reference external" href="https://www.disqus.com/"&gt;Disqus&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;时下，如果想欣赏真正的“杠精”，要去“即刻”看评论，去网易新闻看跟帖；因为 &lt;a class="reference external" href="https://www.disqus.com/"&gt;Disqus&lt;/a&gt; 不存在，
 Google &lt;a class="reference external" href="https://firebase.google.com/"&gt;Firebase&lt;/a&gt; 方案也不存在，那 GitHub 静态博客的评论，就剩下几个为数不多的免费方案，
-例如 &lt;a class="reference external" href="https://github.com/imsun/gitment"&gt;gitment&lt;/a&gt; 和 &lt;a class="reference external" href="https://github.com/gitalk/gitalk"&gt;gitalk&lt;/a&gt;，gitment 是鼻祖，gitalk 是后来者，看起来两者差不太多，
+例如 &lt;a class="reference external" href="https://github.com/imsun/gitment"&gt;Gitment&lt;/a&gt; 和 &lt;a class="reference external" href="https://github.com/gitalk/gitalk"&gt;Gitalk&lt;/a&gt;，gitment 是鼻祖，gitalk 是后来者，看起来两者差不太多，
 相当于利用 GitHub 应用授权 api 编写了一个跨域提 issue 的客户端。&lt;/p&gt;
 &lt;p&gt;论安全性，这种做法的安全前提是服务端对提交信息的安全验证，且有人已提交一个次级域名利用方式。
 但我相信伪造评论、越权访问普通人的私有库并无太大价值，这其中只见伤害，并无收益。
@@ -43,7 +43,7 @@ gitalk.render('gitalk-container');
 &lt;li&gt;2018-08-10，添加 gitalk 评论系统。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="life"></category><category term="blog"></category><category term="pelican"></category><category term="gitalk"></category><category term="gitment"></category></entry><entry><title>更新博客主题</title><link href="https://kaffa.im/update-my-new-blog-s-theme.html" rel="alternate"></link><published>2018-08-07T08:20:00+08:00</published><updated>2018-08-07T08:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-07:/update-my-new-blog-s-theme.html</id><summary type="html">&lt;p class="first last"&gt;更新博客主题&lt;/p&gt;
+</content><category term="Life"></category><category term="My Blog"></category><category term="Pelican"></category><category term="Gitalk"></category><category term="Gitment"></category></entry><entry><title>更新博客主题</title><link href="https://kaffa.im/update-my-new-blog-s-theme.html" rel="alternate"></link><published>2018-08-07T08:20:00+08:00</published><updated>2018-08-07T08:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-07:/update-my-new-blog-s-theme.html</id><summary type="html">&lt;p class="first last"&gt;更新博客主题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;关于本博客&lt;/h2&gt;
 &lt;p&gt;2018-06-06，开始这个新博客&lt;/p&gt;
@@ -52,7 +52,7 @@ gitalk.render('gitalk-container');
 pelican-octopress-theme-cn_
 &lt;/pre&gt;
 &lt;/div&gt;
-</content><category term="life"></category><category term="blog"></category><category term="pelican-octopress-theme"></category><category term="pelican-octopress-theme-cn"></category></entry><entry><title>新博客</title><link href="https://kaffa.im/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
+</content><category term="Life"></category><category term="My Blog"></category><category term="Pelican Octopress Theme"></category><category term="pelican-octopress-theme-cn"></category></entry><entry><title>新博客</title><link href="https://kaffa.im/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;关于本博客&lt;/h2&gt;
 &lt;p&gt;2016-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。&lt;/p&gt;
@@ -80,4 +80,4 @@ pelican-octopress-theme-cn_
 &lt;li&gt;添加一些需要 &lt;a class="reference external" href="https://github.com/getpelican/pelican-plugins"&gt;Pelican plugins&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</content><category term="life"></category></entry></feed>
+</content><category term="Life"></category><category term="My Blog"></category></entry></feed>
