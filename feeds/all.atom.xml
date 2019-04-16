@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2018-08-14T12:00:00+08:00</updated><entry><title>Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux</title><link href="https://kaffa.im/jekyll-msys2-vibora-and-use-linux-on-windows.html" rel="alternate"></link><published>2018-08-14T12:00:00+08:00</published><updated>2018-08-14T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-14:/jekyll-msys2-vibora-and-use-linux-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文聊聊 Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux 的话题&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kaFFa fORest</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-04-17T12:00:00+08:00</updated><entry><title>关于滑块验证码的思路</title><link href="https://kaffa.im/some-thoughts-on-reCAPTCHA.html" rel="alternate"></link><published>2019-04-17T12:00:00+08:00</published><updated>2019-04-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-04-17:/some-thoughts-on-reCAPTCHA.html</id><summary type="html">&lt;p class="first last"&gt;本文描述关于自动通过滑块验证码验证的思路&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;图灵测试&lt;/h2&gt;
+&lt;p&gt;图灵测试是一个著名的思想实验，它要解决的问题是如何判断一台机器是否具有智能。&lt;/p&gt;
+&lt;p&gt;简单的讲，就是把判定对象看做黑盒，人与其它对话，如果人分辨不出被判定对象是否是机器的话，就算它通过了图灵测试。&lt;/p&gt;
+&lt;p&gt;而“中文屋”思想实验，即呈现了图灵测试的局限————即使机器实现了智能外在的输入输出，也不一定算具备智能。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;滑块验证码&lt;/h2&gt;
+&lt;p&gt;软件安全技术的攻击与防守就好比矛和盾，随着技术的更新，此消彼长。&lt;/p&gt;
+&lt;p&gt;由于自动化技术的发展，脚本加本地代码已可以解决没有技术门槛的人类验证。二十年前，只要懂脚本，就可以让计算机自动做很多事；十六年前，Luis 在发明了验证码，
+我也曾在 Google Code 中下载 &lt;a class="reference external" href="https://code.google.com/archive/p/tesseract-ocr/"&gt;tesseract-ocr&lt;/a&gt; 以解决中文验证码，但 Gooogle 的 reCAPTCHA 确实很扭曲，却是鲜有人破解。&lt;/p&gt;
+&lt;p&gt;但随着 AI 机器学习技术的发展，扭曲文字的自动识别难点已被攻破。在多年前的某天，滑块验证码出现了，技术社区讨论如火如荼。&lt;/p&gt;
+&lt;p&gt;稍微几年未关注，这个领域除了巨头，还产出了 API 售卖 reCAPTCHA 的小而美的公司，比如`极验`_。&lt;/p&gt;
+&lt;p&gt;GitHub 中也有不少破解其旧版本的代码，虽然没有查看其新版本，但可以简单谈谈绕过的思路。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;解决思路&lt;/h2&gt;
+&lt;p&gt;可以从网络层、系统层和用户层来考虑&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;网络层：此类验证，最后发送的数据一定需要加密，难点在于对付 js 的混淆，通过单步调试找到加密前的数据。理解数据，或直接采集多组数据，再模拟发送即可。这一种思路对耐心的要求很高。&lt;/li&gt;
+&lt;li&gt;系统层：通过程序抓图和图像运算比对，计算出键盘鼠标的操作即可，这一种相对比较容易，但速度不如网络层解决快。&lt;/li&gt;
+&lt;li&gt;用户层：采用软硬件结合的极客思路，用摄像头进行视觉采集，用机器手操纵鼠标，完全模拟一个有智能的会操作键盘和鼠标的人，这种可能是最一劳永逸，但门槛最高的思路。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="Tech"></category><category term="GeeTest"></category></entry><entry><title>Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux</title><link href="https://kaffa.im/jekyll-msys2-vibora-and-use-linux-on-windows.html" rel="alternate"></link><published>2018-08-14T12:00:00+08:00</published><updated>2018-08-14T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-14:/jekyll-msys2-vibora-and-use-linux-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文聊聊 Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux 的话题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;故事&lt;/h2&gt;
 &lt;p&gt;故事开始于我需要在 Windows 下用 Jekyll 转化一篇 Markdown 的博文，于是在 Windows 下安装了 Jekyll，其中涉及一些 MSYS2 的安装坑。
