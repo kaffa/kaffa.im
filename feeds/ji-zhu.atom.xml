@@ -3,8 +3,8 @@
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;图灵测试&lt;/h2&gt;
 &lt;p&gt;图灵测试是一个著名的思想实验，它要解决的问题是如何判断一台机器是否具有智能。&lt;/p&gt;
-&lt;p&gt;简单的讲，就是把判定对象看做黑盒，人与其它对话，如果人分辨不出被判定对象是否是机器的话，就算它通过了图灵测试。&lt;/p&gt;
-&lt;p&gt;而“中文屋”思想实验，即呈现了图灵测试的局限————即使机器实现了智能外在的输入输出，也不一定算具备智能。&lt;/p&gt;
+&lt;p&gt;简单的讲，就是把判定对象看做黑盒，人与其对话，如果人分辨不出被判定对象是否是机器的话，就算它通过了图灵测试。&lt;/p&gt;
+&lt;p&gt;而“&lt;a class="reference external" href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4"&gt;中文房间&lt;/a&gt;”思想实验，即呈现了图灵测试的局限——即使机器实现了智能外在的输入输出，内在结构也可以不是智能。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id3"&gt;
 &lt;h2&gt;滑块验证码&lt;/h2&gt;
@@ -17,7 +17,7 @@
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
 &lt;h2&gt;解决思路&lt;/h2&gt;
-&lt;p&gt;可以从网络层、系统层和用户层来考虑&lt;/p&gt;
+&lt;p&gt;可以从网络层、系统层和用户层来考虑：&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;网络层：此类验证，最后发送的数据一定需要加密，难点在于对付 js 的混淆，通过单步调试找到加密前的数据。理解数据，或直接采集多组数据，再模拟发送即可。这一种思路对耐心的要求很高。&lt;/li&gt;
 &lt;li&gt;系统层：通过程序抓图和图像运算比对，计算出键盘鼠标的操作即可，这一种相对比较容易，但速度不如网络层解决快。&lt;/li&gt;
