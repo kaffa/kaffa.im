@@ -5,34 +5,48 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2019-05-12T00:47:17-00:00</lastmod>
+<lastmod>2019-05-18T21:35:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2019-05-12T00:47:17-00:00</lastmod>
+<lastmod>2019-05-18T21:35:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2019-05-12T00:47:17-00:00</lastmod>
+<lastmod>2019-05-18T21:35:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2019-05-12T00:47:17-00:00</lastmod>
+<lastmod>2019-05-18T21:35:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://kaffa.im/about-homo-sapiens-and-home-neanderthals.html</loc>
+<loc>https://kaffa.im/common-logic-common-talk.html</loc>
+<lastmod>2019-05-18T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html</loc>
+<lastmod>2019-05-15T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/about-homo-sapiens-and-homo-neanderthals.html</loc>
 <lastmod>2019-05-12T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -48,6 +62,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/some-thoughts-on-reCAPTCHA.html</loc>
 <lastmod>2019-04-17T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/multiple-careers-and-ding-fu-bao.html</loc>
+<lastmod>2018-10-01T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -173,7 +194,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2019-05-12T12:00:00+08:06</lastmod>
+<lastmod>2019-05-18T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

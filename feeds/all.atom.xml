@@ -1,13 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-05-12T12:00:00+08:00</updated><entry><title>胸棘鲷、智人与尼安德特人</title><link href="https://kaffa.im/about-homo-sapiens-and-home-neanderthals.html" rel="alternate"></link><published>2019-05-12T12:00:00+08:00</published><updated>2019-05-12T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-12:/about-homo-sapiens-and-home-neanderthals.html</id><summary type="html">&lt;p&gt;记录关于智人的新认知&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="胸棘鲷" src="https://kaffa.im/img/2019/orange_roughy.png" title="胸棘鲷" /&gt;&lt;/p&gt;
-&lt;p&gt;胸棘鲷，&lt;a href="https://en.wikipedia.org/wiki/Orange_roughy"&gt;Orange Roughy&lt;/a&gt;，一种新西兰深海捕捞的大西洋鱼类。根据同位素法测定，它们的寿命可能有 149 岁，根据耳石测得 125 - 160 岁区间。它们生前是鲜亮的砖红色，死后逐渐变黄。这种丑而呆的鱼生活在几百米到一千多米的深海，每平米可以发现 2.5 只，渔民从 1970 年最先开始捕捞，到目前为止，它们还剩下原数量的 10% 不到。如不是 WWF 呼吁控制商业捕捞，我们可以在短短的 50 年里使其灭绝。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title></title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-05-18T12:00:00+08:00</updated><entry><title>普通的逻辑学我们普通的聊</title><link href="https://kaffa.im/common-logic-common-talk.html" rel="alternate"></link><published>2019-05-18T12:00:00+08:00</published><updated>2019-05-18T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-18:/common-logic-common-talk.html</id><summary type="html">&lt;p&gt;本文试图在不长的篇幅中聊聊逻辑学和生活中的普通逻辑&lt;/p&gt;</summary><content type="html">&lt;h2&gt;引&lt;/h2&gt;
+&lt;p&gt;无论主动或被动地，人们会观察、参与这个世界的活动，产生思考、形成概念，并通过语言交流观点时，逻辑都成为现代科学和现实世界基础的一半。为什么是一半后面会说。&lt;/p&gt;
+&lt;p&gt;拿熟悉的理财投资和交易来说，投资者从主观决策到越来越频繁地讲求逻辑，说明投资者越来越需要委托方对标的品种选择和时机选择提供依据，也说明所需的投资依据更趋于基于客观事实。&lt;/p&gt;
+&lt;p&gt;使用 kindle 有 5 年，购买了 8 本与逻辑相关的书，反映出个人对逻辑一直都有兴趣。回想起来，学习逻辑学有关理论有三次，一是中学阅读课外书牛津通识读本《简明逻辑学》，结果是除了看懂了片段，对整体依旧一头雾水；二是大学学习可计算性理论和数理逻辑；三是练习 GRE 写作，现在叫 Analytical Writing，其中对王强讲述的 Argument 常见的几十种逻辑错误。通过对《逻辑学十五讲》的阅读了解到逻辑学的范围和深度比普通人的理解要更宽更深。&lt;/p&gt;
+&lt;p&gt;而生活中人们却较少调用逻辑工具来思考问题，理论联系实际成为了理论脱离生活，不经意间当了被收割的韭菜。其中，缺少逻辑常识，不基于事实进行情绪化决策是原因之一。情绪化主观判断是每个人擅长的，但有逻辑的理性决策不是。&lt;/p&gt;
+&lt;h2&gt;普通的聊逻辑&lt;/h2&gt;
+&lt;p&gt;下面，我将分十点递进地说清对普通人有用的这一半——逻辑常识，并期待读者基于观察事物来思考这个世界。&lt;/p&gt;
+&lt;p&gt;一、&lt;strong&gt;逻辑是思考工具&lt;/strong&gt;，逻辑学的主题是清晰高效地思考。它是科学，是艺术，也是技能。逻辑学基本原理和人类的理性基本保持一致。&lt;/p&gt;
+&lt;p&gt;二、几个基本概念：逻辑基于事物和事件，&lt;strong&gt;事物&lt;/strong&gt;是客观真实的，&lt;strong&gt;事件&lt;/strong&gt;由事物组成。确认事件的方法，是直接观察，或基于客观的、公开的、有官方发布的材料的间接推理。&lt;strong&gt;事实&lt;/strong&gt;可能客观，也可能是人的主观。事实可以通过前一句提到的一手材料确认。&lt;strong&gt;观念&lt;/strong&gt;是对客观事物的主观描摹，正确观念忠实地反映对象的客观秩序，错误观念是客观世界的歪曲表达。&lt;/p&gt;
+&lt;p&gt;（齐泽克二又四分之三车站：人类依靠象征秩序、从语言演绎出的现实与真实客观世界之间总有一段差距。这两者之间的差距本身勾勒出我们的人性，因为人类是唯一生活在象征秩序之中的群体动物，人类进入象征秩序所留下的创伤内核就是人性的标志。这一创伤内核，也就是拉康所谓的真实。）&lt;/p&gt;
+&lt;p&gt;三、事物存在的三种形式：&lt;strong&gt;客观、观念、语言&lt;/strong&gt;。我们无法获得客观，因为观察会扰动客观；其次，我们无法通过在人脑中插电线来解读人的观念，因此我们只剩下语言来研究。普通人最大的需求就是使用逻辑学工具识别陈述的真假（术语叫命题），即在现实中追求真实。这要求我们：选择合适的词语表达观念、陈述完整充分、区分主观和客观，避免装高深、避免模糊表达。&lt;/p&gt;
+&lt;p&gt;四、逻辑学四大基本原理。这四个原理不证自明，也不能被证明。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;同一律&lt;/strong&gt;：事物智能是其本身&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;排中律&lt;/strong&gt;：非是即否&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;因果律&lt;/strong&gt;：事物不是其自身存在的原因。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;矛盾律&lt;/strong&gt;：同一时刻，某个事物不能即是A又是B&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里我们把排中律和充足理由律放在神的存在性问题上试一下：按充足理由律，神不是神存在的原因，再根据排中律，得到：神存在的原因是无神。&lt;/p&gt;
+&lt;p&gt;五、直言命题和普遍命题。普遍命题分为&lt;strong&gt;全称命题&lt;/strong&gt;和&lt;strong&gt;特称命题&lt;/strong&gt;。直言命题即最有效的直接陈述。全称命题是 All，所有的全部这样的词语开头，特称命题是 Some，一部分一些某些这样的词开头。&lt;/p&gt;
+&lt;p&gt;六、逻辑推理的形式是论证。论证是从前提到结论。命题包括主语和谓语，断言即主语和谓语的联接过程。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;简单论证&lt;/strong&gt;：且（and）、或（or）、非（not）。我们用T表示真，F表示假。那么；T且F是F，T或F是T，非T是F，非F是T。什么意思呢？我们已知范冰冰是中国人且是个演员。如果有人说范冰冰是中国人但不是演员。我们会说错了。因为我们的逻辑识别出了：T and F is F。后面的也一样，所以说简单论证是大脑的功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;条件论证&lt;/strong&gt;：如果A，那么B，或如果非B，那么非A。举栗子：如果气温上升到零度以上，那么冰会融化。如果冰没有融化，那么气温不是零度或以上。其实，我们说的很多条件论证都不严谨。比如，这里没有说冰是否在冰箱中。&lt;/p&gt;
+&lt;p&gt;七、&lt;strong&gt;三断论&lt;/strong&gt;：这是重头戏。因为大家喜欢在此犯逻辑错误。&lt;/p&gt;
+&lt;p&gt;逻辑学符号是：每一个 M 都是 P，每个 S 都是 M，所以每一个 S 都是 P
+上述三个分句分别是：大前提、小前提、结论&lt;/p&gt;
+&lt;p&gt;换成通俗符号讨论：&lt;/p&gt;
+&lt;p&gt;三段论的论证结构是：所有 A -&amp;gt; B，所有 B -&amp;gt; C，那么：所有 A -&amp;gt; C
+大前提是特称的结构：有些 A -&amp;gt; B，所有 B -&amp;gt; C，那么：有些 A -&amp;gt; C，正确
+小前提是特称的反例：所有 A -&amp;gt; B，有些 B -&amp;gt; C，那么：有些 A -&amp;gt; C，错误。很明显A和C不相关。
+小前提是特称的反例：有些 A -&amp;gt; B，有些 B -&amp;gt; C，那么：有些 A -&amp;gt; C，错误。因为，特称不具传递性。感受一下：有些住在深圳的人是深圳人，有些深圳人是不住在深圳的人，那么有些不住在深圳的人是住在深圳的人，违反了排中律。&lt;/p&gt;
+&lt;p&gt;再来一个隐蔽的：王撕葱吃汉堡王，美国人吃汉堡王，那么王撕葱是美国人。这个也许明显是个错误，进一步，我们看娱乐新闻中，窦靖童在 KTV 包厢吸烟，没素质的人在 KTV 包厢吸烟，那么窦靖童没素质。这个就不一定了，因为大前提“窦靖童在 KTV 包厢吸烟”可能是特称 some 甚至是 once ，其次，小前提隐藏了“不是每个没素质的都在KTV包厢吸烟”和“没素质的每次都在KTV包厢吸烟”，根据特称不具传递性，这里的特称被刻意隐藏了，我们其实无法得出窦靖童和没素质的人之间的强关联性。&lt;/p&gt;
+&lt;p&gt;上述两个例子都是如今为吸引流量的毫无逻辑的娱乐新闻和洗稿公号文中的提取，其中随意就能发现混乱的逻辑。&lt;/p&gt;
+&lt;p&gt;八、演绎推理&lt;/p&gt;
+&lt;p&gt;从思维方向上看，是指从一般性原理到个别性论断，或者是从一般性原理到另一个一般性原理的推理。例如：
+（1）所有的植物都需要阳光，向日葵是植物。所以，向日葵需要阳光。
+（2）如果谁想活得明白一点，谁就必须拥有足够的资讯；谁都想活得明白一点。
+所以，谁都必须拥有足够的资讯。这里，（1）是从一般怎么样推出个别怎么样，（2）却是从一般怎么样推出一般怎么样。&lt;/p&gt;
+&lt;p&gt;九、归纳推理&lt;/p&gt;
+&lt;p&gt;归纳推理则是指从个别性例证到一般性原理的推理，或者是从个别性论断到另外的个别性论断的推理。&lt;/p&gt;
+&lt;p&gt;我们学过的数学归纳法、概率论等，都是归纳逻辑。我们说“太阳明天依旧会从东方升起”就是归纳推理。我们通过观察每一日和后一日的现象发现这个规律。但有一天我们发现，“流浪地球计划”从备胎转正了。计划开始的第五年，太阳永远停在了地球的地平线上，归纳失效了。投资和交易中，大家叫这种失效为“黑天鹅“。&lt;/p&gt;
+&lt;p&gt;相比罗素的火鸡，我更喜欢《三体》中的神枪手，秩序存在于我们能观察的秩序上，也是一种可能。我们以此归纳，再在我们的观测上验证，就变成了发现 10cm 弹孔的二维生物。当然，这里的不可知论是有悖逻辑学实用性的。&lt;/p&gt;
+&lt;p&gt;另一个例子是交易K线中的均线：均线是在K线周期上历史报价的计算，人们均线来判断趋势，产生交易信号，但均线的本质就是归纳逻辑，因此一半会失效。因为还有另外一半，人的非理性，广义上说，均线是一种群体催眠。&lt;/p&gt;
+&lt;p&gt;十、生活中的非逻辑现象应对&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;洗脑&lt;/strong&gt;：经常用于传销，一般通过否定原有认知和世界观，通过“催眠”的手段向受众灌输新观念，用以实现某些经济利益。生活中的洗脑特点是有批判性、强制性、持续性重复，放大恐惧胁迫，群体与外隔绝。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;心灵鸡汤&lt;/strong&gt;：好比咖啡因和强心剂，进入鸡汤扭曲力场的现实后，人会有一定行动的动力，积极作用是促进行动，副作用在于不客观的认知，不是真实，以此构建的结果缺少稳固的基础。导致，长期使用咖啡因，一旦停止会困的厉害，形成反噬力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;怀疑精神和阴谋论&lt;/strong&gt;：当具备研究能力，在某领域具备基础知识时，我主张探索而不迷信权威，有怀疑精神。但怀疑过当就会走向阴谋论，于人于己都没有好处。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;不可知论&lt;/strong&gt;：不可知是保守的态度，日常大多数事情，这种态度不是出于严谨，而只是源于内心逃避。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;盲目乐观&lt;/strong&gt;：心理学研究表明，大多数人对自我的感觉都会比其他人好，而这显然不可能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;情绪不自知&lt;/strong&gt;：情绪联结记忆，促进分泌，影响思维和决策，情绪不自知做的决定会偏激。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;不对事对人&lt;/strong&gt;：围绕事件探讨时，需要针对事件，而不是事件中的人。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;论证而不是争吵&lt;/strong&gt;：我们经常会看到吵得面红耳赤的人，但他们真的是围绕某个观点以事实为基础发表言论，而不是主观观念吗？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;否定前提&lt;/strong&gt;：比如，阿甘在跑步，那么他在移动。因为阿甘没有跑步，所以阿甘没动。否定前提，并不一定推导出否定结论。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;肯定结论&lt;/strong&gt;：还是上面的例子，如果阿甘在移动，那么阿甘在跑步。显然也不成立。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;中项特制&lt;/strong&gt;：形式是，A是B，C是B，那么A是C。举例最多是具备相关性而不是因果的推理，比如，长期吸烟会导致肺癌，康斯坦丁也患了肺癌，那么康斯坦丁也长期吸烟。其实是错的，因为长期吸烟也可能不患肺癌，康斯坦丁也可能有其他不良习惯导致肺癌。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;偷换概念&lt;/strong&gt;：坤坤是小偷，偷了女孩A的心，女孩A的钱包丢了，所以坤坤是小偷。此处语言上虽然都是一个词小偷，但概念偷换了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;重复前提&lt;/strong&gt;：桌边的十三门徒共进了晚餐，犹大也在餐桌边，所以犹大也吃了晚餐。看似没毛病，但犹大吃了晚餐，是前提的表述，因为十三门徒中包括犹大。这就不是推理结论，是已知，等于没说。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;虚假假设&lt;/strong&gt;：将一套严密的推理过程建立在一个假设上得到一个看似完美的结论，当受众无法判断假设是否为真时，他们因为推理和结论讨好心中的预设，会趋向于相信假设是真。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;攻击稻草人&lt;/strong&gt;：辩论中揪着对手的容易攻击的小瑕疵不放，用以削弱对方的论证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;误用俗语&lt;/strong&gt;：传统是有适用范围的，有时候本身就是矛盾的。比如：俗话说好马不吃回头草，又说浪子回头金不换！ 说兔子不吃窝边草，又说近水楼台先得月。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;以牙还牙&lt;/strong&gt;：潜在的逻辑是：如果对方错了，那么自己错的不算错。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;集体决策&lt;/strong&gt;：当集体决策时，可能变成集体不决策。因此得到的结论反而没有用到集体智慧变得更差。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;迷信权威&lt;/strong&gt;：前文已谈到，不再冗述。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;强制量化&lt;/strong&gt;：很多美德无法量化，但被要求强制量化来衡量，比如眼泪多少钱一斤，善心面积有多大。不宜量化评估人类的真善美。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;等等，虽然只列举了20条，但生活中还会遇到譬如面对事实时打哈哈的人，但被指责时，使用无力反驳等词语，甚至以眼泪博取同情而获得情绪优势获得辩论优势的奇葩。这些都是非逻辑。&lt;/p&gt;
+&lt;h2&gt;结&lt;/h2&gt;
+&lt;p&gt;不知这篇小文是否我对逻辑的探索和观念说清了，我希望读者做个能驯服情绪和逻辑的好骑手，让两者协调为目标服务。剩下最后的建议就是：请把学到的逻辑用于求真。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="人文科学"></category><category term="Humanity"></category><category term="逻辑学"></category><category term="Logic"></category><category term="可计算性"></category><category term="事物"></category><category term="事件"></category><category term="事实"></category><category term="观念"></category><category term="命题"></category><category term="断言"></category><category term="演绎"></category><category term="归纳"></category><category term="三段论"></category><category term="同一律"></category><category term="排中律"></category><category term="因果律"></category><category term="矛盾律"></category></entry><entry><title>修改 Microsoft Code Markdown 格式的快捷键</title><link href="https://kaffa.im/change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html" rel="alternate"></link><published>2019-05-15T12:00:00+08:00</published><updated>2019-05-15T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-15:/change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html</id><summary type="html">&lt;p&gt;修改 Microsoft Code Markdown 格式的快捷键&lt;/p&gt;</summary><content type="html">&lt;p&gt;为了兼容 macOS 系统 MWeb 写作，我将文档格式从 .rst 修改为了 .md。我选择 Microsoft Code Markdown 来写日志，但发现快捷键 Ctrl + B 并不能将文字加粗。&lt;/p&gt;
+&lt;p&gt;进入【File】【Preferences】【Keyborad Shortcuts】，搜索 Ctrl + B，发现默认关联很多其他功能，比如调试断点（Breakpoint）和隐藏边栏。&lt;/p&gt;
+&lt;p&gt;经过把 Ctrl + H 换成 Ctrl + R，把隐藏边栏 Ctrl + B 换成 Ctrl + H，编辑 Markdown 文件中的 Ctrl + B 成为了加粗的快捷键。&lt;/p&gt;
+&lt;p&gt;Microsoft Code 这个披着 IDE 外衣的编辑器，还是需要细致调教才会变得好用的，&lt;strong&gt;多人设计插件的快捷键重复问题是因缺乏统一的规范和检查机制导致的&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category></entry><entry><title>胸棘鲷、智人与尼安德特人</title><link href="https://kaffa.im/about-homo-sapiens-and-homo-neanderthals.html" rel="alternate"></link><published>2019-05-12T12:00:00+08:00</published><updated>2019-05-12T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-12:/about-homo-sapiens-and-homo-neanderthals.html</id><summary type="html">&lt;p&gt;记录关于智人的新认知&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="胸棘鲷" src="https://kaffa.im/img/2019/orange_roughy.png" title="胸棘鲷" /&gt;&lt;/p&gt;
+&lt;p&gt;胸棘鲷，&lt;a href="https://en.wikipedia.org/wiki/Orange_roughy"&gt;Orange Roughy&lt;/a&gt;，一种新西兰深海捕捞的大西洋鱼类。它们的寿命，根据同位素法测定，可能有 149 岁，根据耳石法测得为 125 - 160 岁区间。它们生前是鲜亮的砖红色，死后逐渐变黄。这种丑而呆的鱼生活在几百米到一千多米的深海，每平米可以发现 2.5 只，渔民从 1970 年最先开始捕捞，到目前为止，它们还剩下原数量的 10% 不到。如不是 WWF 呼吁控制商业捕捞，我们可以在短短的 50 年里使其灭绝。&lt;/p&gt;
 &lt;p&gt;渔民捕捞胸棘鲷，销往世界各地，京东上叫它们——长寿鱼，宣传为：“它数量稀少，鱼肉内含有二十几种人体所需的微量元素、维生素，具有高蛋白、低脂肪、低胆固醇的特点，鱼头鱼骨内含有珍贵的‘脑黄金’，能激活脑细胞，增强记忆力，减缓衰老。头骨汤滋补肝肾，延年益寿。”这段宣传中的微量元素，更适合的摄入方式是多样性的食物，至于高蛋白、低脂肪、低胆固醇，是不是听起来很耳熟，是的，牛、羊、鸡肉都是，然后是脑黄金，史玉柱的一个同学的命名，即 DHA，相似的还有脑白金，即褪黑素。事实上，大西洋胸棘鲷这种存活多年的大型海洋鱼类，体内会含有大量汞元素，吃多可能会引起汞中毒。&lt;/p&gt;
 &lt;p&gt;智人，其实就是我们对自己祖先的命名，智人在体质特征上和现代人无明显差异，能精制石器、骨器，懂绘画、雕刻术，能修建简单房屋，男女有明确分工。智，隐藏了侵占性，从走出非洲，智人用 5000 年灭亡了统治欧亚大陆 20 万年的身形更魁梧的尼安德特人（尼人）。&lt;/p&gt;
 &lt;p&gt;在心理学课上，老师放映&lt;a href="https://www.bilibili.com/video/av1188416/"&gt;《智人 Homo sapiens 人类起源》&lt;/a&gt;，提到：智人与尼人的染色体条数不一致，因而存在生殖隔离。而今天读到一篇《“爱上”这群笨蛋的人类祖先，给现代人留下了一个遗传病大礼包》，虽然不喜欢这种标题党，但其中的数据还是呈现了一些&lt;a href="https://news.vanderbilt.edu/2016/02/11/neanderthal-dna-has-subtle-but-significant-impact-on-human-traits/"&gt;事实&lt;/a&gt;：现存人类中有 1% - 4% 的基因来自尼安德特人。另，通过对三位五万年前的尼安德特男人的牙菌斑测序，竟意外发现他们曾与智人亲吻过，而在所有的生物中，只有人类交配时亲吻，智人和尼人画面可以自行脑补，可能有些最萌身高差。&lt;/p&gt;
 &lt;p&gt;研究还称，这些来自尼人的基因，和现代人的抑郁症、过敏、肥胖、色素沉淀、尼古丁上瘾、营养失衡、尿失禁、膀胱疼痛、尿道功能失常、以及红斑狼疮等自身免疫疾病有相关性。读到此不知有怎样的感想，智人灭亡了尼人，但尼人与智人斗争过程中，他们的基因却得到了延续。这些基因，及可能还有一些来自其他直立人的基因，存在于我们的遗传链上，在数万年的进程中，协助我们战胜荒蛮的自然而存活延续，并通过我们的 DNA 代代相传。&lt;/p&gt;
 &lt;p&gt;因为学习认知心理学了解到这些古人类学素材，作为一个生物学和遗传学门外汉，也值得记录一篇，算更正了之前获得知识的错误。&lt;/p&gt;
-&lt;p&gt;感谢各位大佬围观。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="Natural Science"></category></entry><entry><title>关于计算机科学</title><link href="https://kaffa.im/about-computer-science.html" rel="alternate"></link><published>2019-04-24T12:00:00+08:00</published><updated>2019-04-24T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-04-24:/about-computer-science.html</id><summary type="html">&lt;p&gt;简单讲述计算机科学的理解&lt;/p&gt;</summary><content type="html">&lt;p&gt;首先我想说说心理学。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="自然科学"></category><category term="Natural Science"></category><category term="胸棘鲷"></category><category term="Orange Roughy"></category><category term="长寿鱼"></category><category term="化石人类学"></category><category term="古人类学"></category><category term="智人"></category><category term="Homo sapiens"></category><category term="尼安德特人"></category><category term="Homo"></category><category term="Neanderthals"></category><category term="生殖隔离"></category><category term="基因测序"></category></entry><entry><title>关于计算机科学</title><link href="https://kaffa.im/about-computer-science.html" rel="alternate"></link><published>2019-04-24T12:00:00+08:00</published><updated>2019-04-24T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-04-24:/about-computer-science.html</id><summary type="html">&lt;p&gt;简单讲述计算机科学和工程科学的理解&lt;/p&gt;</summary><content type="html">&lt;p&gt;首先我想说说心理学。&lt;/p&gt;
 &lt;p&gt;人们对世界好奇、追寻和探索，其间总会发现，许多疑问和障碍并不在外部，而在于内在。所以，德尔菲神庙上镌刻着阿波罗神谕“认识你自己”。人类对内在心灵、灵魂的探索最初来自于宗教、神学和哲学，那些认知的结论，在许多世纪之前，类似强力的光柱透过彩窗从不同角度射入黑暗将空间照亮，人们从不同面提出对这门学科的理解。&lt;/p&gt;
 &lt;p&gt;直到冯特采用科学实验的方式进行心理研究才奠定现代意义的心理学基础，它研究人的心灵和行为的关系，其建构在科学实验和行为统计之上，现代前沿的是实验心理学和认知心理学。很多研究，比如对神经元和人类学习的研究，直接促成了模式匹配、机器统计学习和人工神经网络的发展。&lt;/p&gt;
 &lt;p&gt;科学在高处相通，从学科的分层，心理学分为理论心理学和应用心理学，而计算机科学也可分为理论部分和应用部分。&lt;/p&gt;
@@ -57,7 +180,7 @@
 &lt;/ol&gt;
 &lt;p&gt;无论承不承认，上述四个方向其实是具有线性关系的。&lt;/p&gt;
 &lt;p&gt;感谢各位大佬围观。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="Tech"></category></entry><entry><title>关于滑块验证码的思路</title><link href="https://kaffa.im/some-thoughts-on-reCAPTCHA.html" rel="alternate"></link><published>2019-04-17T12:00:00+08:00</published><updated>2019-04-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-04-17:/some-thoughts-on-reCAPTCHA.html</id><summary type="html">&lt;p class="first last"&gt;本文描述关于自动通过滑块验证码验证的思路&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="计算机科学"></category><category term="Computer Science"></category><category term="电子工程"></category><category term="Electronic Engineering"></category><category term="软件工程学"></category><category term="Software Engineering"></category><category term="信息技术"></category><category term="Information Technology"></category></entry><entry><title>关于滑块验证码的思路</title><link href="https://kaffa.im/some-thoughts-on-reCAPTCHA.html" rel="alternate"></link><published>2019-04-17T12:00:00+08:00</published><updated>2019-04-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-04-17:/some-thoughts-on-reCAPTCHA.html</id><summary type="html">&lt;p class="first last"&gt;本文描述关于自动通过滑块验证码验证的思路&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;图灵测试&lt;/h2&gt;
 &lt;p&gt;图灵测试是一个著名的思想实验，它要解决的问题是如何判断一台机器是否具有智能。&lt;/p&gt;
@@ -81,8 +204,47 @@
 &lt;li&gt;系统层：通过程序抓图和图像运算比对，计算出键盘鼠标的操作即可，这一种相对比较容易，但速度不如网络层解决快。&lt;/li&gt;
 &lt;li&gt;用户层：采用软硬件结合的极客思路，用摄像头进行视觉采集，用机器手操纵鼠标，完全模拟一个有智能的会操作键盘和鼠标的人，这种可能是最一劳永逸，但门槛最高的思路。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Tech"></category><category term="GeeTest"></category></entry><entry><title>我的阅读之路</title><link href="https://kaffa.im/my-reading-experience.html" rel="alternate"></link><published>2018-09-01T12:00:00+08:00</published><updated>2018-09-01T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-09-01:/my-reading-experience.html</id><summary type="html">&lt;p&gt;人类做的最多的两件事，就是阅读和复述。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;起一个大头&lt;/h2&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="GeeTest"></category></entry><entry><title>知识斜杆及丁福保</title><link href="https://kaffa.im/multiple-careers-and-ding-fu-bao.html" rel="alternate"></link><published>2018-10-01T12:00:00+08:00</published><updated>2018-10-01T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-10-01:/multiple-careers-and-ding-fu-bao.html</id><summary type="html">&lt;p&gt;记录一位知识斜杆——丁福保&lt;/p&gt;</summary><content type="html">&lt;h2&gt;斜杆&lt;/h2&gt;
+&lt;p&gt;斜杆这个词，从 2007 年被 Marci Alboher 写入《One Person / Multiple Careers》到知识付费时代的走红，整整花了 12 年。曾几何时，当“演员 / 歌手 / 环保主义者 / 爱心大使”黄晓明老师还在马爹利 XO 广告 NG 时，知识管理专家&lt;a href="https://www.douban.com/people/qsxiao/"&gt;萧秋水&lt;/a&gt;老师还在新浪更新微博，粉丝们也还听不到&lt;a href="https://www.ximalaya.com/jiaoyu/5200130/"&gt;“学会知识管理，优秀到不能被忽视”&lt;/a&gt;，还不理解斜杠的一专多能。不过，我想世上有的 10 种人之一中的大多数应该明白：yourTags.split('/')[0] 才最重要。想到译言、字幕组及 0Day Group，毫无疑问其中的大多数都是可以斜杆的青年。今天要说的就是无意间认识的一位生于民国的知识斜杆——丁福保。&lt;/p&gt;
+&lt;p&gt;出于对古旧物的偏爱，父亲让我为他买一本丁福保著&lt;a href="https://book.douban.com/subject/2338993/"&gt;《历代古钱图说》&lt;/a&gt;一版一印。我在孔夫子网询问了二十多位卖家，只找得到一版二印。记得小时候父亲买过一本，定价是十元不到，后来可能是遗失了。今天查找资料时发现，丁福保不只是民国一位古币收藏家，更是一位知识斜杆。试着摘录维基关于&lt;a href="https://zh.wikipedia.org/wiki/%E4%B8%81%E7%A6%8F%E4%BF%9D"&gt;丁福保&lt;/a&gt;的介绍，随意感受一下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;丁福保（1874年6月22日－1952年11月28日），字仲祐，号畴隐居士，籍贯江苏常州，生于无锡。中华民国及中华人民共和国佛教居士，翻译家，古钱币、古籍收藏家，医生。
+
+幼通经史，长而中西兼贯，长于算术、医学、词章、考据，通日文。光绪二十二年补无锡秀才。
+
+25岁就读于江阴南菁书院。28岁东吴大学肄业。同年，到上海江南制造局工艺学堂学化学，入东文学堂学日文，又师从赵元益学医，学成，任京师大学堂及译学馆教习。
+
+1909年赴日考察医学，后于上海行医并创办医学书局。
+
+1914年始向佛。著作分为医学、文学、进德、佛学、钱币学等丛书。先后出版《一切经音义提要》、《佛经精华录笺注》、《六祖坛经笺注》、《心经笺注》、《六道轮回录》、《佛学指南》、《佛学起信论》、《说文解字诂林补遗》、《古钱大辞典》、《古泉学纲要》等著作。
+
+1952年，福保因老衰在上海逝世，享年79岁。他一生著述等身，最著名的是《佛学大辞典》，此书译自日本人织田得能的《佛学大辞典》，系删除了日本佛教相关资料及文献出处所成的节译本。
+
+丁福保有子丁惠康，亦为收藏家、医学家。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="https://baike.baidu.com/item/%E4%B8%81%E7%A6%8F%E4%BF%9D"&gt;百度百科&lt;/a&gt;还提到：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;丁福保，字仲祜，别号畴隐居士，又号济阳破衲，原籍江苏常州，清同治十三年(1874)6月22日生于无锡。1918年就编有《历代医学书目提要》，后又与人合编《四库总录医药编》，兼收中外医学书籍。
+
+辛亥革命前后，编辑刊印有《汉魏六朝名家集初刻》、《全汉三国晋南北朝诗》、《历代诗语续编》、《清诗话》等数部丛书。喜藏书，早年仰慕南菁书院藏书，曾手抄书院目录1册，以备购藏。
+
+1924年自称藏有“十万又三千”卷书，建“诂林精舍”，吴稚晖题写匾额，藏书总数达15万余卷。捐献藏书众多，先后捐给无锡县图书馆、县立第一小学图书馆1868种，22904卷。
+
+1935年他曾捐给上海市立图书馆图书15000册；
+
+1938年捐入震旦大学2万册，5万余卷古今刊本，该校设立“丁氏文库”以志纪念。
+
+1000余册古籍则捐入北京图书馆，其中包括购自常熟“铁琴铜剑楼”的宋元古本10余种。
+
+所藏书未见编撰书目，藏书出售时，上海存古书店编有《无锡丁氏珍藏善本书目》，著录了600余种、16 000余册善本。编著有《文选类诂》、《尔雅诂林》、《说文解字诂林》、《无锡丁氏藏书志》、《古钱大辞典》等。
+
+1952年11月28日，丁福保因病在上海去世，终年78岁。生前编成而未及出版的《四部总录》遗稿经其学生周云青整理后，由商务印书馆出版了“医药编”、 “天文编”、“算法编”、“艺术编”4种。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可见，丁福保国学基础好，又爱钻研训诂学，爱好藏书，整理古籍20多年，印刷发行多种大型图书，去世后，其书籍众数捐献给国家。可谓知识斜杆，夸领域大师，功德无量。Perfect，完美的一生。&lt;/p&gt;
+&lt;p&gt;其子，承继父业，亦为斜杆：收藏家 / 医学家。有时候，把一个青年变成斜杆的，不是他自己，而是人生。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="阅读"></category><category term="Reading"></category><category term="Multiple Careers"></category></entry><entry><title>我的阅读之路</title><link href="https://kaffa.im/my-reading-experience.html" rel="alternate"></link><published>2018-09-01T12:00:00+08:00</published><updated>2018-09-01T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-09-01:/my-reading-experience.html</id><summary type="html">&lt;p&gt;人类做的最多的两件事，就是阅读和复述。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;起一个大头&lt;/h2&gt;
 &lt;p&gt;人类的伟大在于知识，知识的基本单位是概念，概念通过人类的语言和书本，通过人类的阅读和复述演化，由最初客观的物，到抽象的指代，形成了一张网状的多层次结构笼罩现代文明上空。&lt;/p&gt;
 &lt;p&gt;我们的生活成为了概念的设计，我们的生活受其支配。那些从绳结、羊皮卷轴、竹简传承下来的东西，在最近的几百年里和人的关系越来越微妙。&lt;/p&gt;
 &lt;h2&gt;扯一下回忆&lt;/h2&gt;
@@ -95,7 +257,7 @@
 &lt;h2&gt;拉回思路&lt;/h2&gt;
 &lt;p&gt;总结上述，既然知识是网，阅读之路可以走深度优先，也可以走广度优先，都没问题。这是一句计算机领域的黑话，但也比较浅显。&lt;/p&gt;
 &lt;p&gt;下面加入心理学知识，阅读最根本的收获在于形成思维习惯，即训练神经网络。&lt;/p&gt;
-&lt;p&gt;从这点上说，阅读在于：选经典，明概念，习逻辑。（此九字划重点，不划损失九个亿。）&lt;/p&gt;
+&lt;p&gt;从这点上说，阅读在于：&lt;em&gt;选经典，明概念，习逻辑&lt;/em&gt;。（此九字划重点，不划损失九个亿。）&lt;/p&gt;
 &lt;h2&gt;记忆与理解&lt;/h2&gt;
 &lt;p&gt;在阅读中，有必要记录电子或纸质的笔记吗？回答：是否笔记取决于个人，记忆不是目的，理解才是。&lt;/p&gt;
 &lt;p&gt;记忆就像把杂物放进去中药柜，理解是知道去哪个柜子里拿。&lt;/p&gt;
@@ -114,9 +276,10 @@
 &lt;li&gt;怎样用140字说清“逻辑”？&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;课后作业&lt;/h2&gt;
-&lt;p&gt;请为自己列一个如何阅读的书单（10本以上经典）&lt;/p&gt;
-&lt;p&gt;感谢各位大佬观阅，文中问题可联系我获得答案。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="Reading"></category></entry><entry><title>Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux</title><link href="https://kaffa.im/jekyll-msys2-vibora-and-use-linux-on-windows.html" rel="alternate"></link><published>2018-08-14T12:00:00+08:00</published><updated>2018-08-14T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-14:/jekyll-msys2-vibora-and-use-linux-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文聊聊 Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux 的话题&lt;/p&gt;
+&lt;p&gt;请为自己列一个如何阅读的书单（10本以上经典）
+文章问题可以留下您的答案。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="阅读"></category><category term="Reading"></category></entry><entry><title>Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux</title><link href="https://kaffa.im/jekyll-msys2-vibora-and-use-linux-on-windows.html" rel="alternate"></link><published>2018-08-14T12:00:00+08:00</published><updated>2018-08-14T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-14:/jekyll-msys2-vibora-and-use-linux-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文聊聊 Jekyll、MSYS2、Vibora 及在 Windows 下用 Linux 的话题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;故事&lt;/h2&gt;
 &lt;p&gt;故事开始于我需要在 Windows 下用 Jekyll 转化一篇 Markdown 的博文，于是在 Windows 下安装了 Jekyll，其中涉及一些 MSYS2 的安装坑。
@@ -408,8 +571,10 @@ Cygwin、MSYS 和 Git for Windows（前称 msysgit）里各有一套 Cygwin DLL 
 &lt;h2&gt;总结&lt;/h2&gt;
 &lt;p&gt;总的来说，本文讲了 Windows 下用 Linux 的两个例子，再总结了一些 Windows 下 使用 Linux 的方法，整体内容很多。&lt;/p&gt;
 &lt;p&gt;最后来说，一个更好的方案可能是一台高配 macOS 运行 Parallels Desktop，再其中运行 Windows ;)&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="Windows"></category><category term="Linux"></category><category term="Jekyll"></category><category term="Ruby"></category><category term="MSYS2"></category><category term="Vibora"></category><category term="Cygwin"></category><category term="MinGW"></category><category term="Virtualpc"></category><category term="VMWare"></category><category term="Docker"></category><category term="MSYS"></category><category term="msysgit"></category></entry><entry><title>为博客添加评论系统</title><link href="https://kaffa.im/add-comments-system-to-my-blog.html" rel="alternate"></link><published>2018-08-10T12:20:00+08:00</published><updated>2018-08-10T12:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-10:/add-comments-system-to-my-blog.html</id><summary type="html">&lt;p class="first last"&gt;为博客添加评论系统&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="Windows"></category><category term="Linux"></category><category term="Jekyll"></category><category term="Ruby"></category><category term="MSYS2"></category><category term="Vibora"></category><category term="Cygwin"></category><category term="MinGW"></category><category term="Virtualpc"></category><category term="VMWare"></category><category term="Docker"></category><category term="MSYS"></category><category term="msysgit"></category></entry><entry><title>为博客添加评论系统</title><link href="https://kaffa.im/add-comments-system-to-my-blog.html" rel="alternate"></link><published>2018-08-10T12:20:00+08:00</published><updated>2018-08-10T12:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-10:/add-comments-system-to-my-blog.html</id><summary type="html">&lt;p class="first last"&gt;为博客添加评论系统&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;评论系统&lt;/h2&gt;
 &lt;p&gt;通俗地说，不同人在一起评论一个事时，就像对混沌系统作预测，最可能的结果就是一团糟。
@@ -452,17 +617,21 @@ gitalk.render('gitalk-container');
 &lt;li&gt;2018-08-07，&lt;a class="reference external" href="https://github.com/MrSenko/pelican-octopress-theme"&gt;octopress 主题&lt;/a&gt; 中文化：&lt;a class="reference external" href="https://github.com/kaffa/pelican-octopress-theme-cn"&gt;pelican-octopress-theme-cn&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;2018-08-10，添加 gitalk 评论系统。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Life"></category><category term="My Blog"></category><category term="Pelican"></category><category term="Gitalk"></category><category term="Gitment"></category></entry><entry><title>更新博客主题</title><link href="https://kaffa.im/update-my-new-blog-s-theme.html" rel="alternate"></link><published>2018-08-07T08:20:00+08:00</published><updated>2018-08-07T08:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-07:/update-my-new-blog-s-theme.html</id><summary type="html">&lt;p class="first last"&gt;更新博客主题&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="博客"></category><category term="My Blog"></category><category term="Pelican"></category><category term="Gitalk"></category><category term="Gitment"></category></entry><entry><title>更新博客主题</title><link href="https://kaffa.im/update-my-new-blog-s-theme.html" rel="alternate"></link><published>2018-08-07T08:20:00+08:00</published><updated>2018-08-07T08:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-07:/update-my-new-blog-s-theme.html</id><summary type="html">&lt;p class="first last"&gt;更新博客主题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;关于本博客&lt;/h2&gt;
 &lt;p&gt;2018-06-06，开始这个新博客&lt;/p&gt;
 &lt;p&gt;2018-08-07，转眼间两个月了，原先使用的 &lt;a class="reference external" href="https://github.com/MrSenko/pelican-octopress-theme"&gt;octopress 主题&lt;/a&gt; 也发现一些样式上的缺陷，于是抽空对它做了中文化。地址见:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-pelican-octopress-theme-cn_
+`pelican-octopress-theme-cn`_
 &lt;/pre&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Life"></category><category term="My Blog"></category><category term="Pelican Octopress Theme"></category><category term="pelican-octopress-theme-cn"></category></entry><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-06T22:00:00+08:00</published><updated>2018-08-06T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="博客"></category><category term="My Blog"></category><category term="Pelican Octopress Theme"></category><category term="pelican-octopress-theme-cn"></category></entry><entry><title>Windows 下 Node 的路径配置</title><link href="https://kaffa.im/config-nodejs-path-in-windows.html" rel="alternate"></link><published>2018-08-06T22:00:00+08:00</published><updated>2018-08-06T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/config-nodejs-path-in-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下 nodejs 的路径配置问题，也涉及 Windows 路径的说明&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="windows-nodejs"&gt;
 &lt;h2&gt;在 Windows 下安装 nodejs&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -520,8 +689,10 @@ npm ERR! enoent
 'node' 不是内部或外部命令，也不是可运行的程序或批处理文件
 &lt;/pre&gt;
 &lt;p&gt;另外，当然也可以参考官方文档 &lt;a class="reference external" href="https://docs.npmjs.com/files/folders"&gt;npm-folders&lt;/a&gt;，但可能有更新不及时，node 社区还年轻且贡献者有很多个人，有时并不太照顾 Windows 平台，这点不比 python 社区发展了那么久，且那么多机构贡献者。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="Node"></category><category term="Node.js"></category><category term="Windows"></category><category term="Path"></category></entry><entry><title>关于 NW.js 与 Electron 的技术选择</title><link href="https://kaffa.im/nwjs-and-electron-how-to-choose.html" rel="alternate"></link><published>2018-08-06T12:00:00+08:00</published><updated>2018-08-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/nwjs-and-electron-how-to-choose.html</id><summary type="html">&lt;p class="first last"&gt;本文顺便写上 NW.js 与 Electron 的技术选择和一些无关的文字&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="Node"></category><category term="Node.js"></category><category term="Windows"></category><category term="Path"></category></entry><entry><title>关于 NW.js 与 Electron 的技术选择</title><link href="https://kaffa.im/nwjs-and-electron-how-to-choose.html" rel="alternate"></link><published>2018-08-06T12:00:00+08:00</published><updated>2018-08-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-06:/nwjs-and-electron-how-to-choose.html</id><summary type="html">&lt;p class="first last"&gt;本文顺便写上 NW.js 与 Electron 的技术选择和一些无关的文字&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;技术选择&lt;/h2&gt;
 &lt;p&gt;这么多年，我很少写技术博文，通常记录的目的都是归于实用，即遇到一个问题，然后给予解决。原则是，不从问题作无止的延伸，但给予一个清晰的解答。之所以有此原则，是因实用主义，因生命有限，无法耗时在细节上，细节是熵递增，与生命的目的刚好相反。&lt;/p&gt;
@@ -575,8 +746,10 @@ npm ERR! enoent
 &lt;h2&gt;其实已经说完了&lt;/h2&gt;
 &lt;p&gt;四维生物，二不行，但三基本就够了。其实已经说完了。&lt;/p&gt;
 &lt;p&gt;“人往往需要说很多话，然后才能归入潜默。” 是有此篇。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="Psychology"></category><category term="Philosophy"></category><category term="NW.js"></category><category term="Electron"></category></entry><entry><title>关于文本二维码这件小事</title><link href="https://kaffa.im/a-story-about-text-qrcode.html" rel="alternate"></link><published>2018-07-27T12:00:00+08:00</published><updated>2018-07-27T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-27:/a-story-about-text-qrcode.html</id><summary type="html">&lt;p class="first last"&gt;本文随意聊聊文本二维码&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="Psychology"></category><category term="Philosophy"></category><category term="NW.js"></category><category term="Electron"></category></entry><entry><title>关于文本二维码这件小事</title><link href="https://kaffa.im/a-story-about-text-qrcode.html" rel="alternate"></link><published>2018-07-27T12:00:00+08:00</published><updated>2018-07-27T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-27:/a-story-about-text-qrcode.html</id><summary type="html">&lt;p class="first last"&gt;本文随意聊聊文本二维码&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;文本二维码&lt;/h2&gt;
 &lt;p&gt;简单讲，二维码是一个算法，可以把信息编码为0和1，也就是白和黑，也就是常见的二维码。大多情况下，二维码用一个方形的图片表达，可以跨各种介质传播。&lt;/p&gt;
@@ -606,8 +779,10 @@ npm ERR! enoent
 &lt;/ol&gt;
 &lt;p&gt;当然，能否扫描出结果，也取决于扫描时的容差。&lt;/p&gt;
 &lt;p&gt;在 Windows 平台，如果终端控制台中出现文本二维码散乱情况，请调整控制台字体为等宽字体，或者打开记事本，字体选择为：Lucida Console 5号字，再进行全选，即可显示出可扫描的二维码。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="QRCode"></category><category term="Text QRCode"></category></entry><entry><title>在 Windows 10 下安装 Wechaty</title><link href="https://kaffa.im/wechaty-installation-on-windows-10.html" rel="alternate"></link><published>2018-07-24T12:00:00+08:00</published><updated>2018-07-24T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-24:/wechaty-installation-on-windows-10.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的细节&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="QRCode"></category><category term="Text QRCode"></category></entry><entry><title>在 Windows 10 下安装 Wechaty</title><link href="https://kaffa.im/wechaty-installation-on-windows-10.html" rel="alternate"></link><published>2018-07-24T12:00:00+08:00</published><updated>2018-07-24T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-24:/wechaty-installation-on-windows-10.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的细节&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;介绍&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/Chatie/wechaty"&gt;Wechaty&lt;/a&gt; 是一个对话机器人软件开发包，它可以帮你用 6 行 JavaScript 代码实现一个微信个人账号。由于使用 node 技术，它支持 Linux、Windows、macOS 平台和 Docker 容器。它的安装过程和其它 node 包类似，首先 &lt;tt class="docutils literal"&gt;git clone&lt;/tt&gt; 源代码，再使用 node 的 npm 命令 &lt;tt class="docutils literal"&gt;npm install &amp;amp; npm start&lt;/tt&gt; 实现开箱即用，同时官方也提供了入门案例：&lt;a class="reference external" href="https://github.com/Chatie/wechaty-getting-started"&gt;Wechaty getting started&lt;/a&gt;。而在国内，实际安装过程中可能会因某些软件依赖的原因遇到问题，本文记录了安装过程中可能会出现的错误及解决办法，下面描述详细的步骤和说明：&lt;/p&gt;
@@ -971,8 +1146,10 @@ npm install &amp;amp; npm start
 &lt;p&gt;由于已成功启动项目，所以我并没有在 Windows 7 系统 或 32 位机上进行配置，主要问题应该差不多。
 解决办法基本上一一查阅上述出现错误的软件的文档，应该可以独立解决。&lt;/p&gt;
 &lt;p&gt;当然，如果你遇到了任何其他问题，也欢迎 &lt;a class="reference external" href="https://github.com/kaffa"&gt;我的Github&lt;/a&gt; 上联系我。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="Wechaty"></category><category term="Node"></category><category term="Node.js"></category><category term="Open Source"></category></entry><entry><title>用 VSCode 预览 reStructureText 文件</title><link href="https://kaffa.im/preview-restructuretext-file-in-vscode.html" rel="alternate"></link><published>2018-07-18T12:30:00+08:00</published><updated>2018-07-18T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-18:/preview-restructuretext-file-in-vscode.html</id><summary type="html">&lt;p class="first last"&gt;本文描述用 VSCode 预览 reStructureText 文件的配置办法&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="Wechaty"></category><category term="Node"></category><category term="Node.js"></category><category term="Open Source"></category></entry><entry><title>用 VSCode 预览 reStructureText 文件</title><link href="https://kaffa.im/preview-restructuretext-file-in-vscode.html" rel="alternate"></link><published>2018-07-18T12:30:00+08:00</published><updated>2018-07-18T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-18:/preview-restructuretext-file-in-vscode.html</id><summary type="html">&lt;p class="first last"&gt;本文描述用 VSCode 预览 reStructureText 文件的配置办法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;通识&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -1020,8 +1197,10 @@ Makefile
 &lt;ol class="arabic simple" start="4"&gt;
 &lt;li&gt;最后提供一份快速参考 &lt;a class="reference external" href="http://www.pythondoc.com/sphinx/rest.html"&gt;sphinx-rest&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="VSCode"></category><category term="reStructureText"></category></entry><entry><title>Windows 下安装 Wechaty 的注意点(keng)</title><link href="https://kaffa.im/install-wechaty-on-windows.html" rel="alternate"></link><published>2018-07-17T12:00:00+08:00</published><updated>2018-07-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-17:/install-wechaty-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的注意点(keng)&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="VSCode"></category><category term="reStructureText"></category></entry><entry><title>Windows 下安装 Wechaty 的注意点(keng)</title><link href="https://kaffa.im/install-wechaty-on-windows.html" rel="alternate"></link><published>2018-07-17T12:00:00+08:00</published><updated>2018-07-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-17:/install-wechaty-on-windows.html</id><summary type="html">&lt;p class="first last"&gt;本文描述 Windows 下安装 Wechaty 的注意点(keng)&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;摘要&lt;/h2&gt;
 &lt;p&gt;本文对于在 Windows 下安装 &lt;a class="reference external" href="https://github.com/Chatie/wechaty"&gt;Wechaty&lt;/a&gt; 的坑作个临时记录，但其中涉及的处理方式随着项目的升级或依赖软件的升级可能会变得不再需要。&lt;/p&gt;
@@ -1051,8 +1230,10 @@ PYTHON=c:\Python27\python.exe&lt;/dd&gt;
 &lt;li&gt;一般生产推荐使用 LTS 版本的 node ，可能很多人都不会安装 node 最新版，所以此处算是一坑，官方虽有提示，但不够醒目；&lt;/li&gt;
 &lt;li&gt;已经 2018 年了，大部分库都用 six 支持了 Python 2 和 3 版本，很多人都转到 Python 3.6+，对于安装时出现 Python 相关的错误时，可能不会想到是 node-gyp 依赖 Python 2.7 的原因。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="Wechaty"></category><category term="Node"></category><category term="Node.js"></category></entry><entry><title>升级 CentOS Linux Kernel</title><link href="https://kaffa.im/update-centos-linux-kernel.html" rel="alternate"></link><published>2018-07-06T13:00:00+08:00</published><updated>2018-07-06T13:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-06:/update-centos-linux-kernel.html</id><summary type="html">&lt;p class="first last"&gt;本文描述升级 CentOS Linux Kernel 的方法&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="Wechaty"></category><category term="Node"></category><category term="Node.js"></category></entry><entry><title>升级 CentOS Linux Kernel</title><link href="https://kaffa.im/update-centos-linux-kernel.html" rel="alternate"></link><published>2018-07-06T13:00:00+08:00</published><updated>2018-07-06T13:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-06:/update-centos-linux-kernel.html</id><summary type="html">&lt;p class="first last"&gt;本文描述升级 CentOS Linux Kernel 的方法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;升级 CentOS Linux Kernel 的方法&lt;/h2&gt;
 &lt;p&gt;升级命令:&lt;/p&gt;
@@ -1101,8 +1282,10 @@ yum autoremove kernel-.el7.x86_64
 &lt;li&gt;在国内，除非天时地利人和，研究 Linux Kernel 并没什么太多商业价值，只是领域情怀或“我乐意”；&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://www.elrepo.org"&gt;https://www.elrepo.org&lt;/a&gt; 和 &lt;a class="reference external" href="https://kernelnewbies.org"&gt;https://kernelnewbies.org&lt;/a&gt; 可能对你有用。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="CentOS"></category><category term="Linux Kernel"></category></entry><entry><title>在 Linux 上安装 VSCode 遇到的问题和解决思路</title><link href="https://kaffa.im/install-vscode-on-linux-error.html" rel="alternate"></link><published>2018-07-05T12:30:00+08:00</published><updated>2018-07-05T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-05:/install-vscode-on-linux-error.html</id><summary type="html">&lt;p class="first last"&gt;本文描述在 Linux 上安装 VSCode 遇到的问题和解决思路&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="CentOS"></category><category term="Linux Kernel"></category></entry><entry><title>在 Linux 上安装 VSCode 遇到的问题和解决思路</title><link href="https://kaffa.im/install-vscode-on-linux-error.html" rel="alternate"></link><published>2018-07-05T12:30:00+08:00</published><updated>2018-07-05T12:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-05:/install-vscode-on-linux-error.html</id><summary type="html">&lt;p class="first last"&gt;本文描述在 Linux 上安装 VSCode 遇到的问题和解决思路&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;为什么在 Linux 上安装 VSCode？&lt;/h2&gt;
 &lt;p&gt;近期计划使用搭建 telegram bot，了解原理后，发现是基本的 http 开发。&lt;/p&gt;
@@ -1153,8 +1336,10 @@ Error downloading packages:  libXScrnSaver-1.2.2-6.1.el7.x86_64
 &lt;p&gt;按照 yum 的提示去对应 &lt;a class="reference external" href="http://mirror.centos.org/centos-7/"&gt;CentOS 7&lt;/a&gt; 目录才发现，原来是 &lt;a class="reference external" href="http://mirror.centos.org/centos-7/7.5.1804/"&gt;CentOS 7.5.1804&lt;/a&gt; 到 Main Line 版本了。&lt;/p&gt;
 &lt;p&gt;于是这个包依赖问题可以从 &lt;a class="reference external" href="http://mirror.centos.org/centos-7/7.4.1708/readme"&gt;CentOS 7.4.1708 readme&lt;/a&gt; 得到解答，即 &lt;a class="reference external" href="https://kaffa.im/update-centos-linux-kernel/"&gt;升级 CentOS 7.4 到 CentOS 7.5&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;升级完成后，再次运行 &lt;tt class="docutils literal"&gt;sudo yum install code&lt;/tt&gt;，即成功。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="CentOS"></category><category term="VSCode"></category><category term="Linux"></category></entry><entry><title>数据与信息的描述与差别</title><link href="https://kaffa.im/data-vs-information.html" rel="alternate"></link><published>2018-06-28T10:55:00+08:00</published><updated>2018-06-28T10:55:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-28:/data-vs-information.html</id><summary type="html">&lt;p class="first last"&gt;本文描述数据和信息两个概念的差别&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="CentOS"></category><category term="VSCode"></category><category term="Linux"></category></entry><entry><title>数据与信息的描述与差别</title><link href="https://kaffa.im/data-vs-information.html" rel="alternate"></link><published>2018-06-28T10:55:00+08:00</published><updated>2018-06-28T10:55:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-28:/data-vs-information.html</id><summary type="html">&lt;p class="first last"&gt;本文描述数据和信息两个概念的差别&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;编写文档时，大家常把 &lt;strong&gt;数据&lt;/strong&gt; 和 &lt;strong&gt;信息&lt;/strong&gt; 两个词混用，如管理信息系统（Management Information System）、数据导入（Data Import）等，可见，日常大家并不太在意两者的区别。&lt;/p&gt;
 &lt;div class="section" id="id2"&gt;
 &lt;h2&gt;描述&lt;/h2&gt;
@@ -1167,8 +1352,10 @@ Error downloading packages:  libXScrnSaver-1.2.2-6.1.el7.x86_64
 &lt;p&gt;“信息” 是一个更老的词汇，最早可以追溯到 14 世纪的法国和英国中部，通常指 “通知行为” 本身, 经常用在教育和知识领域。&lt;/p&gt;
 &lt;p&gt;在语言的发展中，可能有一些约定的说法，比如“大数据时代”、“信息大爆炸”，从这些词也可以大概分出，由原始的数据可以组织出更可观的信息。&lt;/p&gt;
 &lt;p&gt;数据和信息是讨论很多问题时的基础，因此有此篇。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="Data"></category><category term="Information"></category></entry><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="https://kaffa.im/vscode-restructuredtext.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-20:/vscode-restructuredtext.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="Data"></category><category term="Information"></category></entry><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="https://kaffa.im/vscode-restructuredtext.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-20:/vscode-restructuredtext.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;问题出现的场景&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
@@ -1203,8 +1390,10 @@ pip install doc8
 &lt;/pre&gt;
 &lt;p&gt;我的理解是，这个最大行宽在 *.rst 文件中不建议设置太大，大约每行最多 80 个字符就差不多了，
 这个和可维护性代码的最佳实践是一致的。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="VSCode"></category><category term="reStructuredText"></category><category term="rst"></category></entry><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="https://kaffa.im/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2018-06-19T17:17:00+08:00</published><updated>2018-06-19T17:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-19:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="VSCode"></category><category term="reStructuredText"></category><category term="rst"></category></entry><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="https://kaffa.im/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2018-06-19T17:17:00+08:00</published><updated>2018-06-19T17:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-19:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;添加独立域名的步骤&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
@@ -1222,8 +1411,10 @@ pip install doc8
 &lt;/ol&gt;
 &lt;p&gt;在 Github 仓库 master 的根目录下添加一个名称为 &lt;strong&gt;CNAME&lt;/strong&gt; 的文件，文件内容为你注册的域名。
 例如，在 kaffa.github.io 仓库 master 的根目录新建一个 &lt;a class="reference external" href="https://github.com/kaffa/kaffa.github.io/blob/master/CNAME"&gt;CNAME&lt;/a&gt; 文件，文件内容为 kaffa.im，刷新刚才的 404 页面即打开了原先的 kaffa.github.io 站点&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Technology"></category><category term="Custom Domain"></category><category term="GitHub Pages"></category></entry><entry><title>解决编程领域难题的有效方法</title><link href="https://kaffa.im/the-effective-way-to-find-answers-to-programming-problems.html" rel="alternate"></link><published>2018-06-18T02:22:00+08:00</published><updated>2018-06-18T02:22:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-18:/the-effective-way-to-find-answers-to-programming-problems.html</id><summary type="html">&lt;p&gt;解决编程领域难题的有效方法是推演和搜索&lt;/p&gt;</summary><content type="html">&lt;h2&gt;为什么会有编程领域的难题？&lt;/h2&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="博客更新"></category><category term="Blog Update"></category><category term="自定义域名"></category><category term="Technology"></category><category term="Custom Domain"></category><category term="GitHub Pages"></category><category term="CNAME"></category></entry><entry><title>解决编程领域难题的有效方法</title><link href="https://kaffa.im/the-effective-way-to-find-answers-to-programming-problems.html" rel="alternate"></link><published>2018-06-18T02:22:00+08:00</published><updated>2018-06-18T02:22:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-18:/the-effective-way-to-find-answers-to-programming-problems.html</id><summary type="html">&lt;p&gt;解决编程领域难题的有效方法是推演和搜索&lt;/p&gt;</summary><content type="html">&lt;h2&gt;为什么会有编程领域的难题？&lt;/h2&gt;
 &lt;p&gt;现实世界很复杂，编程是世界的抽象和理想模型，理想和现实的差距存在于细节上，编程经常会遇到这些细节带来的鸿沟。&lt;/p&gt;
 &lt;h2&gt;解决编程领域难题的有效方法是什么？&lt;/h2&gt;
 &lt;ol&gt;
@@ -1391,10 +1582,12 @@ pip install doc8
 &lt;p&gt;搜索
     除了依赖自我，更多的是依赖外部&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content><category term="Technology"></category><category term="Technology Category"></category><category term="Problems Solving"></category></entry><entry><title>新博客</title><link href="https://kaffa.im/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
+&lt;/ol&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="技术知识分类"></category><category term="Technology Category"></category><category term="问题解决"></category><category term="Problem Solving"></category></entry><entry><title>新博客</title><link href="https://kaffa.im/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2018-06-06T10:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;关于本博客&lt;/h2&gt;
-&lt;p&gt;2016-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。&lt;/p&gt;
+&lt;p&gt;2018-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id3"&gt;
 &lt;h2&gt;本博客采用的技术&lt;/h2&gt;
@@ -1418,5 +1611,7 @@ pip install doc8
 &lt;li&gt;将 Jekyll 的 &lt;a class="reference external" href="https://taylantatli.github.io/Moon/"&gt;Moon 主题&lt;/a&gt; 迁移到 Pelican&lt;/li&gt;
 &lt;li&gt;添加一些需要 &lt;a class="reference external" href="https://github.com/getpelican/pelican-plugins"&gt;Pelican plugins&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="Life"></category><category term="My Blog"></category></entry></feed>
+</content><category term="随笔"></category><category term="Essays"></category><category term="博客"></category><category term="My Blog"></category><category term="博客更新"></category><category term="Blog Update"></category><category term="标记语言"></category><category term="Pelican"></category><category term="octopress"></category><category term="Markdown"></category><category term="reStructuredText"></category><category term="AsciiDoc"></category></entry></feed>
