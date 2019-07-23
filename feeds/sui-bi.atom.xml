@@ -1,53 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa - 随笔</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/sui-bi.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-07-23T12:00:00+08:00</updated><entry><title>如何编写一个 VSCode 扩展并发布到 Visual Studio Marketplace</title><link href="https://kaffa.im/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html" rel="alternate"></link><published>2019-07-23T12:00:00+08:00</published><updated>2019-07-23T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-07-23:/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html</id><summary type="html">&lt;p&gt;本文假设你熟悉 node.js 和 npm 工具，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="编写 VSCode 插件" src="https://kaffa.im/img/2019/create-vscode-extension.png" title="编写 VSCode 插件" /&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa - 随笔</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/sui-bi.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-07-23T12:00:00+08:00</updated><entry><title>如何编写一个 VSCode 扩展并发布到 Visual Studio Marketplace</title><link href="https://kaffa.im/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html" rel="alternate"></link><published>2019-07-23T12:00:00+08:00</published><updated>2019-07-23T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-07-23:/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html</id><summary type="html">&lt;p class="first last"&gt;本文假设你熟悉 node.js 和 npm 工具，用过 Git，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。&lt;/p&gt;
+</summary><content type="html">&lt;img alt="编写 VSCode 插件" src="https://kaffa.im/img/2019/create-vscode-extension.png" /&gt;
+&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;概述&lt;/h2&gt;
 &lt;p&gt;本文假设你熟悉 node.js 和 npm 工具，用过 Git，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。&lt;/p&gt;
-&lt;p&gt;VSCode 已是免费文本编辑器/IDE的王者，但其文本闪改能力还是不如一些老牌文本编辑器，比如 EverEdit 与 EmEditor，但它免费呀，所以，用它用它用它。&lt;/p&gt;
+&lt;p&gt;VSCode 已是免费文本编辑器/IDE的王者，但其文本闪改能力还是不如一些老牌文本编辑器，比如 &lt;a class="reference external" href="http://www.everedit.net/"&gt;EverEdit&lt;/a&gt; 与 EmEditor，但它免费呀，所以，用它用它用它。&lt;/p&gt;
 &lt;p&gt;在文本中插入文件名是个常用场景，比如编辑本文时，第一行就会用到，笔者在 EverEdit 和 EmEditor 中编写过脚本插件，基本都只需要一个文件和几行脚本代码。&lt;/p&gt;
 &lt;p&gt;考虑到 VSCode 有一个全球生态，那么 Visual Studio Marketplace 中是否能找到一个类似的插件呢，答案是：没有。于是，我们做一个呗。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="If not me, who? If not now, when?" src="https://kaffa.im/img/2019/if-not-me-who-if-not-now-when.png" title="If not me, who? If not now, when?" /&gt;&lt;/p&gt;
+&lt;img alt="If not me, who? If not now, when?" src="https://kaffa.im/img/2019/if-not-me-who-if-not-now-when.png" /&gt;
 &lt;p&gt;在 VSCode 关于中，我们可以看到它的技术栈如下，其插件采用 JavaScript 或 TypeScript 编写。&lt;/p&gt;
-&lt;ul&gt;
+&lt;ul class="simple"&gt;
 &lt;li&gt;Electron: 4.2.5&lt;/li&gt;
 &lt;li&gt;Chrome: 69.0.3497.128&lt;/li&gt;
 &lt;li&gt;Node.js: 10.11.0&lt;/li&gt;
 &lt;li&gt;V8: 6.9.427.31-electron.0&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;具体步骤&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;假设你已安装 node.js 和 git&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果你没有用过 Yeoman 脚手架工具，那么现在正是时候，装上它&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;batch
-npm install -g yo generator-code&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;利用 Yeoman 建立项目框架&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;batch
-yo code&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;```batch&lt;/p&gt;
-&lt;h1&gt;? What type of extension do you want to create? New Extension (TypeScript)&lt;/h1&gt;
-&lt;h1&gt;? What's the name of your extension? insert-filename&lt;/h1&gt;
-&lt;h3&gt;Press &lt;Enter&gt; to choose default for all options below&lt;/h3&gt;
-&lt;h1&gt;? What's the identifier of your extension? insert-filename&lt;/h1&gt;
-&lt;h1&gt;? What's the description of your extension?&lt;/h1&gt;
-&lt;h1&gt;? Initialize a git repository? Yes&lt;/h1&gt;
-&lt;h1&gt;? Which package manager to use? npm&lt;/h1&gt;
-&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;1、假设你已安装 node.js 和 git&lt;/p&gt;
+&lt;p&gt;2、如果你没有用过 Yeoman 脚手架工具，那么现在正是时候，装上它:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+npm install -g yo generator-code
+&lt;/pre&gt;
+&lt;p&gt;3、利用 Yeoman 建立项目框架:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+yo code
+
+# ? What type of extension do you want to create? New Extension (TypeScript)
+# ? What's the name of your extension? insert-filename
+### Press &amp;lt;Enter&amp;gt; to choose default for all options below ###
+# ? What's the identifier of your extension? insert-filename
+# ? What's the description of your extension?
+# ? Initialize a git repository? Yes
+# ? Which package manager to use? npm
+&lt;/pre&gt;
 &lt;p&gt;扩展项目就创建好了，下一步，让我们运行起来。&lt;/p&gt;
-&lt;p&gt;1、执行&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;batch
-code ./insert-filename&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;再按 &lt;code&gt;F5&lt;/code&gt; 运行，这时，VSCode 会启动一个新窗口，这个窗口中 Yeoman 脚手架项目 insert-filename 已经加载了插件。&lt;/p&gt;
-&lt;p&gt;2、让我们按下 &lt;code&gt;Ctrl + Shift + P&lt;/code&gt;，输入 &lt;code&gt;insert-filename&lt;/code&gt;，可以看到这条命令，回车后应该可以看到一条 Hello World！的信息在 VSCode 的右下角弹出来。&lt;/p&gt;
-&lt;p&gt;3、接着，我们便可以开始编写插入文件名的代码了，还可以调试哟！让我们打开 &lt;code&gt;src/extension.ts&lt;/code&gt; 文件。为便于理解，请参阅中文注释。&lt;/p&gt;
-&lt;p&gt;```TypeScript
-import { commands, workspace, window, ExtensionContext } from 'vscode';&lt;/p&gt;
-&lt;p&gt;// 在所有选区中插入文件名
+&lt;p&gt;4、执行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+code ./insert-filename
+&lt;/pre&gt;
+&lt;p&gt;再按 &lt;tt class="docutils literal"&gt;F5&lt;/tt&gt; 运行，这时，VSCode 会启动一个新窗口，这个窗口中 Yeoman 脚手架项目 insert-filename 已经加载了插件。&lt;/p&gt;
+&lt;p&gt;5、让我们按下 &lt;tt class="docutils literal"&gt;Ctrl + Shift + P&lt;/tt&gt;，输入 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;insert-filename&lt;/span&gt;&lt;/tt&gt;，可以看到这条命令，回车后应该可以看到一条 Hello World！的信息在 VSCode 的右下角弹出来。&lt;/p&gt;
+&lt;p&gt;6、接着，我们便可以开始编写插入文件名的代码了，还可以调试哟！让我们打开 &lt;tt class="docutils literal"&gt;src/extension.ts&lt;/tt&gt; 文件。为便于理解，请参阅中文注释:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import { commands, workspace, window, ExtensionContext } from 'vscode';
+
+// 在所有选区中插入文件名
 function replaceEditorSelection() {
     const editor = window.activeTextEditor;
     if (editor === undefined) {
@@ -55,85 +54,99 @@ function replaceEditorSelection() {
     }
     const selections = editor.selections;
     editor.edit((editBuilder) =&amp;gt; {
-      selections.forEach((selection) =&amp;gt; {
+    selections.forEach((selection) =&amp;gt; {
         let url = editor.document.fileName;
-        let urlFormatted = url.replace(/\/g, '/');
+        let urlFormatted = url.replace(/\\/g, '/');
         let lastPart = urlFormatted.split('/').pop() || '';
         editBuilder.replace(selection, '');
         editBuilder.insert(selection.active, lastPart);
-      });
+    });
     );
-  }&lt;/p&gt;
-&lt;p&gt;// 插件激活
-export function activate(context: ExtensionContext) {
-    console.log('Congratulations, your extension "Insert Filename" is now active!');
-    // 注册一条命令
-    let disposable = commands.registerCommand('extension.insertFilename', () =&amp;gt; replaceEditorSelection());&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;context.subscriptions.push(disposable);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;}&lt;/p&gt;
-&lt;p&gt;// 插件待用
-export function deactivate() {
-    console.log('Your extension "Insert Filename" is now inactive!');
 }
-```&lt;/p&gt;
-&lt;p&gt;4、其次，最重要的是编辑 package.json 文件，最重要的 contributes 配置，以下配置分别在命令、编辑器右键菜单上注册了此命令，并设置其快捷键。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;json
-    "contributes": {
-        "commands": [
+
+// 插件激活
+export function activate(context: ExtensionContext) {
+    console.log('Congratulations, your extension &amp;quot;Insert Filename&amp;quot; is now active!');
+    // 注册一条命令
+    let disposable = commands.registerCommand('extension.insertFilename', () =&amp;gt; replaceEditorSelection());
+
+    context.subscriptions.push(disposable);
+}
+
+// 插件待用
+export function deactivate() {
+    console.log('Your extension &amp;quot;Insert Filename&amp;quot; is now inactive!');
+}
+&lt;/pre&gt;
+&lt;p&gt;7、其次，最重要的是编辑 package.json 文件，最重要的 contributes 配置，以下配置分别在命令、编辑器右键菜单上注册了此命令，并设置其快捷键:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;quot;contributes&amp;quot;: {
+    &amp;quot;commands&amp;quot;: [
+        {
+            &amp;quot;command&amp;quot;: &amp;quot;extension.insertFilename&amp;quot;,
+            &amp;quot;title&amp;quot;: &amp;quot;Insert Filename&amp;quot;
+        }
+    ],
+    &amp;quot;menus&amp;quot;: {
+        &amp;quot;editor/context&amp;quot;: [
             {
-                "command": "extension.insertFilename",
-                "title": "Insert Filename"
-            }
-        ],
-        "menus": {
-            "editor/context": [
-                {
-                    "command": "extension.insertFilename",
-                    "group": "extension@1"
-                }
-            ]
-        },
-        "keybindings": [
-            {
-                "command": "extension.insertFilename",
-                "key": "ctrl+alt+i",
-                "mac": "shift+cmd+i",
-                "when": "editorTextFocus"
+                &amp;quot;command&amp;quot;: &amp;quot;extension.insertFilename&amp;quot;,
+                &amp;quot;group&amp;quot;: &amp;quot;extension&amp;#64;1&amp;quot;
             }
         ]
-    },&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;5、更详细的代码和配置文件请移步 GitHub 仓库：&lt;a href="https://github.com/kaffa/vscode-insert-filename"&gt;vscode-insert-filename 插件源码&lt;/a&gt; 。&lt;/p&gt;
+    },
+    &amp;quot;keybindings&amp;quot;: [
+        {
+            &amp;quot;command&amp;quot;: &amp;quot;extension.insertFilename&amp;quot;,
+            &amp;quot;key&amp;quot;: &amp;quot;ctrl+alt+i&amp;quot;,
+            &amp;quot;mac&amp;quot;: &amp;quot;shift+cmd+i&amp;quot;,
+            &amp;quot;when&amp;quot;: &amp;quot;editorTextFocus&amp;quot;
+        }
+    ]
+}
+&lt;/pre&gt;
+&lt;p&gt;8、更详细的代码和配置文件请移步 GitHub 仓库：&lt;a class="reference external" href="https://github.com/kaffa/vscode-insert-filename"&gt;vscode-insert-filename 插件源码&lt;/a&gt; 。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h2&gt;编译发布&lt;/h2&gt;
 &lt;p&gt;到目前为止，我们的测试都是直接运行插件，现在让我们对项目进行编译，得到 insert-filename-0.0.2.vsix 文件，就可以进行发布了。&lt;/p&gt;
-&lt;p&gt;为编译插件，我们需要下载微软 VSCode Extension 工具：vsce&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;batch
-npm install -g vsce&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;安装完毕后，让我们执行如下指令进行编译&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;batch
-vsce package&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;编译成功后，项目目录中会得到 insert-filename-0.0.2.vsix 文件，再运行如下命令发布&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;batch
-vsce publish&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;不出意料，你会得到 401 错误，是因为向微软市场发布这个插件，需要一个 &lt;a href="https://marketplace.visualstudio.com/items?itemName=kaffa.insert-filename"&gt;Azure DevOps&lt;/a&gt; 账号，你可以用一个 Microsoft 账号登录跳转注册 &lt;a href="https://marketplace.visualstudio.com/items?itemName=kaffa.insert-filename"&gt;Azure DevOps&lt;/a&gt; 即可。&lt;/p&gt;
-&lt;p&gt;接下来，我们不用创建项目，直接在右上角个人头像菜单 &lt;code&gt;Security&lt;/code&gt; 中创建一个 Personal Access Tokens，选项如下，先点击&lt;code&gt;Show all scopes&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;p&gt;9、为编译插件，我们需要下载微软 VSCode Extension 工具 vsce:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+npm install -g vsce
+&lt;/pre&gt;
+&lt;p&gt;10、安装完毕后，让我们执行如下指令进行编译:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+vsce package
+&lt;/pre&gt;
+&lt;p&gt;11、编译成功后，项目目录中会得到 insert-filename-0.0.2.vsix 文件，再运行如下命令发布:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+vsce publish
+&lt;/pre&gt;
+&lt;p&gt;不出意料，你会得到 401 错误，是因为向微软市场发布这个插件，需要一个 &lt;a class="reference external" href="https://aka.ms/SignupAzureDevOps"&gt;Azure DevOps&lt;/a&gt; 账号，你可以用一个 Microsoft 账号登录跳转注册 &lt;a class="reference external" href="https://aka.ms/SignupAzureDevOps"&gt;Azure DevOps&lt;/a&gt; 即可。&lt;/p&gt;
+&lt;p&gt;接下来，我们不用创建项目，直接在右上角个人头像菜单 &lt;tt class="docutils literal"&gt;Security&lt;/tt&gt; 中创建一个 Personal Access Tokens，选项如下，先点击 &lt;tt class="docutils literal"&gt;Show all scopes&lt;/tt&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
 &lt;li&gt;Organization：All accessible organization&lt;/li&gt;
 &lt;li&gt;Scopes: Marketplace 中的 Acquire and Manage&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;再点击 &lt;code&gt;Create&lt;/code&gt; 按钮，生成成功后，点击 &lt;code&gt;Copy&lt;/code&gt;，&lt;strong&gt;注意&lt;/strong&gt;：这个Token只会在这个时候出现一次，所以，你得找一个不会忘记的地方记录下来。&lt;/p&gt;
-&lt;p&gt;再执行此命令，将其中的 kaffa 换成你的 id，输入刚才创建的 Token&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;batch
-vsce create-publisher kaffa&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;执行&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;batch
-vsce publish&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;再点击 &lt;tt class="docutils literal"&gt;Create&lt;/tt&gt; 按钮，生成成功后，点击 &lt;tt class="docutils literal"&gt;Copy&lt;/tt&gt;，&lt;strong&gt;注意&lt;/strong&gt;：这个Token只会在这个时候出现一次，所以，你得找一个不会忘记的地方记录下来。&lt;/p&gt;
+&lt;p&gt;再执行此命令，将其中的 kaffa 换成你的 id，输入刚才创建的 Token:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+vsce create-publisher kaffa
+&lt;/pre&gt;
+&lt;p&gt;12、发布:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+vsce publish
+&lt;/pre&gt;
 &lt;p&gt;到这里，我们的插件就发布成功了，过几分钟，就可以官网看到你的插件了，并可以在 VSCode 插件中搜索了，记得做一些关键字 SEO，并升级一下版本。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h2&gt;总结&lt;/h2&gt;
-&lt;p&gt;本插件发布在 &lt;a href="https://marketplace.visualstudio.com/items?itemName=kaffa.insert-filename"&gt;Visual Studio Marketplace&lt;/a&gt;，欢迎下载使用。&lt;/p&gt;
+&lt;p&gt;本插件发布在 &lt;a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=kaffa.insert-filename"&gt;Visual Studio Marketplace&lt;/a&gt;，欢迎下载使用。&lt;/p&gt;
 &lt;p&gt;祝各位读者读完本文，能顺利安装、编写、编译、发布你的插件，如果在具体步骤中遇到问题，请回复和留言。&lt;/p&gt;
 &lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="VSCode"></category><category term="vsce"></category><category term="Visual Studio Marketplace"></category></entry><entry><title>修改 Microsoft Code Markdown 格式的快捷键</title><link href="https://kaffa.im/change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html" rel="alternate"></link><published>2019-05-15T12:00:00+08:00</published><updated>2019-05-15T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-15:/change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html</id><summary type="html">&lt;p&gt;修改 Microsoft Code Markdown 格式的快捷键&lt;/p&gt;</summary><content type="html">&lt;p&gt;为了兼容 macOS 系统 MWeb 写作，我将文档格式从 .rst 修改为了 .md。我选择 Microsoft Code Markdown 来写日志，但发现快捷键 Ctrl + B 并不能将文字加粗。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
+&lt;/div&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="VSCode Extension"></category><category term="vsce"></category><category term="Visual Studio Marketplace"></category></entry><entry><title>修改 Microsoft Code Markdown 格式的快捷键</title><link href="https://kaffa.im/change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html" rel="alternate"></link><published>2019-05-15T12:00:00+08:00</published><updated>2019-05-15T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-15:/change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html</id><summary type="html">&lt;p&gt;修改 Microsoft Code Markdown 格式的快捷键&lt;/p&gt;</summary><content type="html">&lt;p&gt;为了兼容 macOS 系统 MWeb 写作，我将文档格式从 .rst 修改为了 .md。我选择 Microsoft Code Markdown 来写日志，但发现快捷键 Ctrl + B 并不能将文字加粗。&lt;/p&gt;
 &lt;p&gt;进入【File】【Preferences】【Keyborad Shortcuts】，搜索 Ctrl + B，发现默认关联很多其他功能，比如调试断点（Breakpoint）和隐藏边栏。&lt;/p&gt;
 &lt;p&gt;经过把 Ctrl + H 换成 Ctrl + R，把隐藏边栏 Ctrl + B 换成 Ctrl + H，编辑 Markdown 文件中的 Ctrl + B 成为了加粗的快捷键。&lt;/p&gt;
 &lt;p&gt;Microsoft Code 这个披着 IDE 外衣的编辑器，还是需要细致调教才会变得好用的，&lt;strong&gt;多人设计插件的快捷键重复问题是因缺乏统一的规范和检查机制导致的&lt;/strong&gt;。&lt;/p&gt;
@@ -156,25 +169,25 @@ vsce publish&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;计算机科学：Computer Science，简称 CS&lt;/p&gt;
 &lt;p&gt;所有有关计算机科学及子学科的总称，是系统性研究信息与计算的理论基础以及计算机系统实现与应用的技术学科。现代主要研究领域有：
-&lt;em&gt; 人工智能
-&lt;/em&gt; 计算机体系结构
-&lt;em&gt; 人机交互
-&lt;/em&gt; 软件工程
-&lt;em&gt; 数据与数据库
-&lt;/em&gt; 多媒体（计算机图形学）
-&lt;em&gt; 网络
-&lt;/em&gt; 信息安全
-&lt;em&gt; 管理信息系统
-&lt;/em&gt; 生物信息
+* 人工智能
+* 计算机体系结构
+* 人机交互
+* 软件工程
+* 数据与数据库
+* 多媒体（计算机图形学）
+* 网络
+* 信息安全
+* 管理信息系统
+* 生物信息
 * 计算理论&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;电子工程：Electronic Engineering，简称 EE&lt;/p&gt;
 &lt;p&gt;以电子学、电磁学等物理学分支为基础，涵盖电子学、电子计算机的工程学。主要的研究分支：
-&lt;em&gt; 通信与网络
-&lt;/em&gt; 信号处理
-&lt;em&gt; 电子学
-&lt;/em&gt; 集成电路
+* 通信与网络
+* 信号处理
+* 电子学
+* 集成电路
 * 光电子与光学&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
