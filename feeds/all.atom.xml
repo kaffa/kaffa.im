@@ -1,5 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-05-18T12:00:00+08:00</updated><entry><title>普通的逻辑学我们普通的聊</title><link href="https://kaffa.im/common-logic-common-talk.html" rel="alternate"></link><published>2019-05-18T12:00:00+08:00</published><updated>2019-05-18T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-18:/common-logic-common-talk.html</id><summary type="html">&lt;p&gt;本文试图在不长的篇幅中聊聊逻辑学和生活中的普通逻辑&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="逻辑" src="https://kaffa.im/img/2019/logic_child_512.png" title="逻辑" /&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-07-23T12:00:00+08:00</updated><entry><title>如何编写一个 VSCode 扩展并发布到 Visual Studio Marketplace</title><link href="https://kaffa.im/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html" rel="alternate"></link><published>2019-07-23T12:00:00+08:00</published><updated>2019-07-23T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-07-23:/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html</id><summary type="html">&lt;p&gt;本文假设你熟悉 node.js 和 npm 工具，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="编写 VSCode 插件" src="https://kaffa.im/img/2019/create-vscode-extension.png" title="编写 VSCode 插件" /&gt;&lt;/p&gt;
+&lt;h2&gt;概述&lt;/h2&gt;
+&lt;p&gt;本文假设你熟悉 node.js 和 npm 工具，用过 Git，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。&lt;/p&gt;
+&lt;p&gt;VSCode 已是免费文本编辑器/IDE的王者，但其文本闪改能力还是不如一些老牌文本编辑器，比如 EverEdit 与 EmEditor，但它免费呀，所以，用它用它用它。&lt;/p&gt;
+&lt;p&gt;在文本中插入文件名是个常用场景，比如编辑本文时，第一行就会用到，笔者在 EverEdit 和 EmEditor 中编写过脚本插件，基本都只需要一个文件和几行脚本代码。&lt;/p&gt;
+&lt;p&gt;考虑到 VSCode 有一个全球生态，那么 Visual Studio Marketplace 中是否能找到一个类似的插件呢，答案是：没有。于是，我们做一个呗。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="If not me, who? If not now, when?" src="https://kaffa.im/img/2019/if-not-me-who-if-not-now-when.png" title="If not me, who? If not now, when?" /&gt;&lt;/p&gt;
+&lt;p&gt;在 VSCode 关于中，我们可以看到它的技术栈如下，其插件采用 JavaScript 或 TypeScript 编写。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Electron: 4.2.5&lt;/li&gt;
+&lt;li&gt;Chrome: 69.0.3497.128&lt;/li&gt;
+&lt;li&gt;Node.js: 10.11.0&lt;/li&gt;
+&lt;li&gt;V8: 6.9.427.31-electron.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;具体步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;假设你已安装 node.js 和 git&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果你没有用过 Yeoman 脚手架工具，那么现在正是时候，装上它&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;batch
+npm install -g yo generator-code&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;利用 Yeoman 建立项目框架&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;batch
+yo code&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;```batch&lt;/p&gt;
+&lt;h1&gt;? What type of extension do you want to create? New Extension (TypeScript)&lt;/h1&gt;
+&lt;h1&gt;? What's the name of your extension? insert-filename&lt;/h1&gt;
+&lt;h3&gt;Press &lt;Enter&gt; to choose default for all options below&lt;/h3&gt;
+&lt;h1&gt;? What's the identifier of your extension? insert-filename&lt;/h1&gt;
+&lt;h1&gt;? What's the description of your extension?&lt;/h1&gt;
+&lt;h1&gt;? Initialize a git repository? Yes&lt;/h1&gt;
+&lt;h1&gt;? Which package manager to use? npm&lt;/h1&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;扩展项目就创建好了，下一步，让我们运行起来。&lt;/p&gt;
+&lt;p&gt;1、执行&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;batch
+code ./insert-filename&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;再按 &lt;code&gt;F5&lt;/code&gt; 运行，这时，VSCode 会启动一个新窗口，这个窗口中 Yeoman 脚手架项目 insert-filename 已经加载了插件。&lt;/p&gt;
+&lt;p&gt;2、让我们按下 &lt;code&gt;Ctrl + Shift + P&lt;/code&gt;，输入 &lt;code&gt;insert-filename&lt;/code&gt;，可以看到这条命令，回车后应该可以看到一条 Hello World！的信息在 VSCode 的右下角弹出来。&lt;/p&gt;
+&lt;p&gt;3、接着，我们便可以开始编写插入文件名的代码了，还可以调试哟！让我们打开 &lt;code&gt;src/extension.ts&lt;/code&gt; 文件。为便于理解，请参阅中文注释。&lt;/p&gt;
+&lt;p&gt;```TypeScript
+import { commands, workspace, window, ExtensionContext } from 'vscode';&lt;/p&gt;
+&lt;p&gt;// 在所有选区中插入文件名
+function replaceEditorSelection() {
+    const editor = window.activeTextEditor;
+    if (editor === undefined) {
+        return;
+    }
+    const selections = editor.selections;
+    editor.edit((editBuilder) =&amp;gt; {
+      selections.forEach((selection) =&amp;gt; {
+        let url = editor.document.fileName;
+        let urlFormatted = url.replace(/\/g, '/');
+        let lastPart = urlFormatted.split('/').pop() || '';
+        editBuilder.replace(selection, '');
+        editBuilder.insert(selection.active, lastPart);
+      });
+    );
+  }&lt;/p&gt;
+&lt;p&gt;// 插件激活
+export function activate(context: ExtensionContext) {
+    console.log('Congratulations, your extension "Insert Filename" is now active!');
+    // 注册一条命令
+    let disposable = commands.registerCommand('extension.insertFilename', () =&amp;gt; replaceEditorSelection());&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;context.subscriptions.push(disposable);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;// 插件待用
+export function deactivate() {
+    console.log('Your extension "Insert Filename" is now inactive!');
+}
+```&lt;/p&gt;
+&lt;p&gt;4、其次，最重要的是编辑 package.json 文件，最重要的 contributes 配置，以下配置分别在命令、编辑器右键菜单上注册了此命令，并设置其快捷键。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;json
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.insertFilename",
+                "title": "Insert Filename"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "extension.insertFilename",
+                    "group": "extension@1"
+                }
+            ]
+        },
+        "keybindings": [
+            {
+                "command": "extension.insertFilename",
+                "key": "ctrl+alt+i",
+                "mac": "shift+cmd+i",
+                "when": "editorTextFocus"
+            }
+        ]
+    },&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;5、更详细的代码和配置文件请移步 GitHub 仓库：&lt;a href="https://github.com/kaffa/vscode-insert-filename"&gt;vscode-insert-filename 插件源码&lt;/a&gt; 。&lt;/p&gt;
+&lt;h2&gt;编译发布&lt;/h2&gt;
+&lt;p&gt;到目前为止，我们的测试都是直接运行插件，现在让我们对项目进行编译，得到 insert-filename-0.0.2.vsix 文件，就可以进行发布了。&lt;/p&gt;
+&lt;p&gt;为编译插件，我们需要下载微软 VSCode Extension 工具：vsce&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;batch
+npm install -g vsce&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装完毕后，让我们执行如下指令进行编译&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;batch
+vsce package&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;编译成功后，项目目录中会得到 insert-filename-0.0.2.vsix 文件，再运行如下命令发布&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;batch
+vsce publish&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;不出意料，你会得到 401 错误，是因为向微软市场发布这个插件，需要一个 &lt;a href="https://marketplace.visualstudio.com/items?itemName=kaffa.insert-filename"&gt;Azure DevOps&lt;/a&gt; 账号，你可以用一个 Microsoft 账号登录跳转注册 &lt;a href="https://marketplace.visualstudio.com/items?itemName=kaffa.insert-filename"&gt;Azure DevOps&lt;/a&gt; 即可。&lt;/p&gt;
+&lt;p&gt;接下来，我们不用创建项目，直接在右上角个人头像菜单 &lt;code&gt;Security&lt;/code&gt; 中创建一个 Personal Access Tokens，选项如下，先点击&lt;code&gt;Show all scopes&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Organization：All accessible organization&lt;/li&gt;
+&lt;li&gt;Scopes: Marketplace 中的 Acquire and Manage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;再点击 &lt;code&gt;Create&lt;/code&gt; 按钮，生成成功后，点击 &lt;code&gt;Copy&lt;/code&gt;，&lt;strong&gt;注意&lt;/strong&gt;：这个Token只会在这个时候出现一次，所以，你得找一个不会忘记的地方记录下来。&lt;/p&gt;
+&lt;p&gt;再执行此命令，将其中的 kaffa 换成你的 id，输入刚才创建的 Token&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;batch
+vsce create-publisher kaffa&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;执行&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;batch
+vsce publish&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;到这里，我们的插件就发布成功了，过几分钟，就可以官网看到你的插件了，并可以在 VSCode 插件中搜索了，记得做一些关键字 SEO，并升级一下版本。&lt;/p&gt;
+&lt;h2&gt;总结&lt;/h2&gt;
+&lt;p&gt;本插件发布在 &lt;a href="https://marketplace.visualstudio.com/items?itemName=kaffa.insert-filename"&gt;Visual Studio Marketplace&lt;/a&gt;，欢迎下载使用。&lt;/p&gt;
+&lt;p&gt;祝各位读者读完本文，能顺利安装、编写、编译、发布你的插件，如果在具体步骤中遇到问题，请回复和留言。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category></entry><entry><title>普通的逻辑学我们普通的聊</title><link href="https://kaffa.im/common-logic-common-talk.html" rel="alternate"></link><published>2019-05-18T12:00:00+08:00</published><updated>2019-05-18T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-18:/common-logic-common-talk.html</id><summary type="html">&lt;p&gt;本文试图在不长的篇幅中聊聊逻辑学和生活中的普通逻辑&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="逻辑" src="https://kaffa.im/img/2019/logic_child_512.png" title="逻辑" /&gt;&lt;/p&gt;
 &lt;h2&gt;引&lt;/h2&gt;
 &lt;p&gt;无论主动或被动地，人们会观察、参与这个世界的活动，产生思考、形成概念，并通过语言交流观点时，逻辑都成为现代科学和现实世界基础的一半。为什么是一半后面会说。&lt;/p&gt;
 &lt;p&gt;拿熟悉的理财投资和交易来说，投资者从主观决策到越来越频繁地讲求逻辑，说明投资者越来越需要委托方对标的品种选择和时机选择提供依据，也说明所需的投资依据更趋于基于客观事实。&lt;/p&gt;
@@ -26,7 +160,7 @@
 &lt;p&gt;&lt;strong&gt;矛盾律&lt;/strong&gt;：同一时刻，某个事物不能即是A又是B&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;这里我们把排中律和充足理由律放在神的存在性问题上试一下：按充足理由律，神不是神存在的原因，再根据排中律，得到：神存在的原因是无神。&lt;/p&gt;
+&lt;p&gt;这里我们把排中律和充足理由律放在神的存在性问题上试一下：按因果律，神不是神存在的原因，再根据排中律，得到：神存在的原因是无神。&lt;/p&gt;
 &lt;p&gt;五、直言命题和普遍命题。普遍命题分为&lt;strong&gt;全称命题&lt;/strong&gt;和&lt;strong&gt;特称命题&lt;/strong&gt;。直言命题即最有效的直接陈述。全称命题是 All，所有的全部这样的词语开头，特称命题是 Some，一部分一些某些这样的词开头。&lt;/p&gt;
 &lt;p&gt;六、逻辑推理的形式是论证。论证是从前提到结论。命题包括主语和谓语，断言即主语和谓语的联接过程。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;简单论证&lt;/strong&gt;：且（and）、或（or）、非（not）。我们用T表示真，F表示假。那么；T且F是F，T或F是T，非T是F，非F是T。什么意思呢？我们已知范冰冰是中国人且是个演员。如果有人说范冰冰是中国人但不是演员。我们会说错了。因为我们的逻辑识别出了：T and F is F。后面的也一样，所以说简单论证是大脑的功能。&lt;/p&gt;
@@ -38,7 +172,7 @@
 &lt;p&gt;三段论的论证结构是：所有 A -&amp;gt; B，所有 B -&amp;gt; C，那么：所有 A -&amp;gt; C
 大前提是特称的结构：有些 A -&amp;gt; B，所有 B -&amp;gt; C，那么：有些 A -&amp;gt; C，正确
 小前提是特称的反例：所有 A -&amp;gt; B，有些 B -&amp;gt; C，那么：有些 A -&amp;gt; C，错误。很明显A和C不相关。
-小前提是特称的反例：有些 A -&amp;gt; B，有些 B -&amp;gt; C，那么：有些 A -&amp;gt; C，错误。因为，特称不具传递性。感受一下：有些住在深圳的人是深圳人，有些深圳人是不住在深圳的人，那么有些不住在深圳的人是住在深圳的人，违反了排中律。&lt;/p&gt;
+小前提是特称的反例：有些 A -&amp;gt; B，有些 B -&amp;gt; C，那么：有些 A -&amp;gt; C，错误。因为，特称不具传递性。感受一下：有些住在深圳的人是深圳人，有些深圳人是不住在深圳的人，那么有些住在深圳的人是不住在深圳的人，违反了排中律。&lt;/p&gt;
 &lt;p&gt;再来一个隐蔽的：王撕葱吃汉堡王，美国人吃汉堡王，那么王撕葱是美国人。这个也许明显是个错误，进一步，我们看娱乐新闻中，窦靖童在 KTV 包厢吸烟，没素质的人在 KTV 包厢吸烟，那么窦靖童没素质。这个就不一定了，因为大前提“窦靖童在 KTV 包厢吸烟”可能是特称 some 甚至是 once ，其次，小前提隐藏了“不是每个没素质的都在KTV包厢吸烟”和“没素质的每次都在KTV包厢吸烟”，根据特称不具传递性，这里的特称被刻意隐藏了，我们其实无法得出窦靖童和没素质的人之间的强关联性。&lt;/p&gt;
 &lt;p&gt;上述两个例子都是如今为吸引流量的毫无逻辑的娱乐新闻和洗稿公号文中的提取，其中随意就能发现混乱的逻辑。&lt;/p&gt;
 &lt;p&gt;八、演绎推理&lt;/p&gt;
