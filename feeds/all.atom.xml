@@ -1,5 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-07-23T12:00:00+08:00</updated><entry><title>如何编写一个 VSCode 扩展并发布到 Visual Studio Marketplace</title><link href="https://kaffa.im/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html" rel="alternate"></link><published>2019-07-23T12:00:00+08:00</published><updated>2019-07-23T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-07-23:/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html</id><summary type="html">&lt;p class="first last"&gt;本文假设你熟悉 node.js 和 npm 工具，用过 Git，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-07-25T12:00:00+08:00</updated><entry><title>reStructureText 九个实用语法</title><link href="https://kaffa.im/nine-rules-on-restructuredtext-practical-grammar.html" rel="alternate"></link><published>2019-07-25T12:00:00+08:00</published><updated>2019-07-25T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-07-25:/nine-rules-on-restructuredtext-practical-grammar.html</id><summary type="html">&lt;p class="first last"&gt;本文是 reStructureText 实用语法指南，其中列出最常用的九个语法，用来写博客足矣。其余更多细节，请查阅官方指南。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;槽&lt;/h2&gt;
+&lt;p&gt;Markdown 各方实现经常不一致，累觉无爱，相比来说 reStructureText 更严谨丰富，换句话说就是更复杂。但作为 Pelican 引擎的主动力，我对语言技巧的基本态度是用最熟悉基础的即可写出文章，综合比较，我放弃了 md 转回了 rst。&lt;/p&gt;
+&lt;p&gt;本文说的实用主义，即达到能写文章即可的程度。不看 rst 所有的语法是什么能做什么，而是看写文章用到 rst 哪些语法。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;语法指南&lt;/h2&gt;
+&lt;p&gt;本文是 reStructureText 实用语法指南，其中列出最常用的九个语法，用来写博客足矣。其余更多细节，请查阅官方指南。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一、文本样式&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+*斜体*  **粗体**  ``段内标记``
+&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;斜体&lt;/em&gt;  &lt;strong&gt;粗体&lt;/strong&gt;  &lt;tt class="docutils literal"&gt;段内标记&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二、标题&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+================================
+reStructureText 实用语法指南
+================================
+
+第 1 章 标题
+===============
+
+第 1.1 节 标题
+-----------------
+
+第 1.1.1 小节 标题
+~~~~~~~~~~~~~~~~~~~~~~
+
+第 1.2 节 标题
+-----------------
+
+第 2 章 标题
+===============
+&lt;/pre&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;reStructureText 实用语法指南&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;第 1 章 标题&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;第 2 章 标题&lt;/h2&gt;
+&lt;p&gt;此处完整效果预览请在VSCode中试，如遇到问题，参阅我另一篇 &lt;a class="reference external" href="https://kaffa.im/preview-restructuretext-file-in-vscode.html"&gt;用 VSCode 预览 reStructureText 文件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三、段落&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+段落是由空行分割的文字。
+
+这是另一个段落。
+&lt;/pre&gt;
+&lt;p&gt;段落是由空行分割的文字。&lt;/p&gt;
+&lt;p&gt;这是另一个段落。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;四、术语表和列表&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;术语表&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+术语一
+    术语解释，需要缩进。
+
+    甚至可以有多个段落。
+
+术语二
+    描述
+&lt;/pre&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;术语一&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first"&gt;术语解释，需要缩进。&lt;/p&gt;
+&lt;p class="last"&gt;甚至可以有多个段落。&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;术语二&lt;/dt&gt;
+&lt;dd&gt;描述&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;&lt;strong&gt;无序列表&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+* 这是一个无序列表
+* 它含有两项，第二
+  项占两行
+&lt;/pre&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;这是一个无序列表&lt;/li&gt;
+&lt;li&gt;它含有两项，第二
+项占两行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;有序列表&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+1. 这是一个有序列表
+2. 它也有两项
+&lt;/pre&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;这是一个有序列表&lt;/li&gt;
+&lt;li&gt;它也有两项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;多级列表&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+* 这是
+* 一个列表
+
+    * 含一个缩进列表子项
+    * 和另一个子项
+
+* 这里是父项的继续
+&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;这是&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;一个列表&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;含一个缩进列表子项&lt;/li&gt;
+&lt;li&gt;和另一个子项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;这里是父项的继续&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;五、代码&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+五、代码::
+
+    # PEP 20 -- The Zen of Python
+    import this
+&lt;/pre&gt;
+&lt;p&gt;显示为:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# PEP 20 -- The Zen of Python
+import this
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;六、表格&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+=====  =====  =======
+A      B      A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======
+&lt;/pre&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="29%" /&gt;
+&lt;col width="29%" /&gt;
+&lt;col width="41%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;A&lt;/th&gt;
+&lt;th class="head"&gt;B&lt;/th&gt;
+&lt;th class="head"&gt;A and B&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;更复杂的格式:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
++------------------------+------------+----------+----------+
+| 第一行第一列           | 第二列     | 第三列   | 第四列   |
+| 标题行第二列           |            |          |          |
++========================+============+==========+==========+
+| 第二行第一列           | 第二列     | 第三列   | 第四列   |
++------------------------+------------+----------+----------+
+| 第三行第一列           | ...        | ...      |          |
++------------------------+------------+----------+----------+
+&lt;/pre&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="43%" /&gt;
+&lt;col width="21%" /&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="18%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;第一行第一列
+标题行第二列&lt;/th&gt;
+&lt;th class="head"&gt;第二列&lt;/th&gt;
+&lt;th class="head"&gt;第三列&lt;/th&gt;
+&lt;th class="head"&gt;第四列&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;第二行第一列&lt;/td&gt;
+&lt;td&gt;第二列&lt;/td&gt;
+&lt;td&gt;第三列&lt;/td&gt;
+&lt;td&gt;第四列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;第三行第一列&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;七、注释&lt;/strong&gt;::
+|    ..
+|        这个缩进
+|        是一个注释。
+|
+|        同级依然是注释&lt;/p&gt;
+&lt;!-- 这个缩进
+是一个注释。
+
+同级依然是注释 --&gt;
+&lt;p&gt;上方 rst 源文件中含有一段注释。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;八、超链接&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+`链接 &amp;lt;https://kaffa.im/&amp;gt;`_
+
+这段含有一个`链接`_。
+
+.. _`链接`: https://kaffa.im/
+&lt;/pre&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://kaffa.im/"&gt;这是链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这段含有一个 &lt;a class="reference external" href="https://kaffa.im/"&gt;链接&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;九、图片&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. image:: https://kaffa.im/img/reward.png
+    :alt: 赞赏码
+&lt;/pre&gt;
+&lt;p&gt;加上属性:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. image:: kaffa.png
+    :height: 100
+    :width: 200
+    :scale: 50
+    :alt: 图片的替换文字
+&lt;/pre&gt;
+&lt;img alt="赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
+&lt;/div&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="reStructuredText Grammar"></category></entry><entry><title>如何编写一个 VSCode 扩展并发布到 Visual Studio Marketplace</title><link href="https://kaffa.im/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html" rel="alternate"></link><published>2019-07-23T12:00:00+08:00</published><updated>2019-07-23T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-07-23:/how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace.html</id><summary type="html">&lt;p class="first last"&gt;本文假设你熟悉 node.js 和 npm 工具，用过 Git，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。&lt;/p&gt;
 </summary><content type="html">&lt;img alt="编写 VSCode 插件" src="https://kaffa.im/img/2019/create-vscode-extension.png" /&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;概述&lt;/h2&gt;
@@ -146,7 +391,175 @@ vsce publish
 &lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
 &lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="VSCode Extension"></category><category term="vsce"></category><category term="Visual Studio Marketplace"></category></entry><entry><title>普通的逻辑学我们普通的聊</title><link href="https://kaffa.im/common-logic-common-talk.html" rel="alternate"></link><published>2019-05-18T12:00:00+08:00</published><updated>2019-05-18T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-18:/common-logic-common-talk.html</id><summary type="html">&lt;p&gt;本文试图在不长的篇幅中聊聊逻辑学和生活中的普通逻辑&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="逻辑" src="https://kaffa.im/img/2019/logic_child_512.png" title="逻辑" /&gt;&lt;/p&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="VSCode Extension"></category><category term="vsce"></category><category term="Visual Studio Marketplace"></category></entry><entry><title>macOS 的前世今生及访达中拷贝文件的路径的方法</title><link href="https://kaffa.im/macOS-history-and-copy-file-path-in-finder-app.html" rel="alternate"></link><published>2019-06-09T05:04:00+08:00</published><updated>2019-06-09T05:04:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-06-09:/macOS-history-and-copy-file-path-in-finder-app.html</id><summary type="html">&lt;p class="first last"&gt;想介绍几种在访达（Finder）中拷贝文件路径的方法，但一小时后不小心按下浏览器回退，再写便就此篇加上了一些 macOS 的历史。&lt;/p&gt;
+</summary><content type="html">&lt;img alt="MacOS" src="https://kaffa.im/img/macos.png" /&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;为什么写 macOS 历史&lt;/h2&gt;
+&lt;p&gt;题记：想介绍几种在访达（Finder）中拷贝文件路径的方法，但一小时后不小心按下浏览器回退，再写便就此篇加上了一些 macOS 的历史。&lt;/p&gt;
+&lt;p&gt;为什么写？因为 macOS 的历史，也是现代操作系统发展史，与大学书本中的内容有距离；另一方面，历史由事件组成，软件发展史中包含了软件功能竞争的关键点。&lt;/p&gt;
+&lt;p&gt;操作系统即 Operating System，简称 OS，是一类让人使用机器的人机交互软件。如今的 Windows、Linux、Unix、iOS、Android、Chrome OS，及最近华为公司的鸿蒙，都是操作系统，它们有的用在桌面，有的用在服务器，有的适用上网本，有的是为移动手机而定制。&lt;/p&gt;
+&lt;p&gt;macOS 是苹果公司的桌面操作系统，很多果粉更加熟悉的名字其实是 Mac OS X，就在一周前苹果公司 iPad OS 发布了，这样和 iOS、tvOS、watchOS 一起，苹果公司为其产品线 iPhone、iPad、Mac、TV、Watch 分别定制了操作系统。&lt;/p&gt;
+&lt;p&gt;虽然苹果 Mac OS 和微软 Windows 一样都是商用闭源操作系统，其历史资料不易查找，但我们还是试图着墨追溯这段有趣而悠久的软件史。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;源起和发展脉络&lt;/h2&gt;
+&lt;p&gt;1976 年，我们的水果厂牌诞生，这家 Logo 被图灵咬缺一口公司，字母表排序非常靠前。&lt;/p&gt;
+&lt;p&gt;1984 年，苹果 Macintosh 电脑诞生，20 世纪 80 年代其实都是 Macintosh System 6 的天下，随后开发 Macintosh 的苹果雇员以头脑风暴的形式为其路径定了几个代号：Blue、Pink、Red，Blue 即 System 7，Pink 未完全发布，Red 是比 Pink 更 Pink 的高级系统，其命运接着表述。&lt;/p&gt;
+&lt;p&gt;其时，Bill Gates 的微软开发了 Windows 和 Win32 API，敌方已经进入了战场。Blue、Pink 对比不断升级的 Windows 95 略显式微。为兼容 x86 架构，Apple 与 Novell 研发了兼容 x86 的 Star Trek，但由于苹果系统架构路线定为 PowerPC 架构，且硬件供应商不太支持，这个系统最终没有发布。&lt;/p&gt;
+&lt;p&gt;直到 2005 年以后，Apple 调整为 x86 路线，才借 Darwin/x86 研发了存活至今还大放异彩的灵魂产品 iMac 与 MacBook Pro。&lt;/p&gt;
+&lt;p&gt;Red 就是其后的 Raptor，吸纳了 Star Trek 基因，但预算不足，Raptor 也夭折了。&lt;/p&gt;
+&lt;p&gt;其实，苹果公司早在 1994 年初就宣布，将用 10 年的软件经验研发 Macintosh 第 8 代，系统命名为 Mac OS 8，代号 Copland，这个系统一部分的使命是为迎战日益增长的 Windows 和 Internet Explorer，但结果我们都已知晓，“这一战我无遗憾”，按下不表。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;首战&lt;/h2&gt;
+&lt;p&gt;Copland 是基于 RISC 的 PowerPC 架构，集先进技术于一身，包括 ColorSync、OpenDoc、Power 系，Quick 系软件，还实现了自定义主题，甚至是与 Dos 和 Windows 的互操作、网络协议栈。此项目的干系人们对其预期包括：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;方便硬件驱动开发的硬件抽象层 HSL&lt;/li&gt;
+&lt;li&gt;微内核 NuKernel&lt;/li&gt;
+&lt;li&gt;IO、网络、文件系统作为服务运行于微内核之上&lt;/li&gt;
+&lt;li&gt;抢占式多任务，对标 Windows NT&lt;/li&gt;
+&lt;li&gt;内存保护和虚拟内存，对标 Windows NT&lt;/li&gt;
+&lt;li&gt;灵活的系统扩展机制&lt;/li&gt;
+&lt;li&gt;元数据及文件内容搜索&lt;/li&gt;
+&lt;li&gt;热升级&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;但期望被迫终止于软件工程方法的滞后，各方的软件难以集成，学院派 Unix 内核人才都被微软挖走去做 Windows NT 了，Copland 需求中内存保护未能实现。1996 年，Copland 项目中止。&lt;/p&gt;
+&lt;p&gt;1997 年出于商业计划，苹果公司发布了 System 7.6，重命名为 Mac OS 7.6，但缺少犀利的操作系统，无法对敌微软的 Windows 系统，成为苹果的阿喀琉斯之伤。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="beos"&gt;
+&lt;h2&gt;BeOS&lt;/h2&gt;
+&lt;p&gt;管理层失去了方向，苹果甚至考虑过和微软合作在 Windows 之上开发 Apple OS，还考虑过 Sun Solaris 和 BeOS，这里 BeOS 也出自于人才辈出的苹果前雇员，我为什么要用也？&lt;/p&gt;
+&lt;p&gt;虽然 BeOS 的天才们实现了内存保护和抢占式多任务，它擅长多媒体，还实现了BeFS，支持文件元数据，甚至支持 PowerPC 架构，但关键的打印和文件共享功能被遗忘了，软件方法论上叫做未完全分解权重需求且未排优先级。随后 BeOS 被大家耳熟能详的 Palm 公司收购，结束了它短暂的历史。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="next-openstep"&gt;
+&lt;h2&gt;NeXT OPENSTEP&lt;/h2&gt;
+&lt;p&gt;也可能商务谈判就差那么一分钱，Apple 最终没有完成收购。其中的缘由无从考证，但有一点确定的是，Apple 的管理层发现了另一个选项，Apple 前任帮主 Steve Jobs 的 NeXT 公司的 OPENSTEP，一种已被企业市场认可的操作系统。&lt;/p&gt;
+&lt;p&gt;1997 年 2 月 4 日，Apple 用 4 亿多刀收购了 NeXT，帮主重回 Apple，从其被辞算起，已过去了 12 年。值得注意的是，苹果的收获还包括一项技术资产——大家熟悉的 Objective-C 和 NeXT 的“科技x艺术”致胜原力——工业设计师和硬件工厂。&lt;/p&gt;
+&lt;p&gt;Objective-C 这种像 C 又像 SmartTalk 的语言不同于 Windows 背后的 C++，Objective-C 更简单。笔者在学习 GUN GCC 下的 Objective-C 时，还玩过一阵 OPENSTEP，它具有一个顶部的 Docker，一个多级菜单和一系列丰富的应用程序，有NFS、还具有 Unix 命令行界面、CD多媒体系统，邮件、辞典、拼写检查、支持网络的文件浏览器，底层的面向对象的驱动程序框架，以及文件内容搜索、经典的拖放等操作，开发程序 Project Builder 和 Interface Builder，Application Kit、Music Kit、Sound Kit 开发包，是不是像是看到了 Xcode 和现代 macOS 的雏形？&lt;/p&gt;
+&lt;p&gt;很多人都说 macOS 是 BSD 内核，没错！因为 NEXTSTEP 0.8 基于 Mach 2.0 和 BSD 4.3，而现代 Mac OX 是原 Macintosh 技术遗产迁移到 NEXTSTEP 实现的。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mach"&gt;
+&lt;h2&gt;微内核 Mach&lt;/h2&gt;
+&lt;p&gt;NEXTSTEP 的商业卖点微内核其实在当时并未完善，但其中 Mach 微内核无疑是关键。微内核 Mach 并不涉及操作系统的文件系统、网络和 IO，是硬件和固件之上最基础的操作系统核心。&lt;/p&gt;
+&lt;p&gt;Mach 的故事开始于 1975 年，比苹果厂牌早一年出现，第一版叫做 RIG，因为缺少内存分页等明显缺点，RIG 失败了，1981 年 4 月，RIG 主要开发者 Richard Rashid 开发了 Accent 解决了 RIG 的缺点，他后加入了 Microsoft Research。熟悉历史的人会把 RIG 叫做 Mach 0.8，Accent 叫做 Mach 0.9。&lt;/p&gt;
+&lt;p&gt;1984 年，Mach 的主要开发目标是微内核和兼容 Unix，于是 Mach 使用了 BSD 4.3 作为起点。几个基本概念被提出：任务（Task）、线程（Thread）、端口（Port）、消息（Message），以及内存对象（Memory Object）用以实现物理到虚拟内存的分页映射，后续 FreeBSD 的内存体系结构即基于此。&lt;/p&gt;
+&lt;p&gt;最终，微内核真正意义上的实现是在 1996 年 7 月，也就是 OPENSTEP 4.0，这也是两年后 OPENSTEP 4.2 被苹果收购的原因之一。而 Mach 主要开发者 Avie 成为了苹果的首席软件技术官。&lt;/p&gt;
+&lt;p&gt;另一个需要解释的是基于 Linux 1.3 的 MkLinux 内核，MkLinux 内核作为单个 Mach 任务运行，和BSD 部分驻留在相同的地址空间中（应用程序空间）。&lt;/p&gt;
+&lt;p&gt;直至 Mach Ten，Mac OS X 整合了 Mach、BSD、Macintosh 技术，虽然现代 Macintosh 是协作式多任务，但在 Mach Ten 中，Mac OS 是本地一等公民，而 Unix 运行在 UVM 虚拟机中，保持抢占式多任务执行 C 语言库、POSIX 子系统、BSD 网络栈、文件系统、RPC、NFS、X Windows。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;大融合&lt;/h2&gt;
+&lt;p&gt;这就是 OPENSTEP 被作为现代 Mac OS 之前发生的事情，随后 NeXT 被引入苹果重新制订战略的故事。苹果公司收购 NeXT 的 OPENSTEP 可谓神来之笔，我们说那是 Mac OS 前世发生的一些事，下面即将讲述 NeXT 技术如何逐步进入 Apple 进化为现代 Mac OS 的底层。&lt;/p&gt;
+&lt;p&gt;现代公司收购很多都失败了，比如 Microsoft 和 Nokia，其实很类似 Apple 收购 NeXT，前者多金，后者有出色的软件硬件，收购在预期上可实现双赢。但微软在手机战略上失败了，而 搭载苹果 Mac OS 的 Macintosh 虽然依然是小众，但其工业设计出色，是口碑绝顶的产品，在桌面市场的份额是逐步增加的。&lt;/p&gt;
+&lt;p&gt;说回收购以后，苹果制订了两条腿走路的战略：针对消费者市场的 Mac OS 7.6 改进和针对企业服务市场的基于 NeXT 技术的高端操作系统 Rhapsody，代号 Copland（8）、Gershwin（9）。Copland 和 Gershwin 这两个单词来自美国本土音乐，后者正是《蓝色狂想曲》的作曲家，古典融合爵士元素，象征着 Macintosh 与 NeXT 的大融合。&lt;/p&gt;
+&lt;p&gt;苹果操作系统的 7.6 版本是第一个称之为 Mac OS 的版本，它是一个32位兼容机系统，也是一个对敌 Windows 95 和 Internet 技术的版本。它在多方面得到了增强，比如：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;内存管理&lt;/li&gt;
+&lt;li&gt;程序启动&lt;/li&gt;
+&lt;li&gt;文件管理器缓存&lt;/li&gt;
+&lt;li&gt;QuickTime&lt;/li&gt;
+&lt;li&gt;完整的 TCP/IP 协议栈&lt;/li&gt;
+&lt;li&gt;PPP（点对点协议）&lt;/li&gt;
+&lt;li&gt;远程访问&lt;/li&gt;
+&lt;li&gt;Mac OS 8&lt;/li&gt;
+&lt;li&gt;Mac OS 8 内部版本号是 7.7，它包括：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;多线程的 Finder，允许同时操作多个文件。本文要吐槽的操作方式可能就是这个时代引入的，那时的鼠标的上半部分只有一枚按键，即现在的鼠标左键，当按住键盘 control 键，单击时，系统会弹出一个现在的右键菜单，这个操作方式现在依然适用，这说明这部分代码的运行机制依然没有变化。
+免费的微软 Internet Explorer 和 Netscape Navigator 浏览器，那时候还是一个大多软件要卖钱的时代，免费和捆绑策略让微软获得了竞争优势。
+个人 Web 服务器，在个人站长时代，笔者也就是在那个时代走上 IT 之路的。
+内置 Java，Java 语言确实是免费而久经考验。
+电源管理、USB 等硬件增强。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mac-os-9"&gt;
+&lt;h2&gt;Mac OS 9&lt;/h2&gt;
+&lt;p&gt;Mac OS 9 在 1999 年发布，它实现了：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;操作系统在线升级&lt;/li&gt;
+&lt;li&gt;Keychain，即大家常用的钥匙串，如果增强一下，就没有 1Password 啥事了。&lt;/li&gt;
+&lt;li&gt;Carbon API，70% 与旧 Mac OS API 兼容，这是一次重要的梳理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2001 年 Mac OS 发布了 9.2.2，这是最后一个经典 Mac OS 版本，我们把 Mac OS 此版本以前的版本叫做 Mac OS Classic，即 Mac OS 的前世。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="rhapsody"&gt;
+&lt;h2&gt;Rhapsody&lt;/h2&gt;
+&lt;p&gt;再来讲 Mac OS X 这条线。我把 Mac OS X 版本看作它的今生，这一切开始于 1997 年 WWDC，苹果演示了 Rhapsody 系统。它包括：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;内核是 Mach 和 BSD 4.3&lt;/li&gt;
+&lt;li&gt;Blue Box：即 Mac OS 兼容子系统，演化为 Carbon API&lt;/li&gt;
+&lt;li&gt;Yellow Box：OPENSTEP 技术资产，演化为 Cocoa API&lt;/li&gt;
+&lt;li&gt;Java 虚拟机&lt;/li&gt;
+&lt;li&gt;基于 Display PostScript 的窗口系统&lt;/li&gt;
+&lt;li&gt;用户界面类似原 Mac OS，但也有些像 OPENSTEP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在最新的 WWDC App 上，可追溯的历史只到 2014 年，真希望苹果能把早年的 WWDC 也放上来。上述技术中，Blue Box 应该有人用过，即 Classic Startup.app 中可以运行，也可能有人玩过 Yellow Box，可以安装在 Windows 上。&lt;/p&gt;
+&lt;p&gt;Rhapsody 包含 DR1 和 DR2 两个版本，DR2 吸纳了 FreeBSD、NetBSD 的代码，并将其中的分支开源为 Darwin 项目，这个举措让苹果和开源社区之间获得了双赢，现在你可以在 GNU Darwin 找到它，并可下载源码，另一个 Open Darwin 项目如今已关闭。Rhapsody 就像一个超新星爆发般， 1999 年 3 月以 Mach 3 为基础推出了 Mac OS X Server 1，就是改名的 Rhapsody DR3。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mac-os-x-beta"&gt;
+&lt;h2&gt;Mac OS X Beta&lt;/h2&gt;
+&lt;p&gt;此时的 Apple Mac OS X Public Beta 离正式与公众见面还有 3 年的路程，中间包括 DP1、DP2、DP3、DP4 四个迭代（DP 即 开发者预览版）。&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;DP1：这是一个 Carbon API 梳理版本，且为了过度，需要实现新旧两个目标平台的编译。&lt;/li&gt;
+&lt;li&gt;DP2：引入了更多 API，如 BSD、Carbon、Classic、Cocoa 和 Java。从后面的发展来看，Carbon 有的，Cocoa 终会逐渐取代，但马戏团后台的升级不是一刀完成，而是保持前台不变的前提下，后台一直在工作。苹果公司精通渐进式演化之道。&lt;/li&gt;
+&lt;li&gt;DP3：后台功能强了，但根据反馈，用户不满意界面，因此此版本推出了 Aqua 用户界面，就是现在大家熟悉的红、黄、绿三色交通灯窗口，水的元素，以及图标扩大为 128 * 128。&lt;/li&gt;
+&lt;li&gt;DP4：将 Finder.app 拆分为 Desktop.app 和 Docker.app，并引入了第一次引入了系统设置，它提供一个用户界面来让用户调节系统的很多选项。还包括 Docker 的左右分栏和拖离云朵动画、OpenGL、和新的集成开发环境。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;公众对不断透露的改进消息非常兴奋，但能接触的第一版本需要约 200 多元购买的。这个版本还通过 OpenDarwin 大量移植了开源资源，这也是很多开发人员觉得 Apple 比 Windows 更适合开发的原因。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mac-os-x"&gt;
+&lt;h2&gt;Mac OS X&lt;/h2&gt;
+&lt;p&gt;Mac OS X 10.0 可以说是 Apple 桌面操作系统历史上最高级的发布，它代表着 Apple 公司对研发资源的了解和对软件工程管理的进步。同所有软件一样，Mac OS 经历了 3-5 个小版本才逐渐完善，分别是：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Mac OS X 10.0 Cheetah&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.1 Puma&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.2 Jaguar&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.3 Panther&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.4 Tiger&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.5 Leopard&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.6 Snow Leopard&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.7 Lion&lt;/li&gt;
+&lt;li&gt;OS X 10.8 Mountain Lion&lt;/li&gt;
+&lt;li&gt;OS X 10.9 Mavericks&lt;/li&gt;
+&lt;li&gt;OS X 10.10 Yosemite&lt;/li&gt;
+&lt;li&gt;OS X 10.11 El Capitan&lt;/li&gt;
+&lt;li&gt;macOS 10.12 Sierra&lt;/li&gt;
+&lt;li&gt;macOS 10.13 High Sierra&lt;/li&gt;
+&lt;li&gt;macOS 10.14 Mojave&lt;/li&gt;
+&lt;li&gt;macOS 10.15 Catalina&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中经历了 OS X 和 macOS 的两次改名，第一次代表了与 iOS 的融合，第二次的命名方式为匈牙利表示法，可以感受一下:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+    iOS
+watchOS
+   tvOS
+     OS X
+&lt;/pre&gt;
+&lt;p&gt;有没有一种强迫症无法忍受的感觉:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+    iOS
+watchOS
+   tvOS
+  macOS
+&lt;/pre&gt;
+&lt;p&gt;明显后者更和谐。&lt;/p&gt;
+&lt;p&gt;其中，数 Tiger 的更新比较多，大家熟知的 Automator、Spotlight、Dashboard 就是此时引入的。后面的每个版本更新都具有很多经典之处，图标也趋于扁平化，适应这个信息繁杂的时代。&lt;/p&gt;
+&lt;p&gt;如果把 Apple 桌面操作系统历史对比人类历史，那从古代到近代史部分就已经说完了。其现代史部分以近 5 年为分水岭，2014 年以后的发布都可以在 Apple WWDC App 中查阅。笔者也会在其他文章中穿插许多有趣的 Apple 操作系统细节，以下附送体系结构图一张。&lt;/p&gt;
+&lt;img alt="macOS 体系结构" src="https://kaffa.im/img/macos-structure.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;啊哈！到了本文附送的技巧。&lt;/h2&gt;
+&lt;p&gt;终于说到了在访达（Finder）中拷贝文件的路径的方法，有如下几种：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;方法一：访达应用中，可以点击菜单【显示】【显示路径栏/隐藏路径栏】，打开位于底部状态栏上方的路径栏，鼠标右键点击“将（路径）拷贝为路径名称”即可。&lt;/li&gt;
+&lt;li&gt;方法二：打开一个终端应用，将文件夹或文件拖入，既可以得到路径，选中后拷贝即可。&lt;/li&gt;
+&lt;li&gt;方法三：网上提到的在自动操作应用中新建一个服务的方式，这种其实对某些文件夹并不好使。&lt;/li&gt;
+&lt;li&gt;方法四：此方法的交互设计比较隐藏，但唾手可得，即右键点击想要拷贝路径的目录或文件，在弹出菜单时，按住键盘 option/alt 键，此时菜单中的拷贝“（路径）”会变成将“（路径）”拷贝为路径名称。这种设计有点绕，但是比较高效了。&lt;/li&gt;
+&lt;li&gt;方法五：快捷键 ⌥⌘C（评论提供），此种最高效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;好吧，虽然这楼歪的很，但技巧确实附送了，是吧？&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
+&lt;/div&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="macOS"></category><category term="Mac OS"></category><category term="macOS History"></category><category term="Machintosh"></category><category term="BeOS"></category><category term="NeXT"></category><category term="OPENSTEP"></category><category term="Mach"></category></entry><entry><title>普通的逻辑学我们普通的聊</title><link href="https://kaffa.im/common-logic-common-talk.html" rel="alternate"></link><published>2019-05-18T12:00:00+08:00</published><updated>2019-05-18T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-18:/common-logic-common-talk.html</id><summary type="html">&lt;p&gt;本文试图在不长的篇幅中聊聊逻辑学和生活中的普通逻辑&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="逻辑" src="https://kaffa.im/img/2019/logic_child_512.png" title="逻辑" /&gt;&lt;/p&gt;
 &lt;h2&gt;引&lt;/h2&gt;
 &lt;p&gt;无论主动或被动地，人们会观察、参与这个世界的活动，产生思考、形成概念，并通过语言交流观点时，逻辑都成为现代科学和现实世界基础的一半。为什么是一半后面会说。&lt;/p&gt;
 &lt;p&gt;拿熟悉的理财投资和交易来说，投资者从主观决策到越来越频繁地讲求逻辑，说明投资者越来越需要委托方对标的品种选择和时机选择提供依据，也说明所需的投资依据更趋于基于客观事实。&lt;/p&gt;
