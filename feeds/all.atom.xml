@@ -208,12 +208,14 @@ True   True   True
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;七、注释&lt;/strong&gt;::
-|    ..
-|        这个缩进
-|        是一个注释。
-|
-|        同级依然是注释&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;七、注释&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+..
+    这个缩进
+    是一个注释。
+
+    同级依然是注释
+&lt;/pre&gt;
 &lt;!-- 这个缩进
 是一个注释。
 
