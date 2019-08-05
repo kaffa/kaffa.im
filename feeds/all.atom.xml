@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-07-25T12:00:00+08:00</updated><entry><title>reStructureText 九个实用语法</title><link href="https://kaffa.im/nine-rules-on-restructuredtext-practical-grammar.html" rel="alternate"></link><published>2019-07-25T12:00:00+08:00</published><updated>2019-07-25T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-07-25:/nine-rules-on-restructuredtext-practical-grammar.html</id><summary type="html">&lt;p class="first last"&gt;本文是 reStructureText 实用语法指南，其中列出最常用的九个语法，用来写博客足矣。其余更多细节，请查阅官方指南。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-08-05T12:00:00+08:00</updated><entry><title>Linux 版本</title><link href="https://kaffa.im/linxu-distributions.html" rel="alternate"></link><published>2019-08-05T12:00:00+08:00</published><updated>2019-08-05T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-08-05:/linxu-distributions.html</id><summary type="html">&lt;p class="first last"&gt;本文简单聊聊 Linux 发行版&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;概述&lt;/h2&gt;
+&lt;p&gt;Linux 是开源、免费的操作系统，是 Freeware 和 Open Source 运动的代表作。它代表着低成本的商业方案，被无数公司依赖。CentOS 是常用的一种 Linux 发行版，被大量公司和个人使用。它是 Red Hat Enterprise Linux 的开源编译版，因稳定而闻名。稳定是不尝鲜的另一种说法，其中默认的软件仓库选择虽然不是各种软件最新版，却是久经考验被无数程序员采坑过的稳定版。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;Linux 内核&lt;/h2&gt;
+&lt;p&gt;Linux 的内核即 Linux Kernel，由 Linux 基金会负责发行，它并不是完整的操作系统，而是只包含设备驱动、文件管理、资源管理等功能的操作系统核心，是整个 Linux 开源生态的上游。Linux 核心加 GNU 工具链和库、文档和软件，以及窗口系统，才构成完整的操作系统。&lt;/p&gt;
+&lt;p&gt;Linux 核心`官方网站`_上最新版是 &lt;a class="reference external" href="https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.6.tar.xz"&gt;5.2.6&lt;/a&gt;，其中第一个数字 5 是主版本，第二个数字 2 是偶数表示稳定版，如果第二个数字是奇数则表示是开发版，第三个 6 数字表示修订次数。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;Linux 发行版&lt;/h2&gt;
+&lt;p&gt;Linux 发行版有太多种，根据其集成的软件分派系稍作列举：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Red Hat Enterprise Linux：RPM 系，最好的商业版本，简称 RHEL&lt;/li&gt;
+&lt;li&gt;Fedora： RPM 系 商业版本，包含最新软件库，Ret Hat 的新软试验田？&lt;/li&gt;
+&lt;li&gt;CentOS：RPM 系社区版本，不包含 RHEL 闭源高级功能的开源良心之作，服务器明智之选。&lt;/li&gt;
+&lt;li&gt;openSuse：RPM 系，源自 Slackware 的一种德国发行版，目前由 Novell 公司维护，严谨安全精致，缺点是臃肿，考验硬件。&lt;/li&gt;
+&lt;li&gt;Debian：Dpkg 系根基，最纯正的 GNU/Linux，只包含 GPL 协议软件，基于它的发行版多，虽然是社区维护，但都是骨灰级高手，直接用的人相对少。&lt;/li&gt;
+&lt;li&gt;Ubuntu：基于 Debian 的商业代表，为桌面系统做出了巨大贡献，提供最友好易用的桌面系统软件。近年 Ubuntu Server 份额有提升，农村包围城市？&lt;/li&gt;
+&lt;li&gt;Slackware：Unix 系，目录严谨，Linux 发行版元老，现在较少人用&lt;/li&gt;
+&lt;li&gt;Elementary OS：桌面系， 基于 Ubuntu 的 macOS 界面， 视觉动物首选。&lt;/li&gt;
+&lt;li&gt;Linux Mint： 桌面视觉系，基于 Ubuntu，胜于 Ubuntu Desktop&lt;/li&gt;
+&lt;li&gt;Arch Linux：Geek 系，包管理之王，可实现不重启滚动更新，老机器可选&lt;/li&gt;
+&lt;li&gt;Linux From Scratch： Geek 系，定制王者， 如果你想最大化定制操作系统可以选它&lt;/li&gt;
+&lt;li&gt;Gentoo：Geek系，Unix 系，定制昔日王者，所有安装包靠从源代码编译。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其他还有类 Unix 发行版，比如 FreeBSD、NetBSD、OpenBSD，内核不同，但包含软件类似，传说 BSD 系统可稳定运行 10 年不关机。&lt;/p&gt;
+&lt;p&gt;值得一提是，这些发行版除了 BSD 以外，其余使用相同的内核，不同发行版只是软件库、桌面环境、流行度的差异。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;如何选择发行版&lt;/h2&gt;
+&lt;p&gt;人生苦短，如果 Linux 不是你人生不可获取的部分，请：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;服务器选 CentOS，&lt;/p&gt;
+&lt;p&gt;桌面系统选 Ubuntu，&lt;/p&gt;
+&lt;p&gt;其余请随意，毕竟 Linux 的情怀就是 Free。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
+&lt;/div&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="Linux Distributions"></category><category term="Arch Linux"></category><category term="CentOS"></category><category term="Debian"></category><category term="Elementary OS"></category><category term="Fedora"></category><category term="FreeBSD"></category><category term="Gentoo"></category><category term="Linux From Scratch"></category><category term="Linux Mint"></category><category term="NetBSD"></category><category term="openSuse"></category><category term="Red Hat Enterprise Linux"></category><category term="Slackware"></category><category term="Ubuntu"></category></entry><entry><title>reStructureText 九个实用语法</title><link href="https://kaffa.im/nine-rules-on-restructuredtext-practical-grammar.html" rel="alternate"></link><published>2019-07-25T12:00:00+08:00</published><updated>2019-07-25T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-07-25:/nine-rules-on-restructuredtext-practical-grammar.html</id><summary type="html">&lt;p class="first last"&gt;本文是 reStructureText 实用语法指南，其中列出最常用的九个语法，用来写博客足矣。其余更多细节，请查阅官方指南。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;槽&lt;/h2&gt;
 &lt;p&gt;Markdown 各方实现经常不一致，累觉无爱，相比来说 reStructureText 更严谨丰富，换句话说就是更复杂。但作为 Pelican 引擎的主动力，我对语言技巧的基本态度是用最熟悉基础的即可写出文章，综合比较，我放弃了 md 转回了 rst。&lt;/p&gt;
@@ -804,7 +845,7 @@ watchOS
 
 1952年11月28日，丁福保因病在上海去世，终年78岁。生前编成而未及出版的《四部总录》遗稿经其学生周云青整理后，由商务印书馆出版了“医药编”、 “天文编”、“算法编”、“艺术编”4种。
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;可见，丁福保国学基础好，又爱钻研训诂学，爱好藏书，整理古籍20多年，印刷发行多种大型图书，去世后，其书籍众数捐献给国家。可谓知识斜杆，夸领域大师，功德无量。Perfect，完美的一生。&lt;/p&gt;
+&lt;p&gt;可见，丁福保国学基础好，又爱钻研训诂学，爱好藏书，整理古籍20多年，印刷发行多种大型图书，去世后，其书籍众数捐献给国家。可谓知识斜杆，跨领域大师，功德无量。Perfect，完美的一生。&lt;/p&gt;
 &lt;p&gt;其子，承继父业，亦为斜杆：收藏家 / 医学家。有时候，把一个青年变成斜杆的，不是他自己，而是人生。&lt;/p&gt;
 &lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码" /&gt;&lt;/p&gt;</content><category term="随笔"></category><category term="Essays"></category><category term="阅读"></category><category term="Reading"></category><category term="Multiple Careers"></category></entry><entry><title>我的阅读之路</title><link href="https://kaffa.im/my-reading-experience.html" rel="alternate"></link><published>2018-09-01T12:00:00+08:00</published><updated>2018-09-01T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-09-01:/my-reading-experience.html</id><summary type="html">&lt;p&gt;人类做的最多的两件事，就是阅读和复述。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;起一个大头&lt;/h2&gt;
