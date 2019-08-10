@@ -453,8 +453,8 @@ vsce publish
 &lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
 &lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
 &lt;/div&gt;
-</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="VSCode Extension"></category><category term="vsce"></category><category term="Visual Studio Marketplace"></category></entry><entry><title>macOS 的前世今生及访达中拷贝文件的路径的方法</title><link href="https://kaffa.im/macOS-history-and-copy-file-path-in-finder-app.html" rel="alternate"></link><published>2019-06-09T05:04:00+08:00</published><updated>2019-06-09T05:04:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-06-09:/macOS-history-and-copy-file-path-in-finder-app.html</id><summary type="html">&lt;p class="first last"&gt;想介绍几种在访达（Finder）中拷贝文件路径的方法，但一小时后不小心按下浏览器回退，再写便就此篇加上了一些 macOS 的历史。&lt;/p&gt;
-</summary><content type="html">&lt;img alt="MacOS" src="https://kaffa.im/img/macos.png" /&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="VSCode Extension"></category><category term="vsce"></category><category term="Visual Studio Marketplace"></category></entry><entry><title>macOS 的前世今生及访达中拷贝文件的路径的方法</title><link href="https://kaffa.im/macos-history-and-copy-file-path-in-finder-app.html" rel="alternate"></link><published>2019-06-09T05:04:00+08:00</published><updated>2019-06-09T05:04:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-06-09:/macos-history-and-copy-file-path-in-finder-app.html</id><summary type="html">&lt;p class="first last"&gt;想介绍几种在访达（Finder）中拷贝文件路径的方法，但一小时后不小心按下浏览器回退，再写便就此篇加上了一些 macOS 的历史。&lt;/p&gt;
+</summary><content type="html">&lt;img alt="MacOS" src="https://kaffa.im/img/2019/macos.png" /&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;为什么写 macOS 历史&lt;/h2&gt;
 &lt;p&gt;题记：想介绍几种在访达（Finder）中拷贝文件路径的方法，但一小时后不小心按下浏览器回退，再写便就此篇加上了一些 macOS 的历史。&lt;/p&gt;
@@ -605,7 +605,7 @@ watchOS
 &lt;p&gt;明显后者更和谐。&lt;/p&gt;
 &lt;p&gt;其中，数 Tiger 的更新比较多，大家熟知的 Automator、Spotlight、Dashboard 就是此时引入的。后面的每个版本更新都具有很多经典之处，图标也趋于扁平化，适应这个信息繁杂的时代。&lt;/p&gt;
 &lt;p&gt;如果把 Apple 桌面操作系统历史对比人类历史，那从古代到近代史部分就已经说完了。其现代史部分以近 5 年为分水岭，2014 年以后的发布都可以在 Apple WWDC App 中查阅。笔者也会在其他文章中穿插许多有趣的 Apple 操作系统细节，以下附送体系结构图一张。&lt;/p&gt;
-&lt;img alt="macOS 体系结构" src="https://kaffa.im/img/macos-structure.png" /&gt;
+&lt;img alt="macOS 体系结构" src="https://kaffa.im/img/2019/macos-structure.png" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id5"&gt;
 &lt;h2&gt;啊哈！到了本文附送的技巧。&lt;/h2&gt;
