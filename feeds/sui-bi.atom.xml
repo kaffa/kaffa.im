@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa - 随笔</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/sui-bi.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2019-08-14T12:00:00+08:00</updated><entry><title>20190814-P++ 的想法：常见问题（Zeev 于 2019-08-12 13：24 更新）</title><link href="https://kaffa.im/pplusplus-faq-updated-at-201908121324.html" rel="alternate"></link><published>2019-08-14T12:00:00+08:00</published><updated>2019-08-14T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-08-14:/pplusplus-faq-updated-at-201908121324.html</id><summary type="html">&lt;p class="first last"&gt;P++ 的想法: 常见问题（Zeev 于 2019/08/12 13:24 更新）本文是 Zeev 8 月 12 日更新后的版本。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa - 随笔</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/sui-bi.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2020-02-19T12:00:00+08:00</updated><entry><title>解决在 Window10 下安装 Semantic-UI 时卡住的问题</title><link href="https://kaffa.im/install-semantic-ui-on-windows-10.html" rel="alternate"></link><published>2020-02-19T12:00:00+08:00</published><updated>2020-02-19T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2020-02-19:/install-semantic-ui-on-windows-10.html</id><summary type="html">&lt;p class="first last"&gt;本文帮助读者解决在 Windows 10 下安装 Semantic-UI 时，遇到 Creating src/theme.config 卡住的问题。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;问题概述&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://semantic-ui.com/introduction/getting-started.html"&gt;Semantic-UI&lt;/a&gt; 是一种纯前端 UI 的开发包，国内 OSChina 应该是就是用它的。根据官方文档进行起步安装，如果操作系统是 Windows 10 ，可能会在执行 &lt;tt class="docutils literal"&gt;npm install &lt;span class="pre"&gt;semantic-ui&lt;/span&gt; &lt;span class="pre"&gt;--save&lt;/span&gt;&lt;/tt&gt; 时卡住。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;解决办法&lt;/h2&gt;
+&lt;p&gt;将 nodejs 版本降级到 v10.1.0，旧版本下载地址在：&lt;a class="reference external" href="https://nodejs.org/dist/v10.1.0/"&gt;https://nodejs.org/dist/v10.1.0/&lt;/a&gt;，如果当前版本是解压安装的，可简单下载解压替换即可。&lt;/p&gt;
+&lt;p&gt;然后清理一下未完成的 Semantic-UI 安装的文件，再次安装即可解决。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;解决办法二&lt;/h2&gt;
+&lt;p&gt;可试试 &lt;a class="reference external" href="https://github.com/fomantic/Fomantic-UI"&gt;Fomantic-UI&lt;/a&gt; 。&lt;/p&gt;
+&lt;p&gt;如果本站或本文有帮助到你，可请我喝杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" /&gt;
+&lt;/div&gt;
+</content><category term="随笔"></category><category term="Essays"></category><category term="技术"></category><category term="Technology"></category><category term="Semantic-UI"></category><category term="nodejs"></category></entry><entry><title>20190814-P++ 的想法：常见问题（Zeev 于 2019-08-12 13：24 更新）</title><link href="https://kaffa.im/pplusplus-faq-updated-at-201908121324.html" rel="alternate"></link><published>2019-08-14T12:00:00+08:00</published><updated>2019-08-14T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-08-14:/pplusplus-faq-updated-at-201908121324.html</id><summary type="html">&lt;p class="first last"&gt;P++ 的想法: 常见问题（Zeev 于 2019/08/12 13:24 更新）本文是 Zeev 8 月 12 日更新后的版本。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="p"&gt;
 &lt;h2&gt;P++ 的想法: 常见问题&lt;/h2&gt;
 &lt;p&gt;原文： &lt;a class="reference external" href="https://wiki.php.net/pplusplus/faq"&gt;https://wiki.php.net/pplusplus/faq&lt;/a&gt;&lt;/p&gt;
