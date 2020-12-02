@@ -1,9 +1,7 @@
 
-# 个人博客
+# https://kaffa.im
 
-## 网址
-
-https://kaffa.im 
+欢迎访问我的个人博客
 
 ## 镜像网址
 
