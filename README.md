@@ -1,6 +1,23 @@
 
-# 欢迎来到我的 GitHub 页面
+# 个人博客
 
-这是我的 Github 网站 https://kaffa.github.io 也是我的 Blog 网站 https://kaffa.im ，本站点由 Python 的 Pelican 包生成。
+网址
+  https://kaffa.im 
 
-Gitee 备份：https://gitee.com/kaffa/kaffa.im
+镜像网址
+  https://kaffa.github.io
+  https://kaffa.gitee.io
+
+# 你的博客由什么生成的？
+
+采用 Python 的 Pelican 包
+
+# 你的博客的主题是什么？
+
+是 [Pelican Octopress Theme 中文版](https://github.com/kaffa/pelican-octopress-theme-cn)
+
+
+
+
+
+
