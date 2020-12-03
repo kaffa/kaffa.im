@@ -1,0 +1,73 @@
+############################
+为博客添加评论系统
+############################
+
+:date: 2018-08-10 12:20
+:author: Kaffa
+:category: 日志
+:tags: 随笔, Essays, 博客, My Blog, Pelican, Gitalk, Gitment
+:slug: add-comments-system-to-my-blog
+:summary: 为博客添加评论系统
+
+
+评论系统
+===========
+通俗地说，不同人在一起评论一个事时，就像对混沌系统作预测，最可能的结果就是一团糟。
+好在评论系统有效的过滤了人群，原来的多说，网易云跟帖，以及被蔷的 Disqus_。
+
+时下，如果想欣赏真正的“杠精”，要去“即刻”看评论，去网易新闻看跟帖；因为 Disqus_ 不存在，
+Google Firebase_ 方案也不存在，那 GitHub 静态博客的评论，就剩下几个为数不多的免费方案，
+例如 Gitment_ 和 Gitalk_，gitment 是鼻祖，gitalk 是后来者，看起来两者差不太多，
+相当于利用 GitHub 应用授权 api 编写了一个跨域提 issue 的客户端。
+
+论安全性，这种做法的安全前提是服务端对提交信息的安全验证，且有人已提交一个次级域名利用方式。
+但我相信伪造评论、越权访问普通人的私有库并无太大价值，这其中只见伤害，并无收益。
+所以，这种安全性是可以定为相对安全。
+
+在“深网”的世界里，人性恶的一面使然，什么都会发生，如果完全不限安全，多少有一些理想主义，
+但可以相信人性也有善面，在软件的世界里，建造永远比破坏更难，建造是一个工程，而破坏只是一次行动。
+
+
+为 Pelican 添加 Gitalk 评论系统最简单的方式，莫过于在 ``theme\templates\article.html`` 中直接修改，
+亦或编写一个 Pelican 插件，实现 article_generator_finalized_ signal，
+读取 clientID 和 clientSecret 等配置在文后插入，如果手动插入，则是在 ``</article>`` 之前::
+
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    var gitalk = new Gitalk({
+        clientID: 'your client id here',
+        clientSecret: 'your client secret here',
+        repo: 'kaffa.github.io',
+        owner: 'kaffa',
+        admin: ['kaffa'],
+        id: location.pathname.substr(0, 50),
+        distractionFreeMode: false
+    });
+    gitalk.render('gitalk-container');
+    </script>
+
+想为 Pelican 添加 Gitalk 评论的人，如果遇到问题，可以本文 issue 我，网上并不容易找着傻瓜教程。
+
+
+博客历史
+===========
+
+* 2018-06-06，博客启动，添加域名 https://kaffa.im
+* 2018-08-07，`octopress 主题`_ 中文化：pelican-octopress-theme-cn_
+* 2018-08-10，添加 gitalk 评论系统。
+
+感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
+
+.. image:: https://kaffa.im/img/reward.png
+    :alt: 我的赞赏码
+
+
+.. _`octopress 主题`: https://github.com/MrSenko/pelican-octopress-theme
+.. _`pelican-octopress-theme-cn`: https://github.com/kaffa/pelican-octopress-theme-cn
+.. _Disqus: https://www.disqus.com/
+.. _Firebase: https://firebase.google.com/
+.. _Gitalk: https://github.com/gitalk/gitalk
+.. _Gitment: https://github.com/imsun/gitment
+.. _article_generator_finalized: http://docs.getpelican.com/en/stable/plugins.html#list-of-signals
