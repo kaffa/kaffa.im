@@ -1,5 +1,5 @@
 E:
-cd E:\code\kaffa.im
+cd E:\code\github\kaffa\kaffa.github.io
 git add . 
 git commit -am 'Kaffa'
 git push
