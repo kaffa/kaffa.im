@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>如何编写一个 VSCode 扩展并发布到 Visual Studio Marketplace &mdash; Kaffa</title>
+  <meta name="author" content="Kaffa">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">Kaffa</a></h1>
+    <h2>Kaffa's Faded Fadeless Abstraction </h2>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+    <li><a href="https://kaffa.im">首页</a></li>
+    <li><a href="https://kaffa.im/category/sui-bi.html">随笔</a></li>
+    <li><a href="https://kaffa.im/category/yue-du.html">阅读</a></li>
+    <li><a href="https://kaffa.im/category/ren-wen-ke-xue.html">人文科学</a></li>
+    <li><a href="https://kaffa.im/category/zi-ran-ke-xue.html">自然科学</a></li>
+    <li><a href="https://kaffa.im/category/ri-zhi.html">日志</a></li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">如何编写一个 VSCode 扩展并发布到 Visual Studio Marketplace</h1>
+    <p class="meta">
+<time datetime="2019-07-23T12:00:00+08:00" pubdate>2019-07-23(周二)</time>    </p>
+</header>
+
+  <div class="entry-content"><img alt="编写 VSCode 插件" src="https://kaffa.im/img/2019/create-vscode-extension.png" />
+<div class="section" id="id1">
+<h2>概述</h2>
+<p>本文假设你熟悉 node.js 和 npm 工具，用过 Git，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。</p>
+<p>VSCode 已是免费文本编辑器/IDE的王者，但其文本闪改能力还是不如一些老牌文本编辑器，比如 <a class="reference external" href="http://www.everedit.net/">EverEdit</a> 与 EmEditor，但它免费呀，所以，用它用它用它。</p>
+<p>在文本中插入文件名是个常用场景，比如编辑本文时，第一行就会用到，笔者在 EverEdit 和 EmEditor 中编写过脚本插件，基本都只需要一个文件和几行脚本代码。</p>
+<p>考虑到 VSCode 有一个全球生态，那么 Visual Studio Marketplace 中是否能找到一个类似的插件呢，答案是：没有。于是，我们做一个呗。</p>
+<img alt="If not me, who? If not now, when?" src="https://kaffa.im/img/2019/if-not-me-who-if-not-now-when.png" />
+<p>在 VSCode 关于中，我们可以看到它的技术栈如下，其插件采用 JavaScript 或 TypeScript 编写。</p>
+<ul class="simple">
+<li>Electron: 4.2.5</li>
+<li>Chrome: 69.0.3497.128</li>
+<li>Node.js: 10.11.0</li>
+<li>V8: 6.9.427.31-electron.0</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>具体步骤</h2>
+<p>1、假设你已安装 node.js 和 git</p>
+<p>2、如果你没有用过 Yeoman 脚手架工具，那么现在正是时候，装上它:</p>
+<pre class="literal-block">
+npm install -g yo generator-code
+</pre>
+<p>3、利用 Yeoman 建立项目框架:</p>
+<pre class="literal-block">
+yo code
+
+# ? What type of extension do you want to create? New Extension (TypeScript)
+# ? What's the name of your extension? insert-filename
+### Press &lt;Enter&gt; to choose default for all options below ###
+# ? What's the identifier of your extension? insert-filename
+# ? What's the description of your extension?
+# ? Initialize a git repository? Yes
+# ? Which package manager to use? npm
+</pre>
+<p>扩展项目就创建好了，下一步，让我们运行起来。</p>
+<p>4、执行:</p>
+<pre class="literal-block">
+code ./insert-filename
+</pre>
+<p>再按 <tt class="docutils literal">F5</tt> 运行，这时，VSCode 会启动一个新窗口，这个窗口中 Yeoman 脚手架项目 insert-filename 已经加载了插件。</p>
+<p>5、让我们按下 <tt class="docutils literal">Ctrl + Shift + P</tt>，输入 <tt class="docutils literal"><span class="pre">insert-filename</span></tt>，可以看到这条命令，回车后应该可以看到一条 Hello World！的信息在 VSCode 的右下角弹出来。</p>
+<p>6、接着，我们便可以开始编写插入文件名的代码了，还可以调试哟！让我们打开 <tt class="docutils literal">src/extension.ts</tt> 文件。为便于理解，请参阅中文注释:</p>
+<pre class="literal-block">
+import { commands, workspace, window, ExtensionContext } from 'vscode';
+
+// 在所有选区中插入文件名
+function replaceEditorSelection() {
+    const editor = window.activeTextEditor;
+    if (editor === undefined) {
+        return;
+    }
+    const selections = editor.selections;
+    editor.edit((editBuilder) =&gt; {
+    selections.forEach((selection) =&gt; {
+        let url = editor.document.fileName;
+        let urlFormatted = url.replace(/\\/g, '/');
+        let lastPart = urlFormatted.split('/').pop() || '';
+        editBuilder.replace(selection, '');
+        editBuilder.insert(selection.active, lastPart);
+    });
+    );
+}
+
+// 插件激活
+export function activate(context: ExtensionContext) {
+    console.log('Congratulations, your extension &quot;Insert Filename&quot; is now active!');
+    // 注册一条命令
+    let disposable = commands.registerCommand('extension.insertFilename', () =&gt; replaceEditorSelection());
+
+    context.subscriptions.push(disposable);
+}
+
+// 插件待用
+export function deactivate() {
+    console.log('Your extension &quot;Insert Filename&quot; is now inactive!');
+}
+</pre>
+<p>7、其次，最重要的是编辑 package.json 文件，最重要的 contributes 配置，以下配置分别在命令、编辑器右键菜单上注册了此命令，并设置其快捷键:</p>
+<pre class="literal-block">
+&quot;contributes&quot;: {
+    &quot;commands&quot;: [
+        {
+            &quot;command&quot;: &quot;extension.insertFilename&quot;,
+            &quot;title&quot;: &quot;Insert Filename&quot;
+        }
+    ],
+    &quot;menus&quot;: {
+        &quot;editor/context&quot;: [
+            {
+                &quot;command&quot;: &quot;extension.insertFilename&quot;,
+                &quot;group&quot;: &quot;extension&#64;1&quot;
+            }
+        ]
+    },
+    &quot;keybindings&quot;: [
+        {
+            &quot;command&quot;: &quot;extension.insertFilename&quot;,
+            &quot;key&quot;: &quot;ctrl+alt+i&quot;,
+            &quot;mac&quot;: &quot;shift+cmd+i&quot;,
+            &quot;when&quot;: &quot;editorTextFocus&quot;
+        }
+    ]
+}
+</pre>
+<p>8、更详细的代码和配置文件请移步 GitHub 仓库：<a class="reference external" href="https://github.com/kaffa/vscode-insert-filename">vscode-insert-filename 插件源码</a> 。</p>
+</div>
+<div class="section" id="id3">
+<h2>编译发布</h2>
+<p>到目前为止，我们的测试都是直接运行插件，现在让我们对项目进行编译，得到 insert-filename-0.0.2.vsix 文件，就可以进行发布了。</p>
+<p>9、为编译插件，我们需要下载微软 VSCode Extension 工具 vsce:</p>
+<pre class="literal-block">
+npm install -g vsce
+</pre>
+<p>10、安装完毕后，让我们执行如下指令进行编译:</p>
+<pre class="literal-block">
+vsce package
+</pre>
+<p>11、编译成功后，项目目录中会得到 insert-filename-0.0.2.vsix 文件，再运行如下命令发布:</p>
+<pre class="literal-block">
+vsce publish
+</pre>
+<p>不出意料，你会得到 401 错误，是因为向微软市场发布这个插件，需要一个 <a class="reference external" href="https://aka.ms/SignupAzureDevOps">Azure DevOps</a> 账号，你可以用一个 Microsoft 账号登录跳转注册 <a class="reference external" href="https://aka.ms/SignupAzureDevOps">Azure DevOps</a> 即可。</p>
+<p>接下来，我们不用创建项目，直接在右上角个人头像菜单 <tt class="docutils literal">Security</tt> 中创建一个 Personal Access Tokens，选项如下，先点击 <tt class="docutils literal">Show all scopes</tt></p>
+<ul class="simple">
+<li>Organization：All accessible organization</li>
+<li>Scopes: Marketplace 中的 Acquire and Manage</li>
+</ul>
+<p>再点击 <tt class="docutils literal">Create</tt> 按钮，生成成功后，点击 <tt class="docutils literal">Copy</tt>，<strong>注意</strong>：这个Token只会在这个时候出现一次，所以，你得找一个不会忘记的地方记录下来。</p>
+<p>再执行此命令，将其中的 kaffa 换成你的 id，输入刚才创建的 Token:</p>
+<pre class="literal-block">
+vsce create-publisher kaffa
+</pre>
+<p>12、发布:</p>
+<pre class="literal-block">
+vsce publish
+</pre>
+<p>到这里，我们的插件就发布成功了，过几分钟，就可以官网看到你的插件了，并可以在 VSCode 插件中搜索了，记得做一些关键字 SEO，并升级一下版本。</p>
+</div>
+<div class="section" id="id4">
+<h2>总结</h2>
+<p>本插件发布在 <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=kaffa.insert-filename">Visual Studio Marketplace</a>，欢迎下载使用。</p>
+<p>祝各位读者读完本文，能顺利安装、编写、编译、发布你的插件，如果在具体步骤中遇到问题，请回复和留言。</p>
+<p>感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。</p>
+<img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" />
+</div>
+</div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    发布人： <span class="fn">
+        Kaffa
+    </span>
+  </span>
+<time datetime="2019-07-23T12:00:00+08:00" pubdate>2019-07-23(周二)</time>  <span class="categories">
+    <a class='category' href='./category/sui-bi.html'>随笔</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/sui-bi.html">随笔</a>,    <a class="category" href="./tag/essays.html">Essays</a>,    <a class="category" href="./tag/ji-zhu.html">技术</a>,    <a class="category" href="./tag/technology.html">Technology</a>,    <a class="category" href="./tag/vscode-extension.html">VSCode Extension</a>,    <a class="category" href="./tag/vsce.html">vsce</a>,    <a class="category" href="./tag/visual-studio-marketplace.html">Visual Studio Marketplace</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+    <div id="gitalk-container"></div>
+  </article>
+
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '47c6091c4039fb3df197',
+    clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+<aside class="sidebar">
+  <section>
+    <h1>最近博文</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./site-planning-about-my-domains.html">对手头几个域名的重新规划</a>
+      </li>
+      <li class="post">
+          <a href="./about-my-lost-books.html">关于几本丢失的书籍</a>
+      </li>
+      <li class="post">
+          <a href="./install-semantic-ui-on-windows-10.html">解决在 Window10 下安装 Semantic-UI 时卡住的问题</a>
+      </li>
+      <li class="post">
+          <a href="./pplusplus-faq-updated-at-201908121324.html">20190814-P++ 的想法：常见问题（Zeev 于 2019-08-12 13：24 更新）</a>
+      </li>
+      <li class="post">
+          <a href="./pplusplus-faq.html">P++ 的想法：常见问题（ 全文翻译 ）</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+
+    <h1>分类</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/ren-wen-ke-xue.html">人文科学</a></li>
+        <li><a href="./category/ri-zhi.html">日志</a></li>
+        <li><a href="./category/sui-bi.html">随笔</a></li>
+        <li><a href="./category/yue-du.html">阅读</a></li>
+        <li><a href="./category/zi-ran-ke-xue.html">自然科学</a></li>
+    </ul>
+  </section>
+
+  <section>
+  <h1>标签</h1>
+    <a href="./tag/sui-bi.html">随笔</a>,    <a href="./tag/essays.html">Essays</a>,    <a href="./tag/yue-du.html">阅读</a>,    <a href="./tag/reading.html">Reading</a>,    <a href="./tag/ji-zhu.html">技术</a>,    <a href="./tag/technology.html">Technology</a>,    <a href="./tag/semantic-ui.html">Semantic-UI</a>,    <a href="./tag/nodejs.html">nodejs</a>,    <a href="./tag/pplusplus.html">PPlusPlus</a>,    <a href="./tag/faq.html">FAQ</a>,    <a href="./tag/zeev-suraski.html">Zeev Suraski</a>,    <a href="./tag/internals.html">internals@</a>,    <a href="./tag/php.html">PHP</a>,    <a href="./tag/p.html">P++</a>,    <a href="./tag/rasmus-lerdorf.html">Rasmus Lerdorf</a>,    <a href="./tag/pplusplus-faq.html">PPlusPlus FAQ</a>,    <a href="./tag/microsoft-designer-mouse.html">Microsoft Designer Mouse</a>,    <a href="./tag/linux-distributions.html">Linux Distributions</a>,    <a href="./tag/arch-linux.html">Arch Linux</a>,    <a href="./tag/centos.html">CentOS</a>,    <a href="./tag/debian.html">Debian</a>,    <a href="./tag/elementary-os.html">Elementary OS</a>,    <a href="./tag/fedora.html">Fedora</a>,    <a href="./tag/freebsd.html">FreeBSD</a>,    <a href="./tag/gentoo.html">Gentoo</a>,    <a href="./tag/linux-from-scratch.html">Linux From Scratch</a>,    <a href="./tag/linux-mint.html">Linux Mint</a>,    <a href="./tag/netbsd.html">NetBSD</a>,    <a href="./tag/opensuse.html">openSuse</a>,    <a href="./tag/red-hat-enterprise-linux.html">Red Hat Enterprise Linux</a>,    <a href="./tag/slackware.html">Slackware</a>,    <a href="./tag/ubuntu.html">Ubuntu</a>,    <a href="./tag/restructuredtext-grammar.html">reStructuredText Grammar</a>,    <a href="./tag/vscode-extension.html">VSCode Extension</a>,    <a href="./tag/vsce.html">vsce</a>,    <a href="./tag/visual-studio-marketplace.html">Visual Studio Marketplace</a>,    <a href="./tag/macos.html">macOS</a>,    <a href="./tag/mac-os.html">Mac OS</a>,    <a href="./tag/macos-history.html">macOS History</a>,    <a href="./tag/machintosh.html">Machintosh</a>,    <a href="./tag/beos.html">BeOS</a>,    <a href="./tag/next.html">NeXT</a>,    <a href="./tag/openstep.html">OPENSTEP</a>,    <a href="./tag/mach.html">Mach</a>,    <a href="./tag/ren-wen-ke-xue.html">人文科学</a>,    <a href="./tag/humanity.html">Humanity</a>,    <a href="./tag/luo-ji-xue.html">逻辑学</a>,    <a href="./tag/logic.html">Logic</a>,    <a href="./tag/ke-ji-suan-xing.html">可计算性</a>,    <a href="./tag/shi-wu.html">事物</a>,    <a href="./tag/shi-jian.html">事件</a>,    <a href="./tag/shi-shi.html">事实</a>,    <a href="./tag/guan-nian.html">观念</a>,    <a href="./tag/ming-ti.html">命题</a>,    <a href="./tag/duan-yan.html">断言</a>,    <a href="./tag/yan-yi.html">演绎</a>,    <a href="./tag/gui-na.html">归纳</a>,    <a href="./tag/san-duan-lun.html">三段论</a>,    <a href="./tag/tong-yi-lu.html">同一律</a>,    <a href="./tag/pai-zhong-lu.html">排中律</a>,    <a href="./tag/yin-guo-lu.html">因果律</a>,    <a href="./tag/mao-dun-lu.html">矛盾律</a>,    <a href="./tag/zi-ran-ke-xue.html">自然科学</a>,    <a href="./tag/natural-science.html">Natural Science</a>,    <a href="./tag/xiong-ji-diao.html">胸棘鲷</a>,    <a href="./tag/orange-roughy.html">Orange Roughy</a>,    <a href="./tag/chang-shou-yu.html">长寿鱼</a>,    <a href="./tag/hua-shi-ren-lei-xue.html">化石人类学</a>,    <a href="./tag/gu-ren-lei-xue.html">古人类学</a>,    <a href="./tag/zhi-ren.html">智人</a>,    <a href="./tag/homo-sapiens.html">Homo sapiens</a>,    <a href="./tag/ni-an-de-te-ren.html">尼安德特人</a>,    <a href="./tag/homo.html">Homo</a>,    <a href="./tag/neanderthals.html">Neanderthals</a>,    <a href="./tag/sheng-zhi-ge-chi.html">生殖隔离</a>,    <a href="./tag/ji-yin-ce-xu.html">基因测序</a>,    <a href="./tag/ji-suan-ji-ke-xue.html">计算机科学</a>,    <a href="./tag/computer-science.html">Computer Science</a>,    <a href="./tag/dian-zi-gong-cheng.html">电子工程</a>,    <a href="./tag/electronic-engineering.html">Electronic Engineering</a>,    <a href="./tag/ruan-jian-gong-cheng-xue.html">软件工程学</a>,    <a href="./tag/software-engineering.html">Software Engineering</a>,    <a href="./tag/xin-xi-ji-zhu.html">信息技术</a>,    <a href="./tag/information-technology.html">Information Technology</a>,    <a href="./tag/geetest.html">GeeTest</a>,    <a href="./tag/multiple-careers.html">Multiple Careers</a>,    <a href="./tag/windows.html">Windows</a>,    <a href="./tag/linux.html">Linux</a>,    <a href="./tag/jekyll.html">Jekyll</a>,    <a href="./tag/ruby.html">Ruby</a>,    <a href="./tag/msys2.html">MSYS2</a>,    <a href="./tag/vibora.html">Vibora</a>,    <a href="./tag/cygwin.html">Cygwin</a>,    <a href="./tag/mingw.html">MinGW</a>,    <a href="./tag/virtualpc.html">Virtualpc</a>,    <a href="./tag/vmware.html">VMWare</a>,    <a href="./tag/docker.html">Docker</a>,    <a href="./tag/msys.html">MSYS</a>,    <a href="./tag/msysgit.html">msysgit</a>,    <a href="./tag/bo-ke.html">博客</a>,    <a href="./tag/my-blog.html">My Blog</a>,    <a href="./tag/pelican.html">Pelican</a>,    <a href="./tag/gitalk.html">Gitalk</a>,    <a href="./tag/gitment.html">Gitment</a>,    <a href="./tag/pelican-octopress-theme.html">Pelican Octopress Theme</a>,    <a href="./tag/pelican-octopress-theme-cn.html">pelican-octopress-theme-cn</a>,    <a href="./tag/node.html">Node</a>,    <a href="./tag/path.html">Path</a>,    <a href="./tag/psychology.html">Psychology</a>,    <a href="./tag/philosophy.html">Philosophy</a>,    <a href="./tag/nwjs.html">NW.js</a>,    <a href="./tag/electron.html">Electron</a>,    <a href="./tag/qrcode.html">QRCode</a>,    <a href="./tag/text-qrcode.html">Text QRCode</a>,    <a href="./tag/wechaty.html">Wechaty</a>,    <a href="./tag/open-source.html">Open Source</a>,    <a href="./tag/vscode.html">VSCode</a>,    <a href="./tag/restructuretext.html">reStructureText</a>,    <a href="./tag/linux-kernel.html">Linux Kernel</a>,    <a href="./tag/data.html">Data</a>,    <a href="./tag/information.html">Information</a>,    <a href="./tag/restructuredtext.html">reStructuredText</a>,    <a href="./tag/rst.html">rst</a>,    <a href="./tag/bo-ke-geng-xin.html">博客更新</a>,    <a href="./tag/blog-update.html">Blog Update</a>,    <a href="./tag/zi-ding-yi-yu-ming.html">自定义域名</a>,    <a href="./tag/custom-domain.html">Custom Domain</a>,    <a href="./tag/github-pages.html">GitHub Pages</a>,    <a href="./tag/cname.html">CNAME</a>,    <a href="./tag/ji-zhu-zhi-shi-fen-lei.html">技术知识分类</a>,    <a href="./tag/technology-category.html">Technology Category</a>,    <a href="./tag/wen-ti-jie-jue.html">问题解决</a>,    <a href="./tag/problem-solving.html">Problem Solving</a>,    <a href="./tag/biao-ji-yu-yan.html">标记语言</a>,    <a href="./tag/octopress.html">octopress</a>,    <a href="./tag/markdown.html">Markdown</a>,    <a href="./tag/asciidoc.html">AsciiDoc</a>  </section>
+
+
+    <section>
+        <h1>社区</h1>
+        <ul>
+            <li><a href="https://github.com/kaffa" target="_blank">My GitHub</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>链接</h1>
+        <ul>
+            <li><a href="https://python.org" target="_blank">Python.org</a></li>
+            <li><a href="http://paulgraham.com" target="_blank">Paul Graham</a></li>
+            <li><a href="https://kaffa.im" target="_blank">Kaffa</a></li>
+            <li><a href="https://coffees.app" target="_blank">咖啡的</a></li>
+            <li><a href="https://www.lundao.pub/" target="_blank">论道——问答社区</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    版权所有 &copy;  2018&ndash;2020  Kaffa &mdash;
+  <span class="credit">自豪地采用 <a href="http://getpelican.com">Pelican</a> 技术</span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  
+</body>
+</html>
