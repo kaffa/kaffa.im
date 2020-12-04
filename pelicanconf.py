@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Kaffa'
-SITENAME = 'Kaffa'
-SITESUBTITLE = "Kaffa's Faded Fadeless Abstraction"
+SITENAME = '褪色的抽象'
+SITESUBTITLE = "Kaffa's blog"
 SITEURL = 'https://kaffa.im'
 
 PATH = 'content'
