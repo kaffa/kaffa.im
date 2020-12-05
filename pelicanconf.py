@@ -49,7 +49,7 @@ MENUITEMS = (
 DISPLAY_CATEGORIES_ON_MENU = False
 
 
-THEME = "E:/code/kaffa.im/themes/pelican-octopress-theme-cn"
+THEME = "E:/code/github/kaffa/kaffa.github.io/themes/pelican-octopress-theme-cn"
 
 STATIC_PATHS = [
     'js',
