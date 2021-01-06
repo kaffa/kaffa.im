@@ -38,12 +38,12 @@ RELATIVE_URLS = True
 
 # 菜单
 MENUITEMS = (
-    ("首页", "https://kaffa.im"),
-    ("随笔", "https://kaffa.im/category/sui-bi.html"),
-    ("阅读", "https://kaffa.im/category/yue-du.html"),
-    ("人文", "https://kaffa.im/category/ren-wen.html"),
-    ("自然", "https://kaffa.im/category/zi-ran.html"),
-    ("日志", "https://kaffa.im/category/ri-zhi.html"),
+    ("首页", "/"),
+    ("随笔", "/category/sui-bi.html"),
+    ("阅读", "/category/yue-du.html"),
+    ("人文", "/category/ren-wen.html"),
+    ("自然", "/category/zi-ran.html"),
+    ("日志", "/category/ri-zhi.html"),
 )
 # 添加 20190518
 DISPLAY_CATEGORIES_ON_MENU = False

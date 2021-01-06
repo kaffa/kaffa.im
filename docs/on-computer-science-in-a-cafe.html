@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>咖啡馆聊计算机科学 &mdash; 褪色的抽象</title>
+  <meta name="author" content="Kaffa">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">褪色的抽象</a></h1>
+    <h2>Kaffa's blog</h2>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+    <li><a href="/">首页</a></li>
+    <li><a href="/category/sui-bi.html">随笔</a></li>
+    <li><a href="/category/yue-du.html">阅读</a></li>
+    <li><a href="/category/ren-wen.html">人文</a></li>
+    <li><a href="/category/zi-ran.html">自然</a></li>
+    <li><a href="/category/ri-zhi.html">日志</a></li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">咖啡馆聊计算机科学</h1>
+    <p class="meta">
+<time datetime="2020-12-21T12:00:00+08:00" pubdate>2020-12-21 周一</time>    </p>
+</header>
+
+  <div class="entry-content"><div class="section" id="id2">
+<h2>咖啡馆聊系列</h2>
+<p>咖啡馆聊计算机科学，并不是一个人叫咖啡馆，也并不是一个人在咖啡馆，而是我个人的知识简记方式，是咖啡馆聊系列的第一篇。</p>
+<p>此篇源自一个寒假的下午，我在咖啡馆喝咖啡，十岁的女儿对我说：Daddy，Scratch 很有趣吔，MIT 是什么，你给我讲讲计算机和编程呗！当时我讲了图灵和冯诺依曼，计算机分层抽象，操作系统，计算机编程语言的条件和循环，算法等一些主题。当讲完后回家再问女儿时，发现很多概念她就忘了，当时就打算安排一个完整时间用文字记下来给女儿，是有此篇。</p>
+</div>
+<div class="section" id="id3">
+<h2>学科概论</h2>
+<p>当拿到大学录取通知书，进入我们向往的专业报到，正式开始学习一门学科，除了修习该专业的公共课（如计算机专业的高等数学、线性代数、英语）我们会先学习一门 <strong>学科概论（或导论）</strong> 课。在此课程内，一位老教授会 Guide
+你进行“计算机科学”景点一日游——坐上这位老导游的观光巴士，开始城市十大景点一日游，在每个景点只停留少量时间，很多精彩之处只能浅尝辄止。</p>
+<p>在计算机科学领域，这十大景点是：</p>
+<ol class="arabic simple" start="0">
+<li>计算机学科历史和计算理论</li>
+<li>计算机体系结构</li>
+<li>操作系统</li>
+<li>计算机网络</li>
+<li>数据的抽象、操作、存储</li>
+<li>算法</li>
+<li>程序设计语言</li>
+<li>软件工程</li>
+<li>数据库</li>
+<li>计算机图形学</li>
+</ol>
+<p>再加赠一个热门景点：人工智能。</p>
+<p>这些景点介绍在计算机科学学科叫《计算机科学概论》。大部分主流学科，都会安排这样一位老教授来上这门概论课，以便你能走马观花一遍学科的内容范围，
+但对这种“一日看尽长安花”的方式你有几点需清楚，你所观光之处只是城市的主要街道和景点，一方面景点的 <em>细节看的不够</em>，另一方便你可能会忽视城市的 <em>范围非常广</em> 这个事实，
+有很多重要的地方不在行程之中会被忽略。所以，保持好奇且不加预设，加一些自驾和徒步的交通方式，
+才能更完整体验到这座还不足百年的年轻都市，但即便你去过它很多隐秘的角落，它99%的区域你此生依然不会去到。</p>
+<p>当你报名不同的旅行团一日游，导游和路线会完全不同——当你进入了不同级别的学校，教授是不同的，选用的教材的逻辑也是不同的。比如也有按分层逻辑的：</p>
+<ol class="arabic simple">
+<li>计算机历史</li>
+<li>信息层</li>
+<li>硬件层</li>
+<li>编程层</li>
+<li>操作系统层</li>
+<li>应用层</li>
+<li>通信层</li>
+</ol>
+<p>看起来思路迥异，实则不然，其实是对底层概念的逻辑组织顺序不同罢了。</p>
+<p>但很多初学者会有一个误区，认为教授和教材有高低之分，我想说：是的，确实有差别，但不是绝对的！
+根据学习的规律，学习过程最好螺旋的方式进行，而不是爬梯式，我认为**一个人能获取到的“最近的教材”和教学资源，对这个人来说就是最好的。**</p>
+<p>“最近的教材”是我提的一个概念，有两个含义：一是最新的，二是易获得的，三是和个人的学习习惯接近的。
+新意味着教材有到好的口碑，作者原意对内容不断修订，保持常新；易获得并不是指对教材不加挑选，往往你就读大学的选书，是大学一代一代教授传下来的，有一定历史原因和取舍，是教授的人自己熟悉的，教学过程是成熟的。第三点，如何你拿到手的并不是一本该学科顶级概论教材，此时你需要根据个人学习能力和习惯，选择一本世界顶级教材作为补充。学习过程并非一蹴而就，而是循序渐进的，你可以把*排名靠前的教材*作为第二轮学习的补充读物。</p>
+</div>
+<div class="section" id="id4">
+<h2>选择学科概论教材</h2>
+<p>选择教材并不是一个十岁小孩能具备的经验和能力，所以在此，我需要额外补充一点选择计算机教材（或书籍）的思路：
+* 教材有好有坏，要淘汰不好的教材；
+* 教材没有最好，只有最适合；
+* 好教材可能并不是一本书；</p>
+<div class="section" id="id5">
+<h3>去哪里找</h3>
+<ul class="simple">
+<li>选国内外名校使用的；</li>
+<li>按计算机专业全球排名来选；</li>
+<li>选优秀出版社的；</li>
+<li>按亚马逊排名来选；</li>
+<li>quora.com</li>
+<li>stackoverflow.com</li>
+<li>stackexchange.com</li>
+<li>zhihu.com</li>
+<li>google.com</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>计算机科学概论有哪些经典教材</h3>
+<p>有最新版的情况下选最新版
+* Computer Science An Overview - J. Glenn Brookshear
+* Foundation of Computer Science - Behrouz Forouzan
+* Computer Science Illuminated，Nell Dale &amp; John Lewis</p>
+</div>
+<div class="section" id="id7">
+<h3>计算机科学有哪些经典资源</h3>
+<ul class="simple">
+<li>GitHub 或 Gitee 中有清华大学、中科大、浙江大学、华中科技大等教学资源。</li>
+<li><a class="reference external" href="https://github.com/ossu/computer-science">OSSU</a> 是不错的资源，</li>
+<li>还有很多人会提到 <a class="reference external" href="https://www.mooc.org/">MOOC</a> 项目，国内很多大学也有参与，在学习资源的获取上，趋势是越来越开放，但获得高级教育的机会却会越来越昂贵。也许会像《大教堂和集市》的故事一样，开放性越高，影响力越大，越容易获得反馈和更快的迭代。但 <a class="reference external" href="https://www.mooc.org/">MOOC</a> 也有弊端，扁平不成体系、师生交互不够，课程迭代不快。</li>
+<li>很多教学视频在 Youtube 上都有，但和 B站都能找到，只是搜集起来需要花些时间</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>大白话计算机科学</h2>
+<p>将计算机看作一种工具来理解，我们会讨论工具是在谁的脑子里想出来的，怎么造这个工具，造好后怎么用。
+所以，计算机科学也讲了这三件事：如何有计算机（概念），怎么造计算机，怎么用计算机。</p>
+<ul class="simple">
+<li>如何有：讲了为什么图灵脑子里的机器可以表达并解决现实中的问题，以及冯·诺依曼如何造出这种机器；如何有是关于计算的理论，这里的计算是泛指处理任何信息，这方面懂的人少，可做的也不多，但这些需要这颗星球上最出色的头脑。人类历史上的伟大发明看起来都不是偶然的而是被安排好的，通过特定的人和机会送给人类的。</li>
+<li>怎么造：从最初提出计算机由五个“零件”组成，至今计算机上并没有本质的变化，且“零件”的改进机会被掌握在少数人手中，但幸好，无论怎么造出的计算机，在是否能解决问题和解决问题的步骤上都是等效的，只存在时间差异；怎么造是资源密集的事，最初进入的公司已从小孩变成了中年人和老人，五大零件运算、存储、控制、输入、输出都是充分竞争的领域，这些公司把常用的部分合在一起制造，这个过程叫做封装，合起来造出的东西叫芯片，由于这东西是大公司合作才能造出来的，在造芯片这事上愈强者愈强，形成了正反馈，将芯片越造越小，集成度越来越高，导致后面进入的公司像小孩子，如果中年人和老人不允许，它再也无法获得足够的技术资源来造出有市场竞争力的芯片了，因此这些硬件设计和制造技术的公司是未来几百年都是可世袭的资产。</li>
+<li>怎么用：通过算法和编程，对信息和数据进行获取、处理、交换和存储，从而将人脑中的概念和知识外化，让计算机为人类贡献它的智慧，所以在中文中，计算机又称为“电脑”。这剩下的怎么用才是大多数普通人可有所作为的领域。从造到用不能分割开看，只是大多数公司都没有办法决定怎么造，所以大多数都在怎么用上做文章。用的领域内从硬到软，最大的特点就是技术不断迭代。人通过输入输出设备使用计算机，从人到机器的交互又分为了很多层次，接近机这层的技术迭代慢，接近人这层的技术迭代快。这个层次很像一颗生根发芽枝繁叶茂的树，硬件就是土地，底层技术是根，中层技术是树枝，上层技术即接近人的那层是树叶。</li>
+</ul>
+<p>在理解计算上，要记住两个理念：一，无论是土地，还是根枝叶，都是计算机系统，要无差别的对待，二，在考虑的叶的问题时，不需要知道枝的细节，只需要知道叶是从枝的哪里长出来，同理枝和根、根和土地的连接也一样。这两点偏向任何一点都是错误的。</p>
+<div class="section" id="id9">
+<h3>0. 计算机学科历史和计算理论</h3>
+</div>
+<div class="section" id="id10">
+<h3>1. 计算机体系结构</h3>
+</div>
+<div class="section" id="id11">
+<h3>2. 操作系统</h3>
+</div>
+<div class="section" id="id12">
+<h3>3. 计算机网络</h3>
+</div>
+<div class="section" id="id13">
+<h3>4. 数据的抽象、操作、存储</h3>
+</div>
+<div class="section" id="id14">
+<h3>5. 算法</h3>
+</div>
+<div class="section" id="id15">
+<h3>6. 程序设计语言</h3>
+</div>
+<div class="section" id="id16">
+<h3>7. 软件工程</h3>
+</div>
+<div class="section" id="id17">
+<h3>8. 数据库</h3>
+</div>
+<div class="section" id="id18">
+<h3>9. 计算机图形学</h3>
+</div>
+<div class="section" id="id19">
+<h3>10. 人工智能</h3>
+<p>计算机是靠硬件的两个状态来表示0和1，而所有的信息都可以表示为0和1的队列。</p>
+</div>
+</div>
+</div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    发布人： <span class="fn">
+        Kaffa
+    </span>
+  </span>
+<time datetime="2020-12-21T12:00:00+08:00" pubdate>2020-12-21 周一</time>  <span class="categories">
+    <a class='category' href='./category/sui-bi-zi-ran.html'>随笔, 自然</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/sui-bi.html">随笔</a>,    <a class="category" href="./tag/essays.html">Essays</a>,    <a class="category" href="./tag/computer-science.html">Computer Science</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+    <div id="gitalk-container"></div>
+  </article>
+
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '47c6091c4039fb3df197',
+    clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+<aside class="sidebar">
+  <section>
+    <h1>最近博文</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./on-computer-science-in-a-cafe.html">咖啡馆聊计算机科学</a>
+      </li>
+      <li class="post">
+          <a href="./design-flaws-on-official-pomodoro-clock.html">番茄工作法官方特许番茄钟设计上的瑕疵</a>
+      </li>
+      <li class="post">
+          <a href="./questions-and-detail-plan-about-my-domains.html">对手头域名重新规划后提问</a>
+      </li>
+      <li class="post">
+          <a href="./site-planning-about-my-domains.html">对手头几个域名的重新规划</a>
+      </li>
+      <li class="post">
+          <a href="./about-my-lost-books.html">关于几本丢失的书籍</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+
+    <h1>分类</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/ren-wen.html">人文</a></li>
+        <li><a href="./category/ri-zhi.html">日志</a></li>
+        <li><a href="./category/sui-bi.html">随笔</a></li>
+        <li><a href="./category/sui-bi-zi-ran.html">随笔, 自然</a></li>
+        <li><a href="./category/yue-du.html">阅读</a></li>
+        <li><a href="./category/zi-ran.html">自然</a></li>
+    </ul>
+  </section>
+
+  <section>
+  <h1>标签</h1>
+    <a href="./tag/sui-bi.html">随笔</a>,    <a href="./tag/essays.html">Essays</a>,    <a href="./tag/computer-science.html">Computer Science</a>,    <a href="./tag/bo-ke.html">博客</a>,    <a href="./tag/my-blog.html">My Blog</a>,    <a href="./tag/fan-qie-gong-zuo-fa.html">番茄工作法</a>,    <a href="./tag/pomodoro-technique.html">Pomodoro Technique</a>,    <a href="./tag/fan-qie-zhong.html">番茄钟</a>,    <a href="./tag/pomodoro-clock.html">Pomodoro Clock</a>,    <a href="./tag/yue-du.html">阅读</a>,    <a href="./tag/reading.html">Reading</a>,    <a href="./tag/ji-zhu.html">技术</a>,    <a href="./tag/technology.html">Technology</a>,    <a href="./tag/semantic-ui.html">Semantic-UI</a>,    <a href="./tag/nodejs.html">nodejs</a>,    <a href="./tag/pplusplus.html">PPlusPlus</a>,    <a href="./tag/faq.html">FAQ</a>,    <a href="./tag/zeev-suraski.html">Zeev Suraski</a>,    <a href="./tag/internals.html">internals@</a>,    <a href="./tag/php.html">PHP</a>,    <a href="./tag/p.html">P++</a>,    <a href="./tag/rasmus-lerdorf.html">Rasmus Lerdorf</a>,    <a href="./tag/pplusplus-faq.html">PPlusPlus FAQ</a>,    <a href="./tag/microsoft-designer-mouse.html">Microsoft Designer Mouse</a>,    <a href="./tag/linux-distributions.html">Linux Distributions</a>,    <a href="./tag/arch-linux.html">Arch Linux</a>,    <a href="./tag/centos.html">CentOS</a>,    <a href="./tag/debian.html">Debian</a>,    <a href="./tag/elementary-os.html">Elementary OS</a>,    <a href="./tag/fedora.html">Fedora</a>,    <a href="./tag/freebsd.html">FreeBSD</a>,    <a href="./tag/gentoo.html">Gentoo</a>,    <a href="./tag/linux-from-scratch.html">Linux From Scratch</a>,    <a href="./tag/linux-mint.html">Linux Mint</a>,    <a href="./tag/netbsd.html">NetBSD</a>,    <a href="./tag/opensuse.html">openSuse</a>,    <a href="./tag/red-hat-enterprise-linux.html">Red Hat Enterprise Linux</a>,    <a href="./tag/slackware.html">Slackware</a>,    <a href="./tag/ubuntu.html">Ubuntu</a>,    <a href="./tag/restructuretext.html">reStructureText</a>,    <a href="./tag/restructuredtext-grammar.html">reStructuredText Grammar</a>,    <a href="./tag/vscode-extension.html">VSCode Extension</a>,    <a href="./tag/vsce.html">vsce</a>,    <a href="./tag/visual-studio-marketplace.html">Visual Studio Marketplace</a>,    <a href="./tag/macos.html">macOS</a>,    <a href="./tag/mac-os.html">Mac OS</a>,    <a href="./tag/macos-history.html">macOS History</a>,    <a href="./tag/machintosh.html">Machintosh</a>,    <a href="./tag/beos.html">BeOS</a>,    <a href="./tag/next.html">NeXT</a>,    <a href="./tag/openstep.html">OPENSTEP</a>,    <a href="./tag/mach.html">Mach</a>,    <a href="./tag/ren-wen.html">人文</a>,    <a href="./tag/humanity.html">Humanity</a>,    <a href="./tag/luo-ji-xue.html">逻辑学</a>,    <a href="./tag/logic.html">Logic</a>,    <a href="./tag/ke-ji-suan-xing.html">可计算性</a>,    <a href="./tag/shi-wu.html">事物</a>,    <a href="./tag/shi-jian.html">事件</a>,    <a href="./tag/shi-shi.html">事实</a>,    <a href="./tag/guan-nian.html">观念</a>,    <a href="./tag/ming-ti.html">命题</a>,    <a href="./tag/duan-yan.html">断言</a>,    <a href="./tag/yan-yi.html">演绎</a>,    <a href="./tag/gui-na.html">归纳</a>,    <a href="./tag/san-duan-lun.html">三段论</a>,    <a href="./tag/tong-yi-lu.html">同一律</a>,    <a href="./tag/pai-zhong-lu.html">排中律</a>,    <a href="./tag/yin-guo-lu.html">因果律</a>,    <a href="./tag/mao-dun-lu.html">矛盾律</a>,    <a href="./tag/zi-ran.html">自然</a>,    <a href="./tag/natural-science.html">Natural Science</a>,    <a href="./tag/xiong-ji-diao.html">胸棘鲷</a>,    <a href="./tag/orange-roughy.html">Orange Roughy</a>,    <a href="./tag/chang-shou-yu.html">长寿鱼</a>,    <a href="./tag/hua-shi-ren-lei-xue.html">化石人类学</a>,    <a href="./tag/gu-ren-lei-xue.html">古人类学</a>,    <a href="./tag/zhi-ren.html">智人</a>,    <a href="./tag/homo-sapiens.html">Homo sapiens</a>,    <a href="./tag/ni-an-de-te-ren.html">尼安德特人</a>,    <a href="./tag/homo.html">Homo</a>,    <a href="./tag/neanderthals.html">Neanderthals</a>,    <a href="./tag/sheng-zhi-ge-chi.html">生殖隔离</a>,    <a href="./tag/ji-yin-ce-xu.html">基因测序</a>,    <a href="./tag/ji-suan-ji-ke-xue.html">计算机科学</a>,    <a href="./tag/dian-zi-gong-cheng.html">电子工程</a>,    <a href="./tag/electronic-engineering.html">Electronic Engineering</a>,    <a href="./tag/ruan-jian-gong-cheng-xue.html">软件工程学</a>,    <a href="./tag/software-engineering.html">Software Engineering</a>,    <a href="./tag/xin-xi-ji-zhu.html">信息技术</a>,    <a href="./tag/information-technology.html">Information Technology</a>,    <a href="./tag/geetest.html">GeeTest</a>,    <a href="./tag/multiple-careers.html">Multiple Careers</a>,    <a href="./tag/windows.html">Windows</a>,    <a href="./tag/linux.html">Linux</a>,    <a href="./tag/jekyll.html">Jekyll</a>,    <a href="./tag/ruby.html">Ruby</a>,    <a href="./tag/msys2.html">MSYS2</a>,    <a href="./tag/vibora.html">Vibora</a>,    <a href="./tag/cygwin.html">Cygwin</a>,    <a href="./tag/mingw.html">MinGW</a>,    <a href="./tag/virtualpc.html">Virtualpc</a>,    <a href="./tag/vmware.html">VMWare</a>,    <a href="./tag/docker.html">Docker</a>,    <a href="./tag/msys.html">MSYS</a>,    <a href="./tag/msysgit.html">msysgit</a>,    <a href="./tag/pelican.html">Pelican</a>,    <a href="./tag/gitalk.html">Gitalk</a>,    <a href="./tag/gitment.html">Gitment</a>,    <a href="./tag/pelican-octopress-theme.html">Pelican Octopress Theme</a>,    <a href="./tag/pelican-octopress-theme-cn.html">pelican-octopress-theme-cn</a>,    <a href="./tag/node.html">Node</a>,    <a href="./tag/path.html">Path</a>,    <a href="./tag/psychology.html">Psychology</a>,    <a href="./tag/philosophy.html">Philosophy</a>,    <a href="./tag/nwjs.html">NW.js</a>,    <a href="./tag/electron.html">Electron</a>,    <a href="./tag/qrcode.html">QRCode</a>,    <a href="./tag/text-qrcode.html">Text QRCode</a>,    <a href="./tag/wechaty.html">Wechaty</a>,    <a href="./tag/open-source.html">Open Source</a>,    <a href="./tag/vscode.html">VSCode</a>,    <a href="./tag/linux-kernel.html">Linux Kernel</a>,    <a href="./tag/data.html">Data</a>,    <a href="./tag/information.html">Information</a>,    <a href="./tag/restructuredtext.html">reStructuredText</a>,    <a href="./tag/rst.html">rst</a>,    <a href="./tag/bo-ke-geng-xin.html">博客更新</a>,    <a href="./tag/blog-update.html">Blog Update</a>,    <a href="./tag/zi-ding-yi-yu-ming.html">自定义域名</a>,    <a href="./tag/custom-domain.html">Custom Domain</a>,    <a href="./tag/github-pages.html">GitHub Pages</a>,    <a href="./tag/cname.html">CNAME</a>,    <a href="./tag/ji-zhu-zhi-shi-fen-lei.html">技术知识分类</a>,    <a href="./tag/technology-category.html">Technology Category</a>,    <a href="./tag/wen-ti-jie-jue.html">问题解决</a>,    <a href="./tag/problem-solving.html">Problem Solving</a>,    <a href="./tag/biao-ji-yu-yan.html">标记语言</a>,    <a href="./tag/octopress.html">octopress</a>,    <a href="./tag/markdown.html">Markdown</a>,    <a href="./tag/asciidoc.html">AsciiDoc</a>  </section>
+
+
+    <section>
+        <h1>社区</h1>
+        <ul>
+            <li><a href="https://github.com/kaffa" target="_blank">My GitHub</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>链接</h1>
+        <ul>
+            <li><a href="http://paulgraham.com" target="_blank">Paul Graham</a></li>
+            <li><a href="https://gvanrossum.github.io/" target="_blank">Guido van Rossum</a></li>
+            <li><a href="https://kaffa.im" target="_blank">Kaffa</a></li>
+            <li><a href="https://coffees.app" target="_blank">Coffee's</a></li>
+            <li><a href="https://www.lundao.pub/" target="_blank">论道</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    版权所有 &copy;  2018&ndash;2020  Kaffa &mdash;
+  <span class="credit">自豪地采用 <a href="http://getpelican.com">Pelican</a> 技术</span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  
+</body>
+</html>
