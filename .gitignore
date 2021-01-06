@@ -11,3 +11,4 @@ _old_posts/
 .ruby-version
 .DS_Store
 /content.draft/
+/themes/
