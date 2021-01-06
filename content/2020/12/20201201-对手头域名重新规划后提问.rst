@@ -2,7 +2,7 @@
 ##################################################################
 
 :date: 2020-12-01 12:00
-:modified: 2020-12-02 12:00
+:modified: 2020-12-05 12:00
 :tags: 随笔, Essays, 博客, My Blog
 :category: 随笔
 :slug: questions-and-detail-plan-about-my-domains
@@ -62,7 +62,7 @@ a**o.cn
 3. 增加 item.a**o.cn
 4. 在 item.a**o.cn 录入 ee
 
-t*t.com
+t**t.com
 ------------
 每周输出一篇投资或阅读笔记
 
