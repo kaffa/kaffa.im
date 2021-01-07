@@ -92,10 +92,18 @@ ACE_EDITOR_PLUGIN = {
     'ACE_EDITOR_AUTOSCROLL': True,
     'ACE_EDITOR_SHOW_INVISIBLE': True
 }
+# MARKDOWN = {
+#     'markdown.extensions.codehilite': {
+#         'css_class': 'literal-block',
+#         'linenums': True,
+#         'use_pygments': True
+#     }
+# }
 MARKDOWN = {
-    'markdown.extensions.codehilite': {
-        'css_class': 'literal-block',
-        'linenums': True,
-        'use_pygments': True
-    }
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
 }
