@@ -66,13 +66,13 @@
 同样被看见的还有自私与丑恶、傲慢与偏见，将全球数不清的尚未做好准备的人拉到了不得不面对的战场上。
 这是个人命运的挫折，更是全人类的灾难，有些事实也许一年或几年还看不清，但当历史的车轮轧过后，
 那些狭隘的自私的和虚伪的，都会标上的真实的价码，如同地质运动后的岩层一样戳破残破不堪的地表。</p>
-<p>2021 年会更好的吗？我不知道，这一年木土在水瓶大合相，将开始全新的风向时代。这些时代讯息从去年的 "I can't breathe"（需要风）, "Black lives matter"（消除种族歧视，呼唤平等）中已有体现，</p>
-<h2>为什么是 hugo ？</h2>
+<p>2021 年会更好的吗？我不知道，这一年木土在水瓶大合相，将开始全新的风象时代。这些时代讯息从去年的 "I can't breathe"（我需要风）, "Black lives matter"（呼唤水瓶的平等）中已有体现，</p>
+<h2>为什么是 Hugo ？</h2>
 <p>为迎接上述转变，我计划将写作源从 reStructureText 转到更新的技术 MarkDown 上以呼应时代的机会。
 源自 Python 的 reStructureText 完善稳定，是支撑 Python 众多文档的基础；新生的 MarkDown 基础格式统一，扩展标准兼容性有待完善，
 但它有更适合这个风向时代的轻量和通用，在木星水瓶的第一个十年里，MarkDown 很有不断打磨自己和扩张的机会。</p>
-<h2>为什么要我的 hugo 写简历不完全指南？</h2>
-<p>我相信会有很多用 hugo 写简历的文章，但如何写一篇不过时，不用频繁更新，有更持久意义的文章呢？我不知道。
+<h2>系给自己的 Hugo 写简历不完全指南？</h2>
+<p>我相信会有很多用 Hugo 写简历的文章，但如何写一篇不过时，不用频繁更新，有更持久意义的文章呢？我不知道。
 但可以列出一些达到这个目的的原则：</p>
 <ul>
 <li>提供思路，而不是提供步骤</li>
@@ -81,18 +81,18 @@
 <li>提供关键字，但不列举资源</li>
 </ul>
 <h3>思路</h3>
-<p>一般会用 hugo 的是 IT 人，大多会知道 <a href="https://golang.org/">Go</a> 语言。
+<p>一般会用 Hugo 的是 IT 人，大多会知道 <a href="https://golang.org/">Go</a> 语言。
 写简历就是使用 Hugo 和 Hugo Theme 来生成一个静态站点。
 因此要懂得 Hugo 和 Hugo Theme 的基本用法，再将简历内容写到内容中。
 如个人基本信息、联系方式、工作经验、项目经验、教育经历、证书奖励等</p>
 <h3>方法</h3>
 <p>可通过 Google 或 Bing 找到 Go 和 Hugo 的官方站点，Hugo 是一个静态站点生成软件，软件都有文档，文档中必然有它的安装和使用方法。</p>
 <h3>核心</h3>
-<p>使用软件的核心能力是文档<em>阅读理解</em>，<em>英语</em>能力能帮上很大忙。
+<p>使用软件的核心能力是文档<strong>阅读理解</strong>，<strong>英语</strong>能力能帮上很大忙。
 对于 Hugo 的文档，首先阅读介绍（Introduction），然后阅读安装（Install Hugo），
 再阅读目录结构（Directory Structure），最后阅读配置（Configure Hugo）。</p>
-<p>这里就不再把安装文档中的步骤摘录于此，因每种操作系统及发行版都提供了<em>命令行软件包管理工具</em>来管理常用软件。
-不但如此，现代软件都相互学习（借鉴）设计，命令行功能简洁易用，Hugo’s CLI 也属于此，但功能无外乎：</p>
+<p>这里就不再把安装文档中的步骤摘录于此，因每种操作系统及发行版都提供了<strong>命令行软件包管理工具</strong>来管理常用软件。
+不仅如此，现代软件都相互学习（借鉴）设计，命令行功能简洁易用，Hugo’s CLI 也属于此，但功能无外乎：</p>
 <ol>
 <li>hugo new site: 生成新站点</li>
 <li>hugo new: 增加新内容 </li>
@@ -100,15 +100,16 @@
 <li>hugo help: 其它先不用管功能</li>
 </ol>
 <p>Section 我译它为章，即 content 目录下的目录，其中可能包含一组页面。</p>
-<p>主要目录结构：很大程度上不会变，也意味着未来也许会改变。
-.
-├─ archetypes : 预定义的元数据定义 
-├─ config.toml : 配置文件
-├─ content : 所有的内容按目录分为章
-├─ data : 可以理解为静态化的数据，格式可以是 YAML / JSON / TOML，且可被模版使用
-├─ layouts : 模版的目录，有 list 页, homepage 页, taxonomy templates 标签模版, partials 模版片段, single page templates 单页模版等
-├─ static : 静态文件
-└─ themes : 主题文件</p>
+<p>主要目录结构：很大程度上不会变，也意味着未来也许会改变。</p>
+<div class="highlight"><pre><span></span><code><span class="err">├─ archetypes : 预定义的元数据定义 </span>
+<span class="err">├─ config.toml : 配置文件</span>
+<span class="err">├─ content : 所有的内容按目录分为章</span>
+<span class="err">├─ data : 可以理解为静态化的数据，可被模版使用</span>
+<span class="err">├─ layouts : 模版的目录，有默认的页面和模版，模版片段，单页模版等</span>
+<span class="err">├─ static : 静态文件</span>
+<span class="err">└─ themes : 主题文件</span>
+</code></pre></div>
+
 <p>因此上述目录说明应去文档中查看，如果说 Hugo 模式是 MVC 那么 layouts 就是 V，content 和 data 就是 M，而 C 则是 Hugo 本身。
 这里完成了 Hugo 的部分，其次就是在 Hugo themes 主题站中寻找 resume 相关的资源，挑选喜欢的款式来作为简历的主题，并配置到 config.toml 中</p>
 <h3>关键字</h3>
