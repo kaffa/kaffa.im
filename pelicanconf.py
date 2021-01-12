@@ -54,8 +54,14 @@ THEME = "E:/code/github/kaffa/kaffa.github.io/themes/pelican-octopress-theme-cn"
 STATIC_PATHS = [
     'js',
     'css',
-    'img'
+    'img',
+    'extra/CNAME',
+    'extra/favicon.ico'
 ]
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
 
 PLUGIN_PATHS = ['E:/code/kaffa.im/plugins/']
 PLUGINS = [
