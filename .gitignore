@@ -12,3 +12,4 @@ _old_posts/
 .DS_Store
 /content.draft/
 /themes/
+/tools/update_gitee_pages.py
