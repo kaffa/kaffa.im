@@ -62,6 +62,7 @@ EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
+FAVICON_FILENAME = 'favicon.ico'
 
 PLUGIN_PATHS = ['E:/code/kaffa.im/plugins/']
 PLUGINS = [
