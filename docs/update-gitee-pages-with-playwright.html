@@ -82,22 +82,34 @@
             <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">GITEE_PAGES_URL</span><span class="p">)</span>
             <span class="n">page</span><span class="o">.</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;dialog&quot;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">dialog</span><span class="p">:</span> <span class="n">dialog</span><span class="o">.</span><span class="n">accept</span><span class="p">())</span>
             <span class="n">page</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="s2">&quot;.update_deploy&quot;</span><span class="p">)</span>
+            <span class="n">page</span><span class="o">.</span><span class="n">waitForSelector</span><span class="p">(</span><span class="s1">&#39;span:text(&quot;已开启 Gitee Pages 服务&quot;)&#39;</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="s1">&#39;visible&#39;</span><span class="p">)</span>
             <span class="n">browser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">main</span><span class="p">()</span>
 </code></pre></div>
 
-<h2>说明</h2>
-<p>实现自动更新，本质上只是发出一个 Http 请求，但不知是否有其他保护，
-为“一次编写，一直运行”，这里使用了来自微软的类似 Selenium 的 PlayWright 库，
-这种方式没有直接发送 Http Post 请求快，但需要维护的可能性低，且更易维护。
-这句 <code>page.on("dialog", lambda dialog: dialog.accept())</code> 表示弹出框点击确定，
-其余代码直白到十岁小友也可看懂，不再解释。</p>
-<h3>搜索关键字</h3>
-<p><a href="https://gitee.com/help/articles/4136">Gitee Pages</a>, <a href="https://playwright.dev/">PlayWright</a>, <a href="https://github.com/microsoft/playwright-python">playwright-python</a></p>
-<p>感谢阅读。</p></div>
+<h2>代码说明</h2>
+<p>从编程角度上，实现 Git Push 完后自动更新 Gitee Pages，需要当 Git Push 完成时发送消息，消息订阅方接收到该息后执行更新操作。
+现实中这些通常由持续集成（CI）服务器来做，但 Gitee 的持续集成服务 Gitee Go 是收费服务。</p>
+<p>不如换个思路，即提交 Github 和 Gitee 完成后，追加一次点击 Gitee Pages 更新按钮的操作，该操作最后是客户端发出一个 Http Post 请求，
+复杂而不好的办法是直接构造该请求的数据，但为实现“一次编写，一直运行”，也为防止点按钮时还做了什么其它较风骚的操作，
+这里选择使用了 Headless Testing 的方法。</p>
+<p>这条道路主流是沿着 Selenium -&gt; Puppeteer -&gt; PlayWright 进行的，特别是 PlayWright 团队，原先就是从 Google 的 Puppeteer 
+转到 <a href="https://www.infoq.com/news/2020/01/playwright-browser-automation/">Microsoft PlayWright</a>，毕竟，能把创造和改造的轮子从 Chrome 扩展到 Firefox 到 Webkit 谁不想呢？</p>
+<p>说回 Headless Testing，这种方式没有直接发送 Http Post 请求迅速，但需要维护代码的可能性低，且更易维护。对个人来说，
+启动时把 headless 参数改为 True，多等十秒问题也不大。</p>
+<p>代码中有两点值得一提：</p>
+<ol>
+<li><code>page.waitForSelector</code> 方法，文档的第二个参数，在 node.js 语法中是传入 Object，但在 Python 中的用法是多个参数，
+这一点上由于 Python 版的 PlayWright 文档不详细，需在 PyCharm 中按 Ctrl 看源码提示才能看到；</li>
+<li><code>page.on("dialog", lambda dialog: dialog.accept())</code> 表示在 alert 弹出框上点击确定。</li>
+</ol>
+<p>其余代码直白到十岁小友也可看懂，不再解释。</p>
+<h3>搜索关键字和延伸</h3>
+<p><a href="https://gitee.com/help/articles/4136">Gitee Pages</a>, <a href="https://playwright.dev/">PlayWright</a>, <a href="https://github.com/microsoft/playwright-python">playwright-python</a>, <a href="https://headlesstesting.com/">Headless Testing</a>  </p>
+<p>感谢阅读。如果上述内容和代码片段对你有帮助，请扫描二维码打赏一杯咖啡。</p>
+<p><img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" title="我的赞赏码"></p></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
