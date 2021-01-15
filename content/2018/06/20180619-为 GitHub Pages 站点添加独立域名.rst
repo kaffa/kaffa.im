@@ -5,7 +5,7 @@
 :date: 2018-06-19 17:17
 :author: Kaffa
 :category: 日志
-:tags: 随笔, Essays, 博客更新, Blog Update, 自定义域名, Technology, Custom Domain, GitHub Pages, CNAME
+:tags: 随笔, Essays, 博客, Blog, 自定义域名, Technology, Custom Domain, GitHub Pages, CNAME
 :slug: custom-domain-of-github-pages-site
 :summary: 本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题
 

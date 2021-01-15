@@ -2,7 +2,7 @@ Title: 自动更新 Gitee Pages
 Date: 2021-01-11 12:00
 Modified: 2021-01-11 12:00
 Category: 随笔
-Tags: 随笔, Essays, 技术, Technology, Gitee Pages，PlayWright
+Tags: 随笔, Essays, 博客, My Blog, 技术, Technology, Gitee Pages，PlayWright
 Slug: update-gitee-pages-with-playwright
 Authors: Kaffa
 Summary: 本文提供一段 Python 代码，用来解决免费 Gitee Pages 服务无法自动刷新。

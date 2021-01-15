@@ -5,7 +5,7 @@
 :date: 2018-06-06 10:20
 :author: Kaffa
 :category: 日志
-:tags: 随笔, Essays, 博客, My Blog, 博客更新, Blog Update, 标记语言, Pelican, octopress, Markdown, reStructuredText, AsciiDoc
+:tags: 随笔, Essays, 博客, My Blog, 标记语言, Pelican, octopress, Markdown, reStructuredText, AsciiDoc
 :slug: about-my-new-blog
 :summary: 我的新博客
 
