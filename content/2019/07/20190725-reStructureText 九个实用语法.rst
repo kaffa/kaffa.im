@@ -5,7 +5,7 @@ reStructureText 九个实用语法
 :author: Kaffa
 :category: 随笔
 :tags: 随笔, Essays, 技术, Technology, reStructureText, reStructuredText Grammar
-:slug: nine-rules-on-restructuredtext-practical-grammar
+:slug: nine-practical-rules-on-restructuredtext-grammar
 :summary: 本文是 reStructureText 实用语法指南，其中列出最常用的九个语法，用来写博客足矣。其余更多细节，请查阅官方指南。
 
 
