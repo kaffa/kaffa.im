@@ -94,30 +94,70 @@
 </code></pre></div>
 
 <h2>四、术语表和列表</h2>
-<p>md文件中中没有rst文件的术语表，只有有序列表和无序列表，且二级列表</p>
+<p>md文件中没有rst文件的术语表，只有有序列表、无序列表</p>
+<p>有序列表</p>
 <ol>
 <li>有序列表项1</li>
 <li>有序列表项2</li>
-<li>
-<p>有序列表项3</p>
-</li>
-<li>
-<p>无序列表项1</p>
-</li>
+<li>有序列表项3</li>
+</ol>
+<p>无序列表</p>
+<ul>
+<li>无序列表项1</li>
 <li>无序列表项2</li>
 <li>无序列表项3</li>
-</ol>
-<p>代码如下：</p>
-<div class="highlight"><pre><span></span><code><span class="mi">1</span><span class="p">.</span> <span class="err">有序列表项</span><span class="mi">1</span>
-<span class="mi">2</span><span class="p">.</span> <span class="err">有序列表项</span><span class="mi">2</span>
-<span class="mi">3</span><span class="p">.</span> <span class="err">有序列表项</span><span class="mi">3</span>
-
-<span class="o">*</span> <span class="err">无序列表项</span><span class="mi">1</span>
-<span class="o">*</span> <span class="err">无序列表项</span><span class="mi">2</span>
-<span class="o">*</span> <span class="err">无序列表项</span><span class="mi">3</span>
+</ul>
+<p>有序列表代码如下：</p>
+<div class="highlight"><pre><span></span><code><span class="err">1. 有序列表项1</span>
+<span class="err">2. 有序列表项2</span>
+<span class="err">3. 有序列表项3</span>
 </code></pre></div>
 
-<p>如果希望列表嵌套，那么下级列表要换行，且向内缩进</p>
+<p>无序列表代码如下：</p>
+<div class="highlight"><pre><span></span><code><span class="err">* 无序列表项1</span>
+<span class="err">* 无序列表项2</span>
+<span class="err">* 无序列表项3</span>
+</code></pre></div>
+
+<p>如果希望列表嵌套，那么下级列表要换行，且向内缩进，但无法实现有序编号</p>
+<ol>
+<li>
+<p>列表1</p>
+<ol>
+<li>
+<p>列表1.1</p>
+<ol>
+<li>
+<p>列表1.1.1</p>
+</li>
+<li>
+<p>列表1.1.2</p>
+</li>
+</ol>
+</li>
+<li>
+<p>列表1.2</p>
+</li>
+</ol>
+</li>
+<li>
+<p>列表2</p>
+</li>
+</ol>
+<p>代码如下</p>
+<div class="highlight"><pre><span></span><code><span class="mi">1</span><span class="p">.</span> <span class="err">列表</span><span class="mi">1</span>
+
+    <span class="mi">1</span><span class="p">.</span> <span class="err">列表</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span>
+
+        <span class="mi">1</span><span class="p">.</span> <span class="err">列表</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span>
+
+        <span class="mi">1</span><span class="p">.</span> <span class="err">列表</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">2</span>
+
+    <span class="mi">1</span><span class="p">.</span> <span class="err">列表</span><span class="mi">1</span><span class="p">.</span><span class="mi">2</span>
+
+<span class="mi">1</span><span class="p">.</span> <span class="err">列表</span><span class="mi">2</span>
+</code></pre></div>
+
 <h2>五、代码</h2>
 <p>代码块需整体缩进四个空格。</p>
 <div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">lang</span> <span class="n">racket</span>                                  <span class="p">;</span> <span class="err">声明用</span> <span class="n">Racket</span> <span class="err">语言</span>
