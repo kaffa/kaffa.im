@@ -26,7 +26,7 @@ LINKS = (('Paul Graham', 'http://paulgraham.com'),
          ('Guido van Rossum', 'https://gvanrossum.github.io/'),
          ("Kaffa", 'https://kaffa.im'),
          ("Coffee's", 'https://coffees.app'),
-         ('论道', 'https://www.lundao.pub/'),)
+         ('论道', 'https://lundao.pub/'),)
 
 # Social widget
 SOCIAL = (('My GitHub', 'https://github.com/kaffa'),)
