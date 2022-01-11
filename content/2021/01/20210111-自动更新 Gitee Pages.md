@@ -2,20 +2,23 @@ Title: 自动更新 Gitee Pages
 Date: 2021-01-11 12:00
 Modified: 2021-01-11 12:00
 Category: 随笔
-Tags: 随笔, Essays, 博客, My Blog, 技术, Technology, Gitee Pages，PlayWright
+Tags: 随笔, Essays, 博客, My Blog, 技术, Technology, Gitee Pages, PlayWright
 Slug: update-gitee-pages-with-playwright
 Authors: Kaffa
 Summary: 本文提供一段 Python 代码，用来解决免费 Gitee Pages 服务无法自动刷新。
  
+## 2022-01-11 更新
+
+本文写于2021年1月11日，PlayWright 当时的版本是 0.171.1，本文代码已不适用最新版 PlayWright，获取新版代码，请移步《20220111-自动更新 Gitee Pages 续》。
 
 ## 更新 Gitee Pages 静态站点
 
 由于在 Gitee Pages 备份了个人博客，但免费用户 Gitee Pages 服务不能像 Github Pages 一样自动发布，
 网上有利用 Github Action 实现的现成解决方案，但刷新 Gitee Pages 是点击按钮的简单任务，不如自己搞定。
 
-
 ## Python 代码
 
+    import time
     from playwright import sync_playwright
 
     USERNAME = 'YOUR_USERNAME'

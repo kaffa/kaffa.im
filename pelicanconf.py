@@ -64,7 +64,7 @@ EXTRA_PATH_METADATA = {
 }
 FAVICON_FILENAME = 'favicon.ico'
 
-PLUGIN_PATHS = ['E:/code/kaffa.im/plugins/']
+PLUGIN_PATHS = ['E:/code/github/kaffa/kaffa.github.io/plugins']
 PLUGINS = [
     'sitemap',
     #'gravatar',
