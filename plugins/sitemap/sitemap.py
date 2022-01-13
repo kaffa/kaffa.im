@@ -179,7 +179,7 @@ class SitemapGenerator(object):
             if not flag:
                 fd.write(XML_URL.format(self.siteurl, pageurl, lastmod, chfreq, pri))
         else:
-            fd.write(self.siteurl + '/' + pageurl + '\n')
+            fd.write(self.siteurl + '/' + pageurl + '\r\n')
 
     def get_date_modified(self, page, default):
         if hasattr(page, 'modified'):
