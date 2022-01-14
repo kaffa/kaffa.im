@@ -10,7 +10,6 @@ Summary: 2021年提供了一段 Python 代码解决免费 Gitee Pages 服务无�
 
 ## 更新 Gitee Pages 静态站点的 Python 代码
 
-    import time
     from playwright.sync_api import sync_playwright
 
     USERNAME = 'YOUR_USERNAME'
@@ -28,7 +27,7 @@ Summary: 2021年提供了一段 Python 代码解决免费 Gitee Pages 服务无�
             page.click('input[name="user[login]"]');
             page.fill('input[name="user[password]"]', PASSWORD);
             page.click("input[value='登 录']")
-            time.sleep(3)
+            page.wait_for_timeout(5000)
             page.goto(GITEE_PAGES_URL)
             page.on("dialog", lambda dialog: dialog.accept())
             page.click(".update_deploy")

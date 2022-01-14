@@ -58,8 +58,7 @@
 </header>
 
   <div class="entry-content"><h2>更新 Gitee Pages 静态站点的 Python 代码</h2>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">from</span> <span class="nn">playwright.sync_api</span> <span class="kn">import</span> <span class="n">sync_playwright</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">playwright.sync_api</span> <span class="kn">import</span> <span class="n">sync_playwright</span>
 
 <span class="n">USERNAME</span> <span class="o">=</span> <span class="s1">&#39;YOUR_USERNAME&#39;</span>
 <span class="n">PASSWORD</span> <span class="o">=</span> <span class="s1">&#39;YOUR_PASSWORD&#39;</span>
@@ -76,7 +75,7 @@
         <span class="n">page</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="s1">&#39;input[name=&quot;user[login]&quot;]&#39;</span><span class="p">);</span>
         <span class="n">page</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s1">&#39;input[name=&quot;user[password]&quot;]&#39;</span><span class="p">,</span> <span class="n">PASSWORD</span><span class="p">);</span>
         <span class="n">page</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="s2">&quot;input[value=&#39;登 录&#39;]&quot;</span><span class="p">)</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">page</span><span class="o">.</span><span class="n">wait_for_timeout</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
         <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">GITEE_PAGES_URL</span><span class="p">)</span>
         <span class="n">page</span><span class="o">.</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;dialog&quot;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">dialog</span><span class="p">:</span> <span class="n">dialog</span><span class="o">.</span><span class="n">accept</span><span class="p">())</span>
         <span class="n">page</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="s2">&quot;.update_deploy&quot;</span><span class="p">)</span>
