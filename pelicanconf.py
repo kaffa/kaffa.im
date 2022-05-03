@@ -55,6 +55,7 @@ STATIC_PATHS = [
     'js',
     'css',
     'img',
+    'file',
     'extra/CNAME',
     'extra/favicon.ico'
 ]
