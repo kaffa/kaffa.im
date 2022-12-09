@@ -58,11 +58,7 @@ Google Firebase_ 方案也不存在，那 GitHub 静态博客的评论，就剩�
 * 2018-08-07，`octopress 主题`_ 中文化：pelican-octopress-theme-cn_
 * 2018-08-10，添加 gitalk 评论系统。
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
-
+感谢阅读。
 
 .. _`octopress 主题`: https://github.com/MrSenko/pelican-octopress-theme
 .. _`pelican-octopress-theme-cn`: https://github.com/kaffa/pelican-octopress-theme-cn

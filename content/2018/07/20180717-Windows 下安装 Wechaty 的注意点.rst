@@ -46,10 +46,7 @@ docker Wechaty
 - 已经 2018 年了，大部分库都用 six 支持了 Python 2 和 3 版本，很多人都转到 Python 3.6+，对于安装时出现 Python 相关的错误时，可能不会想到是 node-gyp 依赖 Python 2.7 的原因。
 
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
+感谢阅读。
 
 .. _Wechaty: https://github.com/Chatie/wechaty
 .. _node-gyp: https://www.npmjs.com/package/node-gyp

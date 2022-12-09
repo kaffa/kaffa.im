@@ -77,10 +77,8 @@ Windows 下 Node 的路径配置
 
 另外，当然也可以参考官方文档 npm-folders_，但可能有更新不及时，node 社区还年轻且贡献者有很多个人，有时并不太照顾 Windows 平台，这点不比 python 社区发展了那么久，且那么多机构贡献者。
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
 
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
+感谢阅读。
 
 .. _npm-folders: https://docs.npmjs.com/files/folders
 .. _Rapid Environment Editor: https://www.rapidee.com

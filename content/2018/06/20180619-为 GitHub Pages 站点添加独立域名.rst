@@ -28,10 +28,7 @@
 例如，在 kaffa.github.io 仓库 master 的根目录新建一个 `CNAME`_ 文件，文件内容为 kaffa.im，刷新刚才的 404 页面即打开了原先的 kaffa.github.io 站点
 
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
+感谢阅读。
 
 .. _CNAME: https://github.com/kaffa/kaffa.github.io/blob/master/CNAME
 

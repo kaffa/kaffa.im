@@ -73,12 +73,7 @@
 升级完成后，再次运行 ``sudo yum install code``，即成功。
 
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
-
-
+感谢阅读。
 
 .. _Flask: http://flask.pocoo.org/
 .. _Vibora: https://vibora.io/

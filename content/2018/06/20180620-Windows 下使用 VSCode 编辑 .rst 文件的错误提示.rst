@@ -40,10 +40,7 @@ D002 信息按字面意思是行尾有空格，稍作思考，感觉可能和 Wi
 这个和可维护性代码的最佳实践是一致的。
 
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
+感谢阅读。
 
 .. _issues-83: https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/83
 .. _issues-84: https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/84

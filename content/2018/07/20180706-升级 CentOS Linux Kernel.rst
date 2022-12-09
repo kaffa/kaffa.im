@@ -60,10 +60,9 @@
 4. 在国内，除非天时地利人和，研究 Linux Kernel 并没什么太多商业价值，只是领域情怀或“我乐意”；
 5. https://www.elrepo.org 和 https://kernelnewbies.org 可能对你有用。
 
+
+
+感谢阅读。
+
 .. _Kernel: https://www.kernel.org/
 
-
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码

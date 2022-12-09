@@ -28,11 +28,7 @@
 可试试 `Fomantic-UI`_ 。
 
 
-如果本站或本文有帮助到你，可请我喝杯咖啡。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
-
+感谢阅读。
 
 .. _`Semantic-UI`: https://semantic-ui.com/introduction/getting-started.html
 .. _`Fomantic-UI`: https://github.com/fomantic/Fomantic-UI

@@ -39,10 +39,9 @@
 3. 添加一些需要 `Pelican plugins`_
 
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
 
 .. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
+    :alt: 请我喝咖啡
 
 .. _Python: https://www.python.org/
 .. _Pelican: https://getpelican.com/

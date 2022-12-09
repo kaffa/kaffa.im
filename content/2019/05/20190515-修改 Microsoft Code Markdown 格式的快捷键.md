@@ -15,8 +15,6 @@ Summary: 修改 Microsoft Code Markdown 格式的快捷键
 
 Microsoft Code 这个披着 IDE 外衣的编辑器，还是需要细致调教才会变得好用的，**多人设计插件的快捷键重复问题是因缺乏统一的规范和检查机制导致的**。
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
-
-![我的赞赏码](https://kaffa.im/img/reward.png "我的赞赏码")
+感谢阅读。
 
 [1]: https://kaffa.im/img/reward.png

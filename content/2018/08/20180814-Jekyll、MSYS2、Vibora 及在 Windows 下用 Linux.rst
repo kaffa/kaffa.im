@@ -405,11 +405,7 @@ Cygwin、MSYS 和 Git for Windows（前称 msysgit）里各有一套 Cygwin DLL 
 
 最后来说，一个更好的方案可能是一台高配 macOS 运行 Parallels Desktop，再其中运行 Windows ;)
 
-
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
+感谢阅读。
 
 .. _`Ruby 官方`: https://www.ruby-lang.org
 .. _`RubyInstaller`: https://rubyinstaller.org/

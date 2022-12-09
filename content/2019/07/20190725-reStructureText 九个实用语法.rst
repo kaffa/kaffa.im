@@ -232,9 +232,7 @@ True   True   True
         :alt: 图片的替换文字
 
 
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 赞赏码
-
+感谢阅读。
 
 .. _`用 VSCode 预览 reStructureText 文件`: https://kaffa.im/preview-restructuretext-file-in-vscode.html
 .. _链接: https://kaffa.im/

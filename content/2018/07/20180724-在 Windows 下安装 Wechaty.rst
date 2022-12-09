@@ -383,11 +383,8 @@ PS: 这里还有一个手动安装办法，但不推荐：可以手动下载 chr
 
 当然，如果你遇到了任何其他问题，也欢迎 我的Github_ 上联系我。
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
 
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
-
+感谢阅读。
 
 .. _Wechaty: https://github.com/Chatie/wechaty
 .. _Wechaty Documents: https://chatie.io/wechaty/

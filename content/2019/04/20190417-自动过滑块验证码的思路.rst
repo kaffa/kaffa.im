@@ -44,10 +44,7 @@ GitHub 中也有不少破解其旧版本的代码，虽然没有查看其新版�
 
 * 用户层：采用软硬件结合的极客思路，用摄像头进行视觉采集，用机器手操纵鼠标，完全模拟一个有智能的会操作键盘和鼠标的人，这种可能是最一劳永逸，但门槛最高的思路。
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
+感谢阅读。
 
 .. _`tesseract-ocr`: https://code.google.com/archive/p/tesseract-ocr/
 .. _`中文房间`: https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4

@@ -56,11 +56,8 @@ Linux 发行版有太多种，根据其集成的软件分派系稍作列举：
 
     其余请随意，毕竟 Linux 的情怀就是 Free。
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
 
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
-
+感谢阅读。
 
 .. _`官方网站`: https://www.kernel.org/
 .. _`5.2.6`: https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.6.tar.xz

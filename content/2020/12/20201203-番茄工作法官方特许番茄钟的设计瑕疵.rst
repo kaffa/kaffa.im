@@ -86,11 +86,6 @@
 期待这个番茄钟能有改进后的新版本推出，或者等我有空时，会实现 HTML5 的原型替代之（挖坑）。
 
 
-书写不易，感谢阅读，如果您觉得本文对你有帮助，可扫描赞赏码请我喝杯咖啡，速溶或星巴克皆可。
-
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
-
-
+感谢阅读。
 
 .. _`Pomodoro Technique`: https://francescocirillo.com/

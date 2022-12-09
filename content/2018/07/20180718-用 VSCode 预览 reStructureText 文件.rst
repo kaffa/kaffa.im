@@ -58,11 +58,8 @@
 4. 最后提供一份快速参考 sphinx-rest_
 
 
-感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
 
-.. image:: https://kaffa.im/img/reward.png
-    :alt: 我的赞赏码
-
+感谢阅读。
 
 .. _sphinx-quickstart: http://www.pythondoc.com/sphinx/tutorial.html
 .. _sphinx-rest: http://www.pythondoc.com/sphinx/rest.html
