@@ -4,7 +4,12 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Kaffa'
 SITENAME = '褪色的抽象'
-SITESUBTITLE = "Kaffa's blog"
+COLORFUL_SITENAME = '''<span style="color:#52A2C6">褪</span>
+<span style="color:#6791BC">色</span>
+<span style="color:#7C80B2">的</span>
+<span style="color:#916FA8">抽</span>
+<span style="color:#A65E9E">象</span>'''
+SITESUBTITLE = "kaffa's blog"
 SITEURL = 'https://kaffa.im'
 
 PATH = 'content'
