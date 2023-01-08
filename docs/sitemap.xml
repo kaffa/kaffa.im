@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2022-12-10T20:29:15-00:00</lastmod>
+<lastmod>2023-01-08T10:55:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2022-12-10T20:29:15-00:00</lastmod>
+<lastmod>2023-01-08T10:55:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2022-12-10T20:29:15-00:00</lastmod>
+<lastmod>2023-01-08T10:55:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2022-12-10T20:29:15-00:00</lastmod>
+<lastmod>2023-01-08T10:55:57-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/article-39-chapter-iv-of-labor-contract-law-of-China-and-buber-and-drip-bag-coffee.html</loc>
+<lastmod>2023-01-07T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -355,7 +362,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2022-12-09T12:00:00+08:06</lastmod>
+<lastmod>2023-01-07T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
