@@ -54,7 +54,7 @@ MENUITEMS = (
 DISPLAY_CATEGORIES_ON_MENU = False
 
 
-THEME = "E:/code/github/kaffa/kaffa.github.io/themes/pelican-octopress-theme-cn"
+THEME = "D:/code/github/kaffa/kaffa.github.io/themes/pelican-octopress-theme-cn"
 
 STATIC_PATHS = [
     'js',
@@ -70,7 +70,7 @@ EXTRA_PATH_METADATA = {
 }
 FAVICON_FILENAME = 'favicon.ico'
 
-PLUGIN_PATHS = ['E:/code/github/kaffa/kaffa.github.io/plugins']
+PLUGIN_PATHS = ['D:/code/github/kaffa/kaffa.github.io/plugins']
 PLUGINS = [
     'sitemap',
     #'gravatar',
