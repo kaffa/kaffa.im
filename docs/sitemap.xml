@@ -5,41 +5,48 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2023-04-12T14:13:27-00:00</lastmod>
+<lastmod>2023-04-12T14:20:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2023-04-12T14:13:27-00:00</lastmod>
+<lastmod>2023-04-12T14:20:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2023-04-12T14:13:27-00:00</lastmod>
+<lastmod>2023-04-12T14:20:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2023-04-12T14:13:27-00:00</lastmod>
+<lastmod>2023-04-12T14:20:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://kaffa.im/hario-mss-1b-mss-1r-16.html</loc>
-<lastmod>2023-01-09T12:00:00+08:00</lastmod>
+<loc>https://kaffa.im/consumer-rights-protection-in-xianyu-app.html</loc>
+<lastmod>2023-04-12T14:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/lucid-dream.html</loc>
+<lastmod>2023-04-12T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/hario-mss-1b-mss-1r-16.html</loc>
 <lastmod>2023-01-09T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -376,7 +383,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2023-01-09T12:00:00+08:06</lastmod>
+<lastmod>2023-04-12T14:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
