@@ -61,14 +61,21 @@ STATIC_PATHS = [
     'css',
     'img',
     'file',
-    'extra/CNAME',
-    'extra/favicon.ico'
+    'extra',
 ]
 EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'custom.css'},
+    'extra/robots.txt': {'path': 'robots.txt'},
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+    'extra/favicon/about.txt': {'path': 'favicon/about.txt'},
+    'extra/favicon/android-chrome-192x192.png': {'path': 'favicon/android-chrome-192x192.png'},
+    'extra/favicon/android-chrome-512x512.png': {'path': 'favicon/android-chrome-512x512.png'},
+    'extra/favicon/apple-touch-icon.png': {'path': 'favicon/apple-touch-icon.png'},
+    'extra/favicon/favicon.ico': {'path': 'favicon/favicon.ico'},
+    'extra/favicon/favicon-16x16.png': {'path': 'favicon/favicon-16x16.png'},
+    'extra/favicon/favicon-32x32.png': {'path': 'favicon/favicon-32x32.png'},
+    'extra/favicon/site.webmanifest': {'path': 'favicon/site.webmanifest'},
 }
-FAVICON_FILENAME = 'favicon.ico'
 
 PLUGIN_PATHS = ['D:/code/github/kaffa/kaffa.github.io/plugins']
 PLUGINS = [
