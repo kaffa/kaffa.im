@@ -1,4 +1,4 @@
-Title: 一个奇怪JavaScript，长期求解答
+Title: 一个奇怪JavaScript BUG，长期求解答
 Date: 2023-05-11 12:17
 Modified: 2023-05-11 12:17
 Category: 随笔
