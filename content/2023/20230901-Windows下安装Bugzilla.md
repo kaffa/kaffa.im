@@ -20,7 +20,7 @@ Summary: 记录在 Windows 上安装 Bugzilla 的过程
 
 ## 再装 Bugzilla
 
-由于自己有开发两个产品，看到 Bugzilla 已经更新到 5，之前和朋友提起过 Perl，说 Perl 的软件，我还是很喜欢的，比如 Bugzilla 和 MovableTyp。
+由于自己有开发两个产品，看到 Bugzilla 已经更新到 5，之前和朋友提起过 Perl，说 Perl 的软件，我还是很喜欢的，比如 Bugzilla 和 MovableType。
 
 可能比较怀旧，于是重新又在本机安装了新版的 Bugzilla，配置的地址是 http://bugs.k.com/，准备在产品中用起来。
 
