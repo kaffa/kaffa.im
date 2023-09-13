@@ -4,11 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Kaffa'
 SITENAME = '褪色的抽象'
-COLORFUL_SITENAME = '''<span style="color:#52A2C6">褪</span>
-<span style="color:#6791BC">色</span>
-<span style="color:#7C80B2">的</span>
-<span style="color:#916FA8">抽</span>
-<span style="color:#A65E9E">象</span>'''
+COLORFUL_SITENAME = '''<span style="color:#52A2C6">褪</span><span style="color:#6791BC">色</span><span style="color:#7C80B2">的</span><span style="color:#916FA8">抽</span><span style="color:#A65E9E">象</span>'''
 SITESUBTITLE = "kaffa's blog"
 SITEURL = 'https://kaffa.im'
 
@@ -49,9 +45,13 @@ MENUITEMS = (
     ("人文", "/category/ren-wen.html"),
     ("自然", "/category/zi-ran.html"),
     ("日志", "/category/ri-zhi.html"),
+    ("关于", "/pages/about.html"),
 )
 # 添加 20190518
 DISPLAY_CATEGORIES_ON_MENU = False
+
+# 添加 20230913
+DISPLAY_PAGES_ON_MENU = True
 
 
 THEME = "D:/code/github/kaffa/kaffa.github.io/themes/pelican-octopress-theme-cn"
