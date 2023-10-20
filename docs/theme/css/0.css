@@ -1,0 +1,55 @@
+:root {
+    /*
+    --bg-color: #ffffff;
+    --bg-secondary-color: #f3f3f6;
+    --color-primary: #14854F;
+    --color-lightGrey: #d2d6dd;
+    --color-grey: #747681;
+    --color-darkGrey: #3f4144;
+    --color-error: #d43939;
+    --color-success: #28bd14;
+    --grid-maxWidth: 1440px;
+    --grid-gutter: 2rem;
+    --font-size: 1.6rem;
+    --font-color: #333333;
+    --font-family-sans: "LXGW WenKai", SimSun-ExtB, sans-serif;
+    --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+    */
+    --color-kaffa-gray: #f4f4f4;
+    --color-yinbai: #e9e7ef;
+    --color--xuebai: #f0fcff;
+    --globalnav-color: rgba(22, 22, 22, .8);
+    --globalnav-background-color: rgba(255, 255, 255, .8);
+}
+
+body > header {
+    border-bottom: solid 1px #ccc;
+    background-color: var(--color-kaffa-gray);
+}
+
+body > header > nav {
+    background-color: var(--color-kaffa-gray) !important;
+}
+
+.navbar-brand a,
+.navbar-brand a:visited {
+    font-family: Georgia !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px #fff;
+    color: #333 !important;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-color: var(--globalnav-color);
+}
+
+article section.content p{
+    text-indent: 2rem !important;
+}
+
+.box {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+}

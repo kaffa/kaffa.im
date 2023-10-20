@@ -3,9 +3,9 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Kaffa'
-SITENAME = '褪色的抽象'
+SITENAME = 'Kaffa.im'
 COLORFUL_SITENAME = '''<span style="color:#52A2C6">褪</span><span style="color:#6791BC">色</span><span style="color:#7C80B2">的</span><span style="color:#916FA8">抽</span><span style="color:#A65E9E">象</span>'''
-SITESUBTITLE = "kaffa's blog"
+SITESUBTITLE = ""
 SITEURL = 'https://kaffa.im'
 
 PATH = 'content'
@@ -39,22 +39,43 @@ RELATIVE_URLS = True
 
 # 菜单
 MENUITEMS = (
-    ("首页", "/"),
-    ("随笔", "/category/sui-bi.html"),
-    ("阅读", "/category/yue-du.html"),
-    ("人文", "/category/ren-wen.html"),
-    ("自然", "/category/zi-ran.html"),
-    ("日志", "/category/ri-zhi.html"),
-    ("关于", "/pages/about.html"),
+    ("笔记", "/", (
+        ("网站", "javascript:;"),
+        ("-", ""),
+        ("读书", "javascript:;"),)),
+    ("创作", "/", (
+        ("文章", "javascript:;"),
+        ("-", ""),
+        ("书单", "javascript:;"),
+        ("-", ""),
+        ("周报", "javascript:;"),
+        ("-", ""),
+        ("概念", "javascript:;"),)),
+    ("我的", "/", (
+        ("书", "javascript:;"),
+        ("影", "javascript:;"),
+        ("音", "javascript:;"),
+        ("-", ""),
+        #("店", "javascript:;"),
+        #("食", "javascript:;"),
+        #("-", ""),
+        ("物", "javascript:;"),)),
+    ("关于", "/", (
+        ("站长", "/pages/about.html"),
+        ("-", ""),
+        ("联系", "mailto:admin@kaffa.im?subject=Hello%20from%20&body=你好，"),
+        ("-", ""),
+        ("网站反馈", "mailto:admin@kaffa.im?subject=Hello%20from%20&body=网站反馈："),)),
 )
 # 添加 20190518
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # 添加 20230913
-DISPLAY_PAGES_ON_MENU = True
+# 修改 20231019
+DISPLAY_PAGES_ON_MENU = False
 
-
-THEME = "D:/code/github/kaffa/kaffa.github.io/themes/pelican-octopress-theme-cn"
+# THEME = "D:/code/github/kaffa/kaffa.github.io/themes/pelican-octopress-theme-cn"
+THEME = "D:/code/github/kaffa/kaffa.github.io/themes/pelican-kaffa-theme"
 
 STATIC_PATHS = [
     'js',
@@ -80,6 +101,8 @@ EXTRA_PATH_METADATA = {
 PLUGIN_PATHS = ['D:/code/github/kaffa/kaffa.github.io/plugins']
 PLUGINS = [
     'sitemap',
+    'featured_image',
+    #'minify'
     #'gravatar',
     #'ace_editor'
 ]
@@ -131,3 +154,11 @@ MARKDOWN = {
     },
     'output_format': 'html5',
 }
+
+
+CSS_MIN = True
+HTML_MIN = True
+INLINE_CSS_MIN = True
+INLINE_JS_MIN = True
+
+AVATAR_URL = 'https://avatars.githubusercontent.com/u/4386281?v=4'
