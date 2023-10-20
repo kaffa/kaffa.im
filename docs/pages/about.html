@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
       <title>Kaffa.im - 关于站长</title>
     <meta charset="utf-8" />
@@ -20,18 +21,20 @@
 
 
 </head>
+
 <body>
     <header>
         <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <h1 class="navbar-item"><a href="../">
-                    Kaffa.im</a>
+                        Kaffa.im</a>
                 </h1>
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarGlobal">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarGlobal">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
             <div id="navbarGlobal" class="navbar-menu">
                 <div class="navbar-start">
@@ -137,11 +140,26 @@
         <div class="content has-text-centered">
             Copyright &copy; 2018-2013 <strong>Kaffa.im</strong> by <a href="https://kaffa.im">Kaffa</a>.
             <p>The templates code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
             </p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
+    </script>
 </body>
 
 </html>
