@@ -46,6 +46,8 @@ MENUITEMS = (
     ("创作", "/", (
         ("文章", "javascript:;"),
         ("-", ""),
+        ("软件", "javascript:;"),
+        ("-", ""),
         ("书单", "javascript:;"),
         ("-", ""),
         ("周报", "javascript:;"),
@@ -62,7 +64,6 @@ MENUITEMS = (
         ("物", "javascript:;"),)),
     ("关于", "/", (
         ("站长", "/pages/about.html"),
-        ("-", ""),
         ("联系", "mailto:admin@kaffa.im?subject=Hello%20from%20&body=你好，"),
         ("-", ""),
         ("网站反馈", "mailto:admin@kaffa.im?subject=Hello%20from%20&body=网站反馈："),)),

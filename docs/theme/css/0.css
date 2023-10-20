@@ -46,10 +46,21 @@ body > header > nav {
     border-color: var(--globalnav-color);
 }
 
-article section.content p{
+article section.hero a,
+article section.hero a:visited {
+    color: var(--color--xuebai);
+}
+
+article section.content p {
     text-indent: 2rem !important;
 }
 
 .box {
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
 }
+
+section > h3 {
+    padding: 0 0 0 .5rem;
+    border-left: 3px solid hsl(217, 71%, 45%);
+}
+
