@@ -1,17 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import urllib.parse
+import os
+import sys
 
 AUTHOR = 'Kaffa'
 SITENAME = 'Kaffa.im'
-COLORFUL_SITENAME = '''<span style="color:#52A2C6">褪</span><span style="color:#6791BC">色</span><span style="color:#7C80B2">的</span><span style="color:#916FA8">抽</span><span style="color:#A65E9E">象</span>'''
-SITESUBTITLE = ""
+SITESUBTITLE = ''  # 'A personal blog.'
 SITEURL = 'https://kaffa.im'
+TIMEZONE = 'Asia/Shanghai'
+
+GITHUB_URL = 'http://github.com/kaffa/'
 
 PATH = 'content'
 OUTPUT_PATH = 'docs/'
 
-TIMEZONE = 'Asia/Shanghai'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d %a'
 DEFAULT_LANG = 'zh-CN'
 
@@ -37,72 +41,28 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-# 菜单
-MENUITEMS = (
-    ("笔记", "/", (
-        ("网站", "/category/wang-zhan.html"),
-        ("-", ""),
-        ("读书", "/category/du-shu.html"),)),
-    ("创作", "/", (
-        ("文章", "/category/wen-zhang.html"),
-        ("-", ""),
-        ("软件", "/category/software.html"),
-        ("-", ""),
-        ("书单", "/category/book-lists.html"),
-        ("-", ""),
-        ("周报", "/category/weekly.html"),
-        ("-", ""),
-        ("概念", "/pages/wiki.html"),)),
-    ("我的", "/", (
-        ("书", "/book/"),
-        ("影", "/movie/"),
-        ("音", "/music/"),
-        ("-", ""),
-        #("店", "javascript:;"),
-        #("食", "javascript:;"),
-        #("-", ""),
-        ("物", "/things/"),)),
-    ("关于", "/", (
-        ("站长", "/pages/about.html"),
-        ("联系", "mailto:admin@kaffa.im?subject=Hello%20from%20&body=你好，"),
-        ("-", ""),
-        ("网站反馈", "mailto:admin@kaffa.im?subject=Hello%20from%20&body=网站反馈："),)),
-)
-# 添加 20190518
+# 20190518 添加
 DISPLAY_CATEGORIES_ON_MENU = False
 
-# 添加 20230913
-# 修改 20231019
+# 20230913 添加
+# 20231019 修改
 DISPLAY_PAGES_ON_MENU = False
 
 # THEME = "D:/code/github/kaffa/kaffa.github.io/themes/pelican-octopress-theme-cn"
 THEME = "D:/code/github/kaffa/kaffa.github.io/themes/pelican-kaffa-theme"
+THEME_STATIC_DIR = 'static'
 
-STATIC_PATHS = [
-    'js',
-    'css',
-    'img',
-    'file',
-    'extra',
-]
+STATIC_PATHS = ['static']
 EXTRA_PATH_METADATA = {
-    'extra/custom.css': {'path': 'custom.css'},
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/CNAME': {'path': 'CNAME'},
-    'extra/favicon/about.txt': {'path': 'favicon/about.txt'},
-    'extra/favicon/android-chrome-192x192.png': {'path': 'favicon/android-chrome-192x192.png'},
-    'extra/favicon/android-chrome-512x512.png': {'path': 'favicon/android-chrome-512x512.png'},
-    'extra/favicon/apple-touch-icon.png': {'path': 'favicon/apple-touch-icon.png'},
-    'extra/favicon/favicon.ico': {'path': 'favicon/favicon.ico'},
-    'extra/favicon/favicon-16x16.png': {'path': 'favicon/favicon-16x16.png'},
-    'extra/favicon/favicon-32x32.png': {'path': 'favicon/favicon-32x32.png'},
-    'extra/favicon/site.webmanifest': {'path': 'favicon/site.webmanifest'},
+    'static/favicon/favicon.ico': {'path': 'favicon.ico'},
+    'static/CNAME': {'path': 'CNAME'},
+    'static/robots.txt': {'path': 'robots.txt'},
 }
-
-PLUGIN_PATHS = ['D:/code/github/kaffa/kaffa.github.io/plugins']
+PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'sitemap',
     'featured_image',
+    #'statics',
     #'minify'
     #'gravatar',
     #'ace_editor'
@@ -136,13 +96,7 @@ ACE_EDITOR_PLUGIN = {
     'ACE_EDITOR_AUTOSCROLL': True,
     'ACE_EDITOR_SHOW_INVISIBLE': True
 }
-# MARKDOWN = {
-#     'markdown.extensions.codehilite': {
-#         'css_class': 'literal-block',
-#         'linenums': True,
-#         'use_pygments': True
-#     }
-# }
+
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {
@@ -156,10 +110,80 @@ MARKDOWN = {
     'output_format': 'html5',
 }
 
-
+# plugin: minify
 CSS_MIN = True
 HTML_MIN = True
 INLINE_CSS_MIN = True
 INLINE_JS_MIN = True
 
+
+COLORFUL_SITENAME ='''<
+    span style="color:#52A2C6">褪</span><
+    span style="color:#6791BC">色</span><
+    span style="color:#7C80B2">的</span><
+    span style="color:#916FA8">抽</span><
+    span style="color:#A65E9E">象</span>'''
+
+# My Data
 AVATAR_URL = 'https://avatars.githubusercontent.com/u/4386281?v=4'
+
+# mailto
+mailto_email = urllib.parse.quote('admin@kaffa.im')
+mailto_subject = urllib.parse.quote('网站反馈')
+mailto_body = urllib.parse.quote('提示：可反馈“在什么场景下，做什么操作时，遇到什么问题。”')
+mailto = f'mailto:{mailto_email}?subject={mailto_subject}&body={mailto_body}'
+
+# menu
+MENUITEMS = (
+    ("首页", "/", (
+        ("项目", "/"),
+    )),
+    ("笔记", "/", (
+        ("网站", "/category/website.html"),
+        ("-", ""),
+        ("读书", "/category/reading.html"),
+    )),
+    ("创作", "/", (
+        ("文章", "/category/article.html"),
+        ("-", ""),
+        ("软件", "/category/software.html"),
+        ("-", ""),
+        ("书单", "/category/book-list.html"),
+        ("-", ""),
+        ("周报", "/category/weekly.html"),
+    )),
+    ("我的", "/", (
+        ("书", "/category/book.html"),
+        ("影", "/category/movie.html"),
+        ("音", "/category/music.html"),
+        #("-", ""),
+        #("店", "/category/shop/"),
+        #("食", "/category/food/"),
+        ("-", ""),
+        ("物", "/category/things.html"),
+    )),
+    ("关于", "/", (
+        ("站长", "/pages/about.html"),
+        ("联系我", "/pages/contact.html"),
+        ("-", ""),
+        ("网站反馈", mailto),
+    )),
+)
+
+CATEGORY_DICT = {
+    'website': '网站', 'reading': '读书',
+    'article': '文章', 'software': '软件', 'book-list': '软件', 'weekly': '周报',
+    'book': '书', 'movie': '影', 'music': '音', 'things': '物'
+}
+
+JAVASCRIPT_HEAD = ''
+JAVASCRIPT_FOOT = ''
+
+sys.path.append(os.curdir)
+import projects
+PROJECTS = projects.get_list()
+
+import friends
+FRIENDS = friends.get_list()
+pass
+

@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-      <title>Kaffa.im - 关于文本二维码这件小事</title>
+      <title>Kaffa.im - 如何在控制台或终端显示二维码</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZJQN9ZQ47"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0ZJQN9ZQ47');
+    </script>
     <meta charset="utf-8" />
-    <meta name="generator" content="Pelican" />
-    <meta name="author" content="Kaffa" />
     <!--
         Q1. 本站技术栈？
         A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican, kaffa-theme, Bulma, Github Pages
@@ -12,11 +18,12 @@
         Q2. 更多信息？
         A2. 微信公众号：Kaffa
     -->
+    <meta name="author" content="Kaffa" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/bulma/css/bulma.min.css">
-    <link rel="stylesheet" href="/css/bulma-divider.min.css">
-    <link rel="stylesheet" href="/css/0.css">
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
 
 
 
@@ -28,62 +35,69 @@
     <meta name="tags" content="QRCode" />
     <meta name="tags" content="Text QRCode" />
 
+
 </head>
 <body>
     <header>
         <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <h1 class="navbar-item"><a href="./">
-                    Kaffa.im</a>
+                        Kaffa.im</a>
                 </h1>
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarGlobal">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-            <div class="navbar-menu">
+            <div id="navbarGlobal" class="navbar-menu">
                 <div class="navbar-start">
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">首页</a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a class="navbar-item" href="/">项目</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">笔记</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="javascript:;">网站</a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a class="navbar-item" href="/category/website.html">网站</a>
                             <hr class="navbar-divider">
-                            <a class="navbar-item" href="javascript:;">读书</a>
+                            <a class="navbar-item" href="/category/reading.html">读书</a>
                         </div>
                     </div>
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">创作</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="javascript:;">文章</a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a class="navbar-item" href="/category/article.html">文章</a>
                             <hr class="navbar-divider">
-                            <a class="navbar-item" href="javascript:;">书单</a>
+                            <a class="navbar-item" href="/category/software.html">软件</a>
                             <hr class="navbar-divider">
-                            <a class="navbar-item" href="javascript:;">周报</a>
+                            <a class="navbar-item" href="/category/book-list.html">书单</a>
                             <hr class="navbar-divider">
-                            <a class="navbar-item" href="javascript:;">概念</a>
+                            <a class="navbar-item" href="/category/weekly.html">周报</a>
                         </div>
                     </div>
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">我的</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="javascript:;">书</a>
-                            <a class="navbar-item" href="javascript:;">影</a>
-                            <a class="navbar-item" href="javascript:;">音</a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a class="navbar-item" href="/category/book.html">书</a>
+                            <a class="navbar-item" href="/category/movie.html">影</a>
+                            <a class="navbar-item" href="/category/music.html">音</a>
                             <hr class="navbar-divider">
-                            <a class="navbar-item" href="javascript:;">物</a>
+                            <a class="navbar-item" href="/things.html">物</a>
                         </div>
                     </div>
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">关于</a>
-                        <div class="navbar-dropdown">
+                        <div class="navbar-dropdown is-boxed">
                             <a class="navbar-item" href="/pages/about.html">站长</a>
+                            <a class="navbar-item" href="/pages/contact.html">联系我</a>
                             <hr class="navbar-divider">
-                            <a class="navbar-item" href="mailto:admin@kaffa.im?subject=Hello%20from%20&body=你好，">联系</a>
-                            <hr class="navbar-divider">
-                            <a class="navbar-item" href="mailto:admin@kaffa.im?subject=Hello%20from%20&body=网站反馈：">网站反馈</a>
+                            <a class="navbar-item" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
                         </div>
                     </div>
                     <!--
@@ -102,35 +116,25 @@
             </div>
         </nav>
     </header>
-    <main class="has-background-grey-lighter">
-  <header>
-    <h1 class="entry-title">
-      <a href="./a-story-about-text-qrcode.html" rel="bookmark"
-         title="Permalink to 关于文本二维码这件小事">关于文本二维码这件小事</a></h1>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2018-07-27T12:00:00+08:00">
-      2018-07-27 周五
-    </time>
-    <address class="vcard author">
-      By           <a class="url fn" href="./author/kaffa.html">Kaffa</a>
-    </address>
-    <div class="category">
-        Category: <a href="./category/sui-bi.html">随笔</a>
-    </div>
-    <div class="tags">
-        Tags:
-            <a href="./tag/sui-bi.html">随笔</a>
-            <a href="./tag/essays.html">Essays</a>
-            <a href="./tag/ji-zhu.html">技术</a>
-            <a href="./tag/technology.html">Technology</a>
-            <a href="./tag/qrcode.html">QRCode</a>
-            <a href="./tag/text-qrcode.html">Text QRCode</a>
-    </div>
-  </footer><!-- /.post-info -->
-  <article>
-    <div class="section" id="section-2">
+    <main class="has-background-grey-lighter pb-4">
+<article class="content">
+    <section class="hero">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+            ><a href="./a-story-about-text-qrcode.html" rel="bookmark"
+            title="Permalink to 如何在控制台或终端显示二维码">如何在控制台或终端显示二维码</a></h2>
+        </div>
+    </section>
+
+    
+
+    <section class="box content container is-max-desktop mt-4">
+            <span class="block">分类:
+                <a class="tag is-medium" href="./category/sui-bi.html"></a></span>
+            <span class="block ml-1">标签:
+<a class="tag is-primary is-light is-medium" href="./tag/sui-bi.html">随笔</a><a class="tag is-primary is-light is-medium" href="./tag/essays.html">Essays</a><a class="tag is-primary is-light is-medium" href="./tag/ji-zhu.html">技术</a><a class="tag is-primary is-light is-medium" href="./tag/technology.html">Technology</a><a class="tag is-primary is-light is-medium" href="./tag/qrcode.html">QRCode</a><a class="tag is-primary is-light is-medium" href="./tag/text-qrcode.html">Text QRCode</a>            </span>
+
+        <div class="section" id="section-2">
 <h2>文本二维码</h2>
 <p>简单讲，二维码是一个算法，可以把信息编码为0和1，也就是白和黑，也就是常见的二维码。大多情况下，二维码用一个方形的图片表达，可以跨各种介质传播。</p>
 <p>但由于一个很特殊的软件，我们有将二维码从远程机器传递到本地文本终端的需求。因此，引出了文本二维码这个议题:</p>
@@ -162,17 +166,145 @@
 <p>感谢阅读。</p>
 </div>
 
-  </article>
+
+        <div class="is-divider" data-content="Comment"></div>
+        <div id="gitalk-container"></div>
+    </section>
+</article>
+
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '47c6091c4039fb3df197',
+    clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+  });
+  gitalk.render('gitalk-container');
+</script>
     </main>
     <footer class="footer is-max-widescreen">
         <div class="content has-text-centered">
-            Copyright &copy; 2018-2013 <strong>Kaffa.im</strong> by <a href="https://kaffa.im">Kaffa</a>.
-            <p>The templates code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            版权所有 &copy; 2018-2013 <strong><a href="https://kaffa.im">Kaffa.im</a></strong> 诚心良品 开放质造
+            <p>
+                本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
             </p>
         </div>
     </footer>
-</body>
 
+    <div id="modal-project" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+              <p>项目明细在建设中...</p>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /*====================
+              Modal
+             ====================*/
+
+            // Functions to open and close a modal
+            function openModal($el) {
+                $el.classList.add('is-active');
+            }
+
+            function closeModal($el) {
+                $el.classList.remove('is-active');
+            }
+
+            function closeAllModals() {
+            (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                    closeModal($modal);
+                });
+            }
+
+            // Add a click event on buttons to open a specific modal
+            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                const modal = $trigger.dataset.target;
+                const $target = document.getElementById(modal);
+                $trigger.addEventListener('click', () => {
+                     openModal($target);
+                });
+            });
+
+            // Add a click event on various child elements to close the parent modal
+            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                const $target = $close.closest('.modal');
+
+                $close.addEventListener('click', () => {
+                    closeModal($target);
+                });
+            });
+
+            // Add a keyboard event to close all modals
+            document.addEventListener('keydown', (event) => {
+                if (event.code === 'Escape') {
+                    closeAllModals();
+                }
+            });
+
+            /*====================
+              navbar
+             ====================*/
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+            /*====================
+              Projects
+             ====================*/
+            const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+            $panelTab.forEach(el => {
+                el.addEventListener('click', () => {
+                    const $siblings = el.parentNode.children;
+                    for (let i = 0; i < $siblings.length; i++) {
+                        $siblings[i].classList.remove('is-active');
+                    }
+                    el.classList.add('is-active');
+
+                    if (el.title == 'all') {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.remove("is-hidden");
+                        }
+                    } else {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.add("is-hidden");
+                        }
+
+                        const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                        for (let i = 0; i < $targetPanelBlock.length; i++) {
+                            $targetPanelBlock[i].classList.remove("is-hidden");
+                        }
+                    }
+                });
+            });
+
+            /*====================
+              Email
+             ====================*/
+            const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+            $email.forEach(el => {
+                el.innerText = ['admin', '@', 'kaffa.im'].join('');
+            });
+        });
+    </script>
+</body>
 </html>

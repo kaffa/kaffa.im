@@ -1,0 +1,18 @@
+##############
+iPhone
+##############
+
+:date: 2023-11-02 16:08
+:author: Kaffa
+:category: things
+:tags: steve jobs
+:slug: iphone
+:summary: iPhone
+
+简介
+===========
+
+`「iPhone」`_
+
+.. _「iPhone」: https://www.apple.com/iphone
+

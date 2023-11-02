@@ -4,19 +4,19 @@ Modified: 2023-10-20
 Slug: about
 Authors: Kaffa
 Summary: 关于站长
-Image: /img/2023/about-kaffa.png
+Image: /static/img/2023/about-kaffa.png
 
 ## 必要的开场
 
 不会吧！不会吧！你不会真的来了吧？
 
-我非常激动，你终于找到叻我的个人网站！
+我非常激动，你终于找到了我的个人网站！
 
 Hello，我是 Kaffa.im 的站长，网名 Kaffa（观察者A：好像重复了；观察者B：嗯，不符合 DRY 原则）。诚如所见，我(们)来自中国，很高兴认识你。
 
 也许你听过 Kaffa 这个词，或者恰好你来自 Ethiopia 的 Kaffa Province。2018 年我选择这个网名是因为我是一个第三波咖啡爱好者，而传说咖啡是在 Kaffa 森林中发现的。
 
-最初，它的意义是 Keep Agile & Free，此时我赋予了它[新的意义](\content\2023\20231017-关于网站2.0想法.md)。
+最初，它的意义是 Keep Agile & Free，此时我赋予了它[新的意义](/content/2023/20231017-关于网站2.0想法.md)。
 
 ## 个人网站
 
@@ -32,7 +32,7 @@ Hello，我是 Kaffa.im 的站长，网名 Kaffa（观察者A：好像重复了�
 
 ## 身份与真名
 
-![Internet Dog](../img/2023/Internet_dog.jpg)
+![Internet Dog](../static/img/2023/Internet_dog.jpg)
 
 > "On the Internet, nobody knows you're a dog." —— Peter Steiner
 
@@ -43,3 +43,4 @@ Peter Steiner 是个漫画家，一生中也写过不少小说，在历史留痕
 ## 记录对世界的探索
 
 基于人的 ego 对自我的片面认识，我更认同人在人生中更似[《随机漫步的傻瓜》]()，我很幸运在我人生中经历了较完整的康德拉季耶夫长波周期，也很幸运我的专业让我有独立建站的能力。所以，“傻瓜”站在命运中的风口上了，我将在此记录下我对“风”的探索和乐趣，与汝共享。
+

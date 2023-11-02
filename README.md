@@ -9,13 +9,10 @@ https://kaffa.github.io
 
 https://kaffa.gitee.io
 
-## 你的博客由什么生成？
+## 你的博客技术栈是什么？
 
-由 Python 的 Pelican 包生成
-
-## 你的博客的主题是什么？
-
-是 [Pelican Octopress Theme 中文版](https://github.com/kaffa/pelican-octopress-theme-cn)
+数据部分由个人开发的 Python 及 Bash 脚本。
+网站部分由 SSG 软件 Pelican + [Pelican Octopress Theme 中文版](https://github.com/kaffa/pelican-octopress-theme-cn) 生成。
 
 
 

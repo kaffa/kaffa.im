@@ -1,6 +1,0 @@
-# robots.txt
-User-agent: *
-Allow: /
-Disallow: /admin
-
-Sitemap: https://kaffa.im/sitemap.xml

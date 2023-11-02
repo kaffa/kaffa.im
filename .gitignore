@@ -2,6 +2,7 @@
 _drafts/
 _site/
 _old_posts/
+.vscode/
 *.swp
 *.scssc
 *.psd
@@ -10,6 +11,7 @@ _old_posts/
 .rvmrc
 .ruby-version
 .DS_Store
+/content.backup/
 /content.draft/
 /themes/
-/tools/update_gitee_pages.py
+dbconfig.py
