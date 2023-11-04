@@ -6,8 +6,12 @@ import os
 import sys
 
 AUTHOR = 'Kaffa'
+AUTHOR_NAME = '昆'
+MANTRA = 'Kunnect Adventures & Fun'
+AUTHOR_INTRO = '「探索」人生，共享「意趣」，主研方向是「软件研发 + 技术管理」和「业务数字化」，有兴趣或有反馈请点击菜单项的关于。'
+
 SITENAME = 'Kaffa.im'
-SITESUBTITLE = ''  # 'A personal blog.'
+SITESUBTITLE = 'Kunnect Adventures & Fun'
 SITEURL = 'https://kaffa.im'
 TIMEZONE = 'Asia/Shanghai'
 

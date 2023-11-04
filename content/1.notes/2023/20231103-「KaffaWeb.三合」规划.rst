@@ -89,7 +89,7 @@ T     T无法改变，被动接受     T是否缓解不明确
   5. T：Deadline 2023-11-17；
 
 * 版本号：三合[#f1]_
-* Mantra: Kreate Adventures & Fun
+* Mantra: Kunnect/Kreate Adventures & Fun
 * 灵感：在2023年10月，受雷叔`欧雷`_的启发，在10月下旬的自由时间中，我开始实现它。
 * 计划时间范围：2023-10-17～2023-11-17
 * 项目范围
