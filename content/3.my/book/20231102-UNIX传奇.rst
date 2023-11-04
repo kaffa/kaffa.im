@@ -5,9 +5,10 @@ UNIX传奇
 :date: 2023-11-02 9:11
 :author: Kaffa
 :category: book
-:tags: unix
+:tags: Unix
 :slug: unix-a-history-and-a-memoir
 :summary: UNIX传奇
+:image: /static/img/2023/about-kaffa.png
 
 简介
 ===========

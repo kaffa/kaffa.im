@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2023-11-03T00:58:08-00:00</lastmod>
+<lastmod>2023-11-05T00:49:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2023-11-03T00:58:08-00:00</lastmod>
+<lastmod>2023-11-05T00:49:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2023-11-03T00:58:08-00:00</lastmod>
+<lastmod>2023-11-05T00:49:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2023-11-03T00:58:08-00:00</lastmod>
+<lastmod>2023-11-05T00:49:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -53,14 +53,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kaffa.im/emacs.html</loc>
-<lastmod>2023-11-02T16:25:00+08:00</lastmod>
+<loc>https://kaffa.im/weekly-2023-w43.html</loc>
+<lastmod>2023-11-04T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://kaffa.im/php-book-list.html</loc>
+<loc>https://kaffa.im/kaffaweb-sanhe.html</loc>
+<lastmod>2023-11-03T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/learning-php-book-list.html</loc>
 <lastmod>2023-11-02T16:25:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -69,13 +76,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/iphone.html</loc>
 <lastmod>2023-11-02T16:08:00+08:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://kaffa.im/weekly-2023-w43.html</loc>
-<lastmod>2023-11-02T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -103,14 +103,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/books-can-always-be-read.html</loc>
-<lastmod>2023-10-30T23:27:00+08:00</lastmod>
+<lastmod>2023-11-03T13:39:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://kaffa.im/on-kaffa-im-2.0.html</loc>
-<lastmod>2023-10-17T22:58:00+08:00</lastmod>
+<loc>https://kaffa.im/on-kaffa-im-new-website.html</loc>
+<lastmod>2023-11-04T23:45:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -124,7 +124,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2023-11-02T22:40:00+08:06</lastmod>
+<lastmod>2023-11-04T23:45:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

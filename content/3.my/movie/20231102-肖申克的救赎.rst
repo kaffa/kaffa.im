@@ -5,9 +5,10 @@
 :date: 2023-11-02 9:11
 :author: Kaffa
 :category: movie
-:tags: hope
+:tags: Hope
 :slug: the-shawshank-redemption
 :summary: 肖申克的救赎
+:image: /static/img/2023/about-kaffa.png
 
 简介
 ===========

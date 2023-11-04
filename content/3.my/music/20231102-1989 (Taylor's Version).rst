@@ -8,6 +8,7 @@
 :tags: Taylor Swift
 :slug: 1989-taylor-s-version
 :summary: 1989 (Taylor's Version)
+:image: /static/img/2023/about-kaffa.png
 
 简介
 ===========

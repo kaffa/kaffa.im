@@ -29,7 +29,7 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Paul Graham', 'http://paulgraham.com'),
          ('Guido van Rossum', 'https://gvanrossum.github.io/'),
-         ("Kaffa", 'https://kaffa.im'),
+         ("Kaffa.im", 'https://kaffa.im'),
          ("Coffee's", 'https://coffees.app'),
          ('论道', 'https://lundao.pub/'),)
 
@@ -136,7 +136,7 @@ mailto = f'mailto:{mailto_email}?subject={mailto_subject}&body={mailto_body}'
 # menu
 MENUITEMS = (
     ("首页", "/", (
-        ("项目", "/"),
+        ("项目", "/category/project.html"),
     )),
     ("笔记", "/", (
         ("网站", "/category/website.html"),
@@ -172,9 +172,25 @@ MENUITEMS = (
 
 CATEGORY_DICT = {
     'website': '网站', 'reading': '读书',
-    'article': '文章', 'software': '软件', 'book-list': '软件', 'weekly': '周报',
+    'article': '文章', 'project': '项目', 'software': '软件', 'book-list': '书单', 'weekly': '周报',
     'book': '书', 'movie': '影', 'music': '音', 'things': '物'
 }
+
+CATEGORY_MOMENTS_DICT = {
+    'website': '记录一条笔记', 'reading': '记录一条笔记',
+    'article': '创作一篇文章', 'project': '创作一篇文章', 'software': '创作一篇文章', 'book-list': '精选一款书单', 'weekly': '汇报一次周报',
+    'book': '阅读一本书籍', 'movie': '观赏一部电影', 'music': '收藏一首音乐', 'things': '标记一个物品',
+    'links': '添加一条友链'
+}
+
+
+
+
+
+
+
+
+
 
 JAVASCRIPT_HEAD = ''
 JAVASCRIPT_FOOT = ''

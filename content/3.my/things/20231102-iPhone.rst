@@ -5,9 +5,10 @@ iPhone
 :date: 2023-11-02 16:08
 :author: Kaffa
 :category: things
-:tags: steve jobs
+:tags: Steve Jobs
 :slug: iphone
 :summary: iPhone
+:image: /static/img/2023/about-kaffa.png
 
 简介
 ===========
