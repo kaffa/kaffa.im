@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% set ns = namespace() %}
+{% set ns.note_num = 0 %}
+{% set ns.article_num = 0 %}
+{% set ns.weekly_num = 0 %}
+{% set ns.book_list_num = 0 %}
+{% set ns.book_num = 0 %}
+{% set ns.movie_num = 0 %}
+{% set ns.music_num = 0 %}
+{% set ns.things_num = 0 %}
+{% for category, articles in categories|sort %}
+    {% if category in ('website', 'reading',) %}
+        {% set ns.note_num = ns.note_num + 1 %}
+    {% elif category in ('article',) %}
+        {% set ns.article_num = ns.article_num + 1 %}
+    {% elif category == 'weekly' %}
+        {% set ns.weekly_num = ns.weekly_num + 1 %}
+    {% elif category == 'book-list' %}
+        {% set ns.book_list_num = ns.book_list_num + 1 %}
+    {% elif category == 'book' %}
+        {% set ns.book_num = ns.book_num + 1 %}
+    {% elif category == 'movie' %}
+        {% set ns.movie_num = ns.movie_num + 1 %}
+    {% elif category == 'music' %}
+        {% set ns.music_num = ns.music_num + 1 %}
+    {% elif category == 'things' %}
+        {% set ns.things_num = ns.things_num + 1 %}
+    {% endif %}
+{% endfor %}
+
+{% set moments_num = ns.note_num
+    + ns.article_num
+    + ns.weekly_num
+    + ns.book_list_num
+    + ns.book_num
+    + ns.movie_num
+    + ns.music_num
+    + ns.things_num
+%}
+
+<section class="hero has-background-white" style="min-height: 400px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);">
+    <div class="hero-body">
+        <figure class="image is-64x64 has-text-centered" style="margin: auto;">
+            <img class="is-rounded" src="{{ AVATAR_URL }}" alt="avatar">
+        </figure>
+        <h2 class="title is-family-primary is-size-1 has-text-centered">{{ AUTHOR_NAME }}</h2>
+        <p class="is-size-7 has-text-centered has-text-grey-light">{{ MANTRA }}</p>
+        <p class="is-size-6 has-text-centered has-text-grey mt-3">{{ AUTHOR_INTRO }}</p>
+        <div class="container is-max-desktop">
+            <div class="is-divider" data-content="North">
+            </div>
+        </div>
+        <nav class="level container is-max-desktop">
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">项目</p>
+                <p class="title">{{ PROJECTS|count }}</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">动态</p>
+                <p class="title">{{ moments_num }}</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">关注</p>
+                <p class="title">{{ LINKS|count }}</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">友链</p>
+                <p class="title">{{ FRIENDS|count }}</p>
+              </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<div class="container is-max-widescreen mt-4">
+    <div class="columns is-variable is-2">
+        <div class="column is-3">
+            <section class="box">
+                <h3>项目</h3>
+                <nav class="panel mt-3">
+                    <p class="panel-tabs">
+                        <a title="all" class="is-active">所有</a>
+                        <a title="doing">进行中</a>
+                        <a title="done">完成</a>
+                        <a title="ready">未开始</a>
+                    </p>
+                    {% for p in PROJECTS %}
+                    <a class="panel-block is-active panel-{{ p.Status }}">
+                        <div style="width: 100%;">
+                            <strong>{{ p.Name }}</strong>
+                            <strong class="is-pulled-right">{{ 100 * p.Completion }}%</strong>
+                            <p class="subtitle is-7">{{ p.Mantra }}</p>
+                            <progress class="progress is-small" value="{{ 100 * p.Completion }}" max="100" style="width: auto;">{{ 100 * p.Completion }}%</progress>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </nav>
+            </section>
+        </div>
+        <div class="column is-6">
+            {% for article in articles_page.object_list %}
+            <section class="box">
+                <header class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="{{ AVATAR_URL }}" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            {% for author in article.authors %}
+                                <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                            {% endfor %}
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+                            {{ CATEGORY_MOMENTS_DICT[article.category] }}
+                        </div>
+                    </div>
+                </header>
+                <footer class="media box">
+                    <div class="media-content">
+                        <article>
+                            <h2 class="title is-6">
+                                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="「{{ article.title|striptags }}」的永久链接">{{ article.title }}</a>
+                            </h2>
+                            <div> {{ article.summary }} </div>
+                        </article>
+                    </div>
+                    <div class="media-right">
+                        <figure class="image is-96x96">
+                            <img src="{{ AVATAR_URL }}" alt="avatar">
+                        </figure>
+                    </div>
+                </footer>
+            </section>
+            {% endfor %}
+            {% if articles_page.has_other_pages() %}
+                {% include 'pagination.html' %}
+            {% endif %}
+        </div>
+        <div class="column is-3">
+            <section class="box">
+                <h3>动态小计</h3>
+                <div class="is-divider" data-content="Notes"></div>
+                <p class="is-size-6 has-text-grey">记录 <strong>{{ ns.note_num }}</strong> 条笔记</p>
+                <p class="is-size-6 has-text-grey">创作 <strong>{{ ns.article_num }}</strong> 篇文章</p>
+                <p class="is-size-6 has-text-grey">汇报 <strong>{{ ns.weekly_num }}</strong> 次周报</p>
+                <p class="is-size-6 has-text-grey">精选 <strong>{{ ns.book_list_num }}</strong> 款书单</p>
+                <div class="is-divider" data-content="Stream"></div>
+                <p class="is-size-6 has-text-grey">阅读 <strong>{{ ns.book_num }}</strong> 本书籍</p>
+                <p class="is-size-6 has-text-grey">观赏 <strong>{{ ns.movie_num }}</strong> 部电影</p>
+                <p class="is-size-6 has-text-grey">收藏 <strong>{{ ns.music_num }}</strong> 首音乐</p>
+                <p class="is-size-6 has-text-grey">标记 <strong>{{ ns.things_num }}</strong> 个物品</p>
+                <div class="is-divider" data-content="Links"></div>
+                <p class="is-size-6 has-text-grey">添加 <strong>{{ LINKS|count }}</strong> 条关注</p>
+                <p class="is-size-6 has-text-grey">新增 <strong>{{ FRIENDS|count }}</strong> 条友链</p>
+            </section>
+
+            <section class="box">
+                <h3>链接</h3>
+                <aside class="menu mt-3">
+                    {% if LINKS|count > 0 %}
+                    <p class="menu-label">关注</p>
+                    <ul class="menu-list">
+                    {% for link in LINKS %}
+                        <li><a target="_blank" href="{{ link[1] }}">{{ link[0] }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    {% if FRIENDS|count > 0 %}
+                    <p class="menu-label">友链</p>
+
+                    <ul class="menu-list">
+                    {% for friend in FRIENDS %}
+                        <li><a target="_blank" href="{{ friend.URL }}">{{ friend.Name }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% endif %}
+                </aside>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock content %}

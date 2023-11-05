@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}{{ SITENAME }} - {{ page.title|striptags }}{%endblock%}
+
+{% block head %}
+  {{ super() }}
+
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+<article>
+    {% if page.featured_image %}
+    <section class="hero" style="background-image: url('{{ page.featured_image }}'); min-height: 400px">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem);"
+            >{{ page.title }}</h2>
+        </div>
+    </section>
+    {% else %}
+    <section class="hero" style="min-height: 400px">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem);"
+            >{{ page.title }}</h2>
+        </div>
+    </section>
+    {% endif %}
+    <section class="box content container is-max-desktop mt-4">
+        {% import 'translations.html' as translations with context %}
+        {{ translations.translations_for(page) }}
+
+        {{ page.content }}
+
+    {% if page.modified %}
+        <span class="has-text-grey-lighter">
+        最后修改: {{ page.locale_modified }}
+        </span>
+    {% endif %}
+    </section>
+</article>
+{% endblock %}

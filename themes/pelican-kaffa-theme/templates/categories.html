@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - 分类{% endblock %}
+
+{% block content %}
+<article>
+
+    <section class="hero" style="min-height: 400px">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem);"
+            >分类：{{ SITENAME }}</h2>
+        </div>
+    </section>
+
+    <section class="box content container is-max-desktop mt-4">
+        <ul>
+        {% for category, articles in categories|sort %}
+        <li><a href="{{ SITEURL }}/{{ category.url }}">{{ CATEGORY_DICT[category] }}</a> ({{ articles|count }})</li>
+        {% endfor %}
+        </ul>
+    </section>
+
+</article>
+{% endblock %}

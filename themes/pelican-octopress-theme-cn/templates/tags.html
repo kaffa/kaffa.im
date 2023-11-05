@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}标签 &mdash; {{ SITENAME }}{% endblock %}
+{% block content %}
+<div>
+	<article role="article">
+    	<header>
+    		<h1 class="entry-title">文章标签</h1>
+    	</header>
+
+	<p>
+	{% for tag, articles in tags|sort %}
+		<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a> ({{ articles|count }})<br>
+	{% endfor %}
+	</p>
+	</article>
+</div>
+{% endblock %}

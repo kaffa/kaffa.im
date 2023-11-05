@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title|striptags }} &mdash; {{ SITENAME }}{% endblock %}
+{% block content %}
+<div>
+  <article class="hentry" role="article">
+    {% include '_includes/article.html' %}
+    <footer>
+      {% include '_includes/article_infos.html' %}
+      {% include '_includes/sharing.html' %}
+    </footer>
+    <div id="gitalk-container"></div>
+  </article>
+
+  {% if (DISQUS_SITENAME or ISSO_SITEURL) and SITEURL and article.status != "draft" %}
+  <section>
+    <h1>评论</h1>
+    {% if ISSO_SITEURL %}
+    <section id="isso-thread"></section>
+    {% endif %}
+    {% if DISQUS_SITENAME %}
+    <div id="disqus_thread" aria-live="polite">{% include '_includes/disqus_thread.html' %}</div>
+    {% endif %}
+  </section>
+  {% endif %}
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '47c6091c4039fb3df197',
+    clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+{% endblock %}
