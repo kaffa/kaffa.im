@@ -16,7 +16,7 @@ Hello，我是 Kaffa.im 的站长，网名 Kaffa（观察者A：好像重复了�
 
 也许你听过 Kaffa 这个词，或者恰好你来自 Ethiopia 的 Kaffa Province。2018 年我选择这个网名是因为我是一个第三波咖啡爱好者，而传说咖啡是在 Kaffa 森林中发现的。
 
-最初，它的意义是 Keep Agile & Free，此时我赋予了它[新的意义](/content/2023/20231017-关于网站2.0想法.md)。
+最初，它的意义是 Keep Agile & Free，此时我赋予了它[新的意义](/on-kaffa-im-new-website.html)。
 
 ## 个人网站
 

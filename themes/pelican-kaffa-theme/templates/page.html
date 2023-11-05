@@ -31,17 +31,13 @@
         </div>
     </section>
     {% endif %}
-    <section class="box content container is-max-desktop mt-4">
+    <section class="container is-max-desktop box content mt-4 p-6">
         {% import 'translations.html' as translations with context %}
         {{ translations.translations_for(page) }}
-
         {{ page.content }}
-
-    {% if page.modified %}
-        <span class="has-text-grey-lighter">
-        最后修改: {{ page.locale_modified }}
-        </span>
-    {% endif %}
+        {% if page.modified %}
+        <span class="has-text-grey-lighter">最后修改: {{ page.locale_modified }}</span>
+        {% endif %}
     </section>
 </article>
 {% endblock %}

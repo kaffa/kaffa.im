@@ -55,26 +55,21 @@
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(article) }}
 
-    <section class="container is-max-desktop box content my-4">
-        <div class="block mx-5 my-3">
-            {% if article.category %}
-            <span>分类:
-                <a class="tag is-medium" href="{{ SITEURL }}/{{ article.category.url }}">{{ CATEGORY_DICT[article.category] }}</a>
-            </span>
-            {% endif %}
-            {% if article.tags %}
-            <span class="ml-2">标签:
-                {% for tag in article.tags %}
-                <a class="tag is-primary is-light is-medium" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-                {% endfor %}
-            </span>
-            {% endif %}
-        </div>
+    <section class="container is-max-desktop box content mt-4 p-6">
+        {% if article.category %}
+        <span>分类:
+            <a class="tag is-medium" href="{{ SITEURL }}/{{ article.category.url }}">{{ CATEGORY_DICT[article.category] }}</a>
+        </span>
+        {% endif %}
+        {% if article.tags %}
+        <span class="ml-2">标签:
+            {% for tag in article.tags %}
+            <a class="tag is-primary is-light is-medium" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            {% endfor %}
+        </span>
+        {% endif %}
 
-        <div class="section">
         {{ article.content }}
-        </div>
-
         <div class="is-divider" data-content="Comments"></div>
         <div id="gitalk-container"></div>
     </section>
