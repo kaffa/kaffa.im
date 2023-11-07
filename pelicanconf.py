@@ -146,6 +146,8 @@ MENUITEMS = (
         ("网站", "/category/website.html"),
         ("-", ""),
         ("读书", "/category/reading.html"),
+        ("-", ""),
+        ("数智", "/category/digital.html")
     )),
     ("创作", "/", (
         ("文章", "/category/article.html"),
@@ -175,26 +177,26 @@ MENUITEMS = (
 )
 
 CATEGORY_DICT = {
-    'website': '网站', 'reading': '读书',
+    'website': '网站', 'reading': '读书', 'digital': '数智',
     'article': '文章', 'project': '项目', 'software': '软件', 'book-list': '书单', 'weekly': '周报',
     'book': '书', 'movie': '影', 'music': '音', 'things': '物'
 }
 
 CATEGORY_MOMENTS_DICT = {
-    'website': '记录一条笔记', 'reading': '记录一条笔记',
-    'article': '创作一篇文章', 'project': '创作一篇文章', 'software': '创作一篇文章', 'book-list': '精选一款书单', 'weekly': '汇报一次周报',
-    'book': '阅读一本书籍', 'movie': '观赏一部电影', 'music': '收藏一首音乐', 'things': '标记一个物品',
+    'website': '记录一条笔记',
+    'reading': '记录一条笔记',
+    'digital': '记录一条笔记',
+    'article': '创作一篇文章',
+    'project': '创作一篇文章',
+    'software': '创作一篇文章',
+    'book-list': '精选一款书单',
+    'weekly': '汇报一次周报',
+    'book': '阅读一本书籍',
+    'movie': '观赏一部电影',
+    'music': '收藏一首音乐',
+    'things': '标记一个物品',
     'links': '添加一条友链'
 }
-
-
-
-
-
-
-
-
-
 
 JAVASCRIPT_HEAD = ''
 JAVASCRIPT_FOOT = ''

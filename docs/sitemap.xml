@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2023-11-05T17:37:38-00:00</lastmod>
+<lastmod>2023-11-07T23:25:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2023-11-05T17:37:38-00:00</lastmod>
+<lastmod>2023-11-07T23:25:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2023-11-05T17:37:38-00:00</lastmod>
+<lastmod>2023-11-07T23:25:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2023-11-05T17:37:38-00:00</lastmod>
+<lastmod>2023-11-07T23:25:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -53,8 +53,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kaffa.im/weekly-2023-w43.html</loc>
-<lastmod>2023-11-04T12:00:00+08:00</lastmod>
+<loc>https://kaffa.im/windows-hotkey-alt-tab-not-work-in-edge.html</loc>
+<lastmod>2023-11-07T17:15:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -131,7 +131,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2023-11-04T23:45:00+08:06</lastmod>
+<lastmod>2023-11-07T17:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
