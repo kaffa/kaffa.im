@@ -11,7 +11,7 @@
 {% set ns.music_num = 0 %}
 {% set ns.things_num = 0 %}
 {% for category, articles in categories|sort %}
-    {% if category in ('website', 'reading',) %}
+    {% if category in ('website', 'reading', 'digital',) %}
         {% set ns.note_num = ns.note_num + 1 %}
     {% elif category in ('article',) %}
         {% set ns.article_num = ns.article_num + 1 %}
