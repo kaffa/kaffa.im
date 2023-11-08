@@ -12,7 +12,7 @@ Emacs
 简介
 ===========
 
-`「Emacs」`_ 是我最想记录的软件之一，我将在此记录 Emacs Lisp 脚本。
+`Emacs`_ 是我最想记录的软件之一，我将在此记录 Emacs Lisp 脚本。
 
 ...
 
@@ -20,4 +20,4 @@ Emacs
     :scale: 50
 
 
-.. _「Emacs」主页: https://www.gnu.org/software/emacs/
+.. _Emacs: https://www.gnu.org/software/emacs/
