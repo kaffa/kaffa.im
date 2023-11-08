@@ -2,6 +2,7 @@
 ##################################################
 
 :date: 2018-07-18 12:30
+:modified: 2023-11-08 16:11
 :author: Kaffa
 :category: digital
 :tags: VSCode, reStructureText
@@ -42,7 +43,7 @@
 
     sphinx-quickstart
 
-一路回车下去，即生成了如下文件::
+4. 一路回车，即生成了如下文件::
 
     _build
     _static
@@ -54,11 +55,10 @@
 
 此时可以通过 Ctrl+Shift+R 来预览了
 
-4. 最后提供一份快速参考 sphinx-rest_
+附录
+===================
+快速参考 sphinx-rest_
 
-
-
-感谢阅读。
 
 .. _sphinx-quickstart: http://www.pythondoc.com/sphinx/tutorial.html
 .. _sphinx-rest: http://www.pythondoc.com/sphinx/rest.html

@@ -23,12 +23,12 @@
 
 {% block content %}
 <article class="content">
-    {% if article.featured_image %}
-    <section class="hero" style="background-image: url('{{ article.featured_image }}'); min-height: 400px">
+    <section class="hero"
+             style="background-image: url('{% if article.featured_image %}{{ article.featured_image }}{% else %}/static/img/2023/about-kaffa.png{% endif %}')">
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem);"
-            ><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+            ><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
             <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
                 {% if article.authors %}
                     {% for author in article.authors %}
@@ -42,15 +42,6 @@
             </p>
         </div>
     </section>
-    {% else %}
-    <section class="hero">
-        <div class="hero-body">
-            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
-            ><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-        </div>
-    </section>
-    {% endif %}
 
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(article) }}

@@ -14,23 +14,14 @@
 
 {% block content %}
 <article>
-    {% if page.featured_image %}
-    <section class="hero" style="background-image: url('{{ page.featured_image }}'); min-height: 400px">
+    <section class="hero"
+             style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}/static/img/2023/about-kaffa.png{% endif %}')">
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem);"
             >{{ page.title }}</h2>
         </div>
     </section>
-    {% else %}
-    <section class="hero" style="min-height: 400px">
-        <div class="hero-body">
-            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
-                style="margin-top: calc(247px - 1rem - 3rem);"
-            >{{ page.title }}</h2>
-        </div>
-    </section>
-    {% endif %}
     <section class="container is-max-desktop box content mt-4 p-6">
         {% import 'translations.html' as translations with context %}
         {{ translations.translations_for(page) }}
