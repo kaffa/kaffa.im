@@ -13,17 +13,22 @@ reStructureText 九个实用语法
 槽
 =============
 
-对于绝大多数人来说，Markdown 够用了，如果你不使用以下功能的话：
+互联网写作，有很多种标记语言，比如：
+* Org Mode
+* Textile
+* reStructureText
+* Markdown
+
+目前，对于绝大多数人写作的常规需求来说，Markdown 够用了，如果你不使用以下功能的话：
 
 * 列表嵌套
 * 代码渲染
-* 内置元数据
-* 文档结构
+* 文档元数据
+* 书籍写作
 
-在 Markdown 中，至少上述功能，各方实现常不一致，为调整格式常费时费力，有一点使用错乱的 Word 目标写文字的感觉，累觉无爱。相比来说 reStructureText 更严谨丰富，换句话说也就更复杂。但作为 Python 文档的主格式，Pelican 引擎的动力之一，我对 reStructureText 的基本态度是「能写文章」，综合比较，我放弃了 md 转回了 rst。
+在 Markdown 中，至少上述功能，各方实现常不一致，为兼容或者为调整格式常费时费力，有一点使用模板错乱的 Word 文档写文章的感觉，累觉无爱。相比来说 reStructureText 更严谨丰富，换句话说也就更复杂，但作为 Python 文档的主格式，Pelican 引擎的动力之一，我对 reStructureText 的基本态度是「能写文章」，综合比较，我放弃了 md 转回了 rst。
 
 本文说的实用主义，即达到能写文章即可的程度。不看 rst 所有的语法是什么能做什么，而是看写文章用到 rst 哪些语法。
-
 
 语法指南
 =============
@@ -228,18 +233,22 @@ True   True   True
 
 **九、图片**::
 
-    .. image:: https://kaffa.im/img/reward.png
-        :alt: 赞赏码
+    .. image:: https://kaffa.im/static/img/reward.png
+        :alt: 打赏专用，感谢阅读。
 
 加上属性::
 
-    .. image:: https://kaffa.im/img/reward.png
+    .. image:: https://kaffa.im/static/img/reward.png
         :height: 200
         :width: 200
         :scale: 50
         :alt: 打赏专用，感谢阅读。
 
-
+.. image:: https://kaffa.im/static/img/reward.png
+    :height: 200
+    :width: 200
+    :scale: 50
+    :alt: 打赏专用，感谢阅读。
 
 
 .. _`用 VSCode 预览 reStructureText 文件`: https://kaffa.im/preview-restructuretext-file-in-vscode.html
