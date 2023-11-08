@@ -183,18 +183,22 @@ CATEGORY_DICT = {
 }
 
 CATEGORY_MOMENTS_DICT = {
+    'project': '启动一个项目',
+
     'website': '记录一条笔记',
     'reading': '记录一条笔记',
     'digital': '记录一条笔记',
+
     'article': '创作一篇文章',
-    'project': '创作一篇文章',
-    'software': '创作一篇文章',
+    'software': '编写一个软件',
     'book-list': '精选一款书单',
     'weekly': '汇报一次周报',
+
     'book': '阅读一本书籍',
     'movie': '观赏一部电影',
     'music': '收藏一首音乐',
     'things': '标记一个物品',
+
     'links': '添加一条友链'
 }
 

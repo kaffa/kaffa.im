@@ -8,12 +8,13 @@ reStructureText 九个实用语法
 :tags: reStructureText
 :slug: nine-restructuredtext-grammar
 :summary: 本文吐槽了 Markdown 后，记录了 reStructureText 实用语法指南，对于绝大多数人来说，Markdown 够用了，对于不够用的人可以参考 reStructureText，它有一些 Markdown 不具备的优点，整体来说统一严谨一些。本文还列出最常用的九个语法，用来写笔记足矣。更多细节，可查阅官方指南。
-
+:image: /static/img/2023/about-kaffa.png
 
 槽
 =============
 
 互联网写作，有很多种标记语言，比如：
+
 * Org Mode
 * Textile
 * reStructureText
@@ -28,19 +29,26 @@ reStructureText 九个实用语法
 
 在 Markdown 中，至少上述功能，各方实现常不一致，为兼容或者为调整格式常费时费力，有一点使用模板错乱的 Word 文档写文章的感觉，累觉无爱。相比来说 reStructureText 更严谨丰富，换句话说也就更复杂，但作为 Python 文档的主格式，Pelican 引擎的动力之一，我对 reStructureText 的基本态度是「能写文章」，综合比较，我放弃了 md 转回了 rst。
 
-本文说的实用主义，即达到能写文章即可的程度。不看 rst 所有的语法是什么能做什么，而是看写文章用到 rst 哪些语法。
+本文的实用即达到能写即可的程度。不看 rst 所有语法有什么能做什么，只看用到 rst 哪些语法。
 
 语法指南
 =============
 
-下面是 reStructureText 实用语法指南，其中列出最常用的九个语法，用来写短文足矣。其余更多细节，请查阅官方指南。
-
+下面是 reStructureText 实用语法，已列出最常用的九个语法，用来写短文足矣。
 
 **一、文本样式**::
 
-    *斜体*  **粗体**  ``段内标记``
+    单星号是 *斜体*
 
-*斜体*  **粗体**  ``段内标记``
+    双星号是 **粗体**
+
+    两个间隔号 ``段内标记``
+
+单星号是 *斜体*
+
+双星号是 **粗体**
+
+两个间隔号 ``段内标记``
 
 
 **二、标题**::
@@ -247,7 +255,6 @@ True   True   True
 .. image:: https://kaffa.im/static/img/reward.png
     :height: 200
     :width: 200
-    :scale: 50
     :alt: 打赏专用，感谢阅读。
 
 

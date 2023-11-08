@@ -28,7 +28,7 @@
 ===================
 1. 依据 reStructureText 文档，先 pip 安装 doc8 和 sphinx
 
-2. 再上 MSCode 配置::
+2. 再上 VSCode 配置::
 
     // Points to the doc8 exectuable.
     "restructuredtext.linter.executablePath": "doc8",

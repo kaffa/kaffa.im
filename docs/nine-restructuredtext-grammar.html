@@ -116,7 +116,7 @@
     <main class="has-background-grey-lighter pb-4">
 <article class="content">
     <section class="hero"
-             style="background-image: url('https://kaffa.im/static/img/reward.png')">
+             style="background-image: url('/static/img/2023/about-kaffa.png')">
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem);"
@@ -140,11 +140,13 @@
 
         <div class="section" id="section-1">
 <h2>槽</h2>
-<p>互联网写作，有很多种标记语言，比如：
-* Org Mode
-* Textile
-* reStructureText
-* Markdown</p>
+<p>互联网写作，有很多种标记语言，比如：</p>
+<ul class="simple">
+<li>Org Mode</li>
+<li>Textile</li>
+<li>reStructureText</li>
+<li>Markdown</li>
+</ul>
 <p>目前，对于绝大多数人写作的常规需求来说，Markdown 够用了，如果你不使用以下功能的话：</p>
 <ul class="simple">
 <li>列表嵌套</li>
@@ -153,16 +155,22 @@
 <li>书籍写作</li>
 </ul>
 <p>在 Markdown 中，至少上述功能，各方实现常不一致，为兼容或者为调整格式常费时费力，有一点使用模板错乱的 Word 文档写文章的感觉，累觉无爱。相比来说 reStructureText 更严谨丰富，换句话说也就更复杂，但作为 Python 文档的主格式，Pelican 引擎的动力之一，我对 reStructureText 的基本态度是「能写文章」，综合比较，我放弃了 md 转回了 rst。</p>
-<p>本文说的实用主义，即达到能写文章即可的程度。不看 rst 所有的语法是什么能做什么，而是看写文章用到 rst 哪些语法。</p>
+<p>本文的实用即达到能写即可的程度。不看 rst 所有语法有什么能做什么，只看用到 rst 哪些语法。</p>
 </div>
 <div class="section" id="section-2">
 <h2>语法指南</h2>
-<p>下面是 reStructureText 实用语法指南，其中列出最常用的九个语法，用来写短文足矣。其余更多细节，请查阅官方指南。</p>
+<p>下面是 reStructureText 实用语法，已列出最常用的九个语法，用来写短文足矣。</p>
 <p><strong>一、文本样式</strong>:</p>
 <pre class="literal-block">
-*斜体*  **粗体**  ``段内标记``
+单星号是 *斜体*
+
+双星号是 **粗体**
+
+两个间隔号 ``段内标记``
 </pre>
-<p><em>斜体</em>  <strong>粗体</strong>  <tt class="docutils literal">段内标记</tt></p>
+<p>单星号是 <em>斜体</em></p>
+<p>双星号是 <strong>粗体</strong></p>
+<p>两个间隔号 <tt class="docutils literal">段内标记</tt></p>
 <p><strong>二、标题</strong>:</p>
 <pre class="literal-block">
 ================================
@@ -394,7 +402,7 @@ True   True   True
     :scale: 50
     :alt: 打赏专用，感谢阅读。
 </pre>
-<img alt="打赏专用，感谢阅读。" src="https://kaffa.im/static/img/reward.png" style="width: 100.0px; height: 100.0px;" />
+<img alt="打赏专用，感谢阅读。" src="https://kaffa.im/static/img/reward.png" style="width: 200px; height: 200px;" />
 </div>
 
         <div class="is-divider" data-content="Comments"></div>

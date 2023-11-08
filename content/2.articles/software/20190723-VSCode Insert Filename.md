@@ -1,17 +1,20 @@
-Title: 如何编写一个 VSCode 扩展并发布到 Visual Studio Marketplace
+Title: VSCode Insert Filename
 Date: 2019-07-23 12:00
 Modified: 2023-11-08 15:00
 Category: software
 Tags: VSCode, VSCode Extension, vsce, Visual Studio Marketplace
-Slug: how-to-create-a-vscode-extension-and-publish-it-to-visualstudio-marketplace
+Slug: vscode-extension-insert-filename
 Authors: Kaffa
-Summary: 本文假设你熟悉 node.js 和 npm 工具，用过 Git，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。
+Summary: 本文是我为讲解如何发布 VSCode 扩展到 Visual Studio Marketplace 而编写的插件VSCode Insert Filename，你将学会创作和发布 VSCode 扩展的步骤和方法。
+
 
 ![编写 VSCode 插件](https://kaffa.im/static/img/2019/create-vscode-extension.png "编写 VSCode 插件")
 
-## 概述
+## 假设
 
-本文假设你熟悉 node.js 和 npm 工具，用过 Git，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。
+假设你熟悉 node.js 和 npm 工具，用过 Git，并懂点 JavaScript，那么本文将一步步教你编写一个 VSCode 扩展，并发布到微软 Visual Studio Marketplace。
+
+## 概述
 
 VSCode 已是免费文本编辑器/IDE的王者，但其文本闪改能力还是不如一些老牌文本编辑器，比如 EverEdit 与 EmEditor，但它免费呀，所以，用它用它用它。
 
