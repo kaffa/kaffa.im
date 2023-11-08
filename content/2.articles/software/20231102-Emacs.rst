@@ -6,20 +6,18 @@ Emacs
 :category: software
 :tags: KaffaWeb
 :slug: emacs
-:summary: Emacs 是我最想记录的软件之一。
+:summary: Emacs 是我最想记录的软件之一，这里是我写的 Emacs Lisp 脚本。
 :image: /static/img/2023/about-kaffa.png
-
-## Emacs
 
 简介
 ===========
 
-`「Emacs」主页`_
+`「Emacs」`_ 是我最想记录的软件之一，我将在此记录 Emacs Lisp 脚本。
 
+...
 
+.. image:: https://kaffa.im/static/img/2023/emacs-img.svg
+    :scale: 50
 
-
-.. image:: https://kaffa.im/static/img/reward.png
-    :alt: Coffee is a language in itself.
 
 .. _「Emacs」主页: https://www.gnu.org/software/emacs/

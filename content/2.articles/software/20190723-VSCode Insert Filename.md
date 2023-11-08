@@ -5,7 +5,7 @@ Category: software
 Tags: VSCode, VSCode Extension, vsce, Visual Studio Marketplace
 Slug: vscode-extension-insert-filename
 Authors: Kaffa
-Summary: 本文是我为讲解如何发布 VSCode 扩展到 Visual Studio Marketplace 而编写的插件VSCode Insert Filename，你将学会创作和发布 VSCode 扩展的步骤和方法。
+Summary: 本文是我为讲解如何发布 VSCode 扩展到 Visual Studio Marketplace 而编写的插件VSCode Insert Filename，通过本文你将学会创作和发布 VSCode 扩展的步骤和方法。
 
 
 ![编写 VSCode 插件](https://kaffa.im/static/img/2019/create-vscode-extension.png "编写 VSCode 插件")
