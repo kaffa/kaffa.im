@@ -7,7 +7,7 @@
 :tags: Hope
 :slug: the-shawshank-redemption
 :summary: 肖申克的救赎
-:image: /static/img/2023/about-kaffa.png
+:neodb: https://neodb.social/book/3S7qChI2tbbSGheba2DAoY
 
 简介
 ===========

@@ -7,14 +7,13 @@ Emacs
 :tags: KaffaWeb
 :slug: emacs
 :summary: Emacs 是我最想记录的软件之一，这里是我写的 Emacs Lisp 脚本。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/emacs-img.svg
 
 简介
 ===========
 
 `Emacs`_ 是我最想记录的软件之一，我将在此记录 Emacs Lisp 脚本。
 
-...
 
 .. image:: https://kaffa.im/static/img/2023/emacs-img.svg
     :scale: 50

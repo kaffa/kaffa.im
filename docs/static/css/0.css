@@ -57,6 +57,11 @@ article section.content p {
     text-indent: 2rem !important;
 }
 
+article section.content .box p,
+article section.content td p {
+    text-indent: 0 !important;
+}
+
 .box {
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
 }

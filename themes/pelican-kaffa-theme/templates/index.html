@@ -2,37 +2,46 @@
 {% block content %}
 
 {% set ns = namespace() %}
+
 {% set ns.note_num = 0 %}
+
 {% set ns.article_num = 0 %}
 {% set ns.software_num = 0 %}
 {% set ns.weekly_num = 0 %}
 {% set ns.book_list_num = 0 %}
+
 {% set ns.book_num = 0 %}
 {% set ns.movie_num = 0 %}
 {% set ns.music_num = 0 %}
 {% set ns.things_num = 0 %}
+
 {% for category, articles in categories|sort %}
-    {% if category in ('website', 'reading', 'digital',) %}
-        {% set ns.note_num = ns.note_num + 1 %}
+    {% for article in articles %}
 
-    {% elif category in ('article',) %}
-        {% set ns.article_num = ns.article_num + 1 %}
-    {% elif category in ('software',) %}
-        {% set ns.software_num = ns.software_num + 1 %}
-    {% elif category == 'weekly' %}
-        {% set ns.weekly_num = ns.weekly_num + 1 %}
-    {% elif category == 'book-list' %}
-        {% set ns.book_list_num = ns.book_list_num + 1 %}
+        {% if category in ('website', 'reading', 'digital',) %}
+            {% set ns.note_num = ns.note_num + 1 %}
 
-    {% elif category == 'book' %}
-        {% set ns.book_num = ns.book_num + 1 %}
-    {% elif category == 'movie' %}
-        {% set ns.movie_num = ns.movie_num + 1 %}
-    {% elif category == 'music' %}
-        {% set ns.music_num = ns.music_num + 1 %}
-    {% elif category == 'things' %}
-        {% set ns.things_num = ns.things_num + 1 %}
-    {% endif %}
+        {% elif category == 'article' %}
+            {% set ns.article_num = ns.article_num + 1 %}
+        {% elif category == 'software' %}
+            {% set ns.software_num = ns.software_num + 1 %}
+        {% elif category == 'weekly' %}
+            {% set ns.weekly_num = ns.weekly_num + 1 %}
+        {% elif category == 'book-list' %}
+            {% set ns.book_list_num = ns.book_list_num + 1 %}
+
+        {% elif category == 'book' %}
+            {% set ns.book_num = ns.book_num + 1 %}
+        {% elif category == 'movie' %}
+            {% set ns.movie_num = ns.movie_num + 1 %}
+        {% elif category == 'music' %}
+            {% set ns.music_num = ns.music_num + 1 %}
+        {% elif category == 'things' %}
+            {% set ns.things_num = ns.things_num + 1 %}
+
+        {% endif %}
+
+    {% endfor %}
 {% endfor %}
 
 {% set moments_num = ns.note_num
@@ -143,8 +152,8 @@
                         </article>
                     </div>
                     <div class="media-right">
-                        <figure class="image is-96x96">
-                            <img src="{{ AVATAR_URL }}" alt="avatar">
+                        <figure class="image" style="max-width: 96px">
+                            <img src="{{ SITEURL }}{% if article.featured_image %}{{ article.featured_image }}{% else %}/static/img/2023/about-kaffa.png{% endif %}" alt="avatar">
                         </figure>
                     </div>
                 </footer>

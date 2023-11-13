@@ -3,8 +3,12 @@
     <words>
       <w>codehilite</w>
       <w>kaffa</w>
+      <w>kunnect</w>
       <w>octopress</w>
       <w>pomodoro</w>
+      <w>sitename</w>
+      <w>sitesubtitle</w>
+      <w>siteurl</w>
     </words>
   </dictionary>
 </component>
