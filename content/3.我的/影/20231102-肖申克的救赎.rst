@@ -6,15 +6,13 @@
 :category: movie
 :tags: Hope
 :slug: the-shawshank-redemption
-:summary: 肖申克的救赎
-:neodb: https://neodb.social/book/3S7qChI2tbbSGheba2DAoY
+:summary: 肖申克于我阐述的是，无论人生处于怎样的境遇中，充满希望的心，会引领你穿越骨干的现实到达自由的彼岸。所以，剩下的就是行动。
 
-简介
+:subject_url: https://neodb.social/movie/6SAqdyMEu3kGepBN0mHZAr
+
+阅后
 ===========
 
-`「肖申克的救赎」豆瓣`_
-
-
-.. _「肖申克的救赎」豆瓣: https://movie.douban.com/subject/1292052/
+肖申克于我阐述的是，无论人生处于怎样的境遇中，充满希望的心，会引领你穿越骨干的现实到达自由的彼岸。所以，剩下的就是行动。
 
 

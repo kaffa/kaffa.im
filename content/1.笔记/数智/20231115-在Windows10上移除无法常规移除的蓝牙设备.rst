@@ -1,0 +1,44 @@
+在Windows10上移除无法常规移除的蓝牙设备
+##################################################
+
+:date: 2023-11-15 12:00
+:author: Kaffa
+:category: digital
+:tags: Bluetooth,NearLink
+:slug: use-bluetooth-command-line-tools-to-remove-bluetooth-devices
+:summary: 本文记录一种蓝牙命令行工具以在 Windows 10 上移除无法常规移除的蓝牙设备。
+
+
+问题现象
+==========
+
+在 Windows 中删除设备，删除不成功，或者删除成功后，原本被删的设备又重新会显示出来。
+
+
+解决方法
+==========
+
+有一种蓝牙命令行工具可解决，但似乎不开源，因此安全性方面需自行鉴别。
+
+
+1. 下载地址：https://bluetoothinstaller.com/bluetooth-command-line-tools
+
+2. 运行以下命令后，即可删除。
+
+.. code-block:: cmd
+
+    btpair -u
+
+
+挖坑
+==========
+
+Windows 10 和很多蓝牙设备的连接总存在一些问题，但也成功连接过很难连接的设备，比如苹果鼠标。
+
+我的 Bose SoundLink Mini 和 Windows 10 蓝牙连接一直不是很爽快，在折腾过驱动后偶尔能连上一次，但大多时候连上就短，现在都是使用线缆直连。
+
+终于体会到 RMS 开源运动的苦心，如果硬件设备存在问题，没有驱动源代码的情况下，即使有编程技能也无法解决问题。
+
+蓝牙是一套很复杂的协议栈，现在的近场通讯，从最初的红外到蓝牙，到现在出现的星闪。
+
+苹果侧还有独占的 AirDrop，还好现在社区中出现了 LocalSend，让好用的技术普惠于众。

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{% macro featured_image(page) -%}
+    {% if page.featured_image %}{{ page.featured_image }}{% else %}/static/img/2023/about-kaffa.png{% endif %}
+{%- endmacro %}
 <html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
 <head>
     {% block head %}
@@ -95,11 +98,11 @@
                         <a class="navbar-link has-text-grey">{{ title }}</a>
                         <div class="navbar-dropdown is-boxed">
                             {% for title2, link2 in children %}
-                            {% if title2 == '-' %}
-                            <hr class="navbar-divider">
-                            {% else %}
-                            <a class="navbar-item has-text-grey" href="{{ link2 }}">{{ title2 }}</a>
-                            {% endif %}
+                                {% if title2 == '-' %}
+                                <hr class="navbar-divider">
+                                {% else %}
+                                <a class="navbar-item has-text-grey" href="{{ link2 }}">{{ title2 }}</a>
+                                {% endif %}
                             {% endfor %}
                         </div>
                     </div>
@@ -255,6 +258,33 @@
             const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
             $email.forEach(el => {
                 el.innerText = ['admin', '@', 'kaffa.im'].join('');
+            });
+
+            /*====================
+              Table
+            ====================*/
+            var altKeyPressed = false;
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Alt' && !altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = true;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'table-row';
+                    });
+                }
+            });
+
+            document.addEventListener('keyup', function(event) {
+                if (event.key === 'Alt' && altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = false;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'none';
+                    });
+                }
             });
         });
     </script>

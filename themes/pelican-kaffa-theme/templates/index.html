@@ -120,6 +120,24 @@
                     {% endfor %}
                 </nav>
             </section>
+            <section class="box">
+                <h3>推荐订阅</h3>
+                <div class="card mt-4">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-5"><a href="https://xiaobot.net/p/2bfree?refer=20ca5446-77f3-4250-b173-511673f42818">「欧雷」的专栏</a></p>
+                        <p class="subtitle is-6">——破局之路</p>
+                      </div>
+                    </div>
+
+                    <div class="content">
+                        <p>「在可言说的范围内尽量用简单的语言详细地记述雷叔如何突破 35 周岁中年失业困境并实现自己理想生活方式的。</p>
+                        <a href="#">#人生</a> <a href="#">#职业规划</a><br><time datetime="2023-8-19">2023-8-19</time>
+                    </div>
+                  </div>
+                </div>
+            </section>
         </div>
         <div class="column is-6">
             {% for article in articles_page.object_list %}
@@ -151,11 +169,13 @@
                             <div class="is-size-7"> {{ article.summary }} </div>
                         </article>
                     </div>
+                    {% if article.subject -%}
                     <div class="media-right">
                         <figure class="image" style="max-width: 96px">
-                            <img src="{{ SITEURL }}{% if article.featured_image %}{{ article.featured_image }}{% else %}/static/img/2023/about-kaffa.png{% endif %}" alt="avatar">
+                            <img src="{{ article.subject.cover_image_url }}" alt="avatar">
                         </figure>
                     </div>
+                    {%- endif %}
                 </footer>
             </section>
             {% endfor %}

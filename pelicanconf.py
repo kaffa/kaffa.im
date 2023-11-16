@@ -40,7 +40,7 @@ LINKS = (('Paul Graham', 'http://paulgraham.com'),
 # Social widget
 SOCIAL = (('My GitHub', 'https://github.com/kaffa'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 6
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -66,6 +66,7 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'sitemap',
     'featured_image',
+    'kaffapod'
     #'statics',
     #'minify'
     #'gravatar',

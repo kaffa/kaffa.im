@@ -58,6 +58,7 @@ article section.content p {
 }
 
 article section.content .box p,
+article section.content .notification p,
 article section.content td p {
     text-indent: 0 !important;
 }
@@ -73,4 +74,13 @@ section > h3 {
 
 article.content .section {
     padding: 2rem 0 0 0;
+}
+
+.book-cover {
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+
+.book-cover:hover {
+  transform: rotateY(-10deg);
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
 }

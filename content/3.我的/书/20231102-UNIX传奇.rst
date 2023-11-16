@@ -6,17 +6,17 @@ UNIX传奇
 :category: book
 :tags: Unix
 :slug: unix-a-history-and-a-memoir
-:summary: UNIX传奇
+:summary: 热爱计算机的人都会对 UNIX 产生兴趣，因它真正带给人类一套稳固灵活的操作系统软件，解决了人类进入数智时代的基础问题。
 :image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/3S7qChI2tbbSGheba2DAoY
 
-简介
+
+读后
 ===========
 
-`「UNIX传奇」豆瓣`_
+热爱计算机的人都会对 UNIX 产生兴趣，因它真正带给人类一套稳固灵活的操作系统软件，解决了人类进入数智时代的基础问题。
 
 
-.. image:: https://kaffa.im/static/img/reward.png
-    :alt: Coffee is a language in itself.
 
-.. _「UNIX传奇」豆瓣: https://book.douban.com/subject/35292726/
+
 

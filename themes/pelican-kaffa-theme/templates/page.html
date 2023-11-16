@@ -14,8 +14,11 @@
 
 {% block content %}
 <article>
-    <section class="hero"
-             style="background-image: url('{% if page.featured_image %}{{ page.featured_image }}{% else %}/static/img/2023/about-kaffa.png{% endif %}')">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-image: url('{{ featured_image(page) }}')">
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem);"

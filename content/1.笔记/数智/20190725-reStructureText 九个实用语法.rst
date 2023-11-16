@@ -21,7 +21,15 @@ reStructuredText 是一种轻量级的文本标记语言，是 Python 中 Docuti
 rst 语法指南
 =============
 
-下面是 reStructureText 实用语法，已列出最常用的九个语法。
+
+官方参考细致繁复，对初学者不够友好。若要拿着 reStructureText 写文章，仅需先知晓写文章的简单实用语法，本文已列出最常用的九个语法。
+
+.. raw:: html
+
+    <div class="notification is-info is-light">
+        <i class="fa fa-info-circle mr-3" aria-hidden="true"></i>
+        可参看官方参考：https://docutils.sourceforge.io/rst.html
+    </div>
 
 一、文本样式
 -----------------
@@ -33,9 +41,11 @@ rst 语法指南
     +====================+====================+
     |::                  |                    |
     |                    |                    |
-    | *斜体*             | *斜体*             |
-    | **粗体**           | **粗体**           |
-    | ``段内标记``       | ``段内标记``       |
+    | *斜体*             |*斜体*              |
+    |                    |                    |
+    | **粗体**           |**粗体**            |
+    |                    |                    |
+    | ``段内标记``       |``段内标记``        |
     |                    |                    |
     +--------------------+--------------------+
 
@@ -97,15 +107,12 @@ rst 的主场是写书和写文档，可参用 ``#*=-^"`` 符号
 .. raw:: html
 
     <div class="notification is-warning is-light">
-        注意：rst 相对严谨，网页中只允许有一个一级标题，且标题的层次不能前后矛盾，否则输出时会报错：Title level inconsistent
+        注意：rst 输出网页中只允许有一个一级标题，且标题的层次不能前后矛盾，否则输出时会报错：Title level inconsistent
     </div>
 
-    <div class="notification is-success is-light">
-
-如果在 VSCode 中预览标题遇到问题，可参阅我另一篇 `用 VSCode 预览 reStructureText 文件`_
-
-.. raw:: html
-
+    <div class="notification is-info is-light">
+        如果在 VSCode 中预览标题遇到问题，可参阅我另一篇
+        <a href="https://kaffa.im/preview-restructuretext-file-in-vscode.html" target="_blank">用 VSCode 预览 reStructureText 文件</a>
     </div>
 
 三、段落
@@ -270,9 +277,9 @@ True   True   True
     +====================+====================+
     |::                  |                    |
     |                    |                    |
-    | *斜体*             | *斜体*             |
-    | **粗体**           | **粗体**           |
-    | ``段内标记``       | ``段内标记``       |
+    | *斜体*             |*斜体*              |
+    | **粗体**           |**粗体**            |
+    | ``段内标记``       |``段内标记``        |
     |                    |                    |
     +--------------------+--------------------+
 
@@ -285,9 +292,9 @@ True   True   True
     +====================+====================+
     |::                  |                    |
     |                    |                    |
-    | *斜体*             | *斜体*             |
-    | **粗体**           | **粗体**           |
-    | ``段内标记``       | ``段内标记``       |
+    | *斜体*             |*斜体*              |
+    | **粗体**           |**粗体**            |
+    | ``段内标记``       |``段内标记``        |
     |                    |                    |
     +--------------------+--------------------+
 
@@ -398,28 +405,40 @@ True   True   True
 七、注释
 -----------------
 
-::
+.. class:: table is-bordered
 
-    ..
-        这个缩进
-        是一个注释。
+    +----------------------------------------+----------------------------------------+
+    | rst 标记                               | 显示                                   |
+    +========================================+========================================+
+    |::                                      |.. class:: cell-3                       |
+    |                                        |                                        |
+    |    注释例子                            |    注释例子                            |
+    |    ..                                  |..                                      |
+    |        这个缩进                        |    这个缩进                            |
+    |        是一个注释。                    |    是一个注释。                        |
+    |                                        |                                        |
+    |        同级依然是注释                  |    同级依然是注释                      |
+    |                                        |                                        |
+    +----------------------------------------+----------------------------------------+
 
-        同级依然是注释
+.. raw:: html
 
-..
-    这个缩进
-    是一个注释。
+    <div class="notification is-success is-light">
+        <span class="block">上方表格右侧单元格的 HTML 源代码中会含有以下注释</span>
+        <button class="block" onclick="javascript: alert(
+            '<!-- '
+            + $('.cell-3')[0].nextSibling.nextSibling.nodeValue
+            + ' -->');">点击验证</button>
 
-    同级依然是注释
+        <pre>
+            &lt;!-- 这个缩进
+            是一个注释。
 
-上方 HTML 源代码中会含有以下注释
+            同级依然是注释 --&gt;
+        </pre>
+    </div>
 
-.. code-block:: html
 
-  <!-- 这个缩进
-  是一个注释。
-
-  同级依然是注释 -->
 
 
 八、超链接
@@ -653,7 +672,5 @@ Markdown 的槽点
 .. [#f1] Emacs：等有空，会完成 Emacs_ 专辑给大家讲解...
 
 
-
-.. _`用 VSCode 预览 reStructureText 文件`: https://kaffa.im/preview-restructuretext-file-in-vscode.html
 .. _Emacs: http://kaffa.im/emacs.html
 .. _`链接`: https://kaffa.im/

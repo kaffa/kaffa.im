@@ -4,31 +4,34 @@
 {% block title %}{{ SITENAME }} - {{ article.title|striptags  }}{% endblock %}
 
 {% block head %}
-  {{ super() }}
+    {{ super() }}
 
-  {% import 'translations.html' as translations with context %}
-  {% if translations.entry_hreflang(article) %}
+    {% import 'translations.html' as translations with context %}
+    {% if translations.entry_hreflang(article) %}
     {{ translations.entry_hreflang(article) }}
-  {% endif %}
+    {% endif %}
 
-  {% if article.description %}
+    {% if article.description %}
     <meta name="description" content="{{article.description}}" />
-  {% endif %}
+    {% endif %}
 
-  {% for tag in article.tags %}
+    {% for tag in article.tags %}
     <meta name="tags" content="{{tag}}" />
-  {% endfor %}
+    {% endfor %}
 
 {% endblock %}
 
 {% block content %}
 <article class="content">
-    <section class="hero"
-             style="background-image: url('{% if article.featured_image %}{{ article.featured_image }}{% else %}/static/img/2023/about-kaffa.png{% endif %}')">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-image: url('{{ featured_image(article) }}')">
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem);"
-            ><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+            ><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="「{{ article.title|striptags }}」的永久链接">{{ article.title }}</a></h2>
             <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
                 {% if article.authors %}
                     {% for author in article.authors %}
@@ -60,12 +63,301 @@
         </span>
         {% endif %}
 
+        {% if article.subject %}
+        <div class="media box mt-5" id="subject">
+            <figure class="media-left">
+                <p class="image" style="max-width: 128px">
+                    <img title="{{ article.subject.title }}" class="book-cover" src="{{ article.subject.cover_image_url }}">
+                </p>
+                <div class="is-divider" data-content="Rating"></div>
+                {% if article.subject.rating %}
+                <p>
+                    评分：<span class="title">{{ article.subject.rating }} </span>
+                </p>
+                <p>
+                    {{ article.subject.rating_count }} 人评分
+                </p>
+                {% endif %}
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <span class="title">{{ article.subject.title }}</span>
+                    {% if article.subject.subtitle %}
+                        <br><span class="Subtitle">{{ article.subject.subtitle }}</span>
+                    {% endif %}
+                    {% if article.subject.orig_title %}
+                        <br><span>{{ article.subject.orig_title }}</span>
+                    {% endif %}
+                    <p>
+                        {% if article.subject.author %}
+                        <strong>
+                            作者：{{ '&nbsp;'.join(article.subject.author) }}
+                        </strong>
+                        {% endif %}
+                        {% if article.subject.translator %}
+                        <strong class="ml-3">
+                            译者：{{ '&nbsp;'.join(article.subject.translator) }}
+                        </strong>
+                        {% endif %}
+                    </p>
+                    <p class="is-size-7">
+                        {{ article.subject.brief }}
+                    </p>
+                    <table class="table is-narrow is-striped is-hoverable is-size-7">
+                        <colgroup>
+                            <col style="width: 6rem" />
+                            <col/>
+                        </colgroup>
+                        {% if article.subject.category == 'book' %}
+                            {% if article.subject.isbn %}
+                            <tr>
+                                <td>ISBN</td>
+                                <td>{{ article.subject.isbn }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.language %}
+                            <tr>
+                                <td>语言</td>
+                                <td>{{ article.subject.language }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.pub_house %}
+                            <tr>
+                                <td>出版社</td>
+                                <td>{{ article.subject.pub_house }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.pub_year %}
+                            <tr>
+                                <td>出版时间</td>
+                                <td>
+                                    {{ article.subject.pub_year }}年
+                                    {% if article.subject.pub_month %}
+                                        {{ article.subject.pub_month }}月
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.binding %}
+                            <tr>
+                                <td>装帧</td>
+                                <td>{{ article.subject.binding }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.price %}
+                            <tr>
+                                <td>定价</td>
+                                <td>{{ article.subject.price }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.isbn %}
+                            <tr>
+                                <td>页数</td>
+                                <td>{{ article.subject.pages }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.series %}
+                            <tr>
+                                <td>系列</td>
+                                <td>{{ article.subject.series }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.imprint %}
+                            <tr>
+                                <td>出品方</td>
+                                <td>{{ article.subject.imprint }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.external_resources %}
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                    {% for link in article.subject.external_resources %}
+                                        <a href="{{ link.url }}" target="_blank">
+                                            {% if 'douban.com/' in link.url %}
+                                                豆瓣
+                                            {% elif 'goodreads.com/' in link.url %}
+                                                Goodreads
+                                            {% else %}
+                                                link.url
+                                            {% endif %}
+                                        </a>&nbsp;
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                            {% endif %}
+                        {% elif article.subject.category == 'movie' %}
+                            {% if article.subject.imdb %}
+                            <tr>
+                                <td>IMDb：</td>
+                                <td>{{ article.subject.imdb }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.director %}
+                            <tr>
+                                <td>导演</td>
+                                <td>{{ '、'.join(article.subject.director) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.playwright %}
+                            <tr>
+                                <td>编剧</td>
+                                <td>{{ '、'.join(article.subject.playwright) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.actor %}
+                            <tr>
+                                <td>主演</td>
+                                <td>{{ '、'.join(article.subject.actor) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.genre %}
+                            <tr>
+                                <td>类型</td>
+                                <td>{{ '、'.join(article.subject.genre) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.area %}
+                            <tr>
+                                <td>制片国家/地区</td>
+                                <td>{{ '、'.join(article.subject.area) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.language %}
+                            <tr>
+                                <td>语言</td>
+                                <td>{{ '、'.join(article.subject.language) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.duration %}
+                            <tr>
+                                <td>片长</td>
+                                <td>{{ article.subject.duration }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.year %}
+                            <tr>
+                                <td>上映时间</td>
+                                <td>{{ article.subject.year }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.other_title %}
+                            <tr>
+                                <td>又名：</td>
+                                <td>{{ '、'.join(article.subject.other_title) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.external_resources %}
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                    {% for link in article.subject.external_resources %}
+                                        <a href="{{ link.url }}" target="_blank">
+                                            {% if 'douban.com/' in link.url %}
+                                                豆瓣
+                                            {% elif 'themoviedb.org/' in link.url %}
+                                                TMDB
+                                            {% elif 'imdb.com/' in link.url %}
+                                                IMDb
+                                            {% else %}
+                                                link.url
+                                            {% endif %}
+                                        </a>&nbsp;
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                            {% endif %}
+                        {% elif article.subject.category == 'music' %}
+                            {% if article.subject.artist %}
+                            <tr>
+                                <td>艺术家</td>
+                                <td>{{ '、'.join(article.subject.artist) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.company %}
+                            <tr>
+                                <td>发行方</td>
+                                <td>{{ '、'.join(article.subject.company) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.release_date %}
+                            <tr>
+                                <td>发行日期</td>
+                                <td>{{ article.subject.release_date }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.duration %}
+                            <tr>
+                                <td>时长</td>
+                                <td>{{ article.subject.duration }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.duration %}
+                            <tr>
+                                <td>流派</td>
+                                <td>{{ article.subject.duration }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.barcode %}
+                            <tr>
+                                <td>条形码</td>
+                                <td>{{ article.subject.barcode }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.other_title %}
+                            <tr>
+                                <td>又名</td>
+                                <td>{{ '、'.join(article.subject.other_title) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.genre %}
+                            <tr>
+                                <td>专辑类型</td>
+                                <td>{{ '、'.join(article.subject.genre) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.duration %}
+                            <tr>
+                                <td>介质</td>
+                                <td>{{ article.subject.duration }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.track_list %}
+                            <tr>
+                                <td>曲目</td>
+                                <td>{{ article.subject.track_list.replace('\n', '<br>') }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if article.subject.external_resources %}
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                    {% for link in article.subject.external_resources %}
+                                        <a href="{{ link.url }}" target="_blank">
+                                            {% if 'douban.com/' in link.url %}
+                                                豆瓣
+                                            {% elif 'spotify.com/' in link.url %}
+                                                Spotify
+                                            {% else %}
+                                                link.url
+                                            {% endif %}
+                                        </a>&nbsp;
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                            {% endif %}
+                        {% endif %}
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
         {{ article.content }}
         <div class="is-divider" data-content="Comments"></div>
         <div id="gitalk-container"></div>
     </section>
 </article>
-
 
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>

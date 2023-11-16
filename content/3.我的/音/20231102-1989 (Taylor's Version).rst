@@ -6,15 +6,14 @@
 :category: music
 :tags: Taylor Swift
 :slug: 1989-taylor-s-version
-:summary: 1989 (Taylor's Version)
-:image: /static/img/2023/about-kaffa.png
+:summary: 有人喜欢 Taylor Swift 的音乐吗？
+:subject_url: https://neodb.social/album/066YTd3vECKvqWfC7gyg46
 
-简介
+
+听后
 ===========
 
-`「1989 (Taylor's Version)」豆瓣`_
+有人喜欢 Taylor Swift 的音乐吗？
 
-
-.. _「1989 (Taylor's Version)」豆瓣: https://music.douban.com/subject/36516028/
 
 
