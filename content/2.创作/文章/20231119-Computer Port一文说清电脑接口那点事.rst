@@ -148,10 +148,10 @@ USB 接口相关的接口标准和连接器
 
 值得一提的是 Thunderbolt 接口，也逐步演化为 USB Type-C 形态：
 
-  1. Thunderbolt-1：Mini DisplayPort 集成
-  2. Thunderbolt-2：Mini DisplayPort 集成
-  3. Thunderbolt-3：USB Type-C 结合，集成供电
-  4. Thunderbolt-4：USB Type-C 结合，集成供电
+1. Thunderbolt-1：Mini DisplayPort 集成
+2. Thunderbolt-2：Mini DisplayPort 集成
+3. Thunderbolt-3：USB Type-C 结合，集成供电
+4. Thunderbolt-4：USB Type-C 结合，集成供电
 
 
 音频
@@ -161,7 +161,9 @@ USB 接口相关的接口标准和连接器
 
 还有一种最老式的三色 AV 线，常用在老式游戏设备和老式电视机的连接上。
 
-.. image:: https://kaffa.im/static/img/2023/av-port.png
+如下图第二排后两张所示：
+
+.. image:: https://kaffa.im/static/img/2023/av-port.jpg
     :alt: AV
 
 
