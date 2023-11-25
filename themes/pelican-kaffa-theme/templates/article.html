@@ -26,7 +26,7 @@
     <section class="hero" style="
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100% auto;
+        background-size: cover;
         background-image: url('{{ featured_image(article) }}')">
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
@@ -64,8 +64,8 @@
         {% endif %}
 
         {% if article.subject %}
-        <div class="media box mt-5" id="subject">
-            <figure class="media-left">
+        <div class="columns box mt-5" id="subject">
+            <figure class="column">
                 <p class="image" style="max-width: 128px">
                     <img title="{{ article.subject.title }}" class="book-cover" src="{{ article.subject.cover_image_url }}">
                 </p>
@@ -79,7 +79,7 @@
                 </p>
                 {% endif %}
             </figure>
-            <div class="media-content">
+            <div class="column">
                 <div class="content">
                     <span class="title">{{ article.subject.title }}</span>
                     {% if article.subject.subtitle %}
