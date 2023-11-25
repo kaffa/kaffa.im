@@ -36,7 +36,11 @@ def generate_uml_image(path, plantuml_code, uml_filename, imgformat, global_plan
     cursor.execute('SELECT * FROM plantuml WHERE name=? and content=?',
                    (uml_filename, content,))
     row = cursor.fetchone()
-    md5 = hashlib.md5(content)
+    md5 = hashlib.md5(content.encode('utf-8')).hexdigest()
+
+    logger.debug(md5)
+    logger.debug(type(md5))
+
     if not row or (row and row[3] != md5):
         cursor.execute("INSERT INTO plantuml(name, content, md5, updated_time) VALUES(?, ?, ?, DATETIME('now','localtime'))",
                        (uml_filename, content, md5))
@@ -44,7 +48,6 @@ def generate_uml_image(path, plantuml_code, uml_filename, imgformat, global_plan
 
     cursor.close()
     conn.close()
-
 
     if os.name == 'posix':
         cmdline = ['plantuml',
