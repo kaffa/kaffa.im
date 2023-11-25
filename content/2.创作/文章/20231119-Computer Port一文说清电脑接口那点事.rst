@@ -138,9 +138,11 @@ USB 接口相关的接口标准和连接器
 支持视频的现代接口主要有HDMI，和后来居上的更开放的接口DP(DisplayPort)，主要版本如下
 
 * DisplayPort / Mini DisplayPort
+
   * DisplayPort 1.2
   * DisplayPort 1.4
 * HDMI
+
   * HDMI 1
   * HDMI 2
 
