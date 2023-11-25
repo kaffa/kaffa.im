@@ -1,0 +1,21 @@
+心理学
+############################
+
+:date: 2023-11-24 12:18
+:author: Kaffa
+:category: book
+:tags: Psychology,心理学
+:slug: psychology-11th-edition
+:summary: 一本非常好的心理学教材
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/4oZAZdJAphRL8Dc7UswdyG
+
+
+读后
+===========
+
+学科基础书，相比 `『心理学与生活』`_ 这本更深入一点，适合心理学研究生。
+
+
+
+.. _『心理学与生活』: https://kaffa.im/psychology-and-life.html

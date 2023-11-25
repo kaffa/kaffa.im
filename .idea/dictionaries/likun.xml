@@ -2,6 +2,8 @@
   <dictionary name="likun">
     <words>
       <w>codehilite</w>
+      <w>enduml</w>
+      <w>imgformat</w>
       <w>kaffa</w>
       <w>kunnect</w>
       <w>octopress</w>
@@ -9,6 +11,7 @@
       <w>sitename</w>
       <w>sitesubtitle</w>
       <w>siteurl</w>
+      <w>startuml</w>
     </words>
   </dictionary>
 </component>

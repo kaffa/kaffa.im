@@ -1,0 +1,20 @@
+思考，快与慢
+############################
+
+:date: 2023-11-24 10:14
+:author: Kaffa
+:category: book
+:tags: Think,思考
+:slug: thinking-fast-and-slow
+:summary: 十年前的书，作者是以色列裔美国心理学家，2002年获得诺贝尔经济学奖。
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/7YR4TBmrSkzTGhiG5IJ3IS
+
+
+读后
+===========
+
+试图提高认知内容不可绕过的底层书。
+
+
+

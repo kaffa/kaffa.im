@@ -1,0 +1,23 @@
+学会提问
+############################
+
+:date: 2023-11-24 10:14
+:author: Kaffa
+:category: book
+:tags: Think,思考
+:slug: asking-the-right-questions-a-guide-to-critical-thinking
+:summary: 泡过UNIX社区的人会读过「提问的艺术」的翻译版，这本学会提问更是一本关于提问和批判性思维的书，难得的是它不断引入最新的关于思考的科学结论。
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/3yy2EuWCn24vmuNLp7KR5s
+
+
+读后
+===========
+
+『学会提问』和 `『思考的艺术』`_ 都属于在几年内可以常读常新的书。
+
+如果 `『思考，快与慢』`_ 读不下去，可以读读本书的最新版。
+
+
+.. _『思考的艺术』: https://kaffa.im/the-art-of-thinking.html
+.. _『思考，快与慢』: https://kaffa.im/thinking-fast-and-slow.html

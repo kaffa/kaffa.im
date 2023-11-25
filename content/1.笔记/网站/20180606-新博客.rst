@@ -1,0 +1,56 @@
+新博客
+#######
+
+:date: 2018-06-06 10:20
+:modified: 2023-11-18 06:51
+:author: Kaffa
+:category: website
+:tags: Pelican, octopress, Markdown, reStructuredText, AsciiDoc
+:slug: about-my-new-blog
+:summary: 我的新博客
+
+关于本博客
+===========
+
+2018-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。
+
+本博客采用的技术
+=================
+
+本博客采用基于 `Python`_ 语言的 `Pelican`_ 库的 `octopress 主题`_ 来生成。
+
+一般来说，静态博客就是一堆按目录存放的 html/css/js 及图片等静态文件组成的页面。在互联网刚兴起的那些年，第一批互联网站长利用 Microsoft FrontPage 和 Adobe Dreamweaver 等开发工具制作网站，随着 Web 的发展，几乎每一种语言都有人编写了专门的库用来维护这样的 `静态站点`_。
+
+我近些年主要用 Python 完成一些代码，因此选用了 Python 语言的 Pelican 库，类似的托管在 Github Pages 的默认库是基于 `Ruby`_ 语言的 `Jekyll`_，而 Pelican 更有优势的地方是除了支持 `Markdown`_，还支持 `reStructuredText`_ 和 `AsciiDoc`_ 格式。
+
+本博客采用的技术的相关链接
+==========================
+
+* `Pelican blog`_
+* `Pelican dev team`_
+* `Pelican plugins`_
+* `Pelican themes`_
+
+和很多静态博客一样也留下 TODO 吧
+================================
+
+1. 采用渐进增强添加国家地理的 `每日一图`_ 作为随机背景
+2. 将 Jekyll 的 `Moon 主题`_ 迁移到 Pelican
+3. 添加一些需要 `Pelican plugins`_
+
+
+.. _Python: https://www.python.org/
+.. _Pelican: https://getpelican.com/
+.. _Ruby: https://www.ruby-lang.org/
+.. _Jekyll: https://jekyllrb.com/
+.. _reStructuredText: http://docutils.sourceforge.net/rst.html
+.. _Markdown: https://daringfireball.net/projects/markdown/
+.. _AsciiDoc: http://www.methods.co.nz/asciidoc/
+.. _Pelican blog: https://blog.getpelican.com/
+.. _Pelican dev team: https://github.com/getpelican
+.. _Pelican plugins: https://github.com/getpelican/pelican-plugins
+.. _Pelican themes: https://github.com/getpelican/pelican-themes
+.. _`静态站点`: https://staticsitegenerators.net/
+.. _`每日一图`: https://www.nationalgeographic.com/photography/photo-of-the-day/?source=sitenavpod
+.. _`Moon 主题`: https://taylantatli.github.io/Moon/
+.. _`octopress 主题`: https://github.com/MrSenko/pelican-octopress-theme

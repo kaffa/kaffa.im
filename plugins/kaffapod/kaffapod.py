@@ -1,8 +1,5 @@
-import codecs
 import json
 import logging
-import re
-import sys
 from pelican import signals
 from pelican.contents import Article, Page
 from pelican.generators import ArticlesGenerator, PagesGenerator
@@ -47,7 +44,7 @@ def fetch_subject(instance):
         conn = sqlite3.connect(r'D:\code\github\kaffa\kaffa.github.io\content\db\0.db')
         cursor = conn.cursor()
 
-        cursor.execute('select * from subject where type=? and uuid=?', (type_, uuid,))
+        cursor.execute('SELECT * FROM subject WHERE type=? and uuid=?', (type_, uuid,))
         row = cursor.fetchone()
         if row:
             subject = row[5]
