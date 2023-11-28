@@ -100,6 +100,12 @@ USB 是一种综合接口，所以电流、视数据频、音频数据、文件�
 .. image:: https://kaffa.im/static/img/2023/usb-micro-a-usb-micro-b.webp
     :alt: USB Micro A and USB Micro B
 
+Wiki 的图上有更多的细节
+
+.. image:: https://kaffa.im/static/img/2023/available-connectors-by-usb-standard.png
+    :alt: Available Connectors by USB Standard
+
+
 USB 接口相关的接口标准和连接器
 ----------------------------------------
 
@@ -189,6 +195,8 @@ USB 接口相关的接口标准和连接器
 
 事物的演化是类似的，而为和跟进者PK、在将饱和的市场中竞争，或者触及垄断，专有技术又会逐步兼容开放技术。
 
+.. image:: https://kaffa.im/static/img/2023/from-different-to-one-usb4.png
+    :alt: From Different To One USB4
 
 如何确定两台设备用什么连接线
 ========================================

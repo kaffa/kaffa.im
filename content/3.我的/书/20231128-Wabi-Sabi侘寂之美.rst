@@ -1,0 +1,24 @@
+Wabi-Sabi侘寂之美
+############################
+
+:date: 2023-11-28 20:12
+:author: Kaffa
+:category: book
+:tags: Wabi-Sabi,侘寂
+:slug: wabi-sabi-for-artists-designers-poets-philosophers
+:summary:
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/7VtFaUrEKlsw3s67cVtCBK
+
+
+读后
+===========
+
+可能是在十年前读到的，MUJI 刚广泛进入中国开店，近几年接触到 Rust 编程语言，说 Rustic 比较接近 Wabi-Sabi。
+
+以前理解的 Wabi-Sabi 美的哲学旨在极简、质朴，现在经理各种产品后，更深的理解是，不可抗拒的生命周期、穿越时间的设计。
+
+
+
+
+
