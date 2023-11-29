@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+        <title>Kaffa.im - 普通的逻辑学我们普通的聊</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZJQN9ZQ47"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0ZJQN9ZQ47');
+    </script>
+    <meta charset="utf-8" />
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican, kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+
+
+
+
+    <meta name="tags" content="逻辑学" />
+    <meta name="tags" content="Logic" />
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <h1 class="navbar-item"><a href="./">
+                        Kaffa.im</a>
+                </h1>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarGlobal">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarGlobal" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">首页</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">笔记</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/reading.html">读书</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">创作</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">我的</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                                <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                                <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">关于</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                                <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                            <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                            Log in
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="has-background-grey-lighter pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('https://kaffa.im/img/2019/logic_child_512.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem);"
+            ><a href="./common-logic-common-talk.html" rel="bookmark" title="「普通的逻辑学我们普通的聊」的永久链接">普通的逻辑学我们普通的聊</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2019-05-18T12:00:00+08:00">2019-05-18 周六</time>
+                最后修改 <time datetime="2019-05-18T12:00:00+08:00">2019-05-18 周六</time>
+            </p>
+        </div>
+    </section>
+
+    
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+        <span>分类:
+            <a class="tag is-medium" href="./category/article.html">文章</a>
+        </span>
+        <span class="ml-2">标签:
+            <a class="tag is-primary is-light is-medium" href="./tag/luo-ji-xue.html">逻辑学</a>
+            <a class="tag is-primary is-light is-medium" href="./tag/logic.html">Logic</a>
+        </span>
+
+
+        <p><img alt="逻辑" src="https://kaffa.im/img/2019/logic_child_512.png" title="逻辑"></p>
+<h2>引</h2>
+<p>无论主动或被动地，人们会观察、参与这个世界的活动，产生思考、形成概念，并通过语言交流观点时，逻辑都成为现代科学和现实世界基础的一半。为什么是一半后面会说。</p>
+<p>拿熟悉的理财投资和交易来说，投资者从主观决策到越来越频繁地讲求逻辑，说明投资者越来越需要委托方对标的品种选择和时机选择提供依据，也说明所需的投资依据更趋于基于客观事实。</p>
+<p>使用 kindle 有 5 年，购买了 8 本与逻辑相关的书，反映出个人对逻辑一直都有兴趣。回想起来，学习逻辑学有关理论有三次，一是中学阅读课外书牛津通识读本《简明逻辑学》，结果是除了看懂了片段，对整体依旧一头雾水；二是大学学习可计算性理论和数理逻辑；三是练习 GRE 写作，现在叫 Analytical Writing，其中对王强讲述的 Argument 常见的几十种逻辑错误。通过对《逻辑学十五讲》的阅读了解到逻辑学的范围和深度比普通人的理解要更宽更深。</p>
+<p>而生活中人们却较少调用逻辑工具来思考问题，理论联系实际成为了理论脱离生活，不经意间当了被收割的韭菜。其中，缺少逻辑常识，不基于事实进行情绪化决策是原因之一。情绪化主观判断是每个人擅长的，但有逻辑的理性决策不是。</p>
+<h2>普通的聊逻辑</h2>
+<p>下面，我将分十点递进地说清对普通人有用的这一半——逻辑常识，并期待读者基于观察事物来思考这个世界。</p>
+<p>一、<strong>逻辑是思考工具</strong>，逻辑学的主题是清晰高效地思考。它是科学，是艺术，也是技能。逻辑学基本原理和人类的理性基本保持一致。</p>
+<p>二、几个基本概念：逻辑基于事物和事件，<strong>事物</strong>是客观真实的，<strong>事件</strong>由事物组成。确认事件的方法，是直接观察，或基于客观的、公开的、有官方发布的材料的间接推理。<strong>事实</strong>可能客观，也可能是人的主观。事实可以通过前一句提到的一手材料确认。<strong>观念</strong>是对客观事物的主观描摹，正确观念忠实地反映对象的客观秩序，错误观念是客观世界的歪曲表达。</p>
+<p>（齐泽克二又四分之三车站：人类依靠象征秩序、从语言演绎出的现实与真实客观世界之间总有一段差距。这两者之间的差距本身勾勒出我们的人性，因为人类是唯一生活在象征秩序之中的群体动物，人类进入象征秩序所留下的创伤内核就是人性的标志。这一创伤内核，也就是拉康所谓的真实。）</p>
+<p>三、事物存在的三种形式：<strong>客观、观念、语言</strong>。我们无法获得客观，因为观察会扰动客观；其次，我们无法通过在人脑中插电线来解读人的观念，因此我们只剩下语言来研究。普通人最大的需求就是使用逻辑学工具识别陈述的真假（术语叫命题），即在现实中追求真实。这要求我们：选择合适的词语表达观念、陈述完整充分、区分主观和客观，避免装高深、避免模糊表达。</p>
+<p>四、逻辑学四大基本原理。这四个原理不证自明，也不能被证明。</p>
+<ul>
+<li>
+<p><strong>同一律</strong>：事物智能是其本身</p>
+</li>
+<li>
+<p><strong>排中律</strong>：非是即否</p>
+</li>
+<li>
+<p><strong>因果律</strong>：事物不是其自身存在的原因。</p>
+</li>
+<li>
+<p><strong>矛盾律</strong>：同一时刻，某个事物不能即是A又是B</p>
+</li>
+</ul>
+<p>这里我们把排中律和充足理由律放在神的存在性问题上试一下：按因果律，神不是神存在的原因，再根据排中律，得到：神存在的原因是无神。</p>
+<p>五、直言命题和普遍命题。普遍命题分为<strong>全称命题</strong>和<strong>特称命题</strong>。直言命题即最有效的直接陈述。全称命题是 All，所有的全部这样的词语开头，特称命题是 Some，一部分一些某些这样的词开头。</p>
+<p>六、逻辑推理的形式是论证。论证是从前提到结论。命题包括主语和谓语，断言即主语和谓语的联接过程。</p>
+<p><strong>简单论证</strong>：且（and）、或（or）、非（not）。我们用T表示真，F表示假。那么；T且F是F，T或F是T，非T是F，非F是T。什么意思呢？我们已知范冰冰是中国人且是个演员。如果有人说范冰冰是中国人但不是演员。我们会说错了。因为我们的逻辑识别出了：T and F is F。后面的也一样，所以说简单论证是大脑的功能。</p>
+<p><strong>条件论证</strong>：如果A，那么B，或如果非B，那么非A。举栗子：如果气温上升到零度以上，那么冰会融化。如果冰没有融化，那么气温不是零度或以上。其实，我们说的很多条件论证都不严谨。比如，这里没有说冰是否在冰箱中。</p>
+<p>七、<strong>三段论</strong>：这是重头戏。因为大家喜欢在此犯逻辑错误。</p>
+<p>逻辑学符号是：每一个 M 都是 P，每个 S 都是 M，所以每一个 S 都是 P
+上述三个分句分别是：大前提、小前提、结论</p>
+<p>换成通俗符号讨论：</p>
+<p>三段论的论证结构是：所有 A -&gt; B，所有 B -&gt; C，那么：所有 A -&gt; C
+大前提是特称的结构：有些 A -&gt; B，所有 B -&gt; C，那么：有些 A -&gt; C，正确
+小前提是特称的反例：所有 A -&gt; B，有些 B -&gt; C，那么：有些 A -&gt; C，错误。很明显A和C不相关。
+小前提是特称的反例：有些 A -&gt; B，有些 B -&gt; C，那么：有些 A -&gt; C，错误。因为，特称不具传递性。感受一下：有些住在深圳的人是深圳人，有些深圳人是不住在深圳的人，那么有些住在深圳的人是不住在深圳的人，违反了排中律。</p>
+<p>再来一个隐蔽的：王撕葱吃汉堡王，美国人吃汉堡王，那么王撕葱是美国人。这个也许明显是个错误，进一步，我们看娱乐新闻中，窦靖童在 KTV 包厢吸烟，没素质的人在 KTV 包厢吸烟，那么窦靖童没素质。这个就不一定了，因为大前提“窦靖童在 KTV 包厢吸烟”可能是特称 some 甚至是 once ，其次，小前提隐藏了“不是每个没素质的都在KTV包厢吸烟”和“没素质的每次都在KTV包厢吸烟”，根据特称不具传递性，这里的特称被刻意隐藏了，我们其实无法得出窦靖童和没素质的人之间的强关联性。</p>
+<p>上述两个例子都是如今为吸引流量的毫无逻辑的娱乐新闻和洗稿公号文中的提取，其中随意就能发现混乱的逻辑。</p>
+<p>八、演绎推理</p>
+<p>从思维方向上看，是指从一般性原理到个别性论断，或者是从一般性原理到另一个一般性原理的推理。例如：
+（1）所有的植物都需要阳光，向日葵是植物。所以，向日葵需要阳光。
+（2）如果谁想活得明白一点，谁就必须拥有足够的资讯；谁都想活得明白一点。
+所以，谁都必须拥有足够的资讯。这里，（1）是从一般怎么样推出个别怎么样，（2）却是从一般怎么样推出一般怎么样。</p>
+<p>九、归纳推理</p>
+<p>归纳推理则是指从个别性例证到一般性原理的推理，或者是从个别性论断到另外的个别性论断的推理。</p>
+<p>我们学过的数学归纳法、概率论等，都是归纳逻辑。我们说“太阳明天依旧会从东方升起”就是归纳推理。我们通过观察每一日和后一日的现象发现这个规律。但有一天我们发现，“流浪地球计划”从备胎转正了。计划开始的第五年，太阳永远停在了地球的地平线上，归纳失效了。投资和交易中，大家叫这种失效为“黑天鹅“。</p>
+<p>相比罗素的火鸡，我更喜欢《三体》中的神枪手，秩序存在于我们能观察的秩序上，也是一种可能。我们以此归纳，再在我们的观测上验证，就变成了发现 10cm 弹孔的二维生物。当然，这里的不可知论是有悖逻辑学实用性的。</p>
+<p>另一个例子是交易K线中的均线：均线是在K线周期上历史报价的计算，人们均线来判断趋势，产生交易信号，但均线的本质就是归纳逻辑，因此一半会失效。因为还有另外一半，人的非理性，广义上说，均线是一种群体催眠。</p>
+<p>十、生活中的非逻辑现象应对</p>
+<ol>
+<li>
+<p><strong>洗脑</strong>：经常用于传销，一般通过否定原有认知和世界观，通过“催眠”的手段向受众灌输新观念，用以实现某些经济利益。生活中的洗脑特点是有批判性、强制性、持续性重复，放大恐惧胁迫，群体与外隔绝。</p>
+</li>
+<li>
+<p><strong>心灵鸡汤</strong>：好比咖啡因和强心剂，进入鸡汤扭曲力场的现实后，人会有一定行动的动力，积极作用是促进行动，副作用在于不客观的认知，不是真实，以此构建的结果缺少稳固的基础。导致，长期使用咖啡因，一旦停止会困的厉害，形成反噬力。</p>
+</li>
+<li>
+<p><strong>怀疑精神和阴谋论</strong>：当具备研究能力，在某领域具备基础知识时，我主张探索而不迷信权威，有怀疑精神。但怀疑过当就会走向阴谋论，于人于己都没有好处。</p>
+</li>
+<li>
+<p><strong>不可知论</strong>：不可知是保守的态度，日常大多数事情，这种态度不是出于严谨，而只是源于内心逃避。</p>
+</li>
+<li>
+<p><strong>盲目乐观</strong>：心理学研究表明，大多数人对自我的感觉都会比其他人好，而这显然不可能。</p>
+</li>
+<li>
+<p><strong>情绪不自知</strong>：情绪联结记忆，促进分泌，影响思维和决策，情绪不自知做的决定会偏激。</p>
+</li>
+<li>
+<p><strong>不对事对人</strong>：围绕事件探讨时，需要针对事件，而不是事件中的人。</p>
+</li>
+<li>
+<p><strong>论证而不是争吵</strong>：我们经常会看到吵得面红耳赤的人，但他们真的是围绕某个观点以事实为基础发表言论，而不是主观观念吗？</p>
+</li>
+<li>
+<p><strong>否定前提</strong>：比如，阿甘在跑步，那么他在移动。因为阿甘没有跑步，所以阿甘没动。否定前提，并不一定推导出否定结论。</p>
+</li>
+<li>
+<p><strong>肯定结论</strong>：还是上面的例子，如果阿甘在移动，那么阿甘在跑步。显然也不成立。</p>
+</li>
+<li>
+<p><strong>中项特制</strong>：形式是，A是B，C是B，那么A是C。举例最多是具备相关性而不是因果的推理，比如，长期吸烟会导致肺癌，康斯坦丁也患了肺癌，那么康斯坦丁也长期吸烟。其实是错的，因为长期吸烟也可能不患肺癌，康斯坦丁也可能有其他不良习惯导致肺癌。</p>
+</li>
+<li>
+<p><strong>偷换概念</strong>：坤坤是小偷，偷了女孩A的心，女孩A的钱包丢了，所以坤坤是小偷。此处语言上虽然都是一个词小偷，但概念偷换了。</p>
+</li>
+<li>
+<p><strong>重复前提</strong>：桌边的十三门徒共进了晚餐，犹大也在餐桌边，所以犹大也吃了晚餐。看似没毛病，但犹大吃了晚餐，是前提的表述，因为十三门徒中包括犹大。这就不是推理结论，是已知，等于没说。</p>
+</li>
+<li>
+<p><strong>虚假假设</strong>：将一套严密的推理过程建立在一个假设上得到一个看似完美的结论，当受众无法判断假设是否为真时，他们因为推理和结论讨好心中的预设，会趋向于相信假设是真。</p>
+</li>
+<li>
+<p><strong>攻击稻草人</strong>：辩论中揪着对手的容易攻击的小瑕疵不放，用以削弱对方的论证。</p>
+</li>
+<li>
+<p><strong>误用俗语</strong>：传统是有适用范围的，有时候本身就是矛盾的。比如：俗话说好马不吃回头草，又说浪子回头金不换！ 说兔子不吃窝边草，又说近水楼台先得月。</p>
+</li>
+<li>
+<p><strong>以牙还牙</strong>：潜在的逻辑是：如果对方错了，那么自己错的不算错。</p>
+</li>
+<li>
+<p><strong>集体决策</strong>：当集体决策时，可能变成集体不决策。因此得到的结论反而没有用到集体智慧变得更差。</p>
+</li>
+<li>
+<p><strong>迷信权威</strong>：前文已谈到，不再冗述。</p>
+</li>
+<li>
+<p><strong>强制量化</strong>：很多美德无法量化，但被要求强制量化来衡量，比如眼泪多少钱一斤，善心面积有多大。不宜量化评估人类的真善美。</p>
+</li>
+</ol>
+<p>等等，虽然只列举了20条，但生活中还会遇到譬如面对事实时打哈哈的人，但被指责时，使用无力反驳等词语，甚至以眼泪博取同情而获得情绪优势获得辩论优势的奇葩。这些都是非逻辑。</p>
+<h2>结</h2>
+<p>不知这篇小文是否我对逻辑的探索和观念说清了，我希望读者做个能驯服情绪和逻辑的好骑手，让两者协调为目标服务。剩下最后的建议就是：请把学到的逻辑用于求真。</p>
+<p>感谢阅读。</p>
+        <div class="is-divider" data-content="Comments"></div>
+        <div id="gitalk-container"></div>
+    </section>
+</article>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '47c6091c4039fb3df197',
+    clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+  });
+  gitalk.render('gitalk-container');
+</script>
+    </main>
+    <footer class="footer is-max-widescreen">
+        <div class="content has-text-centered">
+            版权所有 &copy; 2018-2013 <strong><a href="https://kaffa.im">Kaffa.im</a></strong> 诚心良品 开放质造
+            <p>
+                本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+            </p>
+        </div>
+    </footer>
+
+    <div id="modal-project" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+              <p>项目明细在建设中...</p>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /*====================
+              Modal
+             ====================*/
+
+            // Functions to open and close a modal
+            function openModal($el) {
+                $el.classList.add('is-active');
+            }
+
+            function closeModal($el) {
+                $el.classList.remove('is-active');
+            }
+
+            function closeAllModals() {
+            (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                    closeModal($modal);
+                });
+            }
+
+            // Add a click event on buttons to open a specific modal
+            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                const modal = $trigger.dataset.target;
+                const $target = document.getElementById(modal);
+                $trigger.addEventListener('click', () => {
+                     openModal($target);
+                });
+            });
+
+            // Add a click event on various child elements to close the parent modal
+            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                const $target = $close.closest('.modal');
+
+                $close.addEventListener('click', () => {
+                    closeModal($target);
+                });
+            });
+
+            // Add a keyboard event to close all modals
+            document.addEventListener('keydown', (event) => {
+                if (event.code === 'Escape') {
+                    closeAllModals();
+                }
+            });
+
+            /*====================
+              navbar
+             ====================*/
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+            /*====================
+              Projects
+             ====================*/
+            const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+            $panelTab.forEach(el => {
+                el.addEventListener('click', () => {
+                    const $siblings = el.parentNode.children;
+                    for (let i = 0; i < $siblings.length; i++) {
+                        $siblings[i].classList.remove('is-active');
+                    }
+                    el.classList.add('is-active');
+
+                    if (el.title == 'all') {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.remove("is-hidden");
+                        }
+                    } else {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.add("is-hidden");
+                        }
+
+                        const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                        for (let i = 0; i < $targetPanelBlock.length; i++) {
+                            $targetPanelBlock[i].classList.remove("is-hidden");
+                        }
+                    }
+                });
+            });
+
+            /*====================
+              Email
+             ====================*/
+            const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+            $email.forEach(el => {
+                el.innerText = ['admin', '@', 'kaffa.im'].join('');
+            });
+
+            /*====================
+              Table
+            ====================*/
+            var altKeyPressed = false;
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Alt' && !altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = true;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'table-row';
+                    });
+                }
+            });
+
+            document.addEventListener('keyup', function(event) {
+                if (event.key === 'Alt' && altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = false;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

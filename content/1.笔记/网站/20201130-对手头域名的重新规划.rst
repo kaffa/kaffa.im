@@ -1,0 +1,37 @@
+对手头几个域名的重新规划
+##################################################################
+
+:date: 2020-11-30 12:00
+:author: Kaffa
+:category: website
+:tags: 
+:slug: site-planning-about-my-domains
+:summary: 对手头几个域名的重新规划
+
+
+前期对手头的项目进行了结项，计划在今年仅剩的一个月里对半年来还处于草稿状态的内容进行输出，内容分别会发布到目前拥有的几个域名上：
+
+kaffa.im
+  1. 个人随笔博客
+
+t**e.com
+  1. 继续增加文章数量
+  2. 选择 Hugo_ 中单栏布局的模版对页面样式进行改进
+  3. 增加 ee 的 forum
+  4. 考虑增加 space（创意来自印象笔记）
+
+a**o.cn
+  1. 将内容备份到本地后，逐步扩充到 a**o.com
+  2. blog 从 wordpress 置为 texttile，作为新技术的 demo 和 playground
+  3. 增加 item.a**o.cn
+  4. 在 item.a**o.cn 录入 ee
+
+t*t.com
+  1. 投资笔记
+
+coffees.app
+  1. 挂 `dan.com`_ 卖出
+
+
+.. _`Hugo`: https://gohugo.io/
+.. _`dan.com`: https://www.dan.com/

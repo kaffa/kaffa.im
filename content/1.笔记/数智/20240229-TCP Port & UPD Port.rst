@@ -2,7 +2,7 @@ TCP / UPD Port
 ############################################################
 :date: 2024-02-29 12:00
 :author: Kaffa
-:category: article
+:category: digital
 :tags: TCP Port, UPD Port
 :slug: tcp-port-and-upd-port
 :summary: 等闰的那天再填坑。

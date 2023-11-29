@@ -172,7 +172,13 @@
                     {% if article.subject -%}
                     <div class="media-right">
                         <figure class="image" style="max-width: 96px">
-                            <img src="{{ article.subject.cover_image_url }}" alt="avatar">
+                            <img src="{{ article.subject.cover_image_url }}" alt="cover_image">
+                        </figure>
+                    </div>
+                    {%- elif article.image and article.image != '/static/img/2023/about-kaffa.png' -%}
+                    <div class="media-right">
+                        <figure class="image" style="max-width: 96px">
+                            <img src="{{ article.image }}" alt="cover_image">
                         </figure>
                     </div>
                     {%- endif %}

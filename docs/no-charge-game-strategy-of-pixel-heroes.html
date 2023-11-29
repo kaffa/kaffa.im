@@ -120,7 +120,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('/static/img/2023/about-kaffa.png')">
+        background-image: url('https://kaffa.im/static/img/2023/pixel-heroes.jpg')">
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem);"
@@ -147,25 +147,25 @@
         <div class="section" id="section-2">
 <h2>游戏背景</h2>
 <img alt="「浮空秘境」，又名「马赛克英雄」" src="https://kaffa.im/static/img/2023/pixel-heroes.jpg" />
-<p>「浮空秘境」是一个像素风的回合制卡牌游戏，公司是厦门魔兔网络科技有限公司。据说员工并不多，出海很顺利，我是在 TapTap 中获悉的，苹果App Store 中也有推荐。</p>
+<p>「浮空秘境」是一个像素风的回合制卡牌游戏，开发的公司是厦门魔兔网络科技有限公司，据说员工并不多，但游戏出海很顺利。我是在 TapTap 中获悉的，苹果App Store 中也有推荐。</p>
 <p>本游戏女性向定位，角色服装投宅男所好，美术和神话背景还可以虽然有点克苏鲁。许多节日活动的内嵌小游戏有点意思，比如，商人投资(根据官方消息和小道消息决定15轮中对商品的买卖)、丢星星(比反应速度)、类似羊了个羊的三消、类1024。其余也没有什么惊喜，总的来说就是换皮卡牌，升级卡等级，季节活动钻石永远不够。</p>
 <p>如果可以对制作方说一句话，我觉得英雄王「吉尔」的那句就挺不错：你的小把戏在我眼里毫无意义。</p>
 </div>
 <div class="section" id="section-3">
 <h2>主要设定</h2>
 <p>游戏的主要是回合制PK，玩家选六个英雄按自身设定和属性进行PK，英雄按获得容易度分为：神话、传说、史诗。</p>
-<p>英雄按所属阵营分为：圣域、暗裔、联盟、蛮荒、森灵。其中圣暗和联蛮森在上阵时，对生命和攻击的加成值不同。</p>
-<p>决定PK的是英雄的生命和攻击，其差异主要由级别决定，然后是上阵的英雄按阵营的加成，还有付费的皮肤加成。</p>
+<p>英雄按所属阵营分为：圣域、暗裔、联盟、蛮荒、森灵。其中圣暗和联蛮森在上阵时，对生命和攻击的加成值不同，然后是上阵的英雄按阵营的加成，光暗的特殊技能，还有付费皮肤加成，称号的累加加成。</p>
+<p>决定PK的主因是英雄的生命和攻击，其差异主要由级别决定，其次是6只英雄中每种的数量，查下表后进行累加。</p>
 <table border="1" class="table is-bordered docutils">
 <colgroup>
-<col width="38%" />
-<col width="38%" />
-<col width="13%" />
-<col width="13%" />
+<col width="34%" />
+<col width="22%" />
+<col width="22%" />
+<col width="22%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head">联盟、蛮荒、森灵</th>
-<th class="head">圣域、暗裔</th>
+<tr><th class="head">联盟 or 蛮荒 or 森灵</th>
+<th class="head">圣域 or 暗裔</th>
 <th class="head">生命</th>
 <th class="head">攻击</th>
 </tr>
@@ -228,9 +228,183 @@
 </tr>
 </tbody>
 </table>
-<p>比如，根据上述表格，6名圣暗vs6名联蛮森时，生命超6%，攻击超4%；皮肤6%，加成10%；这些是氪金可以带来的，还有称号加成。</p>
-<p>当然，游戏还有很多细节的升级，英雄的技能等等。</p>
-<p>总的来说，游戏是比较有趣的，要获得实力，如果不花时间，那只有氪金。氪金可以获得更多的圣域、暗裔英雄，获得加成更高的皮肤。如果需要6位英雄的顶级皮肤，则需要 328 × 6 = 1968 元，这个价格买台 iPad 9 似乎更香。</p>
+<p>对上述英雄数量进行倒排举例，这里列举了大多情况。</p>
+<table border="1" class="table is-bordered docutils">
+<colgroup>
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="30%" />
+<col width="30%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">圣域</th>
+<th class="head">暗裔</th>
+<th class="head">联盟</th>
+<th class="head">蛮荒</th>
+<th class="head">森灵</th>
+<th class="head">生命</th>
+<th class="head">攻击</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>6</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>36%</td>
+<td>24%</td>
+</tr>
+<tr><td>5</td>
+<td>1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>33% = 28% +  5%</td>
+<td>23% = 20% +  3%</td>
+</tr>
+<tr><td>4</td>
+<td>2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>30% = 20% + 10%</td>
+<td>23% = 16% +  7%</td>
+</tr>
+<tr><td>3</td>
+<td>3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>30% = 15% + 15%</td>
+<td>22% = 11% + 11%</td>
+</tr>
+<tr><td>2</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>30% = 10% + 20%</td>
+<td>23% =  7% + 16%</td>
+</tr>
+<tr><td>1</td>
+<td>5</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>33% =  5% + 28%</td>
+<td>23% =  3% + 20%</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>6</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>36%</td>
+<td>24%</td>
+</tr>
+<tr><td>5</td>
+<td>&nbsp;</td>
+<td>1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>28% = 28% +  0%</td>
+<td>20% = 20% +  0%</td>
+</tr>
+<tr><td>4</td>
+<td>&nbsp;</td>
+<td>2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>26% = 20% +  6%</td>
+<td>20% = 16% +  4%</td>
+</tr>
+<tr><td>3</td>
+<td>&nbsp;</td>
+<td>3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>25% = 15% + 10%</td>
+<td>18% = 11% +  7%</td>
+</tr>
+<tr><td>2</td>
+<td>&nbsp;</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>25% = 10% + 15%</td>
+<td>17% =  7% + 10%</td>
+</tr>
+<tr><td>1</td>
+<td>&nbsp;</td>
+<td>5</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>27% =  5% + 22%</td>
+<td>19% =  3% + 16%</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>6</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>30%</td>
+<td>20%</td>
+</tr>
+<tr><td>1</td>
+<td>1</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>30% =  5% +  5% + 20%</td>
+<td>23% =  3% +  3% + 16%</td>
+</tr>
+<tr><td>1</td>
+<td>2</td>
+<td>3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>25% =  5% + 10% + 10%</td>
+<td>17% =  3% +  7% + 7%</td>
+</tr>
+<tr><td>2</td>
+<td>1</td>
+<td>3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>25% = 10% +  5% + 10%</td>
+<td>17% =   7% + 3% + 7%</td>
+</tr>
+<tr><td>2</td>
+<td>2</td>
+<td>2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>26% = 10% + 10% +  6%</td>
+<td>18% =   7% + 7% + 4%</td>
+</tr>
+</tbody>
+</table>
+<p>上述表格最后一行有点意思的是，6名联蛮森英雄vs51圣暗组合最多只有3%的生命和攻击GAP，vs42圣暗组合只剩3%的攻击GAP，vs411圣暗组合还可以持平，这也是零氪玩家在氪金玩家还未养成10星圣暗队时的最大机会点了。</p>
+<p><strong>如果是这种思路，还是可以选择有追击优势的「安纳塔」的阵营，加上「贡露」「庞克」，换点「迦楼罗」「莫奈」「洛洛伊」，再肝出几套服装获得少许加成。</strong></p>
+<p>然而，时间拉长了，也没有什么意外，根据上述表格，最重要的参数无疑就是圣暗数量，全圣或全暗，简单来说就是氪金 vs 不氪金：</p>
+<ul class="simple">
+<li>6联 vs 6圣，生命差6%，攻击差4%</li>
+<li>6联 vs 5圣1暗/1圣5暗，生命差3%，攻击差3%</li>
+<li>6联 vs 4圣2暗/2圣4暗，攻击差3%</li>
+<li>6联 vs 3圣3暗，攻击差2%</li>
+<li>6联 vs 1圣1暗4联，攻击差3%</li>
+<li>6联 vs 2圣4联/2暗4联，领先</li>
+<li>6联 vs 1圣2暗3联/2圣1暗3联 + 3联，领先</li>
+<li>6联 vs 2圣2暗2联，领先</li>
+</ul>
+<p>这里的新发现是：42全圣暗，和4联1圣1暗，生命和攻击持平。这个仿佛在说，「芙蕾雅」配「卡戎」或「芙蕾雅」配「塔纳托斯」。</p>
+<p>当然，游戏还有很多其他数值细节的升级，英雄的技能组合等等，但技能生克关系并未明示，不好比较，只知道物连、法连、强袭比较稀有。</p>
+<p>总的来说，游戏是比较有趣的，要获得实力，如果不花时间，那只有氪金。氪金可以获得更多的圣域、暗裔英雄，获得加成更高的皮肤。</p>
+<p>如果需要6位英雄的顶级皮肤，则需要 328 × 6 = 1968 元，这个价格买台 iPad 9 似乎更香。</p>
 </div>
 <div class="section" id="section-4">
 <h2>游戏策略</h2>

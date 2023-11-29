@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+        <title>Kaffa.im - macOS 的前世今生及访达中拷贝文件的路径的方法</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZJQN9ZQ47"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0ZJQN9ZQ47');
+    </script>
+    <meta charset="utf-8" />
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican, kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+
+
+
+
+    <meta name="tags" content="macOS" />
+    <meta name="tags" content="macOS History" />
+    <meta name="tags" content="Machintosh" />
+    <meta name="tags" content="BeOS" />
+    <meta name="tags" content="NeXT" />
+    <meta name="tags" content="OPENSTEP" />
+    <meta name="tags" content="Mach" />
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <h1 class="navbar-item"><a href="./">
+                        Kaffa.im</a>
+                </h1>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarGlobal">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarGlobal" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">首页</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">笔记</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/reading.html">读书</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">创作</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">我的</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                                <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                                <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">关于</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                                <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                            <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                            Log in
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="has-background-grey-lighter pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('https://kaffa.im/img/2019/macos.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem);"
+            ><a href="./macos-history-and-copy-file-path-in-finder-app.html" rel="bookmark" title="「macOS 的前世今生及访达中拷贝文件的路径的方法」的永久链接">macOS 的前世今生及访达中拷贝文件的路径的方法</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2019-06-09T05:04:00+08:00">2019-06-09 周日</time>
+            </p>
+        </div>
+    </section>
+
+    
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+        <span>分类:
+            <a class="tag is-medium" href="./category/digital.html">数智</a>
+        </span>
+        <span class="ml-2">标签:
+            <a class="tag is-primary is-light is-medium" href="./tag/macos.html">macOS</a>
+            <a class="tag is-primary is-light is-medium" href="./tag/macos-history.html">macOS History</a>
+            <a class="tag is-primary is-light is-medium" href="./tag/machintosh.html">Machintosh</a>
+            <a class="tag is-primary is-light is-medium" href="./tag/beos.html">BeOS</a>
+            <a class="tag is-primary is-light is-medium" href="./tag/next.html">NeXT</a>
+            <a class="tag is-primary is-light is-medium" href="./tag/openstep.html">OPENSTEP</a>
+            <a class="tag is-primary is-light is-medium" href="./tag/mach.html">Mach</a>
+        </span>
+
+
+        <img alt="MacOS" src="https://kaffa.im/img/2019/macos.png" />
+<div class="section" id="macos-1">
+<h2>为什么写 macOS 历史</h2>
+<p>题记：想介绍几种在访达（Finder）中拷贝文件路径的方法，但一小时后不小心按下浏览器回退，再写便就此篇加上了一些 macOS 的历史。</p>
+<p>为什么写？因为 macOS 的历史，也是现代操作系统发展史，与大学书本中的内容有距离；另一方面，历史由事件组成，软件发展史中包含了软件功能竞争的关键点。</p>
+<p>操作系统即 Operating System，简称 OS，是一类让人使用机器的人机交互软件。如今的 Windows、Linux、Unix、iOS、Android、Chrome OS，及最近华为公司的鸿蒙，都是操作系统，它们有的用在桌面，有的用在服务器，有的适用上网本，有的是为移动手机而定制。</p>
+<p>macOS 是苹果公司的桌面操作系统，很多果粉更加熟悉的名字其实是 Mac OS X，就在一周前苹果公司 iPad OS 发布了，这样和 iOS、tvOS、watchOS 一起，苹果公司为其产品线 iPhone、iPad、Mac、TV、Watch 分别定制了操作系统。</p>
+<p>虽然苹果 Mac OS 和微软 Windows 一样都是商用闭源操作系统，其历史资料不易查找，但我们还是试图着墨追溯这段有趣而悠久的软件史。</p>
+</div>
+<div class="section" id="section-1">
+<h2>源起和发展脉络</h2>
+<p>1976 年，我们的水果厂牌诞生，这家 Logo 被图灵咬缺一口公司，字母表排序非常靠前。</p>
+<p>1984 年，苹果 Macintosh 电脑诞生，20 世纪 80 年代其实都是 Macintosh System 6 的天下，随后开发 Macintosh 的苹果雇员以头脑风暴的形式为其路径定了几个代号：Blue、Pink、Red，Blue 即 System 7，Pink 未完全发布，Red 是比 Pink 更 Pink 的高级系统，其命运接着表述。</p>
+<p>其时，Bill Gates 的微软开发了 Windows 和 Win32 API，敌方已经进入了战场。Blue、Pink 对比不断升级的 Windows 95 略显式微。为兼容 x86 架构，Apple 与 Novell 研发了兼容 x86 的 Star Trek，但由于苹果系统架构路线定为 PowerPC 架构，且硬件供应商不太支持，这个系统最终没有发布。</p>
+<p>直到 2005 年以后，Apple 调整为 x86 路线，才借 Darwin/x86 研发了存活至今还大放异彩的灵魂产品 iMac 与 MacBook Pro。</p>
+<p>Red 就是其后的 Raptor，吸纳了 Star Trek 基因，但预算不足，Raptor 也夭折了。</p>
+<p>其实，苹果公司早在 1994 年初就宣布，将用 10 年的软件经验研发 Macintosh 第 8 代，系统命名为 Mac OS 8，代号 Copland，这个系统一部分的使命是为迎战日益增长的 Windows 和 Internet Explorer，但结果我们都已知晓，“这一战我无遗憾”，按下不表。</p>
+</div>
+<div class="section" id="section-2">
+<h2>首战</h2>
+<p>Copland 是基于 RISC 的 PowerPC 架构，集先进技术于一身，包括 ColorSync、OpenDoc、Power 系，Quick 系软件，还实现了自定义主题，甚至是与 Dos 和 Windows 的互操作、网络协议栈。此项目的干系人们对其预期包括：</p>
+<ul class="simple">
+<li>方便硬件驱动开发的硬件抽象层 HSL</li>
+<li>微内核 NuKernel</li>
+<li>IO、网络、文件系统作为服务运行于微内核之上</li>
+<li>抢占式多任务，对标 Windows NT</li>
+<li>内存保护和虚拟内存，对标 Windows NT</li>
+<li>灵活的系统扩展机制</li>
+<li>元数据及文件内容搜索</li>
+<li>热升级</li>
+</ul>
+<p>但期望被迫终止于软件工程方法的滞后，各方的软件难以集成，学院派 Unix 内核人才都被微软挖走去做 Windows NT 了，Copland 需求中内存保护未能实现。1996 年，Copland 项目中止。</p>
+<p>1997 年出于商业计划，苹果公司发布了 System 7.6，重命名为 Mac OS 7.6，但缺少犀利的操作系统，无法对敌微软的 Windows 系统，成为苹果的阿喀琉斯之伤。</p>
+</div>
+<div class="section" id="beos">
+<h2>BeOS</h2>
+<p>管理层失去了方向，苹果甚至考虑过和微软合作在 Windows 之上开发 Apple OS，还考虑过 Sun Solaris 和 BeOS，这里 BeOS 也出自于人才辈出的苹果前雇员，我为什么要用也？</p>
+<p>虽然 BeOS 的天才们实现了内存保护和抢占式多任务，它擅长多媒体，还实现了BeFS，支持文件元数据，甚至支持 PowerPC 架构，但关键的打印和文件共享功能被遗忘了，软件方法论上叫做未完全分解权重需求且未排优先级。随后 BeOS 被大家耳熟能详的 Palm 公司收购，结束了它短暂的历史。</p>
+</div>
+<div class="section" id="next-openstep">
+<h2>NeXT OPENSTEP</h2>
+<p>也可能商务谈判就差那么一分钱，Apple 最终没有完成收购。其中的缘由无从考证，但有一点确定的是，Apple 的管理层发现了另一个选项，Apple 前任帮主 Steve Jobs 的 NeXT 公司的 OPENSTEP，一种已被企业市场认可的操作系统。</p>
+<p>1997 年 2 月 4 日，Apple 用 4 亿多刀收购了 NeXT，帮主重回 Apple，从其被辞算起，已过去了 12 年。值得注意的是，苹果的收获还包括一项技术资产——大家熟悉的 Objective-C 和 NeXT 的“科技x艺术”致胜原力——工业设计师和硬件工厂。</p>
+<p>Objective-C 这种像 C 又像 SmartTalk 的语言不同于 Windows 背后的 C++，Objective-C 更简单。笔者在学习 GUN GCC 下的 Objective-C 时，还玩过一阵 OPENSTEP，它具有一个顶部的 Docker，一个多级菜单和一系列丰富的应用程序，有NFS、还具有 Unix 命令行界面、CD多媒体系统，邮件、辞典、拼写检查、支持网络的文件浏览器，底层的面向对象的驱动程序框架，以及文件内容搜索、经典的拖放等操作，开发程序 Project Builder 和 Interface Builder，Application Kit、Music Kit、Sound Kit 开发包，是不是像是看到了 Xcode 和现代 macOS 的雏形？</p>
+<p>很多人都说 macOS 是 BSD 内核，没错！因为 NEXTSTEP 0.8 基于 Mach 2.0 和 BSD 4.3，而现代 Mac OX 是原 Macintosh 技术遗产迁移到 NEXTSTEP 实现的。</p>
+</div>
+<div class="section" id="mach">
+<h2>微内核 Mach</h2>
+<p>NEXTSTEP 的商业卖点微内核其实在当时并未完善，但其中 Mach 微内核无疑是关键。微内核 Mach 并不涉及操作系统的文件系统、网络和 IO，是硬件和固件之上最基础的操作系统核心。</p>
+<p>Mach 的故事开始于 1975 年，比苹果厂牌早一年出现，第一版叫做 RIG，因为缺少内存分页等明显缺点，RIG 失败了，1981 年 4 月，RIG 主要开发者 Richard Rashid 开发了 Accent 解决了 RIG 的缺点，他后加入了 Microsoft Research。熟悉历史的人会把 RIG 叫做 Mach 0.8，Accent 叫做 Mach 0.9。</p>
+<p>1984 年，Mach 的主要开发目标是微内核和兼容 Unix，于是 Mach 使用了 BSD 4.3 作为起点。几个基本概念被提出：任务（Task）、线程（Thread）、端口（Port）、消息（Message），以及内存对象（Memory Object）用以实现物理到虚拟内存的分页映射，后续 FreeBSD 的内存体系结构即基于此。</p>
+<p>最终，微内核真正意义上的实现是在 1996 年 7 月，也就是 OPENSTEP 4.0，这也是两年后 OPENSTEP 4.2 被苹果收购的原因之一。而 Mach 主要开发者 Avie 成为了苹果的首席软件技术官。</p>
+<p>另一个需要解释的是基于 Linux 1.3 的 MkLinux 内核，MkLinux 内核作为单个 Mach 任务运行，和BSD 部分驻留在相同的地址空间中（应用程序空间）。</p>
+<p>直至 Mach Ten，Mac OS X 整合了 Mach、BSD、Macintosh 技术，虽然现代 Macintosh 是协作式多任务，但在 Mach Ten 中，Mac OS 是本地一等公民，而 Unix 运行在 UVM 虚拟机中，保持抢占式多任务执行 C 语言库、POSIX 子系统、BSD 网络栈、文件系统、RPC、NFS、X Windows。</p>
+</div>
+<div class="section" id="section-3">
+<h2>大融合</h2>
+<p>这就是 OPENSTEP 被作为现代 Mac OS 之前发生的事情，随后 NeXT 被引入苹果重新制订战略的故事。苹果公司收购 NeXT 的 OPENSTEP 可谓神来之笔，我们说那是 Mac OS 前世发生的一些事，下面即将讲述 NeXT 技术如何逐步进入 Apple 进化为现代 Mac OS 的底层。</p>
+<p>现代公司收购很多都失败了，比如 Microsoft 和 Nokia，其实很类似 Apple 收购 NeXT，前者多金，后者有出色的软件硬件，收购在预期上可实现双赢。但微软在手机战略上失败了，而 搭载苹果 Mac OS 的 Macintosh 虽然依然是小众，但其工业设计出色，是口碑绝顶的产品，在桌面市场的份额是逐步增加的。</p>
+<p>说回收购以后，苹果制订了两条腿走路的战略：针对消费者市场的 Mac OS 7.6 改进和针对企业服务市场的基于 NeXT 技术的高端操作系统 Rhapsody，代号 Copland（8）、Gershwin（9）。Copland 和 Gershwin 这两个单词来自美国本土音乐，后者正是《蓝色狂想曲》的作曲家，古典融合爵士元素，象征着 Macintosh 与 NeXT 的大融合。</p>
+<p>苹果操作系统的 7.6 版本是第一个称之为 Mac OS 的版本，它是一个32位兼容机系统，也是一个对敌 Windows 95 和 Internet 技术的版本。它在多方面得到了增强，比如：</p>
+<ul class="simple">
+<li>内存管理</li>
+<li>程序启动</li>
+<li>文件管理器缓存</li>
+<li>QuickTime</li>
+<li>完整的 TCP/IP 协议栈</li>
+<li>PPP（点对点协议）</li>
+<li>远程访问</li>
+<li>Mac OS 8</li>
+<li>Mac OS 8 内部版本号是 7.7，它包括：</li>
+</ul>
+<p>多线程的 Finder，允许同时操作多个文件。本文要吐槽的操作方式可能就是这个时代引入的，那时的鼠标的上半部分只有一枚按键，即现在的鼠标左键，当按住键盘 control 键，单击时，系统会弹出一个现在的右键菜单，这个操作方式现在依然适用，这说明这部分代码的运行机制依然没有变化。
+免费的微软 Internet Explorer 和 Netscape Navigator 浏览器，那时候还是一个大多软件要卖钱的时代，免费和捆绑策略让微软获得了竞争优势。
+个人 Web 服务器，在个人站长时代，笔者也就是在那个时代走上 IT 之路的。
+内置 Java，Java 语言确实是免费而久经考验。
+电源管理、USB 等硬件增强。</p>
+</div>
+<div class="section" id="mac-os-9">
+<h2>Mac OS 9</h2>
+<p>Mac OS 9 在 1999 年发布，它实现了：</p>
+<ul class="simple">
+<li>操作系统在线升级</li>
+<li>Keychain，即大家常用的钥匙串，如果增强一下，就没有 1Password 啥事了。</li>
+<li>Carbon API，70% 与旧 Mac OS API 兼容，这是一次重要的梳理。</li>
+</ul>
+<p>2001 年 Mac OS 发布了 9.2.2，这是最后一个经典 Mac OS 版本，我们把 Mac OS 此版本以前的版本叫做 Mac OS Classic，即 Mac OS 的前世。</p>
+</div>
+<div class="section" id="rhapsody">
+<h2>Rhapsody</h2>
+<p>再来讲 Mac OS X 这条线。我把 Mac OS X 版本看作它的今生，这一切开始于 1997 年 WWDC，苹果演示了 Rhapsody 系统。它包括：</p>
+<ul class="simple">
+<li>内核是 Mach 和 BSD 4.3</li>
+<li>Blue Box：即 Mac OS 兼容子系统，演化为 Carbon API</li>
+<li>Yellow Box：OPENSTEP 技术资产，演化为 Cocoa API</li>
+<li>Java 虚拟机</li>
+<li>基于 Display PostScript 的窗口系统</li>
+<li>用户界面类似原 Mac OS，但也有些像 OPENSTEP</li>
+</ul>
+<p>在最新的 WWDC App 上，可追溯的历史只到 2014 年，真希望苹果能把早年的 WWDC 也放上来。上述技术中，Blue Box 应该有人用过，即 Classic Startup.app 中可以运行，也可能有人玩过 Yellow Box，可以安装在 Windows 上。</p>
+<p>Rhapsody 包含 DR1 和 DR2 两个版本，DR2 吸纳了 FreeBSD、NetBSD 的代码，并将其中的分支开源为 Darwin 项目，这个举措让苹果和开源社区之间获得了双赢，现在你可以在 GNU Darwin 找到它，并可下载源码，另一个 Open Darwin 项目如今已关闭。Rhapsody 就像一个超新星爆发般， 1999 年 3 月以 Mach 3 为基础推出了 Mac OS X Server 1，就是改名的 Rhapsody DR3。</p>
+</div>
+<div class="section" id="mac-os-x-beta">
+<h2>Mac OS X Beta</h2>
+<p>此时的 Apple Mac OS X Public Beta 离正式与公众见面还有 3 年的路程，中间包括 DP1、DP2、DP3、DP4 四个迭代（DP 即 开发者预览版）。</p>
+<ul class="simple">
+<li>DP1：这是一个 Carbon API 梳理版本，且为了过度，需要实现新旧两个目标平台的编译。</li>
+<li>DP2：引入了更多 API，如 BSD、Carbon、Classic、Cocoa 和 Java。从后面的发展来看，Carbon 有的，Cocoa 终会逐渐取代，但马戏团后台的升级不是一刀完成，而是保持前台不变的前提下，后台一直在工作。苹果公司精通渐进式演化之道。</li>
+<li>DP3：后台功能强了，但根据反馈，用户不满意界面，因此此版本推出了 Aqua 用户界面，就是现在大家熟悉的红、黄、绿三色交通灯窗口，水的元素，以及图标扩大为 128 * 128。</li>
+<li>DP4：将 Finder.app 拆分为 Desktop.app 和 Docker.app，并引入了第一次引入了系统设置，它提供一个用户界面来让用户调节系统的很多选项。还包括 Docker 的左右分栏和拖离云朵动画、OpenGL、和新的集成开发环境。</li>
+</ul>
+<p>公众对不断透露的改进消息非常兴奋，但能接触的第一版本需要约 200 多元购买的。这个版本还通过 OpenDarwin 大量移植了开源资源，这也是很多开发人员觉得 Apple 比 Windows 更适合开发的原因。</p>
+</div>
+<div class="section" id="mac-os-x">
+<h2>Mac OS X</h2>
+<p>Mac OS X 10.0 可以说是 Apple 桌面操作系统历史上最高级的发布，它代表着 Apple 公司对研发资源的了解和对软件工程管理的进步。同所有软件一样，Mac OS 经历了 3-5 个小版本才逐渐完善，分别是：</p>
+<ul class="simple">
+<li>Mac OS X 10.0 Cheetah</li>
+<li>Mac OS X 10.1 Puma</li>
+<li>Mac OS X 10.2 Jaguar</li>
+<li>Mac OS X 10.3 Panther</li>
+<li>Mac OS X 10.4 Tiger</li>
+<li>Mac OS X 10.5 Leopard</li>
+<li>Mac OS X 10.6 Snow Leopard</li>
+<li>Mac OS X 10.7 Lion</li>
+<li>OS X 10.8 Mountain Lion</li>
+<li>OS X 10.9 Mavericks</li>
+<li>OS X 10.10 Yosemite</li>
+<li>OS X 10.11 El Capitan</li>
+<li>macOS 10.12 Sierra</li>
+<li>macOS 10.13 High Sierra</li>
+<li>macOS 10.14 Mojave</li>
+<li>macOS 10.15 Catalina</li>
+</ul>
+<p>其中经历了 OS X 和 macOS 的两次改名，第一次代表了与 iOS 的融合，第二次的命名方式为匈牙利表示法，可以感受一下:</p>
+<pre class="literal-block">
+    iOS
+watchOS
+   tvOS
+     OS X
+</pre>
+<p>有没有一种强迫症无法忍受的感觉:</p>
+<pre class="literal-block">
+    iOS
+watchOS
+   tvOS
+  macOS
+</pre>
+<p>明显后者更和谐。</p>
+<p>其中，数 Tiger 的更新比较多，大家熟知的 Automator、Spotlight、Dashboard 就是此时引入的。后面的每个版本更新都具有很多经典之处，图标也趋于扁平化，适应这个信息繁杂的时代。</p>
+<p>如果把 Apple 桌面操作系统历史对比人类历史，那从古代到近代史部分就已经说完了。其现代史部分以近 5 年为分水岭，2014 年以后的发布都可以在 Apple WWDC App 中查阅。笔者也会在其他文章中穿插许多有趣的 Apple 操作系统细节，以下附送体系结构图一张。</p>
+<img alt="macOS 体系结构" src="https://kaffa.im/img/2019/macos-structure.png" />
+</div>
+<div class="section" id="section-4">
+<h2>啊哈！到了本文附送的技巧。</h2>
+<p>终于说到了在访达（Finder）中拷贝文件的路径的方法，有如下几种：</p>
+<ul class="simple">
+<li>方法一：访达应用中，可以点击菜单【显示】【显示路径栏/隐藏路径栏】，打开位于底部状态栏上方的路径栏，鼠标右键点击“将（路径）拷贝为路径名称”即可。</li>
+<li>方法二：打开一个终端应用，将文件夹或文件拖入，既可以得到路径，选中后拷贝即可。</li>
+<li>方法三：网上提到的在自动操作应用中新建一个服务的方式，这种其实对某些文件夹并不好使。</li>
+<li>方法四：此方法的交互设计比较隐藏，但唾手可得，即右键点击想要拷贝路径的目录或文件，在弹出菜单时，按住键盘 option/alt 键，此时菜单中的拷贝“（路径）”会变成将“（路径）”拷贝为路径名称。这种设计有点绕，但是比较高效了。</li>
+<li>方法五：快捷键 ⌥⌘C（评论提供），此种最高效。</li>
+</ul>
+<p>好吧，虽然这楼歪的很，但技巧确实附送了，是吧？</p>
+<p>感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。</p>
+<img alt="我的赞赏码" src="https://kaffa.im/img/reward.png" />
+</div>
+
+        <div class="is-divider" data-content="Comments"></div>
+        <div id="gitalk-container"></div>
+    </section>
+</article>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '47c6091c4039fb3df197',
+    clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+  });
+  gitalk.render('gitalk-container');
+</script>
+    </main>
+    <footer class="footer is-max-widescreen">
+        <div class="content has-text-centered">
+            版权所有 &copy; 2018-2013 <strong><a href="https://kaffa.im">Kaffa.im</a></strong> 诚心良品 开放质造
+            <p>
+                本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+            </p>
+        </div>
+    </footer>
+
+    <div id="modal-project" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+              <p>项目明细在建设中...</p>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /*====================
+              Modal
+             ====================*/
+
+            // Functions to open and close a modal
+            function openModal($el) {
+                $el.classList.add('is-active');
+            }
+
+            function closeModal($el) {
+                $el.classList.remove('is-active');
+            }
+
+            function closeAllModals() {
+            (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                    closeModal($modal);
+                });
+            }
+
+            // Add a click event on buttons to open a specific modal
+            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                const modal = $trigger.dataset.target;
+                const $target = document.getElementById(modal);
+                $trigger.addEventListener('click', () => {
+                     openModal($target);
+                });
+            });
+
+            // Add a click event on various child elements to close the parent modal
+            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                const $target = $close.closest('.modal');
+
+                $close.addEventListener('click', () => {
+                    closeModal($target);
+                });
+            });
+
+            // Add a keyboard event to close all modals
+            document.addEventListener('keydown', (event) => {
+                if (event.code === 'Escape') {
+                    closeAllModals();
+                }
+            });
+
+            /*====================
+              navbar
+             ====================*/
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+            /*====================
+              Projects
+             ====================*/
+            const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+            $panelTab.forEach(el => {
+                el.addEventListener('click', () => {
+                    const $siblings = el.parentNode.children;
+                    for (let i = 0; i < $siblings.length; i++) {
+                        $siblings[i].classList.remove('is-active');
+                    }
+                    el.classList.add('is-active');
+
+                    if (el.title == 'all') {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.remove("is-hidden");
+                        }
+                    } else {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.add("is-hidden");
+                        }
+
+                        const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                        for (let i = 0; i < $targetPanelBlock.length; i++) {
+                            $targetPanelBlock[i].classList.remove("is-hidden");
+                        }
+                    }
+                });
+            });
+
+            /*====================
+              Email
+             ====================*/
+            const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+            $email.forEach(el => {
+                el.innerText = ['admin', '@', 'kaffa.im'].join('');
+            });
+
+            /*====================
+              Table
+            ====================*/
+            var altKeyPressed = false;
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Alt' && !altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = true;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'table-row';
+                    });
+                }
+            });
+
+            document.addEventListener('keyup', function(event) {
+                if (event.key === 'Alt' && altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = false;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+Linux 版本
+##################################################################
+
+:date: 2019-08-05 12:00
+:author: Kaffa
+:category: digital
+:tags: Linux Distributions
+:slug: linxu-distributions
+:summary: 本文简单聊聊 Linux 发行版
+
+
+概述
+=============
+
+Linux 是开源、免费的操作系统，是 Freeware 和 Open Source 运动的代表作。它代表着低成本的商业方案，被无数公司依赖。CentOS 是常用的一种 Linux 发行版，被大量公司和个人使用。它是 Red Hat Enterprise Linux 的开源编译版，因稳定而闻名。稳定是不尝鲜的另一种说法，其中默认的软件仓库选择虽然不是各种软件最新版，却是久经考验被无数程序员采坑过的稳定版。
+
+Linux 内核
+=============
+
+Linux 的内核即 Linux Kernel，由 Linux 基金会负责发行，它并不是完整的操作系统，而是只包含设备驱动、文件管理、资源管理等功能的操作系统核心，是整个 Linux 开源生态的上游。Linux 核心加 GNU 工具链和库、文档和软件，以及窗口系统，才构成完整的操作系统。
+
+Linux 核心`官方网站`_上最新版是 `5.2.6`_，其中第一个数字 5 是主版本，第二个数字 2 是偶数表示稳定版，如果第二个数字是奇数则表示是开发版，第三个 6 数字表示修订次数。
+
+
+Linux 发行版
+=============
+
+Linux 发行版有太多种，根据其集成的软件分派系稍作列举：
+
+* Red Hat Enterprise Linux：RPM 系，最好的商业版本，简称 RHEL
+* Fedora： RPM 系 商业版本，包含最新软件库，Ret Hat 的新软试验田？
+* CentOS：RPM 系社区版本，不包含 RHEL 闭源高级功能的开源良心之作，服务器明智之选。
+* openSuse：RPM 系，源自 Slackware 的一种德国发行版，目前由 Novell 公司维护，严谨安全精致，缺点是臃肿，考验硬件。
+* Debian：Dpkg 系根基，最纯正的 GNU/Linux，只包含 GPL 协议软件，基于它的发行版多，虽然是社区维护，但都是骨灰级高手，直接用的人相对少。
+* Ubuntu：基于 Debian 的商业代表，为桌面系统做出了巨大贡献，提供最友好易用的桌面系统软件。近年 Ubuntu Server 份额有提升，农村包围城市？
+* Slackware：Unix 系，目录严谨，Linux 发行版元老，现在较少人用
+* Elementary OS：桌面系， 基于 Ubuntu 的 macOS 界面， 视觉动物首选。
+* Linux Mint： 桌面视觉系，基于 Ubuntu，胜于 Ubuntu Desktop
+* Arch Linux：Geek 系，包管理之王，可实现不重启滚动更新，老机器可选
+* Linux From Scratch： Geek 系，定制王者， 如果你想最大化定制操作系统可以选它
+* Gentoo：Geek系，Unix 系，定制昔日王者，所有安装包靠从源代码编译。
+
+其他还有类 Unix 发行版，比如 FreeBSD、NetBSD、OpenBSD，内核不同，但包含软件类似，传说 BSD 系统可稳定运行 10 年不关机。
+
+值得一提是，这些发行版除了 BSD 以外，其余使用相同的内核，不同发行版只是软件库、桌面环境、流行度的差异。
+
+如何选择发行版
+==========================
+
+人生苦短，如果 Linux 不是你人生不可获取的部分，请：
+
+    服务器选 CentOS，
+
+    桌面系统选 Ubuntu，
+
+    其余请随意，毕竟 Linux 的情怀就是 Free。
+
+
+感谢阅读。
+
+.. _`官方网站`: https://www.kernel.org/
+.. _`5.2.6`: https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.6.tar.xz
+

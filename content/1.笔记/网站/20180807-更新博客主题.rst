@@ -1,0 +1,24 @@
+##############
+更新博客主题
+##############
+
+:date: 2018-08-07 8:20
+:author: Kaffa
+:category: website
+:tags: Pelican Octopress Theme
+:slug: update-my-new-blog-theme
+:summary: 更新博客主题
+
+关于本博客
+===========
+
+2018-06-06，开始这个新博客
+
+2018-08-07，转眼间两个月了，原先使用的 `octopress 主题`_ 也发现一些样式上的缺陷，于是抽空对它做了中文化。
+
+地址见：pelican-octopress-theme-cn_
+
+感谢阅读。
+
+.. _`octopress 主题`: https://github.com/MrSenko/pelican-octopress-theme
+.. _pelican-octopress-theme-cn: https://github.com/kaffa/pelican-octopress-theme-cn
