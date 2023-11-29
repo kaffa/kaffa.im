@@ -4,7 +4,7 @@ Emacs
 :date: 2023-11-02 16:25
 :author: Kaffa
 :category: software
-:tags: KaffaWeb
+:tags: Emacs, Emacs Lisp
 :slug: emacs
 :summary: Emacs 是我最想记录的软件之一，这里是我写的 Emacs Lisp 脚本。
 :image: /static/img/2023/emacs-img.svg
