@@ -14,7 +14,7 @@
 番茄工作法
 ====================
 
-.. image:: https://kaffa.im/img/2020/pomodoro-logo.png
+.. image:: https://kaffa.im/static/img/2020/pomodoro-logo.png
     :alt: 普通番茄钟
 
 番茄工作法（英语：`Pomodoro Technique`_）是一种时间管理法，在 1980 年代由 Francesco Cirillo 创立。
@@ -25,7 +25,7 @@
 番茄工作法的五个步骤
 ====================
 
-.. image:: https://kaffa.im/img/2020/one-pomodoro-cycle.jpg
+.. image:: https://kaffa.im/static/img/2020/one-pomodoro-cycle.jpg
     :alt: 番茄钟周期
 
 1. 选择你想完成的任务；
@@ -46,7 +46,7 @@
 我在纯机械钟和纯软件钟之间选择了折衷方案——官方特许的一种电子钟（基于电池、彩色液晶屏和单片机）。
 它可以很方便的开始、结束、暂停番茄，并且可以设置一个番茄的工作和休息时间，且能自动统计番茄数量，这些对我来说就足够了。
 
-.. image:: https://kaffa.im/img/2020/pomodoro-clock-2.png
+.. image:: https://kaffa.im/static/img/2020/pomodoro-clock-2.png
     :alt: 官方特许番茄钟
 
 

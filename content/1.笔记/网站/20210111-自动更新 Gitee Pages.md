@@ -78,9 +78,9 @@ Summary: 本文提供一段 Python 代码，用来解决免费 Gitee Pages 服�
 
 感谢阅读。如果上述内容和代码片段对你有帮助，请扫描二维码打赏一杯咖啡。
 
-![我的赞赏码](https://kaffa.im/img/reward.png "我的赞赏码")
+![我的赞赏码](https://kaffa.im/static/img/reward.png "我的赞赏码")
 
-[1]: https://kaffa.im/img/reward.png
+[1]: https://kaffa.im/static/img/reward.png
 [2]: https://gitee.com/help/articles/4136
 [3]: https://playwright.dev/
 [4]: https://github.com/microsoft/playwright-python

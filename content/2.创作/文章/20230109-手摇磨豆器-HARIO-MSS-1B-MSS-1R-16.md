@@ -16,9 +16,9 @@ Summary: 本文记录 Hario MSS-1B 和 MSS-1R-16 的零件组成
 
 ## Hario-MSS-1R-16
 
-![Hario-MSS-1R-16](https://kaffa.im/img/2023/hario-mss-1r.png)
+![Hario-MSS-1R-16](https://kaffa.im/static/img/2023/hario-mss-1r.png)
 
 
 ## Hario-MSS-1B
 
-![Hario-MSS-1B](https://kaffa.im/img/2023/hario-mss-1b.png)
+![Hario-MSS-1B](https://kaffa.im/static/img/2023/hario-mss-1b.png)

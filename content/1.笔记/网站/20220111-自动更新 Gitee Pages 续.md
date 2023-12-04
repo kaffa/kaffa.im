@@ -99,9 +99,9 @@ Summary: 2021年提供了一段 Python 代码解决免费 Gitee Pages 服务无�
 
 感谢阅读。如果上述内容和代码片段对你有帮助，可通过以下二维码请杯咖啡。
 
-![我的赞赏码](https://kaffa.im/img/reward.png "我的赞赏码")
+![我的赞赏码](https://kaffa.im/static/img/reward.png "我的赞赏码")
 
 
-[1]: https://kaffa.im/img/reward.png
+[1]: https://kaffa.im/static/img/reward.png
 [2]: https://github.com/chinabiue
 [3]: https://kaffa.im/update-gitee-pages-with-playwright.html

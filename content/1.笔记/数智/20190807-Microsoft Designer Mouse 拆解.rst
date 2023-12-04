@@ -14,12 +14,12 @@ Microsoft Designer Mouse 拆解
 
 所需工具
 
-.. image:: https://kaffa.im/img/2019/tool-for-disassembly.png
+.. image:: https://kaffa.im/static/img/2019/tool-for-disassembly.png
     :alt: 所需工具
 
 拆开的样子
 
-.. image:: https://kaffa.im/img/2019/microsoft-designer-mouse.png
+.. image:: https://kaffa.im/static/img/2019/microsoft-designer-mouse.png
     :alt: 拆开的样子
 
 拆开的关键之处：
@@ -35,7 +35,7 @@ Microsoft Designer Mouse 拆解
 
 感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
 
-.. image:: https://kaffa.im/img/reward.png
+.. image:: https://kaffa.im/static/img/reward.png
     :alt: 我的赞赏码
 
 

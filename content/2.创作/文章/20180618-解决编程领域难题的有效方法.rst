@@ -303,7 +303,7 @@ Musk 成功了领导了猎鹰运载和重载火箭的制造，如果解决造火
 
 
 
-.. image:: https://kaffa.im/img/reward.png
+.. image:: https://kaffa.im/static/img/reward.png
     :scale: 50
     :alt: 望读有所获。
 

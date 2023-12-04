@@ -148,7 +148,7 @@ pplusplus/faq.txt · 最后修改： zeev 于 2019/08/09 21:44
 
 感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。
 
-.. image:: https://kaffa.im/img/reward.png
+.. image:: https://kaffa.im/static/img/reward.png
     :alt: 我的赞赏码
 
 

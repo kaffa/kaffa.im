@@ -18,4 +18,4 @@ Microsoft Code 这个披着 IDE 外衣的编辑器，还是需要细致调教才
 
 感谢阅读。
 
-[1]: https://kaffa.im/img/reward.png
+[1]: https://kaffa.im/static/img/reward.png
