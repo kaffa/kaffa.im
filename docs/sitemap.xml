@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2023-12-07T08:51:06-00:00</lastmod>
+<lastmod>2023-12-09T09:16:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2023-12-07T08:51:06-00:00</lastmod>
+<lastmod>2023-12-09T09:16:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2023-12-07T08:51:06-00:00</lastmod>
+<lastmod>2023-12-09T09:16:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2023-12-07T08:51:06-00:00</lastmod>
+<lastmod>2023-12-09T09:16:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -277,6 +277,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/life.html</loc>
+<lastmod>2023-10-16T22:34:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/mobile-phone-fast-charging-technology.html</loc>
 <lastmod>2023-10-15T12:13:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -431,6 +438,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/on-computer-science-in-a-cafe-0.html</loc>
+<lastmod>2020-12-21T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/design-flaws-on-official-pomodoro-clock.html</loc>
 <lastmod>2020-12-03T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -538,6 +552,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/about-computer-science.html</loc>
 <lastmod>2019-04-24T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/multiple-careers-and-ding-fu-bao.html</loc>
+<lastmod>2018-10-01T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
