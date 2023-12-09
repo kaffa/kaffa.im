@@ -7,7 +7,7 @@
 :tags: Pelican,Pelican Theme
 :slug: how-to-create-a-new-pelican-theme
 :summary: 本文总结如何创建一个 Pelican 新主题。
-:image: /img/logo/pelican-logo.svg
+:image: /static/img/logo/pelican-logo.svg
 
 
 步骤
