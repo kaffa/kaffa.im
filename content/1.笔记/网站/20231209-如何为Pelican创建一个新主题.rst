@@ -1,7 +1,7 @@
 如何为Pelican创建一个新主题
 ##################################################
 
-:date: 2023-11-25 17:56
+:date: 2023-12-09 17:56
 :author: Kaffa
 :category: website
 :tags: Pelican,Pelican Theme
