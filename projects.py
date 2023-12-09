@@ -12,6 +12,7 @@ class Project:
     Completion = 0
     Status = ['ready', 'doing', 'done'][0]
 
+
 def get_list():
     sys.path.append(os.curdir)
     from dbconfig import db
