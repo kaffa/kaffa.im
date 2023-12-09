@@ -1,0 +1,99 @@
+如何为Pelican创建一个新主题
+##################################################
+
+:date: 2023-11-25 17:56
+:author: Kaffa
+:category: website
+:tags: Pelican,Pelican Theme
+:slug: how-to-create-a-new-pelican-theme
+:summary: 本文总结如何创建一个 Pelican 新主题。
+:image: /img/logo/pelican-logo.svg
+
+
+步骤
+=========
+
+1. 为你的主题起一个名字
+------------------------------------------------------------
+
+比如：pelican-kaffa-theme
+
+2. 在 themes 目录下建立这个目录
+------------------------------------------------------------
+
+::
+
+  themes\pelican-kaffa-theme
+
+
+3. 在创建的主题目录下，创建 static 和 templates 目录
+------------------------------------------------------------
+
+::
+
+  themes\pelican-kaffa-theme\static
+  themes\pelican-kaffa-theme\templates
+
+
+4. 创建 base 模板
+------------------------------------------------------------
+
+::
+
+    themes\pelican-kaffa-theme\templates\base.html
+
+5. 从 static 目录中引用资源 css、js 等文件
+------------------------------------------------------------
+
+::
+
+    themes\pelican-kaffa-theme\static\css\main.css
+
+6. 创建主题配置 theme.conf 文件
+------------------------------------------------------------
+
+这一步不必须
+
+.. code-block :: conf
+
+    [theme]
+    name = My New Theme
+    description = A simple, responsive theme for Pelican
+    author = Jane Doe
+
+
+7. 实现主题主 CSS
+------------------------------------------------------------
+
+下面可以继续修改 CSS 直到你自己满意::
+
+    themes\pelican-kaffa-theme\templates\index.html
+    themes\pelican-kaffa-theme\static\css\main.css
+
+8. 实现主题另一个页面，比如 article 和 page
+------------------------------------------------------------
+
+::
+
+    themes\pelican-kaffa-theme\templates\page.html
+    themes\pelican-kaffa-theme\static\css\main.css
+
+9. 将新主题的名字更新到 Pelican 的配置文件中
+------------------------------------------------------------
+
+::
+
+    \pelicanconf.conf
+
+.. code-block :: python
+
+    THEME = "x:/root-path-of-your-pelican-website/themes/pelican-kaffa-theme"
+
+10. 测试，修改，循环进行。
+------------------------------------------------------------
+
+在不断测试中，会发现一些问题，比如：
+
+- 响应式 Web 的问题
+- 外链失效的问题
+- 插件的兼容问题
