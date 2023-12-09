@@ -51,13 +51,13 @@ KaffaWeb 的总目标『实现部分个人数据整合，内容分发起点』�
 
 1. KaffaWeb 2.0 定位
 
-  - Startup
-  - Kickoff Meeting
+   - Startup
+   - Kickoff Meeting
 
 2. 导航
 
-  - 服务目录
-  - 频道
+   - 服务目录
+   - 频道
 
 3. Hero
 4. 北极星指标
@@ -65,7 +65,7 @@ KaffaWeb 的总目标『实现部分个人数据整合，内容分发起点』�
 6. 动态时间线
 7. 统计
 
-  - 图表化
+   - 图表化
 
 8. 书影音游
 9. 关于
