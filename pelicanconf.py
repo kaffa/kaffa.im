@@ -186,7 +186,7 @@ MENUITEMS = (
 )
 
 CATEGORY_DICT = {
-    'website': '网站', 'reading': '读书', 'digital': '数智',
+    'website': '网站', 'reading': '读书', 'digital': '数智', 'words': '言论',
     'article': '文章', 'project': '项目', 'software': '软件', 'book-list': '书单', 'weekly': '周报',
     'book': '书', 'movie': '影', 'music': '音', 'things': '物'
 }
