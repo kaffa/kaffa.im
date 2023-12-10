@@ -18,8 +18,19 @@
     --color-kaffa-gray: #f4f4f4;
     --color-yinbai: #e9e7ef;
     --color--xuebai: #f0fcff;
+    --color--yuebai: #D6ECF0;
     --globalnav-color: hsl(0, 0%, 39%);
     --globalnav-background-color: rgba(255, 255, 255, .8);
+
+}
+.has-background-yinbai {
+    background-color: var(--color--yinbai) !important;
+}
+.has-background-xuebai {
+    background-color: var(--color--xuebai) !important;
+}
+.has-background-yuebai {
+    background-color: var(--color--yuebai) !important;
 }
 .box:not(:last-child) {
     margin-bottom: 1rem;

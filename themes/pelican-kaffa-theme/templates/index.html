@@ -60,7 +60,7 @@
         <figure class="image is-64x64 has-text-centered" style="margin: auto;">
             <img class="is-rounded" src="{{ AVATAR_URL }}" alt="avatar">
         </figure>
-        <h2 class="title is-family-primary is-size-1 has-text-centered">{{ AUTHOR_NAME }}</h2>
+        <h2 class="title is-size-4 has-text-centered is-italic">{{ AUTHOR_NAME }}</h2>
         <p class="is-size-7 has-text-centered has-text-grey-light">{{ MANTRA }}</p>
         <p class="is-size-6 has-text-centered has-text-grey mt-3">{{ AUTHOR_INTRO }}</p>
         <div class="container is-max-desktop">
@@ -226,48 +226,50 @@
                     FRIENDS|count }}</strong> 条友链</p>
             </section>
 
+            {% if FRIENDS|count > 0 %}
+            <section class="box">
+                <h3>友链</h3>
+                <aside class="menu mt-3">
+                    <ul>
+                        {% for friend in FRIENDS %}
+                        <li>
+                            <a target="_blank" href="{{ friend.URL }}" title="{{ friend.Intro }}">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="{{ friend.Icon }}" alt="{{ friend.Name }}">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">{{ friend.Name }}</p>
+                                                <p class="subtitle is-7">{{ friend.Owner }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </aside>
+            </section>
+            {% endif %}
+
+            {% if LINKS|count > 0 %}
             <section class="box">
                 <h3>链接</h3>
                 <aside class="menu mt-3">
-                    {% if LINKS|count > 0 %}
                     <p class="menu-label">关注</p>
                     <ul class="menu-list">
                         {% for link in LINKS %}
                         <li><a target="_blank" href="{{ link[1] }}">{{ link[0] }}</a></li>
                         {% endfor %}
                     </ul>
-                    {% endif %}
-
-                    {% if FRIENDS|count > 0 %}
-                    <p class="menu-label">友链</p>
-
-                    <ul>
-                        {% for friend in FRIENDS %}
-                        <li>
-                            <div class="card">
-                                <div class="card-content">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <figure class="image is-48x48">
-                                                <img src="{{ friend.Icon }}" alt="{{ friend.Name }}">
-                                            </figure>
-                                        </div>
-                                        <div class="media-content">
-                                            <p class="title is-6"><a target="_blank" href="{{ friend.URL }}" title="{{ friend.Name }}">{{ friend.Name }}</a></p>
-                                            <p class="subtitle is-7">{{ friend.Owner }}</p>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <p class="is-size-7">{{ friend.Intro }}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
                 </aside>
             </section>
+            {% endif %}
         </div>
     </div>
 </div>

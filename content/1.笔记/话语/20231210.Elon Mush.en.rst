@@ -1,0 +1,15 @@
+Words Of Elon Musk
+############################################################
+
+:date: 2023-12-10 12:08
+:author: Elon Musk
+:category: words
+:tags: elon-musk
+:slug: en/words-of-elon-musk
+:summary: Words Of Elon Musk
+
+
+- I wonder how many dead one-planet civilizations are out there in the cosmos that never made it to the other planet and ultimately extinguished themselves or were destroyed by external factors. Probably a few.
+
+\#tags#: inspirational, space-exploration
+

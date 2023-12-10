@@ -6,7 +6,7 @@ import os
 import sys
 
 AUTHOR = 'Kaffa'
-AUTHOR_NAME = ''
+AUTHOR_NAME = 'Kun'
 MANTRA = 'Kunnect Adventures & Fun'
 AUTHOR_INTRO = '「探索」人生，共享「意趣」，主研方向是「软件研发 + 技术管理」和「业务数字化」，有兴趣或有反馈请点击菜单项的关于。'
 
@@ -33,7 +33,6 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Paul Graham', 'http://paulgraham.com'),
          ('Guido van Rossum', 'https://gvanrossum.github.io/'),
-         ("Kaffa.im", 'https://kaffa.im'),
          ("Coffee's", 'https://coffees.app'),
          ('论道', 'https://lundao.pub/'),)
 
