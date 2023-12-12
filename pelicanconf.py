@@ -101,14 +101,14 @@ KAFFAPOD = {
     # img 本地目录
     'img_folder': os.path.join(os.path.dirname(inspect.getfile(inspect.currentframe())), PATH, THEME_STATIC_DIR, 'img'),
     # img 相对目录，用于 web 拼接
-    'img_relative_folder': f'/{THEME_STATIC_DIR}/img/'
+    'img_relative_folder': '/static/img/'
 }
 
 # plugin: plantuml
 PLANTUML = {
     'java_path': r'C:\Java\jdk-11.0.11\bin\java.exe',
     'plantuml_jar_path': r'D:\soft\plantuml-jar-gplv2-1.2023.7\plantuml.jar',
-    'uml_image_folder': f'/{THEME_STATIC_DIR}/img/'
+    'uml_image_folder': '/static/img/'
 }
 
 # plugin: ace_editor
