@@ -1,9 +1,12 @@
 import json
 import logging
+import os
+from pathlib import Path
+
 from pelican import signals
 from pelican.contents import Article, Page
 from pelican.generators import ArticlesGenerator, PagesGenerator
-from urllib.request import Request, urlopen
+from urllib.request import Request, urlopen, urlretrieve
 
 import sqlite3
 
@@ -29,49 +32,93 @@ def get_type_uuid(subject_url):
     return arr[-2], arr[-1]
 
 
+def download_cover(cover_image_url, cover_image_path):
+    headers = {
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'
+                      ' AppleWebKit/537.36 (KHTML, like Gecko)'
+                      ' Chrome/112.0.0.0 Safari/537.36',
+    }
+
+    directory = os.path.dirname(cover_image_path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    req = Request(cover_image_url)
+    for key, value in headers.items():
+        req.add_header(key, value)
+    u = urlopen(req)
+    resp = u.read()
+    with open(cover_image_path, 'wb') as f:
+        f.write(resp)
+
+
 def fetch_subject(instance):
     if type(instance) not in (Article, Page):
         return
 
-    if "subject_url" in instance.metadata:
-        subject_url = instance.metadata["subject_url"]
+    if 'subject_url' not in instance.metadata:
+        return
 
-        if 'api' not in subject_url.split('/'):
-            subject_url = subject_url.replace('https://neodb.social/', 'https://neodb.social/api/')
+    subject_url = instance.metadata["subject_url"]
 
-        type_, uuid = get_type_uuid(subject_url)
+    # 兼容网址中未写 /api/
+    if 'api' not in subject_url.split('/'):
+        subject_url = subject_url.replace('https://neodb.social/', 'https://neodb.social/api/')
 
-        conn = sqlite3.connect(r'D:\code\github\kaffa\kaffa.github.io\content\db\0.db')
-        cursor = conn.cursor()
+    type_, uuid = get_type_uuid(subject_url)
 
-        cursor.execute('SELECT * FROM subject WHERE type=? and uuid=?', (type_, uuid,))
-        row = cursor.fetchone()
-        if row:
-            subject = row[5]
-            subject_obj = json.loads(subject)
-        else:
-            subject = get_from_subject_url(subject_url)
-            subject_obj = json.loads(subject)
+    path = instance.settings.get('PATH')
+    kaffapod = instance.settings.get('KAFFAPOD')
+    sqlite_path = kaffapod['db_path'] if Path(kaffapod['db_path']).is_absolute() else path + kaffapod['db_path']
 
-            # book 有 orig_title
-            # album 没有 orig_title
-            subject_title = subject_obj['orig_title'] if 'orig_title' in subject_obj else subject_obj['title']
-            # .replace(':', '') unix:-a-history-and-a-memoir
-            # .replace('(', '').replace(')', '').replace("'", '-') 1989-(taylor's-version)
-            subject_slug = (subject_obj['title']
-                            .replace(' ', '-')
-                            .replace(':', '')
-                            .replace('(', '').replace(')', '').replace("'", '-')).lower().strip()
+    conn = sqlite3.connect(sqlite_path)
+    cursor = conn.cursor()
 
-            cursor.execute('''INSERT INTO subject(type, uuid, name, slug, content, updated_time, comment)
-                VALUES(?, ?, ?, ?, ?, DATETIME('now','localtime'), ?)''',
-                (type_, uuid, subject_title, subject_slug, subject, '',))
-            conn.commit()
+    cursor.execute('SELECT * FROM subject WHERE type=? and uuid=?', (type_, uuid,))
+    row = cursor.fetchone()
+    if row:
+        subject = row[5]
+        subject_obj = json.loads(subject)
+    else:
+        subject = get_from_subject_url(subject_url)
+        subject_obj = json.loads(subject)
 
-        cursor.close()
-        conn.close()
+        # book 有 orig_title
+        # album 没有 orig_title
+        subject_title = subject_obj['orig_title'] if 'orig_title' in subject_obj.keys() else subject_obj['title']
 
-        instance.subject = subject_obj
+        # .replace(':', '') -> unix:-a-history-and-a-memoir
+        # .replace('(', '').replace(')', '').replace("'", '-') -> 1989-(taylor's-version)
+        subject_obj['slug'] = ((subject_obj['title']
+                               .replace(' ', '-')
+                               .replace(':', '')
+                               .replace('(', '').replace(')', '').replace("'", '-'))
+                               .lower().strip())
+
+        subject_obj['cover_image_path'] = os.path.join(
+            kaffapod['img_folder'],
+            subject_obj['category'], f"{subject_obj['slug']}.{subject_obj['cover_image_url'].split('.')[-1]}")
+        download_cover(subject_obj['cover_image_url'], subject_obj['cover_image_path'])
+
+        cover_relative_path = os.path.join(
+            kaffapod['img_relative_folder'],
+            subject_obj['category'], f"{subject_obj['slug']}.{subject_obj['cover_image_url'].split('.')[-1]}")
+
+        log.debug('cover_relative_path' + cover_relative_path)
+        log.debug(subject_obj)
+
+        cursor.execute('''
+            INSERT INTO subject(
+                type, uuid, name, slug, content, updated_time, comment, cover_relative_path
+            ) VALUES (
+                ?, ?, ?, ?, ?, DATETIME('now','localtime'), ?, ?
+            )''', (type_, uuid, subject_title, subject_obj['slug'], subject, '', cover_relative_path,))
+        conn.commit()
+
+    cursor.close()
+    conn.close()
+
+    instance.subject = subject_obj
 
 
 def pod_start(generators):

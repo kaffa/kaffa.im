@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+
+import inspect
 import urllib.parse
 import os
 import sys
@@ -92,12 +94,21 @@ SITEMAP = {
     ]
 }
 
+# plugin: kaffapod
+KAFFAPOD = {
+    # SQLite 数据库相对 PATH 目录的路径
+    'db_path': r'\db\0.db',
+    # img 本地目录
+    'img_folder': os.path.join(os.path.dirname(inspect.getfile(inspect.currentframe())), PATH, THEME_STATIC_DIR, 'img'),
+    # img 相对目录，用于 web 拼接
+    'img_relative_folder': f'/{THEME_STATIC_DIR}/img/'
+}
+
 # plugin: plantuml
 PLANTUML = {
     'java_path': r'C:\Java\jdk-11.0.11\bin\java.exe',
     'plantuml_jar_path': r'D:\soft\plantuml-jar-gplv2-1.2023.7\plantuml.jar',
-    'uml_image_folder': r'/static/img/'
-
+    'uml_image_folder': f'/{THEME_STATIC_DIR}/img/'
 }
 
 # plugin: ace_editor
