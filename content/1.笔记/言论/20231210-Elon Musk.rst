@@ -2,7 +2,7 @@
 ############################################################
 
 :date: 2023-12-10 12:08
-:author: Elon Musk
+:author: Kaffa
 :category: words
 :tags: elon-musk
 :slug: words-of-elon-musk
@@ -11,4 +11,6 @@
 
 - 我想知道宇宙中有多少死去的单行星文明从未到达过另一个星球，最终自行熄灭或被外部因素摧毁。大概有几个。
 
-\#标签: 鼓舞人心的, 太空探索
+- I wonder how many dead one-planet civilizations are out there in the cosmos that never made it to the other planet and ultimately extinguished themselves or were destroyed by external factors. Probably a few.
+
+\#tags#: inspirational, space-exploration
