@@ -148,7 +148,7 @@
         <div class="column is-6">
             {% for article in articles_page.object_list %}
             <section class="box">
-                <header class="media">
+                <div class="media">
                     <div class="media-left">
                         <figure class="image is-48x48">
                             <img class="is-rounded" src="{{ AVATAR_URL }}" alt="avatar">
@@ -162,18 +162,25 @@
                         </address>
                         <div class="block is-size-7">
                             <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}</time>
-                            {{ CATEGORY_MOMENTS_DICT[article.category] }}
+                            {{ CATEGORY_DICT[article.category]['moment'] }}
                         </div>
                     </div>
-                </header>
-                <footer class="media box">
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    {{ article.summary }}
+                </div>
+                <div class="media box has-background-light">
                     <div class="media-content">
                         <article>
                             <h2 class="title is-6">
                                 <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                                    title="「{{ article.title|striptags }}」的永久链接">{{ article.title }}</a>
                             </h2>
-                            <div class="is-size-6"> {{ article.summary }}</div>
+                            <div class="is-size-7">
+                                {% if article.subject is defined  %}
+                                    {{ article.subject.brief|truncate }}
+                                {% endif %}
+                            </div>
                         </article>
                     </div>
                     {% if article.subject -%}
@@ -189,14 +196,35 @@
                         </figure>
                     </div>
                     {%- endif %}
-                </footer>
+                </div>
             </section>
             {% endfor %}
             {% if articles_page.has_other_pages() %}
             {% include 'pagination.html' %}
             {% endif %}
         </div>
+
         <div class="column is-3">
+            <section class="box">
+                <h3>分类法</h3>
+                <div class="is-divider" data-content="categories"></div>
+                <ul>
+                    {% for sorted_category in CATEGORY_DICT.keys() %}
+                        {% for category, articles in categories %}
+                            {% if sorted_category==category %}
+                            <li><a href="{{ SITEURL }}/{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{ articles|count }})</li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+                <div class="is-divider" data-content="tags"></div>
+                <ul>
+                    {% for tag, articles in tags|sort_by_article_count  %}
+                    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
+                    {% endfor %}
+                </ul>
+            </section>
+
             <section class="box">
                 <h3>动态小计</h3>
                 <div class="is-divider" data-content="Notes"></div>
@@ -210,7 +238,7 @@
                     ns.weekly_num }}</strong> 次周报</p>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-list mr-3" aria-hidden="true"></i>精选 <strong>{{
                     ns.book_list_num }}</strong> 款书单</p>
-                <div class="is-divider" data-content="Stream"></div>
+                <div class="is-divider" data-content="Life Stream"></div>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-book mr-3" aria-hidden="true"></i>阅读 <strong>{{
                     ns.book_num }}</strong> 本书籍</p>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-video-camera mr-3" aria-hidden="true"></i>观赏

@@ -52,7 +52,7 @@
     <section class="container is-max-desktop box content mt-4 p-6">
         {% if article.category %}
         <span>分类:
-            <a class="tag is-medium" href="{{ SITEURL }}/{{ article.category.url }}">{{ CATEGORY_DICT[article.category] }}</a>
+            <a class="tag is-medium" href="{{ SITEURL }}/{{ article.category.url }}">{{ CATEGORY_DICT[article.category]['name'] }}</a>
         </span>
         {% endif %}
         {% if article.tags %}

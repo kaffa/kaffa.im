@@ -6,6 +6,11 @@ import inspect
 import urllib.parse
 import os
 import sys
+from functools import partial
+sys.path.append(os.curdir)
+import projects
+import friends
+
 
 AUTHOR = 'Kaffa'
 AUTHOR_NAME = 'Kun'
@@ -69,10 +74,10 @@ PLUGINS = [
     'plantuml',
     'featured_image',
     'kaffapod'
-    #'statics',
-    #'minify'
-    #'gravatar',
-    #'ace_editor'
+    # 'statics',
+    # 'minify'
+    # 'gravatar',
+    # 'ace_editor'
 ]
 
 # plugin: sitemap
@@ -103,6 +108,11 @@ KAFFAPOD = {
     # img 相对目录，用于 web 拼接
     'img_relative_folder': '/static/img/'
 }
+
+JINJA_FILTERS = {
+    'sort_by_article_count': partial(sorted, key=lambda tag: len(tag[1]), reverse=True)
+}
+
 
 # plugin: plantuml
 PLANTUML = {
@@ -140,8 +150,7 @@ HTML_MIN = True
 INLINE_CSS_MIN = True
 INLINE_JS_MIN = True
 
-
-COLORFUL_SITENAME ='''<
+COLORFUL_SITENAME = '''<
     span style="color:#52A2C6">褪</span><
     span style="color:#6791BC">色</span><
     span style="color:#7C80B2">的</span><
@@ -182,9 +191,9 @@ MENUITEMS = (
         ("书", "/category/book.html"),
         ("影", "/category/movie.html"),
         ("音", "/category/music.html"),
-        #("-", ""),
-        #("店", "/category/shop/"),
-        #("食", "/category/food/"),
+        # ("-", ""),
+        # ("店", "/category/shop/"),
+        # ("食", "/category/food/"),
         ("-", ""),
         ("物", "/category/things.html"),
     )),
@@ -197,39 +206,26 @@ MENUITEMS = (
 )
 
 CATEGORY_DICT = {
-    'website': '网站', 'reading': '读书', 'digital': '数智', 'words': '言论',
-    'article': '文章', 'project': '项目', 'software': '软件', 'book-list': '书单', 'weekly': '周报',
-    'book': '书', 'movie': '影', 'music': '音', 'things': '物'
-}
+    'project': {'name': '项目', 'moment': '启动一个项目'},
 
-CATEGORY_MOMENTS_DICT = {
-    'project': '启动一个项目',
+    'website': {'name': '网站', 'moment': '记录一条笔记'},
+    'reading': {'name': '读书', 'moment': '记录一条笔记'},
+    'digital': {'name': '数智', 'moment': '记录一条笔记'},
+    'words': {'name': '言论', 'moment': '启动一个项目'},
 
-    'website': '记录一条笔记',
-    'reading': '记录一条笔记',
-    'digital': '记录一条笔记',
+    'article': {'name': '文章', 'moment': '创作一篇文章'},
+    'software': {'name': '软件', 'moment': '编写一个软件'},
+    'book-list': {'name': '书单', 'moment': '精选一款书单'},
+    'weekly': {'name': '周报', 'moment': '汇报一次周报'},
 
-    'article': '创作一篇文章',
-    'software': '编写一个软件',
-    'book-list': '精选一款书单',
-    'weekly': '汇报一次周报',
-
-    'book': '阅读一本书籍',
-    'movie': '观赏一部电影',
-    'music': '收藏一首音乐',
-    'things': '标记一个物品',
-
-    'links': '添加一条友链'
+    'book': {'name': '书', 'moment': '阅读一本书籍'},
+    'movie': {'name': '影', 'moment': '观赏一部电影'},
+    'music': {'name': '音', 'moment': '收藏一首音乐'},
+    'things': {'name': '物', 'moment': '标记一个物品'},
 }
 
 JAVASCRIPT_HEAD = ''
 JAVASCRIPT_FOOT = ''
 
-sys.path.append(os.curdir)
-import projects
 PROJECTS = projects.get_list()
-
-import friends
 FRIENDS = friends.get_list()
-pass
-

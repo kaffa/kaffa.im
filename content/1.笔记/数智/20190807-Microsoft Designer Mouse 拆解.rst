@@ -4,7 +4,7 @@ Microsoft Designer Mouse 拆解
 :date: 2019-08-07 12:00
 :author: Kaffa
 :category: digital
-:tags: 随笔, Essays, 技术, Technology, Microsoft Designer Mouse
+:tags: Microsoft Designer Mouse
 :slug: disassemble-the-microsoft-designer-mouse
 :summary: 本文简单讲解如何拆解 Microsoft Designer Mouse
 

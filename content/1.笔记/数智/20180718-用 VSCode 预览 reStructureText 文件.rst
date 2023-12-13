@@ -1,32 +1,32 @@
-用 VSCode 预览 reStructureText 文件
+用 VSCode 预览 reStructuredText 文件
 ##################################################
 
 :date: 2018-07-18 12:30
 :modified: 2023-11-08 16:11
 :author: Kaffa
 :category: digital
-:tags: VSCode, reStructureText
-:slug: preview-restructuretext-file-in-vscode
-:summary: 本文描述用 VSCode 预览 reStructureText 文件的配置办法
+:tags: VSCode, reStructuredText
+:slug: preview-restructuredtext-file-in-vscode
+:summary: 本文描述用 VSCode 预览 reStructuredText 文件的配置办法
 
 
 通识
 ====================
 
-1. 得益于拥抱开源，微软 VSCode 成为了最热门的 IDE，广泛用于各种场景的编程，比如编辑 reStructureText 文件。
+1. 得益于拥抱开源，微软 VSCode 成为了最热门的 IDE，广泛用于各种场景的编程，比如编辑 reStructuredText 文件。
 
-2. reStructureText 是 Python 官方文档的格式，属于 Sphinx 项目的一部分，Sphinx 是 Python 文档生成器。
+2. reStructuredText 是 Python 官方文档的格式，属于 Sphinx 项目的一部分，Sphinx 是 Python 文档生成器。
 
-3. 从 reStructureText 的文件格式 rst，方便转化为各种文件格式。
+3. 从 reStructuredText 的文件格式 rst，方便转化为各种文件格式。
 
-4. MS Code 自带 reStructureText 插件，类似于 Markdown，安装后可以用于预览 rst 格式。
+4. MS Code 自带 reStructuredText 插件，类似于 Markdown，安装后可以用于预览 rst 格式。
 
 5. 可安装后并不能直接预览，还需要配置一番，于是就有了下面的部分。
 
 
 配置
 ===================
-1. 依据 reStructureText 文档，先 pip 安装 doc8 和 sphinx
+1. 依据 reStructuredText 文档，先 pip 安装 doc8 和 sphinx
 
 2. 再上 VSCode 配置::
 

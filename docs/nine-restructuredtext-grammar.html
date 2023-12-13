@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-        <title>Kaffa.im - reStructureText 九个实用语法</title>
+        <title>Kaffa.im - reStructuredText 九个实用语法</title>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -27,7 +27,7 @@
 
 
 
-    <meta name="tags" content="reStructureText" />
+    <meta name="tags" content="reStructuredText" />
 
 
 </head>
@@ -126,7 +126,7 @@
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem);"
-            ><a href="./nine-restructuredtext-grammar.html" rel="bookmark" title="「reStructureText 九个实用语法」的永久链接">reStructureText 九个实用语法</a></h2>
+            ><a href="./nine-restructuredtext-grammar.html" rel="bookmark" title="「reStructuredText 九个实用语法」的永久链接">reStructuredText 九个实用语法</a></h2>
             <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
                     <a href="./author/kaffa.html">Kaffa</a>
                 发布于 <time datetime="2019-07-25T12:00:00+08:00">2019-07-25 周四</time>
@@ -142,18 +142,18 @@
             <a class="tag is-medium" href="./category/digital.html">数智</a>
         </span>
         <span class="ml-2">标签:
-            <a class="tag is-primary is-light is-medium" href="./tag/restructuretext.html">reStructureText</a>
+            <a class="tag is-primary is-light is-medium" href="./tag/restructuredtext.html">reStructuredText</a>
         </span>
 
 
-        <div class="section" id="restructuredtext">
+        <div class="section" id="restructuredtext-1">
 <h2>reStructuredText 是什么</h2>
 <p>reStructuredText 是一种轻量级的文本标记语言，是 Python 中 Docutils 项目的一部分。其文件以 .rst 为后缀，也常被简写为 rst 或 reST。它可以被转化成 PDF、HTML 等多种格式，也可以由 Sphinx 转化为 LaTex、man 等格式，现被广泛的用于开源程序文档的撰写。</p>
 <p>本文记录了其常用语法，整体来说，语法更统一严谨一些，很适合用来写技术笔记，学起来也简单。在计算机上写作的人，如果不满意 Markdown 的缺点，也可使用它来替代。</p>
 </div>
 <div class="section" id="rst">
 <h2>rst 语法指南</h2>
-<p>官方参考细致繁复，对初学者不够友好。若要拿着 reStructureText 写文章，仅需先知晓写文章的简单实用语法，本文已列出最常用的九个语法。</p>
+<p>官方参考细致繁复，对初学者不够友好。若要拿着 reStructuredText 写文章，仅需先知晓写文章的简单实用语法，本文已列出最常用的九个语法。</p>
 <div class="notification is-info is-light">
     <i class="fa fa-info-circle mr-3" aria-hidden="true"></i>
     可参看官方参考：https://docutils.sourceforge.io/rst.html
@@ -279,7 +279,7 @@
 
 <div class="notification is-info is-light">
     如果在 VSCode 中预览标题遇到问题，可参阅我另一篇
-    <a href="https://kaffa.im/preview-restructuretext-file-in-vscode.html" target="_blank">用 VSCode 预览 reStructureText 文件</a>
+    <a href="https://kaffa.im/preview-restructuredtext-file-in-vscode.html" target="_blank">用 VSCode 预览 reStructuredText 文件</a>
 </div></div>
 <div class="section" id="section-3">
 <h3>三、段落</h3>
@@ -375,7 +375,7 @@
 <li>多级列表</li>
 </ol>
 <div class="notification is-danger is-light">
-    此特性可让 reStructureText 持续嘲讽 Markdown
+    此特性可让 reStructuredText 持续嘲讽 Markdown
 </div><table border="1" class="table is-bordered docutils">
 <colgroup>
 <col width="26%" />
@@ -725,7 +725,7 @@ True   True   True
 </tbody>
 </table>
 <div class="notification is-primary is-light">
-    reStructureText 可谓极大做到了代码和显示都能看。
+    reStructuredText 可谓极大做到了代码和显示都能看。
 </div></div>
 <div class="section" id="section-7">
 <h3>七、注释</h3>
@@ -861,10 +861,10 @@ True   True   True
 <li><strong>Org Mode</strong>: in 2003 by Carsten Dominik</li>
 <li><strong>AsciiDoc</strong>: in 2002 by Stuart Rackham</li>
 <li><strong>Textile</strong>: in 2002 by Dean Allen</li>
-<li><strong>reStructureText</strong>: in 2001 by David Goodger</li>
+<li><strong>reStructuredText</strong>: in 2001 by David Goodger</li>
 <li><strong>Markdown</strong>: in 2004 by John Gruber</li>
 </ul>
-<p>Org Mode 是文本生活倡导者首选，也是 Emacs <a class="footnote-reference" href="#f1" id="footnote-reference-1">[1]</a> 忠实爱好者的选择；AsciiDoc 想的是「人类可读」还可以发布为文档格式；Textile 的缺点和优势是可以混入简单的样式，它使用 PHP 实现，伴有一个设计精巧的 TextPattern CMS，源码有充分的单元测试，但其社区不大；而 reStructureText 更宏大不断演化而来，吸收了 Zope、Setext、Javadoc 的设计，是这些文档格式中最严谨和包容并蓄的，被广大开源社区偏爱；但从使用广泛来说，这些都在近十年都被 Markdown 超越了。</p>
+<p>Org Mode 是文本生活倡导者首选，也是 Emacs <a class="footnote-reference" href="#f1" id="footnote-reference-1">[1]</a> 忠实爱好者的选择；AsciiDoc 想的是「人类可读」还可以发布为文档格式；Textile 的缺点和优势是可以混入简单的样式，它使用 PHP 实现，伴有一个设计精巧的 TextPattern CMS，源码有充分的单元测试，但其社区不大；而 reStructuredText 更宏大不断演化而来，吸收了 Zope、Setext、Javadoc 的设计，是这些文档格式中最严谨和包容并蓄的，被广大开源社区偏爱；但从使用广泛来说，这些都在近十年都被 Markdown 超越了。</p>
 <p>Markdown 这种标记语言的语法，最早是一名科技作家 John Gruber 设计的，他的设计初衷是使人们能使用易于阅读和编写的纯文本格式进行编写，还可以选择将其转换为结构有效的 HTML，于是他在 BBEdit 编辑器中实现了它。</p>
 <p>但说 Markdown 的走红，背后还有参与其中的天才 Aaron Swartz 的原因，<strong>一位不策划社会政治活动的企业家黑客不是好的程序员</strong> 可以较准确的描述 Aaron，他为今天的 Web 写作行为提供了许多的核心工具，比如 RSS 标准，更好的订阅、分享和推送内容，CC 协议，中文写作者熟悉的「创作者共用」协议，确保了内容的创作共享，web.py 诠释了 Python 的 KISS 哲学。我也读过 Aaron 不少文章，其逻辑清晰，表示准确简洁，易于传播，等今后有空会写一篇他做过的传奇事迹的笔记。</p>
 </div>
@@ -927,7 +927,7 @@ True   True   True
     &lt;li&gt;日&lt;/li&gt;
 &lt;/ol&gt;
 </pre>
-<p>三、「reStructureText」说：支持列表嵌套是我的特性之一，轻松实现，其代码是:</p>
+<p>三、「reStructuredText」说：支持列表嵌套是我的特性之一，轻松实现，其代码是:</p>
 <pre class="literal-block">
 * 年
 * 月
@@ -986,7 +986,7 @@ True   True   True
 * 日
 </pre>
 <p>所以这里的槽点就是，很多使用很久东西从设计之初就决定了走向。当调整 Markdown 格式的细节，常费时费力，有一种梦回 2000 年旧时代的感觉，我与含有缺陷的排版软件相处的日子，比如用内置模板错乱的 Word 写文档时的感觉，累觉无爱。</p>
-<p>相比来说我选择退回到 reStructureText，它虽然更复杂，但却严谨丰富，作为 Python 世界的主格式，Pelican 引擎的动力之一，我对 reStructureText 的基本态度是「一直能打」，综合比较，我放弃了 md 转回了 rst。</p>
+<p>相比来说我选择退回到 reStructuredText，它虽然更复杂，但却严谨丰富，作为 Python 世界的主格式，Pelican 引擎的动力之一，我对 reStructuredText 的基本态度是「一直能打」，综合比较，我放弃了 md 转回了 rst。</p>
 </div>
 <div class="section" id="rst-1">
 <h2>😁 补充 rst 图片的语法</h2>

@@ -1,13 +1,13 @@
-reStructureText 九个实用语法
+reStructuredText 九个实用语法
 ##################################################
 
 :date: 2019-07-25 12:00
 :modified: 2023-11-09 20:50
 :author: Kaffa
 :category: digital
-:tags: reStructureText
+:tags: reStructuredText
 :slug: nine-restructuredtext-grammar
-:summary: 本文记录了 reStructureText 九个实用语法，顺便吐槽了 Markdown。对于绝大多数人来说，Markdown 够用了，对于不够用的人可以参考 reStructureText，它有一些 Markdown 不具备的优点，整体来说，语法更统一严谨一些，很适合用来写技术笔记，学起来也简单。
+:summary: 本文记录了 reStructuredText 九个实用语法，顺便吐槽了 Markdown。对于绝大多数人来说，Markdown 够用了，对于不够用的人可以参考 reStructuredText，它有一些 Markdown 不具备的优点，整体来说，语法更统一严谨一些，很适合用来写技术笔记，学起来也简单。
 :image: /static/img/2023/about-kaffa.png
 
 reStructuredText 是什么
@@ -22,7 +22,7 @@ rst 语法指南
 =============
 
 
-官方参考细致繁复，对初学者不够友好。若要拿着 reStructureText 写文章，仅需先知晓写文章的简单实用语法，本文已列出最常用的九个语法。
+官方参考细致繁复，对初学者不够友好。若要拿着 reStructuredText 写文章，仅需先知晓写文章的简单实用语法，本文已列出最常用的九个语法。
 
 .. raw:: html
 
@@ -112,7 +112,7 @@ rst 的主场是写书和写文档，可参用 ``#*=-^"`` 符号
 
     <div class="notification is-info is-light">
         如果在 VSCode 中预览标题遇到问题，可参阅我另一篇
-        <a href="https://kaffa.im/preview-restructuretext-file-in-vscode.html" target="_blank">用 VSCode 预览 reStructureText 文件</a>
+        <a href="https://kaffa.im/preview-restructuredtext-file-in-vscode.html" target="_blank">用 VSCode 预览 reStructuredText 文件</a>
     </div>
 
 三、段落
@@ -168,7 +168,7 @@ rst 的主场是写书和写文档，可参用 ``#*=-^"`` 符号
 .. raw:: html
 
     <div class="notification is-danger is-light">
-        此特性可让 reStructureText 持续嘲讽 Markdown
+        此特性可让 reStructuredText 持续嘲讽 Markdown
     </div>
 
 .. class:: table is-bordered
@@ -399,7 +399,7 @@ True   True   True
 .. raw:: html
 
     <div class="notification is-primary is-light">
-        reStructureText 可谓极大做到了代码和显示都能看。
+        reStructuredText 可谓极大做到了代码和显示都能看。
     </div>
 
 七、注释
@@ -513,10 +513,10 @@ True   True   True
 * **Org Mode**: in 2003 by Carsten Dominik
 * **AsciiDoc**: in 2002 by Stuart Rackham
 * **Textile**: in 2002 by Dean Allen
-* **reStructureText**: in 2001 by David Goodger
+* **reStructuredText**: in 2001 by David Goodger
 * **Markdown**: in 2004 by John Gruber
 
-Org Mode 是文本生活倡导者首选，也是 Emacs [#f1]_ 忠实爱好者的选择；AsciiDoc 想的是「人类可读」还可以发布为文档格式；Textile 的缺点和优势是可以混入简单的样式，它使用 PHP 实现，伴有一个设计精巧的 TextPattern CMS，源码有充分的单元测试，但其社区不大；而 reStructureText 更宏大不断演化而来，吸收了 Zope、Setext、Javadoc 的设计，是这些文档格式中最严谨和包容并蓄的，被广大开源社区偏爱；但从使用广泛来说，这些都在近十年都被 Markdown 超越了。
+Org Mode 是文本生活倡导者首选，也是 Emacs [#f1]_ 忠实爱好者的选择；AsciiDoc 想的是「人类可读」还可以发布为文档格式；Textile 的缺点和优势是可以混入简单的样式，它使用 PHP 实现，伴有一个设计精巧的 TextPattern CMS，源码有充分的单元测试，但其社区不大；而 reStructuredText 更宏大不断演化而来，吸收了 Zope、Setext、Javadoc 的设计，是这些文档格式中最严谨和包容并蓄的，被广大开源社区偏爱；但从使用广泛来说，这些都在近十年都被 Markdown 超越了。
 
 Markdown 这种标记语言的语法，最早是一名科技作家 John Gruber 设计的，他的设计初衷是使人们能使用易于阅读和编写的纯文本格式进行编写，还可以选择将其转换为结构有效的 HTML，于是他在 BBEdit 编辑器中实现了它。
 
@@ -584,7 +584,7 @@ Markdown 的槽点
         <li>日</li>
     </ol>
 
-三、「reStructureText」说：支持列表嵌套是我的特性之一，轻松实现，其代码是::
+三、「reStructuredText」说：支持列表嵌套是我的特性之一，轻松实现，其代码是::
 
     * 年
     * 月
@@ -646,7 +646,7 @@ Markdown 的槽点
 
 所以这里的槽点就是，很多使用很久东西从设计之初就决定了走向。当调整 Markdown 格式的细节，常费时费力，有一种梦回 2000 年旧时代的感觉，我与含有缺陷的排版软件相处的日子，比如用内置模板错乱的 Word 写文档时的感觉，累觉无爱。
 
-相比来说我选择退回到 reStructureText，它虽然更复杂，但却严谨丰富，作为 Python 世界的主格式，Pelican 引擎的动力之一，我对 reStructureText 的基本态度是「一直能打」，综合比较，我放弃了 md 转回了 rst。
+相比来说我选择退回到 reStructuredText，它虽然更复杂，但却严谨丰富，作为 Python 世界的主格式，Pelican 引擎的动力之一，我对 reStructuredText 的基本态度是「一直能打」，综合比较，我放弃了 md 转回了 rst。
 
 
 😁 补充 rst 图片的语法
