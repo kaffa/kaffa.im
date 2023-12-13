@@ -4,7 +4,7 @@
 :date: 2023-12-10 12:08
 :author: Kaffa
 :category: words
-:tags: elon-musk
+:tags: Elon Musk
 :slug: words-of-elon-musk
 :summary: 埃隆·马斯克摘录
 
