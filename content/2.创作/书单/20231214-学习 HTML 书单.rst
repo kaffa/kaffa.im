@@ -1,0 +1,42 @@
+学习 HTML 书单
+##################################################
+
+:date: 2023-11-2 16:25
+:modified: 2023-12-14 11:16
+:author: Kaffa
+:category: book-list
+:tags: HTML
+:slug: learning-html-book-list
+:summary: 本文列举了不同类型人群学习 HTML 书单和网站。
+Image: /static/img/logo/html5.svg
+
+
+.. raw:: html
+
+    <div class="notification is-info is-light">
+        <i class="fa fa-info-circle mr-3" aria-hidden="true"></i>
+        通过英文书学编程，当 90% 单词都认识，且不赶时间的，建议直接读英文书。
+    </div>
+
+    <div class="notification is-info is-light">
+        <i class="fa fa-info-circle mr-3" aria-hidden="true"></i>
+        HTML 很少单独拿出来用，多少会加入一些基本的 CSS，但从学习的角度来说，可以先重点学习 HTML，然后再学习 CSS。
+
+        从学习的角度来看，同时这两门语言的难度要大于学完一门后再学一门。
+    </div>
+
+『学习 HTML』书单
+====================
+
+1. `「HTML5与CSS3基础教程」 <https://kaffa.im/html5-and-css3-visual-quickstart-guide.html>`_ [美] Elizabeth Castro / [美] Bruce Hyslop：翻译的书中，这本适合小白入门。
+
+2. `「一本进阶书籍」 <https://kaffa.im/learning-html-book-list.html>`_ ：HTML 入门后，如果觉得常用技能还不够用，可考虑一些 HTML 高级功能的书籍，但更好的进阶书是自己选择的哪一本。
+
+『学习 HTML』网站
+====================
+
+* `freeCodeCamp <https://www.freecodecamp.org/>`_ ：从这里可以学到和领悟 Web 设计的细节，非常好的教学素材。
+
+* `MDN Web Docs <https://developer.mozilla.org/zh-CN/docs/Learn/HTML>`_ ：浏览器厂商标准，较权威，主要作为手册查阅。由于面对全世界的人群，内容不区分小白或专家，作为教学素材时略有不足。
+
+* `Build web pages with HTML and CSS for beginners <https://learn.microsoft.com/en-us/training/paths/build-web-pages-html-css-for-beginners/>`_ ：微软的教程
