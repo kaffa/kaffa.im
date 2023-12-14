@@ -7,6 +7,7 @@
 :tags: 纪念币
 :slug: about-making-reservations-for-commemorative-coins
 :summary: 本文记录如何查询纪念币预约的信息
+:image: /static/img/2023/china-peking-opera.png
 
 
 背景

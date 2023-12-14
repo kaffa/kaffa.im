@@ -7,7 +7,7 @@
 :tags: Sony,PlayMemories,Photo,Timestamp
 :slug: batch-update-photo-timestamp-of-sony-camera
 :summary: 批量修改相片时间，以解决由于相机时间未初始化导致的相片排序错乱问题。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/play-memories-home.png
 
 问题场景
 ==========

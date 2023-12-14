@@ -7,7 +7,7 @@
 :tags: KaffaWeb
 :slug: kaffaweb-sanhe-summary
 :summary: 本文是「KaffaWeb.三合」完成了，本文是项目总结。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/kaffa.im-logo.png
 
 
 项目总结

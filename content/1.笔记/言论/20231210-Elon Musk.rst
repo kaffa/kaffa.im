@@ -1,16 +1,20 @@
-埃隆·马斯克
+埃隆·马斯克言论
 ############################################################
 
 :date: 2023-12-10 12:08
 :author: Kaffa
 :category: words
-:tags: Elon Musk
+:tags: Elon Musk,inspirational,space-exploration
 :slug: words-of-elon-musk
-:summary: 埃隆·马斯克摘录
+:summary: 记录的埃隆·马斯克言论
+:image: /static/img/2023/eemm.jpg
 
+.. raw:: html
+
+    <button id="btnTranslate" onclick="location.href = location.href.replace('.html', '-en.html');">
+        <i class="fa fa-info-circle mr-3" aria-hidden="true"></i>
+        翻译
+    </button>
 
 - 我想知道宇宙中有多少死去的单行星文明从未到达过另一个星球，最终自行熄灭或被外部因素摧毁。大概有几个。
 
-- I wonder how many dead one-planet civilizations are out there in the cosmos that never made it to the other planet and ultimately extinguished themselves or were destroyed by external factors. Probably a few.
-
-\#tags#: inspirational, space-exploration

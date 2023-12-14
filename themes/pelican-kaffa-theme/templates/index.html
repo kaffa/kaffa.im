@@ -100,6 +100,28 @@
     <div class="columns is-variable is-2">
         <div class="column is-3">
             <section class="box">
+                <h3>推荐订阅</h3>
+                <div class="card mt-4">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-5"><a
+                                    href="https://xiaobot.net/p/2bfree?refer=20ca5446-77f3-4250-b173-511673f42818">「欧雷」的专栏</a>
+                                </p>
+                                <p class="subtitle is-6">——破局之路</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>「在可言说的范围内尽量用简单的语言详细地记述雷叔如何突破 35
+                                周岁中年失业困境并实现自己理想生活方式的。</p>
+                            <a href="#">#人生</a> <a href="#">#职业规划</a><br>
+                            <time datetime="2023-8-19">2023-8-19</time>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="box">
                 <h3>项目</h3>
                 <nav class="panel mt-3">
                     <p class="panel-tabs">
@@ -122,29 +144,8 @@
                     {% endfor %}
                 </nav>
             </section>
-            <section class="box">
-                <h3>推荐订阅</h3>
-                <div class="card mt-4">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-5"><a
-                                    href="https://xiaobot.net/p/2bfree?refer=20ca5446-77f3-4250-b173-511673f42818">「欧雷」的专栏</a>
-                                </p>
-                                <p class="subtitle is-6">——破局之路</p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <p>「在可言说的范围内尽量用简单的语言详细地记述雷叔如何突破 35
-                                周岁中年失业困境并实现自己理想生活方式的。</p>
-                            <a href="#">#人生</a> <a href="#">#职业规划</a><br>
-                            <time datetime="2023-8-19">2023-8-19</time>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
+        
         <div class="column is-6">
             {% for article in articles_page.object_list %}
             <section class="box">
@@ -205,6 +206,7 @@
         </div>
 
         <div class="column is-3">
+
             <section class="box">
                 <h3>分类法</h3>
                 <div class="is-divider" data-content="categories"></div>
@@ -218,13 +220,15 @@
                     {% endfor %}
                 </ul>
                 <div class="is-divider" data-content="tags"></div>
-                <ul>
-                    {% for tag, articles in tags|sort_by_article_count  %}
-                    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
+                <div class="tags">
+                    {% for tag, articles in tags|sort_by_article_count %}
+                        {%- if loop.index <= 20 -%}
+                        <span class="tag"><a href="{{ SITEURL }}/{{ tag.url }}" title="{{ articles|count }}">{{ tag }}</a></span>
+                        {%- endif -%}
                     {% endfor %}
-                </ul>
+                    <span class="tag is-primary is-light"><a href="{{ SITEURL }}/tags.html" title="All Tags">更多 ...</a></span>
+                </div>
             </section>
-
             <section class="box">
                 <h3>动态小计</h3>
                 <div class="is-divider" data-content="Notes"></div>

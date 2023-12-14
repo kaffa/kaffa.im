@@ -7,7 +7,7 @@
 :tags: KaffaWeb
 :slug: kaffaweb-sanhe
 :summary: 从项目管理角度，本篇可看作是「KaffaWeb.三合」的『项目章程』和『项目状态报告』；本篇还是一个有意思的自包含结构，它的呈现是通过「KaffaWeb.三合」项目的推进来设计的。这也是项目进展迭代至43%时才发布本篇的原因。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/kaffa.im-logo.png
 
 
 背景介绍

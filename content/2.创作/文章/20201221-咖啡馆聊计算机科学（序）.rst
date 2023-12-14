@@ -4,7 +4,7 @@
 :date: 2020-12-21 12:00
 :modified: 2020-12-21 12:00
 :category: article
-:tags: computer science
+:tags: Computer Science
 :slug: on-computer-science-in-a-cafe-0
 :author: Kaffa
 :summary: 咖啡馆聊计算机科学是一篇计算机科学的大白话介绍，也咖啡馆聊系列第一篇，是指轻松不设限地闲聊计算机科学，聊到哪算哪，说到什么算什么。

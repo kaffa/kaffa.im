@@ -17,7 +17,7 @@ AUTHOR_NAME = 'Kun'
 MANTRA = 'Kunnect Adventures & Fun'
 AUTHOR_INTRO = '「探索」人生，共享「意趣」，主研方向是「软件研发 + 技术管理」和「业务数字化」，有兴趣或有反馈请点击菜单项的关于。'
 
-SITENAME = 'Kaffa.im'
+SITENAME = '<span class="is-italic">Kaffa</span>.im'
 SITESUBTITLE = ''  # 'Kunnect Adventures & Fun'
 SITEURL = 'https://kaffa.im'
 TIMEZONE = 'Asia/Shanghai'
