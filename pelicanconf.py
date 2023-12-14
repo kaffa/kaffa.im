@@ -170,6 +170,8 @@ mailto = f'mailto:{mailto_email}?subject={mailto_subject}&body={mailto_body}'
 MENUITEMS = (
     ("首页", "/", (
         ("项目", "/category/project.html"),
+        ("研发", "/category/development.html"),
+        ("编程", "/category/programming.html"),
     )),
     ("笔记", "/", (
         ("网站", "/category/website.html"),
@@ -207,6 +209,8 @@ MENUITEMS = (
 
 CATEGORY_DICT = {
     'project': {'name': '项目', 'moment': '启动一个项目'},
+    'development': {'name': '研发', 'moment': '记录一篇随笔'},
+    'programming': {'name': '编程', 'moment': '记录一篇随笔'},
 
     'website': {'name': '网站', 'moment': '记录一条笔记'},
     'reading': {'name': '读书', 'moment': '记录一条笔记'},

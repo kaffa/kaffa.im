@@ -114,7 +114,7 @@
 
                         <div class="content">
                             <p>「在可言说的范围内尽量用简单的语言详细地记述雷叔如何突破 35
-                                周岁中年失业困境并实现自己理想生活方式的。</p>
+                                周岁中年失业困境并实现自己理想生活方式的。」</p>
                             <a href="#">#人生</a> <a href="#">#职业规划</a><br>
                             <time datetime="2023-8-19">2023-8-19</time>
                         </div>
@@ -145,7 +145,7 @@
                 </nav>
             </section>
         </div>
-        
+
         <div class="column is-6">
             {% for article in articles_page.object_list %}
             <section class="box">
@@ -209,7 +209,7 @@
 
             <section class="box">
                 <h3>分类法</h3>
-                <div class="is-divider" data-content="categories"></div>
+                <div class="is-divider" data-content="Categories"></div>
                 <ul>
                     {% for sorted_category in CATEGORY_DICT.keys() %}
                         {% for category, articles in categories %}
@@ -219,7 +219,7 @@
                         {% endfor %}
                     {% endfor %}
                 </ul>
-                <div class="is-divider" data-content="tags"></div>
+                <div class="is-divider" data-content="Tags"></div>
                 <div class="tags">
                     {% for tag, articles in tags|sort_by_article_count %}
                         {%- if loop.index <= 20 -%}
