@@ -59,6 +59,10 @@ body > header > nav {
     border-color: var(--globalnav-color);
 }
 
+.author_name {
+    font-family: Georgia !important;
+}
+
 article section.hero a,
 article section.hero a:visited {
     color: var(--color--xuebai);

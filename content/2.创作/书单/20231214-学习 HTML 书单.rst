@@ -8,7 +8,7 @@
 :tags: HTML
 :slug: learning-html-book-list
 :summary: 本文列举了不同类型人群学习 HTML 书单和网站。
-Image: /static/img/logo/html5.svg
+:image: /static/img/logo/html5.svg
 
 
 .. raw:: html

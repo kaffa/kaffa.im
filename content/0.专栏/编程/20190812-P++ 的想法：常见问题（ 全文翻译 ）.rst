@@ -3,7 +3,7 @@ P++ 的想法：常见问题（ 全文翻译 ）
 
 :date: 2019-08-12 12:00
 :author: Kaffa
-:category: article
+:category: programming
 :tags: P++
 :slug: pplusplus-faq
 :summary: 本文《P++ 的想法: 常见问题》是 https://wiki.php.net/pplusplus/faq 的全文翻译。这是一份对在 internals@ 上提出的想法的常见问题澄清，它试图解决许多在随后讨论中被反复提出的问题。1997 年，以色列程序员 Zeev Suraski 及 Andi Gutmans 加入了 Zend 公司 的 PHP 语言开发，发布了 PHP 3, PHP 4, PHP 5，注意没有 PHP 6，再到现在的 PHP 7。 1975 年出生的 Zeev Suraski 在 Zend 工作了 20 年。也许是在语言、架构和库的工作上找不到发展方向了。

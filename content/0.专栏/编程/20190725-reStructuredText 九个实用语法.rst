@@ -4,7 +4,7 @@ reStructuredText 九个实用语法
 :date: 2019-07-25 12:00
 :modified: 2023-11-09 20:50
 :author: Kaffa
-:category: digital
+:category: programming
 :tags: reStructuredText
 :slug: nine-restructuredtext-grammar
 :summary: 本文记录了 reStructuredText 九个实用语法，顺便吐槽了 Markdown。对于绝大多数人来说，Markdown 够用了，对于不够用的人可以参考 reStructuredText，它有一些 Markdown 不具备的优点，整体来说，语法更统一严谨一些，很适合用来写技术笔记，学起来也简单。

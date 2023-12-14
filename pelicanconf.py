@@ -168,8 +168,9 @@ mailto = f'mailto:{mailto_email}?subject={mailto_subject}&body={mailto_body}'
 
 # menu
 MENUITEMS = (
-    ("首页", "/", (
+    ("栏目", "/", (
         ("项目", "/category/project.html"),
+        ("-", ""),
         ("研发", "/category/development.html"),
         ("编程", "/category/programming.html"),
     )),
