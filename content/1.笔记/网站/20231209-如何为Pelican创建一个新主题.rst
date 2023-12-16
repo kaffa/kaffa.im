@@ -57,9 +57,9 @@
 .. code-block :: conf
 
     [theme]
-    name = My New Theme
-    description = A simple, responsive theme for Pelican
-    author = Jane Doe
+    name = Kaffa Theme
+    description = Kunnect Adventures & Fun
+    author = Kaffa
 
 
 7. 实现主题主 CSS

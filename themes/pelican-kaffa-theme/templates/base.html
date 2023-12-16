@@ -79,9 +79,11 @@
     <header>
         <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <h1 class="navbar-item"><a href="{{ SITEURL }}/">
-                        {{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a>
+                <h1 class="navbar-item">
+                    <a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a>
+                    <span class="ml-3">{{ MANTRA }}</span>
                 </h1>
+
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                     data-target="navbarGlobal">
                     <span aria-hidden="true"></span>
