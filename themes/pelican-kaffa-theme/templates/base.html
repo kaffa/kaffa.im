@@ -14,7 +14,7 @@
       gtag('config', 'G-7H14T5KLFJ');
     </script>
     {% block head %}
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
     <meta charset="utf-8" />
     <!--
         Q1. 本站技术栈？
