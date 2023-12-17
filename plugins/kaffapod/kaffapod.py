@@ -2,16 +2,21 @@ import json
 import logging
 import os
 from pathlib import Path
+from urllib.request import Request, urlopen, urlretrieve
+from urllib.parse import urljoin, quote_plus
 
 from pelican import signals
 from pelican.contents import Article, Page
 from pelican.generators import ArticlesGenerator, PagesGenerator
-from urllib.request import Request, urlopen, urlretrieve
 
 import sqlite3
 
 log = logging.getLogger(__name__)
 log.addHandler(logging.FileHandler('d:/app.log', "w", encoding="UTF-8"))
+
+
+def multi_urljoin(*parts):
+    return urljoin(parts[0], "/".join(quote_plus(part.strip("/"), safe="/") for part in parts[1:]))
 
 
 def get_from_subject_url(subject_url):
@@ -50,7 +55,6 @@ def download_cover(cover_image_url, cover_image_path):
     resp = u.read()
     with open(cover_image_path, 'wb') as f:
         f.write(resp)
-
 
 def fetch_subject(instance):
     if type(instance) not in (Article, Page):
@@ -95,24 +99,28 @@ def fetch_subject(instance):
                                .replace('(', '').replace(')', '').replace("'", '-'))
                                .lower().strip())
 
-        subject_obj['cover_image_path'] = os.path.join(
+        cover_image_path = os.path.join(
             kaffapod['img_folder'],
-            subject_obj['category'], f"{subject_obj['slug']}.{subject_obj['cover_image_url'].split('.')[-1]}")
-        download_cover(subject_obj['cover_image_url'], subject_obj['cover_image_path'])
+            subject_obj['category'],
+            f"{subject_obj['slug']}.{subject_obj['cover_image_url'].split('.')[-1]}")
+        download_cover(subject_obj['cover_image_url'], cover_image_path)
 
-        cover_relative_path = os.path.join(
+        subject_obj['cover_relative_path'] = multi_urljoin(
             kaffapod['img_relative_folder'],
-            subject_obj['category'], f"{subject_obj['slug']}.{subject_obj['cover_image_url'].split('.')[-1]}")
+            subject_obj['category'],
+            f"{subject_obj['slug']}.{subject_obj['cover_image_url'].split('.')[-1]}")
 
-        log.debug('cover_relative_path' + cover_relative_path)
-        log.debug(subject_obj)
+        # log.debug('cover_relative_path' + cover_relative_path)
+        # log.debug(subject_obj)
+
+        subject = json.dumps(subject_obj)
 
         cursor.execute('''
             INSERT INTO subject(
                 type, uuid, name, slug, content, updated_time, comment, cover_relative_path
             ) VALUES (
                 ?, ?, ?, ?, ?, DATETIME('now','localtime'), ?, ?
-            )''', (type_, uuid, subject_title, subject_obj['slug'], subject, '', cover_relative_path,))
+            )''', (type_, uuid, subject_title, subject_obj['slug'], subject, '', subject_obj['cover_relative_path'],))
         conn.commit()
 
     cursor.close()

@@ -1,0 +1,25 @@
+程序开发心理学
+############################
+
+:date: 2023-12-17 16:30
+:author: Kaffa
+:category: book
+:tags: Psychology,Programming
+:slug: the-psychology-of-computer-programming
+:summary: 适合闲时慢读。
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/0vmBq67rIcp936PsuHgjKh
+
+短评
+====================
+
+此书探讨了程序开发和心理学有关的很多主题。
+
+阅读中可以思考，在软件开发的发展中，什么发生的变化，什么依然在发生。
+
+适合闲时慢读，不适合带着问题去读，因为软件开发过程，不同时代、不同地域、不同趋势下，都有不同的侧重点，如果抱有寻找答案的想法，很可能会失败。且最好有一些简单的心理学史和心理学基础去读，会收获更多。
+
+
+
+
+

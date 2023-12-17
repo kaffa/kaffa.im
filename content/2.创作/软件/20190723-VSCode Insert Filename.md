@@ -1,7 +1,7 @@
 Title: VSCode Insert Filename
 Date: 2019-07-23 12:00
 Modified: 2023-11-08 15:00
-Category: software
+Category: development
 Tags: VSCode Extension, VSCode Insert Filename
 Slug: vscode-extension-insert-filename
 Authors: Kaffa

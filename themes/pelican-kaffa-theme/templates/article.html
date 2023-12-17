@@ -67,7 +67,7 @@
         <div class="columns box mt-5" id="subject">
             <figure class="column is-centered is-one-third">
                 <p class="image" style="max-width: 128px">
-                    <img title="{{ article.subject.title }}" class="book-cover" src="{{ article.subject.cover_image_url }}">
+                    <img title="{{ article.subject.title }}" class="book-cover" src="{{ article.subject.cover_relative_path }}">
                 </p>
                 {% if article.subject.rating %}
                 <div class="is-divider" data-content="Rating"></div>
