@@ -11,5 +11,7 @@ Words of Elon Musk
 :translation: true
 :lang: en
 
-- I wonder how many dead one-planet civilizations are out there in the cosmos that never made it to the other planet and ultimately extinguished themselves or were destroyed by external factors. Probably a few.
+::
+
+    I wonder how many dead one-planet civilizations are out there in the cosmos that never made it to the other planet and ultimately extinguished themselves or were destroyed by external factors. Probably a few.
 

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block html_lang %}{{ article.lang }}{% endblock %}
 
-{% block title %}{{ SITENAME }} - {{ article.title|striptags  }}{% endblock %}
+{% block title %}{{ SITENAME|striptags }} - {{ article.title|striptags  }}{% endblock %}
 
 {% block head %}
     {{ super() }}
@@ -65,7 +65,7 @@
 
         {% if article.subject %}
         <div class="columns box mt-5" id="subject">
-            <figure class="column is-centered is-one-third">
+            <div class="column is-one-quarter">
                 <p class="image" style="max-width: 128px">
                     <img title="{{ article.subject.title }}" class="book-cover" src="{{ article.subject.cover_relative_path }}">
                 </p>
@@ -78,7 +78,7 @@
                     {{ article.subject.rating_count }} 人评分
                 </p>
                 {% endif %}
-            </figure>
+            </div>
             <div class="column">
                 <div class="content">
                     <span class="title">{{ article.subject.title }}</span>
