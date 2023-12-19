@@ -222,28 +222,6 @@
         <div class="column is-3">
 
             <section class="box">
-                <h3>分类法</h3>
-                <div class="is-divider" data-content="Categories"></div>
-                <ul>
-                    {% for sorted_category in CATEGORY_DICT.keys() %}
-                        {% for category, articles in categories %}
-                            {% if sorted_category==category %}
-                            <li><a href="{{ SITEURL }}/{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{ articles|count }})</li>
-                            {% endif %}
-                        {% endfor %}
-                    {% endfor %}
-                </ul>
-                <div class="is-divider" data-content="Tags"></div>
-                <div class="tags">
-                    {% for tag, articles in tags|sort_by_article_count %}
-                        {%- if loop.index <= 20 -%}
-                        <span class="tag"><a href="{{ SITEURL }}/{{ tag.url }}" title="{{ articles|count }}">{{ tag }}</a></span>
-                        {%- endif -%}
-                    {% endfor %}
-                    <span class="tag is-primary is-light"><a href="{{ SITEURL }}/tags.html" title="All Tags">更多 ...</a></span>
-                </div>
-            </section>
-            <section class="box">
                 <h3>动态小计</h3>
                 <div class="is-divider" data-content="Notes"></div>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-sticky-note-o mr-3" aria-hidden="true"></i>记录
@@ -270,6 +248,29 @@
                     LINKS|count }}</strong> 条关注</p>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-user-o mr-3" aria-hidden="true"></i>新增 <strong>{{
                     FRIENDS|count }}</strong> 条友链</p>
+            </section>
+
+            <section class="box">
+                <h3>分类法</h3>
+                <div class="is-divider" data-content="Categories"></div>
+                <ul>
+                    {% for sorted_category in CATEGORY_DICT.keys() %}
+                        {% for category, articles in categories %}
+                            {% if sorted_category==category %}
+                            <li><a href="{{ SITEURL }}/{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{ articles|count }})</li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+                <div class="is-divider" data-content="Tags"></div>
+                <div class="tags">
+                    {% for tag, articles in tags|sort_by_article_count %}
+                        {%- if loop.index <= 20 -%}
+                        <span class="tag"><a href="{{ SITEURL }}/{{ tag.url }}" title="{{ articles|count }}">{{ tag }}</a></span>
+                        {%- endif -%}
+                    {% endfor %}
+                    <span class="tag is-primary is-light"><a href="{{ SITEURL }}/tags.html" title="All Tags">更多 ...</a></span>
+                </div>
             </section>
 
             {% if FRIENDS|count > 0 %}
