@@ -32,6 +32,10 @@
 .has-background-yuebai {
     background-color: var(--color--yuebai) !important;
 }
+.is-size-67 {
+  font-size: 0.875rem !important;
+}
+
 .box:not(:last-child) {
     margin-bottom: 1rem;
 }

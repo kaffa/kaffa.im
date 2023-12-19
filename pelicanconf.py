@@ -13,7 +13,7 @@ import friends
 
 
 AUTHOR = 'Kaffa'
-AUTHOR_NAME = 'Kun'
+AUTHOR_NAME = 'Kaffa'
 MANTRA = '<span class="has-text-grey-light is-size-6 is-italic">Kunnect&nbsp;</span>'\
          '<sup class="has-text-grey-dark is-size-7 has-text-weight-bold">Adventures & Fun</sup>'
 AUTHOR_INTRO = '「探索」人生，共享「意趣」，主研方向是「软件研发 + 技术管理」和「业务数字化」。'
@@ -178,9 +178,11 @@ MENUITEMS = (
     ("笔记", "/", (
         ("网站", "/category/website.html"),
         ("-", ""),
-        ("读书", "/category/reading.html"),
+        ("阅读", "/category/reading.html"),
         ("-", ""),
-        ("数智", "/category/digital.html")
+        ("数智", "/category/digital.html"),
+        ("-", ""),
+        ("言论", "/category/words.html")
     )),
     ("创作", "/", (
         ("文章", "/category/article.html"),
@@ -202,7 +204,8 @@ MENUITEMS = (
         ("物", "/category/things.html"),
     )),
     ("关于", "/", (
-        ("站长", "/pages/about.html"),
+        ("站长", "/pages/about-me.html"),
+        ("网站", "/pages/about-website.html"),
         ("联系我", "/pages/contact.html"),
         ("-", ""),
         ("网站反馈", mailto),

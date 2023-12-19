@@ -7,7 +7,7 @@
 :tags: 问题解决, problem-solving
 :slug: three-steps-problem-solving-solutions-to-all-programming-problems
 :summary: 梳理编程领域问题的解决方法后，发现有效方法只需要三步。
-
+:brief: 计算理论是经证明的，编程领域属于应用领域，并不存在绝对难度的问题，只有对资源的权衡和妥协。编程领域问题最难的不在事，而在人 ...
 
 问题解决是否有通用方法？
 =================================

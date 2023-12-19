@@ -8,6 +8,7 @@
 :slug: about-making-reservations-for-commemorative-coins
 :summary: 本文记录如何查询纪念币预约的信息
 :image: /static/img/2023/china-peking-opera.png
+:brief: 近年大部分币的发行量非常大，藏家的主要目的如果不是为了欣赏而是为了升值，恐怕要失望 ... 该指数未来大概率是r型的，既稳步攀升中，略有下跌，但...
 
 
 背景

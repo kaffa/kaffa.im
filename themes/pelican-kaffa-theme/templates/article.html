@@ -46,22 +46,26 @@
         </div>
     </section>
 
-    {% import 'translations.html' as translations with context %}
-    {{ translations.translations_for(article) }}
-
     <section class="container is-max-desktop box content mt-4 p-6">
-        {% if article.category %}
-        <span>分类:
-            <a class="tag is-medium" href="{{ SITEURL }}/{{ article.category.url }}">{{ CATEGORY_DICT[article.category]['name'] }}</a>
-        </span>
-        {% endif %}
-        {% if article.tags %}
-        <span class="ml-2">标签:
-            {% for tag in article.tags %}
-            <a class="tag is-primary is-light is-medium" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-            {% endfor %}
-        </span>
-        {% endif %}
+        <div class="mb-2">
+            {% if article.category %}
+            <span>分类:
+                <a class="tag is-medium" href="{{ SITEURL }}/{{ article.category.url }}">{{ CATEGORY_DICT[article.category]['name'] }}</a>
+            </span>
+            {% endif %}
+            {% if article.tags %}
+            <span class="ml-2">标签:
+                {% for tag in article.tags %}
+                <a class="tag is-primary is-light is-medium" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                {% endfor %}
+            </span>
+            {% endif %}
+        </div>
+
+        <div class="mb-5">
+            {% import 'translations.html' as translations with context %}
+            {{ translations.translations_for(article) }}
+        </div>
 
         {% if article.subject %}
         <div class="columns is-centered box mt-5" id="subject">
