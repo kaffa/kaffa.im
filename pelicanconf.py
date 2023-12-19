@@ -204,7 +204,7 @@ MENUITEMS = (
         ("物", "/category/things.html"),
     )),
     ("关于", "/", (
-        ("站长", "/pages/about-me.html"),
+        ("站长", "/pages/about.html"),
         ("网站", "/pages/about-website.html"),
         ("联系我", "/pages/contact.html"),
         ("-", ""),
