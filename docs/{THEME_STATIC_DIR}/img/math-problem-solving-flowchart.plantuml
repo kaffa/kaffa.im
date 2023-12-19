@@ -1,4 +1,5 @@
-@startuml
+@startuml
+
 start
 
 :1. 读懂题;
@@ -9,5 +10,6 @@ else (否)
 endif
 :3. 如果未解决，则跳到第1步;
 
-stop
+stop
+
 @enduml
