@@ -5,42 +5,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2023-12-19T23:50:35-00:00</lastmod>
+<lastmod>2023-12-21T12:28:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2023-12-19T23:50:35-00:00</lastmod>
+<lastmod>2023-12-21T12:28:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2023-12-19T23:50:35-00:00</lastmod>
+<lastmod>2023-12-21T12:28:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2023-12-19T23:50:35-00:00</lastmod>
+<lastmod>2023-12-21T12:28:34-00:00</lastmod>
 <changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://kaffa.im/pages/about.html</loc>
-<lastmod>2023-10-20T00:00:00+08:00</lastmod>
-<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/pages/about-website.html</loc>
 <lastmod>2023-12-10T13:30:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/pages/about.html</loc>
+<lastmod>2023-10-20T00:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -81,6 +81,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/career-development-and-planning.html</loc>
+<lastmod>2023-12-17T16:30:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/the-psychology-of-computer-programming.html</loc>
 <lastmod>2023-12-17T16:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -88,8 +95,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/weekly-2023-w51.html</loc>
+<lastmod>2023-12-17T14:30:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/engineers-programmer-and-code-farmers.html</loc>
 <lastmod>2023-12-14T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/weekly-2023-w50.html</loc>
+<lastmod>2023-12-10T14:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -145,13 +166,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/weekly-2023-w49.html</loc>
-<lastmod>2023-12-03T14:30:00+08:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://kaffa.im/weekly-2023-w50.html</loc>
 <lastmod>2023-12-03T14:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>

@@ -1,0 +1,74 @@
+职业生涯发展与规划
+############################
+
+:date: 2023-12-17 16:30
+:author: Kaffa
+:category: book
+:tags: Career Development
+:slug: career-development-and-planning
+:summary: 属于常识和工具箱。
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/6wa5PdOmu6MzJomZANkCOI
+:brief: 职业生涯 Career 依旧是一个不旧的词，行业 vocation 工作 work 就业 employment 工作 job 职业 occupation 职位 position，如果你弄不清这些词的意义，或者，你想界定兴趣 interest 价值观 value 技能 skill 能力 ability，那么可以阅读它。
+
+读后
+==========
+
+属于常识和工具箱，从实用角度说适合大学到就业这段时间，但对职场后个人而言用处一般，为什么用这个工具和什么人适合用什么工具没说，基本不如分别读读人格心理学和发展心理学。
+
+
+亮点
+==========
+
+1. 罗伊的职业选择公式：
+
+   职业选择=S[(eE+bB+cC+)+(fF,mM)+(lL+aA) +(pP×gG×tT×iI)]
+
+   S=性别 L=一般的学习和教育
+   E=总体经济状况 A=掌握的特定技能
+   B=家庭背景 P=生理特点
+   C=机遇 G=认知能力或特殊天赋
+   F=朋友，同伴群体 T=气质与个性
+   M=婚姻状况 I=兴趣与价值观
+
+2. Donald Super 舒伯的生活/生涯彩虹
+
+   将一生的发展排的很清楚，也很震撼。
+
+3. 自我认知金字塔
+
+CIP理论用下面的「信息加工模型」来表明生涯选择所涉及的各种成分。
+
+.. uml::
+    :alt: 自我认知过程
+    :format: svg
+    :filename: cip-and-casve-in-career
+
+    [*] -> 了解自我
+    了解自我 -> 了解所有选项
+    了解所有选项 -> 知道我将如何决策_CASVE
+    知道我将如何决策_CASVE -> 思考我的决策制定过程
+    思考我的决策制定过程 -> [*]
+
+    state 知道我将如何决策_CASVE {
+      沟通_Communication --> 分析_Analysis
+      分析_Analysis --> 综合_Synthesis
+      综合_Synthesis --> 评估_Valuing
+      评估_Valuing --> 执行_Execution
+      执行_Execution --> 沟通_Communication
+    }
+    沟通_Communication: 定位问题
+    分析_Analysis: 思考可选项
+    综合_Synthesis: 生成可行项
+    评估_Valuing: 优先级排序
+    执行_Execution: 缩小差距
+
+    了解自我: 我是谁？
+    了解自我: 职业生涯发展与规划的源头。
+    了解所有选项: 我在哪？
+    了解所有选项: 我可以做哪些。
+    思考我的决策制定过程: 自我对话
+    思考我的决策制定过程: 自我觉察
+    思考我的决策制定过程: 自我控制和监督
+
+

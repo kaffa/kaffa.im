@@ -4,7 +4,7 @@
 :date: 2023-11-12 12:31
 :author: Kaffa
 :category: weekly
-:tags: pelican-plantuml
+:tags:
 :slug: weekly-2023-w46
 :summary: 包含 2023w46 数据、备忘和拾遗
 
