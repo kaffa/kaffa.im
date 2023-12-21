@@ -1,0 +1,19 @@
+CSS新世界
+############################
+
+:date: 2023-12-22 00:30
+:author: Kaffa
+:category: book
+:tags: CSS
+:slug: css-new-world
+:summary: 须对技术怀有敬畏之心。
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/6jiqx3WXdomLA01SSmpqlO
+:brief:
+
+读后
+==========
+
+CSS 3 的新东西还是很多的，读后可知 CSS 技术的深度和细节，涉及很多浏览器实现。
+
+一般全栈，不纠结UI细节的开发者用不上。

@@ -1,0 +1,24 @@
+CSS世界
+############################
+
+:date: 2023-12-22 00:30
+:author: Kaffa
+:category: book
+:tags: CSS
+:slug: css-world
+:summary: 在新手村时，未遇见张鑫旭的书。
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/6zIYZSMP7d0MwJurUmT42B
+:brief:
+
+想看
+==========
+
+但 css 上也没有遇到绝对复杂的东西，也许没有优先级看。
+
+张鑫旭是前端名人，就职于腾讯阅文集团。
+
+可惜在新手村时，未遇见张鑫旭，不过当时前端这个词也没有出现，能看的 CSS 书只有 Eric Meyer 的 「CSS: The Definitive Guide（第三版）」，刚够入门，即使翻译得比较勉强。
+
+翻看到这本书的几张图，讲解流式布局时用了水槽和木头的比喻，讲 div 和 span 的 display 时，用了魔法的比喻，是一本有趣的技术书。
+
