@@ -36,6 +36,10 @@
   font-size: 0.875rem !important;
 }
 
+.content li+li {
+    margin-top: 1rem;
+}
+
 .box:not(:last-child) {
     margin-bottom: 1rem;
 }
