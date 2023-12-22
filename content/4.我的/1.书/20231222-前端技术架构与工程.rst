@@ -1,0 +1,23 @@
+前端技术架构与工程
+############################
+
+:date: 2023-12-22 14:30
+:author: Kaffa
+:category: book
+:tags: front-end
+:slug: front-end-technology-architecture-and-engineering
+:summary: 概念普及书
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/1JijTBl8VsoRV5Li2SHVKa
+:brief: 不了解前端的可以速读看看。
+
+读后
+==========
+
+作者在腾讯工作，可能是对于所见所知的记录。
+
+行文有凑字数之嫌，但豆瓣评分却是略低了。
+
+有关技术的方方面面可以翻翻，有关业务和架构的理解，受碍于大厂视野，还有不少可以提升。
+
+
