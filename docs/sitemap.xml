@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2023-12-24T23:07:27-00:00</lastmod>
+<lastmod>2023-12-25T01:07:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2023-12-24T23:07:27-00:00</lastmod>
+<lastmod>2023-12-25T01:07:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2023-12-24T23:07:27-00:00</lastmod>
+<lastmod>2023-12-25T01:07:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2023-12-24T23:07:27-00:00</lastmod>
+<lastmod>2023-12-25T01:07:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -74,14 +74,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kaffa.im/front-end-technology-architecture-and-engineering.html</loc>
-<lastmod>2023-12-22T14:30:00+08:00</lastmod>
+<loc>https://kaffa.im/future-prediction-for-2040.html</loc>
+<lastmod>2023-12-24T19:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://kaffa.im/future-prediction-for-2040.html</loc>
+<loc>https://kaffa.im/front-end-technology-architecture-and-engineering.html</loc>
 <lastmod>2023-12-22T14:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
