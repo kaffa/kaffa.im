@@ -16,7 +16,7 @@ AUTHOR = 'Kaffa'
 AUTHOR_NAME = 'Kaffa'
 MANTRA = '<span class="has-text-grey-light is-size-6 is-italic">Kunnect&nbsp;</span>'\
          '<sup class="has-text-grey-dark is-size-7 has-text-weight-bold">Adventures & Fun</sup>'
-AUTHOR_INTRO = '「探索」人生，共享「意趣」，主研方向是「软件研发 + 技术管理」和「业务数字化」。'
+AUTHOR_INTRO = '「探索」人生，共享「意趣」' #，主研方向是「软件研发 + 技术管理」和「业务数字化」。
 
 SITENAME = '<span class="is-italic">Kaffa</span>.im'
 SITESUBTITLE = ''  # 'Kunnect Adventures & Fun'
