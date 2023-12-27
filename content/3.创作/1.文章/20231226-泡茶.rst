@@ -6,7 +6,7 @@
 :category: article
 :tags: 泡茶,Tea
 :slug: make-tea
-:summary: 如何把茶泡得好喝
+:summary: 如何把茶泡得好喝，这是个问题...
 :image: /static/img/2023/about-kaffa.png
 :brief: 茶源自中国，作为中国人怎能不懂如何将茶泡得好喝呢？
 
