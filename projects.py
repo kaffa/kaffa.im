@@ -28,7 +28,7 @@ def get_list():
     except MySQLdb.DatabaseError as err:
         print(err)
         print("Can't connect to database")
-        return 0
+        return []
     c = conn.cursor()
     sql = '''SELECT
         t1.id, t1.name as project_name, t1.description,
