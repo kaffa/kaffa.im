@@ -1,0 +1,17 @@
+随机漫步的傻瓜
+########################################################
+
+:date: 2024-01-04 22:56
+:author: Kaffa
+:category: book
+:tags: investing
+:slug: fooled-by-randomness
+:summary: 投不投资都值得看
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/3wGEjOaOm0ibInTTCO8iwR
+
+
+读后
+====================
+
+塔勒布都值得看。

@@ -14,13 +14,14 @@ import friends
 
 AUTHOR = 'Kaffa'
 AUTHOR_NAME = 'Kaffa'
-SITENAME = '<span class="is-italic">K<span class="has-text-grey">affa</span></span>'\
-           '<span class="has-text-grey-lighter">.im</span>'
+SITENAME = '<span class="is-italic author_name">Kaffa</span>.im'
 SITESUBTITLE = ''  # 'Kunnect Adventures & Fun'
 
-MANTRA = '<span class="has-text-grey-light is-size-6 is-italic">Kunnect&nbsp;</span>'\
-         '<sup class="has-text-grey-dark is-size-7 has-text-weight-bold">Adventures & Fun</sup>'
-AUTHOR_INTRO = '「探索」人生，共享「意趣」，目前主研方向是「软件研发 + 技术管理」' # 和「业务数字化」。
+MANTRA = '<span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span>'\
+         '<sup class="has-text-grey is-size-7">'\
+         '  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un'\
+         '</sup>'
+AUTHOR_INTRO = '「探索」人生，共享「意趣」。'  # 专注「软件研发」吧和「业务数字化」。
 
 SITEURL = 'https://kaffa.im'
 TIMEZONE = 'Asia/Shanghai'
@@ -161,7 +162,7 @@ COLORFUL_SITENAME = '''<
     span style="color:#A65E9E">象</span>'''
 
 # My Data
-AVATAR_URL = 'https://avatars.githubusercontent.com/u/4386281?v=4'
+AVATAR_URL = 'https://kaffa.im/static/img/kaffa-avatar.png' #'https://avatars.githubusercontent.com/u/4386281?v=4'
 
 # mailto
 mailto_email = urllib.parse.quote('admin@kaffa.im')

@@ -1,0 +1,16 @@
+精品咖啡学（下）
+########################################################
+
+:date: 2024-01-04 21:30
+:author: Kaffa
+:category: book
+:tags: coffee
+:slug: specialty-coffee-science-volume-2
+:summary: 咖啡学入门书，台湾韩怀宗老师所著，网评褒贬不一，但我还是非常认同韩老师对咖啡的评述。
+:image: /static/img/2023/about-kaffa.png
+:subject_url: https://neodb.social/book/54tPZzVPoLFEIOFKIe7K08
+
+读后
+====================
+
+参见\ `《精品咖啡学（上）》 <https://kaffa.im/specialty-coffee-science-volume-1.html>`_

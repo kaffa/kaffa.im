@@ -92,7 +92,7 @@ article section.content td p {
 
 section > h3 {
     padding: 0 0 0 .5rem;
-    border-left: 3px solid hsl(217, 71%, 45%);
+    border-left: 3px solid #666;
 }
 
 article.content .section {
