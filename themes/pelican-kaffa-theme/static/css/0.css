@@ -97,7 +97,7 @@ section > h3 {
     border-left: 3px solid #666;
 }
 
-article.content .section {
+.content .section {
     padding: 2rem 0 0 0;
 }
 
