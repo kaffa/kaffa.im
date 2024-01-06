@@ -35,7 +35,9 @@
 .is-size-67 {
   font-size: 0.875rem !important;
 }
-
+.strike {
+  text-decoration: line-through;
+}
 .content li+li {
     margin-top: 1rem;
 }
