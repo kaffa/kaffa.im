@@ -45,7 +45,7 @@
 身份与真名
 ====================
 
-.. image:: https://kaffa.im/static/img/2023/internet_dog.jpg
+.. image:: https://kaffa.im/static/img/2023/internet-dog.jpg
     :alt: Internet Dog
 
 |   "On the Internet, nobody knows you're a dog." —— Peter Steiner
