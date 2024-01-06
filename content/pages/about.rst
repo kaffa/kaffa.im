@@ -14,7 +14,7 @@
 
 .. raw:: html
 
-   <script src="http://kaffa.im/static/js/jquery.3.7.1.min.js"></script>
+   <script src="http://kaffa.im/static/js/jquery-3.7.1.min.js"></script>
    <script>
         $(function() {
             $('.spn_about').on('mouseover', () => {

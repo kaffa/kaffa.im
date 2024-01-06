@@ -368,7 +368,7 @@ True   True   True
 .. raw:: html
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <script src="http://kaffa.im/static/js/jquery.3.7.1.min.js"></script>
+   <script src="http://kaffa.im/static/js/jquery-3.7.1.min.js"></script>
    <script>
        $(function() {
            $('.highlight-cell-1').parent().addClass('has-background-success-light');
