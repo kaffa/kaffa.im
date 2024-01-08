@@ -1,0 +1,26 @@
+KaffaWeb 2.0 建设之主题与首页
+##################################################
+
+:date: 2023-12-14 20:00
+:author: Kaffa
+:category: website
+:tags: kaffaweb
+:slug: kaffaweb-theme-and-index-page
+:summary: 本文记录了 kaffaweb 主题和 index 的设计与实现要点。
+
+主题
+========================================
+
+主题是使用的欧雷的 UI 设计，主要使用 bulma 辅助实现。
+
+首页
+========================================
+
+1. Hero 图：在插件中作了一些 hero 图片配置的支持。
+2. 指标统计：python 使用者常会考量 jinja2 和 mako 作为模板，其实很简单，mako 能支持复杂逻辑，jinja2 使用复杂逻辑有限，大多需要在 python 代码中实现，既 pelican 的插件，但这里我使用 namespace 特性实现了一些统计。
+
+文章页
+========================================
+
+1. 做了 rst 和 md 的样式统一。（rst 生成的 HTML 天然带有 section 标签）
+
