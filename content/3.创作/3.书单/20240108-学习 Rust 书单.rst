@@ -1,0 +1,32 @@
+学习 Rust 书单
+##################################################
+
+:date: 2024-01-08 12:25
+:author: Kaffa
+:category: book-list
+:tags: Rust
+:slug: learning-rust-book-list
+:summary: 本文列举了最好的 Rust 书籍书单。
+:image: /static/img/logo/html5.svg
+
+
+.. raw:: html
+
+    <div class="notification is-info is-light">
+        <i class="fa fa-info-circle mr-3" aria-hidden="true"></i>
+        通过英文书学编程，当 90% 单词都认识，且不赶时间的，建议直接读英文书。
+    </div>
+
+Rust 书单
+====================
+
+1. `「The Rust Programming Language, 2nd Edition」 <https://kaffa.im/the-rust-programming-language-2nd-edition.html>`_ ：适合入门。
+
+2. `「Programming Rust, 2nd Edition」 <https://kaffa.im/programming-rust-2nd-edition.html>`_ ：适合入门。
+
+Rust 网站
+====================
+
+* `The Rust Programming Language <https://www.rust-lang.org/learn>`_ ：官方 Rust 书。
+
+
