@@ -7,7 +7,7 @@
 :tags: Rust
 :slug: learning-rust-book-list
 :summary: 本文列举了最好的 Rust 书籍书单。
-:image: /static/img/logo/html5.svg
+:image: /static/img/logo/rust.svg
 
 
 .. raw:: html
