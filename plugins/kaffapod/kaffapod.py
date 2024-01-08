@@ -96,7 +96,6 @@ def fetch_subject(instance):
         subject_obj['slug'] = ((subject_obj['title']
                                .replace(' ', '-')
                                .replace(':', '')
-                               .replace(',', '-')
                                .replace('(', '').replace(')', '').replace("'", '-'))
                                .lower().strip())
 
