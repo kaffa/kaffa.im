@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - digital</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/digital.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2023-12-30T15:30:00+08:00</updated><entry><title>大语言模型的商业感觉</title><link href="https://kaffa.im/feelings-about-large-language-model.html" rel="alternate"></link><published>2023-12-30T15:30:00+08:00</published><updated>2023-12-30T15:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-30:/feelings-about-large-language-model.html</id><summary type="html">&lt;p class="first last"&gt;一些有意思摘录&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;大语言模型的商业生态&lt;/h2&gt;
+&lt;p&gt;一、大模型端，除了OpenAI，各大公司都训练了自己的LLM。在很长一段时间内，LLM一定还是分散的。&lt;/p&gt;
+&lt;p&gt;二、应用端，动作快的团队会胜出，做事有优先级、善于整合，有经验积累很重要。&lt;/p&gt;
+&lt;p&gt;三、平台级会出现在中间层。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;大语言模型的感觉&lt;/h2&gt;
+&lt;p&gt;有一个不错的比喻是像扑克牌，大多公司都是一副不好不坏的牌，可能没有同花顺，但也有个对子。&lt;/p&gt;
+&lt;p&gt;谁能胜出，就在于整合强项，安排优先级。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="LLM"></category><category term="AI"></category></entry><entry><title>批量修改Sony相机照片的时间</title><link href="https://kaffa.im/batch-update-photo-timestamp-of-sony-camera.html" rel="alternate"></link><published>2023-12-09T13:30:00+08:00</published><updated>2023-12-09T13:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-09:/batch-update-photo-timestamp-of-sony-camera.html</id><summary type="html">&lt;p class="first last"&gt;批量修改相片时间，以解决由于相机时间未初始化导致的相片排序错乱问题。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;问题场景&lt;/h2&gt;
+&lt;p&gt;当相机电池长时间不用时，内置时间可能会回归到初始设置。&lt;/p&gt;
+&lt;p&gt;如果此时拍摄了相片，相片的日期信息会错乱，导致相片在相机内或电脑上排序混乱。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;解决办法&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;下载安装 &lt;a class="reference external" href="https://support.d-imaging.sony.co.jp/www/disoft/int/download/playmemories-home/win/zh-Hans/"&gt;PlayMemories Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;打开软件，选定要修改的照片，选择菜单「编辑」「更改选定媒体文件的日期...」，出现下面的对话框&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img alt="Update Timestamp With Playmemories Home" src="https://kaffa.im/static/img/2023/playmemories-update-timestamp.png" /&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;首先，改日期，使用对话框上方的选项修改拍摄的日期，&lt;strong&gt;注意，此处需要保持后面时间不变&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;然后，改时间，使用对话框下方的选项修改拍摄的时间。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;注意，这里的界面设计存在一个问题，可能会诱使用户修改日期时也修改了时间。&lt;/p&gt;
+&lt;p&gt;具体的说：如果用户在上述第 3 中修改了时间，则不能保持照片原本的顺序了。更清晰的，举一个例子，比如，实际拍摄时间和相机开机时间存在888天18小时18分钟的差异，则用户可以先修改日期，以让差距缩小 888 天，然后根据一张特定的照片来推出相差的小时数，再通过下方来修改这个差距即可完美修复。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;尝试过程&lt;/h2&gt;
+&lt;p&gt;首先我以为 Sony 相机写入的是通用的 Exif 信息，但使用几个能修改 Exif 信息的软件修改照片后，依然不能在相机中正常排序。&lt;/p&gt;
+&lt;p&gt;于是停下来思考，这个场景的通用程度，根据墨菲定律，我一定不是第一个遇到这个问题的人，于是很可能网上可以搜索到解决办法。&lt;/p&gt;
+&lt;p&gt;于是找到了 Sony Playmemories Home。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h2&gt;相关软件&lt;/h2&gt;
+&lt;p&gt;之前也尝试了几个软件，但不能满足修改日期和时间差的需求&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Adobe Lightroom&lt;/li&gt;
+&lt;li&gt;PhotoFiltre&lt;/li&gt;
+&lt;li&gt;darktable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="Sony"></category><category term="PlayMemories"></category><category term="Photo"></category><category term="Timestamp"></category></entry><entry><title>在Windows10上移除无法常规移除的蓝牙设备</title><link href="https://kaffa.im/use-bluetooth-command-line-tools-to-remove-bluetooth-devices.html" rel="alternate"></link><published>2023-11-15T12:00:00+08:00</published><updated>2023-11-15T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-15:/use-bluetooth-command-line-tools-to-remove-bluetooth-devices.html</id><summary type="html">&lt;p class="first last"&gt;本文记录一种蓝牙命令行工具以在 Windows 10 上移除无法常规移除的蓝牙设备。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;问题现象&lt;/h2&gt;
+&lt;p&gt;在 Windows 中删除设备，删除不成功，或者删除成功后，原本被删的设备又重新会显示出来。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;解决方法&lt;/h2&gt;
+&lt;p&gt;有一种蓝牙命令行工具可解决，但似乎不开源，因此安全性方面需自行鉴别。&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;下载地址：&lt;a class="reference external" href="https://bluetoothinstaller.com/bluetooth-command-line-tools"&gt;https://bluetoothinstaller.com/bluetooth-command-line-tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;运行以下命令后，即可删除。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;btpair -u
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;挖坑&lt;/h2&gt;
+&lt;p&gt;Windows 10 和很多蓝牙设备的连接总存在一些问题，但也成功连接过很难连接的设备，比如苹果鼠标。&lt;/p&gt;
+&lt;p&gt;我的 Bose SoundLink Mini 和 Windows 10 蓝牙连接一直不是很爽快，在折腾过驱动后偶尔能连上一次，但大多时候连上就断，现在都是使用线缆直连。&lt;/p&gt;
+&lt;p&gt;终于体会到 RMS 开源运动的苦心，如果硬件设备存在问题，没有驱动源代码的情况下，即使有编程技能也无法解决问题。&lt;/p&gt;
+&lt;p&gt;蓝牙是一套很复杂的协议栈，现在的近场通讯，从最初的红外到蓝牙，到现在出现的星闪。&lt;/p&gt;
+&lt;p&gt;苹果侧还有独占的 AirDrop，还好现在社区中出现了 LocalSend，让好用的技术普惠于众。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="Bluetooth"></category><category term="NearLink"></category></entry><entry><title>居然失灵？「Alt+Tab」的默认行为还原</title><link href="https://kaffa.im/windows-hotkey-alt-tab-not-work-in-edge.html" rel="alternate"></link><published>2023-11-07T17:15:00+08:00</published><updated>2023-11-07T17:15:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-07:/windows-hotkey-alt-tab-not-work-in-edge.html</id><summary type="html">&lt;p&gt;用了好多年的热键，居然失灵了，在 Windows 的 Edge 浏览器中，当按下 &lt;code&gt;Alt+Tab&lt;/code&gt; 时，如何切换到其它程序呢？&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Edge 中快捷键无法切换？&lt;/h2&gt;
+&lt;p&gt;在 Microsoft Edge 浏览器中按下 &lt;kdb&gt;Alt&lt;/kbd&gt; + &lt;kdb&gt;Tab&lt;/kbd&gt; 时，系统并没有按其它程序一样，从 Edge 切换到上一个使用的一个程序，而是切换到了上一个浏览的页面。&lt;/p&gt;
+&lt;h2&gt;热键 &lt;kdb&gt;Alt&lt;/kbd&gt; + &lt;kdb&gt;Tab&lt;/kbd&gt; 的默认行为还原&lt;/h2&gt;
+&lt;p&gt;如果你在中文 Windows 系统中，可以按照下面的步骤操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用鼠标右键点击开始菜单，再点击『设置』；&lt;/li&gt;
+&lt;li&gt;当进入『Windows 设置』后，点击『系统』，再点击『多任务处理』，&lt;/li&gt;
+&lt;li&gt;在页面「Alt + Tab」下，将「按 Alt + Tab 将显示」下拉框内容修改为 &lt;strong&gt;「仅打开的窗口」&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;操作完成后，回到 Edge 测试，此时，按下 &lt;kdb&gt;Alt&lt;/kbd&gt; + &lt;kdb&gt;Tab&lt;/kbd&gt; 时，应该可以切换到上一个程序了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If the Windows UI were in the English language, these steps would be:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open 'Windows Settings'&lt;/li&gt;
+&lt;li&gt;On 'Multitasking settings' page&lt;/li&gt;
+&lt;li&gt;'Alt + Tab' section contains a new drop-down setting labeled 
+   'Pressing Alt + Tab Shows'.&lt;/li&gt;
+&lt;li&gt;Choose the option 'Open windows only'.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;现象发现&lt;/h2&gt;
+&lt;p&gt;发现这个改变是因最近频繁使用 Microsoft Edge 浏览器，当我按下熟悉的快捷键，总觉得有什么阻断了我熟悉的工作流，当我真正意识到这些，才发现这个快捷键并没有按头脑中的意识习惯一样工作。&lt;/p&gt;
+&lt;p&gt;毫不夸张地说，自从 Windows 2.0 时代 &lt;kdb&gt;Alt&lt;/kbd&gt; + &lt;kdb&gt;Tab&lt;/kbd&gt; 就被设计用来从一个程序切换到上一个程序，而如今熟悉的热键失灵了。&lt;/p&gt;
+&lt;p&gt;不知产品的这个特性是如何设计的决策的，但一般软件更新如果含有兼容性破坏的改变，都是经过谨慎决策的，有明确商业目的。也许这个快捷键的改变，可以让人更长时间的停留在 Edge 中。&lt;/p&gt;
+&lt;p&gt;这样做虽然有其理由，但对于我非常重视本地设备的人来说，也是非常不舒适的。&lt;/p&gt;
+&lt;p&gt;如果有软件常这么干，要尽早选择换一种替代品。&lt;/p&gt;
+&lt;h2&gt;关于软件兼容性破坏的思考&lt;/h2&gt;
+&lt;p&gt;经查阅，大约在 2020 年网络就有关于此热键行为的改变的吐槽了。微软在 Windows 10 Insider build 20161 版本中，宣布他们测试了含有 Alt+Tab 新特性的 
+Microsoft Edge Canary 浏览器。&lt;/p&gt;
+&lt;p&gt;由此看出来，习惯和改变之间的关联非常强，习惯的惯性让我在使用几年后才去修改这个设置点。大多对软件兼容性的破坏都是非常伤害体验的，除非有非常长远的意义，否则不要做出破坏性的改变，尤其是快捷键这种具有肌肉记忆的部分。&lt;/p&gt;
+&lt;p&gt;就像代码一样，好的软件界面设计是设计好就不需要再破坏的那种，时间已经让它们最优化了。你可以对它不断增强，但最好永远都不对它进行硬破坏设计。&lt;/p&gt;</content><category term="digital"></category><category term="Software"></category><category term="Edge"></category></entry><entry><title>手机快充技术</title><link href="https://kaffa.im/mobile-phone-fast-charging-technology.html" rel="alternate"></link><published>2023-10-15T12:13:00+08:00</published><updated>2023-10-15T12:13:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-10-15:/mobile-phone-fast-charging-technology.html</id><summary type="html">&lt;p&gt;手机快充技术让人眼花撩乱，作为普通消费者没有时间去了解，但也因此错过了快充科技体验，本文提供一些关于快充的暂时的认识。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;快冲买什么&lt;/h2&gt;
+&lt;p&gt;现阶段消费者买支持 PD 3.0 协议的充电头和充电线，能获得最大程度的兼容和较快的充电速度，一般购买氮化镓（GaN、Gallium nitride）就够了。&lt;/p&gt;
+&lt;h2&gt;充电技术&lt;/h2&gt;
+&lt;p&gt;PD，即 USB Power Delivery 协议，类似还有 QC，即 Qualcomm Quick Charge 协议等等，但现阶段及未来有可能 PD 可以一统充电协议江湖。&lt;/p&gt;
+&lt;p&gt;PD 需使用 USB Type-C 接口，Type-C 默认最大支持5V/3A，PD 最大支持 100W 充电。&lt;/p&gt;
+&lt;p&gt;充电的私有协议也有很多，对于消费者最大多影响就是使用不同设备，需要携带许多不同的线。&lt;/p&gt;
+&lt;p&gt;充电技术细节还算有技术含量，可参阅券商投研报告，对于普通消费者来说，没时间也没有必要弄明白细节，但值得花些钱买支持快充的充电头和充电线。&lt;/p&gt;
+&lt;p&gt;充电过程简单理解就是：交流电插座-&amp;gt;充电头-&amp;gt;充电线-&amp;gt;手机-&amp;gt;电池。&lt;/p&gt;
+&lt;p&gt;能量公式是：功率 = 电压 × 电流。&lt;/p&gt;
+&lt;p&gt;快充的思路：高压低流、低压高流，或高压高流。&lt;/p&gt;
+&lt;h2&gt;充电历史&lt;/h2&gt;
+&lt;p&gt;开始是 QC 协议，目前是 3.0 版本协议，主要是安卓设备支持，苹果不支持 QC，无法快充，只能普充。&lt;/p&gt;
+&lt;p&gt;然后是 PD 协议，这是公开协议，安卓和苹果都遵循。&lt;/p&gt;
+&lt;p&gt;各厂商还有自研的黑科技充电，但多是私有协议，按下不表。&lt;/p&gt;
+&lt;p&gt;如果是厂商私有协议，那么使用厂商自己的充电头和线，当然能获得最大便利。但从长期来看，聪明消费者的应多推广普惠开放的充电协议，让厂商在更关键的技术领域去卷。&lt;/p&gt;
+&lt;h2&gt;充电怎么充&lt;/h2&gt;
+&lt;p&gt;何同学做过关于充电的实验，基本结论就是：买快冲充电器，随便充。https://www.bilibili.com/video/BV1X8411e7EJ/&lt;/p&gt;</content><category term="digital"></category><category term="Charging"></category><category term="QC"></category><category term="PD"></category></entry><entry><title>Dell XPS 笔记本电脑内存插槽问题</title><link href="https://kaffa.im/dell-xps-ram-slot-issue.html" rel="alternate"></link><published>2023-08-11T11:51:00+08:00</published><updated>2023-08-11T11:51:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-08-11:/dell-xps-ram-slot-issue.html</id><summary type="html">&lt;p&gt;关于 Dell XPS 笔记本电脑内存插槽问题&lt;/p&gt;</summary><content type="html">&lt;h2&gt;问题&lt;/h2&gt;
+&lt;p&gt;我的一台工作机是 Dell XPS，有 2 条内存共 16G，四个月前，出现开机闪灯提示，查询结果显示是内存问题，于是简单处理拆卸了一条内存继续使用。
+感觉 8G 和 16G 在不开几十个浏览器页面，同时开一个 8G 虚拟机时，也没有差别。&lt;/p&gt;
+&lt;p&gt;因为机器已过保，于是拆卸定位故障，首先排除了内存条和左侧内存插槽故障，因为两条内存插在左侧，均开机正常。
+而当加上右侧内存时，除非用按压住内存条，要不会提示故障。&lt;/p&gt;
+&lt;h2&gt;分析&lt;/h2&gt;
+&lt;p&gt;从问题的表现来看，排除了内存条本身的问题，极大可能是右侧内存插槽虚焊或者与内存条的接触问题。&lt;/p&gt;
+&lt;h2&gt;官方维修&lt;/h2&gt;
+&lt;p&gt;官方不维修零件，只换主板，价格 3000 元，感觉可以不如买一台新的。&lt;/p&gt;
+&lt;h2&gt;线下维修&lt;/h2&gt;
+&lt;p&gt;换卡槽，约 400 元。&lt;/p&gt;
+&lt;h2&gt;Google 搜索&lt;/h2&gt;
+&lt;p&gt;Google 搜索到 Dell 官方有人提问过&lt;a href="https://www.dell.com/community/en/conversations/xps/re-dell-xps-15-9570-ram-slot-issue/647f83d3f4ccf8a8de2a760c"&gt;类似问题&lt;/a&gt;，解决方法有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用吹气皮球除尘；&lt;/li&gt;
+&lt;li&gt;用酒精清洗金手指；&lt;/li&gt;
+&lt;li&gt;用橡皮檫除氧化物；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;上述对问题无效。&lt;/p&gt;
+&lt;p&gt;另外一个解决方案是使用一块垫片：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.laptoprepair101.com/fix-laptop-memory-slot-failure/"&gt;吉他片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;废弃信用卡&lt;/li&gt;
+&lt;li&gt;其他能导热物质&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="维修内存插槽" src="https://kaffa.im/static/img/2023/repair-failed-memory-slot-5.jpg"&gt;&lt;/p&gt;</content><category term="digital"></category><category term="Dell XPS Ram Slot Issue"></category></entry><entry><title>用 MkDocs 写文档</title><link href="https://kaffa.im/write-documentations-with-mkdocs.html" rel="alternate"></link><published>2021-01-12T12:00:00+08:00</published><updated>2021-01-12T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2021-01-12:/write-documentations-with-mkdocs.html</id><summary type="html">&lt;p&gt;多年前看到 Python 社区使用 MkDocs 写文档，本文记录一下 MkDocs 写文档的尝试。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;感叹&lt;/h2&gt;
+&lt;p&gt;编程语言的哲学通常会传导到产出物中，对比 MkDocs 和 Hugo，前者从安装到使用都简单直观多了。&lt;/p&gt;
+&lt;h2&gt;为什么是 MkDocs ？&lt;/h2&gt;
+&lt;p&gt;如其名，一个编写文档的 Python 包，使用的 MarkDown 语法，上篇提到本年正转向 MarkDown 格式输出，据学习规律，应在多场景中重复创造练习的环境。&lt;/p&gt;
+&lt;h2&gt;给自己的 MkDocs 使用说明&lt;/h2&gt;
+&lt;p&gt;首先是安装，因为是 Python 包，所以在当下使用目前官方默认的包管理工具 pip install 即可。&lt;/p&gt;
+&lt;p&gt;其次是使用，在开箱即用会打开首页，包含几个常用命令和目录结构。&lt;/p&gt;
+&lt;p&gt;命令&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mkdocs new [目录名]&lt;/code&gt; - 创建项目&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdocs serve&lt;/code&gt; - 开始实时刷新的文档服务器监听&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdocs build&lt;/code&gt; - 生成文档&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdocs -h&lt;/code&gt; - 打印帮助并退出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目录结构&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdocs.yml    # 配置文件
+docs/
+    index.md  # 文档首页
+    ...       # 其它页面，图片和其它文件
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;最后，MkDocs 主题并不是很多，使用默认主题或喜欢的即可，Material for MkDocs 还不错&lt;/p&gt;
+&lt;h3&gt;思路&lt;/h3&gt;
+&lt;p&gt;为了寻找一个写文档的包，可以在 Github 搜索；如果对软件的编程语言有要求，可以加上语言作为关键字，比如：Python Documentation
+这里就会得到开源项目的列表，按照排名翻一下前几页会找到很多知名的项目。&lt;/p&gt;
+&lt;p&gt;另外，世界排名后几名的开源站，也会有很多的经典项目。&lt;/p&gt;
+&lt;p&gt;如果是对静态站点生成器这个主题内容感兴趣，可以去 &lt;a href="https://jamstack.org/generators/"&gt;Site Generators&lt;/a&gt; 看看，那里有一个排名。&lt;/p&gt;
+&lt;h3&gt;搜索关键字&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://python.org/"&gt;Python&lt;/a&gt;, &lt;a href="https://www.mkdocs.org/"&gt;MkDocs&lt;/a&gt;, &lt;a href="https://squidfunk.github.io/mkdocs-material/"&gt;MkDocs Theme&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;感谢阅读。&lt;/p&gt;</content><category term="digital"></category><category term="MkDocs"></category></entry><entry><title>尝试用 Hugo 写简历</title><link href="https://kaffa.im/try-to-write-a-resume-with-hugo.html" rel="alternate"></link><published>2021-01-03T12:00:00+08:00</published><updated>2021-01-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2021-01-03:/try-to-write-a-resume-with-hugo.html</id><summary type="html">&lt;p&gt;因准备找一份新工作，注册了新的 Github 账号，顺便尝试使用 Hugo 和 Hugo Theme 编写简历，这篇是过程的记录以帮助未来再次写简历的我和你。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;去年的回顾&lt;/h2&gt;
+&lt;p&gt;2020 年是变化一言难尽的一年。占星学上，2018年以来的摩羯土星的旧本有机会转入水瓶的新，而一场新冠病毒就从底层认知上彻底改变了我们，
+我们可能还需再花几年时间，才能从意识形态上转入后新冠时代。
+从封城后空荡的街道，到春节前病毒式传播的“假新闻”，从寻求真相却难以求证的人群，到野草般生长的“偏执和怀疑论”，其后全世界范围内开始讨论和寻找零号病人和病毒起因。&lt;/p&gt;
+&lt;p&gt;在数据的曲线和数字背后，新冠带给一个一个真实的人和家庭的身心伤害在很大程度上被忽视了。其间，我们能看到的只是世界各方对新冠的表演式的应对。
+当面对未知与不确定时，新冠有关的信息涡旋裹挟着群体的盲目与恐惧，被互联网的棱镜折射与放大，更清晰地呈现出人类的乐观和悲观情绪。
+我们看见了无数人的尽力与无能为力，看见了战疫岗位上朴实无华的坚守，也看见善良和美德之光透过一颗颗平凡的心灵迸射出来，
+同样被看见的还有自私与丑恶、傲慢与偏见，将全球数不清的尚未做好准备的人拉到了不得不面对的战场上。
+这是个人命运的挫折，更是全人类的灾难，有些事实也许一年或几年还看不清，但当历史的车轮轧过后，
+那些狭隘的自私的和虚伪的，都会标上的真实的价码，如同地质运动后的岩层一样戳破残破不堪的地表。&lt;/p&gt;
+&lt;p&gt;2021 年会更好的吗？我不知道，这一年木土在水瓶大合相，将开始全新的风象时代。这些时代讯息从去年的 "I can't breathe"（我需要风）, "Black lives matter"（呼唤水瓶的平等）中已有体现，&lt;/p&gt;
+&lt;h2&gt;为什么是 Hugo ？&lt;/h2&gt;
+&lt;p&gt;为迎接上述转变，我计划将写作源从 reStructuredText 转到更新的技术 MarkDown 上以呼应时代的机会。
+源自 Python 的 reStructuredText 完善稳定，是支撑 Python 众多文档的基础；新生的 MarkDown 基础格式统一，扩展标准兼容性有待完善，
+但它有更适合这个风向时代的轻量和通用，在木星水瓶的第一个十年里，MarkDown 很有不断打磨自己和扩张的机会。&lt;/p&gt;
+&lt;h2&gt;给自己的 Hugo 写简历不完全指南&lt;/h2&gt;
+&lt;p&gt;我相信会有很多用 Hugo 写简历的文章，但如何写一篇不过时，不用频繁更新，有更持久意义的文章呢？我不知道。
+但可以列出一些达到这个目的的原则：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;提供思路，而不是提供步骤&lt;/li&gt;
+&lt;li&gt;提供方法，而不是提供结果&lt;/li&gt;
+&lt;li&gt;提供核心，并谨慎提供细节&lt;/li&gt;
+&lt;li&gt;提供关键字，但不列举资源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;思路&lt;/h3&gt;
+&lt;p&gt;一般会用 Hugo 的是 IT 人，大多会知道 &lt;a href="https://golang.org/"&gt;Go&lt;/a&gt; 语言。
+写简历就是使用 Hugo 和 Hugo Theme 来生成一个静态站点。
+因此要懂得 Hugo 和 Hugo Theme 的基本用法，再将简历内容写到内容中。
+如个人基本信息、联系方式、工作经验、项目经验、教育经历、证书奖励等&lt;/p&gt;
+&lt;h3&gt;方法&lt;/h3&gt;
+&lt;p&gt;可通过 Google 或 Bing 找到 Go 和 Hugo 的官方站点，Hugo 是一个静态站点生成软件，软件都有文档，文档中必然有它的安装和使用方法。&lt;/p&gt;
+&lt;h3&gt;核心&lt;/h3&gt;
+&lt;p&gt;使用软件的核心能力是文档&lt;strong&gt;阅读理解&lt;/strong&gt;，&lt;strong&gt;英语&lt;/strong&gt;能力能帮上很大忙。
+对于 Hugo 的文档，首先阅读介绍（Introduction），然后阅读安装（Install Hugo），
+再阅读目录结构（Directory Structure），最后阅读配置（Configure Hugo）。&lt;/p&gt;
+&lt;p&gt;这里就不再把安装文档中的步骤摘录于此，因每种操作系统及发行版都提供了&lt;strong&gt;命令行软件包管理工具&lt;/strong&gt;来管理常用软件。
+不仅如此，现代软件都相互学习（借鉴）设计，命令行功能简洁易用，Hugo’s CLI 也属于此，但功能无外乎：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;hugo new site: 生成新站点&lt;/li&gt;
+&lt;li&gt;hugo new: 增加新内容 &lt;/li&gt;
+&lt;li&gt;hugo server: 提供 http 服务以供本地测试 &lt;/li&gt;
+&lt;li&gt;hugo help: 其它先不用管功能&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Section 我译它为章，即 content 目录下的目录，其中可能包含一组页面。&lt;/p&gt;
+&lt;p&gt;主要目录结构：很大程度上不会变，也意味着未来也许会改变。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;archetypes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;预定义的元数据定义&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;config&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;toml&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;配置文件&lt;/span&gt;
+&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;所有的内容按目录分为章&lt;/span&gt;
+&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;可以理解为静态化的数据&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="nx"&gt;可被模版使用&lt;/span&gt;
+&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;layouts&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;模版的目录&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="nx"&gt;有默认的页面和模版&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="nx"&gt;模版片段&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="nx"&gt;单页模版等&lt;/span&gt;
+&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;static&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;静态文件&lt;/span&gt;
+&lt;span class="err"&gt;└─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;themes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;主题文件&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;因此上述目录说明应去文档中查看，如果说 Hugo 模式是 MVC 那么 layouts 就是 V，content 和 data 就是 M，而 C 则是 Hugo 本身。
+这里完成了 Hugo 的部分，其次就是在 Hugo themes 主题站中寻找 resume 相关的资源，挑选喜欢的款式来作为简历的主题，并配置到 config.toml 中&lt;/p&gt;
+&lt;h3&gt;搜索关键字&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://golang.org/"&gt;Go&lt;/a&gt;, &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt;, &lt;a href="https://themes.gohugo.io/"&gt;Hugo Theme&lt;/a&gt;, hugo-devresume-theme, Hugo documentation&lt;/p&gt;
+&lt;p&gt;感谢阅读，希望上述简述和关键字补充了从标题到实践的指引，能指导读者用 Hugo 写简历。
+如果您觉得本文有用，可以扫描我的二维码，打赏一杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/static/img/reward.png" title="我的赞赏码"&gt;&lt;/p&gt;</content><category term="digital"></category><category term="Hugo"></category><category term="Résumé"></category></entry><entry><title>Microsoft Designer Mouse 拆解</title><link href="https://kaffa.im/disassemble-the-microsoft-designer-mouse.html" rel="alternate"></link><published>2019-08-07T12:00:00+08:00</published><updated>2019-08-07T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-08-07:/disassemble-the-microsoft-designer-mouse.html</id><summary type="html">&lt;p class="first last"&gt;本文简单讲解如何拆解 Microsoft Designer Mouse&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;拆解关键&lt;/h2&gt;
+&lt;p&gt;所需工具&lt;/p&gt;
+&lt;img alt="所需工具" src="https://kaffa.im/static/img/2019/tool-for-disassembly.png" /&gt;
+&lt;p&gt;拆开的样子&lt;/p&gt;
+&lt;img alt="拆开的样子" src="https://kaffa.im/static/img/2019/microsoft-designer-mouse.png" /&gt;
+&lt;p&gt;拆开的关键之处：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;外壳有四处卡，上面两个卡是向后扣的，容易拨开，后面两个卡外壳是向内卡在两个圆柱上，这里需要一根类似回形针的东西从下方伸进去，再向外侧拨开弹片，不注意的话，容易损坏。&lt;/li&gt;
+&lt;li&gt;需要一把对上型号的六角起子，这个尺寸是通用的。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;价格&lt;/h2&gt;
+&lt;p&gt;只能说，当年购入微软这只鼠标 199 元的价格，确实是 Designer Mouse，卖的是设计。&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/static/img/reward.png" /&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="Microsoft Designer Mouse"></category></entry><entry><title>Linux 版本</title><link href="https://kaffa.im/linxu-distributions.html" rel="alternate"></link><published>2019-08-05T12:00:00+08:00</published><updated>2019-08-05T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-08-05:/linxu-distributions.html</id><summary type="html">&lt;p class="first last"&gt;本文简单聊聊 Linux 发行版&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;概述&lt;/h2&gt;
+&lt;p&gt;Linux 是开源、免费的操作系统，是 Freeware 和 Open Source 运动的代表作。它代表着低成本的商业方案，被无数公司依赖。CentOS 是常用的一种 Linux 发行版，被大量公司和个人使用。它是 Red Hat Enterprise Linux 的开源编译版，因稳定而闻名。稳定是不尝鲜的另一种说法，其中默认的软件仓库选择虽然不是各种软件最新版，却是久经考验被无数程序员采坑过的稳定版。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="linux-1"&gt;
+&lt;h2&gt;Linux 内核&lt;/h2&gt;
+&lt;p&gt;Linux 的内核即 Linux Kernel，由 Linux 基金会负责发行，它并不是完整的操作系统，而是只包含设备驱动、文件管理、资源管理等功能的操作系统核心，是整个 Linux 开源生态的上游。Linux 核心加 GNU 工具链和库、文档和软件，以及窗口系统，才构成完整的操作系统。&lt;/p&gt;
+&lt;p&gt;Linux 核心`官方网站`_上最新版是 &lt;a class="reference external" href="https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.6.tar.xz"&gt;5.2.6&lt;/a&gt;，其中第一个数字 5 是主版本，第二个数字 2 是偶数表示稳定版，如果第二个数字是奇数则表示是开发版，第三个 6 数字表示修订次数。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="linux-2"&gt;
+&lt;h2&gt;Linux 发行版&lt;/h2&gt;
+&lt;p&gt;Linux 发行版有太多种，根据其集成的软件分派系稍作列举：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Red Hat Enterprise Linux：RPM 系，最好的商业版本，简称 RHEL&lt;/li&gt;
+&lt;li&gt;Fedora： RPM 系 商业版本，包含最新软件库，Ret Hat 的新软试验田？&lt;/li&gt;
+&lt;li&gt;CentOS：RPM 系社区版本，不包含 RHEL 闭源高级功能的开源良心之作，服务器明智之选。&lt;/li&gt;
+&lt;li&gt;openSuse：RPM 系，源自 Slackware 的一种德国发行版，目前由 Novell 公司维护，严谨安全精致，缺点是臃肿，考验硬件。&lt;/li&gt;
+&lt;li&gt;Debian：Dpkg 系根基，最纯正的 GNU/Linux，只包含 GPL 协议软件，基于它的发行版多，虽然是社区维护，但都是骨灰级高手，直接用的人相对少。&lt;/li&gt;
+&lt;li&gt;Ubuntu：基于 Debian 的商业代表，为桌面系统做出了巨大贡献，提供最友好易用的桌面系统软件。近年 Ubuntu Server 份额有提升，农村包围城市？&lt;/li&gt;
+&lt;li&gt;Slackware：Unix 系，目录严谨，Linux 发行版元老，现在较少人用&lt;/li&gt;
+&lt;li&gt;Elementary OS：桌面系， 基于 Ubuntu 的 macOS 界面， 视觉动物首选。&lt;/li&gt;
+&lt;li&gt;Linux Mint： 桌面视觉系，基于 Ubuntu，胜于 Ubuntu Desktop&lt;/li&gt;
+&lt;li&gt;Arch Linux：Geek 系，包管理之王，可实现不重启滚动更新，老机器可选&lt;/li&gt;
+&lt;li&gt;Linux From Scratch： Geek 系，定制王者， 如果你想最大化定制操作系统可以选它&lt;/li&gt;
+&lt;li&gt;Gentoo：Geek系，Unix 系，定制昔日王者，所有安装包靠从源代码编译。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其他还有类 Unix 发行版，比如 FreeBSD、NetBSD、OpenBSD，内核不同，但包含软件类似，传说 BSD 系统可稳定运行 10 年不关机。&lt;/p&gt;
+&lt;p&gt;值得一提是，这些发行版除了 BSD 以外，其余使用相同的内核，不同发行版只是软件库、桌面环境、流行度的差异。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;如何选择发行版&lt;/h2&gt;
+&lt;p&gt;人生苦短，如果 Linux 不是你人生不可获取的部分，请：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;服务器选 CentOS，&lt;/p&gt;
+&lt;p&gt;桌面系统选 Ubuntu，&lt;/p&gt;
+&lt;p&gt;其余请随意，毕竟 Linux 的情怀就是 Free。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;感谢阅读。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="Linux Distributions"></category></entry><entry><title>macOS 的前世今生及访达中拷贝文件的路径的方法</title><link href="https://kaffa.im/macos-history-and-copy-file-path-in-finder-app.html" rel="alternate"></link><published>2019-06-09T05:04:00+08:00</published><updated>2019-06-09T05:04:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-06-09:/macos-history-and-copy-file-path-in-finder-app.html</id><summary type="html">&lt;p class="first last"&gt;想介绍几种在访达（Finder）中拷贝文件路径的方法，但一小时后不小心按下浏览器回退，再写便就此篇加上了一些 macOS 的历史。&lt;/p&gt;
+</summary><content type="html">&lt;img alt="MacOS" src="https://kaffa.im/static/img/2019/macos.png" /&gt;
+&lt;div class="section" id="macos-1"&gt;
+&lt;h2&gt;为什么写 macOS 历史&lt;/h2&gt;
+&lt;p&gt;题记：想介绍几种在访达（Finder）中拷贝文件路径的方法，但一小时后不小心按下浏览器回退，再写便就此篇加上了一些 macOS 的历史。&lt;/p&gt;
+&lt;p&gt;为什么写？因为 macOS 的历史，也是现代操作系统发展史，与大学书本中的内容有距离；另一方面，历史由事件组成，软件发展史中包含了软件功能竞争的关键点。&lt;/p&gt;
+&lt;p&gt;操作系统即 Operating System，简称 OS，是一类让人使用机器的人机交互软件。如今的 Windows、Linux、Unix、iOS、Android、Chrome OS，及最近华为公司的鸿蒙，都是操作系统，它们有的用在桌面，有的用在服务器，有的适用上网本，有的是为移动手机而定制。&lt;/p&gt;
+&lt;p&gt;macOS 是苹果公司的桌面操作系统，很多果粉更加熟悉的名字其实是 Mac OS X，就在一周前苹果公司 iPad OS 发布了，这样和 iOS、tvOS、watchOS 一起，苹果公司为其产品线 iPhone、iPad、Mac、TV、Watch 分别定制了操作系统。&lt;/p&gt;
+&lt;p&gt;虽然苹果 Mac OS 和微软 Windows 一样都是商用闭源操作系统，其历史资料不易查找，但我们还是试图着墨追溯这段有趣而悠久的软件史。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;源起和发展脉络&lt;/h2&gt;
+&lt;p&gt;1976 年，我们的水果厂牌诞生，这家 Logo 被图灵咬缺一口公司，字母表排序非常靠前。&lt;/p&gt;
+&lt;p&gt;1984 年，苹果 Macintosh 电脑诞生，20 世纪 80 年代其实都是 Macintosh System 6 的天下，随后开发 Macintosh 的苹果雇员以头脑风暴的形式为其路径定了几个代号：Blue、Pink、Red，Blue 即 System 7，Pink 未完全发布，Red 是比 Pink 更 Pink 的高级系统，其命运接着表述。&lt;/p&gt;
+&lt;p&gt;其时，Bill Gates 的微软开发了 Windows 和 Win32 API，敌方已经进入了战场。Blue、Pink 对比不断升级的 Windows 95 略显式微。为兼容 x86 架构，Apple 与 Novell 研发了兼容 x86 的 Star Trek，但由于苹果系统架构路线定为 PowerPC 架构，且硬件供应商不太支持，这个系统最终没有发布。&lt;/p&gt;
+&lt;p&gt;直到 2005 年以后，Apple 调整为 x86 路线，才借 Darwin/x86 研发了存活至今还大放异彩的灵魂产品 iMac 与 MacBook Pro。&lt;/p&gt;
+&lt;p&gt;Red 就是其后的 Raptor，吸纳了 Star Trek 基因，但预算不足，Raptor 也夭折了。&lt;/p&gt;
+&lt;p&gt;其实，苹果公司早在 1994 年初就宣布，将用 10 年的软件经验研发 Macintosh 第 8 代，系统命名为 Mac OS 8，代号 Copland，这个系统一部分的使命是为迎战日益增长的 Windows 和 Internet Explorer，但结果我们都已知晓，“这一战我无遗憾”，按下不表。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;首战&lt;/h2&gt;
+&lt;p&gt;Copland 是基于 RISC 的 PowerPC 架构，集先进技术于一身，包括 ColorSync、OpenDoc、Power 系，Quick 系软件，还实现了自定义主题，甚至是与 Dos 和 Windows 的互操作、网络协议栈。此项目的干系人们对其预期包括：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;方便硬件驱动开发的硬件抽象层 HSL&lt;/li&gt;
+&lt;li&gt;微内核 NuKernel&lt;/li&gt;
+&lt;li&gt;IO、网络、文件系统作为服务运行于微内核之上&lt;/li&gt;
+&lt;li&gt;抢占式多任务，对标 Windows NT&lt;/li&gt;
+&lt;li&gt;内存保护和虚拟内存，对标 Windows NT&lt;/li&gt;
+&lt;li&gt;灵活的系统扩展机制&lt;/li&gt;
+&lt;li&gt;元数据及文件内容搜索&lt;/li&gt;
+&lt;li&gt;热升级&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;但期望被迫终止于软件工程方法的滞后，各方的软件难以集成，学院派 Unix 内核人才都被微软挖走去做 Windows NT 了，Copland 需求中内存保护未能实现。1996 年，Copland 项目中止。&lt;/p&gt;
+&lt;p&gt;1997 年出于商业计划，苹果公司发布了 System 7.6，重命名为 Mac OS 7.6，但缺少犀利的操作系统，无法对敌微软的 Windows 系统，成为苹果的阿喀琉斯之伤。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="beos"&gt;
+&lt;h2&gt;BeOS&lt;/h2&gt;
+&lt;p&gt;管理层失去了方向，苹果甚至考虑过和微软合作在 Windows 之上开发 Apple OS，还考虑过 Sun Solaris 和 BeOS，这里 BeOS 也出自于人才辈出的苹果前雇员，我为什么要用也？&lt;/p&gt;
+&lt;p&gt;虽然 BeOS 的天才们实现了内存保护和抢占式多任务，它擅长多媒体，还实现了BeFS，支持文件元数据，甚至支持 PowerPC 架构，但关键的打印和文件共享功能被遗忘了，软件方法论上叫做未完全分解权重需求且未排优先级。随后 BeOS 被大家耳熟能详的 Palm 公司收购，结束了它短暂的历史。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="next-openstep"&gt;
+&lt;h2&gt;NeXT OPENSTEP&lt;/h2&gt;
+&lt;p&gt;也可能商务谈判就差那么一分钱，Apple 最终没有完成收购。其中的缘由无从考证，但有一点确定的是，Apple 的管理层发现了另一个选项，Apple 前任帮主 Steve Jobs 的 NeXT 公司的 OPENSTEP，一种已被企业市场认可的操作系统。&lt;/p&gt;
+&lt;p&gt;1997 年 2 月 4 日，Apple 用 4 亿多刀收购了 NeXT，帮主重回 Apple，从其被辞算起，已过去了 12 年。值得注意的是，苹果的收获还包括一项技术资产——大家熟悉的 Objective-C 和 NeXT 的“科技x艺术”致胜原力——工业设计师和硬件工厂。&lt;/p&gt;
+&lt;p&gt;Objective-C 这种像 C 又像 SmartTalk 的语言不同于 Windows 背后的 C++，Objective-C 更简单。笔者在学习 GUN GCC 下的 Objective-C 时，还玩过一阵 OPENSTEP，它具有一个顶部的 Docker，一个多级菜单和一系列丰富的应用程序，有NFS、还具有 Unix 命令行界面、CD多媒体系统，邮件、辞典、拼写检查、支持网络的文件浏览器，底层的面向对象的驱动程序框架，以及文件内容搜索、经典的拖放等操作，开发程序 Project Builder 和 Interface Builder，Application Kit、Music Kit、Sound Kit 开发包，是不是像是看到了 Xcode 和现代 macOS 的雏形？&lt;/p&gt;
+&lt;p&gt;很多人都说 macOS 是 BSD 内核，没错！因为 NEXTSTEP 0.8 基于 Mach 2.0 和 BSD 4.3，而现代 Mac OX 是原 Macintosh 技术遗产迁移到 NEXTSTEP 实现的。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mach"&gt;
+&lt;h2&gt;微内核 Mach&lt;/h2&gt;
+&lt;p&gt;NEXTSTEP 的商业卖点微内核其实在当时并未完善，但其中 Mach 微内核无疑是关键。微内核 Mach 并不涉及操作系统的文件系统、网络和 IO，是硬件和固件之上最基础的操作系统核心。&lt;/p&gt;
+&lt;p&gt;Mach 的故事开始于 1975 年，比苹果厂牌早一年出现，第一版叫做 RIG，因为缺少内存分页等明显缺点，RIG 失败了，1981 年 4 月，RIG 主要开发者 Richard Rashid 开发了 Accent 解决了 RIG 的缺点，他后加入了 Microsoft Research。熟悉历史的人会把 RIG 叫做 Mach 0.8，Accent 叫做 Mach 0.9。&lt;/p&gt;
+&lt;p&gt;1984 年，Mach 的主要开发目标是微内核和兼容 Unix，于是 Mach 使用了 BSD 4.3 作为起点。几个基本概念被提出：任务（Task）、线程（Thread）、端口（Port）、消息（Message），以及内存对象（Memory Object）用以实现物理到虚拟内存的分页映射，后续 FreeBSD 的内存体系结构即基于此。&lt;/p&gt;
+&lt;p&gt;最终，微内核真正意义上的实现是在 1996 年 7 月，也就是 OPENSTEP 4.0，这也是两年后 OPENSTEP 4.2 被苹果收购的原因之一。而 Mach 主要开发者 Avie 成为了苹果的首席软件技术官。&lt;/p&gt;
+&lt;p&gt;另一个需要解释的是基于 Linux 1.3 的 MkLinux 内核，MkLinux 内核作为单个 Mach 任务运行，和BSD 部分驻留在相同的地址空间中（应用程序空间）。&lt;/p&gt;
+&lt;p&gt;直至 Mach Ten，Mac OS X 整合了 Mach、BSD、Macintosh 技术，虽然现代 Macintosh 是协作式多任务，但在 Mach Ten 中，Mac OS 是本地一等公民，而 Unix 运行在 UVM 虚拟机中，保持抢占式多任务执行 C 语言库、POSIX 子系统、BSD 网络栈、文件系统、RPC、NFS、X Windows。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;大融合&lt;/h2&gt;
+&lt;p&gt;这就是 OPENSTEP 被作为现代 Mac OS 之前发生的事情，随后 NeXT 被引入苹果重新制订战略的故事。苹果公司收购 NeXT 的 OPENSTEP 可谓神来之笔，我们说那是 Mac OS 前世发生的一些事，下面即将讲述 NeXT 技术如何逐步进入 Apple 进化为现代 Mac OS 的底层。&lt;/p&gt;
+&lt;p&gt;现代公司收购很多都失败了，比如 Microsoft 和 Nokia，其实很类似 Apple 收购 NeXT，前者多金，后者有出色的软件硬件，收购在预期上可实现双赢。但微软在手机战略上失败了，而 搭载苹果 Mac OS 的 Macintosh 虽然依然是小众，但其工业设计出色，是口碑绝顶的产品，在桌面市场的份额是逐步增加的。&lt;/p&gt;
+&lt;p&gt;说回收购以后，苹果制订了两条腿走路的战略：针对消费者市场的 Mac OS 7.6 改进和针对企业服务市场的基于 NeXT 技术的高端操作系统 Rhapsody，代号 Copland（8）、Gershwin（9）。Copland 和 Gershwin 这两个单词来自美国本土音乐，后者正是《蓝色狂想曲》的作曲家，古典融合爵士元素，象征着 Macintosh 与 NeXT 的大融合。&lt;/p&gt;
+&lt;p&gt;苹果操作系统的 7.6 版本是第一个称之为 Mac OS 的版本，它是一个32位兼容机系统，也是一个对敌 Windows 95 和 Internet 技术的版本。它在多方面得到了增强，比如：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;内存管理&lt;/li&gt;
+&lt;li&gt;程序启动&lt;/li&gt;
+&lt;li&gt;文件管理器缓存&lt;/li&gt;
+&lt;li&gt;QuickTime&lt;/li&gt;
+&lt;li&gt;完整的 TCP/IP 协议栈&lt;/li&gt;
+&lt;li&gt;PPP（点对点协议）&lt;/li&gt;
+&lt;li&gt;远程访问&lt;/li&gt;
+&lt;li&gt;Mac OS 8&lt;/li&gt;
+&lt;li&gt;Mac OS 8 内部版本号是 7.7，它包括：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;多线程的 Finder，允许同时操作多个文件。本文要吐槽的操作方式可能就是这个时代引入的，那时的鼠标的上半部分只有一枚按键，即现在的鼠标左键，当按住键盘 control 键，单击时，系统会弹出一个现在的右键菜单，这个操作方式现在依然适用，这说明这部分代码的运行机制依然没有变化。
+免费的微软 Internet Explorer 和 Netscape Navigator 浏览器，那时候还是一个大多软件要卖钱的时代，免费和捆绑策略让微软获得了竞争优势。
+个人 Web 服务器，在个人站长时代，笔者也就是在那个时代走上 IT 之路的。
+内置 Java，Java 语言确实是免费而久经考验。
+电源管理、USB 等硬件增强。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mac-os-9"&gt;
+&lt;h2&gt;Mac OS 9&lt;/h2&gt;
+&lt;p&gt;Mac OS 9 在 1999 年发布，它实现了：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;操作系统在线升级&lt;/li&gt;
+&lt;li&gt;Keychain，即大家常用的钥匙串，如果增强一下，就没有 1Password 啥事了。&lt;/li&gt;
+&lt;li&gt;Carbon API，70% 与旧 Mac OS API 兼容，这是一次重要的梳理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2001 年 Mac OS 发布了 9.2.2，这是最后一个经典 Mac OS 版本，我们把 Mac OS 此版本以前的版本叫做 Mac OS Classic，即 Mac OS 的前世。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="rhapsody"&gt;
+&lt;h2&gt;Rhapsody&lt;/h2&gt;
+&lt;p&gt;再来讲 Mac OS X 这条线。我把 Mac OS X 版本看作它的今生，这一切开始于 1997 年 WWDC，苹果演示了 Rhapsody 系统。它包括：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;内核是 Mach 和 BSD 4.3&lt;/li&gt;
+&lt;li&gt;Blue Box：即 Mac OS 兼容子系统，演化为 Carbon API&lt;/li&gt;
+&lt;li&gt;Yellow Box：OPENSTEP 技术资产，演化为 Cocoa API&lt;/li&gt;
+&lt;li&gt;Java 虚拟机&lt;/li&gt;
+&lt;li&gt;基于 Display PostScript 的窗口系统&lt;/li&gt;
+&lt;li&gt;用户界面类似原 Mac OS，但也有些像 OPENSTEP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在最新的 WWDC App 上，可追溯的历史只到 2014 年，真希望苹果能把早年的 WWDC 也放上来。上述技术中，Blue Box 应该有人用过，即 Classic Startup.app 中可以运行，也可能有人玩过 Yellow Box，可以安装在 Windows 上。&lt;/p&gt;
+&lt;p&gt;Rhapsody 包含 DR1 和 DR2 两个版本，DR2 吸纳了 FreeBSD、NetBSD 的代码，并将其中的分支开源为 Darwin 项目，这个举措让苹果和开源社区之间获得了双赢，现在你可以在 GNU Darwin 找到它，并可下载源码，另一个 Open Darwin 项目如今已关闭。Rhapsody 就像一个超新星爆发般， 1999 年 3 月以 Mach 3 为基础推出了 Mac OS X Server 1，就是改名的 Rhapsody DR3。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mac-os-x-beta"&gt;
+&lt;h2&gt;Mac OS X Beta&lt;/h2&gt;
+&lt;p&gt;此时的 Apple Mac OS X Public Beta 离正式与公众见面还有 3 年的路程，中间包括 DP1、DP2、DP3、DP4 四个迭代（DP 即 开发者预览版）。&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;DP1：这是一个 Carbon API 梳理版本，且为了过度，需要实现新旧两个目标平台的编译。&lt;/li&gt;
+&lt;li&gt;DP2：引入了更多 API，如 BSD、Carbon、Classic、Cocoa 和 Java。从后面的发展来看，Carbon 有的，Cocoa 终会逐渐取代，但马戏团后台的升级不是一刀完成，而是保持前台不变的前提下，后台一直在工作。苹果公司精通渐进式演化之道。&lt;/li&gt;
+&lt;li&gt;DP3：后台功能强了，但根据反馈，用户不满意界面，因此此版本推出了 Aqua 用户界面，就是现在大家熟悉的红、黄、绿三色交通灯窗口，水的元素，以及图标扩大为 128 * 128。&lt;/li&gt;
+&lt;li&gt;DP4：将 Finder.app 拆分为 Desktop.app 和 Docker.app，并引入了第一次引入了系统设置，它提供一个用户界面来让用户调节系统的很多选项。还包括 Docker 的左右分栏和拖离云朵动画、OpenGL、和新的集成开发环境。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;公众对不断透露的改进消息非常兴奋，但能接触的第一版本需要约 200 多元购买的。这个版本还通过 OpenDarwin 大量移植了开源资源，这也是很多开发人员觉得 Apple 比 Windows 更适合开发的原因。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mac-os-x"&gt;
+&lt;h2&gt;Mac OS X&lt;/h2&gt;
+&lt;p&gt;Mac OS X 10.0 可以说是 Apple 桌面操作系统历史上最高级的发布，它代表着 Apple 公司对研发资源的了解和对软件工程管理的进步。同所有软件一样，Mac OS 经历了 3-5 个小版本才逐渐完善，分别是：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Mac OS X 10.0 Cheetah&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.1 Puma&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.2 Jaguar&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.3 Panther&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.4 Tiger&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.5 Leopard&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.6 Snow Leopard&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.7 Lion&lt;/li&gt;
+&lt;li&gt;OS X 10.8 Mountain Lion&lt;/li&gt;
+&lt;li&gt;OS X 10.9 Mavericks&lt;/li&gt;
+&lt;li&gt;OS X 10.10 Yosemite&lt;/li&gt;
+&lt;li&gt;OS X 10.11 El Capitan&lt;/li&gt;
+&lt;li&gt;macOS 10.12 Sierra&lt;/li&gt;
+&lt;li&gt;macOS 10.13 High Sierra&lt;/li&gt;
+&lt;li&gt;macOS 10.14 Mojave&lt;/li&gt;
+&lt;li&gt;macOS 10.15 Catalina&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中经历了 OS X 和 macOS 的两次改名，第一次代表了与 iOS 的融合，第二次的命名方式为匈牙利表示法，可以感受一下:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+    iOS
+watchOS
+   tvOS
+     OS X
+&lt;/pre&gt;
+&lt;p&gt;有没有一种强迫症无法忍受的感觉:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+    iOS
+watchOS
+   tvOS
+  macOS
+&lt;/pre&gt;
+&lt;p&gt;明显后者更和谐。&lt;/p&gt;
+&lt;p&gt;其中，数 Tiger 的更新比较多，大家熟知的 Automator、Spotlight、Dashboard 就是此时引入的。后面的每个版本更新都具有很多经典之处，图标也趋于扁平化，适应这个信息繁杂的时代。&lt;/p&gt;
+&lt;p&gt;如果把 Apple 桌面操作系统历史对比人类历史，那从古代到近代史部分就已经说完了。其现代史部分以近 5 年为分水岭，2014 年以后的发布都可以在 Apple WWDC App 中查阅。笔者也会在其他文章中穿插许多有趣的 Apple 操作系统细节，以下附送体系结构图一张。&lt;/p&gt;
+&lt;img alt="macOS 体系结构" src="https://kaffa.im/static/img/2019/macos-structure.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h2&gt;啊哈！到了本文附送的技巧。&lt;/h2&gt;
+&lt;p&gt;终于说到了在访达（Finder）中拷贝文件的路径的方法，有如下几种：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;方法一：访达应用中，可以点击菜单【显示】【显示路径栏/隐藏路径栏】，打开位于底部状态栏上方的路径栏，鼠标右键点击“将（路径）拷贝为路径名称”即可。&lt;/li&gt;
+&lt;li&gt;方法二：打开一个终端应用，将文件夹或文件拖入，既可以得到路径，选中后拷贝即可。&lt;/li&gt;
+&lt;li&gt;方法三：网上提到的在自动操作应用中新建一个服务的方式，这种其实对某些文件夹并不好使。&lt;/li&gt;
+&lt;li&gt;方法四：此方法的交互设计比较隐藏，但唾手可得，即右键点击想要拷贝路径的目录或文件，在弹出菜单时，按住键盘 option/alt 键，此时菜单中的拷贝“（路径）”会变成将“（路径）”拷贝为路径名称。这种设计有点绕，但是比较高效了。&lt;/li&gt;
+&lt;li&gt;方法五：快捷键 ⌥⌘C（评论提供），此种最高效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;好吧，虽然这楼歪的很，但技巧确实附送了，是吧？&lt;/p&gt;
+&lt;p&gt;感谢观阅，如果您觉得有用，可以扫我的赞赏码，鼓励一杯咖啡。&lt;/p&gt;
+&lt;img alt="我的赞赏码" src="https://kaffa.im/static/img/reward.png" /&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="macOS"></category><category term="macOS History"></category><category term="Machintosh"></category><category term="BeOS"></category><category term="NeXT"></category><category term="OPENSTEP"></category><category term="Mach"></category></entry><entry><title>修改 Microsoft Code Markdown 格式的快捷键</title><link href="https://kaffa.im/change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html" rel="alternate"></link><published>2019-05-15T12:00:00+08:00</published><updated>2019-05-15T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2019-05-15:/change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html</id><summary type="html">&lt;p&gt;修改 Microsoft Code Markdown 格式的快捷键&lt;/p&gt;</summary><content type="html">&lt;p&gt;为了兼容 macOS 系统 MWeb 写作，我将文档格式从 .rst 修改为了 .md。我选择 Microsoft Code Markdown 来写日志，但发现快捷键 Ctrl + B 并不能将文字加粗。&lt;/p&gt;
+&lt;p&gt;进入【File】【Preferences】【Keyborad Shortcuts】，搜索 Ctrl + B，发现默认关联很多其他功能，比如调试断点（Breakpoint）和隐藏边栏。&lt;/p&gt;
+&lt;p&gt;经过把 Ctrl + H 换成 Ctrl + R，把隐藏边栏 Ctrl + B 换成 Ctrl + H，编辑 Markdown 文件中的 Ctrl + B 成为了加粗的快捷键。&lt;/p&gt;
+&lt;p&gt;Microsoft Code 这个披着 IDE 外衣的编辑器，还是需要细致调教才会变得好用的，&lt;strong&gt;多人设计插件的快捷键重复问题是因缺乏统一的规范和检查机制导致的&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;感谢阅读。&lt;/p&gt;</content><category term="digital"></category><category term="VSCode"></category><category term="Markdown"></category></entry><entry><title>用 VSCode 预览 reStructuredText 文件</title><link href="https://kaffa.im/preview-restructuredtext-file-in-vscode.html" rel="alternate"></link><published>2018-07-18T12:30:00+08:00</published><updated>2023-11-08T16:11:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-07-18:/preview-restructuredtext-file-in-vscode.html</id><summary type="html">&lt;p class="first last"&gt;本文描述用 VSCode 预览 reStructuredText 文件的配置办法&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;通识&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;得益于拥抱开源，微软 VSCode 成为了最热门的 IDE，广泛用于各种场景的编程，比如编辑 reStructuredText 文件。&lt;/li&gt;
+&lt;li&gt;reStructuredText 是 Python 官方文档的格式，属于 Sphinx 项目的一部分，Sphinx 是 Python 文档生成器。&lt;/li&gt;
+&lt;li&gt;从 reStructuredText 的文件格式 rst，方便转化为各种文件格式。&lt;/li&gt;
+&lt;li&gt;MS Code 自带 reStructuredText 插件，类似于 Markdown，安装后可以用于预览 rst 格式。&lt;/li&gt;
+&lt;li&gt;可安装后并不能直接预览，还需要配置一番，于是就有了下面的部分。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;配置&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;依据 reStructuredText 文档，先 pip 安装 doc8 和 sphinx&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;再上 VSCode 配置:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+// Points to the doc8 exectuable.
+&amp;quot;restructuredtext.linter.executablePath&amp;quot;: &amp;quot;doc8&amp;quot;,
+// Extra arguments to doc8.
+&amp;quot;restructuredtext.linter.extraArgs&amp;quot;: [&amp;quot;--max-line-length 1024&amp;quot;],
+// The full path of sphinx-build utility. This is an absolute path, and you can use ${workspaceRoot} to represent workspace root folder.
+&amp;quot;restructuredtext.sphinxBuildPath&amp;quot;: &amp;quot;sphinx-build&amp;quot;,
+// Flag to control whether text changed event triggers preview update.
+&amp;quot;restructuredtext.updateOnTextChanged&amp;quot;: &amp;quot;true&amp;quot;,
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;在项目根目录下运行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+sphinx-quickstart
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;一路回车，即生成了如下文件:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+_build
+_static
+_templates
+conf.py
+index.rst
+make.bat
+Makefile
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;此时可以通过 Ctrl+Shift+R 来预览了&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;附录&lt;/h2&gt;
+&lt;p&gt;快速参考 &lt;a class="reference external" href="http://www.pythondoc.com/sphinx/rest.html"&gt;sphinx-rest&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="VSCode"></category><category term="reStructuredText"></category></entry><entry><title>数据与信息的描述与差别</title><link href="https://kaffa.im/data-vs-information.html" rel="alternate"></link><published>2018-06-28T10:55:00+08:00</published><updated>2023-11-29T19:09:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-28:/data-vs-information.html</id><summary type="html">&lt;p class="first last"&gt;本文描述数据和信息两个概念的差别&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;编写文档时，大家常把 &lt;strong&gt;数据&lt;/strong&gt; 和 &lt;strong&gt;信息&lt;/strong&gt; 两个词混用，如管理信息系统（Management Information System）、数据导入（Data Import）等，可见，日常大家并不太在意两者的区别。&lt;/p&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;描述&lt;/h2&gt;
+&lt;p&gt;数据是原始的、未经组织的、待处理的客观事实，数据在组织前，可能是简单的、看起来随机的和无用的，当把数据处理、组织或在上下文中呈现而变得有用后，数据就成为信息。&lt;/p&gt;
+&lt;p&gt;举个例子，每隔 1 小时记录某地点的气温，可以得到 24 个数据，而连续记录很多天后计算这个地点的平均气温，或将这些数据画在一张分布图上用来做什么时，就可称之为信息。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;起源&lt;/h2&gt;
+&lt;p&gt;🔢「数据」这个词来源于拉丁语 datum 的单数形式, 最初表示「已知数」，最早被用于 17 世纪，后来「数据」变迁为 datum 的复数形式。&lt;/p&gt;
+&lt;p&gt;ℹ️「信息」是一个更老的词汇，最早可以追溯到 14 世纪的法国和英国中部，通常指「通知行为」本身, 经常用在教育和知识领域。&lt;/p&gt;
+&lt;p&gt;在语言的发展中，可能有一些约定的说法，比如「大数据时代」、「信息大爆炸」，从这些词也可以大概分出，由原始的数据可以组织出更可观的信息。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h2&gt;🌰举个栗子&lt;/h2&gt;
+&lt;p&gt;IoT (Internet of Things) 网络传感器获取了一批温度数据，这批温度数据的数值的异常变化，显示了环境温度发生了变化，传递了额外的信息。比如瞬间升高到100摄氏度，表达的信息是着火了。&lt;/p&gt;
+&lt;p&gt;数据和信息是讨论很多问题时的基础，因此有此篇。&lt;/p&gt;
+&lt;p&gt;感谢阅读。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="Data"></category><category term="Information"></category></entry><entry><title>Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</title><link href="https://kaffa.im/vscode-restructuredtext-warnings.html" rel="alternate"></link><published>2018-06-20T02:52:00+08:00</published><updated>2018-06-20T02:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-20:/vscode-restructuredtext-warnings.html</id><summary type="html">&lt;p class="first last"&gt;本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;问题出现的场景&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;使用 VSCode 编辑 *.rst 文件时，会提示安装 doc8 ，于是使用 pip 安装 doc8，执行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+pip install doc8
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;重新打开文件，全文会出现两条警告 D002 和 D004，如下:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+'D002 Trailing whitespace'
+'D004 Found literal carriage return'
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;D002 信息按字面意思是行尾有空格，稍作思考，感觉可能和 Windows 的换行符 CRLF 有关，
+于是点击 VSCode 状态栏，修改 &lt;tt class="docutils literal"&gt;CRLF&lt;/tt&gt; 为 &lt;tt class="docutils literal"&gt;LF&lt;/tt&gt;，之后错误提示消失。请参考：&lt;a class="reference external" href="https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/84"&gt;issues-84&lt;/a&gt;&lt;/p&gt;
+&lt;ol class="arabic" start="3"&gt;
+&lt;li&gt;&lt;p class="first"&gt;又产生新的警告 D001，如下:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+'D001 Line Too Long'
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在 &lt;a class="reference external" href="https://github.com/vscode-restructuredtext/vscode-restructuredtext/issues/83"&gt;issues-83&lt;/a&gt; 中给的解决方法是，在 VSCode 的用户配置中提供一个更大的行宽度值。
+于是 &lt;tt class="docutils literal"&gt;Ctrl + P&lt;/tt&gt;，选择 &lt;tt class="docutils literal"&gt;Preferences: Open Settings&lt;/tt&gt;，在 &lt;tt class="docutils literal"&gt;User Settings&lt;/tt&gt; 标签页，
+也就是 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C:\Users\username\AppData\Roaming\Code\User\settings.json&lt;/span&gt;&lt;/tt&gt; 文件加入如下配置:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;quot;restructuredtext.linter.extraArgs&amp;quot;: [
+    &amp;quot;--max-line-length 80&amp;quot;
+]
+&lt;/pre&gt;
+&lt;p&gt;我的理解是，这个最大行宽在 *.rst 文件中不建议设置太大，大约每行最多 80 个字符就差不多了，
+这个和可维护性代码的最佳实践是一致的。&lt;/p&gt;
+&lt;p&gt;感谢阅读。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="VSCode"></category><category term="reStructuredText"></category></entry></feed>

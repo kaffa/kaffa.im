@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book-list</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book-list.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-08T12:25:00+08:00</updated><entry><title>学习 Rust 书单</title><link href="https://kaffa.im/learning-rust-book-list.html" rel="alternate"></link><published>2024-01-08T12:25:00+08:00</published><updated>2024-01-08T12:25:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-08:/learning-rust-book-list.html</id><summary type="html">&lt;p class="first last"&gt;本文列举了最好的 Rust 书籍书单。&lt;/p&gt;
+</summary><content type="html">&lt;div class="notification is-info is-light"&gt;
+    &lt;i class="fa fa-info-circle mr-3" aria-hidden="true"&gt;&lt;/i&gt;
+    通过英文书学编程，当 90% 单词都认识，且不赶时间的，建议直接读英文书。
+&lt;/div&gt;&lt;div class="section" id="rust-1"&gt;
+&lt;h2&gt;Rust 书单&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://kaffa.im/the-rust-programming-language-2nd-edition.html"&gt;「The Rust Programming Language, 2nd Edition」&lt;/a&gt; ：适合入门。&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://kaffa.im/programming-rust-2nd-edition.html"&gt;「Programming Rust, 2nd Edition」&lt;/a&gt; ：适合入门。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="rust-2"&gt;
+&lt;h2&gt;Rust 网站&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.rust-lang.org/learn"&gt;The Rust Programming Language&lt;/a&gt; ：官方 Rust 书。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="book-list"></category><category term="Rust"></category></entry><entry><title>学习 HTML 书单</title><link href="https://kaffa.im/learning-html-book-list.html" rel="alternate"></link><published>2023-11-02T16:25:00+08:00</published><updated>2023-12-14T11:16:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-02:/learning-html-book-list.html</id><summary type="html">&lt;p class="first last"&gt;本文列举了不同类型人群学习 HTML 书单和网站。&lt;/p&gt;
+</summary><content type="html">&lt;div class="notification is-info is-light"&gt;
+    &lt;i class="fa fa-info-circle mr-3" aria-hidden="true"&gt;&lt;/i&gt;
+    通过英文书学编程，当 90% 单词都认识，且不赶时间的，建议直接读英文书。
+&lt;/div&gt;
+
+&lt;div class="notification is-info is-light"&gt;
+    &lt;i class="fa fa-info-circle mr-3" aria-hidden="true"&gt;&lt;/i&gt;
+    HTML 很少单独拿出来用，多少会加入一些基本的 CSS，但从学习的角度来说，可以先重点学习 HTML，然后再学习 CSS。
+
+    从学习的角度来看，同时这两门语言的难度要大于学完一门后再学一门。
+&lt;/div&gt;&lt;div class="section" id="html-1"&gt;
+&lt;h2&gt;『学习 HTML』书单&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://kaffa.im/html5-and-css3-visual-quickstart-guide.html"&gt;「HTML5与CSS3基础教程」&lt;/a&gt; [美] Elizabeth Castro / [美] Bruce Hyslop：翻译的书中，这本适合小白入门。&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://kaffa.im/learning-html-book-list.html"&gt;「一本进阶书籍」&lt;/a&gt; ：HTML 入门后，如果觉得常用技能还不够用，可考虑一些 HTML 高级功能的书籍，但更好的进阶书是自己选择的哪一本。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="html-2"&gt;
+&lt;h2&gt;『学习 HTML』网站&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.freecodecamp.org/"&gt;freeCodeCamp&lt;/a&gt; ：从这里可以学到和领悟 Web 设计的细节，非常好的教学素材。&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML"&gt;MDN Web Docs&lt;/a&gt; ：浏览器厂商标准，较权威，主要作为手册查阅。由于面对全世界的人群，内容不区分小白或专家，作为教学素材时略有不足。&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://learn.microsoft.com/en-us/training/paths/build-web-pages-html-css-for-beginners/"&gt;Build web pages with HTML and CSS for beginners&lt;/a&gt; ：微软的教程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="book-list"></category><category term="HTML"></category></entry><entry><title>学习 PHP 书单</title><link href="https://kaffa.im/learning-php-book-list.html" rel="alternate"></link><published>2023-11-02T16:25:00+08:00</published><updated>2023-11-02T16:25:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-02:/learning-php-book-list.html</id><summary type="html">&lt;p&gt;PHP 书单&lt;/p&gt;</summary><content type="html">&lt;h2&gt;『学习 PHP』书单&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://book.douban.com/subject/26635862/"&gt;「Modern PHP（中文版）」&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://book.douban.com/subject/35369108/"&gt;「PHP编程（第4版）」&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://book.douban.com/subject/35590910/"&gt;「Laravel入门与实战（第2版）」&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="book-list"></category><category term="PHP"></category></entry><entry><title>科学知识书单</title><link href="https://kaffa.im/science-book-list.html" rel="alternate"></link><published>2023-11-02T16:25:00+08:00</published><updated>2023-11-09T20:50:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-02:/science-book-list.html</id><summary type="html">&lt;p class="first last"&gt;本文先列举网站，后续不定期补充书籍。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;『科学知识』书单&lt;/h2&gt;
+&lt;p&gt;将一批网站列在这，是因为科学是不断更新的，网站的是活的一手信息，反应当下趋势。&lt;/p&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h3&gt;网站类&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;知识全靠搜&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在科学的游戏中，Google 和 YouTube 就是你的「开局一条狗」&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.google.com/"&gt;Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.youtube.com/"&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://scholar.google.com/"&gt;Google 学术搜索&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;近期刊，远民科&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;建立对世界的「通识」，英文部分不可缺。&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.scihub.net.cn/sci-hub/"&gt;sci-hub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.nature.com/"&gt;Nature&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.science.org/"&gt;Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.cnki.net/"&gt;中国知网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="book-list"></category><category term="Science"></category></entry></feed>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - website</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/website.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2023-12-14T20:00:00+08:00</updated><entry><title>KaffaWeb 2.0 建设之主题与首页</title><link href="https://kaffa.im/kaffaweb-theme-and-index-page.html" rel="alternate"></link><published>2023-12-14T20:00:00+08:00</published><updated>2023-12-14T20:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-14:/kaffaweb-theme-and-index-page.html</id><summary type="html">&lt;p class="first last"&gt;本文记录了 kaffaweb 主题和 index 的设计与实现要点。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;主题&lt;/h2&gt;
+&lt;p&gt;主题是使用的欧雷的 UI 设计，主要使用 bulma 辅助实现。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;首页&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Hero 图：在插件中作了一些 hero 图片配置的支持。&lt;/li&gt;
+&lt;li&gt;指标统计：python 使用者常会考量 jinja2 和 mako 作为模板，其实很简单，mako 能支持复杂逻辑，jinja2 使用复杂逻辑有限，大多需要在 python 代码中实现，既 pelican 的插件，但这里我使用 namespace 特性实现了一些统计。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;文章页&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;做了 rst 和 md 的样式统一。（rst 生成的 HTML 天然带有 section 标签）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="kaffaweb"></category></entry><entry><title>KaffaWeb 2.0 建设之插件</title><link href="https://kaffa.im/kaffaweb-plugin.html" rel="alternate"></link><published>2023-12-12T10:30:00+08:00</published><updated>2023-12-12T10:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-12:/kaffaweb-plugin.html</id><summary type="html">&lt;p class="first last"&gt;本文记录了书影音插件和图插件的产生过程，Code 已提供在源代码中，不再冗述。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="kaffapod"&gt;
+&lt;h2&gt;kaffapod：书影音、项目&lt;/h2&gt;
+&lt;div class="section" id="section-1"&gt;
+&lt;h3&gt;书影音&lt;/h3&gt;
+&lt;p&gt;kaffapod 记录个人数据，因此读的书，看的电影，听的音乐值得记录。&lt;/p&gt;
+&lt;p&gt;书、影、音的元数据实际非常分散，作为个人，最好利用它人的工作，将元数据搜集到本地，作为一种缓存。&lt;/p&gt;
+&lt;p&gt;书、影、音元数据其实不属于个人数据，但相关时间和评论和统计数据属于个人数据，因为缓存作为「渐进式增强」来设计：当存在时，则获取并缓存下来，当不存在时，也可以简单显示名称。&lt;/p&gt;
+&lt;p&gt;此处的技术实现使用了：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Data Source(neodb)&lt;/li&gt;
+&lt;li&gt;SQLite：虽然书影音非常多，穷尽人生也无法尽阅，但个人数据十分有限，大多数人的数量级不过过万，因此 SQLite 足够胜任。&lt;/li&gt;
+&lt;li&gt;Python：天然支持 SQLite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h3&gt;项目数据&lt;/h3&gt;
+&lt;p&gt;项目数据实际在内网的项目管理系统 KanBoard 的 MySQL 数据库中。&lt;/p&gt;
+&lt;p&gt;kaffapod 使用 Python 从 MySQL 中读取项目进展，并快照到 SQLite 中。&lt;/p&gt;
+&lt;p&gt;以供首页和周报使用。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="plantuml"&gt;
+&lt;h2&gt;plantuml 图插件&lt;/h2&gt;
+&lt;p&gt;Markdown 的图插件有一个好名字 Mermaid，但 Mermaid 并没有太好的 Pelican 继承。我也并不打算站出来做这么庞大且标准不一的工作。但 rst 的 plantuml 实现了大部分需要的图，且已有一个 Linux 实现。我在此处将之扩展到了 Windows 上，并简化了图片的生成逻辑，增加了配置项。最重要的，支持改动才生成一次，这样可以减少静态内容的生成时间。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="kaffaweb"></category></entry><entry><title>KaffaWeb 2.0 建设之品牌</title><link href="https://kaffa.im/kaffaweb-brand-building-notes.html" rel="alternate"></link><published>2023-12-11T09:56:00+08:00</published><updated>2023-12-11T09:56:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-11:/kaffaweb-brand-building-notes.html</id><summary type="html">&lt;p class="first last"&gt;本文并不是一个品牌设计案例，本文是记录 KaffaWeb 品牌设计笔记。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;当我们谈论品牌时，我们在谈论什么？&lt;/h2&gt;
+&lt;p&gt;说品牌是外来词，未免有些不公，中国老字号也蛮多，但论2023年大众记忆中还剩下哪些，吃，还记得全聚德和狗不理吗，喝，还能剩下酒和奶，茅台、蒙牛。&lt;/p&gt;
+&lt;p&gt;但2023年，咖啡和奶茶依然是年轻人的消费习惯，且不论蜜雪冰城和古茗你是否降级临幸过（虽然它们提交IPO了），但论印象里的大品牌，吃喝已排不上号了。&lt;/p&gt;
+&lt;p&gt;我们的品牌除去那些宇宙强企，似乎只剩下互联网与车，遥遥领先果然遥遥领先，往日的蓝筹不经意间就跌落TOP50。&lt;/p&gt;
+&lt;p&gt;我们看到一个个品牌的消逝和谈论品牌时，我们在谈论什么？&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;引入一个底层逻辑&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://kaffa.im/thinking-fast-and-slow.html"&gt;《思考，快与慢》&lt;/a&gt;中介绍，我们的大脑有两套系统，在我快系统中似乎存在一种快捷计算单元，我在慢系统中将它定义为：&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;结构&lt;/dt&gt;
+&lt;dd&gt;临时不变&lt;span class="strike"&gt;无常&lt;/span&gt;的抽象物。&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;首先，我定义的「结构」就是思维中的物，既 Object，但我觉得 Object 表达太笼统。我们知道从永恒的角度上看，世事无常，但 anything 都无常反而需要忽略，而物的结构在决策时间中是临时不变的。&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;决策时间&lt;/dt&gt;
+&lt;dd&gt;在某一个面向或某一范畴中物的状态不变时间。&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;其次，当需要表达一个观点或陈述一个结论时，我们必然有所面向，也必然有陈述的潜在前提范畴，在这种局限条件下，我将之定义为「决策时间」。&lt;/p&gt;
+&lt;p&gt;要引入品牌的底层逻辑是：&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;品牌&lt;/dt&gt;
+&lt;dd&gt;在决策时间内，组织在消费者意识界面的投影结构。&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;品牌就像某种透镜，组织通过它锚定消费者；品牌就像飞驰的暗箭，目标是消费者；品牌是无形的，它通过一套符号系统来体现。品牌的目的是在消费者心智中获得一个位置，向消费者传递一种信念，建立一条链路，通过这些牢牢控住消费者（消费者这边更多需要修闪避）。&lt;/p&gt;
+&lt;p&gt;特别的是，我的品牌认知上引入了&lt;a class="reference external" href="https://kaffa.im/the-case-against-reality.html"&gt;《眼见非实》&lt;/a&gt;中探讨的意识界面，有兴趣可以更多了解。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="kaffa-im"&gt;
+&lt;h2&gt;Kaffa.im 并不需要传统意义的品牌过程&lt;/h2&gt;
+&lt;p&gt;Kaffa.im 用来记录个人数据，在设计中没有消费者，它不会收集谁的数据，盯着谁的口袋，也不涉及利用人性的缺陷，只是朴素表达，纯爱发电，良心质造。设计过程不需甲乙双方逐步确认，也不需机械的设计流程。&lt;/p&gt;
+&lt;p&gt;这里我只想把基本点需要阐述清楚，采用清单方式：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;品牌理念：穿越决策时间的长期主义，温暖有力。&lt;/li&gt;
+&lt;li&gt;品牌符号：K，我名字读音的首字母。K的意向从笔迹心理上说，竖是原则，撇是输入，捺是输出，整体的气韵舒展顺畅。&lt;/li&gt;
+&lt;li&gt;品牌标志：用域名本身 Kaffa.im 作为图案（秉承&lt;a class="reference external" href="https://www.google.com/search?q=%E5%A6%82%E6%97%A0%E5%BF%85%E8%A6%81%EF%BC%8C%E5%8B%BF%E5%A2%9E%E5%AE%9E%E4%BD%93"&gt;「如无必要，勿增实体」&lt;/a&gt; ）。记忆点为衬线字体 Georgia 的斜体 K。选择的理由是衬线更加经典，且有不齐线数字的特点，两者结合能体现品牌理念中穿越决策时间的长期主义，呼应了该理念在字体设计上的表达。当然，这里的讨巧之处在于 Matthew Carter 本身设计了 Verdana 和 Tahoma，后者我在 Windows 几乎一直爱用，前者更是无衬线经典，小却清晰，Georgia 更个性，也是我第一次制作个人网页的选择。若后续能有专业设计资源改进此标识，也会建议在此基础进行衍生。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="kaffa-im-1"&gt;
+&lt;h2&gt;Kaffa.im 的色彩决策&lt;/h2&gt;
+&lt;p&gt;我最初做过一年平面设计，对颜色有基本的理解，虽然没有明显的证据证明颜色和情绪直接相关。但在整个色彩空间内品牌颜色的选择，我也是做过考虑。最初设计看过一些作品，但使用颜色上跳不脱POP色，五彩、七彩，后来学会了中性色，学会了使用主色和副色，以及从不同文化和艺术中汲色搭配。&lt;/p&gt;
+&lt;p&gt;Kaffa.im 的内容主要涉及信息技术、数字化、以及有些小趣味的爱好。&lt;/p&gt;
+&lt;p&gt;色彩过程：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;选择一种作为主色，冷色 or 暖色？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;暖色。但百事可乐与可口可乐的例子说明，无论蓝或红，在品牌语义上似乎是对等的。颜色与品牌是一种主观关联，并非有一种正确答案。在我看来，百事蓝与可乐红的共性是饱和度都挺高。&lt;/p&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;从色环上看，绿、黄、橙、红、洋红，会选择哪一种？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可能会选择橙和红之间的一种颜色，根据提问一，或者也是在说，选择绿松石蓝与宝蓝之间的一种颜色。&lt;/p&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;我从配色主题书中进行选择，主题有：轻松流行、浪漫温柔、自然恬静、新鲜清爽、华丽高雅、奢华丰富、民族生机、神秘幻想、未来时尚、异国它乡、斑斓艺术、黑白银色，Kaffa.im 偏向于哪一种呢？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我想是新鲜清爽或神秘幻想，但目前似乎用的是黑白银及 bulma 默认色。&lt;/p&gt;
+&lt;span style="color: hsl(171, 100%, 41%)"&gt;■&lt;/span&gt;hsl(171, 100%, 41%) 转 RGB 是 rgb(0, 209, 178)&lt;p&gt;有资源或空闲我会换一种主色，但使用 bulma 的配色也有一种和聪明人共事的感觉。&lt;/p&gt;
+&lt;ol class="arabic simple" start="4"&gt;
+&lt;li&gt;使用排除法的考虑？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;受众：从网站访问者的角度思考，有时需要采用A/B测试；&lt;/li&gt;
+&lt;li&gt;气质：问就是蓝色；&lt;/li&gt;
+&lt;li&gt;对手：这里指避开竞品使用的色彩；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;红色：血液、激情、斗志。
+粉色：固有印象是年轻、少女、浪漫主义。
+橙色：阳光、热情、运动、食欲。
+黄色：警告色。虽然前有即刻黄了，但美团却成了。
+绿色：绿色是这颗星球上植物的颜色，然而并不是因为植物偏好绿色，相反它们通过反射舍弃绿色，让我们误以为绿色是它们的颜色。绿色在很多时候还是有毒化学物质的颜色(难道因为孔雀石？)，也是暗能量的颜色。
+蓝色：首先想到的是一众硅谷公司，是绿色的常用近色搭配。
+灰色：含蓄、高雅，同时也单调、无趣。&lt;/p&gt;
+&lt;p&gt;事实上颜色很可能只是一种捷径或是一种巧合。背后的原因和过程复杂的多，甚至有一些随机，这些和生命的演化过程有关。实际上在地球的历史中，前2/3的时间是缺氧的，那适合的生物物质代谢和交换要比现在的有氧环境要慢的多。氧带来了碳的氧化，植物又通过光合作用将二氧化碳还原为氧。大量的氧气氧化了铁，将第一抹锈色染到了地层中，氧加速了物质交换，带来了更丰富的生物多样性，也改变了地球上的生态结构，甚至改变了地球的主色。&lt;/p&gt;
+&lt;p&gt;那么，我们，选择什么色彩作为主色呢？实际上在不同的文化中，选择任何颜色都会有不满足用户偏好的问题。&lt;/p&gt;
+&lt;p&gt;如果想表达个人偏好，吸引同类用户，则可以选择个人所喜欢的颜色，如果是商业过程，则选择灰白黑组合，是简单的搭配。但无论怎么选择，在颜色使用上保持克制，最符合这个时代特征。于是，现代苹果公司选择了灰。微软、谷歌，选择了四元素平衡。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="kaffaweb"></category><category term="branding"></category></entry><entry><title>如何为Pelican创建一个新主题</title><link href="https://kaffa.im/how-to-create-a-new-pelican-theme.html" rel="alternate"></link><published>2023-12-09T17:56:00+08:00</published><updated>2023-12-09T17:56:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-09:/how-to-create-a-new-pelican-theme.html</id><summary type="html">&lt;p class="first last"&gt;本文总结如何创建一个 Pelican 新主题。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;步骤&lt;/h2&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h3&gt;1. 为你的主题起一个名字&lt;/h3&gt;
+&lt;p&gt;比如：pelican-kaffa-theme&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="themes"&gt;
+&lt;h3&gt;2. 在 themes 目录下建立这个目录&lt;/h3&gt;
+&lt;pre class="literal-block"&gt;
+themes\pelican-kaffa-theme
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="static-templates"&gt;
+&lt;h3&gt;3. 在创建的主题目录下，创建 static 和 templates 目录&lt;/h3&gt;
+&lt;pre class="literal-block"&gt;
+themes\pelican-kaffa-theme\static
+themes\pelican-kaffa-theme\templates
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="base"&gt;
+&lt;h3&gt;4. 创建 base 模板&lt;/h3&gt;
+&lt;pre class="literal-block"&gt;
+themes\pelican-kaffa-theme\templates\base.html
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="static-cssjs"&gt;
+&lt;h3&gt;5. 从 static 目录中引用资源 css、js 等文件&lt;/h3&gt;
+&lt;pre class="literal-block"&gt;
+themes\pelican-kaffa-theme\static\css\main.css
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="theme-conf"&gt;
+&lt;h3&gt;6. 创建主题配置 theme.conf 文件&lt;/h3&gt;
+&lt;p&gt;这一步不必须&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[theme]
+name = Kaffa Theme
+description = Kunnect Adventures &amp;amp; Fun
+author = Kaffa
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="css"&gt;
+&lt;h3&gt;7. 实现主题主 CSS&lt;/h3&gt;
+&lt;p&gt;下面可以继续修改 CSS 直到你自己满意:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+themes\pelican-kaffa-theme\templates\index.html
+themes\pelican-kaffa-theme\static\css\main.css
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="article-page"&gt;
+&lt;h3&gt;8. 实现主题另一个页面，比如 article 和 page&lt;/h3&gt;
+&lt;pre class="literal-block"&gt;
+themes\pelican-kaffa-theme\templates\page.html
+themes\pelican-kaffa-theme\static\css\main.css
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pelican-1"&gt;
+&lt;h3&gt;9. 将新主题的名字更新到 Pelican 的配置文件中&lt;/h3&gt;
+&lt;pre class="literal-block"&gt;
+\pelicanconf.conf
+&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;x:/root-path-of-your-pelican-website/themes/pelican-kaffa-theme&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h3&gt;10. 测试，修改，循环进行。&lt;/h3&gt;
+&lt;p&gt;在不断测试中，会发现一些问题，比如：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;响应式 Web 的问题&lt;/li&gt;
+&lt;li&gt;外链失效的问题&lt;/li&gt;
+&lt;li&gt;插件的兼容问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="Pelican"></category><category term="Pelican Theme"></category></entry><entry><title>为 GitHub Pages 站点添加独立域名</title><link href="https://kaffa.im/custom-domain-of-github-pages-site.html" rel="alternate"></link><published>2023-11-29T18:52:00+08:00</published><updated>2023-11-29T18:52:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-29:/custom-domain-of-github-pages-site.html</id><summary type="html">&lt;p class="first last"&gt;本文记录为 GitHub Pages 站点添加独立域名的步骤和遇到的问题&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;添加独立域名的步骤&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;注册一个域名&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;选择你喜欢的域名商注册一个域名。
+例如，我注册的是 kaffa.im&lt;/p&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;域名解析&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在域名配置中添加一条 CNAME 记录。
+例如，将 kaffa.im 指向 kaffa.github.io，此时，访问 kaffa.im 会得到 Github 反馈的 404 错误页面&lt;/p&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;添加 CNAME 文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在 Github 仓库 master 的根目录下添加一个名称为 &lt;strong&gt;CNAME&lt;/strong&gt; 的文件，文件内容为你注册的域名。&lt;/p&gt;
+&lt;p&gt;例如，在 kaffa.github.io 仓库 master 的根目录新建一个 &lt;a class="reference external" href="https://github.com/kaffa/kaffa.github.io/blob/master/CNAME"&gt;CNAME&lt;/a&gt; 文件，文件内容为 kaffa.im，刷新刚才的 404 页面即打开了原先的 kaffa.github.io 站点&lt;/p&gt;
+&lt;p&gt;感谢阅读。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="GitHub Pages"></category></entry><entry><title>关于 KaffaWeb 改版的想法</title><link href="https://kaffa.im/on-kaffa-im-new-website.html" rel="alternate"></link><published>2023-10-17T22:58:00+08:00</published><updated>2023-11-04T23:45:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-10-17:/on-kaffa-im-new-website.html</id><summary type="html">&lt;p&gt;受到欧雷文字的启发，产生关于将网站改版的想法，以解决个人数据分散的痛点。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;关于 Kaffa.im 2.0&lt;/h2&gt;
+&lt;p&gt;灵感：受到&lt;a href="https://xiaobot.net/p/2bfree?refer=20ca5446-77f3-4250-b173-511673f42818"&gt;「欧雷」的专栏&lt;/a&gt;
+文字的启发，产生关于将网站改版的想法，以解决个人数据分散的痛点。&lt;/p&gt;
+&lt;p&gt;Kaffa.im 1.0: Keep agile &amp;amp; free，faded abstraction&lt;/p&gt;
+&lt;p&gt;原定位：个人随笔博客，记录人生。&lt;/p&gt;
+&lt;p&gt;Kaffa.im 2.0: Kunnect adventures &amp;amp; fun, friends and alliances&lt;/p&gt;
+&lt;p&gt;新定位：个人数字生活中心，记录人生，链接探索与意趣、朋友和盟友。&lt;/p&gt;
+&lt;h2&gt;改版需求 Requirements&lt;/h2&gt;
+&lt;p&gt;用户：我、订阅者&lt;/p&gt;
+&lt;p&gt;价值主张：我的数据，由我掌控。更完整的个人 Profile, Facade, Alliances，作为内容矩阵基础。&lt;/p&gt;
+&lt;h2&gt;改版主要构想 Breakdown Structure&lt;/h2&gt;
+&lt;p&gt;Kaffa.im version 2.0 Features：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSG: use Github as the main site, Gitee as a mirror.&lt;/li&gt;
+&lt;li&gt;Better VI System: New Theme, New Logo.&lt;/li&gt;
+&lt;li&gt;Menu：Facade of my profiles.&lt;/li&gt;
+&lt;li&gt;Alliances: brainstorming with AI&lt;/li&gt;
+&lt;li&gt;Projects: ToDo, Doing, Done&lt;/li&gt;
+&lt;li&gt;Weekly: automatically &lt;/li&gt;
+&lt;li&gt;Statistics: real time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Features in next versions：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PHP Version&lt;/li&gt;
+&lt;li&gt;Product like or Service&lt;/li&gt;
+&lt;li&gt;Members&lt;/li&gt;
+&lt;li&gt;Multiple Languages&lt;/li&gt;
+&lt;li&gt;Published via mobile phone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;以终为始 AFFA&lt;/h2&gt;
+&lt;p&gt;这也许是网站改版前，仍叫做「褪色的抽象」 的最后一篇，也是 Kaffa.im 2.0 第一篇笔记。&lt;/p&gt;</content><category term="website"></category><category term="Pelican"></category><category term="KaffaWeb"></category></entry><entry><title>在注册域名时使用了错误的Email的处理</title><link href="https://kaffa.im/update-registrant-email-of-a-domain.html" rel="alternate"></link><published>2023-04-16T15:02:00+08:00</published><updated>2023-04-16T15:02:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-04-16:/update-registrant-email-of-a-domain.html</id><summary type="html">&lt;p&gt;很多人都注册过域名，但很少有人使用了错误的email来注册域名，而很少人就是我刚好处理了这样的事，记录下来，供参考。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;注册域名后需要验证&lt;/h2&gt;
+&lt;p&gt;可能很长时间没有注册域名了，当发现网站提示如下时，我才发现Email地址写错了。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;Contact&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;info&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;not&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;verified&lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;Website&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;suspended&lt;/span&gt;
+&lt;span class="nv"&gt;ICANN&lt;/span&gt;’&lt;span class="nv"&gt;s&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;public&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;directory&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;requires&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;domains&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;verify&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;their&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;contact&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;info&lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;Websites&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;this&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;domain&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;are&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;offline&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;until&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;verification&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;complete&lt;/span&gt;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;这就形成了一种死循环，更新email信息需要旧email进行验证，而你无法使用旧email，因为它根本TF不存在。&lt;/p&gt;
+&lt;h2&gt;如何更新域名注册的Email&lt;/h2&gt;
+&lt;p&gt;这时，我选择使用中文写一份Email，然后丢给Claude帮我翻译为一份正式的的题的Email，再发给代理商，让代理商帮我更新。&lt;/p&gt;
+&lt;h2&gt;根因分析&lt;/h2&gt;
+&lt;p&gt;其实会出现这种错误，在于代理申请方未首先对申请者email进行验证，所以本质上是业务流程设计的问题。&lt;/p&gt;</content><category term="website"></category><category term="Domain Registration"></category></entry><entry><title>自动更新 Gitee Pages 续</title><link href="https://kaffa.im/update-gitee-pages-with-playwright-2.html" rel="alternate"></link><published>2022-01-11T12:00:00+08:00</published><updated>2022-01-11T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2022-01-11:/update-gitee-pages-with-playwright-2.html</id><summary type="html">&lt;p&gt;2021年提供了一段 Python 代码解决免费 Gitee Pages 服务无法自动刷新的问题，这篇中随 PlayWright API 的更新相应更新了代码。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;更新 Gitee Pages 静态站点的 Python 代码&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;playwright.sync_api&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;sync_playwright&lt;/span&gt;
+
+&lt;span class="n"&gt;USERNAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;YOUR_USERNAME&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;PASSWORD&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;YOUR_PASSWORD&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;GITEE_PAGES_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://gitee.com/kaffa/kaffa/pages&amp;#39;&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;sync_playwright&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;browser&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chromium&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;launch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;headless&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new_page&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;goto&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://gitee.com/login&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[login]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fill&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[login]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;USERNAME&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[login]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fill&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[password]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;PASSWORD&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;input[value=&amp;#39;登 录&amp;#39;]&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;wait_for_timeout&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;goto&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GITEE_PAGES_URL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;dialog&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;dialog&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;dialog&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;accept&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.update_deploy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;wait_for_selector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;span:text(&amp;quot;已开启 Gitee Pages 服务&amp;quot;)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;timeout&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;visible&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="c1"&gt;#browser.close()&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;感谢 &lt;a href="https://github.com/chinabiue"&gt;chinabiue&lt;/a&gt; 同学指正&lt;/h2&gt;
+&lt;p&gt;2021年&lt;a href="https://kaffa.im/update-gitee-pages-with-playwright.html"&gt;提供了一段 Python 代码&lt;/a&gt;解决免费 Gitee Pages 服务无法自动刷新的问题，由于目前 PlayWright API 的 API 命名由 Camel 变为了小写下划线，&lt;a href="https://github.com/chinabiue"&gt;chinabiue&lt;/a&gt; 指出之前的代码出现报错，本文中一起修正了。以下是记录的过程。&lt;/p&gt;
+&lt;p&gt;以下是更新过程，个人的 pypi 源是使用的 douban。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;WINDOWS&lt;/span&gt;\&lt;span class="n"&gt;system32&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;upgrade&lt;/span&gt;
+&lt;span class="n"&gt;Looking&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;indexes&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;pypi&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;douban&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;simple&lt;/span&gt;
+&lt;span class="n"&gt;Requirement&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;already&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;satisfied&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;python39&lt;/span&gt;\&lt;span class="n"&gt;lib&lt;/span&gt;\&lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;packages&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.171&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;Collecting&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;Downloading&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;pypi&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;doubanio&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;packages&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;42&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;917&lt;/span&gt;&lt;span class="n"&gt;ecb1a27bed6f13925df7c032efea2bba5e1e6b848812273dc2d361636&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.17&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;py3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;none&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;win_amd64&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;whl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;27.5&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;MB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="err"&gt;████████████████████████████████&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;27.5&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;MB&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;6.8&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;MB&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;
+&lt;span class="n"&gt;Requirement&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;already&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;satisfied&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pyee&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;=&lt;/span&gt;&lt;span class="mf"&gt;8.0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;python39&lt;/span&gt;\&lt;span class="n"&gt;lib&lt;/span&gt;\&lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;packages&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;8.1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;Collecting&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;websockets&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;=&lt;/span&gt;&lt;span class="mf"&gt;8.1&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;Downloading&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;pypi&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;doubanio&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;packages&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;43&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;b237bebc4c483a17c2a2104fdcc2ed4322ac7fcb067917714b366480ce56&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;websockets&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;10.1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cp39&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cp39&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;win_amd64&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;whl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;97&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;kB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="err"&gt;████████████████████████████████&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;97&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;kB&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;1.1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;MB&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;
+&lt;span class="n"&gt;Collecting&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;greenlet&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;=&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;Downloading&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;pypi&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;doubanio&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;packages&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bb&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;ac66aa5f9b7e07d62cd6c2c95d44036b609bda80e8739202e3551ee7bf3&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;greenlet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cp39&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cp39&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;win_amd64&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;whl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;101&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;kB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="err"&gt;████████████████████████████████&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;101&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;kB&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;3.2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;MB&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;
+&lt;span class="n"&gt;Installing&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;collected&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;packages&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;websockets&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;greenlet&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;Attempting&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;uninstall&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;greenlet&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;Found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;existing&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;installation&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;greenlet&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="n"&gt;a1&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;Uninstalling&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;greenlet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="n"&gt;a1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="n"&gt;Successfully&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;uninstalled&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;greenlet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="n"&gt;a1&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;Attempting&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;uninstall&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;Found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;existing&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;installation&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.171&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;Uninstalling&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.171&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="n"&gt;Successfully&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;uninstalled&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.171&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="n"&gt;Successfully&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;installed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;greenlet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.17&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;websockets&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;10.1&lt;/span&gt;
+&lt;span class="n"&gt;WARNING&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;You&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;are&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;using&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;21.0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;however&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;21.3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;available&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;You&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;should&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;consider&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;upgrading&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;via&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;c:\python39\python.exe -m pip install --upgrade pip&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;command&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+
+&lt;span class="err"&gt;╔═════════════════════════════════════════════════════════════════════════╗&lt;/span&gt;
+&lt;span class="err"&gt;║&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Looks&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;like&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Test&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;or&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;was&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;just&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;installed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;or&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;updated&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;║&lt;/span&gt;
+&lt;span class="err"&gt;║&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Please&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;following&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;command&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;download&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;browsers&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;              &lt;/span&gt;&lt;span class="err"&gt;║&lt;/span&gt;
+&lt;span class="err"&gt;║&lt;/span&gt;&lt;span class="w"&gt;                                                                         &lt;/span&gt;&lt;span class="err"&gt;║&lt;/span&gt;
+&lt;span class="err"&gt;║&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt;                                                  &lt;/span&gt;&lt;span class="err"&gt;║&lt;/span&gt;
+&lt;span class="err"&gt;║&lt;/span&gt;&lt;span class="w"&gt;                                                                         &lt;/span&gt;&lt;span class="err"&gt;║&lt;/span&gt;
+&lt;span class="err"&gt;║&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Team&lt;/span&gt;&lt;span class="w"&gt;                                                      &lt;/span&gt;&lt;span class="err"&gt;║&lt;/span&gt;
+&lt;span class="err"&gt;╚═════════════════════════════════════════════════════════════════════════╝&lt;/span&gt;
+
+&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;WINDOWS&lt;/span&gt;\&lt;span class="n"&gt;system32&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;
+&lt;span class="n"&gt;Removing&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;unused&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;at&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;Users&lt;/span&gt;\&lt;span class="n"&gt;USERNAME&lt;/span&gt;\&lt;span class="n"&gt;AppData&lt;/span&gt;\&lt;span class="n"&gt;Local&lt;/span&gt;\&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;\&lt;span class="n"&gt;chromium&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;833159&lt;/span&gt;
+&lt;span class="n"&gt;Removing&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;unused&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;at&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;Users&lt;/span&gt;\&lt;span class="n"&gt;USERNAME&lt;/span&gt;\&lt;span class="n"&gt;AppData&lt;/span&gt;\&lt;span class="n"&gt;Local&lt;/span&gt;\&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;\&lt;span class="n"&gt;firefox&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1221&lt;/span&gt;
+&lt;span class="n"&gt;Removing&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;unused&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;at&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;Users&lt;/span&gt;\&lt;span class="n"&gt;USERNAME&lt;/span&gt;\&lt;span class="n"&gt;AppData&lt;/span&gt;\&lt;span class="n"&gt;Local&lt;/span&gt;\&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;\&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1402&lt;/span&gt;
+&lt;span class="n"&gt;Downloading&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;chromium&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;v939194&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;101.8&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Mb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;====================&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;
+&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;chromium&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;v939194&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;downloaded&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;Users&lt;/span&gt;\&lt;span class="n"&gt;USERNAME&lt;/span&gt;\&lt;span class="n"&gt;AppData&lt;/span&gt;\&lt;span class="n"&gt;Local&lt;/span&gt;\&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;\&lt;span class="n"&gt;chromium&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;939194&lt;/span&gt;
+&lt;span class="n"&gt;Downloading&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ffmpeg&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;v1006&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;1.4&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Mb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;====================&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;
+&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ffmpeg&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;v1006&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;downloaded&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;Users&lt;/span&gt;\&lt;span class="n"&gt;USERNAME&lt;/span&gt;\&lt;span class="n"&gt;AppData&lt;/span&gt;\&lt;span class="n"&gt;Local&lt;/span&gt;\&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;\&lt;span class="n"&gt;ffmpeg&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1006&lt;/span&gt;
+&lt;span class="n"&gt;Downloading&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;firefox&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;v1304&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;74.2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Mb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;====================&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;
+&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;firefox&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;v1304&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;downloaded&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;Users&lt;/span&gt;\&lt;span class="n"&gt;USERNAME&lt;/span&gt;\&lt;span class="n"&gt;AppData&lt;/span&gt;\&lt;span class="n"&gt;Local&lt;/span&gt;\&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;\&lt;span class="n"&gt;firefox&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1304&lt;/span&gt;
+&lt;span class="n"&gt;Downloading&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;v1578&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;41.3&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Mb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;====================&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;
+&lt;span class="n"&gt;Playwright&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;v1578&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;downloaded&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;Users&lt;/span&gt;\&lt;span class="n"&gt;USERNAME&lt;/span&gt;\&lt;span class="n"&gt;AppData&lt;/span&gt;\&lt;span class="n"&gt;Local&lt;/span&gt;\&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;playwright&lt;/span&gt;\&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1578&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;感谢阅读。如果上述内容和代码片段对你有帮助，可通过以下二维码请杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/static/img/reward.png" title="我的赞赏码"&gt;&lt;/p&gt;</content><category term="website"></category><category term="Gitee Pages"></category><category term="PlayWright"></category></entry><entry><title>自动更新 Gitee Pages</title><link href="https://kaffa.im/update-gitee-pages-with-playwright.html" rel="alternate"></link><published>2021-01-11T12:00:00+08:00</published><updated>2021-01-11T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2021-01-11:/update-gitee-pages-with-playwright.html</id><summary type="html">&lt;p&gt;本文提供一段 Python 代码，用来解决免费 Gitee Pages 服务无法自动刷新。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;2022-01-11 更新&lt;/h2&gt;
+&lt;p&gt;本文写于2021年1月11日，PlayWright 当时的版本是 0.171.1，本文代码已不适用最新版 PlayWright，获取新版代码，请移步《20220111-自动更新 Gitee Pages 续》。&lt;/p&gt;
+&lt;h2&gt;更新 Gitee Pages 静态站点&lt;/h2&gt;
+&lt;p&gt;由于在 Gitee Pages 备份了个人博客，但免费用户 Gitee Pages 服务不能像 Github Pages 一样自动发布，
+网上有利用 Github Action 实现的现成解决方案，但刷新 Gitee Pages 是点击按钮的简单任务，不如自己搞定。&lt;/p&gt;
+&lt;h2&gt;Python 代码&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;playwright&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;sync_playwright&lt;/span&gt;
+
+&lt;span class="n"&gt;USERNAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;YOUR_USERNAME&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;PASSWORD&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;YOUR_PASSWORD&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;GITEE_PAGES_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://gitee.com/kaffa/kaffa/pages&amp;#39;&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;sync_playwright&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;browser_type&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chromium&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+            &lt;span class="n"&gt;browser&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;browser_type&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;launch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;headless&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;newPage&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;goto&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://gitee.com/login&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[login]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fill&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[login]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;USERNAME&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[login]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fill&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[password]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;PASSWORD&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;input[value=&amp;#39;登 录&amp;#39;]&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;goto&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GITEE_PAGES_URL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;dialog&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;dialog&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;dialog&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;accept&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.update_deploy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;waitForSelector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;span:text(&amp;quot;已开启 Gitee Pages 服务&amp;quot;)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;timeout&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;visible&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;代码说明&lt;/h2&gt;
+&lt;p&gt;从编程角度上，实现 Git Push 完后自动更新 Gitee Pages，需要当 Git Push 完成时发送消息，消息订阅方接收到该息后执行更新操作。
+现实中这些通常由持续集成（CI）服务器来做，但 Gitee 的持续集成服务 Gitee Go 是收费服务。&lt;/p&gt;
+&lt;p&gt;不如换个思路，即提交 Github 和 Gitee 完成后，追加一次点击 Gitee Pages 更新按钮的操作，该操作最后是客户端发出一个 Http Post 请求，
+复杂而不好的办法是直接构造该请求的数据，但为实现“一次编写，一直运行”，也为防止点按钮时还做了什么其它较风骚的操作，
+这里选择使用了 Headless Testing 的方法。&lt;/p&gt;
+&lt;p&gt;这条道路主流是沿着 Selenium -&amp;gt; Puppeteer -&amp;gt; PlayWright 进行的，特别是 PlayWright 团队，原先就是从 Google 的 Puppeteer 
+转到 &lt;a href="https://www.infoq.com/news/2020/01/playwright-browser-automation/"&gt;Microsoft PlayWright&lt;/a&gt;，毕竟，能把创造和改造的轮子从 Chrome 扩展到 Firefox 到 Webkit 谁不想呢？&lt;/p&gt;
+&lt;p&gt;说回 Headless Testing，这种方式没有直接发送 Http Post 请求迅速，但需要维护代码的可能性低，且更易维护。对个人来说，
+启动时把 headless 参数改为 True，多等十秒问题也不大。&lt;/p&gt;
+&lt;p&gt;代码中有两点值得一提：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;page.waitForSelector&lt;/code&gt; 方法，文档的第二个参数，在 node.js 语法中是传入 Object，但在 Python 中的用法是多个参数，
+这一点上由于 Python 版的 PlayWright 文档不详细，需在 PyCharm 中按 Ctrl 看源码提示才能看到；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;page.on("dialog", lambda dialog: dialog.accept())&lt;/code&gt; 表示在 alert 弹出框上点击确定。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其余代码直白到十岁小友也可看懂，不再解释。&lt;/p&gt;
+&lt;h3&gt;搜索关键字和延伸&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://gitee.com/help/articles/4136"&gt;Gitee Pages&lt;/a&gt;, &lt;a href="https://playwright.dev/"&gt;PlayWright&lt;/a&gt;, &lt;a href="https://github.com/microsoft/playwright-python"&gt;playwright-python&lt;/a&gt;, &lt;a href="https://headlesstesting.com/"&gt;Headless Testing&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;感谢阅读。如果上述内容和代码片段对你有帮助，请扫描二维码打赏一杯咖啡。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/static/img/reward.png" title="我的赞赏码"&gt;&lt;/p&gt;</content><category term="website"></category><category term="Gitee Pages"></category><category term="PlayWright"></category></entry><entry><title>对手头域名重新规划后提问</title><link href="https://kaffa.im/questions-and-detail-plan-about-my-domains.html" rel="alternate"></link><published>2020-12-01T12:00:00+08:00</published><updated>2020-12-05T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2020-12-01:/questions-and-detail-plan-about-my-domains.html</id><summary type="html">&lt;p class="first last"&gt;对手头几个域名的重新规划的细节，使用提问的方法。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;预期三问&lt;/h2&gt;
+&lt;p&gt;因世界有限，我们总希望利用有限约束的资源达成事的目标。在思考是否做一件事的方法论上，首先肯定不是考虑细节，其次也不该考虑整体，最先须考虑的是预期。&lt;/p&gt;
+&lt;p&gt;人对事的预期就是目标，我用一个三步提问法来考虑：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;我的目标是否明确？&lt;/li&gt;
+&lt;li&gt;我有可选的策略吗？&lt;/li&gt;
+&lt;li&gt;是否能实施此策略？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;昨日对5个域名做了规划，除开最后一个拟卖出，以下是对前4进行提问和回答。&lt;/p&gt;
+&lt;div class="section" id="kaffa-im"&gt;
+&lt;h3&gt;kaffa.im&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;我的目标是否明确？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;首先澄清目标，作为个人随笔博客，能记录人生和输出价值观，更明确的说，是希望从随笔中纯粹地真实地不受角色约束展示个人价值观，而并非想通过此博客实现的经济收益（当然不排斥打赏），因此选择了本地书写静态网站，再发布到 Github Pages 和 Gitee Pages，它们虽然缺少访问统计、广告，但自带版本管理，不会丢失。&lt;/p&gt;
+&lt;p&gt;我希望它保持自然的书写和更新节奏，我希望更新具有持续性，但不希望被动地约束和既定的输出频率，因没有商业压力和回本预期，所以不需要刻意对时潮作任何跟随，我希望它具备更明显的无时代性，时间限制我希望是1-2个番茄时间内。&lt;/p&gt;
+&lt;p&gt;终止更新它的风险可能有，域名忘记续费，Github 被禁止向中国提供服务（部分影响），由于博客空间免费，域名不贵，它最大的成本是书写时间，所以最大的亏损就是一去不返的光阴。在不被强制日更的前提下，我接受这个最大的风险。&lt;/p&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;我有可选的策略吗？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;目标是记录人生并持续输出价值观，所有的策略都是围绕记录的时间和输出的质量。减少时间和更有质量的输出，才会让这个博客反馈于人生，不至于降低了使用时间的效率，达成持续性。&lt;/p&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;是否能实施此策略？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;首先是资源，时间是达成目标最重要的资源，需要做好时间管理，利用碎片时间，提高时间利用率；其次是个人能力，写作能力是否匹配，要写出更有质量的随笔，则须提高写作能力，准确、清晰、简洁；最后是个人角色是否匹配，简单地说，人生要过成值得记录和输出的样子，将先围绕一些有关阅读、写作、学习的路径和技术的随笔来进行。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="t-e-com"&gt;
+&lt;h3&gt;t**e.com&lt;/h3&gt;
+&lt;p&gt;并不是一个持续的运营过程，所以更类似于几个任务：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;继续增加文章数量到100篇；&lt;/li&gt;
+&lt;li&gt;选择 &lt;a class="reference external" href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; 中单栏布局的模版对页面样式进行改进，以看起来更加准确清晰地展示了内容；&lt;/li&gt;
+&lt;li&gt;增加一个 可从 Tag 点进去的论坛。&lt;/li&gt;
+&lt;li&gt;考虑增加悬赏&lt;/li&gt;
+&lt;li&gt;考虑空间的玩法（创意来自印象笔记）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-o-cn"&gt;
+&lt;h3&gt;a**o.cn&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;将内容备份到本地后，逐步扩充到 a**o.com&lt;/li&gt;
+&lt;li&gt;blog 从 wordpress 置为 textpattern，作为新技术的 demo 和 playground&lt;/li&gt;
+&lt;li&gt;增加 item.a**o.cn&lt;/li&gt;
+&lt;li&gt;在 item.a**o.cn 录入 ee&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="t-t-com"&gt;
+&lt;h3&gt;t**t.com&lt;/h3&gt;
+&lt;p&gt;每周输出一篇投资或阅读笔记&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="coffees-app"&gt;
+&lt;h3&gt;coffees.app&lt;/h3&gt;
+&lt;p&gt;挂 &lt;a class="reference external" href="https://www.dan.com/"&gt;dan.com&lt;/a&gt; 卖出&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;结论&lt;/h2&gt;
+&lt;p&gt;做一件事，首先明确我在此事的目标，然后考虑我和环境内外是否有策略，如果有再考虑策略是否能对付每个点，这里可以SWOT二阶分析法。
+1. 我的目标是否明确？
+2. 我有可选的策略吗？
+3. 是否能实施此策略？&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="website"></category></entry><entry><title>对手头几个域名的重新规划</title><link href="https://kaffa.im/site-planning-about-my-domains.html" rel="alternate"></link><published>2020-11-30T12:00:00+08:00</published><updated>2020-11-30T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2020-11-30:/site-planning-about-my-domains.html</id><summary type="html">&lt;p class="first last"&gt;对手头几个域名的重新规划&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;前期对手头的项目进行了结项，计划在今年仅剩的一个月里对半年来还处于草稿状态的内容进行输出，内容分别会发布到目前拥有的几个域名上：&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;kaffa.im&lt;/dt&gt;
+&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
+&lt;li&gt;个人随笔博客&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/dd&gt;
+&lt;dt&gt;t**e.com&lt;/dt&gt;
+&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
+&lt;li&gt;继续增加文章数量&lt;/li&gt;
+&lt;li&gt;选择 &lt;a class="reference external" href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; 中单栏布局的模版对页面样式进行改进&lt;/li&gt;
+&lt;li&gt;增加 ee 的 forum&lt;/li&gt;
+&lt;li&gt;考虑增加 space（创意来自印象笔记）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/dd&gt;
+&lt;dt&gt;a**o.cn&lt;/dt&gt;
+&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
+&lt;li&gt;将内容备份到本地后，逐步扩充到 a**o.com&lt;/li&gt;
+&lt;li&gt;blog 从 wordpress 置为 texttile，作为新技术的 demo 和 playground&lt;/li&gt;
+&lt;li&gt;增加 item.a**o.cn&lt;/li&gt;
+&lt;li&gt;在 item.a**o.cn 录入 ee&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/dd&gt;
+&lt;dt&gt;t*t.com&lt;/dt&gt;
+&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
+&lt;li&gt;投资笔记&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/dd&gt;
+&lt;dt&gt;coffees.app&lt;/dt&gt;
+&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
+&lt;li&gt;挂 &lt;a class="reference external" href="https://www.dan.com/"&gt;dan.com&lt;/a&gt; 卖出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+</content><category term="website"></category></entry><entry><title>为博客添加评论系统</title><link href="https://kaffa.im/add-comments-system-to-my-blog.html" rel="alternate"></link><published>2018-08-10T12:20:00+08:00</published><updated>2018-08-10T12:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-10:/add-comments-system-to-my-blog.html</id><summary type="html">&lt;p class="first last"&gt;为博客添加评论系统&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;评论系统&lt;/h2&gt;
+&lt;p&gt;通俗地说，不同人在一起评论一个事时，就像对混沌系统作预测，最可能的结果就是一团糟。
+好在评论系统有效的过滤了人群，原来的多说，网易云跟帖，以及被蔷的 &lt;a class="reference external" href="https://www.disqus.com/"&gt;Disqus&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;时下，如果想欣赏真正的“杠精”，要去“即刻”看评论，去网易新闻看跟帖；因为 &lt;a class="reference external" href="https://www.disqus.com/"&gt;Disqus&lt;/a&gt; 不存在，
+Google &lt;a class="reference external" href="https://firebase.google.com/"&gt;Firebase&lt;/a&gt; 方案也不存在，那 GitHub 静态博客的评论，就剩下几个为数不多的免费方案，
+例如 &lt;a class="reference external" href="https://github.com/imsun/gitment"&gt;Gitment&lt;/a&gt; 和 &lt;a class="reference external" href="https://github.com/gitalk/gitalk"&gt;Gitalk&lt;/a&gt;，gitment 是鼻祖，gitalk 是后来者，看起来两者差不太多，
+相当于利用 GitHub 应用授权 api 编写了一个跨域提 issue 的客户端。&lt;/p&gt;
+&lt;p&gt;论安全性，这种做法的安全前提是服务端对提交信息的安全验证，且有人已提交一个次级域名利用方式。
+但我相信伪造评论、越权访问普通人的私有库并无太大价值，这其中只见伤害，并无收益。
+所以，这种安全性是可以定为相对安全。&lt;/p&gt;
+&lt;p&gt;在“深网”的世界里，人性恶的一面使然，什么都会发生，如果完全不限安全，多少有一些理想主义，
+但可以相信人性也有善面，在软件的世界里，建造永远比破坏更难，建造是一个工程，而破坏只是一次行动。&lt;/p&gt;
+&lt;p&gt;为 Pelican 添加 Gitalk 评论系统最简单的方式，莫过于在 &lt;tt class="docutils literal"&gt;theme\templates\article.html&lt;/tt&gt; 中直接修改，
+亦或编写一个 Pelican 插件，实现 &lt;a class="reference external" href="http://docs.getpelican.com/en/stable/plugins.html#list-of-signals"&gt;article_generator_finalized&lt;/a&gt; signal，
+读取 clientID 和 clientSecret 等配置在文后插入，如果手动插入，则是在 &lt;tt class="docutils literal"&gt;&amp;lt;/article&amp;gt;&lt;/tt&gt; 之前:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;div id=&amp;quot;gitalk-container&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://unpkg.com/gitalk/dist/gitalk.css&amp;quot;&amp;gt;
+&amp;lt;script src=&amp;quot;https://unpkg.com/gitalk/dist/gitalk.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+var gitalk = new Gitalk({
+    clientID: 'your client id here',
+    clientSecret: 'your client secret here',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+});
+gitalk.render('gitalk-container');
+&amp;lt;/script&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;想为 Pelican 添加 Gitalk 评论的人，如果遇到问题，可以本文 issue 我，网上并不容易找着傻瓜教程。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;博客历史&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;2018-06-06，博客启动，添加域名 &lt;a class="reference external" href="https://kaffa.im"&gt;https://kaffa.im&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2018-08-07，&lt;a class="reference external" href="https://github.com/MrSenko/pelican-octopress-theme"&gt;octopress 主题&lt;/a&gt; 中文化：&lt;a class="reference external" href="https://github.com/kaffa/pelican-octopress-theme-cn"&gt;pelican-octopress-theme-cn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2018-08-10，添加 gitalk 评论系统。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;感谢阅读。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="Pelican"></category><category term="Gitalk"></category><category term="Gitment"></category></entry><entry><title>更新博客主题</title><link href="https://kaffa.im/update-my-new-blog-theme.html" rel="alternate"></link><published>2018-08-07T08:20:00+08:00</published><updated>2018-08-07T08:20:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-08-07:/update-my-new-blog-theme.html</id><summary type="html">&lt;p class="first last"&gt;更新博客主题&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;关于本博客&lt;/h2&gt;
+&lt;p&gt;2018-06-06，开始这个新博客&lt;/p&gt;
+&lt;p&gt;2018-08-07，转眼间两个月了，原先使用的 &lt;a class="reference external" href="https://github.com/MrSenko/pelican-octopress-theme"&gt;octopress 主题&lt;/a&gt; 也发现一些样式上的缺陷，于是抽空对它做了中文化。&lt;/p&gt;
+&lt;p&gt;地址见：&lt;a class="reference external" href="https://github.com/kaffa/pelican-octopress-theme-cn"&gt;pelican-octopress-theme-cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;感谢阅读。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="Pelican Octopress Theme"></category></entry><entry><title>新博客</title><link href="https://kaffa.im/about-my-new-blog.html" rel="alternate"></link><published>2018-06-06T10:20:00+08:00</published><updated>2023-11-18T06:51:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2018-06-06:/about-my-new-blog.html</id><summary type="html">&lt;p class="first last"&gt;我的新博客&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;关于本博客&lt;/h2&gt;
+&lt;p&gt;2018-06-06，新的一天，新博客，这里将主要记录我的笔记和想法，以及兴趣。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;本博客采用的技术&lt;/h2&gt;
+&lt;p&gt;本博客采用基于 &lt;a class="reference external" href="https://www.python.org/"&gt;Python&lt;/a&gt; 语言的 &lt;a class="reference external" href="https://getpelican.com/"&gt;Pelican&lt;/a&gt; 库的 &lt;a class="reference external" href="https://github.com/MrSenko/pelican-octopress-theme"&gt;octopress 主题&lt;/a&gt; 来生成。&lt;/p&gt;
+&lt;p&gt;一般来说，静态博客就是一堆按目录存放的 html/css/js 及图片等静态文件组成的页面。在互联网刚兴起的那些年，第一批互联网站长利用 Microsoft FrontPage 和 Adobe Dreamweaver 等开发工具制作网站，随着 Web 的发展，几乎每一种语言都有人编写了专门的库用来维护这样的 &lt;a class="reference external" href="https://staticsitegenerators.net/"&gt;静态站点&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;我近些年主要用 Python 完成一些代码，因此选用了 Python 语言的 Pelican 库，类似的托管在 Github Pages 的默认库是基于 &lt;a class="reference external" href="https://www.ruby-lang.org/"&gt;Ruby&lt;/a&gt; 语言的 &lt;a class="reference external" href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;，而 Pelican 更有优势的地方是除了支持 &lt;a class="reference external" href="https://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;，还支持 &lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 和 &lt;a class="reference external" href="http://www.methods.co.nz/asciidoc/"&gt;AsciiDoc&lt;/a&gt; 格式。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h2&gt;本博客采用的技术的相关链接&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://blog.getpelican.com/"&gt;Pelican blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/getpelican"&gt;Pelican dev team&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/getpelican/pelican-plugins"&gt;Pelican plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/getpelican/pelican-themes"&gt;Pelican themes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="todo"&gt;
+&lt;h2&gt;和很多静态博客一样也留下 TODO 吧&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;采用渐进增强添加国家地理的 &lt;a class="reference external" href="https://www.nationalgeographic.com/photography/photo-of-the-day/?source=sitenavpod"&gt;每日一图&lt;/a&gt; 作为随机背景&lt;/li&gt;
+&lt;li&gt;将 Jekyll 的 &lt;a class="reference external" href="https://taylantatli.github.io/Moon/"&gt;Moon 主题&lt;/a&gt; 迁移到 Pelican&lt;/li&gt;
+&lt;li&gt;添加一些需要 &lt;a class="reference external" href="https://github.com/getpelican/pelican-plugins"&gt;Pelican plugins&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="Pelican"></category><category term="octopress"></category><category term="Markdown"></category><category term="reStructuredText"></category><category term="AsciiDoc"></category></entry></feed>
