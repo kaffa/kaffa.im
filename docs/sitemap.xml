@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-01-13T10:04:12-00:00</lastmod>
+<lastmod>2024-01-19T13:17:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-01-13T10:04:12-00:00</lastmod>
+<lastmod>2024-01-19T13:17:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-01-13T10:04:12-00:00</lastmod>
+<lastmod>2024-01-19T13:17:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-01-13T10:04:12-00:00</lastmod>
+<lastmod>2024-01-19T13:17:37-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,6 +60,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/the-world-and-you-starting-from-mispronounced-words.html</loc>
+<lastmod>2024-01-17T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/detect-the-secrets-behind-via-logic.html</loc>
 <lastmod>2024-01-12T15:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -67,7 +74,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kaffa.im/some-tiny-things.html</loc>
+<loc>https://kaffa.im/some-tiny-things-and-systemic-thinking.html</loc>
 <lastmod>2024-01-11T15:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -915,7 +922,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2024-01-12T15:00:00+08:06</lastmod>
+<lastmod>2024-01-17T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

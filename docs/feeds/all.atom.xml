@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-12T15:00:00+08:00</updated><entry><title>用逻辑探测事实背后的秘密</title><link href="https://kaffa.im/detect-the-secrets-behind-via-logic.html" rel="alternate"></link><published>2024-01-12T15:00:00+08:00</published><updated>2024-01-12T15:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-12:/detect-the-secrets-behind-via-logic.html</id><summary type="html"></summary><content type="html">&lt;p&gt;生活的某部分，和解(po)题(an)是一致的，比如找东西。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-17T12:00:00+08:00</updated><entry><title>世界与你，从发音错的单词说开去</title><link href="https://kaffa.im/the-world-and-you-starting-from-mispronounced-words.html" rel="alternate"></link><published>2024-01-17T12:00:00+08:00</published><updated>2024-01-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-17:/the-world-and-you-starting-from-mispronounced-words.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;世界的问题，归根都是自己的问题&lt;/h2&gt;
+&lt;p&gt;虽然我的英文水平也有限，但有时候确实不习惯身边有很多人的发音。&lt;/p&gt;
+&lt;p&gt;通常有两种情况：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;发错音，比如 apache 阿帕奇、scheme s该马、cache 凯奇&lt;/li&gt;
+&lt;li&gt;发音与我习惯的发音不同，其中有一部分外来词，比如 Résumé/Resume RE素姆、ZARA 扎RA&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;后来我想了一想，基于一个更大的结论『如果你发现世界有问题，那不是世界的问题，而是你的问题。』（得出这个结论的原因在之前也提过，是因世界是你的意识界面。）我们可以继续推导。&lt;/p&gt;
+&lt;p&gt;如果你认为或习惯的发音与你所处的环境中听到的不同，那不是世界的问题，不是别人的发音问题，而是自己听到这样发音后不习惯的问题。更进一步说，一个人英语发音与大多数母语英语的人的发音不一致，可能原因是那个人的老师发音也不对，或者TA没有听到过正确的发音就根据经验去读了，还不自知，这是TA那边的事；但你这一边，听到了这样的发音，你知道TA的英语发音与你知道的大多数母语英语的人的发音不一致，你也有两种选择，接受还是不接受，习惯于此，还是不习惯于此。&lt;/p&gt;
+&lt;p&gt;类似的，还有命名，比如你在与合作方的合作中中使用了一些不地道的词，此时有两种情况，你的合作方是英文母语，TA们第一感觉一定会觉得异样，此时有可能人家能理解并接受，只是背后偷笑一下，还是愿意与你继续配合，或者人家不能理解也不接受，建议你改为更恰当的用词。&lt;/p&gt;
+&lt;p&gt;其实，我要说的是，这些都是会发生的，但其合理性还是看什么是强势面。&lt;/p&gt;
+&lt;p&gt;比如，英文母语的人也可以接受 you say how much is how much 的表达，也不会认为语法错的表达就违法了，但你出国留学，使用语法错的表达，人家教授就是可以给你扣分。&lt;/p&gt;
+&lt;p&gt;语言最基本功能的是沟通。发音是一种约定，并不是道德和法律。在某种场景下，只是一种规范（一种筛选器）。很难说清，这些规范是否是这个世界的恶意，或者什么更长远的考虑。&lt;/p&gt;
+&lt;p&gt;文化是有生命力的，如果存在合理性，看似不合理的读音会演变，甚至语法错的表达也会被写进字典作为特例。&lt;/p&gt;
+&lt;p&gt;所以，如果你也遇到和我一样的问题，你可以：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;学习一下以下项目，并推荐以下项目给TA&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/shimohq/chinese-programmer-wrong-pronunciation"&gt;https://github.com/shimohq/chinese-programmer-wrong-pronunciation&lt;/a&gt;
+&lt;a class="reference external" href="https://github.com/Wei-Xia/most-frequent-technology-english-words"&gt;https://github.com/Wei-Xia/most-frequent-technology-english-words&lt;/a&gt;&lt;/p&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;修身齐家，以地道的语言表达，但输出自己的文化。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;第二种更有说服力。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="article"></category></entry><entry><title>用逻辑探测事实背后的秘密</title><link href="https://kaffa.im/detect-the-secrets-behind-via-logic.html" rel="alternate"></link><published>2024-01-12T15:00:00+08:00</published><updated>2024-01-12T15:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-12:/detect-the-secrets-behind-via-logic.html</id><summary type="html"></summary><content type="html">&lt;p&gt;生活的某部分，和解(po)题(an)是一致的，比如找东西。&lt;/p&gt;
 &lt;p&gt;最开始当我学习占星时，我喜欢使用占星骰子作为工具来探讨丢失物品的可能性。&lt;/p&gt;
 &lt;p&gt;但直到后来我发现我擅长找到别人难以找到的东西，并不是依赖于占星骰子，而是依赖于逻辑链。&lt;/p&gt;
 &lt;p&gt;这部分找东西的能力是从读到刑侦学的 Locard Exchange Principle 时顿悟的。&lt;/p&gt;
 &lt;p&gt;Locard 说：凡犯罪者，必留痕迹。LEP 强调的是物质的交换。&lt;/p&gt;
-&lt;p&gt;我从中领悟到的是逻辑链，既：当从事实出发有多种可能性时，选择可能性最高的逻辑作为假设继续延伸推理。&lt;/p&gt;
+&lt;p&gt;我从中领悟到的是逻辑的链式传递，既：当从事实出发有多种可能性时，选择可能性最高的逻辑作为假设继续延伸推理。&lt;/p&gt;
 &lt;p&gt;因为可能性的延伸基于事实，如果有两种可能性时，先去掉无法继续向后推理的可能，除非保留的推理无法继续推进后再返回来考虑另一种可能。&lt;/p&gt;
 &lt;p&gt;这个思维过程，在计算机科学被叫做回溯。&lt;/p&gt;
 &lt;div class="section" id="section-2"&gt;
@@ -14,7 +40,7 @@
 &lt;p&gt;经实地查看，发现帘子依然在猫屋附近。&lt;/p&gt;
 &lt;p&gt;我的「第六感」其实不是直觉，而是基于逻辑得到的：&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;被石头压住的帘子不见了 -&amp;gt; 帘子被动过；&lt;/li&gt;
+&lt;li&gt;被石头压住的帘子不见了 --&amp;gt; 帘子被动过；&lt;/li&gt;
 &lt;li&gt;帘子被动过 ——&amp;gt; 有人动过或者非人动过，非人因素主要是风或者是猫；&lt;/li&gt;
 &lt;li&gt;假设是外来人员，小区有近16栋楼，近60个单元，四处是摄像头，外来人员专门走到某一栋人少的猫屋去拿一块布帘，从随机的角度来说，可能性最多为2%；假设是小区内人员，布帘不能换钱，成年人没有动机，可能性很低，而小孩捣乱拿走可能性却不低，但事情发生时间是工作日的中午，熊孩子需要吃午饭后午休，然后上学，可能性便降低了。&lt;/li&gt;
 &lt;li&gt;人的可能性似乎说不太通，那么考虑是非人因素，但因为被石头压住，没有台风是吹不走的；所以基本就剩下动物，猫屋边上常有很多猫活动，是狗的可能性也不大，且狗都被人牵着遛，搞破坏的可能不如猫那么高。&lt;/li&gt;
@@ -34,8 +60,10 @@
 &lt;h2&gt;逻辑是一种很好用的工具&lt;/h2&gt;
 &lt;p&gt;工具既一种结构应对另一种结构。逻辑作为工具，结构中只有两个因素，事实和推理，因此非常干脆，属于每人必备的瑞士军刀。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="article"></category><category term="logic"></category></entry><entry><title>几件无关程序开发的事</title><link href="https://kaffa.im/some-tiny-things.html" rel="alternate"></link><published>2024-01-11T15:00:00+08:00</published><updated>2024-01-11T15:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-11:/some-tiny-things.html</id><summary type="html">&lt;p class="first last"&gt;修理日记&lt;/p&gt;
-</summary><content type="html">&lt;div class="line-block"&gt;
+</content><category term="article"></category><category term="logic"></category></entry><entry><title>几件无关程序开发的事</title><link href="https://kaffa.im/some-tiny-things-and-systemic-thinking.html" rel="alternate"></link><published>2024-01-11T15:00:00+08:00</published><updated>2024-01-11T15:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-11:/some-tiny-things-and-systemic-thinking.html</id><summary type="html">&lt;p class="first last"&gt;修理日记&lt;/p&gt;
+</summary><content type="html">&lt;div class="notification"&gt;
+  该图片由&lt;a href="https://pixabay.com/zh/users/skitterphoto-324082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3129361"&gt;Rudy and Peter Skitterians&lt;/a&gt;在&lt;a href="https://pixabay.com/zh//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3129361"&gt;Pixabay&lt;/a&gt;上发布
+&lt;/div&gt;&lt;div class="line-block"&gt;
 &lt;div class="line"&gt;有时我们并不需要从世界获取什么，我们只是路过了世界的趣味之处，学会与之共处。&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-2"&gt;
@@ -58,6 +86,33 @@
 &lt;p&gt;我的灯罩回归了。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;造笔&lt;/h2&gt;
+&lt;p&gt;不知有没有人和我一样想过，利拉鲁肽针管像一支笔。&lt;/p&gt;
+&lt;p&gt;我仔细看过前端，觉得它其实可以适配为一只墨水笔。&lt;/p&gt;
+&lt;p&gt;加上我好奇它的结构，今日得空，便对它进行了拆解。&lt;/p&gt;
+&lt;p&gt;其实针管外表并没有明显的拆解位置，但好在我有一些常识和逻辑。这种普通针管，就是注射器，简直是童年阴影之一。&lt;/p&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h3&gt;针管结构原型&lt;/h3&gt;
+&lt;p&gt;为了拆解针管的结构，我会假设是一个普通人来设计的。&lt;/p&gt;
+&lt;p&gt;这种抛弃型针管是普通针管的改良，它的基本结构与普通针管大概率是一致的（&lt;strong&gt;人不需要在不需要的地方进行颠覆性创新&lt;/strong&gt;）。&lt;/p&gt;
+&lt;p&gt;将针管做成抛弃型的，更多的是一种商业权衡：为了用药的便利性和安全性，付出更高的成本。&lt;/p&gt;
+&lt;p&gt;这种结构就是：针头+针管+药水+推进器。&lt;/p&gt;
+&lt;p&gt;我们会发现，枪的原型其实也是一样的：管状物+被推进物+推进器。只不过枪的被推进物是子弹可以替换。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h3&gt;拆解的思路&lt;/h3&gt;
+&lt;p&gt;采用排除法，在抛弃型利拉鲁肽针管上，可见的分解处有三处，进行松紧度探索以后，发现可方便打开的是尾部和指示窗。&lt;/p&gt;
+&lt;p&gt;打开尾部。发现一根弹簧提供了按压头的回弹力，结合按压头的作用确定，尾部提供了可量化的推进力以压缩指定剂量的针药水，且这个推动力是单向的，此时回想一下生活中单向阀的经验，就知道针管中间大概率设计为一种有去无回的旋转结构，可以向下旋转推进，但无法逆行，最后拆开后发现事实也是如此。&lt;/p&gt;
+&lt;p&gt;指示窗。打开尾部后看懂结构后，发现指示窗中并没有机械结构，之所以能显示刻度，是因为刻度只是一个视图，既压缩高度的一个显示。&lt;/p&gt;
+&lt;p&gt;真正的工业设计集中在针管中部1/3处，其中有一个结构丝滑的塑料螺纹芯，也是模具最细致的地方。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-6"&gt;
+&lt;h3&gt;制作成笔&lt;/h3&gt;
+&lt;p&gt;笔芯手头有欧标G2和日UNI的UMR-85N，分别适配了两只，都是可以的。&lt;/p&gt;
+&lt;img alt="Liraglutide 针管适配 UMR-85N 笔芯" src="https://kaffa.im/static/img/2023/liraglutide-and-umr-85n.jpg" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-7"&gt;
 &lt;h2&gt;心得&lt;/h2&gt;
 &lt;p&gt;解决问题需要：&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -76,7 +131,12 @@
 &lt;/ul&gt;
 &lt;p&gt;公司每个员工都在角色中，有着非常恰当的职业修养，最后事总会落到会干想干的人身上，被解决掉。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="article"></category></entry><entry><title>坛经</title><link href="https://kaffa.im/the-altar-sutra.html" rel="alternate"></link><published>2024-01-11T00:07:00+08:00</published><updated>2024-01-11T00:07:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-11:/the-altar-sutra.html</id><summary type="html">&lt;p class="first last"&gt;缘分到了，读读『坛经』&lt;/p&gt;
+&lt;div class="section" id="section-8"&gt;
+&lt;h2&gt;启示&lt;/h2&gt;
+&lt;p&gt;旧的结构中，如果有细小的零件不适用，导致结构失效，最便捷的解决方式往往不是造新的结构取代旧结构，而是拆解不适用的零件，进行适配和零件替换。于是，似乎，基于上述结论，诺记被水果颠覆了。有时候还需要考虑到旧结构的系统性溃败。于是是需要替换零件，或是更新结构，最好由资源竞争结合操盘的人来定。&lt;/p&gt;
+&lt;p&gt;拆解一个系统，如果没有思路，可以从建设这个系统的思路展开，因为，虽然产品设计师和工程师的思维一般由差异，但是在相同的产品设计上，工程师的实现会很类似。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="article"></category><category term="systemic-thinking"></category></entry><entry><title>坛经</title><link href="https://kaffa.im/the-altar-sutra.html" rel="alternate"></link><published>2024-01-11T00:07:00+08:00</published><updated>2024-01-11T00:07:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-11:/the-altar-sutra.html</id><summary type="html">&lt;p class="first last"&gt;缘分到了，读读『坛经』&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;读后&lt;/h2&gt;
 &lt;p&gt;多年前从韶关回深到过南华禅寺，得见六祖惠能真身，当时并不知晓这是一尊距今1300多年的肉身真身，除了在南方如此炎热湿润的环境中保持不腐坏的神奇之外，惠能得传五祖衣钵的的故事也充满了预言和先见。&lt;/p&gt;
@@ -254,7 +314,9 @@
 &lt;p&gt;谁能胜出，就在于整合强项，安排优先级。&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="digital"></category><category term="LLM"></category><category term="AI"></category></entry><entry><title>泡茶的方法</title><link href="https://kaffa.im/make-tea.html" rel="alternate"></link><published>2023-12-26T12:36:00+08:00</published><updated>2023-12-26T12:36:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-26:/make-tea.html</id><summary type="html">&lt;p class="first last"&gt;如何把茶泡得好喝，这是个问题...&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+</summary><content type="html">&lt;div class="notification"&gt;
+  该图片由&lt;a href="https://pixabay.com/zh/users/mirkostoedter-20529864/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6078275"&gt;Mirko Stödter&lt;/a&gt;在&lt;a href="https://pixabay.com/zh//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6078275"&gt;Pixabay&lt;/a&gt;上发布
+&lt;/div&gt;&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;茶&lt;/h2&gt;
 &lt;p&gt;茶源自中国，作为中国人怎能不懂如何将茶泡得好喝呢？&lt;/p&gt;
 &lt;p&gt;在世界语言中，&amp;quot;茶&amp;quot;有两种读音，一种读 cha，另一种是 tea。这两种都源自中文，前者是普通话，后者是福建沿海闽南话。显然，采用第一种读音的国家，茶叶源自中国陆路传播；而采用第二种读音的国家，茶叶源自中国海路传播。&lt;/p&gt;
@@ -311,6 +373,36 @@
 &lt;li&gt;水量：200ml&lt;/li&gt;
 &lt;li&gt;时间：5m&lt;/li&gt;
 &lt;li&gt;次数：2times&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;金骏眉&lt;/td&gt;
+&lt;td&gt;&lt;ul class="first last simple"&gt;
+&lt;li&gt;投茶：4g&lt;/li&gt;
+&lt;li&gt;水温：85°C&lt;/li&gt;
+&lt;li&gt;水量：200ml&lt;/li&gt;
+&lt;li&gt;时间：5s，每泡延5秒&lt;/li&gt;
+&lt;li&gt;次数：5times&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;大红袍&lt;/td&gt;
+&lt;td&gt;&lt;ul class="first last simple"&gt;
+&lt;li&gt;投茶：8g&lt;/li&gt;
+&lt;li&gt;水温：98°C&lt;/li&gt;
+&lt;li&gt;水量：200ml&lt;/li&gt;
+&lt;li&gt;时间：10s，每多2泡延10秒&lt;/li&gt;
+&lt;li&gt;次数：6times&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;铁观音&lt;/td&gt;
+&lt;td&gt;&lt;ul class="first last simple"&gt;
+&lt;li&gt;投茶：7g&lt;/li&gt;
+&lt;li&gt;水温：100°C&lt;/li&gt;
+&lt;li&gt;水量：200ml&lt;/li&gt;
+&lt;li&gt;时间：10s，每多2泡延10秒&lt;/li&gt;
+&lt;li&gt;次数：6times&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
@@ -386,37 +478,47 @@
 &lt;/div&gt;
 &lt;div class="section" id="section-3"&gt;
 &lt;h2&gt;目录&lt;/h2&gt;
-&lt;p&gt;第1章：只有技术进步才能照亮未来
-当一项新技术出现时，人类会反对它的传播
-到2040年，飞行汽车将成为可能
-中国和监控摄像头和个人数据
-拯救日本人口减少是用5G进行医疗
-基因组编辑技术为疑难杂症的治疗提供了启示
-再生医学可以治愈帕金森病和阿尔茨海默病
-日本的地形不适合风力发电&lt;/p&gt;
-&lt;p&gt;第2章：与你的不快乐直接相关的未来经济：养老金、税收和医疗费用
-政府为其提供资金的唯一途径是来自我们的社会保险费
-所有人的问题是老年人的数量正在增加
-如果您工作到 70 岁，您将获得与现在相同数额的养老金。
-日本的GDP在前吗？
-未来，政治将比技术更能决定股价&lt;/p&gt;
-&lt;p&gt;第3章：在考虑衣食住行的同时，获得预测未来的能力
-如果你不吃基因编辑的鱼，你就不会再活下去了
-公寓的价值将下降
-在日本，教育背景变得毫无意义
-对于日益贫穷的日本来说，共享是必不可少的&lt;/p&gt;
-&lt;p&gt;第4章 自然灾害总会发生
-如果发生南海海槽地震，日本各地很有可能同时发生地震
-由于全球变暖，战争将会发生
-水成为最稀缺资源&lt;/p&gt;
+&lt;p&gt;第1章：只有技术进步才能照亮未来&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;当一项新技术出现时，人类会反对它的传播&lt;/li&gt;
+&lt;li&gt;到2040年，飞行汽车将成为可能&lt;/li&gt;
+&lt;li&gt;中国和监控摄像头和个人数据&lt;/li&gt;
+&lt;li&gt;拯救日本人口减少是用5G进行医疗&lt;/li&gt;
+&lt;li&gt;基因组编辑技术为疑难杂症的治疗提供了启示&lt;/li&gt;
+&lt;li&gt;再生医学可以治愈帕金森病和阿尔茨海默病&lt;/li&gt;
+&lt;li&gt;日本的地形不适合风力发电&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;第2章：与你的不快乐直接相关的未来经济：养老金、税收和医疗费用&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;政府为其提供资金的唯一途径是来自我们的社会保险费&lt;/li&gt;
+&lt;li&gt;所有人的问题是老年人的数量正在增加&lt;/li&gt;
+&lt;li&gt;如果您工作到 70 岁，您将获得与现在相同数额的养老金。&lt;/li&gt;
+&lt;li&gt;日本的GDP在前吗？&lt;/li&gt;
+&lt;li&gt;未来，政治将比技术更能决定股价&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;第3章：在考虑衣食住行的同时，获得预测未来的能力&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;如果你不吃基因编辑的鱼，你就不会再活下去了&lt;/li&gt;
+&lt;li&gt;公寓的价值将下降&lt;/li&gt;
+&lt;li&gt;在日本，教育背景变得毫无意义&lt;/li&gt;
+&lt;li&gt;对于日益贫穷的日本来说，共享是必不可少的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;第4章 自然灾害总会发生&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;如果发生南海海槽地震，日本各地很有可能同时发生地震&lt;/li&gt;
+&lt;li&gt;由于全球变暖，战争将会发生&lt;/li&gt;
+&lt;li&gt;水成为最稀缺资源&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-4"&gt;
 &lt;h2&gt;一些评论的翻译&lt;/h2&gt;
-&lt;p&gt;作者的书总是很有趣，读起来很有趣，但这一次，我也能一口气读到最后。然而，尽管我在某种程度上知道日本的未来是暗淡的，灾难、人口减少和气候变化是危险的，但我还是感到震惊。作者在技术的进化中看到了希望，但是如果发生战争什么的就会停止，我感觉在某个地方会有一个限制。到目前为止，他一直处于上升期，以网为中心，但我对此表示怀疑。但我也想，如果我能忘记我最后的国家会更好。&lt;/p&gt;
-&lt;p&gt;作者是微软日本前总裁 Makoto Naruke。 本书建议，重要的是要把即将到来的技术变革视为机遇，我们可以在技术之外发现未来将发生的萌芽，把握未来的形态。内容和我前几天读到的『Hiroyuki's Shin Future Prediction』几乎一样，不仅预测了科技和经济，还预测了自然灾害。这是一本好书。&lt;/p&gt;
-&lt;p&gt;这很有趣。 作者是微软日本公司前总裁，经营一家书评网站管理公司，他写的一本书，预测了2040年技术、养老金、生活方式、灾难等将如何变化。无论如何，我看不到日本有多么光明的未来，但那是因为我从宏观角度思考，正如作者在书的最后所说，如果我从个人层面思考，我觉得事情其实可以有很好的结果。 易于阅读。&lt;/p&gt;
-&lt;p&gt;它没有什么特别不寻常的地方，它描述的是未来可能发生的事情。同时，它也谈到了一些我觉得不方便的事实，让我想移开视线。2040年，日本总人口将达到1.1亿，其中65岁及以上的人口将达到3900万，超过三分之一的人是老年人。利用技术对于解决日本日益贫困的社会问题至关重要。我想是这样。我想培养思考未来和适应环境变化的能力，但又不会变得过于悲观。&lt;/p&gt;
-&lt;p&gt;这本书充满了重要的信息，没有不必要的文字。这本书暗示了技术的光明未来，但特别是在最后一章，讨论了自然灾害造成的最坏情况，这是一种巧妙的写作方式。你不必完全相信老人（作者65岁）在后记中所说的话，但困难的未来是无法避免的。我的建议是忘记你的国家，尽力过上幸福的生活。尽管它没有这么说，但我认为这最终将导致这个国家变得更加富裕。第一章令人鼓舞。6G和低延迟、虚拟、自动驾驶、飞行汽车、人工智能、再生医学、基因组编辑、固态电池！&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;作者的书总是很有趣，读起来很有趣，但这一次，我也能一口气读到最后。然而，尽管我在某种程度上知道日本的未来是暗淡的，灾难、人口减少和气候变化是危险的，但我还是感到震惊。作者在技术的进化中看到了希望，但是如果发生战争什么的就会停止，我感觉在某个地方会有一个限制。到目前为止，他一直处于上升期，以网为中心，但我对此表示怀疑。但我也想，如果我能忘记我最后的国家会更好。&lt;/li&gt;
+&lt;li&gt;作者是微软日本前总裁 Makoto Naruke。 本书建议，重要的是要把即将到来的技术变革视为机遇，我们可以在技术之外发现未来将发生的萌芽，把握未来的形态。内容和我前几天读到的『Hiroyuki's Shin Future Prediction』几乎一样，不仅预测了科技和经济，还预测了自然灾害。这是一本好书。&lt;/li&gt;
+&lt;li&gt;这很有趣。 作者是微软日本公司前总裁，经营一家书评网站管理公司，他写的一本书，预测了2040年技术、养老金、生活方式、灾难等将如何变化。无论如何，我看不到日本有多么光明的未来，但那是因为我从宏观角度思考，正如作者在书的最后所说，如果我从个人层面思考，我觉得事情其实可以有很好的结果。 易于阅读。&lt;/li&gt;
+&lt;li&gt;它没有什么特别不寻常的地方，它描述的是未来可能发生的事情。同时，它也谈到了一些我觉得不方便的事实，让我想移开视线。2040年，日本总人口将达到1.1亿，其中65岁及以上的人口将达到3900万，超过三分之一的人是老年人。利用技术对于解决日本日益贫困的社会问题至关重要。我想是这样。我想培养思考未来和适应环境变化的能力，但又不会变得过于悲观。&lt;/li&gt;
+&lt;li&gt;这本书充满了重要的信息，没有不必要的文字。这本书暗示了技术的光明未来，但特别是在最后一章，讨论了自然灾害造成的最坏情况，这是一种巧妙的写作方式。你不必完全相信老人（作者65岁）在后记中所说的话，但困难的未来是无法避免的。我的建议是忘记你的国家，尽力过上幸福的生活。尽管它没有这么说，但我认为这最终将导致这个国家变得更加富裕。第一章令人鼓舞。6G和低延迟、虚拟、自动驾驶、飞行汽车、人工智能、再生医学、基因组编辑、固态电池！&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-5"&gt;
 &lt;h2&gt;一些事实和观点&lt;/h2&gt;
@@ -775,7 +877,7 @@ rm对rf，drop对purge，删库对跑路。
 &lt;/div&gt;
 &lt;div class="section" id="kaffa-im"&gt;
 &lt;h2&gt;Kaffa.im 并不需要传统意义的品牌过程&lt;/h2&gt;
-&lt;p&gt;Kaffa.im 用来记录个人数据，在设计中没有消费者，它不会收集谁的数据，盯着谁的口袋，也不涉及利用人性的缺陷，只是朴素表达，纯爱发电，良心质造。设计过程不需甲乙双方逐步确认，也不需机械的设计流程。&lt;/p&gt;
+&lt;p&gt;Kaffa.im 用来记录个人数据，在设计中没有消费者，它不会收集谁的数据，盯着谁的口袋，也不涉及利用人性，只是朴素表达，纯爱发电，良心质造。设计过程不需甲乙双方逐步确认，也不需机械的设计流程。&lt;/p&gt;
 &lt;p&gt;这里我只想把基本点需要阐述清楚，采用清单方式：&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;品牌理念：穿越决策时间的长期主义，温暖有力。&lt;/li&gt;
@@ -3684,39 +3786,4 @@ docs/
 2. 我有可选的策略吗？
 3. 是否能实施此策略？&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="website"></category></entry><entry><title>对手头几个域名的重新规划</title><link href="https://kaffa.im/site-planning-about-my-domains.html" rel="alternate"></link><published>2020-11-30T12:00:00+08:00</published><updated>2020-11-30T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2020-11-30:/site-planning-about-my-domains.html</id><summary type="html">&lt;p class="first last"&gt;对手头几个域名的重新规划&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;前期对手头的项目进行了结项，计划在今年仅剩的一个月里对半年来还处于草稿状态的内容进行输出，内容分别会发布到目前拥有的几个域名上：&lt;/p&gt;
-&lt;dl class="docutils"&gt;
-&lt;dt&gt;kaffa.im&lt;/dt&gt;
-&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
-&lt;li&gt;个人随笔博客&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/dd&gt;
-&lt;dt&gt;t**e.com&lt;/dt&gt;
-&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
-&lt;li&gt;继续增加文章数量&lt;/li&gt;
-&lt;li&gt;选择 &lt;a class="reference external" href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; 中单栏布局的模版对页面样式进行改进&lt;/li&gt;
-&lt;li&gt;增加 ee 的 forum&lt;/li&gt;
-&lt;li&gt;考虑增加 space（创意来自印象笔记）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/dd&gt;
-&lt;dt&gt;a**o.cn&lt;/dt&gt;
-&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
-&lt;li&gt;将内容备份到本地后，逐步扩充到 a**o.com&lt;/li&gt;
-&lt;li&gt;blog 从 wordpress 置为 texttile，作为新技术的 demo 和 playground&lt;/li&gt;
-&lt;li&gt;增加 item.a**o.cn&lt;/li&gt;
-&lt;li&gt;在 item.a**o.cn 录入 ee&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/dd&gt;
-&lt;dt&gt;t*t.com&lt;/dt&gt;
-&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
-&lt;li&gt;投资笔记&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/dd&gt;
-&lt;dt&gt;coffees.app&lt;/dt&gt;
-&lt;dd&gt;&lt;ol class="first last arabic simple"&gt;
-&lt;li&gt;挂 &lt;a class="reference external" href="https://www.dan.com/"&gt;dan.com&lt;/a&gt; 卖出&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
 </content><category term="website"></category></entry></feed>
