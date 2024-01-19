@@ -39,10 +39,10 @@
 
 1. 学习一下以下项目，并推荐以下项目给TA
 
-https://github.com/shimohq/chinese-programmer-wrong-pronunciation
-https://github.com/Wei-Xia/most-frequent-technology-english-words
+- https://github.com/shimohq/chinese-programmer-wrong-pronunciation
+- https://github.com/Wei-Xia/most-frequent-technology-english-words
 
-2. 修身齐家，以地道的语言表达，但输出自己的文化。
+2. 修齐自身，以地道的语言表达，但输出自己的文化。
 
 第二种更有说服力。
 
