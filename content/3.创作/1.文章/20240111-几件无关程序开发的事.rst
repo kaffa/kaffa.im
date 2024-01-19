@@ -95,7 +95,7 @@
 
 笔芯手头有欧标G2和日UNI的UMR-85N，分别适配了两只，都是可以的。
 
-.. image:: https://kaffa.im/static/img/2023/liraglutide-and-umr-85n.jpg
+.. image:: https://kaffa.im/static/img/2024/liraglutide-and-umr-85n.jpg
     :alt: Liraglutide 针管适配 UMR-85N 笔芯
 
 
