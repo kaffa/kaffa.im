@@ -7,7 +7,7 @@
 :tags: Career Development
 :slug: career-development-and-planning
 :summary: 属于常识和工具箱。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/6wa5PdOmu6MzJomZANkCOI
 :brief: 职业生涯 Career 依旧是一个不旧的词，行业 vocation 工作 work 就业 employment 工作 job 职业 occupation 职位 position，如果你弄不清这些词的意义，或者，你想界定兴趣 interest 价值观 value 技能 skill 能力 ability，那么可以阅读它。
 

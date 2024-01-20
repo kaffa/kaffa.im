@@ -7,7 +7,7 @@
 :tags: LLM,AI
 :slug: feelings-about-large-language-model
 :summary: 一些有意思摘录
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 
 
 大语言模型的商业生态

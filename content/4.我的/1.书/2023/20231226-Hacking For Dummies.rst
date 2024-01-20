@@ -7,7 +7,7 @@ Hacking For Dummies
 :tags: cyber-security,hacker
 :slug: hacking-for-dummies
 :summary: Dummies系列良莠不齐，这本相对水平还不错
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/4oczb7JjyegVr5DxaQtX6h
 
 读后

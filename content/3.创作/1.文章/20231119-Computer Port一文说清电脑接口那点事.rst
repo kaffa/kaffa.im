@@ -7,7 +7,7 @@ Computer Port 一文说清电脑接口
 :tags: Computer Port, USB, Type-C, HDMI, DisplayPort
 :slug: computer-port-in-a-nutshell
 :summary: 从使用者角度梳理电脑接口，将散落各处的信息合并到一篇文章中，避开技术细节，只介绍作为普通使用者需要了解的信息。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 
 
 接口 Port

@@ -7,7 +7,7 @@ JavaScript悟道
 :tags: JavaScript
 :slug: how-javascript-works
 :summary: 学过 JavaScript 语法并且写过 JavaScript 程序但依然遇到陷阱时，你可以读的书。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/778HNzeqkjkca51H1JLTyP
 :brief:
 

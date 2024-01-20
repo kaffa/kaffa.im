@@ -7,7 +7,7 @@
 :tags: Psychology,心理学
 :slug: psychology-11th-edition
 :summary: 一本非常好的心理学教材
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/4oZAZdJAphRL8Dc7UswdyG
 
 

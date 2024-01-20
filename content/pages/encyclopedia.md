@@ -4,7 +4,7 @@ Modified: 2023-10-20
 Slug: encyclopedia
 Authors: Kaffa
 Summary: 
-Image: /static/img/2023/about-kaffa.png
+Image: /static/img/2023/hero.png
 
 
 ## 说明

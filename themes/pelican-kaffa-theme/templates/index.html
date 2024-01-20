@@ -204,7 +204,7 @@
                             <img src="{{ article.subject.cover_relative_path|safe }}" alt="cover_image">
                         </figure>
                     </div>
-                    {%- elif article.image and article.image != '/static/img/2023/about-kaffa.png' -%}
+                    {%- elif article.image and not article.image.endswith('/hero.png') -%}
                     <div class="media-right">
                         <figure class="image" style="max-width: 96px">
                             <img src="{{ article.image }}" alt="cover_image">

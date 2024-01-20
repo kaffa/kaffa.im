@@ -7,7 +7,7 @@ The Emperor of All Maladies - A Biography of Cancer
 :tags: Cancer
 :slug: the-emperor-of-all-maladies-a-biography-of-cancer
 :summary: 想读
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/6NrmePR9NMqMxC6kg5so2s
 
 想看

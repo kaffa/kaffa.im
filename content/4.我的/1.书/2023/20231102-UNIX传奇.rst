@@ -7,7 +7,7 @@ UNIX传奇
 :tags: Unix
 :slug: unix-a-history-and-a-memoir
 :summary: 热爱计算机的人都会对 UNIX 产生兴趣，因它真正带给人类一套稳固灵活的操作系统软件，解决了人类进入数智时代的基础问题。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/3S7qChI2tbbSGheba2DAoY
 
 

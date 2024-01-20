@@ -7,7 +7,7 @@
 :tags:
 :slug: the-world-and-you-starting-from-mispronounced-words
 :summary:
-:image: /static/img/2024/kaffa-im-2024.png
+:image: /static/img/2024/hero.png
 :brief:
 
 

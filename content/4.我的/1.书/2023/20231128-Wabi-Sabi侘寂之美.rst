@@ -7,7 +7,7 @@ Wabi-Sabi侘寂之美
 :tags: Wabi-Sabi,侘寂
 :slug: wabi-sabi-for-artists-designers-poets-philosophers
 :summary:
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/7VtFaUrEKlsw3s67cVtCBK
 
 

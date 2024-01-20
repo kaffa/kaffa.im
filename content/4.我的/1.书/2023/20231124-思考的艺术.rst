@@ -7,7 +7,7 @@
 :tags: Think,思考
 :slug: the-art-of-thinking
 :summary: 思考本身还是一个迷，本书属于有关「思考」常翻阅的书
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/2JsuSwHRO8yX40MsfPAJV2
 
 

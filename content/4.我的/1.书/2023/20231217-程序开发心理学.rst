@@ -7,7 +7,7 @@
 :tags: Psychology,Programming
 :slug: the-psychology-of-computer-programming
 :summary: 适合闲时慢读。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/0vmBq67rIcp936PsuHgjKh
 
 短评

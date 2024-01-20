@@ -7,7 +7,7 @@ CSS新世界
 :tags: CSS
 :slug: css-new-world
 :summary: 须对技术怀有敬畏之心。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/6jiqx3WXdomLA01SSmpqlO
 :brief:
 

@@ -7,7 +7,7 @@ Programming Rust, 2nd Edition
 :tags: Rust
 :slug: programming-rust-2nd-edition
 :summary: 在读
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/6cjKIumeqJN55PCarg8laB
 
 在读

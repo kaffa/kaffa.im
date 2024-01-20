@@ -7,7 +7,7 @@ HTML5与CSS3基础教程
 :tags: HTML
 :slug: html5-and-css3-visual-quickstart-guide
 :summary: 一本适合 HTML 入门的中文书
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/27mGbyhYEiFYijGAz3g6nx
 
 短评

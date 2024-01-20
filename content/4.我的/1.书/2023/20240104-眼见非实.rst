@@ -7,7 +7,7 @@
 :tags: complexity,consciousness
 :slug: the-case-against-reality
 :summary: 不知你是否意识到，在你的意识体验和客观世界之间存在一个意识界面。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/2nxmp3dowkP58GgLdqy9ih
 
 读后

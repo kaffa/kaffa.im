@@ -7,7 +7,7 @@
 :tags: investing
 :slug: fooled-by-randomness
 :summary: 投不投资都值得看
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/3wGEjOaOm0ibInTTCO8iwR
 
 

@@ -7,7 +7,7 @@
 :tags: 张爱玲
 :slug: half-a-lifelong-romance
 :summary: 巅峰之作
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/6F0vhuGKs432ippvQIfEcq
 
 

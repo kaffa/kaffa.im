@@ -7,7 +7,7 @@
 :tags: 张爱玲
 :slug: little-reunions
 :summary: 这是一个热情故事，我想表达出爱情的万转千回，完全幻灭了之后也还有点什么东西在。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/4ERwh0Guj2AFlPBo3sEIfb
 
 

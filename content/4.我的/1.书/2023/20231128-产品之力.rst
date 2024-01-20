@@ -7,7 +7,7 @@
 :tags: 产品经理
 :slug: product-power
 :summary:
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/2XLsTKvbGQOL6R4ZbAAifv
 
 

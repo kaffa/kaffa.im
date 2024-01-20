@@ -6,7 +6,7 @@
 :slug: about
 :author: Kaffa
 :summary: 关于站长
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 
 
 不会吧！不会吧！你不会真的终于找到了我的个人网站！

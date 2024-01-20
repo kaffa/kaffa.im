@@ -5,7 +5,7 @@
 :slug: about-website
 :author: Kaffa
 :summary: 关于网站的说明
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 
 
 关于菜单的说明

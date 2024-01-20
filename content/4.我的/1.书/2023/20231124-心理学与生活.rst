@@ -7,7 +7,7 @@
 :tags: Psychology,心理学
 :slug: psychology-and-life
 :summary: 一本非常好的心理学入门教材
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/4oK8Iwr2Uc6JBjc08HxkDL
 
 

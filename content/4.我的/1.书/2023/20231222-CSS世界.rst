@@ -7,7 +7,7 @@ CSS世界
 :tags: CSS
 :slug: css-world
 :summary: 在新手村时，未遇见张鑫旭的书。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/6zIYZSMP7d0MwJurUmT42B
 :brief:
 

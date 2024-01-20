@@ -7,7 +7,7 @@
 :tags: future
 :slug: future-prediction-for-2040
 :summary: 日亚有卖，我特从Google整理了主要内容转为中文。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/5CjW3b4Y7iOHm8XDW3xz7m
 :brief: 日本未来预测的书，也预测了日本。
 

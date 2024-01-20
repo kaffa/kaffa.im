@@ -7,7 +7,7 @@ The Rust Programming Language, 2nd Edition
 :tags: Rust
 :slug: the-rust-programming-language-2nd-edition
 :summary: 在读
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/4YWHmHRPkoevhv4LqRQ7Us
 
 在读

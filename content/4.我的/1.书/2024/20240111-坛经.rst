@@ -7,7 +7,7 @@
 :tags:
 :slug: the-altar-sutra
 :summary: 缘分到了，读读『坛经』
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/6eXZUlbn19Ct7xlpWahO2O
 
 读后

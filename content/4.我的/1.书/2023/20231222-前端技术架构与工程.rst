@@ -7,7 +7,7 @@
 :tags: front-end
 :slug: front-end-technology-architecture-and-engineering
 :summary: 概念普及书
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/1JijTBl8VsoRV5Li2SHVKa
 :brief: 不了解前端的可以速读看看。
 

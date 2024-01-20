@@ -7,7 +7,7 @@
 :tags: 职场
 :slug: crucial-conversations
 :summary: 和小可爱提到本书，却无法一下给她讲明白。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/2OWL4VSYCmjgVhbjAVPnO8
 
 短评

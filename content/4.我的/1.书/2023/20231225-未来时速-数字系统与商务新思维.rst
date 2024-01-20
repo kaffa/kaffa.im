@@ -7,7 +7,7 @@
 :tags: future
 :slug: business-at-the-speed-of-thought
 :summary: 数字神经系统，就是今天的数字化
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/2G4OC64vWsh0GuIJaa4ljg
 :brief: 比尔盖茨的预言，今天实现了几条呢？
 

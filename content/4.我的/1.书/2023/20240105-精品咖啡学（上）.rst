@@ -7,7 +7,7 @@
 :tags: coffee
 :slug: specialty-coffee-science-volume-1
 :summary: 咖啡学入门书，台湾韩怀宗老师所著，网评褒贬不一，但我还是非常认同韩老师对咖啡的评述。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/2BZ5WxNcdKGQN28tar5dPu
 
 读后

@@ -7,7 +7,7 @@ CSS选择器世界
 :tags: CSS
 :slug: css-selector-world
 :summary: CSS 选择器，你知道的不知道的，都在这里了。
-:image: /static/img/2023/about-kaffa.png
+:image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/1JijTBl8VsoRV5Li2SHVKa
 :brief: 如果你写过前端的代码，80%的人会在踩坑时搜到张鑫旭的文章，是的，这里就是他的书。
 

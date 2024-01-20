@@ -8,7 +8,7 @@
 :slug: critical-thinking
 :summary: 批判性思维的一切
 :status: draft
-:image: /static/img/2024/kaffa-im-2024.png
+:image: /static/img/2024/hero.png
 :brief:
 
 
