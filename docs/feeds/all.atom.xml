@@ -1,5 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-17T12:00:00+08:00</updated><entry><title>世界与你，从发音错的单词说开去</title><link href="https://kaffa.im/the-world-and-you-starting-from-mispronounced-words.html" rel="alternate"></link><published>2024-01-17T12:00:00+08:00</published><updated>2024-01-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-17:/the-world-and-you-starting-from-mispronounced-words.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-2"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-21T23:59:00+08:00</updated><entry><title>2024年第03周周报</title><link href="https://kaffa.im/weekly-2024-w03.html" rel="alternate"></link><published>2024-01-21T23:59:00+08:00</published><updated>2024-01-21T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-21:/weekly-2024-w03.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;2024年第03周周报&lt;/h2&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h3&gt;数据&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;年周&lt;/th&gt;
+&lt;th class="head"&gt;项目&lt;/th&gt;
+&lt;th class="head"&gt;动态&lt;/th&gt;
+&lt;th class="head"&gt;关注&lt;/th&gt;
+&lt;th class="head"&gt;友链&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;2024W03&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;112&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h3&gt;备忘&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;职业站：done.&lt;/li&gt;
+&lt;li&gt;技术站：使用 Rust 构建。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h3&gt;拾遗&lt;/h3&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;即使发出请求是在1秒内，Bypass也未能抢到票，只有候补:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+09:04:22.6  [Bypass]: 恭喜,候补提交成功!信息如下:乘客:XXX,日期:2024-02-07,车次:GXXXX,地点:深圳北-XX,席别:XXX,请在10分钟内完成付款,更多信息请查询候补订单...
+09:04:22.6  [候补成功]候补订单号:EXXXXXXXXXXXXXXXXX
+09:04:20.1  [候补]候补订单提交成功，等待处理...
+09:04:19.8  [任务5]订单效验完毕,正在提交订单...
+09:04:19.8  [任务4]当前预估成功率为45%...
+09:04:19.6  [任务4]已勾选自动抢增开列车[00-24],接受新增列车...
+09:04:19.6  [任务4]当前1种组合,候补人数较少...
+09:04:19.4  [任务3]用户状态获取成功,获取队列...
+09:04:19.4  [任务3]用户未勾选无座，不接受无座候补...
+09:04:19.4  [任务3]当前候补最多可提交9位乘客...
+09:04:18.2  [任务2]候补申请完成,获取用户状态...
+09:04:17.9  [任务1]算法解析完成,开始申请候补...
+09:04:17.9  [候补]线程启动完成,开始解析算法...
+09:04:17.8  [单任务]开始提交GXXXX车次的候补...
+09:04:17.0  [1],间隔[1.6],[单任务],深圳北&amp;gt;XX,日期[02-07]
+09:04:17.0  [单任务]开始查询2024-02-07车次，间隔：默认
+09:04:16.9  [小黑屋]该数据为缓存,将GXXXX车次(O)放入小黑屋120秒...
+09:04:16.9  [获取结果]12306:没有足够的票!
+09:04:00.4  [12306]服务器处理中，当前队列[2000]人
+09:03:43.1  [12306]服务器处理中，当前队列[2000]人
+09:03:25.3  [12306]服务器处理中，当前队列[2000]人
+09:03:07.6  [12306]服务器处理中，当前队列[2000]人
+09:02:48.9  [12306]服务器处理中，当前队列[2000]人
+09:02:30.9  [12306]服务器处理中，当前队列[2000]人
+09:02:28.4  [获取订单]订单排队中，正在获取排队状态...
+09:02:09.4  [12306]服务器处理中，当前队列[2000]人
+09:01:52.1  [12306]服务器处理中，当前队列[2000]人
+09:01:34.9  [12306]服务器处理中，当前队列[2000]人
+09:01:17.5  [12306]服务器处理中，当前队列[2000]人
+09:01:00.8  [12306]服务器处理中，当前队列[2000]人
+09:00:42.8  [12306]服务器处理中，当前队列[2000]人
+09:00:40.1  [12306]服务器处理中，当前队列[2000]人
+09:00:37.4  [12306]服务器处理中，当前队列[2000]人
+09:00:35.0  [12306]服务器处理中，当前队列[2000]人
+09:00:31.3  [12306]服务器处理中，当前队列[2000]人
+09:00:28.0  [12306]服务器处理中，当前队列[2000]人
+09:00:21.1  [12306]服务器处理中，当前队列[2000]人
+09:00:17.8  [12306]服务器处理中，当前队列[2000]人
+09:00:11.3  [提交成功]等待处理,本次用时:9.94秒
+09:00:09.1  [任务4]实时余票为(259)张,继续提交...
+09:00:07.2  [任务3]订单效验完成,正在获取余票...
+09:00:03.7  [任务2]申请订单成功,开始校验订单...
+09:00:01.4  [任务1]算法解析完成,开始申请订单...
+09:00:01.4  [预填]线程启动完成,开始解析算法...
+09:00:01.3  [单任务]深圳北&amp;gt;XX(02-07)的[GXXXX,XXX]...
+09:00:00.9  [2],间隔[1.6],[单任务],深圳北&amp;gt;XX,日期[02-07]
+08:59:58.1  [1],间隔[2.8],[单任务],深圳北&amp;gt;XX,日期[02-07]
+08:59:58.0  [单任务]开始查询2024-02-07车次，间隔：默认
+08:59:58.0  正在执行定时抢票...
+08:59:52.0  已设置定时抢票,现在不抢票,今天 08:59:58 开始抢票！
+08:59:51.8  [单任务]开始查询2024-02-07车次，间隔：默认
+08:49:06.0  查询完毕，查到2个车次，本次查询用时:101毫秒。
+08:48:39.7  查询完毕，查到2个车次，本次查询用时:413毫秒。
+08:48:31.3  获取到:914个CDN,开始智能测速中...
+08:48:30.4  您还没有绑定微信通知，建议绑定微信通知，接受消息。
+08:48:30.2  链接12306服务器速度:257毫秒[优]
+08:48:29.7  [设置完毕]已同步时间
+08:48:29.7  [本机时间]：2024-01-24 08:48:29
+08:48:29.7  [网络时间]：2024-01-24 08:48:29
+08:48:29.3  正在从[1]号服务器获取时间...
+08:48:29.2  初始化完毕，公网IP：X
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;家人让我给黄牛加点钱买票，在这个场景下，我们的地理迁徙和春节运输问题显得很荒诞。&lt;/p&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;// TODO&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="weekly"></category></entry><entry><title>世界与你，从发音错的单词说开去</title><link href="https://kaffa.im/the-world-and-you-starting-from-mispronounced-words.html" rel="alternate"></link><published>2024-01-17T12:00:00+08:00</published><updated>2024-01-17T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-17:/the-world-and-you-starting-from-mispronounced-words.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;世界的问题，归根都是自己的问题&lt;/h2&gt;
 &lt;p&gt;虽然我的英文水平也有限，但有时候确实不习惯身边有很多人的发音。&lt;/p&gt;
 &lt;p&gt;通常有两种情况：&lt;/p&gt;
@@ -27,7 +140,54 @@
 &lt;/ol&gt;
 &lt;p&gt;第二种更有说服力。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="article"></category></entry><entry><title>用逻辑探测事实背后的秘密</title><link href="https://kaffa.im/detect-the-secrets-behind-via-logic.html" rel="alternate"></link><published>2024-01-12T15:00:00+08:00</published><updated>2024-01-12T15:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-12:/detect-the-secrets-behind-via-logic.html</id><summary type="html"></summary><content type="html">&lt;p&gt;生活的某部分，和解(po)题(an)是一致的，比如找东西。&lt;/p&gt;
+</content><category term="article"></category></entry><entry><title>2024年第02周周报</title><link href="https://kaffa.im/weekly-2024-w02.html" rel="alternate"></link><published>2024-01-14T23:59:00+08:00</published><updated>2024-01-14T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-14:/weekly-2024-w02.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;2024年第02周周报&lt;/h2&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h3&gt;数据&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;年周&lt;/th&gt;
+&lt;th class="head"&gt;项目&lt;/th&gt;
+&lt;th class="head"&gt;动态&lt;/th&gt;
+&lt;th class="head"&gt;关注&lt;/th&gt;
+&lt;th class="head"&gt;友链&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;2024W02&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;105&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h3&gt;备忘&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;房顶渗水：done.&lt;/li&gt;
+&lt;li&gt;技术站：使用 Rust 构建。&lt;/li&gt;
+&lt;li&gt;职业站：已使用 nikola + 定制theme 实现。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h3&gt;拾遗&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;想买 macbook，在考虑是 air 还是 pro，由此认识了很多博主，确实有不少优秀的团队和表达。&lt;/li&gt;
+&lt;li&gt;备了两盒茶叶，一盒给给律所表示答谢，一盒给亲戚。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="weekly"></category></entry><entry><title>用逻辑探测事实背后的秘密</title><link href="https://kaffa.im/detect-the-secrets-behind-via-logic.html" rel="alternate"></link><published>2024-01-12T15:00:00+08:00</published><updated>2024-01-12T15:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-12:/detect-the-secrets-behind-via-logic.html</id><summary type="html"></summary><content type="html">&lt;p&gt;生活的某部分，和解(po)题(an)是一致的，比如找东西。&lt;/p&gt;
 &lt;p&gt;最开始当我学习占星时，我喜欢使用占星骰子作为工具来探讨丢失物品的可能性。&lt;/p&gt;
 &lt;p&gt;但直到后来我发现我擅长找到别人难以找到的东西，并不是依赖于占星骰子，而是依赖于逻辑链。&lt;/p&gt;
 &lt;p&gt;这部分找东西的能力是从读到刑侦学的 Locard Exchange Principle 时顿悟的。&lt;/p&gt;
@@ -2450,12 +2610,24 @@ Microsoft Edge Canary 浏览器。&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://learn.microsoft.com/en-us/training/paths/build-web-pages-html-css-for-beginners/"&gt;Build web pages with HTML and CSS for beginners&lt;/a&gt; ：微软的教程&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="book-list"></category><category term="HTML"></category></entry><entry><title>学习 PHP 书单</title><link href="https://kaffa.im/learning-php-book-list.html" rel="alternate"></link><published>2023-11-02T16:25:00+08:00</published><updated>2023-11-02T16:25:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-02:/learning-php-book-list.html</id><summary type="html">&lt;p&gt;PHP 书单&lt;/p&gt;</summary><content type="html">&lt;h2&gt;『学习 PHP』书单&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://book.douban.com/subject/26635862/"&gt;「Modern PHP（中文版）」&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://book.douban.com/subject/35369108/"&gt;「PHP编程（第4版）」&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://book.douban.com/subject/35590910/"&gt;「Laravel入门与实战（第2版）」&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="book-list"></category><category term="PHP"></category></entry><entry><title>科学知识书单</title><link href="https://kaffa.im/science-book-list.html" rel="alternate"></link><published>2023-11-02T16:25:00+08:00</published><updated>2023-11-09T20:50:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-02:/science-book-list.html</id><summary type="html">&lt;p class="first last"&gt;本文先列举网站，后续不定期补充书籍。&lt;/p&gt;
+</content><category term="book-list"></category><category term="HTML"></category></entry><entry><title>学习 PHP 书单</title><link href="https://kaffa.im/learning-php-book-list.html" rel="alternate"></link><published>2023-11-02T16:25:00+08:00</published><updated>2023-12-14T11:16:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-02:/learning-php-book-list.html</id><summary type="html">&lt;p class="first last"&gt;PHP 书单&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="php-1"&gt;
+&lt;h2&gt;学习 PHP 书单&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://book.douban.com/subject/26635862/"&gt;《Modern PHP（中文版）》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://book.douban.com/subject/35369108/"&gt;《PHP编程（第4版）》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://book.douban.com/subject/35590910/"&gt;《Laravel入门与实战（第2版）》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;历史&lt;/h2&gt;
+&lt;p&gt;我在PHP4的时代用红皮书《PHP高级编程》自学PHP，虽然感觉当时 ASP 比 PHP 好用，但 PHP 似乎比 ASP 的 6 个 Server Object 有更高的特权，后来通过阅读 Luke Welling 的《PHP和MySQL Web开发》入门 PHP，在存在服务端编程的前十年中，并没有前端，jQuery 可能刚起步还没有名气，也很少有人懂 JavaScript 原型，库只有 script.aculo.us、YUI、MooTools 等。&lt;/p&gt;
+&lt;p&gt;那个时代的PHP写法有非常多的流派，有Perl传承派、HTML混杂派、仿Java派、封装派，那时也没有太多大规模的PHP应用程序，写法和维护都依靠会写PHP的明星，明星彼此之间也存在许多信息差。&lt;/p&gt;
+&lt;p&gt;等 Luke 的《PHP和MySQL Web开发》再版时，其代码中视图和逻辑不分离的写法已经跟不上时代了，但瑕不掩瑜，其中大部分依然有很高的学习价值。再后来 PHP 5 语言特性跟不上时代了，被视为不适合大规模化的企业开发，但其实当时腾讯、阿里等很多公司内部也还有不少新项目在用 PHP 开发。好在 PHP 7、8 语言特性和性能让 PHP 迎来第二春，加上兼容性，让 PHP 成为最多开源应用的语言，这种优势延续至今，时至今日，如果你想寻找一个可用且能在最便宜的主机上运行的应用，十有八九，你可以找到一个成熟的 PHP 开源程序。&lt;/p&gt;
+&lt;p&gt;要说 PHP 有什么优势，那就是它的超级数组的数据结构和无与伦比的动态灵活性了，很多人去诟病 $ 符号，其实没必要，这些只是一个敲键盘的小习惯，lisp 还有括号，Java 还有万物皆 class 的冗赘。对于绝大多数的中小企业，PHP及生态所提供的软件包是足够的。&lt;/p&gt;
+&lt;p&gt;古龙写过七种武器，PHP 的命运和归宿像级了第七种——一口箱子。一个沉默平凡的人，提着一口陈旧平凡的箱子，在满天夕阳下，默然地走入了长安古城。在这个编程语言终局时代，PHP，那么平凡、陈旧、笨拙，但当需要时，你可以从PHP的箱子中拿出你所需要的，来组成一件武器，在最短的时间内实现最难的需求，完成时分，朝阳初升，春雪已溶，这个人提着一口箱子，默默地离开了长安古城。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book-list"></category><category term="PHP"></category></entry><entry><title>科学知识书单</title><link href="https://kaffa.im/science-book-list.html" rel="alternate"></link><published>2023-11-02T16:25:00+08:00</published><updated>2023-11-09T20:50:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-02:/science-book-list.html</id><summary type="html">&lt;p class="first last"&gt;本文先列举网站，后续不定期补充书籍。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;『科学知识』书单&lt;/h2&gt;
 &lt;p&gt;将一批网站列在这，是因为科学是不断更新的，网站的是活的一手信息，反应当下趋势。&lt;/p&gt;
@@ -3663,129 +3835,4 @@ docs/
 计算机图形学（十）
 人工智能（十一）&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="article"></category><category term="Computer Science"></category></entry><entry><title>番茄工作法官方特许番茄钟的设计瑕疵</title><link href="https://kaffa.im/design-flaws-on-official-pomodoro-clock.html" rel="alternate"></link><published>2020-12-03T12:00:00+08:00</published><updated>2020-12-03T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2020-12-03:/design-flaws-on-official-pomodoro-clock.html</id><summary type="html">&lt;p class="first last"&gt;大约是六年前接触过番茄工作法，后听讲过李翔老师 Workshop 中分享的番茄工作法。现在为尝试使用番茄工作法购买了官方特许番茄钟，这篇随笔的目的是简述番茄工作法，并记录这个小电子设备的设计上的瑕疵。本篇适合想了解番茄工作法的人，因为其中提及了一些基本概念，番茄工作法专家可跳过。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;番茄工作法&lt;/h2&gt;
-&lt;img alt="普通番茄钟" src="https://kaffa.im/static/img/2020/pomodoro-logo.png" /&gt;
-&lt;p&gt;番茄工作法（英语：&lt;a class="reference external" href="https://francescocirillo.com/"&gt;Pomodoro Technique&lt;/a&gt;）是一种时间管理法，在 1980 年代由 Francesco Cirillo 创立。
-该方法使用一个定时器来分割出一段工作时间（一般为 25 分钟）和一段休息时间（一般为 5 分钟）。
-而这些时间段被称为 pomodoros，是意大利语单词 pomodoro 的复数形式，中文即番茄。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;番茄工作法的五个步骤&lt;/h2&gt;
-&lt;img alt="番茄钟周期" src="https://kaffa.im/static/img/2020/one-pomodoro-cycle.jpg" /&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;选择你想完成的任务；&lt;/li&gt;
-&lt;li&gt;设定番茄钟为 25 分钟；&lt;/li&gt;
-&lt;li&gt;持续工作直至番茄钟提示；&lt;/li&gt;
-&lt;li&gt;当番茄钟提示，记一个番茄；&lt;/li&gt;
-&lt;li&gt;短暂休息 5 分钟；每积累 4 个番茄，可进行长时间休息（15-30分钟）。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-4"&gt;
-&lt;h2&gt;现实中的番茄钟&lt;/h2&gt;
-&lt;p&gt;现实中的番茄钟有机械（以发条为动力）、电子（液晶与单片机）、软件（PC和移动设备）等不同形式，可根据个人喜好挑选。
-机械钟和电子钟对比软件钟的优点是即开即用，且更具象化。当你开始一个“番茄”，你只需要拿出它，然后开始；
-每一次旋转机械番茄钟直到倒计时归零，会有一种获得一个番茄的形式感，这是软件番茄钟完成时的震动或声音提示无法给予的。
-但软件钟的优点是自动累计和统计，记录番茄数上更便利，因为可以更容易获得反馈。&lt;/p&gt;
-&lt;p&gt;我在纯机械钟和纯软件钟之间选择了折衷方案——官方特许的一种电子钟（基于电池、彩色液晶屏和单片机）。
-它可以很方便的开始、结束、暂停番茄，并且可以设置一个番茄的工作和休息时间，且能自动统计番茄数量，这些对我来说就足够了。&lt;/p&gt;
-&lt;img alt="官方特许番茄钟" src="https://kaffa.im/static/img/2020/pomodoro-clock-2.png" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-5"&gt;
-&lt;h2&gt;设计上存在的问题&lt;/h2&gt;
-&lt;p&gt;在使用了一个月后，我简单记录一下设计上值得改进之处。&lt;/p&gt;
-&lt;p&gt;1. 在用液晶显示时间时，通常是 &lt;tt class="docutils literal"&gt;08:01&lt;/tt&gt; 的形式，即 &lt;tt class="docutils literal"&gt;两位分钟数:两位秒钟数&lt;/tt&gt;，且分钟数和秒钟数大小一致。为将番茄数量显示在右上方的设计，会牺牲秒钟数的大小，
-这样做会有两个缺点：一、秒钟数变小削弱了时间的流逝感；二、让用户在本不用思考的地方产生一次思维停顿，打破分钟数和秒钟数大小一致的设计常规并没未产生价值，只增加了一点微弱的 GEEK 感。&lt;/p&gt;
-&lt;p&gt;2. 下方设计了四个按钮，分别是 &lt;tt class="docutils literal"&gt;番茄&lt;/tt&gt;、&lt;tt class="docutils literal"&gt;工作&lt;/tt&gt;、&lt;tt class="docutils literal"&gt;休息&lt;/tt&gt;、&lt;tt class="docutils literal"&gt;小花&lt;/tt&gt;。不得不说这四个按键的设计存在很多问题，首先是图标的意义上 &lt;tt class="docutils literal"&gt;番茄&lt;/tt&gt; 和 &lt;tt class="docutils literal"&gt;小花&lt;/tt&gt; 并不恰当，并没有和功能有直接的对应。
-其次， &lt;tt class="docutils literal"&gt;工作&lt;/tt&gt; 和 &lt;tt class="docutils literal"&gt;休息&lt;/tt&gt; 更多像一个状态显示，而不是功能切换，当工作结束，&lt;tt class="docutils literal"&gt;休息&lt;/tt&gt; 会自动亮起来，此时想跳过休息按 &lt;tt class="docutils literal"&gt;工作&lt;/tt&gt; 和 &lt;tt class="docutils literal"&gt;小花&lt;/tt&gt; 并不能开始一个新番茄，而会显示一个 Err（错误），
-正确的做法是按 &lt;tt class="docutils literal"&gt;番茄&lt;/tt&gt;，然后按 &lt;tt class="docutils literal"&gt;小花&lt;/tt&gt;。你感觉一下是不是很别扭。这里存在的问题是：一、按钮混淆了操作和状态，二、按钮图标的常规意义和功能不一致。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-6"&gt;
-&lt;h2&gt;更好的设计&lt;/h2&gt;
-&lt;p&gt;梳理用户的需求：&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;功能需求：可以开始、停止番茄；可以终止番茄（非必须）；可以设置工作和休息时长；可统计番茄数，如果有内时钟，则可统计年、月、周、日的番茄数（非必须）。&lt;/li&gt;
-&lt;li&gt;非功能需求：以最简的方式开始番茄，这点上 App 完败。假设番茄放在面前，机械钟只需要一次旋转，电子钟只需要一次点击（开机后），而App则需要先点击启动（至少2秒）再加至少一次点击。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;更好的设计：&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;设置四个按钮：&lt;tt class="docutils literal"&gt;设置&lt;/tt&gt;、&lt;tt class="docutils literal"&gt;工作&lt;/tt&gt;、&lt;tt class="docutils literal"&gt;休息&lt;/tt&gt;、&lt;tt class="docutils literal"&gt;开始/结束&lt;/tt&gt;。明确，清晰。&lt;/li&gt;
-&lt;li&gt;去掉按钮的长按进入某种设置状态的潜规则，而采用按 &lt;tt class="docutils literal"&gt;设置&lt;/tt&gt; 键切换。&lt;/li&gt;
-&lt;li&gt;按``设置``键后，&lt;tt class="docutils literal"&gt;工作&lt;/tt&gt;、 &lt;tt class="docutils literal"&gt;休息&lt;/tt&gt; 显示为 &lt;tt class="docutils literal"&gt;+&lt;/tt&gt;、&lt;tt class="docutils literal"&gt;-&lt;/tt&gt; 或 &lt;tt class="docutils literal"&gt;&amp;lt;&lt;/tt&gt;、&lt;tt class="docutils literal"&gt;&amp;gt;&lt;/tt&gt;，此时进入一系列的设置，比如增减工作时长，增减休息时长，语言切换，震动或语音，重置番茄数等。&lt;/li&gt;
-&lt;li&gt;增强数量统计功能，将统计从秒钟数的上方移到顶部，作为一整条，变成显示年月周日番茄数，可记录一年或多年的番茄数。&lt;/li&gt;
-&lt;li&gt;将分钟数和秒钟数等大小显示。根据设计心理学的格式塔原则，倒计时的分针和秒针应为一个整体，而不是大小分割的。&lt;/li&gt;
-&lt;li&gt;甚至可使用“奥卡姆剃刀”原则，将 &lt;tt class="docutils literal"&gt;工作&lt;/tt&gt; 和 &lt;tt class="docutils literal"&gt;休息&lt;/tt&gt; 去掉，使用背景色来显示状态（绿色表示休息），利用按和长按（2秒以上）分别表示增加减少或左右切换。
-这也是从儿时的电子表到今天的耳机播放键切换歌曲的默认模式，用户已被传统电子产品教育后习得了这些习惯，但这样做会牺牲掉一些毫无经验的用户，这就要看这类用户是否是番茄钟的使用者了。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-7"&gt;
-&lt;h2&gt;总结&lt;/h2&gt;
-&lt;p&gt;期待这个番茄钟能有改进后的新版本推出，或者等我有空时，会实现 HTML5 的原型替代之（挖坑）。&lt;/p&gt;
-&lt;p&gt;感谢阅读。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="article"></category><category term="番茄工作法"></category><category term="Pomodoro Technique"></category><category term="番茄钟"></category><category term="Pomodoro Clock"></category></entry><entry><title>对手头域名重新规划后提问</title><link href="https://kaffa.im/questions-and-detail-plan-about-my-domains.html" rel="alternate"></link><published>2020-12-01T12:00:00+08:00</published><updated>2020-12-05T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2020-12-01:/questions-and-detail-plan-about-my-domains.html</id><summary type="html">&lt;p class="first last"&gt;对手头几个域名的重新规划的细节，使用提问的方法。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;预期三问&lt;/h2&gt;
-&lt;p&gt;因世界有限，我们总希望利用有限约束的资源达成事的目标。在思考是否做一件事的方法论上，首先肯定不是考虑细节，其次也不该考虑整体，最先须考虑的是预期。&lt;/p&gt;
-&lt;p&gt;人对事的预期就是目标，我用一个三步提问法来考虑：&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;我的目标是否明确？&lt;/li&gt;
-&lt;li&gt;我有可选的策略吗？&lt;/li&gt;
-&lt;li&gt;是否能实施此策略？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;昨日对5个域名做了规划，除开最后一个拟卖出，以下是对前4进行提问和回答。&lt;/p&gt;
-&lt;div class="section" id="kaffa-im"&gt;
-&lt;h3&gt;kaffa.im&lt;/h3&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;我的目标是否明确？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;首先澄清目标，作为个人随笔博客，能记录人生和输出价值观，更明确的说，是希望从随笔中纯粹地真实地不受角色约束展示个人价值观，而并非想通过此博客实现的经济收益（当然不排斥打赏），因此选择了本地书写静态网站，再发布到 Github Pages 和 Gitee Pages，它们虽然缺少访问统计、广告，但自带版本管理，不会丢失。&lt;/p&gt;
-&lt;p&gt;我希望它保持自然的书写和更新节奏，我希望更新具有持续性，但不希望被动地约束和既定的输出频率，因没有商业压力和回本预期，所以不需要刻意对时潮作任何跟随，我希望它具备更明显的无时代性，时间限制我希望是1-2个番茄时间内。&lt;/p&gt;
-&lt;p&gt;终止更新它的风险可能有，域名忘记续费，Github 被禁止向中国提供服务（部分影响），由于博客空间免费，域名不贵，它最大的成本是书写时间，所以最大的亏损就是一去不返的光阴。在不被强制日更的前提下，我接受这个最大的风险。&lt;/p&gt;
-&lt;ol class="arabic simple" start="2"&gt;
-&lt;li&gt;我有可选的策略吗？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;目标是记录人生并持续输出价值观，所有的策略都是围绕记录的时间和输出的质量。减少时间和更有质量的输出，才会让这个博客反馈于人生，不至于降低了使用时间的效率，达成持续性。&lt;/p&gt;
-&lt;ol class="arabic simple" start="3"&gt;
-&lt;li&gt;是否能实施此策略？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;首先是资源，时间是达成目标最重要的资源，需要做好时间管理，利用碎片时间，提高时间利用率；其次是个人能力，写作能力是否匹配，要写出更有质量的随笔，则须提高写作能力，准确、清晰、简洁；最后是个人角色是否匹配，简单地说，人生要过成值得记录和输出的样子，将先围绕一些有关阅读、写作、学习的路径和技术的随笔来进行。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="t-e-com"&gt;
-&lt;h3&gt;t**e.com&lt;/h3&gt;
-&lt;p&gt;并不是一个持续的运营过程，所以更类似于几个任务：&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;继续增加文章数量到100篇；&lt;/li&gt;
-&lt;li&gt;选择 &lt;a class="reference external" href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; 中单栏布局的模版对页面样式进行改进，以看起来更加准确清晰地展示了内容；&lt;/li&gt;
-&lt;li&gt;增加一个 可从 Tag 点进去的论坛。&lt;/li&gt;
-&lt;li&gt;考虑增加悬赏&lt;/li&gt;
-&lt;li&gt;考虑空间的玩法（创意来自印象笔记）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="a-o-cn"&gt;
-&lt;h3&gt;a**o.cn&lt;/h3&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;将内容备份到本地后，逐步扩充到 a**o.com&lt;/li&gt;
-&lt;li&gt;blog 从 wordpress 置为 textpattern，作为新技术的 demo 和 playground&lt;/li&gt;
-&lt;li&gt;增加 item.a**o.cn&lt;/li&gt;
-&lt;li&gt;在 item.a**o.cn 录入 ee&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="t-t-com"&gt;
-&lt;h3&gt;t**t.com&lt;/h3&gt;
-&lt;p&gt;每周输出一篇投资或阅读笔记&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="coffees-app"&gt;
-&lt;h3&gt;coffees.app&lt;/h3&gt;
-&lt;p&gt;挂 &lt;a class="reference external" href="https://www.dan.com/"&gt;dan.com&lt;/a&gt; 卖出&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;结论&lt;/h2&gt;
-&lt;p&gt;做一件事，首先明确我在此事的目标，然后考虑我和环境内外是否有策略，如果有再考虑策略是否能对付每个点，这里可以SWOT二阶分析法。
-1. 我的目标是否明确？
-2. 我有可选的策略吗？
-3. 是否能实施此策略？&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="website"></category></entry></feed>
+</content><category term="article"></category><category term="Computer Science"></category></entry></feed>

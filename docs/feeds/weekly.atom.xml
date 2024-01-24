@@ -1,5 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - weekly</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/weekly.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-07T23:59:00+08:00</updated><entry><title>2024年第01周周报</title><link href="https://kaffa.im/weekly-2024-w01.html" rel="alternate"></link><published>2024-01-07T23:59:00+08:00</published><updated>2024-01-07T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-07:/weekly-2024-w01.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - weekly</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/weekly.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-21T23:59:00+08:00</updated><entry><title>2024年第03周周报</title><link href="https://kaffa.im/weekly-2024-w03.html" rel="alternate"></link><published>2024-01-21T23:59:00+08:00</published><updated>2024-01-21T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-21:/weekly-2024-w03.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;2024年第03周周报&lt;/h2&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h3&gt;数据&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;年周&lt;/th&gt;
+&lt;th class="head"&gt;项目&lt;/th&gt;
+&lt;th class="head"&gt;动态&lt;/th&gt;
+&lt;th class="head"&gt;关注&lt;/th&gt;
+&lt;th class="head"&gt;友链&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;2024W03&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;112&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h3&gt;备忘&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;职业站：done.&lt;/li&gt;
+&lt;li&gt;技术站：使用 Rust 构建。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h3&gt;拾遗&lt;/h3&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;即使发出请求是在1秒内，Bypass也未能抢到票，只有候补:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+09:04:22.6  [Bypass]: 恭喜,候补提交成功!信息如下:乘客:XXX,日期:2024-02-07,车次:GXXXX,地点:深圳北-XX,席别:XXX,请在10分钟内完成付款,更多信息请查询候补订单...
+09:04:22.6  [候补成功]候补订单号:EXXXXXXXXXXXXXXXXX
+09:04:20.1  [候补]候补订单提交成功，等待处理...
+09:04:19.8  [任务5]订单效验完毕,正在提交订单...
+09:04:19.8  [任务4]当前预估成功率为45%...
+09:04:19.6  [任务4]已勾选自动抢增开列车[00-24],接受新增列车...
+09:04:19.6  [任务4]当前1种组合,候补人数较少...
+09:04:19.4  [任务3]用户状态获取成功,获取队列...
+09:04:19.4  [任务3]用户未勾选无座，不接受无座候补...
+09:04:19.4  [任务3]当前候补最多可提交9位乘客...
+09:04:18.2  [任务2]候补申请完成,获取用户状态...
+09:04:17.9  [任务1]算法解析完成,开始申请候补...
+09:04:17.9  [候补]线程启动完成,开始解析算法...
+09:04:17.8  [单任务]开始提交GXXXX车次的候补...
+09:04:17.0  [1],间隔[1.6],[单任务],深圳北&amp;gt;XX,日期[02-07]
+09:04:17.0  [单任务]开始查询2024-02-07车次，间隔：默认
+09:04:16.9  [小黑屋]该数据为缓存,将GXXXX车次(O)放入小黑屋120秒...
+09:04:16.9  [获取结果]12306:没有足够的票!
+09:04:00.4  [12306]服务器处理中，当前队列[2000]人
+09:03:43.1  [12306]服务器处理中，当前队列[2000]人
+09:03:25.3  [12306]服务器处理中，当前队列[2000]人
+09:03:07.6  [12306]服务器处理中，当前队列[2000]人
+09:02:48.9  [12306]服务器处理中，当前队列[2000]人
+09:02:30.9  [12306]服务器处理中，当前队列[2000]人
+09:02:28.4  [获取订单]订单排队中，正在获取排队状态...
+09:02:09.4  [12306]服务器处理中，当前队列[2000]人
+09:01:52.1  [12306]服务器处理中，当前队列[2000]人
+09:01:34.9  [12306]服务器处理中，当前队列[2000]人
+09:01:17.5  [12306]服务器处理中，当前队列[2000]人
+09:01:00.8  [12306]服务器处理中，当前队列[2000]人
+09:00:42.8  [12306]服务器处理中，当前队列[2000]人
+09:00:40.1  [12306]服务器处理中，当前队列[2000]人
+09:00:37.4  [12306]服务器处理中，当前队列[2000]人
+09:00:35.0  [12306]服务器处理中，当前队列[2000]人
+09:00:31.3  [12306]服务器处理中，当前队列[2000]人
+09:00:28.0  [12306]服务器处理中，当前队列[2000]人
+09:00:21.1  [12306]服务器处理中，当前队列[2000]人
+09:00:17.8  [12306]服务器处理中，当前队列[2000]人
+09:00:11.3  [提交成功]等待处理,本次用时:9.94秒
+09:00:09.1  [任务4]实时余票为(259)张,继续提交...
+09:00:07.2  [任务3]订单效验完成,正在获取余票...
+09:00:03.7  [任务2]申请订单成功,开始校验订单...
+09:00:01.4  [任务1]算法解析完成,开始申请订单...
+09:00:01.4  [预填]线程启动完成,开始解析算法...
+09:00:01.3  [单任务]深圳北&amp;gt;XX(02-07)的[GXXXX,XXX]...
+09:00:00.9  [2],间隔[1.6],[单任务],深圳北&amp;gt;XX,日期[02-07]
+08:59:58.1  [1],间隔[2.8],[单任务],深圳北&amp;gt;XX,日期[02-07]
+08:59:58.0  [单任务]开始查询2024-02-07车次，间隔：默认
+08:59:58.0  正在执行定时抢票...
+08:59:52.0  已设置定时抢票,现在不抢票,今天 08:59:58 开始抢票！
+08:59:51.8  [单任务]开始查询2024-02-07车次，间隔：默认
+08:49:06.0  查询完毕，查到2个车次，本次查询用时:101毫秒。
+08:48:39.7  查询完毕，查到2个车次，本次查询用时:413毫秒。
+08:48:31.3  获取到:914个CDN,开始智能测速中...
+08:48:30.4  您还没有绑定微信通知，建议绑定微信通知，接受消息。
+08:48:30.2  链接12306服务器速度:257毫秒[优]
+08:48:29.7  [设置完毕]已同步时间
+08:48:29.7  [本机时间]：2024-01-24 08:48:29
+08:48:29.7  [网络时间]：2024-01-24 08:48:29
+08:48:29.3  正在从[1]号服务器获取时间...
+08:48:29.2  初始化完毕，公网IP：X
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;家人让我给黄牛加点钱买票，在这个场景下，我们的地理迁徙和春节运输问题显得很荒诞。&lt;/p&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;// TODO&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="weekly"></category></entry><entry><title>2024年第02周周报</title><link href="https://kaffa.im/weekly-2024-w02.html" rel="alternate"></link><published>2024-01-14T23:59:00+08:00</published><updated>2024-01-14T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-14:/weekly-2024-w02.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;2024年第02周周报&lt;/h2&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h3&gt;数据&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;年周&lt;/th&gt;
+&lt;th class="head"&gt;项目&lt;/th&gt;
+&lt;th class="head"&gt;动态&lt;/th&gt;
+&lt;th class="head"&gt;关注&lt;/th&gt;
+&lt;th class="head"&gt;友链&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;2024W02&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;105&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h3&gt;备忘&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;房顶渗水：done.&lt;/li&gt;
+&lt;li&gt;技术站：使用 Rust 构建。&lt;/li&gt;
+&lt;li&gt;职业站：已使用 nikola + 定制theme 实现。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h3&gt;拾遗&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;想买 macbook，在考虑是 air 还是 pro，由此认识了很多博主，确实有不少优秀的团队和表达。&lt;/li&gt;
+&lt;li&gt;备了两盒茶叶，一盒给给律所表示答谢，一盒给亲戚。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="weekly"></category></entry><entry><title>2024年第01周周报</title><link href="https://kaffa.im/weekly-2024-w01.html" rel="alternate"></link><published>2024-01-07T23:59:00+08:00</published><updated>2024-01-07T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-07:/weekly-2024-w01.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第01周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;
