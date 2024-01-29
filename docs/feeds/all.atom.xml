@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-21T23:59:00+08:00</updated><entry><title>2024年第03周周报</title><link href="https://kaffa.im/weekly-2024-w03.html" rel="alternate"></link><published>2024-01-21T23:59:00+08:00</published><updated>2024-01-21T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-21:/weekly-2024-w03.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-28T23:00:00+08:00</updated><entry><title>2024年第04周周报</title><link href="https://kaffa.im/weekly-2024-w04.html" rel="alternate"></link><published>2024-01-28T23:00:00+08:00</published><updated>2024-01-28T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-28:/weekly-2024-w04.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;2024年第04周周报&lt;/h2&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h3&gt;数据&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;年周&lt;/th&gt;
+&lt;th class="head"&gt;项目&lt;/th&gt;
+&lt;th class="head"&gt;动态&lt;/th&gt;
+&lt;th class="head"&gt;关注&lt;/th&gt;
+&lt;th class="head"&gt;友链&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;2024W04&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;114&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h3&gt;备忘&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;技术站：使用 Rust 构建，尝试和 ChatGPT 结对编程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h3&gt;拾遗&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;配置了IPv6，这样每台设备都有了独立IP，下一步会将个人站架在手机上。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="weekly"></category></entry><entry><title>2024年第03周周报</title><link href="https://kaffa.im/weekly-2024-w03.html" rel="alternate"></link><published>2024-01-21T23:59:00+08:00</published><updated>2024-01-21T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-21:/weekly-2024-w03.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第03周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;
@@ -108,7 +152,7 @@
 &lt;/ol&gt;
 &lt;p&gt;家人让我给黄牛加点钱买票，在这个场景下，我们的地理迁徙和春节运输问题显得很荒诞。&lt;/p&gt;
 &lt;ol class="arabic simple" start="2"&gt;
-&lt;li&gt;// TODO&lt;/li&gt;
+&lt;li&gt;白天鼻塞的厉害，复方氨酚烷胺吃了六天，差不多也没有缓解，预约医疗资源，需要等到下周三。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3722,117 +3766,4 @@ docs/
 &lt;p&gt;&lt;a href="https://golang.org/"&gt;Go&lt;/a&gt;, &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt;, &lt;a href="https://themes.gohugo.io/"&gt;Hugo Theme&lt;/a&gt;, hugo-devresume-theme, Hugo documentation&lt;/p&gt;
 &lt;p&gt;感谢阅读，希望上述简述和关键字补充了从标题到实践的指引，能指导读者用 Hugo 写简历。
 如果您觉得本文有用，可以扫描我的二维码，打赏一杯咖啡。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/static/img/reward.png" title="我的赞赏码"&gt;&lt;/p&gt;</content><category term="digital"></category><category term="Hugo"></category><category term="Résumé"></category></entry><entry><title>咖啡馆聊计算机科学（序）</title><link href="https://kaffa.im/on-computer-science-in-a-cafe-0.html" rel="alternate"></link><published>2020-12-21T12:00:00+08:00</published><updated>2020-12-21T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2020-12-21:/on-computer-science-in-a-cafe-0.html</id><summary type="html">&lt;p class="first last"&gt;咖啡馆聊计算机科学是一篇计算机科学的大白话介绍，也咖啡馆聊系列第一篇，是指轻松不设限地闲聊计算机科学，聊到哪算哪，说到什么算什么。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;关于咖啡馆聊系列&lt;/h2&gt;
-&lt;p&gt;咖啡馆聊计算机科学，并不是一个人叫咖啡馆，也并不是一个人在咖啡馆，而是我个人的知识简记方式，是 &lt;strong&gt;咖啡馆聊&lt;/strong&gt; 系列的第一篇。&lt;/p&gt;
-&lt;p&gt;此篇源自一个寒假的下午，我在咖啡馆喝咖啡，十岁的女儿对我说：Daddy，Scratch 很有趣吔，MIT 是什么，你给我讲讲计算机和编程呗！当时我讲了图灵和冯诺依曼，计算机分层抽象，操作系统，计算机编程语言的条件和循环，算法等一些主题。当讲完后回家再问女儿时，发现很多概念她就忘了，当时就打算安排一个完整时间用文字记下来给女儿，是有此篇。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;学科概论&lt;/h2&gt;
-&lt;p&gt;当拿到大学录取通知书，进入我们向往的专业报到，正式开始学习一门学科，除了修习该专业的公共课（如计算机专业的高等数学、线性代数、英语）我们会先学习一门 &lt;strong&gt;学科概论（或导论）&lt;/strong&gt; 课。在此课程内，一位老教授会 Guide
-你进行“计算机科学”景点一日游——坐上这位老导游的观光巴士，开始城市十大景点一日游，在每个景点只停留少量时间，很多精彩之处只能浅尝辄止。&lt;/p&gt;
-&lt;p&gt;在计算机科学领域，这十大景点是：&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;计算机学科历史和计算理论&lt;/li&gt;
-&lt;li&gt;计算机体系结构&lt;/li&gt;
-&lt;li&gt;操作系统&lt;/li&gt;
-&lt;li&gt;计算机网络&lt;/li&gt;
-&lt;li&gt;数据的抽象、操作、存储&lt;/li&gt;
-&lt;li&gt;算法&lt;/li&gt;
-&lt;li&gt;程序设计语言&lt;/li&gt;
-&lt;li&gt;软件工程&lt;/li&gt;
-&lt;li&gt;数据库&lt;/li&gt;
-&lt;li&gt;计算机图形学&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;再加赠一个热门景点：人工智能。&lt;/p&gt;
-&lt;p&gt;这些景点介绍在计算机科学学科叫《计算机科学概论》。大部分主流学科，都会安排这样一位老教授来上这门概论课，以便你能走马观花一遍学科的内容范围，
-但对这种“一日看尽长安花”的方式你有几点需清楚，你所观光之处只是城市的主要街道和景点，一方面景点的 &lt;em&gt;细节看的不够&lt;/em&gt;，另一方便你可能会忽视城市的 &lt;em&gt;范围非常广&lt;/em&gt; 这个事实，
-有很多重要的地方不在行程之中会被忽略。所以，保持好奇且不加预设，加一些自驾和徒步的交通方式，
-才能更完整体验到这座还不足百年的年轻都市，但即便你去过它很多隐秘的角落，它99%的区域你此生依然不会去到。&lt;/p&gt;
-&lt;p&gt;当你报名不同的旅行团一日游，导游和路线会完全不同——当你进入了不同级别的学校，教授是不同的，选用的教材的逻辑也是不同的。比如也有按分层逻辑的：&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;计算机历史&lt;/li&gt;
-&lt;li&gt;信息层&lt;/li&gt;
-&lt;li&gt;硬件层&lt;/li&gt;
-&lt;li&gt;编程层&lt;/li&gt;
-&lt;li&gt;操作系统层&lt;/li&gt;
-&lt;li&gt;应用层&lt;/li&gt;
-&lt;li&gt;通信层&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;看起来思路迥异，实则不然，其实是对底层概念的逻辑组织顺序不同罢了。&lt;/p&gt;
-&lt;p&gt;但很多初学者会有一个误区，认为教授和教材有高低之分，我想说：是的，确实有差别，但不是绝对的！
-根据学习的规律，学习过程最好螺旋的方式进行，而不是爬梯式，我认为**一个人能获取到的“最近的教材”和教学资源，对这个人来说就是最好的。**&lt;/p&gt;
-&lt;p&gt;“最近的教材”是我提的一个概念，有两个含义：一是最新的，二是易获得的，三是和个人的学习习惯接近的。
-新意味着教材有到好的口碑，作者原意对内容不断修订，保持常新；易获得并不是指对教材不加挑选，往往你就读大学的选书，是大学一代一代教授传下来的，有一定历史原因和取舍，是教授的人自己熟悉的，教学过程是成熟的。第三点，如何你拿到手的并不是一本该学科顶级概论教材，此时你需要根据个人学习能力和习惯，选择一本世界顶级教材作为补充。学习过程并非一蹴而就，而是循序渐进的，你可以把*排名靠前的教材*作为第二轮学习的补充读物。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-4"&gt;
-&lt;h2&gt;选择学科概论教材&lt;/h2&gt;
-&lt;p&gt;选择教材并不是一个十岁小孩能具备的经验和能力，所以在此，我需要额外补充一点选择计算机教材（或书籍）的思路：
-* 教材有好有坏，要淘汰不好的教材；
-* 教材没有最好，只有最适合；
-* 好教材可能并不是一本书；&lt;/p&gt;
-&lt;div class="section" id="section-5"&gt;
-&lt;h3&gt;去哪里找&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;选国内外名校使用的；&lt;/li&gt;
-&lt;li&gt;按计算机专业全球排名来选；&lt;/li&gt;
-&lt;li&gt;选优秀出版社的；&lt;/li&gt;
-&lt;li&gt;按亚马逊排名来选；&lt;/li&gt;
-&lt;li&gt;quora.com&lt;/li&gt;
-&lt;li&gt;stackoverflow.com&lt;/li&gt;
-&lt;li&gt;stackexchange.com&lt;/li&gt;
-&lt;li&gt;zhihu.com&lt;/li&gt;
-&lt;li&gt;google.com&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-6"&gt;
-&lt;h3&gt;计算机科学概论有哪些经典教材&lt;/h3&gt;
-&lt;p&gt;有最新版的情况下选最新版
-* Computer Science An Overview - J. Glenn Brookshear
-* Foundation of Computer Science - Behrouz Forouzan
-* Computer Science Illuminated，Nell Dale &amp;amp; John Lewis&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-7"&gt;
-&lt;h3&gt;计算机科学有哪些经典资源&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;GitHub 或 Gitee 中有清华大学、中科大、浙江大学、华中科技大等教学资源。&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://github.com/ossu/computer-science"&gt;OSSU&lt;/a&gt; 是不错的资源，&lt;/li&gt;
-&lt;li&gt;还有很多人会提到 &lt;a class="reference external" href="https://www.mooc.org/"&gt;MOOC&lt;/a&gt; 项目，国内很多大学也有参与，在学习资源的获取上，趋势是越来越开放，但获得高级教育的机会却会越来越昂贵。也许会像《大教堂和集市》的故事一样，开放性越高，影响力越大，越容易获得反馈和更快的迭代。但 &lt;a class="reference external" href="https://www.mooc.org/"&gt;MOOC&lt;/a&gt; 也有弊端，扁平不成体系、师生交互不够，课程迭代不快。&lt;/li&gt;
-&lt;li&gt;很多教学视频在 Youtube 上都有，但和 B站都能找到，只是搜集起来需要花些时间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-8"&gt;
-&lt;h2&gt;大白话计算机科学&lt;/h2&gt;
-&lt;p&gt;将计算机看作一种工具来理解，我们会讨论工具是在谁的脑子里想出来的，怎么造这个工具，造好后怎么用。
-所以，计算机科学也讲了这三件事：如何有计算机（概念），怎么造计算机，怎么用计算机。&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;如何有：讲了为什么图灵脑子里的机器可以表达并解决现实中的问题，以及冯·诺依曼如何造出这种机器；如何有是关于计算的理论，这里的计算是泛指处理任何信息，这方面懂的人少，可做的也不多，但这些需要这颗星球上最出色的头脑。人类历史上的伟大发明看起来都不是偶然的而是被安排好的，通过特定的人和机会送给人类的。&lt;/li&gt;
-&lt;li&gt;怎么造：从最初提出计算机由五个“零件”组成，至今计算机上并没有本质的变化，且“零件”的改进机会被掌握在少数人手中，但幸好，无论怎么造出的计算机，在是否能解决问题和解决问题的步骤上都是等效的，只存在时间差异；怎么造是资源密集的事，最初进入的公司已从小孩变成了中年人和老人，五大零件运算、存储、控制、输入、输出都是充分竞争的领域，这些公司把常用的部分合在一起制造，这个过程叫做封装，合起来造出的东西叫芯片，由于这东西是大公司合作才能造出来的，在造芯片这事上愈强者愈强，形成了正反馈，将芯片越造越小，集成度越来越高，导致后面进入的公司像小孩子，如果中年人和老人不允许，它再也无法获得足够的技术资源来造出有市场竞争力的芯片了，因此这些硬件设计和制造技术的公司是未来几百年都是可世袭的资产。&lt;/li&gt;
-&lt;li&gt;怎么用：通过算法和编程，对信息和数据进行获取、处理、交换和存储，从而将人脑中的概念和知识外化，让计算机为人类贡献它的智慧，所以在中文中，计算机又称为“电脑”。这剩下的怎么用才是大多数普通人可有所作为的领域。从造到用不能分割开看，只是大多数公司都没有办法决定怎么造，所以大多数都在怎么用上做文章。用的领域内从硬到软，最大的特点就是技术不断迭代。人通过输入输出设备使用计算机，从人到机器的交互又分为了很多层次，接近机这层的技术迭代慢，接近人这层的技术迭代快。这个层次很像一颗生根发芽枝繁叶茂的树，硬件就是土地，底层技术是根，中层技术是树枝，上层技术即接近人的那层是树叶。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;在理解计算上，要记住两个理念：一，无论是土地，还是根枝叶，都是计算机系统，要无差别的对待，二，在考虑的叶的问题时，不需要知道枝的细节，只需要知道叶是从枝的哪里长出来，同理枝和根、根和土地的连接也一样。这两点偏向任何一点都是错误的。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-9"&gt;
-&lt;h2&gt;一点经验&lt;/h2&gt;
-&lt;p&gt;在计算机的领域中，可信任那些既通理论且亲自完成某种软件的人，我简称之为真·计算机人。
-比如`Donald Knuth`_，真·计算机人们无不想挑战他的《计算机程序设计艺术》。
-在真·计算机人的征途中，除了学习计算机理论，还需将所学用于制造计算机或软件，在这个领域内，只有概念和第一性思维还不够，亲自实现软件也尤为重要。&lt;/p&gt;
-&lt;p&gt;金庸老爷子《笑傲江湖》中，华山派武功分为“气宗”与“剑宗”，相较于计算机科学领域，从理论出发修炼计算机体系结构、算法接近气宗，直接学习编程语言接近剑宗。
-此两条途径，虽起步不同，但殊途同归，不过是所有知识和实践体系的不同视角的重新排列组合。欲至山顶，均需跋涉，因此，千里之行，始于足下，
-如果目标是山巅，教材的选择，内容的安排，在中场时，就不那么重要了，但十大景点总需一一拜访。&lt;/p&gt;
-&lt;p&gt;咖啡馆聊系列，挖坑如下：&lt;/p&gt;
-&lt;p&gt;计算机学科历史和计算理论（一）
-计算机体系结构（二）
-操作系统（三）
-计算机网络（四）
-数据的抽象、操作、存储（五）
-算法（六）
-程序设计语言（七）
-软件工程（八）
-数据库（九）
-计算机图形学（十）
-人工智能（十一）&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="article"></category><category term="Computer Science"></category></entry></feed>
+&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/static/img/reward.png" title="我的赞赏码"&gt;&lt;/p&gt;</content><category term="digital"></category><category term="Hugo"></category><category term="Résumé"></category></entry></feed>
