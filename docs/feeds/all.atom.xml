@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-06T21:30:00+08:00</updated><entry><title>使用闲置Android手机作Web服务器</title><link href="https://kaffa.im/android-mobile-as-a-server-of-apache-php-mysql.html" rel="alternate"></link><published>2024-02-06T21:30:00+08:00</published><updated>2024-02-06T21:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-06:/android-mobile-as-a-server-of-apache-php-mysql.html</id><summary type="html">&lt;p class="first last"&gt;在闲置的手机上搭建LAMP服务是一件趣事&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;将闲置手机变成个人云服务器&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://[240e:3b4:38ea:e5d0:3ae6:aff:fe89:67ad]:8000/index.html"&gt;本站&lt;/a&gt;搭建在个人闲置的手机上。&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://[240e:3b4:38ea:e5d0:3ae6:aff:fe89:67ad]:8001/index.html"&gt;本站&lt;/a&gt;搭建在个人闲置的手机上。&lt;/p&gt;
 &lt;p&gt;若有兴趣了解如何搭建，不妨悦读本文。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-2"&gt;
