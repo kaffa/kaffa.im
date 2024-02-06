@@ -1,5 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-28T23:00:00+08:00</updated><entry><title>2024年第04周周报</title><link href="https://kaffa.im/weekly-2024-w04.html" rel="alternate"></link><published>2024-01-28T23:00:00+08:00</published><updated>2024-01-28T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-28:/weekly-2024-w04.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-06T21:30:00+08:00</updated><entry><title>使用闲置Android手机做Web服务器</title><link href="https://kaffa.im/android-mobile-as-a-server-of-apache-php-mysql.html" rel="alternate"></link><published>2024-02-06T21:30:00+08:00</published><updated>2024-02-06T21:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-06:/android-mobile-as-a-server-of-apache-php-mysql.html</id><summary type="html">&lt;p class="first last"&gt;在闲置的手机上搭建LAMP服务是一件趣事&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;将闲置手机变成个人云服务器&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://[240e:3b4:38ea:e5d0:3ae6:aff:fe89:67ad]:8000/index.html"&gt;本站&lt;/a&gt;搭建在个人闲置的手机上。&lt;/p&gt;
+&lt;p&gt;若有兴趣了解如何搭建，不妨悦读本文。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;概念&lt;/h2&gt;
+&lt;p&gt;云服务器：是指阿里云、腾讯云销售的服务器。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;困难&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;独立IP：虽然我们的电信网络没有提供独立公网IPV4，但IPV6已然成熟，且全球设备都有唯一的IPV6地址。&lt;/li&gt;
+&lt;li&gt;服务器：从计算机和服务器的角度理解，手机是就一台 ARM CPU 的计算机，且存储空间还不低。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h2&gt;配置过程&lt;/h2&gt;
+&lt;div class="section" id="ipv6"&gt;
+&lt;h3&gt;配置IPV6&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;确认自己的光猫和路由器支持 IPV6；&lt;/li&gt;
+&lt;li&gt;获得路由器管理密码（通常印刷在设备下方的标签上），或者网络寻找对应路由器的型号的超级密码，登录管理界面，将网络设置为，光猫桥接路由器；&lt;/li&gt;
+&lt;li&gt;打开路由器IPV6设置，通过路由器拨号上网，这样家中局域网的设备均可获得独立的IPV6。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果在打开IPV6这步有疑问，可以搜索一下，网上有很多教程。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h3&gt;手机安装服务器&lt;/h3&gt;
+&lt;p&gt;AWebServer 比较好用，内置 apache + php + mysql + phpmyadmin&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;在手机上安装 AWebServer；&lt;/li&gt;
+&lt;li&gt;在电源和节能管理中，设置为不杀 AWebServer 后台；&lt;/li&gt;
+&lt;li&gt;配置一个8000或以上的端口，并启动服务；&lt;/li&gt;
+&lt;li&gt;在Wifi中查看手机IPV6地址；&lt;/li&gt;
+&lt;li&gt;插上电源线，把手机屏幕亮度调到最低。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;此时全球任何一个地方访问到这个站点了。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="LAMP"></category><category term="Android"></category></entry><entry><title>2024年第04周周报</title><link href="https://kaffa.im/weekly-2024-w05.html" rel="alternate"></link><published>2024-02-04T23:00:00+08:00</published><updated>2024-02-04T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-04:/weekly-2024-w05.html</id><summary type="html">&lt;p class="first last"&gt;2024年第05周周报&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;2024年第05周周报&lt;/h2&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h3&gt;数据&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="20%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;年周&lt;/th&gt;
+&lt;th class="head"&gt;项目&lt;/th&gt;
+&lt;th class="head"&gt;动态&lt;/th&gt;
+&lt;th class="head"&gt;关注&lt;/th&gt;
+&lt;th class="head"&gt;友链&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;2024W05&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;117&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h3&gt;备忘&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;住院：一月三十一日去市二医院看医生，医生开CT检查，回诊看检查结果后建议我住院治疗，问缘何需要住院，医生说有一个检查需要住院检查。等了两天床位，二月二日入院，本拟做检查，奈何拖了三天，只做了一些常规检查和消炎，觉病情好转，和医生沟通，表示年前不再检查，选择一个月后复查，于二月五日出院。于是错过了周报时间。&lt;/li&gt;
+&lt;li&gt;简历的一个不错的展现形式：&lt;a class="reference external" href="http://tinyurl.com/yj97643p"&gt;http://tinyurl.com/yj97643p&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;技术站：使用 Rust 构建，尝试和 ChatGPT 结对编程，目前因生病住院挂起中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h3&gt;拾遗&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;配置了IPv6，这样每台设备都有了独立IP，已将个人站架在手机上，发现即使 8x 2.0 GHz ARM Cortex-A53，也非常迅速，当你觉得迷你主机省电时，那是因为你没用闲置手机做 Server。我尝试了几个 Android 的服务 apk，常见的有 Simple HTTP Server，一个简单的文件通过 HTTP 共享的服务器，但不是类 LAMP 的。然后很容易会发现 AWebServer 就是一个可用的选择。值得注意的时，若需要自行配置 http.conf 或 php.ini，也是可以通过软件内置的编辑器修改后保存并重启服务生效。简单来说，甚至可以把手机配置为虚拟主机，想到这种方案做服务器，成本低廉的可怕，且这个 AAMP 组合也是挺好用的，我会另写一篇笔记描述如何做。&lt;/li&gt;
+&lt;li&gt;住院的二人病房，经历两位病友，均六十多岁，第一位老家许是江浙，后到湖南汨罗生活多年，也非常熟悉我的家乡，有点老人的倔强，常爱示强，他的夫人一直在病房陪伴照顾，但还是会因为一些事情小吵两句嘴，看起来两人都非常熟悉对方的模式，却也都吵不起来，这种拌嘴成为了相处的默契。我自顾看了一些深圳卫视电视剧频道的剧，什么《开封府》、《雪中悍刀行》、《野山鹰》，毫无疑问雪中最有魅力，它的魅力在于武功的境界、出人意表的叙事和故事框架，但坐在病床上，病友在看野山鹰，于是我也看了，所以能理解为啥零零后们越来越不看传统电台的电视剧了；第二位病友是我老乡，在深也住的近，其女还和我一个小区，她自述，是楼下菜市对门一间商铺的业主，来医院是做评估，在护士对她用药时我听到一些化疗什么的，注射的针头很粗，估计是她治疗过癌症，康复期定期来医院，老人很好说话，又很友好，她喝骆驼奶，吃骆驼奶无糖猴头菇饼干、也分享水果和饼干给我，还向我推荐道家呼吸法，并让我每日练习，看起来癌症让人重视身体和养生，还推荐了两个抖音养生号给我，大曾、钟南青尘，她还说学习养身花过很多钱，灌肠是最高级的养生法，因为呼吸和肠道决定一个人的健康。我感觉她明显是上过很多养生课的，说的前半句都是医学和生物学依据的，但后半的结论却值得推敲。这些养身课中还是有真的部分的，呼吸和肠道我认同，但驼奶和灌肠却是洗脑，这两者优点不明显，却有负面影响。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="weekly"></category></entry><entry><title>2024年第04周周报</title><link href="https://kaffa.im/weekly-2024-w04.html" rel="alternate"></link><published>2024-01-28T23:00:00+08:00</published><updated>2024-01-28T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-28:/weekly-2024-w04.html</id><summary type="html">&lt;p class="first last"&gt;2024年第04周周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第04周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;
@@ -43,7 +131,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="weekly"></category></entry><entry><title>2024年第03周周报</title><link href="https://kaffa.im/weekly-2024-w03.html" rel="alternate"></link><published>2024-01-21T23:59:00+08:00</published><updated>2024-01-21T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-21:/weekly-2024-w03.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+</content><category term="weekly"></category></entry><entry><title>2024年第03周周报</title><link href="https://kaffa.im/weekly-2024-w03.html" rel="alternate"></link><published>2024-01-21T23:59:00+08:00</published><updated>2024-01-21T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-21:/weekly-2024-w03.html</id><summary type="html">&lt;p class="first last"&gt;2024年第03周周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第03周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;
@@ -184,7 +272,7 @@
 &lt;/ol&gt;
 &lt;p&gt;第二种更有说服力。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="article"></category></entry><entry><title>2024年第02周周报</title><link href="https://kaffa.im/weekly-2024-w02.html" rel="alternate"></link><published>2024-01-14T23:59:00+08:00</published><updated>2024-01-14T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-14:/weekly-2024-w02.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+</content><category term="article"></category></entry><entry><title>2024年第02周周报</title><link href="https://kaffa.im/weekly-2024-w02.html" rel="alternate"></link><published>2024-01-14T23:59:00+08:00</published><updated>2024-01-14T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-14:/weekly-2024-w02.html</id><summary type="html">&lt;p class="first last"&gt;2024年第02周周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第02周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;
@@ -379,7 +467,7 @@
 &lt;h2&gt;在读&lt;/h2&gt;
 &lt;p&gt;几年前读过第一版，也看过一些在线书，这本易懂。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="book"></category><category term="Rust"></category></entry><entry><title>2024年第01周周报</title><link href="https://kaffa.im/weekly-2024-w01.html" rel="alternate"></link><published>2024-01-07T23:59:00+08:00</published><updated>2024-01-07T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-07:/weekly-2024-w01.html</id><summary type="html">&lt;p class="first last"&gt;包含数据、备忘和拾遗&lt;/p&gt;
+</content><category term="book"></category><category term="Rust"></category></entry><entry><title>2024年第01周周报</title><link href="https://kaffa.im/weekly-2024-w01.html" rel="alternate"></link><published>2024-01-07T23:59:00+08:00</published><updated>2024-01-07T23:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-07:/weekly-2024-w01.html</id><summary type="html">&lt;p class="first last"&gt;2024年第01周周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第01周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;
@@ -3650,120 +3738,4 @@ docs/
 &lt;p&gt;如果是对静态站点生成器这个主题内容感兴趣，可以去 &lt;a href="https://jamstack.org/generators/"&gt;Site Generators&lt;/a&gt; 看看，那里有一个排名。&lt;/p&gt;
 &lt;h3&gt;搜索关键字&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://python.org/"&gt;Python&lt;/a&gt;, &lt;a href="https://www.mkdocs.org/"&gt;MkDocs&lt;/a&gt;, &lt;a href="https://squidfunk.github.io/mkdocs-material/"&gt;MkDocs Theme&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;感谢阅读。&lt;/p&gt;</content><category term="digital"></category><category term="MkDocs"></category></entry><entry><title>自动更新 Gitee Pages</title><link href="https://kaffa.im/update-gitee-pages-with-playwright.html" rel="alternate"></link><published>2021-01-11T12:00:00+08:00</published><updated>2021-01-11T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2021-01-11:/update-gitee-pages-with-playwright.html</id><summary type="html">&lt;p&gt;本文提供一段 Python 代码，用来解决免费 Gitee Pages 服务无法自动刷新。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;2022-01-11 更新&lt;/h2&gt;
-&lt;p&gt;本文写于2021年1月11日，PlayWright 当时的版本是 0.171.1，本文代码已不适用最新版 PlayWright，获取新版代码，请移步《20220111-自动更新 Gitee Pages 续》。&lt;/p&gt;
-&lt;h2&gt;更新 Gitee Pages 静态站点&lt;/h2&gt;
-&lt;p&gt;由于在 Gitee Pages 备份了个人博客，但免费用户 Gitee Pages 服务不能像 Github Pages 一样自动发布，
-网上有利用 Github Action 实现的现成解决方案，但刷新 Gitee Pages 是点击按钮的简单任务，不如自己搞定。&lt;/p&gt;
-&lt;h2&gt;Python 代码&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
-&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;playwright&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;sync_playwright&lt;/span&gt;
-
-&lt;span class="n"&gt;USERNAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;YOUR_USERNAME&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;PASSWORD&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;YOUR_PASSWORD&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;GITEE_PAGES_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://gitee.com/kaffa/kaffa/pages&amp;#39;&lt;/span&gt;
-
-
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;sync_playwright&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;browser_type&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chromium&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-            &lt;span class="n"&gt;browser&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;browser_type&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;launch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;headless&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;newPage&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;goto&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://gitee.com/login&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[login]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fill&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[login]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;USERNAME&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[login]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fill&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input[name=&amp;quot;user[password]&amp;quot;]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;PASSWORD&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;input[value=&amp;#39;登 录&amp;#39;]&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;goto&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GITEE_PAGES_URL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;dialog&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;dialog&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;dialog&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;accept&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.update_deploy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;waitForSelector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;span:text(&amp;quot;已开启 Gitee Pages 服务&amp;quot;)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;timeout&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;visible&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-    &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;代码说明&lt;/h2&gt;
-&lt;p&gt;从编程角度上，实现 Git Push 完后自动更新 Gitee Pages，需要当 Git Push 完成时发送消息，消息订阅方接收到该息后执行更新操作。
-现实中这些通常由持续集成（CI）服务器来做，但 Gitee 的持续集成服务 Gitee Go 是收费服务。&lt;/p&gt;
-&lt;p&gt;不如换个思路，即提交 Github 和 Gitee 完成后，追加一次点击 Gitee Pages 更新按钮的操作，该操作最后是客户端发出一个 Http Post 请求，
-复杂而不好的办法是直接构造该请求的数据，但为实现“一次编写，一直运行”，也为防止点按钮时还做了什么其它较风骚的操作，
-这里选择使用了 Headless Testing 的方法。&lt;/p&gt;
-&lt;p&gt;这条道路主流是沿着 Selenium -&amp;gt; Puppeteer -&amp;gt; PlayWright 进行的，特别是 PlayWright 团队，原先就是从 Google 的 Puppeteer 
-转到 &lt;a href="https://www.infoq.com/news/2020/01/playwright-browser-automation/"&gt;Microsoft PlayWright&lt;/a&gt;，毕竟，能把创造和改造的轮子从 Chrome 扩展到 Firefox 到 Webkit 谁不想呢？&lt;/p&gt;
-&lt;p&gt;说回 Headless Testing，这种方式没有直接发送 Http Post 请求迅速，但需要维护代码的可能性低，且更易维护。对个人来说，
-启动时把 headless 参数改为 True，多等十秒问题也不大。&lt;/p&gt;
-&lt;p&gt;代码中有两点值得一提：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;page.waitForSelector&lt;/code&gt; 方法，文档的第二个参数，在 node.js 语法中是传入 Object，但在 Python 中的用法是多个参数，
-这一点上由于 Python 版的 PlayWright 文档不详细，需在 PyCharm 中按 Ctrl 看源码提示才能看到；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;page.on("dialog", lambda dialog: dialog.accept())&lt;/code&gt; 表示在 alert 弹出框上点击确定。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;其余代码直白到十岁小友也可看懂，不再解释。&lt;/p&gt;
-&lt;h3&gt;搜索关键字和延伸&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://gitee.com/help/articles/4136"&gt;Gitee Pages&lt;/a&gt;, &lt;a href="https://playwright.dev/"&gt;PlayWright&lt;/a&gt;, &lt;a href="https://github.com/microsoft/playwright-python"&gt;playwright-python&lt;/a&gt;, &lt;a href="https://headlesstesting.com/"&gt;Headless Testing&lt;/a&gt;  &lt;/p&gt;
-&lt;p&gt;感谢阅读。如果上述内容和代码片段对你有帮助，请扫描二维码打赏一杯咖啡。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/static/img/reward.png" title="我的赞赏码"&gt;&lt;/p&gt;</content><category term="website"></category><category term="Gitee Pages"></category><category term="PlayWright"></category></entry><entry><title>尝试用 Hugo 写简历</title><link href="https://kaffa.im/try-to-write-a-resume-with-hugo.html" rel="alternate"></link><published>2021-01-03T12:00:00+08:00</published><updated>2021-01-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2021-01-03:/try-to-write-a-resume-with-hugo.html</id><summary type="html">&lt;p&gt;因准备找一份新工作，注册了新的 Github 账号，顺便尝试使用 Hugo 和 Hugo Theme 编写简历，这篇是过程的记录以帮助未来再次写简历的我和你。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;去年的回顾&lt;/h2&gt;
-&lt;p&gt;2020 年是变化一言难尽的一年。占星学上，2018年以来的摩羯土星的旧本有机会转入水瓶的新，而一场新冠病毒就从底层认知上彻底改变了我们，
-我们可能还需再花几年时间，才能从意识形态上转入后新冠时代。
-从封城后空荡的街道，到春节前病毒式传播的“假新闻”，从寻求真相却难以求证的人群，到野草般生长的“偏执和怀疑论”，其后全世界范围内开始讨论和寻找零号病人和病毒起因。&lt;/p&gt;
-&lt;p&gt;在数据的曲线和数字背后，新冠带给一个一个真实的人和家庭的身心伤害在很大程度上被忽视了。其间，我们能看到的只是世界各方对新冠的表演式的应对。
-当面对未知与不确定时，新冠有关的信息涡旋裹挟着群体的盲目与恐惧，被互联网的棱镜折射与放大，更清晰地呈现出人类的乐观和悲观情绪。
-我们看见了无数人的尽力与无能为力，看见了战疫岗位上朴实无华的坚守，也看见善良和美德之光透过一颗颗平凡的心灵迸射出来，
-同样被看见的还有自私与丑恶、傲慢与偏见，将全球数不清的尚未做好准备的人拉到了不得不面对的战场上。
-这是个人命运的挫折，更是全人类的灾难，有些事实也许一年或几年还看不清，但当历史的车轮轧过后，
-那些狭隘的自私的和虚伪的，都会标上的真实的价码，如同地质运动后的岩层一样戳破残破不堪的地表。&lt;/p&gt;
-&lt;p&gt;2021 年会更好的吗？我不知道，这一年木土在水瓶大合相，将开始全新的风象时代。这些时代讯息从去年的 "I can't breathe"（我需要风）, "Black lives matter"（呼唤水瓶的平等）中已有体现，&lt;/p&gt;
-&lt;h2&gt;为什么是 Hugo ？&lt;/h2&gt;
-&lt;p&gt;为迎接上述转变，我计划将写作源从 reStructuredText 转到更新的技术 MarkDown 上以呼应时代的机会。
-源自 Python 的 reStructuredText 完善稳定，是支撑 Python 众多文档的基础；新生的 MarkDown 基础格式统一，扩展标准兼容性有待完善，
-但它有更适合这个风向时代的轻量和通用，在木星水瓶的第一个十年里，MarkDown 很有不断打磨自己和扩张的机会。&lt;/p&gt;
-&lt;h2&gt;给自己的 Hugo 写简历不完全指南&lt;/h2&gt;
-&lt;p&gt;我相信会有很多用 Hugo 写简历的文章，但如何写一篇不过时，不用频繁更新，有更持久意义的文章呢？我不知道。
-但可以列出一些达到这个目的的原则：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;提供思路，而不是提供步骤&lt;/li&gt;
-&lt;li&gt;提供方法，而不是提供结果&lt;/li&gt;
-&lt;li&gt;提供核心，并谨慎提供细节&lt;/li&gt;
-&lt;li&gt;提供关键字，但不列举资源&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;思路&lt;/h3&gt;
-&lt;p&gt;一般会用 Hugo 的是 IT 人，大多会知道 &lt;a href="https://golang.org/"&gt;Go&lt;/a&gt; 语言。
-写简历就是使用 Hugo 和 Hugo Theme 来生成一个静态站点。
-因此要懂得 Hugo 和 Hugo Theme 的基本用法，再将简历内容写到内容中。
-如个人基本信息、联系方式、工作经验、项目经验、教育经历、证书奖励等&lt;/p&gt;
-&lt;h3&gt;方法&lt;/h3&gt;
-&lt;p&gt;可通过 Google 或 Bing 找到 Go 和 Hugo 的官方站点，Hugo 是一个静态站点生成软件，软件都有文档，文档中必然有它的安装和使用方法。&lt;/p&gt;
-&lt;h3&gt;核心&lt;/h3&gt;
-&lt;p&gt;使用软件的核心能力是文档&lt;strong&gt;阅读理解&lt;/strong&gt;，&lt;strong&gt;英语&lt;/strong&gt;能力能帮上很大忙。
-对于 Hugo 的文档，首先阅读介绍（Introduction），然后阅读安装（Install Hugo），
-再阅读目录结构（Directory Structure），最后阅读配置（Configure Hugo）。&lt;/p&gt;
-&lt;p&gt;这里就不再把安装文档中的步骤摘录于此，因每种操作系统及发行版都提供了&lt;strong&gt;命令行软件包管理工具&lt;/strong&gt;来管理常用软件。
-不仅如此，现代软件都相互学习（借鉴）设计，命令行功能简洁易用，Hugo’s CLI 也属于此，但功能无外乎：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;hugo new site: 生成新站点&lt;/li&gt;
-&lt;li&gt;hugo new: 增加新内容 &lt;/li&gt;
-&lt;li&gt;hugo server: 提供 http 服务以供本地测试 &lt;/li&gt;
-&lt;li&gt;hugo help: 其它先不用管功能&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Section 我译它为章，即 content 目录下的目录，其中可能包含一组页面。&lt;/p&gt;
-&lt;p&gt;主要目录结构：很大程度上不会变，也意味着未来也许会改变。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;archetypes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;预定义的元数据定义&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
-&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;config&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;toml&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;配置文件&lt;/span&gt;
-&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;所有的内容按目录分为章&lt;/span&gt;
-&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;可以理解为静态化的数据&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="nx"&gt;可被模版使用&lt;/span&gt;
-&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;layouts&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;模版的目录&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="nx"&gt;有默认的页面和模版&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="nx"&gt;模版片段&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="nx"&gt;单页模版等&lt;/span&gt;
-&lt;span class="err"&gt;├─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;static&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;静态文件&lt;/span&gt;
-&lt;span class="err"&gt;└─&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;themes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;主题文件&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;因此上述目录说明应去文档中查看，如果说 Hugo 模式是 MVC 那么 layouts 就是 V，content 和 data 就是 M，而 C 则是 Hugo 本身。
-这里完成了 Hugo 的部分，其次就是在 Hugo themes 主题站中寻找 resume 相关的资源，挑选喜欢的款式来作为简历的主题，并配置到 config.toml 中&lt;/p&gt;
-&lt;h3&gt;搜索关键字&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://golang.org/"&gt;Go&lt;/a&gt;, &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt;, &lt;a href="https://themes.gohugo.io/"&gt;Hugo Theme&lt;/a&gt;, hugo-devresume-theme, Hugo documentation&lt;/p&gt;
-&lt;p&gt;感谢阅读，希望上述简述和关键字补充了从标题到实践的指引，能指导读者用 Hugo 写简历。
-如果您觉得本文有用，可以扫描我的二维码，打赏一杯咖啡。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="我的赞赏码" src="https://kaffa.im/static/img/reward.png" title="我的赞赏码"&gt;&lt;/p&gt;</content><category term="digital"></category><category term="Hugo"></category><category term="Résumé"></category></entry></feed>
+&lt;p&gt;感谢阅读。&lt;/p&gt;</content><category term="digital"></category><category term="MkDocs"></category></entry></feed>

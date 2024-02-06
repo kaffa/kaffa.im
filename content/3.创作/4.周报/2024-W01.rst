@@ -6,7 +6,7 @@
 :category: weekly
 :tags:
 :slug: weekly-2024-w01
-:summary: 包含数据、备忘和拾遗
+:summary: 2024年第01周周报
 
 
 2024年第01周周报
