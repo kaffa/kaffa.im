@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-01-11T00:07:00+08:00</updated><entry><title>坛经</title><link href="https://kaffa.im/the-altar-sutra.html" rel="alternate"></link><published>2024-01-11T00:07:00+08:00</published><updated>2024-01-11T00:07:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-11:/the-altar-sutra.html</id><summary type="html">&lt;p class="first last"&gt;缘分到了，读读『坛经』&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;读后&lt;/h2&gt;
-&lt;p&gt;多年前从韶关回深到过南华禅寺，得见六祖惠能真身，当时并不知晓这是一尊距今1300多年的肉身真身，除了在南方如此炎热湿润的环境中保持不腐坏的神奇之外，惠能得传五祖衣钵的的故事也充满了预言和先见。&lt;/p&gt;
-&lt;p&gt;抖音送我书券，在「商务印书馆」和「中华书局」中翻找，只有『人物志』和『坛经』合适买。&lt;/p&gt;
-&lt;p&gt;『坛经』是中国僧人撰写的著述中唯一被冠以「经」的一部佛教典籍。&lt;/p&gt;
-&lt;p&gt;在当下的人生上下文中，我读到了「迷时师渡，自性自渡。」&lt;/p&gt;
-&lt;p&gt;神秀做的是迷时师渡，六祖悟得自性俱足。自性既起点，自渡既强调外在都是借力，自驱是根本。&lt;/p&gt;
-&lt;p&gt;世人如神秀者已然很好，根清之人甚少。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"></category></entry><entry><title>软件困局-为什么聪明的程序员会写出糟糕的代码</title><link href="https://kaffa.im/the-problem-with-software-why-smart-engineers-write-bad-code.html" rel="alternate"></link><published>2024-01-11T00:07:00+08:00</published><updated>2024-01-11T00:07:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-11:/the-problem-with-software-why-smart-engineers-write-bad-code.html</id><summary type="html">&lt;p class="first last"&gt;住院期间阅读的，得空值得一看。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-07T11:00:00+08:00</updated><entry><title>软件困局-为什么聪明的程序员会写出糟糕的代码</title><link href="https://kaffa.im/the-problem-with-software-why-smart-engineers-write-bad-code.html" rel="alternate"></link><published>2024-02-07T11:00:00+08:00</published><updated>2024-02-07T11:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-07:/the-problem-with-software-why-smart-engineers-write-bad-code.html</id><summary type="html">&lt;p class="first last"&gt;住院期间阅读的，得空值得一看。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;评分&lt;/h2&gt;
 &lt;p&gt;⭐⭐⭐⭐⭐⭐⭐ 7/10&lt;/p&gt;
@@ -61,7 +51,17 @@
 &lt;p&gt;当我们所有「年轻人」在20世纪80年代初联合起来，成功地击溃大型计算机时，我们把洗澡水（大型计算机）和孩子（工程情神）一起泼了出去。软件工程的挑战在于如何将这些都找回来。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="book"></category><category term="software-engineering"></category></entry><entry><title>Programming Rust, 2nd Edition</title><link href="https://kaffa.im/programming-rust-2nd-edition.html" rel="alternate"></link><published>2024-01-08T06:00:00+08:00</published><updated>2024-01-08T06:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-08:/programming-rust-2nd-edition.html</id><summary type="html">&lt;p class="first last"&gt;在读&lt;/p&gt;
+</content><category term="book"></category><category term="software-engineering"></category></entry><entry><title>坛经</title><link href="https://kaffa.im/the-altar-sutra.html" rel="alternate"></link><published>2024-01-11T00:07:00+08:00</published><updated>2024-01-11T00:07:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-11:/the-altar-sutra.html</id><summary type="html">&lt;p class="first last"&gt;缘分到了，读读『坛经』&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;读后&lt;/h2&gt;
+&lt;p&gt;多年前从韶关回深到过南华禅寺，得见六祖惠能真身，当时并不知晓这是一尊距今1300多年的肉身真身，除了在南方如此炎热湿润的环境中保持不腐坏的神奇之外，惠能得传五祖衣钵的的故事也充满了预言和先见。&lt;/p&gt;
+&lt;p&gt;抖音送我书券，在「商务印书馆」和「中华书局」中翻找，只有『人物志』和『坛经』合适买。&lt;/p&gt;
+&lt;p&gt;『坛经』是中国僧人撰写的著述中唯一被冠以「经」的一部佛教典籍。&lt;/p&gt;
+&lt;p&gt;在当下的人生上下文中，我读到了「迷时师渡，自性自渡。」&lt;/p&gt;
+&lt;p&gt;神秀做的是迷时师渡，六祖悟得自性俱足。自性既起点，自渡既强调外在都是借力，自驱是根本。&lt;/p&gt;
+&lt;p&gt;世人如神秀者已然很好，根清之人甚少。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category></entry><entry><title>Programming Rust, 2nd Edition</title><link href="https://kaffa.im/programming-rust-2nd-edition.html" rel="alternate"></link><published>2024-01-08T06:00:00+08:00</published><updated>2024-01-08T06:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-08:/programming-rust-2nd-edition.html</id><summary type="html">&lt;p class="first last"&gt;在读&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;在读&lt;/h2&gt;
 &lt;p&gt;O'Reilly 的此系列少让人失望。&lt;/p&gt;
