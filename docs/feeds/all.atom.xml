@@ -12,7 +12,7 @@
 &lt;div class="section" id="section-3"&gt;
 &lt;h2&gt;困难&lt;/h2&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;缺少独立IP：虽然我们的电信网络没有提供独立公网IPv4，但IPv6已然成熟，且全球设备都有唯一的IPv6地址。&lt;/li&gt;
+&lt;li&gt;缺少独立IP：虽然我们的电信网络没有提供独立公网 IPv4，但 IPv6 已然成熟，且全球设备都有唯一的 IPv6地址。&lt;/li&gt;
 &lt;li&gt;缺少云服务器：从计算机和服务器的角度理解，手机是就一台 ARM CPU 的计算机，且存储空间还不低。如果安装好 Apache、PHP、MySQL 等服务，那么和购买的虚拟主机就没有差别了，如果需要上传大文件，由于就在本地，甚至可以插U盘直接拷贝。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -21,9 +21,9 @@
 &lt;div class="section" id="ipv6"&gt;
 &lt;h3&gt;配置IPv6&lt;/h3&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;确认自己的光猫和路由器支持 IPV6；&lt;/li&gt;
+&lt;li&gt;确认自己的光猫和路由器支持 IPv6；&lt;/li&gt;
 &lt;li&gt;获得路由器管理密码（通常印刷在设备下方的标签上），或者网络寻找对应路由器的型号的超级密码，登录管理界面，将网络设置为，光猫桥接路由器；&lt;/li&gt;
-&lt;li&gt;打开路由器IPv6设置，通过路由器拨号上网，这样家中局域网的设备均可获得独立的IPV6。&lt;/li&gt;
+&lt;li&gt;打开路由器 IPv6 设置，通过路由器拨号上网，这样家中局域网的设备均可获得独立的 IPv6。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;如果在打开IPV6这步有疑问，可以搜索一下，网上有很多教程。&lt;/p&gt;
 &lt;/div&gt;
@@ -33,20 +33,32 @@
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;在手机上安装 AWebServer；&lt;/li&gt;
 &lt;li&gt;在电源和节能管理中，设置为不杀 AWebServer 后台；&lt;/li&gt;
-&lt;li&gt;配置一个8000或以上的端口，并启动服务；&lt;/li&gt;
-&lt;li&gt;在Wifi中查看手机IPV6地址；&lt;/li&gt;
+&lt;li&gt;配置一个 8000 或以上的端口，并启动服务；&lt;/li&gt;
+&lt;li&gt;在 WiFi 中查看手机 IPv6 地址；&lt;/li&gt;
 &lt;li&gt;插上电源线，把手机屏幕亮度调到最低。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;此时全球任何一个地方访问到这个站点了。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="ipv6-1"&gt;
 &lt;h3&gt;服务器IPv6地址发生变化&lt;/h3&gt;
-&lt;p&gt;如果服务器的 IPv6 因为电信的分配发生变化，则需要定期上报，解决方案有两种：
-1. 用一个支持 API 的 DNS 服务器，侦测IP变化，当发现 IPv6 变了，则通过 API 刷新 DNS。
-2. 用一个本地常驻程序侦测IP变化，用一个支持 API 提交的短网址服务作为中间跳转地址。&lt;/p&gt;
+&lt;p&gt;如果服务器的 IPv6 因为电信的分配发生变化，则需要定期上报，解决方案有两种：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;用一个支持 API 的 DNS 服务器，侦测 IP 变化，当发现 IPv6 变了，则通过 API 刷新 DNS。&lt;/li&gt;
+&lt;li&gt;用一个本地常驻程序侦测 IP 变化，用一个支持 API 提交的短网址服务作为中间跳转地址。&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="digital"></category><category term="LAMP"></category><category term="Android"></category></entry><entry><title>2024年第05周周报</title><link href="https://kaffa.im/weekly-2024-w05.html" rel="alternate"></link><published>2024-02-04T23:00:00+08:00</published><updated>2024-02-04T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-04:/weekly-2024-w05.html</id><summary type="html">&lt;p class="first last"&gt;2024年第05周周报&lt;/p&gt;
+</content><category term="digital"></category><category term="LAMP"></category><category term="Android"></category></entry><entry><title>提交至十年之约</title><link href="https://kaffa.im/be-a-member-of-foreverblog-cn.html" rel="alternate"></link><published>2024-02-06T12:00:00+08:00</published><updated>2024-02-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-06:/be-a-member-of-foreverblog-cn.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;十年之约&lt;/h2&gt;
+&lt;p&gt;加入了&lt;a class="reference external" href="https://www.foreverblog.cn/"&gt;十年之约&lt;/a&gt;，相信写十年是一件不容易的事吧，所以选择 hard mode 的我决定加入。那意味着到 2034-02-05 时，如果我的博客还在，才叫达成模板。果然很长期主义。&lt;/p&gt;
+&lt;div class="section" id="gravatar"&gt;
+&lt;h3&gt;Gravatar&lt;/h3&gt;
+&lt;p&gt;foreverblog 采用的是 wordpress 默认的 profile 服务，于是我注册了 admin(AT)kaffa.im 邮箱。&lt;/p&gt;
+&lt;p&gt;于是头像自动在十年之约显示出来了。&lt;/p&gt;
+&lt;p&gt;Gravatar：&lt;a class="reference external" href="https://gravatar.com/kaffaim"&gt;https://gravatar.com/kaffaim&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="foreverblog"></category></entry><entry><title>2024年第05周周报</title><link href="https://kaffa.im/weekly-2024-w05.html" rel="alternate"></link><published>2024-02-04T23:00:00+08:00</published><updated>2024-02-04T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-04:/weekly-2024-w05.html</id><summary type="html">&lt;p class="first last"&gt;2024年第05周周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第05周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;
@@ -446,7 +458,59 @@
 &lt;p&gt;神秀做的是迷时师渡，六祖悟得自性俱足。自性既起点，自渡既强调外在都是借力，自驱是根本。&lt;/p&gt;
 &lt;p&gt;世人如神秀者已然很好，根清之人甚少。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="book"></category></entry><entry><title>学习 Rust 书单</title><link href="https://kaffa.im/learning-rust-book-list.html" rel="alternate"></link><published>2024-01-08T12:25:00+08:00</published><updated>2024-01-08T12:25:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-08:/learning-rust-book-list.html</id><summary type="html">&lt;p class="first last"&gt;本文列举了最好的 Rust 书籍书单。&lt;/p&gt;
+</content><category term="book"></category></entry><entry><title>软件困局-为什么聪明的程序员会写出糟糕的代码</title><link href="https://kaffa.im/the-problem-with-software-why-smart-engineers-write-bad-code.html" rel="alternate"></link><published>2024-01-11T00:07:00+08:00</published><updated>2024-01-11T00:07:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-11:/the-problem-with-software-why-smart-engineers-write-bad-code.html</id><summary type="html">&lt;p class="first last"&gt;住院期间阅读的，得空值得一看。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;评分&lt;/h2&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐⭐⭐ 7/10&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;读后&lt;/h2&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h3&gt;为什么读&lt;/h3&gt;
+&lt;p&gt;当老婆问我为什么饥荒手游的发布日期为什么一再推迟（跳票）时，我告诉她游戏是一种软件，且是一种复杂度高的软件，需要集合多角色和团队来共同完成。从项目管理关键路径上理解，就能理解为什么游戏频繁跳票了，因为游戏的第一版基本就决定了好长时间努力的口碑，都不想投入那么长时间的投入打水漂，所以希望测试得更完备一些，设计得更合理一些，一旦尾期变更，那定是时间成本挺高的，别说跳票几个月，就是半年一年的，也是常有的。为什么软件项目总是延期或者甚至以失败告终，于是我想到了这本书。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h3&gt;关于写作方式&lt;/h3&gt;
+&lt;p&gt;同时，阅读这本书让我对自己的写字方式有反思：事情是这样的，在读者角度，这本书的阅读感受并不太好，因为它的观点是隐含在叙述中的，我一度认为这样的叙述方式是「润物细无声」，我也喜欢这么干，但看过职位老兄的文字，我意识到这样干的前提是遇到了如我一样耐心的读者，要不在这个时代得让读者先意识到你的文字是金玉其中，否则读者就划走了。在我年轻的时候，除非读小说，我其实也很没有耐心看那种论述性质的文字不将观点明确表达出来的。我以为选择这样干的作者可能是老了，絮絮叨叨的，年轻人会觉得「我没有空听完你的观点和故事」。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-6"&gt;
+&lt;h3&gt;关于论题的不理解&lt;/h3&gt;
+&lt;p&gt;另外一个方面，为弄明白本书的核心提问：Is software development really hard, or are software developers not that good at it? 我认为这不是一体两面的故事吗？软件开发难，开发不擅长，两者其实有很强的关联性，并不适合 a or b 的选择。难道读者像表达的是，站在开发软件这件事的平均水准上，软件经过长时间的发展，从工程学的角度，造软件应当如制造飞机一样确定。甚至还是说软件工程其实没有多少工程的成分在内。&lt;/p&gt;
+&lt;p&gt;我的观点是，事实上，设计软件和制造飞机确实有非常大的差异，比如制造10架大飞机用以服务5000名乘客，那就是将飞机零件制造10份，再组装起来，假设一家飞机平均载客500名，那么10架飞机就可以服务5000名乘客了，从载具的角度上讲，人的需求可以被抹平，从数字化的角度上说，这10架飞机就是1架飞机；但相较于设计10架飞机，在软件层面约等于设计1套软件或几 套软件，因为假设1套可以服务于500名用户，那么不考虑规模的情况下，这1套软件同样也可以服务于5000名用户，亦或者规模的增加导致原先设计的1套软件性能不达标了，需要重新投入设计修改新架构来适应更多用户，而二次投入的成本很可能多倍于第一次的成本。&lt;/p&gt;
+&lt;p&gt;在这里，我们可以看出软件是完全不同，本质的区别是，软件抽象和复杂度带来的不确定性，很容易就击穿了人的计算能力，这样原本确定的路径变得不确定。这通常是非计算机专业人士难以理解的，而往往程序员或说软件设计师都很醉心于个人的创意和创作，也不屑于向非专业人士解释太多，才会有「你行你上」、「Show me your code」这样的说法。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-7"&gt;
+&lt;h3&gt;关于工程于学术的割裂&lt;/h3&gt;
+&lt;p&gt;学术当引导工程，但现状是，工程钱多，学术穷苦，大多受教育的目的不过是为了赚钱生存，因而受学生需求的影响，学术越来越多地教授能立即赚钱的技能。但从长远看，这些技能在理论上并不好，学术于工业当相互沟通，共同参与到软件工程科学中。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-8"&gt;
+&lt;h3&gt;关于编程语言&lt;/h3&gt;
+&lt;p&gt;书中举例了 Message.Box 和 GOTO 语句的例子。也探讨了 C、C++、Pascal、BASIC、Java 等诸多语言。早期的计算机语言是在大学里创造的，如 Algol、BASIC、Pascal；然后语言开始诞生于实验室，比如C、C++和SmallTalk 等；之后个人开发者开发了许多语言，如 Perl、PHP、Python和Ruby，再之后就基本由大公司主导了，比如Java、Go、Swift 和 Kotlin 等，到现在的 Rust。&lt;/p&gt;
+&lt;p&gt;很多时候实在讲述代码和事实本身，并没有直接给出观点，可能作者的意图是让读者自己领悟。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-9"&gt;
+&lt;h3&gt;感悟&lt;/h3&gt;
+&lt;p&gt;我的本科计算机教育，除了编程语言 C 和 Pascal 的知识，其他都是毕业后自学的。事实上，我们的计算机世界包括互联网的设计者，程序设计技能都是自学的，计算机教育和工作技能是割裂的。&lt;/p&gt;
+&lt;p&gt;也有很多学校和企业合作，所开设的专业就是服务于企业的，这种毕业后直接进入企业实习，窃以为如果是大学教育也是不妥的，教育应给人自由，而不是 Frame 住人。&lt;/p&gt;
+&lt;p&gt;如今的计算机行业对计算机专业的人并不友好，和 40 年前一样，很多具备工程经验的人，每 20 年被换一轮，
+新进入行业的年轻人依然犯着 40 年前的错误，20 年后如上一批人一般被换走。职业市场容不下经验丰富的程序员，在学术上软件工程也没有将上一批精英程序员的经历和智慧沉淀下来，所以，软件工程的问题没有真正被解决。&lt;/p&gt;
+&lt;p&gt;大公司花费着 10 倍的成本开发软件，你甚至可以怀疑其意图仅仅是让竞争对手无人可用，这种竞争属于准垄断人力资源的竞争，和信息科技的创新无关，其利润来源非常可耻，可能大部分源自被外包程序员的五险一金。&lt;/p&gt;
+&lt;p&gt;东哥说，如果使用外包，利润可以轻轻松松省下100亿，而他没有选择这么干。而很多大厂，恰恰就这么干着，拿被 Frame 住人生的程序员工作 60 年后退休生活的品质贡献着可耻的利润率。&lt;/p&gt;
+&lt;p&gt;所以，这个行业从教育到工业，存在着很大的问题，于其他行业不同的是，所有在此行业的人的努力和终极目标，似乎就是干掉这个行业。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-10"&gt;
+&lt;h3&gt;摘录&lt;/h3&gt;
+&lt;p&gt;充满GOTO风格的程序设计被细称为「意大利面代码」。试图跟踪代码中的路径就像视图在碗中跟随一根意大利面条，它会消失在位置的地方，然后再出现在另一个地方，你完全不清楚中间到底发生了什么。&lt;/p&gt;
+&lt;p&gt;Pascal 的发明者沃斯（ Wirth ）在2008年的“软件工程简中&amp;quot;回顾中总结道： （学术界）一直是怠惰且自满的。不仅语言和设计方法论的研究失去了它的魅力和吸引力，更糟的是，工业中常见的工具被人们悄然接受而学术界对其没有任何争论和批评。对于工业界而言当前的这些语言可能是不可避免的，但对于教学而言，对于一个有序的、结构化的、系统化的、有根据的语言介绍来说，这些选择完全是错误的、过时的。&lt;/p&gt;
+&lt;p&gt;这明显符合21世纪的趋势：我们只教授、学习和执行学生要求的、立即有利可图的东西。简而言之：我们关注的是什么好卖。在传统上，大学不受这种商业气息的干扰。大学是期待人们思考长远问题的地方。大学是精神上和智力上的领导者，它们展示了通往未来的道路。在我们的计算领域，恐怕大学已经成为温顺的追随者。他们似乎已经屈服于对持续创新的时髦渴望，并且已经失去了对严谨工艺的追求。&lt;/p&gt;
+&lt;p&gt;如果我们能从过去学到什么，那就是计算机科学本质上是一门方法论学科。它应该发展（可教授的）知识和技术，这些知识和技术通常是有益于广泛的应用的。但这并不意味着计算机科学应该陷入这些不同的应用中而失去它原本的身份。软件工程行业应该是有规则程序设计专业教育的主要受益者。在所有程序设计工具中，程序设计语言是第一位的。一个拥有合理概念和结构而且基于清晰抽象的语言，能够指导艺术品的构建。在专业教育中，学习这样的语言应该是强制性的。自制的、人工的复杂性在其中没有一席之地。最后：使用这些语言工作一定是一种乐趣，因为它们能让我们创造出乐于展示且感到自豪的艺术品。&lt;/p&gt;
+&lt;p&gt;Wirth, inventor of Pascal, concluded his 2008 “A Brief History of Software Engineering” retrospective with the statement that academia has remained inactive and complacent. Not only has research in languages and design methodology lost its glamour and attractivity, but worse, the tools common in industry have quietly been adopted without debate and criticism. Current languages may be inevitable in industry, but for teaching, for an orderly, structured, systematic, well-founded introduction they are entirely mistaken and obsolete.&lt;/p&gt;
+&lt;p&gt;This is notably in accord with the trends of the 21st century: We teach, learn, and perform only what is immediately profitable, what is requested by students. In plain words: We focus on what sells. Universities have traditionally been exempt from this commercial run. They were places where people were expected to ponder about what matters in the long run. They were spiritual and intellectual leaders, showing the path into the future. In our field of computing, I am afraid, they have simply become docile followers. They appear to have succumbed to the trendy yearning for continual innovation, and to have lost sight of the need for careful craftsmanship.&lt;/p&gt;
+&lt;p&gt;If we can learn anything from the past, it is that computer science is in essence a methodological subject. It is supposed to develop (teachable) knowledge and techniques that are generally beneficial in a wide variety of applications. This does not mean that computer science should drift into all these diverse applications and lose its identity. Software engineering would be the primary beneficiary of a professional education in disciplined programming. Among its tools languages figure in the forefront. A language with appropriate constructs and structure, resting on clean abstractions, is instrumental in building artefacts, and mandatory in education. Homemade, artificial complexity has no place in them. And finally: It must be a pleasure to work with them, because they enable us to create artefacts that we can show and be proud of.49&lt;/p&gt;
+&lt;p&gt;当我们所有「年轻人」在20世纪80年代初联合起来，成功地击溃大型计算机时，我们把洗澡水（大型计算机）和孩子（工程情神）一起泼了出去。软件工程的挑战在于如何将这些都找回来。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="software-engineering"></category></entry><entry><title>学习 Rust 书单</title><link href="https://kaffa.im/learning-rust-book-list.html" rel="alternate"></link><published>2024-01-08T12:25:00+08:00</published><updated>2024-01-08T12:25:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-08:/learning-rust-book-list.html</id><summary type="html">&lt;p class="first last"&gt;本文列举了最好的 Rust 书籍书单。&lt;/p&gt;
 </summary><content type="html">&lt;div class="notification is-info is-light"&gt;
     &lt;i class="fa fa-info-circle mr-3" aria-hidden="true"&gt;&lt;/i&gt;
     通过英文书学编程，当 90% 单词都认识，且不赶时间的，建议直接读英文书。
@@ -3532,216 +3596,4 @@ Microsoft Edge Canary 浏览器。&lt;/p&gt;
 &lt;p&gt;讯息在这个时代就像蒲公英一般，从互联网每个结点的发出，在光纤中传播，途中会出于某些玄而又玄的目的，经过有意识无意识的加工，最后到达资讯的接受者。大多对信息的包裹很多余，让原始信息要传达的东西失真，甚至起到相反的作用，并不利于接受者理解。&lt;/p&gt;
 &lt;p&gt;这里科比的事实产生了&lt;strong&gt;原始信息&lt;/strong&gt;，到信息传播中的&lt;strong&gt;变异和沉淀&lt;/strong&gt;，到产生较稳定的&lt;strong&gt;核心故事&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;大多时候确定原始信息的真假非常困难，但接近事实的原始信息依然非常有价值，而讯息在传播中的演变非常复杂，而最终产生的较稳定的核心故事上，那才是和个体最有关联的部分，而这一部分的特点是非常主观，但相比于事实本身，它才是更能影响人的素材。&lt;/p&gt;
-&lt;p&gt;感谢阅读。&lt;/p&gt;</content><category term="article"></category><category term="科比·布莱恩特"></category><category term="Kobe Bryant"></category></entry><entry><title>Markdown 的九个实用语法</title><link href="https://kaffa.im/nine-practical-rules-on-markdown-grammar.html" rel="alternate"></link><published>2021-01-14T12:00:00+08:00</published><updated>2021-01-14T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2021-01-14:/nine-practical-rules-on-markdown-grammar.html</id><summary type="html">&lt;p&gt;本文是 Markdown 实用语法指南，其中列出最常用的九个语法，用来写博客足矣。其余更多细节，请查阅官方指南。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt; 标记语言的语法是由它的创始人 &lt;a href="https://en.wikipedia.org/wiki/John_Gruber"&gt;John Gruber&lt;/a&gt; 与 &lt;a href="https://en.wikipedia.org/wiki/Aaron_Swartz"&gt;Aaron Swartz&lt;/a&gt; 共同设计的。&lt;/p&gt;
-&lt;h2&gt;一、标题&lt;/h2&gt;
-&lt;p&gt;标题的代码以&lt;code&gt;#&lt;/code&gt;开头，&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;### H3标题
-#### H4标题
-##### H5标题
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;以下是示例：&lt;/p&gt;
-&lt;h3&gt;H3标题&lt;/h3&gt;
-&lt;h4&gt;H4标题&lt;/h4&gt;
-&lt;h5&gt;H5标题&lt;/h5&gt;
-&lt;h2&gt;二、文本样式&lt;/h2&gt;
-&lt;p&gt;这是&lt;em&gt;强调&lt;/em&gt;，HTML是&lt;code&gt;&amp;lt;em&amp;gt;强调&amp;lt;/em&amp;gt;&lt;/code&gt;  &lt;br&gt;
-这是&lt;strong&gt;加粗&lt;/strong&gt;，HTML是&lt;code&gt;&amp;lt;strong&amp;gt;加粗&amp;lt;/strong&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;文本的代码以以&lt;code&gt;*&lt;/code&gt;或者&lt;code&gt;**&lt;/code&gt;，必须成对出现&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;这是*强调*，HTML是`&lt;span class="nt"&gt;&amp;lt;em&amp;gt;&lt;/span&gt;强调&lt;span class="nt"&gt;&amp;lt;/em&amp;gt;&lt;/span&gt;`&lt;span class="w"&gt;  &lt;/span&gt;
-这是**加粗**，HTML是`&lt;span class="nt"&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;加粗&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt;`
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;三、段落&lt;/h2&gt;
-&lt;p&gt;段落是由空行分割的文字，实际上 md 文件的很多区块都需要换行。&lt;/p&gt;
-&lt;p&gt;这是另一个段落P。&lt;/p&gt;
-&lt;p&gt;如果希望两段靠在一起。
-需要段末尾加入两个空格。&lt;br&gt;
-这样就会换行，HTML中间会有&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;代码：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;段落是由空行分割的文字。&lt;/span&gt;
-
-&lt;span class="err"&gt;这是另一个段落。&lt;/span&gt;
-
-&lt;span class="err"&gt;如果希望两段靠在一起。&lt;/span&gt;
-&lt;span class="err"&gt;需要段末尾加入两个空格。这里有两个空格&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
-&lt;span class="err"&gt;这样就会换行，&lt;/span&gt;&lt;span class="n"&gt;HTML中间会有&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;四、术语表和列表&lt;/h2&gt;
-&lt;p&gt;md文件中没有rst文件的术语表，只有有序列表、无序列表&lt;/p&gt;
-&lt;p&gt;有序列表&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;有序列表项1&lt;/li&gt;
-&lt;li&gt;有序列表项2&lt;/li&gt;
-&lt;li&gt;有序列表项3&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;无序列表&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;无序列表项1&lt;/li&gt;
-&lt;li&gt;无序列表项2&lt;/li&gt;
-&lt;li&gt;无序列表项3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;有序列表代码如下：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;有序列表项1&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;有序列表项2&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;有序列表项3&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;无序列表代码如下：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;*&lt;/span&gt; 无序列表项1
-&lt;span class="k"&gt;*&lt;/span&gt; 无序列表项2
-&lt;span class="k"&gt;*&lt;/span&gt; 无序列表项3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;如果希望列表嵌套，那么下级列表要换行，且向内缩进，但无法实现有序编号&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;列表1&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;列表1.1&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;列表1.1.1&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;列表1.1.2&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;列表1.2&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;列表2&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;代码如下&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;列表1&lt;/span&gt;
-
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;列表1&lt;/span&gt;&lt;span class="mf"&gt;.1&lt;/span&gt;
-
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;列表1&lt;/span&gt;&lt;span class="mf"&gt;.1.1&lt;/span&gt;
-
-&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;列表1&lt;/span&gt;&lt;span class="mf"&gt;.1.2&lt;/span&gt;
-
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;列表1&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;
-
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;列表2&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;五、代码&lt;/h2&gt;
-&lt;p&gt;代码块需整体缩进四个空格。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gh"&gt;#&lt;/span&gt;lang racket                                  ; 声明用 Racket 语言
-
-(define calc
-  (lambda (exp)
-    (match exp                                ; 分支匹配：表达式的两种情况
-      [(? number? x) x]                       ; 是数字，直接返回
-      [`(,op ,e1 ,e2)                         ; 匹配提取操作符op和两个操作数e1,e2
-       (let ([v1 (calc e1)]                   ; 递归调用 calc 自己，得到 e1 的值
-             [v2 (calc e2)])                  ; 递归调用 calc 自己，得到 e2 的值
-         (match op                            ; 分支匹配：操作符 op 的 4 种情况
-           [&amp;#39;+ (+ v1 v2)]                     ; 如果是加号，输出结果为 (+ v1 v2)
-           [&amp;#39;- (- v1 v2)]                     ; 如果是减号，乘号，除号，相似的处理
-           [&amp;#39;* (* v1 v2)]
-           [&amp;#39;/ (/ v1 v2)]))])))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;六、表格&lt;/h2&gt;
-&lt;p&gt;表格属于 Markdown 语法中的扩展语法，扩展语法有很多实现，有些不够统一&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Who&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Python&lt;/td&gt;
-&lt;td&gt;Guido&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Go&lt;/td&gt;
-&lt;td&gt;RRK&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;代码如下，为了美观前后可以加上 &lt;code&gt;|&lt;/code&gt; 线：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Name&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;Who&lt;/span&gt;
-&lt;span class="o"&gt;-------&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-------&lt;/span&gt;
-&lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Guido&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
-&lt;span class="k"&gt;Go&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;RRK&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;或&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;Name&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;Who&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
-&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-------&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--------&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
-&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;Guido&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
-&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;Go&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;RRK&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;七、注释&lt;/h2&gt;
-&lt;!-- 这是一条注释，在HTML中将会存在 --&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;这是一条注释，在&lt;/span&gt;&lt;span class="n"&gt;HTML中将会存在&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;实际上，&lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown语法描述&lt;/a&gt;中没有说明如何写注释，但 md 文件中原生支持插入 HTML 代码。&lt;/p&gt;
-&lt;h2&gt;八、超链接&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://www.markdownguide.org/cheat-sheet/"&gt;markdown cheat-sheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;代码：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[markdown cheat-sheet](https://www.markdownguide.org/cheat-sheet/)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;或者，另一种更优的写法：&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.markdowntutorial.com/"&gt;Markdown Tutorial&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;即先在文中任何地方（建议末尾）写上：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[7]: https://www.markdowntutorial.com/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;文中即可用下列代码引用：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Markdown&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Tutorial&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;九、图片&lt;/h2&gt;
-&lt;p&gt;图片的代码：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![请喝咖啡](https://kaffa.im/static/img/reward.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;效果如下。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="请喝咖啡" src="https://kaffa.im/static/img/reward.png"&gt;&lt;/p&gt;
-&lt;p&gt;感谢阅读！&lt;/p&gt;</content><category term="programming"></category><category term="Markdown"></category></entry><entry><title>用 MkDocs 写文档</title><link href="https://kaffa.im/write-documentations-with-mkdocs.html" rel="alternate"></link><published>2021-01-12T12:00:00+08:00</published><updated>2021-01-12T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2021-01-12:/write-documentations-with-mkdocs.html</id><summary type="html">&lt;p&gt;多年前看到 Python 社区使用 MkDocs 写文档，本文记录一下 MkDocs 写文档的尝试。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;感叹&lt;/h2&gt;
-&lt;p&gt;编程语言的哲学通常会传导到产出物中，对比 MkDocs 和 Hugo，前者从安装到使用都简单直观多了。&lt;/p&gt;
-&lt;h2&gt;为什么是 MkDocs ？&lt;/h2&gt;
-&lt;p&gt;如其名，一个编写文档的 Python 包，使用的 MarkDown 语法，上篇提到本年正转向 MarkDown 格式输出，据学习规律，应在多场景中重复创造练习的环境。&lt;/p&gt;
-&lt;h2&gt;给自己的 MkDocs 使用说明&lt;/h2&gt;
-&lt;p&gt;首先是安装，因为是 Python 包，所以在当下使用目前官方默认的包管理工具 pip install 即可。&lt;/p&gt;
-&lt;p&gt;其次是使用，在开箱即用会打开首页，包含几个常用命令和目录结构。&lt;/p&gt;
-&lt;p&gt;命令&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;mkdocs new [目录名]&lt;/code&gt; - 创建项目&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mkdocs serve&lt;/code&gt; - 开始实时刷新的文档服务器监听&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mkdocs build&lt;/code&gt; - 生成文档&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mkdocs -h&lt;/code&gt; - 打印帮助并退出&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;目录结构&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdocs.yml    # 配置文件
-docs/
-    index.md  # 文档首页
-    ...       # 其它页面，图片和其它文件
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;最后，MkDocs 主题并不是很多，使用默认主题或喜欢的即可，Material for MkDocs 还不错&lt;/p&gt;
-&lt;h3&gt;思路&lt;/h3&gt;
-&lt;p&gt;为了寻找一个写文档的包，可以在 Github 搜索；如果对软件的编程语言有要求，可以加上语言作为关键字，比如：Python Documentation
-这里就会得到开源项目的列表，按照排名翻一下前几页会找到很多知名的项目。&lt;/p&gt;
-&lt;p&gt;另外，世界排名后几名的开源站，也会有很多的经典项目。&lt;/p&gt;
-&lt;p&gt;如果是对静态站点生成器这个主题内容感兴趣，可以去 &lt;a href="https://jamstack.org/generators/"&gt;Site Generators&lt;/a&gt; 看看，那里有一个排名。&lt;/p&gt;
-&lt;h3&gt;搜索关键字&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://python.org/"&gt;Python&lt;/a&gt;, &lt;a href="https://www.mkdocs.org/"&gt;MkDocs&lt;/a&gt;, &lt;a href="https://squidfunk.github.io/mkdocs-material/"&gt;MkDocs Theme&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;感谢阅读。&lt;/p&gt;</content><category term="digital"></category><category term="MkDocs"></category></entry></feed>
+&lt;p&gt;感谢阅读。&lt;/p&gt;</content><category term="article"></category><category term="科比·布莱恩特"></category><category term="Kobe Bryant"></category></entry></feed>

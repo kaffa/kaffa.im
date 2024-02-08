@@ -1,0 +1,26 @@
+提交至十年之约
+##################################################
+
+:date: 2024-02-06 12:00
+:author: Kaffa
+:category: website
+:tags: foreverblog
+:slug: be-a-member-of-foreverblog-cn
+:summary:
+
+十年之约
+========================================
+
+加入了\ `十年之约 <https://www.foreverblog.cn/>`_\ ，相信写十年是一件不容易的事吧，所以选择 hard mode 的我决定加入。那意味着到 2034-02-05 时，如果我的博客还在，才叫达成模板。果然很长期主义。
+
+
+Gravatar
+----------------------------------------
+
+foreverblog 采用的是 wordpress 默认的 profile 服务，于是我注册了 admin(AT)kaffa.im 邮箱。
+
+于是头像自动在十年之约显示出来了。
+
+Gravatar：https://gravatar.com/kaffaim
+
+

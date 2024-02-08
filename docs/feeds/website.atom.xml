@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - website</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/website.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2023-12-14T20:00:00+08:00</updated><entry><title>KaffaWeb 2.0 建设之主题与首页</title><link href="https://kaffa.im/kaffaweb-theme-and-index-page.html" rel="alternate"></link><published>2023-12-14T20:00:00+08:00</published><updated>2023-12-14T20:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-14:/kaffaweb-theme-and-index-page.html</id><summary type="html">&lt;p class="first last"&gt;本文记录了 kaffaweb 主题和 index 的设计与实现要点。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - website</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/website.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-06T12:00:00+08:00</updated><entry><title>提交至十年之约</title><link href="https://kaffa.im/be-a-member-of-foreverblog-cn.html" rel="alternate"></link><published>2024-02-06T12:00:00+08:00</published><updated>2024-02-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-06:/be-a-member-of-foreverblog-cn.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;十年之约&lt;/h2&gt;
+&lt;p&gt;加入了&lt;a class="reference external" href="https://www.foreverblog.cn/"&gt;十年之约&lt;/a&gt;，相信写十年是一件不容易的事吧，所以选择 hard mode 的我决定加入。那意味着到 2034-02-05 时，如果我的博客还在，才叫达成模板。果然很长期主义。&lt;/p&gt;
+&lt;div class="section" id="gravatar"&gt;
+&lt;h3&gt;Gravatar&lt;/h3&gt;
+&lt;p&gt;foreverblog 采用的是 wordpress 默认的 profile 服务，于是我注册了 admin(AT)kaffa.im 邮箱。&lt;/p&gt;
+&lt;p&gt;于是头像自动在十年之约显示出来了。&lt;/p&gt;
+&lt;p&gt;Gravatar：&lt;a class="reference external" href="https://gravatar.com/kaffaim"&gt;https://gravatar.com/kaffaim&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="foreverblog"></category></entry><entry><title>KaffaWeb 2.0 建设之主题与首页</title><link href="https://kaffa.im/kaffaweb-theme-and-index-page.html" rel="alternate"></link><published>2023-12-14T20:00:00+08:00</published><updated>2023-12-14T20:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-14:/kaffaweb-theme-and-index-page.html</id><summary type="html">&lt;p class="first last"&gt;本文记录了 kaffaweb 主题和 index 的设计与实现要点。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;主题&lt;/h2&gt;
 &lt;p&gt;主题是使用的欧雷的 UI 设计，主要使用 bulma 辅助实现。&lt;/p&gt;

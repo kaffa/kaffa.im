@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-02-07T15:32:26-00:00</lastmod>
+<lastmod>2024-02-08T11:13:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-02-07T15:32:26-00:00</lastmod>
+<lastmod>2024-02-08T11:13:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-02-07T15:32:26-00:00</lastmod>
+<lastmod>2024-02-08T11:13:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-02-07T15:32:26-00:00</lastmod>
+<lastmod>2024-02-08T11:13:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -62,6 +62,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/android-mobile-as-a-server-of-apache-php-mysql.html</loc>
 <lastmod>2024-02-06T21:30:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/be-a-member-of-foreverblog-cn.html</loc>
+<lastmod>2024-02-06T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -117,6 +124,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/the-altar-sutra.html</loc>
+<lastmod>2024-01-11T00:07:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/the-problem-with-software-why-smart-engineers-write-bad-code.html</loc>
 <lastmod>2024-01-11T00:07:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
