@@ -32,9 +32,11 @@ def get_list():
     c = conn.cursor()
     sql = '''SELECT
         t1.id, t1.name as project_name, t1.description,
-        sum(CASE t2.column_id WHEN 4 THEN 1 ELSE 0 END) as task_completed,
+        sum(CASE t3.title WHEN 'Done' THEN 1 WHEN '完成' THEN 1 ELSE 0 END) as task_completed,
         count(t2.id) as task_all
-        FROM projects t1 LEFT JOIN tasks t2 ON t1.id=t2.project_id
+        FROM projects t1
+            LEFT JOIN tasks t2 ON t1.id=t2.project_id
+            LEFT JOIN `columns` t3 ON t1.id=t3.project_id
         WHERE t1.is_active=1 and t2.is_active=1
         GROUP BY t1.id'''
     c.execute(sql)
@@ -47,6 +49,7 @@ def get_list():
 
     for t in result:
         project = Project()
+
         project.ID = t[0]
         project.Name = t[1]
         project.Mantra = str(t[2]).split(os.linesep)[0]
@@ -59,6 +62,7 @@ def get_list():
             project.Status = 'doing'
         elif project.TaskCompletedCount == project.TaskTotalCount:
             project.Status = 'done'
+
         project_list.append(project)
 
     return project_list
