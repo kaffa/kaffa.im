@@ -36,9 +36,9 @@ def get_list():
         count(t2.id) as task_all
         FROM projects t1
             LEFT JOIN tasks t2 ON t1.id=t2.project_id
-            LEFT JOIN `columns` t3 ON t1.id=t3.project_id
+            LEFT JOIN `columns` t3 ON t2.column_id=t3.id
         WHERE t1.is_active=1 and t2.is_active=1
-        GROUP BY t1.id'''
+        GROUP BY t1.id;'''
     c.execute(sql)
     result = c.fetchall()
     conn.close()
@@ -70,13 +70,14 @@ def get_list():
 
 def main():
     for item in get_list():
-        print(item.ID)
-        print(item.Name)
-        print(item.Mantra)
-        print(item.TaskCompletedCount)
-        print(item.TaskTotalCount)
-        print(item.Completion)
-        print(item.Status)
+        print('-' * 100)
+        print('ID: ' + str(item.ID))
+        print('Name: ' + item.Name)
+        print('Mantra: ' + item.Mantra)
+        print('TaskCompletedCount: ' + str(item.TaskCompletedCount))
+        print('TaskTotalCount: ' + str(item.TaskTotalCount))
+        print('Completion: ' + str(item.Completion))
+        print('Status: ' + item.Status)
 
 
 if __name__ == '__main__':
