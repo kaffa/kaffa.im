@@ -1,0 +1,25 @@
+深入浅出Vue.js
+########################################################
+
+:date: 2024-02-11 12:00
+:author: Kaffa
+:category: book
+:tags: front-end
+:slug: an-in-depth-introduction-to-vue-js
+:summary: 找不出阅读这本书的动机
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/4iQ7m8MxmVaFJ8zVgo70aC
+
+评分
+====================
+
+⭐⭐⭐⭐⭐⭐⭐ 7/10
+
+读后
+====================
+
+这本书从源码角度讲解了VUE的各个细节是如何实现的。
+
+VUE是什么？是保持前端代码可维护性的方式，很多人没有弄明白，为什么有了HTML、CSS、JavaScript后，还会出现各种框架，主要就是有反复出现的痛点，而框架搞定了痛点，框架的本质是灭杀真·程序员。
+
+本书输入讲解了How，但未讲Why，如果从痛点开始讲就好了。
