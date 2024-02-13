@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-07T11:00:00+08:00</updated><entry><title>软件困局-为什么聪明的程序员会写出糟糕的代码</title><link href="https://kaffa.im/the-problem-with-software-why-smart-engineers-write-bad-code.html" rel="alternate"></link><published>2024-02-07T11:00:00+08:00</published><updated>2024-02-07T11:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-07:/the-problem-with-software-why-smart-engineers-write-bad-code.html</id><summary type="html">&lt;p class="first last"&gt;住院期间阅读的，得空值得一看。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-11T12:00:00+08:00</updated><entry><title>深入浅出Vue.js</title><link href="https://kaffa.im/an-in-depth-introduction-to-vue-js.html" rel="alternate"></link><published>2024-02-11T12:00:00+08:00</published><updated>2024-02-11T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-11:/an-in-depth-introduction-to-vue-js.html</id><summary type="html">&lt;p class="first last"&gt;找不出阅读这本书的动机&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;评分&lt;/h2&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐⭐⭐ 7/10&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;读后&lt;/h2&gt;
+&lt;p&gt;这本书从源码角度讲解了VUE的各个细节是如何实现的。&lt;/p&gt;
+&lt;p&gt;VUE是什么？是保持前端代码可维护性的方式，很多人没有弄明白，为什么有了HTML、CSS、JavaScript后，还会出现各种框架，主要就是有反复出现的痛点，而框架搞定了痛点，框架的本质是灭杀真·程序员。&lt;/p&gt;
+&lt;p&gt;本书输入讲解了How，但未讲Why，如果从痛点开始讲就好了。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="front-end"></category></entry><entry><title>软件困局-为什么聪明的程序员会写出糟糕的代码</title><link href="https://kaffa.im/the-problem-with-software-why-smart-engineers-write-bad-code.html" rel="alternate"></link><published>2024-02-07T11:00:00+08:00</published><updated>2024-02-07T11:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-07:/the-problem-with-software-why-smart-engineers-write-bad-code.html</id><summary type="html">&lt;p class="first last"&gt;住院期间阅读的，得空值得一看。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;评分&lt;/h2&gt;
 &lt;p&gt;⭐⭐⭐⭐⭐⭐⭐ 7/10&lt;/p&gt;

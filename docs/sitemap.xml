@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-02-12T19:27:43-00:00</lastmod>
+<lastmod>2024-02-13T23:06:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-02-12T19:27:43-00:00</lastmod>
+<lastmod>2024-02-13T23:06:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-02-12T19:27:43-00:00</lastmod>
+<lastmod>2024-02-13T23:06:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-02-12T19:27:43-00:00</lastmod>
+<lastmod>2024-02-13T23:06:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,6 +60,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/fuze-tea.html</loc>
+<lastmod>2024-02-13T22:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/solutions-to-mouse-micro-movement-double-click-and-scroll-reversed-failures.html</loc>
 <lastmod>2024-02-12T18:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -69,6 +76,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/weekly-2024-w06.html</loc>
 <lastmod>2024-02-11T23:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/an-in-depth-introduction-to-vue-js.html</loc>
+<lastmod>2024-02-11T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -985,7 +999,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2024-02-12T18:30:00+08:06</lastmod>
+<lastmod>2024-02-13T22:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
