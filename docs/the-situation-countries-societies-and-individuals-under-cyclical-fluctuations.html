@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 时势：周期波动下的国家、社会和个人</title>
+    <meta charset="utf-8" />
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican, kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+        href="https://kaffa.im/feeds/all.atom.xml"
+        type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed" />
+    <link
+        href="https://kaffa.im/feeds/book.atom.xml"
+        type="application/atom+xml" rel="alternate" title="Kaffa.im Categories Atom Feed" />
+
+
+
+
+    <meta name="tags" content="finance" />
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <h1 class="navbar-item">
+                    <a href="./"><span class="is-italic author_name">Kaffa</span>.im</a>
+                    <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+                </h1>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarGlobal">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarGlobal" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">专栏</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                                <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">笔记</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">创作</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">我的</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                                <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                                <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">关于</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                                <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                                <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                            <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                            Log in
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="has-background-grey-lighter pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./the-situation-countries-societies-and-individuals-under-cyclical-fluctuations.html" rel="bookmark" title="「时势：周期波动下的国家、社会和个人」的永久链接">时势：周期波动下的国家、社会和个人</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-02-16T13:00:00+08:00">2024-02-16 周五</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+        <div class="mb-2">
+            <span>分类:
+                <a class="tag is-medium" href="./category/book.html">书</a>
+            </span>
+            <span class="ml-2">标签:
+                <a class="tag is-primary is-light is-medium" href="./tag/finance.html">finance</a>
+            </span>
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+        <div class="columns is-centered box mt-5" id="subject">
+            <div class="column is-one-quarter">
+                <p class="image">
+                    <img title="时势：（当当专享亲签版）周期波动下的国家、社会和个人" class="book-cover" src="/static/img/book/%E6%97%B6%E5%8A%BF%EF%BC%9A%EF%BC%88%E5%BD%93%E5%BD%93%E4%B8%93%E4%BA%AB%E4%BA%B2%E7%AD%BE%E7%89%88%EF%BC%89%E5%91%A8%E6%9C%9F%E6%B3%A2%E5%8A%A8%E4%B8%8B%E7%9A%84%E5%9B%BD%E5%AE%B6%E3%80%81%E7%A4%BE%E4%BC%9A%E5%92%8C%E4%B8%AA%E4%BA%BA.jpg">
+                </p>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <span class="title">时势：（当当专享亲签版）周期波动下的国家、社会和个人</span>
+                        <br><span class="Subtitle">周期波动下的国家、社会和个人</span>
+                    <p>
+                        <strong>
+                            作者：小Lin
+                        </strong>
+                    </p>
+                    <p class="is-size-7">
+                        为什么不论什么人，都应该了解一点经济金融学知识？
+日本、韩国、俄罗斯、英国等国经济的崛起与衰落，带给我们怎样的启示？
+通胀、通缩、经济泡沫、汇率这些书本中的概念到底怎样影响我们的生活？
+金融财经不无聊，也没有你想得那样复杂，而且，冰冷的数据和规律背后，是充满温度的人间烟火。
+本书主要聚焦于宏观经济，以日本、韩国、俄罗斯、英国、欧盟、希腊等国家或地区的经济发展脉络为主线，以各国的经济与金融事件为核心内容，用大家都能理解的语言将复杂的经济学现象及趋势总结出来，手把手教你认清各种经济金融事件背后的底层逻辑，并通过这些内容的输出与解读，帮助读者建立清晰的底层认知框架，在复杂且不确定的表象中做出准确判断。
+同时，作者将经常出现在新闻中诸如利率、通货膨胀、通货紧缩、泡沫等出现在文中的概念也一次讲透，以更广阔的视角为读者总结出用以指导自己的经济生活的经济金融的相关知识，在故事中得到启发，从热点事件中学会思考，从而更好地规划自己的工作与生活，并进一步构建自己的底层金融思维能力，做复杂世界的明白人。
+                    </p>
+                    <table class="table is-narrow is-striped is-hoverable is-size-7">
+                        <colgroup>
+                            <col style="width: 6rem" />
+                            <col/>
+                        </colgroup>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9787521760941</td>
+                            </tr>
+                            <tr>
+                                <td>出版社</td>
+                                <td>中信出版社</td>
+                            </tr>
+                            <tr>
+                                <td>出版时间</td>
+                                <td>
+                                    2023年
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>装帧</td>
+                                <td>平装</td>
+                            </tr>
+                            <tr>
+                                <td>定价</td>
+                                <td>59.00</td>
+                            </tr>
+                            <tr>
+                                <td>页数</td>
+                                <td>None</td>
+                            </tr>
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                        <a href="https://book.douban.com/subject/36673627/" target="_blank">
+                                                豆瓣
+                                        </a>&nbsp;
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+<h2>其人</h2>
+<p>伴随小Lin的标签是北大、哥大、大摩、原华尔街基金分析师，拿出其中之一，已是很多人无法达到的人生高度。</p>
+<p>可就是这样一位明明可以靠颜值的管上金融领域独树一帜的 KOL，在视频传作多年后最近居然出书。</p>
+<p>毫无疑问，小Lin对深度知识和信息的整合和诠释能力全网Up主排在第一梯队。</p>
+</div>
+<div class="section" id="section-3">
+<h2>其书</h2>
+<p>感觉 小Lin 对味的原因之一是 TA 强调了周期对人的影响。</p>
+<p>『剧透』书的主要内容是通俗讲解了日本、印度、中东、俄罗斯等国的金融事件。</p>
+<p>如果读者具备金融素养，读起来会毫不费劲。</p>
+<p>时势其实挺难翻译的，但没读过的人应该知道「时势造英雄」这句。</p>
+<p>一个有智慧的人，在一段时期内的客观形势下，懂得在此历史中，顺势而为，做利国利民的事。</p>
+<p>这不就是小 Lin 在做的吗？</p>
+<p>如果您扫码购买阅读，在收获对世界的理解的同时，亦是对我一份鼓励：</p>
+<img alt="扫码购买。" src="https://kaffa.im/static/img/2024/qrcode-of-shishi.png" />
+<p><a class="reference external" href="https://u.jd.com/jqXAGQ5">也建议没有金融基础的人同时组合购买金融基础书</a></p>
+</div>
+
+        <div class="is-divider" data-content="Comments"></div>
+        <div id="gitalk-container"></div>
+    </section>
+</article>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '47c6091c4039fb3df197',
+    clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+    repo: 'kaffa.github.io',
+    owner: 'kaffa',
+    admin: ['kaffa'],
+    id: location.pathname.substr(0, 50),
+    distractionFreeMode: false
+  });
+  gitalk.render('gitalk-container');
+</script>
+    </main>
+    <footer class="footer is-max-widescreen">
+        <div class="content has-text-centered">
+            版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+            <p>
+                本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+            </p>
+            <p>
+                <a href="https://www.foreverblog.cn/" target="_blank" >
+                    <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;">
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <div id="modal-project" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+              <p>项目明细在建设中...</p>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /*====================
+              Modal
+             ====================*/
+
+            // Functions to open and close a modal
+            function openModal($el) {
+                $el.classList.add('is-active');
+            }
+
+            function closeModal($el) {
+                $el.classList.remove('is-active');
+            }
+
+            function closeAllModals() {
+            (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                    closeModal($modal);
+                });
+            }
+
+            // Add a click event on buttons to open a specific modal
+            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                const modal = $trigger.dataset.target;
+                const $target = document.getElementById(modal);
+                $trigger.addEventListener('click', () => {
+                     openModal($target);
+                });
+            });
+
+            // Add a click event on various child elements to close the parent modal
+            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                const $target = $close.closest('.modal');
+
+                $close.addEventListener('click', () => {
+                    closeModal($target);
+                });
+            });
+
+            // Add a keyboard event to close all modals
+            document.addEventListener('keydown', (event) => {
+                if (event.code === 'Escape') {
+                    closeAllModals();
+                }
+            });
+
+            /*====================
+              navbar
+             ====================*/
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+            /*====================
+              Projects
+             ====================*/
+            const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+            $panelTab.forEach(el => {
+                el.addEventListener('click', () => {
+                    const $siblings = el.parentNode.children;
+                    for (let i = 0; i < $siblings.length; i++) {
+                        $siblings[i].classList.remove('is-active');
+                    }
+                    el.classList.add('is-active');
+
+                    if (el.title == 'all') {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.remove("is-hidden");
+                        }
+                    } else {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.add("is-hidden");
+                        }
+
+                        const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                        for (let i = 0; i < $targetPanelBlock.length; i++) {
+                            $targetPanelBlock[i].classList.remove("is-hidden");
+                        }
+                    }
+                });
+            });
+
+            /*====================
+              Email
+             ====================*/
+            const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+            $email.forEach(el => {
+                el.innerText = ['admin', '@', 'kaffa.im'].join('');
+            });
+
+            /*====================
+              Table
+            ====================*/
+            var altKeyPressed = false;
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Alt' && !altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = true;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'table-row';
+                    });
+                }
+            });
+
+            document.addEventListener('keyup', function(event) {
+                if (event.key === 'Alt' && altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = false;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
