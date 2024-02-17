@@ -27,5 +27,15 @@ def get_list():
             'Owner': '浪海导航',
             'Icon': 'https://www.langhai.net/assets/images/langhai-logo.png',
             'Email': '676558206@qq.com'
+        }, {
+            'ID': 3,
+            'Name': '非理勿试',
+            'URL': 'https://www.ntiy.com/',
+            'Intro': '“Never Try It Yourself”，记录、分享、学习',
+            'Owner': 'Soulizer、欧阳桂花、谢让',
+            'Icon': '/static/img/2024/langhai-logo.png',
+            'Email': 'collect@live.com',
+            'QQ': '3018930',
+            'WX': '3018930(VIA_QQ)'
         }
     ]
