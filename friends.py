@@ -33,7 +33,7 @@ def get_list():
             'URL': 'https://www.ntiy.com/',
             'Intro': '“Never Try It Yourself”，记录、分享、学习',
             'Owner': 'Soulizer、欧阳桂花、谢让',
-            'Icon': '/static/img/2024/langhai-logo.png',
+            'Icon': '/static/img/2024/ntiy_logo_o.png',
             'Email': 'collect@live.com',
             'QQ': '3018930',
             'WX': '3018930(VIA_QQ)'
