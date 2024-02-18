@@ -187,7 +187,7 @@
 <p>Markdown 的图插件有一个好名字 Mermaid，但 Mermaid 并没有太好的 Pelican 继承。我也并不打算站出来做这么庞大且标准不一的工作。但 rst 的 plantuml 实现了大部分需要的图，且已有一个 Linux 实现。我在此处将之扩展到了 Windows 上，并简化了图片的生成逻辑，增加了配置项。最重要的，支持改动才生成一次，这样可以减少静态内容的生成时间。</p>
 </div>
 
-        <div class="is-divider" data-content="Comments"></div>
+        <div class="is-divider" data-content="giscus"></div>
 
         <script src="https://giscus.app/client.js"
                 data-repo="kaffa/kaffa.github.io"
@@ -206,12 +206,10 @@
                 async>
         </script>
 
-        <div class="is-divider" data-content="Comments">Gitalk 评论</div>
+        <div class="is-divider" data-content="gitalk"></div>
         <div id="gitalk-container"></div>
 
         <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
         <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
         <script>
           var gitalk = new Gitalk({

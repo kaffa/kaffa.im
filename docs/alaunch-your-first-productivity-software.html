@@ -181,7 +181,7 @@
 <p>在 Windows 平台，现在官方正途的本是 C# 和 C++，但 C# 依赖.Net Runtime，WinUI 总感觉慢悠悠的，对不起效率工具二字。而 C++ 开发太慢成本很高，在剩下的选项中，我尝试了 Python 的 Tkinter、PyQt/PySide、wxWidget 等，发现最小打包后的尺寸也不小。Electron 也有考虑，但同样看不上，当然，我发现了 Object Pascal 的 Lazarus，经过测试后，发现启动速度和性能差不多可以接受，但其打包的尺寸也不小。最后，我发现了 Delphi Community Ed. 于是将 Lazarus 代码作了迁移。</p>
 <p>以往我的个体软件过程，Web类的效率较高，这次迁移到 Native Client，从开发软件选型到项目计划，从到用例到设计，从编码到测试，一共耗时 7 天，约 21 小时，升级了这个小软。ALaunch，一个用拖放来管理程序和文件的的启动器，希望它可以满足大部分人对于软件启动管理的预期。</p>
 <p>感谢阅读。</p>
-        <div class="is-divider" data-content="Comments"></div>
+        <div class="is-divider" data-content="giscus"></div>
 
         <script src="https://giscus.app/client.js"
                 data-repo="kaffa/kaffa.github.io"
@@ -200,12 +200,10 @@
                 async>
         </script>
 
-        <div class="is-divider" data-content="Comments">Gitalk 评论</div>
+        <div class="is-divider" data-content="gitalk"></div>
         <div id="gitalk-container"></div>
 
         <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
         <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
         <script>
           var gitalk = new Gitalk({
