@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - website</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/website.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-06T12:00:00+08:00</updated><entry><title>提交至十年之约</title><link href="https://kaffa.im/be-a-member-of-foreverblog-cn.html" rel="alternate"></link><published>2024-02-06T12:00:00+08:00</published><updated>2024-02-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-06:/be-a-member-of-foreverblog-cn.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-2"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - website</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/website.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-18T20:50:00+08:00</updated><entry><title>增加 giscus 评论系统</title><link href="https://kaffa.im/add-giscus-comment-system.html" rel="alternate"></link><published>2024-02-18T20:50:00+08:00</published><updated>2024-02-18T20:50:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-18:/add-giscus-comment-system.html</id><summary type="html">&lt;p class="first last"&gt;这既不是项目的问题，也不是我的问题，但这里确实存在一个问题，可以用 giscus 解决&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="gitalk-network-error"&gt;
+&lt;h2&gt;Gitalk 报错：Network Error&lt;/h2&gt;
+&lt;p&gt;才发现如果不科学，Gitalk 就报错了 Network Error。&lt;/p&gt;
+&lt;p&gt;话说，我不应该解决这个问题，也不应用什么 Vercel 代理绕过这个问题，于是可以...&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="giscus-1"&gt;
+&lt;h2&gt;添加 giscus 作为评论系统&lt;/h2&gt;
+&lt;p&gt;话说很早就看见了 GitHub Discussion 的出现，但一直没想到用。今天搜 「discussion 作为评论」后，发现了 giscus，于是在 Gitalk 之上，增加了 giscus，这样各自兼顾了。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="website"></category><category term="giscus"></category></entry><entry><title>提交至十年之约</title><link href="https://kaffa.im/be-a-member-of-foreverblog-cn.html" rel="alternate"></link><published>2024-02-06T12:00:00+08:00</published><updated>2024-02-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-06:/be-a-member-of-foreverblog-cn.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;十年之约&lt;/h2&gt;
 &lt;p&gt;加入了&lt;a class="reference external" href="https://www.foreverblog.cn/"&gt;十年之约&lt;/a&gt;，相信写十年是一件不容易的事吧，所以选择 hard mode 的我决定加入。那意味着到 2034-02-05 时，如果我的博客还在，才叫达成目标，果然很长期主义。&lt;/p&gt;
 &lt;div class="section" id="gravatar"&gt;

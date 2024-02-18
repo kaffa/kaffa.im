@@ -218,24 +218,47 @@
 <p>后来完成了修理后，令人后怕的一幕发生了，在确认过插座开关处于关闭状态时，插在插座上的灯居然亮了——那就是说，刚才的修理过程中，由于试电笔坏了没有试电，我几乎在触电的边缘上裸奔，还是个人习惯让操作过程整体未碰触带电部分，要不可能会触电了。</p>
 <p>这个经历告诉我，安全的操作步骤和工具的重要性，没有工具时，在是否有电上，不经过测试，不值得太自信。</p>
         <div class="is-divider" data-content="Comments"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="Comments">Gitalk 评论</div>
         <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
     </section>
 </article>
 
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script>
-  var gitalk = new Gitalk({
-    clientID: '47c6091c4039fb3df197',
-    clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
-    repo: 'kaffa.github.io',
-    owner: 'kaffa',
-    admin: ['kaffa'],
-    id: location.pathname.substr(0, 50),
-    distractionFreeMode: false
-  });
-  gitalk.render('gitalk-container');
-</script>
     </main>
     <footer class="footer is-max-widescreen">
         <div class="content has-text-centered">

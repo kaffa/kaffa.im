@@ -1,0 +1,22 @@
+增加 giscus 评论系统
+##################################################
+
+:date: 2024-02-18 20:50
+:author: Kaffa
+:category: website
+:tags: giscus
+:slug: add-giscus-comment-system
+:summary: 这既不是项目的问题，也不是我的问题，但这里确实存在一个问题，可以用 giscus 解决
+
+Gitalk 报错：Network Error
+========================================
+
+才发现如果不科学，Gitalk 就报错了 Network Error。
+
+话说，我不应该解决这个问题，也不应用什么 Vercel 代理绕过这个问题，于是可以...
+
+添加 giscus 作为评论系统
+========================================
+
+话说很早就看见了 GitHub Discussion 的出现，但一直没想到用。今天搜 「discussion 作为评论」后，发现了 giscus，于是在 Gitalk 之上，增加了 giscus，这样各自兼顾了。
+
