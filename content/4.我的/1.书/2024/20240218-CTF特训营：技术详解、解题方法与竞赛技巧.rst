@@ -1,0 +1,17 @@
+CTF特训营：技术详解、解题方法与竞赛技巧
+########################################################
+
+:date: 2024-02-18 14:10
+:author: Kaffa
+:category: book
+:tags: cyber-security
+:slug: ctf-special-training-camp-technical-explanation-problem-solving-and-competition-skills
+:summary: 安全知识框架十多年也没什么变化，安全方向其实是 IT 一个好方向。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/2obDNFTI3ycvbtLyncHjfS
+
+
+为什么读
+====================
+
+`参见「从0到1：CTFer成长之路」 <https://kaffa.im/from-0-to-1-ctfer-s-path-to-growth.html>`_

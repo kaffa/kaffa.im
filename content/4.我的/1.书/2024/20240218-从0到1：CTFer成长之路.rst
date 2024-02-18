@@ -1,0 +1,23 @@
+从0到1：CTFer成长之路
+########################################################
+
+:date: 2024-02-18 14:00
+:author: Kaffa
+:category: book
+:tags: cyber-security
+:slug: from-0-to-1-ctfer-s-path-to-growth
+:summary: 大学时代对网络安全非常有兴趣，但也许退休后才有能去发展兴趣。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/1QafVQYfYNXD10nfi9VbXy
+
+
+为什么读
+====================
+
+大学时代对网络安全非常有兴趣，其间混迹于PEDIY，也加入过BCG。
+
+后来觉得，在大多数情况下，建设和保护的意义都要大于寻找系统弱点，并以之为突破口获取更大特权。
+
+两年前在前司内网看到有CTF竞赛，参与过两期，但非技术部门难组到队伍。
+
+后看到 nu1l 的这本书，这些天翻看了一番，对 CTF 比赛来说是一本很好的入门。

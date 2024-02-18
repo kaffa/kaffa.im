@@ -37,7 +37,7 @@
 
 
 
-如果您扫码购买阅读，在收获对世界的理解的同时，亦是对我一份鼓励：
+如果您扫码一下AFF链接购买阅读，在收获对世界的理解的同时，亦是对我一份鼓励：
 
 .. image:: https://kaffa.im/static/img/2024/qrcode-of-shishi.png
     :alt: 扫码购买。

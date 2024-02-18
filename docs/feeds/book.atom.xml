@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-16T13:00:00+08:00</updated><entry><title>时势：周期波动下的国家、社会和个人</title><link href="https://kaffa.im/the-situation-countries-societies-and-individuals-under-cyclical-fluctuations.html" rel="alternate"></link><published>2024-02-16T13:00:00+08:00</published><updated>2024-02-16T13:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-16:/the-situation-countries-societies-and-individuals-under-cyclical-fluctuations.html</id><summary type="html">&lt;p class="first last"&gt;通过此书可通俗了解世界格局。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-18T14:10:00+08:00</updated><entry><title>CTF特训营：技术详解、解题方法与竞赛技巧</title><link href="https://kaffa.im/ctf-special-training-camp-technical-explanation-problem-solving-and-competition-skills.html" rel="alternate"></link><published>2024-02-18T14:10:00+08:00</published><updated>2024-02-18T14:10:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-18:/ctf-special-training-camp-technical-explanation-problem-solving-and-competition-skills.html</id><summary type="html">&lt;p class="first last"&gt;安全知识框架十多年也没什么变化，安全方向其实是 IT 一个好方向。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;为什么读&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://kaffa.im/from-0-to-1-ctfer-s-path-to-growth.html"&gt;参见「从0到1：CTFer成长之路」&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="cyber-security"></category></entry><entry><title>从0到1：CTFer成长之路</title><link href="https://kaffa.im/from-0-to-1-ctfer-s-path-to-growth.html" rel="alternate"></link><published>2024-02-18T14:00:00+08:00</published><updated>2024-02-18T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-18:/from-0-to-1-ctfer-s-path-to-growth.html</id><summary type="html">&lt;p class="first last"&gt;大学时代对网络安全非常有兴趣，但也许退休后才有能去发展兴趣。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;为什么读&lt;/h2&gt;
+&lt;p&gt;大学时代对网络安全非常有兴趣，其间混迹于PEDIY，也加入过BCG。&lt;/p&gt;
+&lt;p&gt;后来觉得，在大多数情况下，建设和保护的意义都要大于寻找系统弱点，并以之为突破口获取更大特权。&lt;/p&gt;
+&lt;p&gt;两年前在前司内网看到有CTF竞赛，参与过两期，但非技术部门难组到队伍。&lt;/p&gt;
+&lt;p&gt;后看到 nu1l 的这本书，这些天翻看了一番，对 CTF 比赛来说是一本很好的入门。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="cyber-security"></category></entry><entry><title>时势：周期波动下的国家、社会和个人</title><link href="https://kaffa.im/the-situation-countries-societies-and-individuals-under-cyclical-fluctuations.html" rel="alternate"></link><published>2024-02-16T13:00:00+08:00</published><updated>2024-02-16T13:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-16:/the-situation-countries-societies-and-individuals-under-cyclical-fluctuations.html</id><summary type="html">&lt;p class="first last"&gt;通过此书可通俗了解世界格局。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;其人&lt;/h2&gt;
 &lt;p&gt;伴随小Lin的标签是北大、哥大、大摩、原华尔街基金分析师，拿出其中之一，已是很多人无法达到的人生高度。&lt;/p&gt;
@@ -14,7 +27,7 @@
 &lt;p&gt;时势其实挺难翻译的，但没读过的人应该知道「时势造英雄」这句。&lt;/p&gt;
 &lt;p&gt;一个有智慧的人，在一段时期内的客观形势下，懂得在此历史中，顺势而为，做利国利民的事。&lt;/p&gt;
 &lt;p&gt;这不就是小 Lin 在做的吗？&lt;/p&gt;
-&lt;p&gt;如果您扫码购买阅读，在收获对世界的理解的同时，亦是对我一份鼓励：&lt;/p&gt;
+&lt;p&gt;如果您扫码一下AFF链接购买阅读，在收获对世界的理解的同时，亦是对我一份鼓励：&lt;/p&gt;
 &lt;img alt="扫码购买。" src="https://kaffa.im/static/img/2024/qrcode-of-shishi.png" style="width: 200px; height: 200px;" /&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://u.jd.com/jqXAGQ5"&gt;也建议没有金融基础的人同时组合购买金融基础书&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
