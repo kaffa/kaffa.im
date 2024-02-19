@@ -53,7 +53,7 @@
 .. image:: https://kaffa.im/static/img/2023/internet-dog.jpg
     :alt: Internet Dog
 
-|   "On the Internet, nobody knows you're a dog." —— Peter Steiner
+"On the Internet, nobody knows you're a dog." —— Peter Steiner
 
 Peter Steiner 是个漫画家，一生中也写过不少小说，在历史留痕的还是人创造的东西。身份只是人虚构的面具，一位姓钱的大师曾曰过：“爱她，就读她的代码。当你吃了一颗鸡蛋，也不用想着去看看下蛋的鸡。”因此，这里暂没有显示身份和真名，期望在与你的互动中相互认识。
 
