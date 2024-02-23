@@ -10,6 +10,11 @@ Programming Rust, 2nd Edition
 :image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/6cjKIumeqJN55PCarg8laB
 
+评分
+====================
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐ 9/10
+
 在读
 ====================
 

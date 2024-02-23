@@ -10,6 +10,11 @@ The Rust Programming Language, 2nd Edition
 :image: /static/img/2023/hero.png
 :subject_url: https://neodb.social/book/4YWHmHRPkoevhv4LqRQ7Us
 
+评分
+====================
+
+⭐⭐⭐⭐⭐⭐⭐⭐ 8/10
+
 在读
 ====================
 
