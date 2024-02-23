@@ -47,13 +47,14 @@
 &lt;div class="section" id="section-5"&gt;
 &lt;h2&gt;版本&lt;/h2&gt;
 &lt;p&gt;版本。本书就是那种需要挑版本的，挑选古籍出版社的通识，我编了个段子，不必太较真：&lt;/p&gt;
-&lt;p&gt;中书上古国家队，商印专译国图影。
+&lt;blockquote&gt;
+中书上古国家队，商印专译国图影。
 浙古凤凰细甄别，广陵岳麓亦好看。
 黄山齐鲁崇文寻，中州九州师大捡。
-中社科学北京藏，三联生活高教专。&lt;/p&gt;
-&lt;p&gt;本书的浙古版就是原汁原味的，中书有好几个版本，常见版本是文白对照的，这本我拥有的是古吴轩，是苏州细，风格比较雅致。&lt;/p&gt;
+中社科学北京藏，三联生活高教专。&lt;/blockquote&gt;
+&lt;p&gt;本书的浙古版就是原汁原味的，中书有好几个版本，常见版本是文白对照的，这本我拥有的是古吴轩，是苏州系，风格比较雅致。&lt;/p&gt;
 &lt;p&gt;我的选择逻辑是这样的，基本没有场景会与人就『夜航船』的内容论到字的级别，竖版留到 50 岁后读。古吴轩是有品质且有阅读快感的，但最主要的原因还是...(此处省略一个字)。&lt;/p&gt;
-&lt;p&gt;若你算个有闲阶级，最好寻一工作日午后，去到一间有夕阳西晒但也有空调的老书店中，站在书架前亲自选选读读，你在那个时间挑中的版本定最适合的版本。&lt;/p&gt;
+&lt;p&gt;若你算个有闲人，最好寻一工作日午后，去到一间有夕阳西晒但也有空调的老书店中，站在书架前亲自选选读读，你在那个时间挑中的版本定最适合的版本。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-6"&gt;
 &lt;h2&gt;段子&lt;/h2&gt;
@@ -62,6 +63,7 @@
 &lt;/div&gt;
 &lt;div class="section" id="section-7"&gt;
 &lt;h2&gt;摘录&lt;/h2&gt;
+&lt;blockquote&gt;
 &lt;p&gt;九天&lt;/p&gt;
 &lt;p&gt;东方苍天，南方炎天，西方浩天，北方玄天，东北旻天，西北幽天，西南朱天，东南阳天，中央钧天。&lt;/p&gt;
 &lt;p&gt;二十八宿&lt;/p&gt;
@@ -69,6 +71,7 @@
 北方七宿；斗，木獬；牛，金牛；女，土蝠；虚，日鼠；危，月燕；室，火猪；壁，水㺄。
 西方七宿：奎，木狼；娄，金狗；胃，土雉；昴，日鸡；毕，月乌；觜，火猴；参，水猿。
 南方七宿：井，木犴；鬼，金羊；柳，土獐；星，日马；张，月鹿；翼，火蛇；轸，水蚓。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/div&gt;
 </content><category term="book"></category><category term="张岱"></category></entry><entry><title>增加 giscus 评论系统</title><link href="https://kaffa.im/add-giscus-comment-system.html" rel="alternate"></link><published>2024-02-18T20:50:00+08:00</published><updated>2024-02-18T20:50:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-18:/add-giscus-comment-system.html</id><summary type="html">&lt;p class="first last"&gt;这既不是项目的问题，也不是我的问题，但这里确实存在一个问题，可以用 giscus 解决&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="gitalk-network-error"&gt;
