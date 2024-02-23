@@ -174,13 +174,19 @@
 &lt;h2&gt;目标&lt;/h2&gt;
 &lt;p&gt;年度目标&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;被动收入超10000元；
-* GROW：R，0；O，ad、抖音、小红书；W，ad 和 抖音。
-* 五力：供应，D；买家，I；对手，I；替代，I；新进，I。&lt;/li&gt;
-&lt;li&gt;使用 Rust 语言；
-* 能完成 Web&lt;/li&gt;
-&lt;li&gt;升级个人网站；
-* 数据集中&lt;/li&gt;
+&lt;li&gt;被动收入超10000元；&lt;ul&gt;
+&lt;li&gt;GROW：R，0；O，ad、抖音、小红书；W，ad 和 抖音。&lt;/li&gt;
+&lt;li&gt;五力：供应，D；买家，I；对手，I；替代，I；新进，I。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用 Rust 语言；&lt;ul&gt;
+&lt;li&gt;能完成 Web&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;升级个人网站；&lt;ul&gt;
+&lt;li&gt;数据集中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;ARM CPU Apple MacBook；&lt;/li&gt;
 &lt;li&gt;协助 LP 毕业；&lt;/li&gt;
 &lt;/ul&gt;
