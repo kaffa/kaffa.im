@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-18T14:10:00+08:00</updated><entry><title>CTF特训营：技术详解、解题方法与竞赛技巧</title><link href="https://kaffa.im/ctf-special-training-camp-technical-explanation-problem-solving-and-competition-skills.html" rel="alternate"></link><published>2024-02-18T14:10:00+08:00</published><updated>2024-02-18T14:10:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-18:/ctf-special-training-camp-technical-explanation-problem-solving-and-competition-skills.html</id><summary type="html">&lt;p class="first last"&gt;安全知识框架十多年也没什么变化，安全方向其实是 IT 一个好方向。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-22T14:00:00+08:00</updated><entry><title>陶庵梦忆</title><link href="https://kaffa.im/tao-an-meng-yi.html" rel="alternate"></link><published>2024-02-22T14:00:00+08:00</published><updated>2024-02-22T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-22:/tao-an-meng-yi.html</id><summary type="html">&lt;p class="first last"&gt;月光倒囊入水，陶庵移舟过金山寺，二更鼓罢，龙王堂漆静，林下漏月光，疏疏如残雪。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;张岱及本书&lt;/h2&gt;
+&lt;p&gt;我将张岱编入我的「梦系」作家，我甚至怀疑，若宗子邀至湖心亭看雪，没人会拒绝。&lt;/p&gt;
+&lt;p&gt;更多信息，可见我在&lt;a class="reference external" href="https://kaffa.im/ye-hang-chuan.rst"&gt;夜航船&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;书名若翻译文英文，为『Collections of Tao An's Dreams』较恰当，但书中所载恰多是真实。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;为什么读&lt;/h2&gt;
+&lt;p&gt;月光倒囊入水，陶庵移舟过金山寺，二更鼓罢，龙王堂漆静，林下漏月光，疏疏如残雪。&lt;/p&gt;
+&lt;p&gt;崇祯五年，西湖雪三日，湖中人鸟声俱绝，余拏一小舟，独往湖心亭看雪。天与云、与山、与水，上下一白。湖上影子，惟长堤一痕、湖心亭一点、与余舟一芥、舟中人两三粒而已。&lt;/p&gt;
+&lt;p&gt;其小品文所叙，乃是人心之境。&lt;/p&gt;
+&lt;p&gt;若划分为天地人三境，每境又分三级，共九境。&lt;/p&gt;
+&lt;p&gt;张的初始境界至少是地境1，既第4级，至后期，已上到天境1.5，既第7.5级，9级满级。&lt;/p&gt;
+&lt;p&gt;所以，若张进入修真体系，如地师、斗气、雪中之类，都是不出世的顶级高手。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h2&gt;版本&lt;/h2&gt;
+&lt;p&gt;读的是电子版。浙古也有『陶庵梦忆 西湖梦寻』很不错的合版。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="张岱"></category></entry><entry><title>西湖梦寻</title><link href="https://kaffa.im/xi-hu-meng-xun.html" rel="alternate"></link><published>2024-02-22T14:00:00+08:00</published><updated>2024-02-22T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-22:/xi-hu-meng-xun.html</id><summary type="html">&lt;p class="first last"&gt;九溪在烟霞岭西，龙井山南。其地径路崎岖，草木蔚秀，人烟旷绝，幽阒静悄，别有天地，自非人间。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;渊源小忆&lt;/h2&gt;
+&lt;p&gt;大学期间，一汤姓同学考取导游证，领我游杭州三日。杭州十景，除雷峰夕照修葺、曲院风荷闭门外，都游历一番，西湖美景自然掠过不提，还有许多名人墓，如书中读到的苏小小，一下在实地见面，在年少时，自然十分触动。&lt;/p&gt;
+&lt;p&gt;论杭州美景中，最有印象的还是龙井问茶与九溪烟树。&lt;/p&gt;
+&lt;p&gt;二十多岁，余购入 Kindle，读到『九溪在烟霞岭西，龙井山南。其水屈曲洄环，九折而出，故称九溪。其地径路崎岖，草木蔚秀，人烟旷绝，幽阒静悄，别有天地，自非人间。溪下为十八涧，地故深邃，即缁流非遗世绝俗者，不能久居。按志，涧内有李岩寺、宋阳和王梅园、梅花径等迹，今都湮没无存。而地复辽远，僻处江干，老于西湖者，各名胜地寻讨无遗，问及九溪十八涧，皆茫然不能置对。』后又有幸独游九溪，那日天色已是下午五时，途遇莲池大师墓，墓周围掉落许多树种，不辨纲目，但留存十多年不腐。&lt;/p&gt;
+&lt;p&gt;后追张岱，发现这本详细记载西湖的小书，亦很欢喜。&lt;/p&gt;
+&lt;p&gt;书名若翻译文英文，为『Dream Seeking At West Lake』较恰当。&lt;/p&gt;
+&lt;p&gt;若在人生不同时代，年少和年老，都游历西湖，此书会增添几多趣味，不应错过。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="张岱"></category></entry><entry><title>夜航船</title><link href="https://kaffa.im/ye-hang-chuan.html" rel="alternate"></link><published>2024-02-22T14:00:00+08:00</published><updated>2024-02-22T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-22:/ye-hang-chuan.html</id><summary type="html">&lt;p class="first last"&gt;此书应在 15 岁以前读，或在 50 岁以后读，既然 15 岁前未涉之，待 50 岁后再细品。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;注&lt;/h2&gt;
+&lt;p&gt;此词条特指明代张宗子『夜航船』，又有清人破额山人之笔记小说集『夜航船』，未读不表。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;张岱其人&lt;/h2&gt;
+&lt;p&gt;张岱出自书香门第，祖上四代为官，高祖至四品，云南按察副使，甘肃行太仆卿。他世居浙江山阴（绍兴），祖籍为四川绵竹（剑门关之南），字宗子，号陶庵、陶庵老人、蝶庵、古剑老人、古剑陶庵、古剑陶庵老人、古剑蝶庵老人，晚年号六休居士。&lt;/p&gt;
+&lt;p&gt;张岱祖辈虽织入官僚集团，但至他这代，家族已然没落，岱为长，存『公侯之后，必复其始』的心结，其十六岁考上秀才，但乡试总不中举，天启四年（1624年）、天启七年（1627年）、崇祯八年（1635年）三次参加，三次失利。举人够不着，更别说进士，眼看三四十岁了，也许张岱隐约感觉此生难登仕途，但数十载寒窗苦读，已然一身诗书才华，他产生了修明史的念头，此后也成为他的代表成就《石匮书》，共二百二十卷。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h2&gt;本书&lt;/h2&gt;
+&lt;p&gt;本书是张编撰的百科全书，有4000多条目，拿今之高考语文作比，应不超1000考点，拿张岱之资质与努力，今天来做个博导肯定没问题。且有说，天下学问，惟夜航船中最难对付。依次看，若有幸15岁前读完本书的人，必通文学，除此，此间的知识拿到今天多是有趣而无用的，到 50 后再读也不为晚了。&lt;/p&gt;
+&lt;p&gt;书名若翻译文英文，为『the night ferry』比较恰当。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-5"&gt;
+&lt;h2&gt;版本&lt;/h2&gt;
+&lt;p&gt;版本。本书就是那种需要挑版本的，挑选古籍出版社的通识，我编了个段子，不必太较真：&lt;/p&gt;
+&lt;p&gt;中书上古国家队，商印专译国图影。
+浙古凤凰细甄别，广陵岳麓亦好看。
+黄山齐鲁崇文寻，中州九州师大捡。
+中社科学北京藏，三联生活高教专。&lt;/p&gt;
+&lt;p&gt;本书的浙古版就是原汁原味的，中书有好几个版本，常见版本是文白对照的，这本我拥有的是古吴轩，是苏州细，风格比较雅致。&lt;/p&gt;
+&lt;p&gt;我的选择逻辑是这样的，基本没有场景会与人就『夜航船』的内容论到字的级别，竖版留到 50 岁后读。古吴轩是有品质且有阅读快感的，但最主要的原因还是...(此处省略一个字)。&lt;/p&gt;
+&lt;p&gt;若你算个有闲阶级，最好寻一工作日午后，去到一间有夕阳西晒但也有空调的老书店中，站在书架前亲自选选读读，你在那个时间挑中的版本定最适合的版本。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-6"&gt;
+&lt;h2&gt;段子&lt;/h2&gt;
+&lt;p&gt;张公子的船，我的理解是指打破圈层的社交场合中的说话用典不出丑的人均通识。&lt;/p&gt;
+&lt;p&gt;容小僧伸脚，是说「秀才」认澹台灭明是两人而尧舜是一人的典故。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-7"&gt;
+&lt;h2&gt;摘录&lt;/h2&gt;
+&lt;p&gt;九天&lt;/p&gt;
+&lt;p&gt;东方苍天，南方炎天，西方浩天，北方玄天，东北旻天，西北幽天，西南朱天，东南阳天，中央钧天。&lt;/p&gt;
+&lt;p&gt;二十八宿&lt;/p&gt;
+&lt;p&gt;东方七宿：角，木蛟；亢，金龙；氐，土貉；房，日兔；心，月狐；尾，火虎；箕，水豹。
+北方七宿；斗，木獬；牛，金牛；女，土蝠；虚，日鼠；危，月燕；室，火猪；壁，水㺄。
+西方七宿：奎，木狼；娄，金狗；胃，土雉；昴，日鸡；毕，月乌；觜，火猴；参，水猿。
+南方七宿：井，木犴；鬼，金羊；柳，土獐；星，日马；张，月鹿；翼，火蛇；轸，水蚓。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="张岱"></category></entry><entry><title>CTF特训营：技术详解、解题方法与竞赛技巧</title><link href="https://kaffa.im/ctf-special-training-camp-technical-explanation-problem-solving-and-competition-skills.html" rel="alternate"></link><published>2024-02-18T14:10:00+08:00</published><updated>2024-02-18T14:10:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-18:/ctf-special-training-camp-technical-explanation-problem-solving-and-competition-skills.html</id><summary type="html">&lt;p class="first last"&gt;安全知识框架十多年也没什么变化，安全方向其实是 IT 一个好方向。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;为什么读&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://kaffa.im/from-0-to-1-ctfer-s-path-to-growth.html"&gt;参见「从0到1：CTFer成长之路」&lt;/a&gt;&lt;/p&gt;
@@ -40,7 +111,7 @@
 &lt;h2&gt;读后&lt;/h2&gt;
 &lt;p&gt;这本书从源码角度讲解了VUE的各个细节是如何实现的。&lt;/p&gt;
 &lt;p&gt;VUE是什么？是保持前端代码可维护性的方式，很多人没有弄明白，为什么有了HTML、CSS、JavaScript后，还会出现各种框架，主要就是有反复出现的痛点，而框架搞定了痛点，框架的本质是灭杀真·程序员。&lt;/p&gt;
-&lt;p&gt;本书输入讲解了How，但未讲Why，如果从痛点开始讲就好了。&lt;/p&gt;
+&lt;p&gt;本书输入讲解了How，但未讲Why，如果从痛点开始讲就好了，毕竟这个时代，Why比How更关键，后者可以靠AI，一定程度可以解决，但Why不行，Why是原动力，AI不会自己提Why，也幸好AI没有，如果有了，那会有些吓人。&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="book"></category><category term="front-end"></category></entry><entry><title>软件困局-为什么聪明的程序员会写出糟糕的代码</title><link href="https://kaffa.im/the-problem-with-software-why-smart-engineers-write-bad-code.html" rel="alternate"></link><published>2024-02-07T11:00:00+08:00</published><updated>2024-02-07T11:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-07:/the-problem-with-software-why-smart-engineers-write-bad-code.html</id><summary type="html">&lt;p class="first last"&gt;住院期间阅读的，得空值得一看。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
