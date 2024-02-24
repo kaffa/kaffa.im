@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-22T14:00:00+08:00</updated><entry><title>陶庵梦忆</title><link href="https://kaffa.im/tao-an-meng-yi.html" rel="alternate"></link><published>2024-02-22T14:00:00+08:00</published><updated>2024-02-22T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-22:/tao-an-meng-yi.html</id><summary type="html">&lt;p class="first last"&gt;月光倒囊入水，陶庵移舟过金山寺，二更鼓罢，龙王堂漆静，林下漏月光，疏疏如残雪。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-24T14:25:00+08:00</updated><entry><title>FeedDemon</title><link href="https://kaffa.im/feeddemon.html" rel="alternate"></link><published>2024-02-24T14:25:00+08:00</published><updated>2024-02-24T14:25:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-24:/feeddemon.html</id><summary type="html">&lt;p class="first last"&gt;在 Feed 这件事上，抛开 FeedDemon 的乱码瑕疵不说，它依然是我最爱的 Feed 软件。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;简介&lt;/h2&gt;
+&lt;p&gt;曾在十年前，大约是 Google Reader 被死亡的那年，我挑选过 FeedDemon 的替代软件。&lt;/p&gt;
+&lt;p&gt;当时我的结论是，在线使用用 Feedly，本地使用 FeedDemon 外没替代。&lt;/p&gt;
+&lt;p&gt;后来出现了 irreader，一款虽存在很多硬伤但还算好用的软件，唯二的缺点是稳定性和太占资源。&lt;/p&gt;
+&lt;p&gt;有一段时间，我转到了 Feedly，一直很稳定。&lt;/p&gt;
+&lt;p&gt;事隔多年，大约是 2020 年，我又再去过 &lt;a class="reference external" href="https://nickbradbury.com/"&gt;Nick Bradbury&lt;/a&gt; 的博客，我很想告诉他的 &lt;a class="reference external" href="http://www.feeddemon.com/"&gt;FeedDemon&lt;/a&gt; 依然是 Windows 上最好的阅读软件。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="feeddemon2"&gt;
+&lt;h2&gt;FeedDemon2&lt;/h2&gt;
+&lt;p&gt;RSS 或 ATOM，对于内容分发和内容消费，都不是关键，它们只是渠道的技术背景。&lt;/p&gt;
+&lt;p&gt;Feed 的确是极客思维的产物，天然反商业，它们最简单直白的方式交换内容。&lt;/p&gt;
+&lt;p&gt;商业不欢迎 Feed 的道理很简单，内容的创造着和消费者点对点了，没有中间商，哪里会还需要平台？&lt;/p&gt;
+&lt;p&gt;Anyway，管它呢，我还是像使用 FeedDemon 来阅读我的 Feeds。&lt;/p&gt;
+&lt;p&gt;Nick Bradbury 说，他使用了一些第三方组件，且升级了 Delphi 的 Unicode 支持，所以&lt;a class="reference external" href="https://nickbradbury.com/2013/03/19/my-plan-for-feeddemon/"&gt;不太容易开源&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;我于是产生了一个为自己复刻 FeedDemon 的想法，先叫做 FeedDemon2 或 FeedAngel 或 FeedLemon 吧。&lt;/p&gt;
+&lt;p&gt;不知我的朋友们怎么看，是否你们也需要一个完美支持 Unicode 和中文的 FeedDemon 复刻呢，也许哪天我就开始做了。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="software"></category><category term="Emacs"></category><category term="Emacs Lisp"></category></entry><entry><title>陶庵梦忆</title><link href="https://kaffa.im/tao-an-meng-yi.html" rel="alternate"></link><published>2024-02-22T14:00:00+08:00</published><updated>2024-02-22T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-22:/tao-an-meng-yi.html</id><summary type="html">&lt;p class="first last"&gt;月光倒囊入水，陶庵移舟过金山寺，二更鼓罢，龙王堂漆静，林下漏月光，疏疏如残雪。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;评分&lt;/h2&gt;
 &lt;p&gt;⭐⭐⭐⭐⭐⭐⭐ 10/10&lt;/p&gt;
@@ -3638,35 +3657,4 @@ Microsoft Edge Canary 浏览器。&lt;/p&gt;
 2、想将个体软件过程写给孩子，实际是一个远期目标；
 3、想将两个域名的服务交换一下；
 4、想探索MJ生成图的技巧；&lt;/p&gt;
-&lt;p&gt;但上述没太多作用，主要目标还是先完成几个MVP。&lt;/p&gt;</content><category term="article"></category></entry><entry><title>2023H1进展</title><link href="https://kaffa.im/side-projects-2023H1.html" rel="alternate"></link><published>2023-05-12T09:17:00+08:00</published><updated>2023-05-12T09:17:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-05-12:/side-projects-2023H1.html</id><summary type="html">&lt;p&gt;汇报域名的2023H1进展&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Review 2年前各域名的规划&lt;/h2&gt;
-&lt;p&gt;2020年12月写过&lt;a href="https://kaffa.im/questions-and-detail-plan-about-my-domains"&gt;对手头域名重新规划后提问&lt;/a&gt;，这里是后续的跟踪。&lt;/p&gt;
-&lt;h3&gt;kaffa.im&lt;/h3&gt;
-&lt;p&gt;个人随笔博客。输出的量相对少，但也缺少终极策略应对，看到《原子习惯》，意识到值得做的是为开始书写变得更容易。Let's 创造一个简单入口，根据直觉我随手写了一个cmd，双击发现居然有效。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&amp;quot;D:\Program Files\JetBrains\PyCharm Community Edition 2022.1.1\bin\pycharm64.exe&amp;quot; D:\code\github\kaffa\kaffa.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;g*b.com&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;程序来自十多年前和朋友一起自研的一些基础函数，封装了路由功能，实现了基于白名单和黑名单的安全；后朋友继续改进为一个灵活高效几乎性能无损的动态反射 PHP Framework——命名为 vo，更点赞的是，随手一些代码实现了 PHP 的字节码发布，并支持服务器绑定，其实开发成一个保护源码的产品，也会有不少市场。&lt;/li&gt;
-&lt;li&gt;geekkb.com 选型时，考虑过 Laravel，但嫌弃它太重，且组件更重完全不可控，于是我这几个月分支并升级了 vo，并把它的组件升级到最新版。&lt;/li&gt;
-&lt;li&gt;加入了语言选项，增加了 vo 自动多语的支持；&lt;/li&gt;
-&lt;li&gt;前端使用 Semantic UI (www.oschina.net 也用此 CSS Framework)，模板是自己写的，但 SEO 效果不太满意，原计划使用 SEO 友好且响应式的 Hugo 的模版，现在更趋向于基于 bulma 自研一套简单但结果清晰的，不追求像素对齐，追求语义和结构清晰，内容可用。&lt;/li&gt;
-&lt;li&gt;将 jQuery Ajax 替换为了 fetch，按说在浏览器发起网络请求，XMLHttp 与 fetch 都是一样的走系统的网络库的，性能无差，但据说因 promise 会获得少量优势，可按原生事件机制来理解吧，比 jQuery 的强在事件机制大部分是在 V8 中的；&lt;/li&gt;
-&lt;li&gt;还有一些预期改进，实现 SEO 的 A/B Test 机制；对非 SEO 页面改为 Vue 提高复用，将保持在 www.t*e.com 实现。&lt;/li&gt;
-&lt;li&gt;开发了多年的应用，最后会发现成功的应用大多都是屎山，理想的架构、规划和计划最终总是无法与现实接洽的，除非控制团队规模足够小，且秉持长期主义，“反商业运作”。精品大多是一个人(tian cai)完成的。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;t*e.com&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;原先是技术笔记的临时存放，现转到了 geekkb.com，在注册域名信息弄错了，ICANN 对处理域名注册和信息更改还是比较慎(gu)重(ban)的，幸运的是，服务商终于在3周后认可了我提交的材料。伴随的还有，发给 namesilo 的几封 Email 后生效了，它们将不成功的域名转移退钱了。&lt;/li&gt;
-&lt;li&gt;原目标是 100 篇文章，现在 geekkb.com 完成 60 篇，刚刚及格，在本月先增加文章数量到 100 篇；1a * 25ml / 1d 的速度更新，选题按个人兴趣。&lt;/li&gt;
-&lt;li&gt;原定的论坛感觉时机不成熟，未找到维护管理的人，此目标降低优先级挂起。&lt;/li&gt;
-&lt;li&gt;创造了天天导航 www.t*e.com/nav ，登录后可批量新增和拖放网址分类，能添加个人评语；科学后可代理获取不存在的网址信息，实现自动获取 favicon 和网址内容信息；考虑两年内实现自动分类和标记（基于 AI，也可能有现成的项目，应该是肯定有）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;a*o.cn&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;demo 和 playground。&lt;/li&gt;
-&lt;li&gt;将产品挂上去&lt;/li&gt;
-&lt;li&gt;subdomain: o.a*o.cn，做成一个低代码的对象管理系统，曰万象。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;coffees.app&lt;/h3&gt;
-&lt;p&gt;可完成一个类似开放长椅的 GIS 应用，但没有资源运营，终不如卖出。&lt;/p&gt;</content><category term="article"></category></entry></feed>
+&lt;p&gt;但上述没太多作用，主要目标还是先完成几个MVP。&lt;/p&gt;</content><category term="article"></category></entry></feed>
