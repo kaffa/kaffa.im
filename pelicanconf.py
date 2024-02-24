@@ -229,7 +229,7 @@ CATEGORY_DICT = {
     'words': {'name': '言论', 'moment': '启动一个项目'},
 
     'article': {'name': '文章', 'moment': '创作一篇文章'},
-    'software': {'name': '软件', 'moment': '编写一个软件'},
+    'software': {'name': '软件', 'moment': '记录一个软件'},
     'book-list': {'name': '书单', 'moment': '精选一款书单'},
     'weekly': {'name': '周报', 'moment': '汇报一次周报'},
 
