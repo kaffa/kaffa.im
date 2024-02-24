@@ -226,7 +226,7 @@ CATEGORY_DICT = {
     'website': {'name': '网站', 'moment': '记录一条笔记'},
     'reading': {'name': '读书', 'moment': '记录一条笔记'},
     'digital': {'name': '数智', 'moment': '记录一条笔记'},
-    'words': {'name': '言论', 'moment': '启动一个项目'},
+    'words': {'name': '言论', 'moment': '记录一条言论'},
 
     'article': {'name': '文章', 'moment': '创作一篇文章'},
     'software': {'name': '软件', 'moment': '记录一个软件'},
