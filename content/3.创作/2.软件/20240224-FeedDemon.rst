@@ -4,7 +4,7 @@ FeedDemon
 :date: 2024-02-24 14:25
 :author: Kaffa
 :category: software
-:tags: Emacs, Emacs Lisp
+:tags: feed
 :slug: feeddemon
 :summary: 在 Feed 这件事上，抛开 FeedDemon 的乱码瑕疵不说，它依然是我最爱的 Feed 软件。
 :image: /static/img/2024/flameball-sm.png
