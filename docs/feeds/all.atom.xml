@@ -224,97 +224,7 @@
 &lt;img alt="扫码购买。" src="https://kaffa.im/static/img/2024/qrcode-of-shishi.png" style="width: 200px; height: 200px;" /&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://u.jd.com/jqXAGQ5"&gt;也建议没有金融基础的人同时组合购买金融基础书&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="book"></category><category term="finance"></category></entry><entry><title>2023 回顾</title><link href="https://kaffa.im/2023-review.html" rel="alternate"></link><published>2024-02-14T12:00:00+08:00</published><updated>2024-02-14T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-14:/2023-review.html</id><summary type="html">&lt;p class="first last"&gt;从目标、收获、挑战和感悟上总结 2023，并设立 2024 粗粒度目标&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;引言&lt;/h2&gt;
-&lt;p&gt;2023 是退步的一年，也是进步的一年。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;目标&lt;/h2&gt;
-&lt;p&gt;年度目标&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;被动收入超10000元；&lt;ul&gt;
-&lt;li&gt;GROW：R，0；O，ad、抖音、小红书；W，ad 和 抖音。&lt;/li&gt;
-&lt;li&gt;五力：供应，D；买家，I；对手，I；替代，I；新进，I。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;使用 Rust 语言；&lt;ul&gt;
-&lt;li&gt;能完成 Web&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;升级个人网站；&lt;ul&gt;
-&lt;li&gt;数据集中&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ARM CPU Apple MacBook；&lt;/li&gt;
-&lt;li&gt;协助 LP 毕业；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-4"&gt;
-&lt;h2&gt;季度事件&lt;/h2&gt;
-&lt;p&gt;Q1：进入后疫情时代；发现住所后有山，常去户外锻炼；购入更多钱币收藏；艾米丸子的后代肉肉长成一只长毛猫；&lt;/p&gt;
-&lt;p&gt;Q2：尝试 AIGC，从日常使用到服务；更新驾驶证；几次春季外拍；&lt;/p&gt;
-&lt;p&gt;Q3：消耗一批多趣酷思胶囊和手冲咖啡豆；闭关看了一些闲书、小说；玩了几款小游戏，智力和卡牌；LP 尝试了健康套餐和利拉鲁肽，成效极限5kg；&lt;/p&gt;
-&lt;p&gt;Q4：发现经济、市场和就业依然未好转，投入一些时间在街猫。&lt;/p&gt;
-&lt;div class="section" id="aigc"&gt;
-&lt;h3&gt;AIGC&lt;/h3&gt;
-&lt;p&gt;2022末，耀眼的共识莫过于基于 Transformer 的 LLM 的 ChatGPT 技术。AIGC 没有像其它技术热潮一样走完一个高点就进入常态化，2023 它依然是最重要的事，甚至可能是这 30 年内最重要的事。&lt;/p&gt;
-&lt;p&gt;年初，我尝试了 AIGC 的能力后，注册和使用了它的 API，用两晚验证了结构化产生文章的想法。由于 API 调用频率所限，我用整整两周时间才跑完预定的文章列表，约有十万多条。然后是上线，用一个月验证想法，看数据，优化，再上线，最终，我发现对内容本身的预期太高，在真实使用时并没有达到期望。对于 AIGC，差不多可以解决 60% 的内容痛点，剩余的依然需要人工验证、SEO、增长和围绕内容审核的成本投入。&lt;/p&gt;
-&lt;p&gt;第二形态是文生图，接下来的两个月，我使用 AIGC 去开了抖音、小红书、快手账号，其中有些涨粉效果可以，但粉丝和小黄车不匹配和对应，成交数据很差。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-5"&gt;
-&lt;h2&gt;收获&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;产生被动收入：AIGC的内容产生了非常有限的被动收入，未及预期，计划迭代升级；&lt;/li&gt;
-&lt;li&gt;学习 Rust 语言：Rust 学习曲线陡峭，大约能使用 Rust 进行命令行和网络、Web编程；&lt;/li&gt;
-&lt;li&gt;更新个人网站：done. 五年内不大改；&lt;/li&gt;
-&lt;li&gt;ARM CPU Apple MacBook：看着 8g 丐版，依然下不去手，暂未购入；&lt;/li&gt;
-&lt;li&gt;协助 LP 毕业：done.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;EI分析：&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;认知：有进展，未进行量化测定；&lt;ul&gt;
-&lt;li&gt;记忆和问题解决：有目的地在认知领域扩展阅读和思考，记忆、问题解决等均有可感受的进步；&lt;/li&gt;
-&lt;li&gt;学习力与注意力：个人生活变化，社交圈缩小，能力有所钝化；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;情感：情绪管理、人际关系，无明显进展；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-6"&gt;
-&lt;h2&gt;挑战&lt;/h2&gt;
-&lt;p&gt;主挑战是人生动力，次要挑战是财务压力。&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;情绪：情绪管理存在挑战；&lt;/li&gt;
-&lt;li&gt;自驱：保持稳定；&lt;/li&gt;
-&lt;li&gt;人际：缩小社交圈；&lt;/li&gt;
-&lt;li&gt;健康：趋弱，有多次发烧和一次住院；&lt;/li&gt;
-&lt;li&gt;睡眠：Q1,6.5h，Q2,6h，Q3,6h，Q4,7.5；差不多上半年 6.5 小时左右，下半年 7.5 小时左右；&lt;/li&gt;
-&lt;li&gt;适应：技术带来的不确定性和动态变化，应对复杂和不确定的经济环境上，敏锐度减弱。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-7"&gt;
-&lt;h2&gt;感悟&lt;/h2&gt;
-&lt;p&gt;虽然个人抗压能力强，但压力也不可调节地 undermine 健康，之所以混杂英文是表示这种影响并不随压力调节能力。&lt;/p&gt;
-&lt;p&gt;身边的亲人和朋友，都有不同程度的健康问题，对我来说，健康会是非常重要的议题了。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-8"&gt;
-&lt;h2&gt;致谢&lt;/h2&gt;
-&lt;p&gt;这一年中，有很多人帮助过我。我要在此由衷感谢家人和帮助过我的人。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-9"&gt;
-&lt;h2&gt;结语&lt;/h2&gt;
-&lt;p&gt;2023 是工作多年以来最轻松平静的一年，新年也已近过完，2024 该有所期待。&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;获得一门认证&lt;/li&gt;
-&lt;li&gt;阅读 20 本书&lt;/li&gt;
-&lt;li&gt;在两个领域内输出 100 篇&lt;/li&gt;
-&lt;li&gt;产生被动收入 6000 元&lt;/li&gt;
-&lt;li&gt;ARM CPU Apple MacBook&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-</content><category term="article"></category><category term="2023"></category></entry><entry><title>Fuze Tea</title><link href="https://kaffa.im/fuze-tea.html" rel="alternate"></link><published>2024-02-13T22:00:00+08:00</published><updated>2024-02-13T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-13:/fuze-tea.html</id><summary type="html">&lt;p class="first last"&gt;少数几种口感不错的茶&lt;/p&gt;
+</content><category term="book"></category><category term="finance"></category></entry><entry><title>Fuze Tea</title><link href="https://kaffa.im/fuze-tea.html" rel="alternate"></link><published>2024-02-13T22:00:00+08:00</published><updated>2024-02-13T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-13:/fuze-tea.html</id><summary type="html">&lt;p class="first last"&gt;少数几种口感不错的茶&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;相关记忆&lt;/h2&gt;
 &lt;p&gt;21年去过坂田工作，期间有一段时间中午根本不想吃饭，想到曾经在新加坡旅游的一个月，经常去街区市场吃KFC，长期吃快餐也是可行的，麦当劳的汉堡我也喜欢。某天，我在搭配汉堡的饮品中发现一种 fuzetea，尝过后，居然发现口感非常好，似乎在那么多年并没有尝过类似的风味。&lt;/p&gt;
@@ -1698,14 +1608,14 @@ rm对rf，drop对purge，删库对跑路。
 &lt;li&gt;受众：从网站访问者的角度思考，有时需要采用A/B测试；&lt;/li&gt;
 &lt;li&gt;气质：问就是蓝色；&lt;/li&gt;
 &lt;li&gt;对手：这里指避开竞品使用的色彩；&lt;/li&gt;
+&lt;li&gt;红色：血液、激情、斗志。&lt;/li&gt;
+&lt;li&gt;粉色：固有印象是年轻、少女、浪漫主义。&lt;/li&gt;
+&lt;li&gt;橙色：阳光、热情、运动、食欲。&lt;/li&gt;
+&lt;li&gt;黄色：警告色。虽然前有即刻黄了，但美团却成了。&lt;/li&gt;
+&lt;li&gt;绿色：绿色是这颗星球上植物的颜色，然而并不是因为植物偏好绿色，相反它们通过反射舍弃绿色，让我们误以为绿色是它们的颜色。绿色在很多时候还是有毒化学物质的颜色(难道因为孔雀石？)，也是暗能量的颜色。&lt;/li&gt;
+&lt;li&gt;蓝色：首先想到的是一众硅谷公司，是绿色的常用近色搭配。&lt;/li&gt;
+&lt;li&gt;灰色：含蓄、高雅，同时也单调、无趣。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;红色：血液、激情、斗志。
-粉色：固有印象是年轻、少女、浪漫主义。
-橙色：阳光、热情、运动、食欲。
-黄色：警告色。虽然前有即刻黄了，但美团却成了。
-绿色：绿色是这颗星球上植物的颜色，然而并不是因为植物偏好绿色，相反它们通过反射舍弃绿色，让我们误以为绿色是它们的颜色。绿色在很多时候还是有毒化学物质的颜色(难道因为孔雀石？)，也是暗能量的颜色。
-蓝色：首先想到的是一众硅谷公司，是绿色的常用近色搭配。
-灰色：含蓄、高雅，同时也单调、无趣。&lt;/p&gt;
 &lt;p&gt;事实上颜色很可能只是一种捷径或是一种巧合。背后的原因和过程复杂的多，甚至有一些随机，这些和生命的演化过程有关。实际上在地球的历史中，前2/3的时间是缺氧的，那适合的生物物质代谢和交换要比现在的有氧环境要慢的多。氧带来了碳的氧化，植物又通过光合作用将二氧化碳还原为氧。大量的氧气氧化了铁，将第一抹锈色染到了地层中，氧加速了物质交换，带来了更丰富的生物多样性，也改变了地球上的生态结构，甚至改变了地球的主色。&lt;/p&gt;
 &lt;p&gt;那么，我们，选择什么色彩作为主色呢？实际上在不同的文化中，选择任何颜色都会有不满足用户偏好的问题。&lt;/p&gt;
 &lt;p&gt;如果想表达个人偏好，吸引同类用户，则可以选择个人所喜欢的颜色，如果是商业过程，则选择灰白黑组合，是简单的搭配。但无论怎么选择，在颜色使用上保持克制，最符合这个时代特征。于是，现代苹果公司选择了灰。微软、谷歌，选择了四元素平衡。&lt;/p&gt;
@@ -3645,4 +3555,29 @@ Microsoft Edge Canary 浏览器。&lt;/p&gt;
 &lt;li&gt;废弃信用卡&lt;/li&gt;
 &lt;li&gt;其他能导热物质&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt="维修内存插槽" src="https://kaffa.im/static/img/2023/repair-failed-memory-slot-5.jpg"&gt;&lt;/p&gt;</content><category term="digital"></category><category term="Dell XPS Ram Slot Issue"></category></entry></feed>
+&lt;p&gt;&lt;img alt="维修内存插槽" src="https://kaffa.im/static/img/2023/repair-failed-memory-slot-5.jpg"&gt;&lt;/p&gt;</content><category term="digital"></category><category term="Dell XPS Ram Slot Issue"></category></entry><entry><title>工作机会与杂念</title><link href="https://kaffa.im/on-job-and-distracting-thoughts.html" rel="alternate"></link><published>2023-06-26T16:51:00+08:00</published><updated>2023-06-26T16:51:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-06-26:/on-job-and-distracting-thoughts.html</id><summary type="html">&lt;p&gt;关于工作的想法与近期的杂念分享&lt;/p&gt;</summary><content type="html">&lt;h2&gt;打工、工作和兴趣&lt;/h2&gt;
+&lt;p&gt;读到一本关于工作的书，说到打工是用时间换钱，但我看这种说法较机械，于是对打工、工作和兴趣做了一些思考：&lt;/p&gt;
+&lt;p&gt;1、打工带来个人能力提升与资源视野&lt;/p&gt;
+&lt;p&gt;打工表象确实是拿时间还钱，但除了钱，更重要的还有换得个人能力提升与资源视野。
+个人能力属于随时获得的，立竿见影，资源和事业是远期收益预期。
+在股东视角，雇佣的回报虽在个体层面有盈亏，但在商业模式整体盘面上，规则+员工组成了商业机器，商业机器整体运转良好更重要。
+机器部件或零件可以重新组合或淘汰替换，贵或者便宜是次要问题，从更上层抽象上可以忽略。
+宏观上有经营环境、政府、市场和公司，不会体现个体盈亏。&lt;/p&gt;
+&lt;p&gt;2、工作是人一生唯一要选择的，事做大了，就有业。&lt;/p&gt;
+&lt;p&gt;此处业有两层理解，第一层，它是一种回馈，是一种一个人孜孜不倦一直要做的；
+另一层，它是一种业力，它对自由造成约束。
+但大多人的人生就是业本身。&lt;/p&gt;
+&lt;p&gt;3、兴趣&lt;/p&gt;
+&lt;p&gt;在没有实现的情况下，都希望在兴趣上打工，觉得那样会有激情。
+一旦你真的开始在兴趣上打工，你会发现一切都变了，因为打工是都是商业，商业追求各种效率，需要卷，商业只有卷才成立。
+在兴趣上卷，马上就会由蜜月期转为厌恶期，大多人会在这个阶段对原来的兴趣失去兴趣。
+如果能熬过这些阶段，也很少有人真正找到兴趣和商业的平衡，与其如此，不如寻找新的兴趣。&lt;/p&gt;
+&lt;h3&gt;杂念&lt;/h3&gt;
+&lt;p&gt;杂念体现在，当你有一个目标时，你还会迸发出十二个另外的目标，有短期，还有长期，还相互纠错在一起。
+如不经过周期审视，所有的杂念还会死锁在一起，毫无进展和头绪，所以日、周复盘很有必要。&lt;/p&gt;
+&lt;p&gt;当下的我如下杂念：
+1、想在618买一台云服务器，测试一下在低配主机上比较所有主流服务的负荷运行成本，有一点无聊；
+2、想将个体软件过程写给孩子，实际是一个远期目标；
+3、想将两个域名的服务交换一下；
+4、想探索MJ生成图的技巧；&lt;/p&gt;
+&lt;p&gt;但上述没太多作用，主要目标还是先完成几个MVP。&lt;/p&gt;</content><category term="article"></category></entry></feed>

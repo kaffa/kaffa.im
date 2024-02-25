@@ -63,7 +63,15 @@ AIGC
 * 产生被动收入：AIGC的内容产生了非常有限的被动收入，未及预期，计划迭代升级；
 * 学习 Rust 语言：Rust 学习曲线陡峭，大约能使用 Rust 进行命令行和网络、Web编程；
 * 更新个人网站：done. 五年内不大改；
-* ARM CPU Apple MacBook：看着 8g 丐版，依然下不去手，暂未购入；
+
+  1. `KaffaWeb 2.0 建设之品牌 <https://kaffaweb-brand-building-notes.html>`_
+  2. `KaffaWeb 2.0 建设之品牌 <https://kaffaweb-plugin.html>`_
+     * kaffapod
+     * plantuml
+  3. `KaffaWeb 2.0 建设之主题与首页 <https://kaffaweb-theme-and-index-page.html>`_
+
+* ARM CPU Apple MacBook：看到很多视频博主的作品，似乎增加了对如今 MacBook 产品线的认识，但轮到自己去选，又犹豫。看着 8g 丐版，依然下不去手，暂未购入；趋向于购入 M1 Air 或 M3 Pro
+
 * 协助 LP 毕业：done.
 
 EI分析：
