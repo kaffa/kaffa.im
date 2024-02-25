@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-24T14:25:00+08:00</updated><entry><title>FeedDemon</title><link href="https://kaffa.im/feeddemon.html" rel="alternate"></link><published>2024-02-24T14:25:00+08:00</published><updated>2024-02-24T14:25:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-24:/feeddemon.html</id><summary type="html">&lt;p class="first last"&gt;在 Feed 这件事上，抛开 FeedDemon 的乱码瑕疵不说，它依然是我最爱的 Feed 软件。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-25T15:25:00+08:00</updated><entry><title>太原之恋</title><link href="https://kaffa.im/tai-yuan-zhi-lian.html" rel="alternate"></link><published>2024-02-25T15:25:00+08:00</published><updated>2024-02-25T15:25:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-25:/tai-yuan-zhi-lian.html</id><summary type="html">&lt;p class="first last"&gt;撒碧去死吧！！！！！！！！诅咒原来是一种对撒碧的爱，爱让撒碧活到了最后。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;评分&lt;/h2&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐⭐⭐ 9/10&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;说两句&lt;/h2&gt;
+对大刘是我很佩服的人，文字是个人残念，但凡有人身体力行完成个人夙愿，对此只有大写的&lt;span class="is-size-3"&gt;诚服&lt;/span&gt;。&lt;/div&gt;
+&lt;div class="section" id="it"&gt;
+&lt;h2&gt;IT考古学家&lt;/h2&gt;
+&lt;p&gt;认识 Soulizer 是看到他称自己为IT考古学家，初以为是同我一样的IT史爱好者，后得知源自大刘《太原之恋》。于是 2024-02-25 的 15:00~15:26 读完了这部小说。&lt;/p&gt;
+&lt;p&gt;小说中AI破坏太原的方式，似乎在多年后的『速度与激情8』有体现。论说的「反浪潮科幻」也挺好的，比较历史进场太快了，好的坏的，都未尽审视，还没成为经典，就被埋藏了，不妨使用逆向思维做个反浪潮掘金人，也有一些具体的快乐。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="刘慈欣"></category></entry><entry><title>FeedDemon</title><link href="https://kaffa.im/feeddemon.html" rel="alternate"></link><published>2024-02-24T14:25:00+08:00</published><updated>2024-02-24T14:25:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-24:/feeddemon.html</id><summary type="html">&lt;p class="first last"&gt;在 Feed 这件事上，抛开 FeedDemon 的乱码瑕疵不说，它依然是我最爱的 Feed 软件。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;简介&lt;/h2&gt;
 &lt;p&gt;曾在十年前，大约是 Google Reader 被死亡的那年，我挑选过 FeedDemon 的替代软件。&lt;/p&gt;
@@ -3632,29 +3645,4 @@ Microsoft Edge Canary 浏览器。&lt;/p&gt;
 &lt;li&gt;废弃信用卡&lt;/li&gt;
 &lt;li&gt;其他能导热物质&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt="维修内存插槽" src="https://kaffa.im/static/img/2023/repair-failed-memory-slot-5.jpg"&gt;&lt;/p&gt;</content><category term="digital"></category><category term="Dell XPS Ram Slot Issue"></category></entry><entry><title>工作机会与杂念</title><link href="https://kaffa.im/on-job-and-distracting-thoughts.html" rel="alternate"></link><published>2023-06-26T16:51:00+08:00</published><updated>2023-06-26T16:51:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-06-26:/on-job-and-distracting-thoughts.html</id><summary type="html">&lt;p&gt;关于工作的想法与近期的杂念分享&lt;/p&gt;</summary><content type="html">&lt;h2&gt;打工、工作和兴趣&lt;/h2&gt;
-&lt;p&gt;读到一本关于工作的书，说到打工是用时间换钱，但我看这种说法较机械，于是对打工、工作和兴趣做了一些思考：&lt;/p&gt;
-&lt;p&gt;1、打工带来个人能力提升与资源视野&lt;/p&gt;
-&lt;p&gt;打工表象确实是拿时间还钱，但除了钱，更重要的还有换得个人能力提升与资源视野。
-个人能力属于随时获得的，立竿见影，资源和事业是远期收益预期。
-在股东视角，雇佣的回报虽在个体层面有盈亏，但在商业模式整体盘面上，规则+员工组成了商业机器，商业机器整体运转良好更重要。
-机器部件或零件可以重新组合或淘汰替换，贵或者便宜是次要问题，从更上层抽象上可以忽略。
-宏观上有经营环境、政府、市场和公司，不会体现个体盈亏。&lt;/p&gt;
-&lt;p&gt;2、工作是人一生唯一要选择的，事做大了，就有业。&lt;/p&gt;
-&lt;p&gt;此处业有两层理解，第一层，它是一种回馈，是一种一个人孜孜不倦一直要做的；
-另一层，它是一种业力，它对自由造成约束。
-但大多人的人生就是业本身。&lt;/p&gt;
-&lt;p&gt;3、兴趣&lt;/p&gt;
-&lt;p&gt;在没有实现的情况下，都希望在兴趣上打工，觉得那样会有激情。
-一旦你真的开始在兴趣上打工，你会发现一切都变了，因为打工是都是商业，商业追求各种效率，需要卷，商业只有卷才成立。
-在兴趣上卷，马上就会由蜜月期转为厌恶期，大多人会在这个阶段对原来的兴趣失去兴趣。
-如果能熬过这些阶段，也很少有人真正找到兴趣和商业的平衡，与其如此，不如寻找新的兴趣。&lt;/p&gt;
-&lt;h3&gt;杂念&lt;/h3&gt;
-&lt;p&gt;杂念体现在，当你有一个目标时，你还会迸发出十二个另外的目标，有短期，还有长期，还相互纠错在一起。
-如不经过周期审视，所有的杂念还会死锁在一起，毫无进展和头绪，所以日、周复盘很有必要。&lt;/p&gt;
-&lt;p&gt;当下的我如下杂念：
-1、想在618买一台云服务器，测试一下在低配主机上比较所有主流服务的负荷运行成本，有一点无聊；
-2、想将个体软件过程写给孩子，实际是一个远期目标；
-3、想将两个域名的服务交换一下；
-4、想探索MJ生成图的技巧；&lt;/p&gt;
-&lt;p&gt;但上述没太多作用，主要目标还是先完成几个MVP。&lt;/p&gt;</content><category term="article"></category></entry></feed>
+&lt;p&gt;&lt;img alt="维修内存插槽" src="https://kaffa.im/static/img/2023/repair-failed-memory-slot-5.jpg"&gt;&lt;/p&gt;</content><category term="digital"></category><category term="Dell XPS Ram Slot Issue"></category></entry></feed>
