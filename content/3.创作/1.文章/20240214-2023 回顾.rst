@@ -65,7 +65,7 @@ AIGC
 * 更新个人网站：done. 五年内不大改；
 
   1. `KaffaWeb 2.0 建设之品牌 <https://kaffaweb-brand-building-notes.html>`_
-  2. `KaffaWeb 2.0 建设之品牌 <https://kaffaweb-plugin.html>`_
+  2. `KaffaWeb 2.0 建设之插件 <https://kaffaweb-plugin.html>`_
      * kaffapod
      * plantuml
   3. `KaffaWeb 2.0 建设之主题与首页 <https://kaffaweb-theme-and-index-page.html>`_
