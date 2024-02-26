@@ -105,7 +105,7 @@
                         <a title="ready">未开始</a>
                     </p>
                     {% for p in PROJECTS %}
-                    <a class="panel-block is-active panel-{{ p.Status }}">
+                    <a class="panel-block is-active panel-{{ p.Status }}{% if 'doing' != p.Status %} is-hidden{% endif %}">
                         <div style="width: 100%;">
                             <strong>{{ p.Name }}</strong>
                             <strong class="is-pulled-right">{{ 100 * p.Completion }}%</strong>
