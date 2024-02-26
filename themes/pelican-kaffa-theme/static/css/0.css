@@ -106,6 +106,9 @@ section > h3 {
 }
 
 .book-cover:hover {
-  transform: rotateY(-10deg);
-  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    transform: rotateY(-10deg);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+}
+.progress.is-small {
+    height: .4rem;
 }
