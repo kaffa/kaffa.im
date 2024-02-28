@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 悟了，你所需要的最后一篇部署指南</title>
+    <meta charset="utf-8" />
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+        href="https://kaffa.im/feeds/all.atom.xml"
+        type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed" />
+    <link
+        href="https://kaffa.im/feeds/programming.atom.xml"
+        type="application/atom+xml" rel="alternate" title="Kaffa.im Categories Atom Feed" />
+
+
+
+
+    <meta name="tags" content="Installation and Deployment Guide" />
+    <meta name="tags" content="OpenStack" />
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <h1 class="navbar-item">
+                    <a href="./"><span class="is-italic author_name">Kaffa</span>.im</a>
+                    <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+                </h1>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarGlobal">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarGlobal" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">专栏</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                                <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">笔记</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">创作</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">我的</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                                <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                                <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">关于</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                                <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                                <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                            <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                            Log in
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="has-background-grey-lighter pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/markus-winkler-92HqQ0ZvKDA-unsplash.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./the-last-installation-and-deployment-guide-you-need.html" rel="bookmark" title="「悟了，你所需要的最后一篇部署指南」的永久链接">悟了，你所需要的最后一篇部署指南</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2019-06-06T12:00:00+08:00">2019-06-06 周四</time>
+                最后修改 <time datetime="2024-02-28T12:00:00+08:00">2024-02-28 周三</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+        <div class="mb-2">
+            <span>分类:
+                <a class="tag is-medium" href="./category/programming.html">编程</a>
+            </span>
+            <span class="ml-2">标签:
+                <a class="tag is-primary is-light is-medium" href="./tag/installation-and-deployment-guide.html">Installation and Deployment Guide</a>
+                <a class="tag is-primary is-light is-medium" href="./tag/openstack.html">OpenStack</a>
+            </span>
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+
+        <div class="section" id="section-2">
+<h2>图片版权备注</h2>
+Photo by <a href="https://unsplash.com/@markuswinkler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Winkler</a> on <a href="https://unsplash.com/photos/white-paper-on-brown-folder-beside-silver-key-92HqQ0ZvKDA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+<div class="section" id="section-3">
+<h2>题记</h2>
+<div class="line-block">
+<div class="line">如果你爱一个人，送他去部署 OpenStack，因为那里是天堂；</div>
+<div class="line">如果你恨一个人，送他去部署 OpenStack，因为那里是地狱。</div>
+</div>
+<img alt="OpenStack" src="https://kaffa.im/img/2019/openstack-logo.png" />
+<p>OpenStack 是在一个「帐篷」下的相互协同的开源软件组合。</p>
+<p>如果你成功的部署并使用它，则可以赋予你私有云的管理能力。</p>
+<p>如果你用尽各种办法部署 OpenStack，遇到了各种障碍，还没放弃搜索，那我希望你搜索到此篇。</p>
+<p>我将在此篇传授你『万物部署指南』，the last guides you need.</p>
+</div>
+<div class="section" id="section-4">
+<h2>说「最后一篇」的底气是什么？</h2>
+<p><span class="strike">因为这个部署方式是相当清晰的、各个击破的、非常详尽的，它记录了每一个步骤，经过了反复测试，甚至修正了官方部署中的瑕疵。所以敢说：按此部署，一定成功。</span></p>
+<p>如果你没有成功，<span class="strike">还可在本文回复留言，我会来答疑，</span>请继续阅读。</p>
+</div>
+<div class="section" id="openstack">
+<h2>OpenStack 部署步骤</h2>
+<img alt="OpenStack 2023.2" src="https://kaffa.im/img/2024/openstack-installation.png" />
+<div class="section" id="section-5">
+<h3>目的和范围</h3>
+<p>本节讲述 OpenStack 次新版 Rocky 在 CentOS 上的最小化多节点部署过程。</p>
+<p>部署完成后经优化，即可用于生产。</p>
+<p>在 CentOS 上部署 OpenStack，可选途径有多种，你会看到不同的做法，但不经过测试，你并不知道哪一种可以成功。</p>
+<p>次新版 Rocky 已历时考验，软硬件环境，所有的程序、数据库、配置、都是确定的。</p>
+<p>提示：部署过程细节非常多，分清节点的同时，还有很多初看类似之处，但细节不同，需谨慎细心。</p>
+</div>
+<div class="section" id="section-6">
+<h3><span class="strike">知识准备</span></h3>
+<p>（以下删除 1000 字）</p>
+</div>
+<div class="section" id="section-7">
+<h3><span class="strike">硬件准备</span></h3>
+<p>（以下删除 2000 字）</p>
+</div>
+<div class="section" id="section-8">
+<h3><span class="strike">环境部署</span></h3>
+<p>（以下删除 3000 字）</p>
+</div>
+<div class="section" id="section-9">
+<h3><span class="strike">软件部署</span></h3>
+<p>（以下删除 6000 字）</p>
+<p>如果你认真的，正在部署 OpenStack，请看完下段内容离开这里：</p>
+<ul class="simple">
+<li>DevStack：官方文档，经过了20多个版本，已经相当完善，必读。</li>
+<li>RDOProject Packstack：相对最容易，耗时最少，用于验证为目的。</li>
+<li>RDOProject TripleO Quickstart：复杂，文档也不够好，没有人可以一次成功。</li>
+<li>kolla-ansible：容器部署简化了部署，但减低了可调试性，如果你想定制一下，你将面对一个复杂性陷阱。</li>
+</ul>
+<p><strong>上面的时效已过，最佳途径请`跳转官方 &lt;https://docs.openstack.org/2023.2/install/&gt;`_。</strong></p>
+</div>
+</div>
+<div class="section" id="openstack-1">
+<h2>痛点：OpenStack 为啥安装不好</h2>
+<p>为什么你遵循的 OpenStack 指南，无法真正让你安装好 OpenStack，因为它们：</p>
+<ul class="simple">
+<li>没教你准备硬件</li>
+<li>缺少软硬件环境说明</li>
+<li>未标注软件前置依赖</li>
+<li>未指明软件版本</li>
+<li>运行命令没指明运行目录</li>
+<li>运行命令未记录必要的回显</li>
+<li>没有指明命令运行的节点</li>
+</ul>
+<p><span class="strike">本文这些都做了，所以会有些长。但我进行分节和编号，你随时可以知道你进行到了哪里。</span></p>
+</div>
+<div class="section" id="section-10">
+<h2>2024年2月28日，呕心沥血的权威「安装指南」，为什么失效了？</h2>
+<p>Because of 刻舟求剑。</p>
+<p>软件有生命周期，软件文档是一种正在生长的生命。</p>
+<p>OpenStack 版本按 26 个字母进化（如今已不够用，换成了年份）。</p>
+<p>书籍写作者部署时，按其中的某个版本教授。</p>
+<p>书付梓时，软件已然又 build 了 1000 次，bug fix 500 次。</p>
+<p>作者在卖的书上写着：「后生，你的疑问请书上见。」你以为部署成功就在书看完后。</p>
+<p>实际上你会发现你继续在失败，还得网上最新文档见。</p>
+<p>这就是技术写作和出版的痛点。通用的，不好写；时效有限的，不好卖。</p>
+<p>步骤流程没有想象的重要，重要的是避坑指南和经验。</p>
+<p>这就是 OpenStack 的多种部署看起来都那么不聪明的样子，像极了盲人摸象。</p>
+<p>验证式部署、单节点部署、大规模部署、容器式部署？</p>
+<p>都是鸡肋。不是想的太简单，就是做的太复杂。</p>
+</div>
+<div class="section" id="section-11">
+<h2>万物部署指南</h2>
+<p>看到此的，我想说的是，也许真有『万物部署指南』一样的法宝：</p>
+<ol class="arabic simple">
+<li>法宝一：一手文档。永远优先使用官方文档，如果官方文档出错，则推进官方改正，若不能改，请改换软件。</li>
+<li>法宝二：自知之明。跟随官方文档不奏效的原因，80% 概率是由于，思维和知识中至少其一不到位。</li>
+</ol>
+<p>没啥能多说的，唯有多踩坑，到后面会悟了，笨方法就是大智慧。</p>
+<img alt="谢谢心累的你，您请随意~" src="https://kaffa.im/img/reward.png" />
+<p>末了，如果你觉得本文还算有点用，<span class="strike">别</span>扫我的赞赏码</p>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+    </main>
+    <footer class="footer is-max-widescreen">
+        <div class="content has-text-centered">
+            版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+            <p>
+                本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+            </p>
+            <p>
+                <a href="https://www.foreverblog.cn/" target="_blank" >
+                    <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;">
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <div id="modal-project" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+              <p>项目明细在建设中...</p>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /*====================
+              Modal
+             ====================*/
+
+            // Functions to open and close a modal
+            function openModal($el) {
+                $el.classList.add('is-active');
+            }
+
+            function closeModal($el) {
+                $el.classList.remove('is-active');
+            }
+
+            function closeAllModals() {
+            (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                    closeModal($modal);
+                });
+            }
+
+            // Add a click event on buttons to open a specific modal
+            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                const modal = $trigger.dataset.target;
+                const $target = document.getElementById(modal);
+                $trigger.addEventListener('click', () => {
+                     openModal($target);
+                });
+            });
+
+            // Add a click event on various child elements to close the parent modal
+            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                const $target = $close.closest('.modal');
+
+                $close.addEventListener('click', () => {
+                    closeModal($target);
+                });
+            });
+
+            // Add a keyboard event to close all modals
+            document.addEventListener('keydown', (event) => {
+                if (event.code === 'Escape') {
+                    closeAllModals();
+                }
+            });
+
+            /*====================
+              navbar
+             ====================*/
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+            /*====================
+              Projects
+             ====================*/
+            const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+            $panelTab.forEach(el => {
+                el.addEventListener('click', () => {
+                    const $siblings = el.parentNode.children;
+                    for (let i = 0; i < $siblings.length; i++) {
+                        $siblings[i].classList.remove('is-active');
+                    }
+                    el.classList.add('is-active');
+
+                    if (el.title == 'all') {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.remove("is-hidden");
+                        }
+                    } else {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.add("is-hidden");
+                        }
+
+                        const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                        for (let i = 0; i < $targetPanelBlock.length; i++) {
+                            $targetPanelBlock[i].classList.remove("is-hidden");
+                        }
+                    }
+                });
+            });
+
+            /*====================
+              Email
+             ====================*/
+            const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+            $email.forEach(el => {
+                el.innerText = ['admin', '@', 'kaffa.im'].join('');
+            });
+
+            /*====================
+              Table
+            ====================*/
+            var altKeyPressed = false;
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Alt' && !altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = true;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'table-row';
+                    });
+                }
+            });
+
+            document.addEventListener('keyup', function(event) {
+                if (event.key === 'Alt' && altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = false;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
