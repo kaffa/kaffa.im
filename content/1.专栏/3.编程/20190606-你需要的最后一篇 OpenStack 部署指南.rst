@@ -8,7 +8,7 @@
 :tags: Installation and Deployment Guide, OpenStack
 :slug: the-last-installation-and-deployment-guide-you-need
 :summary: 这篇是在约5年前我在朋友的公司为客户部署一套 OpenStack 时的笔记，五年后，我在修改中删除了 80% 内容，这就是技术文档。
-:image: /static/img/2024/markus-winkler-92HqQ0ZvKDA-unsplash.png
+:image: /static/img/2024/markus-winkler-92HqQ0ZvKDA-unsplash.jpg
 
 图片版权备注
 ==================================================
@@ -25,6 +25,7 @@
 
 .. image:: https://kaffa.im/static/img/2019/openstack-logo.png
     :alt: OpenStack
+    :width: 50%
 
 OpenStack 是在一个「帐篷」下的相互协同的开源软件组合。
 
@@ -93,7 +94,6 @@ OpenStack 部署步骤
 - RDOProject TripleO Quickstart：复杂，文档也不够好，没有人可以一次成功。
 - kolla-ansible：容器部署简化了部署，但减低了可调试性，如果你想定制一下，你将面对一个复杂性陷阱。
 
-\ **上面的时效已过，最佳途径请\ `跳转官方 <https://docs.openstack.org/2023.2/install/>`_\ 。**\
 
 痛点：OpenStack 为啥安装不好
 ====================================================
@@ -110,7 +110,7 @@ OpenStack 部署步骤
 
 :strike:`本文这些都做了，所以会有些长。但我进行分节和编号，你随时可以知道你进行到了哪里。`
 
-2024年2月28日，呕心沥血的权威「安装指南」，为什么失效了？
+呕心沥血的权威「安装指南」，为什么失效 @ 2024年2月28日？
 ============================================================
 
 Because of 刻舟求剑。
@@ -148,10 +148,10 @@ OpenStack 版本按 26 个字母进化（如今已不够用，换成了年份）
 没啥能多说的，唯有多踩坑，到后面会悟了，笨方法就是大智慧。
 
 
-
 .. image:: https://kaffa.im/static/img/reward.png
     :alt: 谢谢心累的你，您请随意~
 
-末了，如果你觉得本文还算有点用，:strike:`别`\ 扫我的赞赏码
+
+末了，如果你觉得本文还算有点用，请:strike:`别`\ 扫我的赞赏码
 
 
