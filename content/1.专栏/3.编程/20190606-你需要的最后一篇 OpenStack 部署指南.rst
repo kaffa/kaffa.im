@@ -17,15 +17,17 @@
 
     Photo by <a href="https://unsplash.com/@markuswinkler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Winkler</a> on <a href="https://unsplash.com/photos/white-paper-on-brown-folder-beside-silver-key-92HqQ0ZvKDA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-题记
-==============================
-
-|    如果你爱一个人，送他去部署 OpenStack，因为那里是天堂；
-|    如果你恨一个人，送他去部署 OpenStack，因为那里是地狱。
-
+a
 .. image:: https://kaffa.im/static/img/2019/openstack-logo.png
     :alt: OpenStack
     :width: 50%
+
+题记
+==============================
+
+    如果你爱一个人，送他去部署 OpenStack，因为那里是天堂；
+    如果你恨一个人，送他去部署 OpenStack，因为那里是地狱。
+
 
 OpenStack 是在一个「帐篷」下的相互协同的开源软件组合。
 
