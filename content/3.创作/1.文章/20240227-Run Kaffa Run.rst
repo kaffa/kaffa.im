@@ -10,7 +10,7 @@ Run Kaffa Run
 :image: /static/img/2024/darmau-TW5bZE4fkPw-unsplash.jpg
 :brief: 有关思维框架
 
-图片版权备注
+图片版权
 ==================================================
 
 .. raw:: html

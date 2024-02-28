@@ -10,7 +10,7 @@
 :summary: 这篇是在约5年前我在朋友的公司为客户部署一套 OpenStack 时的笔记，五年后，我在修改中删除了 80% 内容，这就是技术文档。
 :image: /static/img/2024/markus-winkler-92HqQ0ZvKDA-unsplash.jpg
 
-图片版权备注
+图片版权
 ==================================================
 
 .. raw:: html

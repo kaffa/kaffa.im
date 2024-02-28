@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-27T23:00:00+08:00</updated><entry><title>Run Kaffa Run</title><link href="https://kaffa.im/run-kaffa-run.html" rel="alternate"></link><published>2024-02-27T23:00:00+08:00</published><updated>2024-02-27T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-27:/run-kaffa-run.html</id><summary type="html">&lt;p class="first last"&gt;人生关键决策，记的简单，但如果明白是什么，就会明白其重要性。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
-&lt;h2&gt;图片版权备注&lt;/h2&gt;
+&lt;h2&gt;图片版权&lt;/h2&gt;
 Photo by &lt;a href="https://unsplash.com/@darmau?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash"&gt;李大毛 没有猫&lt;/a&gt; on &lt;a href="https://unsplash.com/photos/a-large-body-of-water-with-a-city-in-the-background-TW5bZE4fkPw?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash"&gt;Unsplash&lt;/a&gt;&lt;/div&gt;
 &lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;重要谈话&lt;/h2&gt;
@@ -1686,7 +1686,7 @@ rm对rf，drop对purge，删库对跑路。
 &lt;p&gt;我想，英文国家的人即使借助翻译也很难弄懂本文，比如码农的翻译，其实用 coders 更好，但没有表达出中文语境的双关，而 slug 中用的 code farmers 也不准确， farmer 的意思是农场主，而更接近的意思其实是 code peasants。但现代其实很少使用 peasant，尤其在英文语境。因此 slug 最终选定了 code farmers&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-4"&gt;
-&lt;h2&gt;图片版权备注&lt;/h2&gt;
+&lt;h2&gt;图片版权&lt;/h2&gt;
 &lt;a href="https://www.freepik.com/free-vector/programmer-work-place-with-man-table-top-view-sketch_2872064.htm#page=3&amp;query=programmer&amp;position=3&amp;from_view=search&amp;track=sph&amp;uuid=54ce2628-2acb-4392-a73a-9a6e4429b1e8"&gt;Image by macrovector&lt;/a&gt; on Freepik&lt;/div&gt;
 </content><category term="development"></category><category term="Development"></category><category term="Programming"></category></entry><entry><title>KaffaWeb 2.0 建设之插件</title><link href="https://kaffa.im/kaffaweb-plugin.html" rel="alternate"></link><published>2023-12-12T10:30:00+08:00</published><updated>2023-12-12T10:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-12:/kaffaweb-plugin.html</id><summary type="html">&lt;p class="first last"&gt;本文记录了书影音插件和图插件的产生过程，Code 已提供在源代码中，不再冗述。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="kaffapod"&gt;
