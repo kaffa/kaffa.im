@@ -23,7 +23,7 @@
 |    如果你爱一个人，送他去部署 OpenStack，因为那里是天堂；
 |    如果你恨一个人，送他去部署 OpenStack，因为那里是地狱。
 
-.. image:: https://kaffa.im/img/2019/openstack-logo.png
+.. image:: https://kaffa.im/static/img/2019/openstack-logo.png
     :alt: OpenStack
 
 OpenStack 是在一个「帐篷」下的相互协同的开源软件组合。
@@ -48,7 +48,7 @@ OpenStack 是在一个「帐篷」下的相互协同的开源软件组合。
 OpenStack 部署步骤
 ==============================
 
-.. image:: https://kaffa.im/img/2024/openstack-installation.png
+.. image:: https://kaffa.im/static/img/2024/openstack-installation.png
     :alt: OpenStack 2023.2
 
 
@@ -149,7 +149,7 @@ OpenStack 版本按 26 个字母进化（如今已不够用，换成了年份）
 
 
 
-.. image:: https://kaffa.im/img/reward.png
+.. image:: https://kaffa.im/static/img/reward.png
     :alt: 谢谢心累的你，您请随意~
 
 末了，如果你觉得本文还算有点用，:strike:`别`\ 扫我的赞赏码

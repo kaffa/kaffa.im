@@ -1305,7 +1305,7 @@ Photo by &lt;a href="https://unsplash.com/@markuswinkler?utm_content=creditCopyT
 &lt;div class="line"&gt;如果你爱一个人，送他去部署 OpenStack，因为那里是天堂；&lt;/div&gt;
 &lt;div class="line"&gt;如果你恨一个人，送他去部署 OpenStack，因为那里是地狱。&lt;/div&gt;
 &lt;/div&gt;
-&lt;img alt="OpenStack" src="https://kaffa.im/img/2019/openstack-logo.png" /&gt;
+&lt;img alt="OpenStack" src="https://kaffa.im/static/img/2019/openstack-logo.png" /&gt;
 &lt;p&gt;OpenStack 是在一个「帐篷」下的相互协同的开源软件组合。&lt;/p&gt;
 &lt;p&gt;如果你成功的部署并使用它，则可以赋予你私有云的管理能力。&lt;/p&gt;
 &lt;p&gt;如果你用尽各种办法部署 OpenStack，遇到了各种障碍，还没放弃搜索，那我希望你搜索到此篇。&lt;/p&gt;
@@ -1318,7 +1318,7 @@ Photo by &lt;a href="https://unsplash.com/@markuswinkler?utm_content=creditCopyT
 &lt;/div&gt;
 &lt;div class="section" id="openstack"&gt;
 &lt;h2&gt;OpenStack 部署步骤&lt;/h2&gt;
-&lt;img alt="OpenStack 2023.2" src="https://kaffa.im/img/2024/openstack-installation.png" /&gt;
+&lt;img alt="OpenStack 2023.2" src="https://kaffa.im/static/img/2024/openstack-installation.png" /&gt;
 &lt;div class="section" id="section-5"&gt;
 &lt;h3&gt;目的和范围&lt;/h3&gt;
 &lt;p&gt;本节讲述 OpenStack 次新版 Rocky 在 CentOS 上的最小化多节点部署过程。&lt;/p&gt;
@@ -1389,7 +1389,7 @@ Photo by &lt;a href="https://unsplash.com/@markuswinkler?utm_content=creditCopyT
 &lt;li&gt;法宝二：自知之明。跟随官方文档不奏效的原因，80% 概率是由于，思维和知识中至少其一不到位。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;没啥能多说的，唯有多踩坑，到后面会悟了，笨方法就是大智慧。&lt;/p&gt;
-&lt;img alt="谢谢心累的你，您请随意~" src="https://kaffa.im/img/reward.png" /&gt;
+&lt;img alt="谢谢心累的你，您请随意~" src="https://kaffa.im/static/img/reward.png" /&gt;
 &lt;p&gt;末了，如果你觉得本文还算有点用，&lt;span class="strike"&gt;别&lt;/span&gt;扫我的赞赏码&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="programming"></category><category term="Installation and Deployment Guide"></category><category term="OpenStack"></category></entry></feed>
