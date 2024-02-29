@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-02-29T10:45:37-00:00</lastmod>
+<lastmod>2024-02-29T14:34:35-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-02-29T10:45:37-00:00</lastmod>
+<lastmod>2024-02-29T14:34:35-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-02-29T10:45:37-00:00</lastmod>
+<lastmod>2024-02-29T14:34:35-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-02-29T10:45:37-00:00</lastmod>
+<lastmod>2024-02-29T14:34:35-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -811,6 +811,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/hario-mss-1b-mss-1r-16.html</loc>
 <lastmod>2023-01-09T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/words-on-big-data.html</loc>
+<lastmod>2023-01-08T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>

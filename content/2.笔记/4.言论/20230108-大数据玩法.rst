@@ -1,0 +1,24 @@
+大数据的玩法
+############################################################
+
+:date: 2023-01-08 12:00
+:author: Kirt
+:category: words
+:tags: big-data
+:slug: words-on-big-data
+:summary: 大数据
+:image: /static/img/2024/data-4151152_1920.jpg
+:brief: 你还在削足适履，替人做嫁吗？
+
+
+图片版权
+==================================================
+
+.. raw:: html
+
+    该图片由<a href="https://pixabay.com/zh/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4151152">Gerd Altmann</a>在<a href="https://pixabay.com/zh//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4151152">Pixabay</a>上发布
+
+
+- 数据已是公司的重要资产，是竞争的基础。大公司的解决方案未必适合中小企业，但有太多中小企业削足适履。大公司有许多政企优质客户，那是它们优先服务对象，大公司常见的做法是服务行业的头部玩家，再拿沉(lian)淀(shou)解决方案卖给中小企业。
+
+- 大数据的玩法。首先，需配备数据团队，包括业务、运营和数据科学家，没有持续投入很难玩转。对于中小企业，大多在数据上投入都是白搭。只有具有自动化的高质量的在线数据时，数据才能反哺业务，成为生产力。要做到此点，大公司尚且不易，更别提管理者意识还不到位的行业和中小企业了。事实就是如此惨烈，没有大数据的公司要么没有未来，要么就是为大厂做嫁。
