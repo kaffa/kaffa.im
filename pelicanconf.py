@@ -53,7 +53,8 @@ LINKS = [
         ('论道', 'https://lundao.pub/'),)},
     {'group': '收录', 'items': (
         ('十年之约', 'https://www.foreverblog.cn'),
-        ('BlogFinder', 'https://bf.zzxworld.com'),)}
+        ('BlogFinder', 'https://bf.zzxworld.com'),
+        ('个站商店', 'https://storeweb.cn/'),)}
 ]
 # Social widget
 SOCIAL = (('My GitHub', 'https://github.com/kaffa'),)
