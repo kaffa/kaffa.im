@@ -54,7 +54,8 @@ LINKS = [
     {'group': '收录', 'items': (
         ('十年之约', 'https://www.foreverblog.cn'),
         ('BlogFinder', 'https://bf.zzxworld.com'),
-        ('个站商店', 'https://storeweb.cn/'),)}
+        ('个站商店', 'https://storeweb.cn/'),
+        ('博客志', 'http://www.jetli.com.cn'),)}
 ]
 # Social widget
 SOCIAL = (('My GitHub', 'https://github.com/kaffa'),)
