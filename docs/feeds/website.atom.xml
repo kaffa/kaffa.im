@@ -7,7 +7,7 @@
 &lt;/div&gt;
 &lt;div class="section" id="giscus-1"&gt;
 &lt;h2&gt;添加 giscus 作为评论系统&lt;/h2&gt;
-&lt;p&gt;话说很早就看见了 GitHub Discussion 的出现，但一直没想到用。今天搜 「discussion 作为评论」后，发现了 giscus，于是在 Gitalk 之上，增加了 giscus，这样各自兼顾了。&lt;/p&gt;
+&lt;p&gt;话说很早就看见了 GitHub Discussion 的出现，但一直没想到用。今天搜 &amp;quot;discussion 作为评论&amp;quot; 后，发现了 giscus，于是在 Gitalk 之上，增加了 giscus，这样各自兼顾了。&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="website"></category><category term="giscus"></category></entry><entry><title>提交至十年之约</title><link href="https://kaffa.im/be-a-member-of-foreverblog-cn.html" rel="alternate"></link><published>2024-02-06T12:00:00+08:00</published><updated>2024-02-06T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-06:/be-a-member-of-foreverblog-cn.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;十年之约&lt;/h2&gt;
@@ -44,7 +44,7 @@
 &lt;h3&gt;书影音&lt;/h3&gt;
 &lt;p&gt;kaffapod 记录个人数据，因此读的书，看的电影，听的音乐值得记录。&lt;/p&gt;
 &lt;p&gt;书、影、音的元数据实际非常分散，作为个人，最好利用它人的工作，将元数据搜集到本地，作为一种缓存。&lt;/p&gt;
-&lt;p&gt;书、影、音元数据其实不属于个人数据，但相关时间和评论和统计数据属于个人数据，因为缓存作为「渐进式增强」来设计：当存在时，则获取并缓存下来，当不存在时，也可以简单显示名称。&lt;/p&gt;
+&lt;p&gt;书、影、音元数据其实不属于个人数据，但相关时间和评论和统计数据属于个人数据，因为缓存作为“渐进式增强”来设计：当存在时，则获取并缓存下来，当不存在时，也可以简单显示名称。&lt;/p&gt;
 &lt;p&gt;此处的技术实现使用了：&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Data Source(neodb)&lt;/li&gt;
@@ -78,12 +78,12 @@
 &lt;dt&gt;结构&lt;/dt&gt;
 &lt;dd&gt;临时不变&lt;span class="strike"&gt;无常&lt;/span&gt;的抽象物。&lt;/dd&gt;
 &lt;/dl&gt;
-&lt;p&gt;首先，我定义的「结构」就是思维中的物，既 Object，但我觉得 Object 表达太笼统。我们知道从永恒的角度上看，世事无常，但 anything 都无常反而需要忽略，而物的结构在决策时间中是临时不变的。&lt;/p&gt;
+&lt;p&gt;首先，我定义的“结构”就是思维中的物，既 Object，但我觉得 Object 表达太笼统。我们知道从永恒的角度上看，世事无常，但 anything 都无常反而需要忽略，而物的结构在决策时间中是临时不变的。&lt;/p&gt;
 &lt;dl class="docutils"&gt;
 &lt;dt&gt;决策时间&lt;/dt&gt;
 &lt;dd&gt;在某一个面向或某一范畴中物的状态不变时间。&lt;/dd&gt;
 &lt;/dl&gt;
-&lt;p&gt;其次，当需要表达一个观点或陈述一个结论时，我们必然有所面向，也必然有陈述的潜在前提范畴，在这种局限条件下，我将之定义为「决策时间」。&lt;/p&gt;
+&lt;p&gt;其次，当需要表达一个观点或陈述一个结论时，我们必然有所面向，也必然有陈述的潜在前提范畴，在这种局限条件下，我将之定义为“决策时间”。&lt;/p&gt;
 &lt;p&gt;要引入品牌的底层逻辑是：&lt;/p&gt;
 &lt;dl class="docutils"&gt;
 &lt;dt&gt;品牌&lt;/dt&gt;
@@ -99,7 +99,7 @@
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;品牌理念：穿越决策时间的长期主义，温暖有力。&lt;/li&gt;
 &lt;li&gt;品牌符号：K，我名字读音的首字母。K的意向从笔迹心理上说，竖是原则，撇是输入，捺是输出，整体的气韵舒展顺畅。&lt;/li&gt;
-&lt;li&gt;品牌标志：用域名本身 Kaffa.im 作为图案（秉承&lt;a class="reference external" href="https://www.google.com/search?q=%E5%A6%82%E6%97%A0%E5%BF%85%E8%A6%81%EF%BC%8C%E5%8B%BF%E5%A2%9E%E5%AE%9E%E4%BD%93"&gt;「如无必要，勿增实体」&lt;/a&gt; ）。记忆点为衬线字体 Georgia 的斜体 K。选择的理由是衬线更加经典，且有不齐线数字的特点，两者结合能体现品牌理念中穿越决策时间的长期主义，呼应了该理念在字体设计上的表达。当然，这里的讨巧之处在于 Matthew Carter 本身设计了 Verdana 和 Tahoma，后者我在 Windows 几乎一直爱用，前者更是无衬线经典，小却清晰，Georgia 更个性，也是我第一次制作个人网页的选择。若后续能有专业设计资源改进此标识，也会建议在此基础进行衍生。&lt;/li&gt;
+&lt;li&gt;品牌标志：用域名本身 Kaffa.im 作为图案（秉承&lt;a class="reference external" href="https://www.google.com/search?q=%E5%A6%82%E6%97%A0%E5%BF%85%E8%A6%81%EF%BC%8C%E5%8B%BF%E5%A2%9E%E5%AE%9E%E4%BD%93"&gt;“如无必要，勿增实体”&lt;/a&gt; ）。记忆点为衬线字体 Georgia 的斜体 K。选择的理由是衬线更加经典，且有不齐线数字的特点，两者结合能体现品牌理念中穿越决策时间的长期主义，呼应了该理念在字体设计上的表达。当然，这里的讨巧之处在于 Matthew Carter 本身设计了 Verdana 和 Tahoma，后者我在 Windows 几乎一直爱用，前者更是无衬线经典，小却清晰，Georgia 更个性，也是我第一次制作个人网页的选择。若后续能有专业设计资源改进此标识，也会建议在此基础进行衍生。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;div class="section" id="kaffa-im-1"&gt;
@@ -263,7 +263,7 @@ themes\pelican-kaffa-theme\static\css\main.css
 &lt;li&gt;Published via mobile phone&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;以终为始 AFFA&lt;/h2&gt;
-&lt;p&gt;这也许是网站改版前，仍叫做「褪色的抽象」 的最后一篇，也是 Kaffa.im 2.0 第一篇笔记。&lt;/p&gt;</content><category term="website"></category><category term="Pelican"></category><category term="KaffaWeb"></category></entry><entry><title>在注册域名时使用了错误的Email的处理</title><link href="https://kaffa.im/update-registrant-email-of-a-domain.html" rel="alternate"></link><published>2023-04-16T15:02:00+08:00</published><updated>2023-04-16T15:02:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-04-16:/update-registrant-email-of-a-domain.html</id><summary type="html">&lt;p&gt;很多人都注册过域名，但很少有人使用了错误的email来注册域名，而很少人就是我刚好处理了这样的事，记录下来，供参考。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;注册域名后需要验证&lt;/h2&gt;
+&lt;p&gt;这也许是网站改版前，仍叫做《褪色的抽象》的最后一篇，也是 Kaffa.im 2.0 第一篇笔记。&lt;/p&gt;</content><category term="website"></category><category term="Pelican"></category><category term="KaffaWeb"></category></entry><entry><title>在注册域名时使用了错误的Email的处理</title><link href="https://kaffa.im/update-registrant-email-of-a-domain.html" rel="alternate"></link><published>2023-04-16T15:02:00+08:00</published><updated>2023-04-16T15:02:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-04-16:/update-registrant-email-of-a-domain.html</id><summary type="html">&lt;p&gt;很多人都注册过域名，但很少有人使用了错误的email来注册域名，而很少人就是我刚好处理了这样的事，记录下来，供参考。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;注册域名后需要验证&lt;/h2&gt;
 &lt;p&gt;可能很长时间没有注册域名了，当发现网站提示如下时，我才发现Email地址写错了。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;Contact&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;info&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;not&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;verified&lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;Website&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;suspended&lt;/span&gt;
 &lt;span class="nv"&gt;ICANN&lt;/span&gt;’&lt;span class="nv"&gt;s&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;public&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;directory&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;requires&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;domains&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;verify&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;their&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;contact&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;info&lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;Websites&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;this&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;domain&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;are&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;offline&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;until&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;verification&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;complete&lt;/span&gt;.

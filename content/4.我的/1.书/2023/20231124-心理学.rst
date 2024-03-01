@@ -14,8 +14,8 @@
 读后
 ===========
 
-学科基础书，相比 `『心理学与生活』`_ 这本更深入一点，适合心理学研究生。
+学科基础书，相比 `《心理学与生活》`_ 这本更深入一点，适合心理学研究生。
 
 
 
-.. _『心理学与生活』: https://kaffa.im/psychology-and-life.html
+.. _《心理学与生活》: https://kaffa.im/psychology-and-life.html

@@ -14,10 +14,10 @@
 读后
 ===========
 
-『学会提问』和 `『思考的艺术』`_ 都属于在几年内可以常读常新的书。
+《学会提问》和 `《思考的艺术》`_ 都属于在几年内可以常读常新的书。
 
-如果 `『思考，快与慢』`_ 读不下去，可以读读本书的最新版。
+如果 `《思考，快与慢》`_ 读不下去，可以读读本书的最新版。
 
 
-.. _『思考的艺术』: https://kaffa.im/the-art-of-thinking.html
-.. _『思考，快与慢』: https://kaffa.im/thinking-fast-and-slow.html
+.. _《思考的艺术》: https://kaffa.im/the-art-of-thinking.html
+.. _《思考，快与慢》: https://kaffa.im/thinking-fast-and-slow.html

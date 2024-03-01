@@ -25,14 +25,14 @@
         从学习的角度来看，同时这两门语言的难度要大于学完一门后再学一门。
     </div>
 
-『学习 HTML』书单
+“学习 HTML”书单
 ====================
 
-1. `「HTML5与CSS3基础教程」 <https://kaffa.im/html5-and-css3-visual-quickstart-guide.html>`_ [美] Elizabeth Castro / [美] Bruce Hyslop：翻译的书中，这本适合小白入门。
+1. `《HTML5与CSS3基础教程》 <https://kaffa.im/html5-and-css3-visual-quickstart-guide.html>`_ [美] Elizabeth Castro / [美] Bruce Hyslop：翻译的书中，这本适合小白入门。
 
-2. `「一本进阶书籍」 <https://kaffa.im/learning-html-book-list.html>`_ ：HTML 入门后，如果觉得常用技能还不够用，可考虑一些 HTML 高级功能的书籍，但更好的进阶书是自己选择的哪一本。
+2. `《一本进阶书籍》 <https://kaffa.im/learning-html-book-list.html>`_ ：HTML 入门后，如果觉得常用技能还不够用，可考虑一些 HTML 高级功能的书籍，但更好的进阶书是自己选择的哪一本。
 
-『学习 HTML』网站
+“学习 HTML”网站
 ====================
 
 * `freeCodeCamp <https://www.freecodecamp.org/>`_ ：从这里可以学到和领悟 Web 设计的细节，非常好的教学素材。

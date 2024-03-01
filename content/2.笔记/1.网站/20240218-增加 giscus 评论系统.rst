@@ -18,5 +18,5 @@ Gitalk 报错：Network Error
 添加 giscus 作为评论系统
 ========================================
 
-话说很早就看见了 GitHub Discussion 的出现，但一直没想到用。今天搜 「discussion 作为评论」后，发现了 giscus，于是在 Gitalk 之上，增加了 giscus，这样各自兼顾了。
+话说很早就看见了 GitHub Discussion 的出现，但一直没想到用。今天搜 "discussion 作为评论" 后，发现了 giscus，于是在 Gitalk 之上，增加了 giscus，这样各自兼顾了。
 

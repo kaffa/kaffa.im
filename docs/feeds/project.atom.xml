@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - project</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/project.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2023-11-25T17:56:00+08:00</updated><entry><title>「KaffaWeb.三合」总结</title><link href="https://kaffa.im/kaffaweb-sanhe-summary.html" rel="alternate"></link><published>2023-11-25T17:56:00+08:00</published><updated>2023-11-25T17:56:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-25:/kaffaweb-sanhe-summary.html</id><summary type="html">&lt;p class="first last"&gt;本文是「KaffaWeb.三合」完成了，本文是项目总结。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - project</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/project.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2023-11-25T17:56:00+08:00</updated><entry><title>「KaffaWeb.三合」总结</title><link href="https://kaffa.im/kaffaweb-sanhe-summary.html" rel="alternate"></link><published>2023-11-25T17:56:00+08:00</published><updated>2023-11-25T17:56:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-25:/kaffaweb-sanhe-summary.html</id><summary type="html">&lt;p class="first last"&gt;本文是《KaffaWeb.三合》完成了，本文是项目总结。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;项目总结&lt;/h2&gt;
 &lt;p&gt;KaffaWeb 的过程是有趣的，但小迭代来说，个体软件过程会比较重，更小的任务，GTD 方法就可以管理。&lt;/p&gt;
-&lt;p&gt;KaffaWeb 的总目标『实现部分个人数据整合，内容分发起点』来说，只是部分实现，未实现和改进部分将列入「八柱」版本中。&lt;/p&gt;
+&lt;p&gt;KaffaWeb 的总目标“实现部分个人数据整合，内容分发起点”来说，只是部分实现，未实现和改进部分将列入“八柱”版本中。&lt;/p&gt;
 &lt;div class="section" id="section-2"&gt;
 &lt;h3&gt;项目任务回顾&lt;/h3&gt;
 &lt;ol class="arabic simple"&gt;
@@ -59,23 +59,23 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-5"&gt;
-&lt;h2&gt;「八柱」版本特性规划&lt;/h2&gt;
+&lt;h2&gt;“八柱”版本特性规划&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;评论列表&lt;/li&gt;
 &lt;li&gt;手机发布&lt;/li&gt;
 &lt;li&gt;规划中...&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="project"></category><category term="KaffaWeb"></category></entry><entry><title>「KaffaWeb.三合」规划</title><link href="https://kaffa.im/kaffaweb-sanhe.html" rel="alternate"></link><published>2023-11-03T12:00:00+08:00</published><updated>2023-11-03T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-03:/kaffaweb-sanhe.html</id><summary type="html">&lt;p class="first last"&gt;从项目管理角度，本篇可看作是「KaffaWeb.三合」的『项目章程』和『项目状态报告』；本篇还是一个有意思的自包含结构，它的呈现是通过「KaffaWeb.三合」项目的推进来设计的。这也是项目进展迭代至43%时才发布本篇的原因。&lt;/p&gt;
+</content><category term="project"></category><category term="KaffaWeb"></category></entry><entry><title>《KaffaWeb.三合》规划</title><link href="https://kaffa.im/kaffaweb-sanhe.html" rel="alternate"></link><published>2023-11-03T12:00:00+08:00</published><updated>2023-11-03T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-03:/kaffaweb-sanhe.html</id><summary type="html">&lt;p class="first last"&gt;从项目管理角度，本篇可看作是《KaffaWeb.三合》的“项目章程”和“项目状态报告”；本篇还是一个有意思的自包含结构，它的呈现是通过《KaffaWeb.三合》项目的推进来设计的。这也是项目进展迭代至43%时才发布本篇的原因。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;背景介绍&lt;/h2&gt;
 &lt;p&gt;最初，Internet 被设计出来，Web 1.0 上线了，人们开始为 Web 贡献内容；Web 2.0 时代，广泛的 UGC 和认知盈余诞生，部分大 U 和巨大的公司一起成为了时代的受益者。&lt;/p&gt;
 &lt;p&gt;在后 Web 2.0 的时代，巨大逐渐成为唯一的稀缺，一个巨大存在的意义只是另一个巨大的样本。&lt;/p&gt;
 &lt;p&gt;获得了用户数据（包括隐私）的巨大间还经常相互嘲笑，而本是数据主人的用户却对此无能。&lt;/p&gt;
-&lt;p&gt;作为之一，&lt;strong&gt;我无法掌控我的数据&lt;/strong&gt;，这些数据最终被巨大用来向我推荐商品，或者被另一个「我」用来向我卖东西。&lt;/p&gt;
-&lt;p&gt;当每个「我」向 Web 贡献的越多，越会让巨大根深蒂固。事实很清晰，如果世界演化为十个巨大的公司，将会变得僵化而非常无趣。&lt;/p&gt;
+&lt;p&gt;作为之一，&lt;strong&gt;我无法掌控我的数据&lt;/strong&gt;，这些数据最终被巨大用来向我推荐商品，或者被另一个“我”用来向我卖东西。&lt;/p&gt;
+&lt;p&gt;当每个“我”向 Web 贡献的越多，越会让巨大根深蒂固。事实很清晰，如果世界演化为十个巨大的公司，将会变得僵化而非常无趣。&lt;/p&gt;
 &lt;p&gt;最极端科幻的情况，越巨大的意象，内在恐惧越深。源自组织的恐惧会驱使由人和算力组成的暴力机器将平行时空所有概率可能性剪枝，为所有的自由意志铸成囹圄和牢笼，人褪化为机器的电池，你问：What the meaning of life? 源自巨大深渊会回答：It's a flaw of your kind.&lt;/p&gt;
-&lt;p&gt;「我」们处于这个时代中，为对抗上述僵化，理应心怀开放和共享的愿景，为每个「我」的数据的基础权益而战斗，从而让世界变得更多元，富于趣味，充满可能。&lt;/p&gt;
+&lt;p&gt;“我”们处于这个时代中，为对抗上述僵化，理应心怀开放和共享的愿景，为每个“我”的数据的基础权益而战斗，从而让世界变得更多元，富于趣味，充满可能。&lt;/p&gt;
 &lt;p&gt;所以，世界须有一个简单而远大的愿景，叫做： &lt;strong&gt;我数由我不由它&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;然而，实现这个圣杯似的愿景或需要很多年，如果有生之年这个憧憬中的 &lt;strong&gt;用户拥有用户数据权&lt;/strong&gt; 的美丽新世界真的到来了，我为我的这份已取好了代号：KaffaPod。&lt;/p&gt;
 &lt;p&gt;此 KaffaWeb 是 KaffaPod 的子项目，目前作为个人数据和创作内容 Web 入口和分发起点。它是一个个人数字聚合项目，源于多年前想完成的个人数据 Workshop。&lt;/p&gt;
@@ -175,7 +175,7 @@
 &lt;li&gt;预测：在 2023年10月 完成主要部分，整体在 70 小时内完成。&lt;/li&gt;
 &lt;li&gt;组织：个人，任意地点&lt;/li&gt;
 &lt;li&gt;方针：主要利用上、下午非交易时间&lt;/li&gt;
-&lt;li&gt;程序：分2个迭代，每个迭代按「规划-&amp;gt;设计-&amp;gt;实现-&amp;gt;验证-&amp;gt;发布」进行&lt;/li&gt;
+&lt;li&gt;程序：分2个迭代，每个迭代按“规划-&amp;gt;设计-&amp;gt;实现-&amp;gt;验证-&amp;gt;发布”进行&lt;/li&gt;
 &lt;li&gt;标准：按个人平均效率 80%，80 loc，1/3 功能点/日&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -201,7 +201,7 @@
 &lt;table class="docutils footnote" frame="void" id="f1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;源自『楚辞「天问」』：「阴阳三合，何本何化？」；又有『春秋穀梁传』中「独阴不生，独阳不生，独天不生，三合然后生。」&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;源自《楚辞》的“天问”：“阴阳三合，何本何化？”；又有《春秋穀梁传》中“独阴不生，独阳不生，独天不生，三合然后生。”&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;table class="docutils footnote" frame="void" id="f2" rules="none"&gt;

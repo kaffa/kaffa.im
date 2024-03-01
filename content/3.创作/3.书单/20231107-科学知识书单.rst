@@ -9,7 +9,7 @@
 :slug: science-book-list
 :summary: 本文先列举网站，后续不定期补充书籍。
 
-『科学知识』书单
+""科学知识』书单
 ====================
 
 将一批网站列在这，是因为科学是不断更新的，网站的是活的一手信息，反应当下趋势。
@@ -20,7 +20,7 @@
 
 1. 知识全靠搜
 
-在科学的游戏中，Google 和 YouTube 就是你的「开局一条狗」
+在科学的游戏中，Google 和 YouTube 就是你的“开局一条狗”
 
 * `Google <https://www.google.com/>`_
 * `YouTube <https://www.youtube.com/>`_
@@ -29,7 +29,7 @@
 
 2. 近期刊，远民科
 
-建立对世界的「通识」，英文部分不可缺。
+建立对世界的“通识”，英文部分不可缺。
 
 * `sci-hub <https://www.scihub.net.cn/sci-hub/>`_
 * `Nature <https://www.nature.com/>`_
