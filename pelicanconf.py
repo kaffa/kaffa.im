@@ -45,11 +45,16 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 # Blogroll
-LINKS = (('Paul Graham', 'http://paulgraham.com'),
-         ('Guido van Rossum', 'https://gvanrossum.github.io/'),
-         ("Coffee's", 'https://coffees.app'),
-         ('论道', 'https://lundao.pub/'),)
-
+LINKS = [
+    {'group': '链接', 'items': (
+        ('Paul Graham', 'http://paulgraham.com'),
+        ('Guido van Rossum', 'https://gvanrossum.github.io/'),
+        ("Coffee's", 'https://coffees.app'),
+        ('论道', 'https://lundao.pub/'),)},
+    {'group': '收录', 'items': (
+        ('十年之约', 'https://www.foreverblog.cn'),
+        ('BlogFinder', 'https://bf.zzxworld.com'),)}
+]
 # Social widget
 SOCIAL = (('My GitHub', 'https://github.com/kaffa'),)
 

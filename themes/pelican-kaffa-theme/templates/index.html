@@ -302,16 +302,19 @@
             {% if LINKS|count > 0 %}
             <section class="box">
                 <h3>链接</h3>
+                {% for link in LINKS %}
                 <aside class="menu mt-3">
-                    <p class="menu-label">关注</p>
+                    <p class="menu-label">{{ link['group'] }}</p>
                     <ul class="menu-list">
-                        {% for link in LINKS %}
-                        <li><a target="_blank" href="{{ link[1] }}">{{ link[0] }}</a></li>
+                        {% for item in link['items'] %}
+                        <li><a target="_blank" href="{{ item[1] }}">{{ item[0] }}</a></li>
                         {% endfor %}
                     </ul>
                 </aside>
+                {% endfor %}
             </section>
             {% endif %}
+
         </div>
     </div>
 </div>

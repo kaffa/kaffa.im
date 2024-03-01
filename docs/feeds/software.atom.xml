@@ -13,7 +13,7 @@
 &lt;p&gt;RSS 或 ATOM，对于内容分发和内容消费，都不是关键，它们只是渠道的技术背景。&lt;/p&gt;
 &lt;p&gt;Feed 的确是极客思维的产物，天然反商业，它们最简单直白的方式交换内容。&lt;/p&gt;
 &lt;p&gt;商业不欢迎 Feed 的道理很简单，内容的创造着和消费者点对点了，没有中间商，哪里会还需要平台？&lt;/p&gt;
-&lt;p&gt;Anyway，管它呢，我还是像使用 FeedDemon 来阅读我的 Feeds。&lt;/p&gt;
+&lt;p&gt;Anyway，管它呢，我还是想使用 FeedDemon 来阅读我的 Feeds。&lt;/p&gt;
 &lt;p&gt;Nick Bradbury 说，他使用了一些第三方组件，且升级了 Delphi 的 Unicode 支持，所以&lt;a class="reference external" href="https://nickbradbury.com/2013/03/19/my-plan-for-feeddemon/"&gt;不太容易开源&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;我于是产生了一个为自己复刻 FeedDemon 的想法，先叫做 FeedDemon2 或 FeedAngel 或 FeedLemon 吧。&lt;/p&gt;
 &lt;p&gt;不知我的朋友们怎么看，是否你们也需要一个完美支持 Unicode 和中文的 FeedDemon 复刻呢，也许哪天我就开始做了。&lt;/p&gt;
@@ -35,7 +35,7 @@
 &lt;p&gt;于是，我想……还是按基本原理来设计，于是 ALaunch 诞生了，逻辑如下：&lt;/p&gt;
 &lt;p&gt;默认情况下，Windows 中启动指定软件和文件，需要双击启动，双击的前提是能看见它，能看见它是记得它在哪，但当所需使用的软件超过150个，就不一定记得它们放在哪，而将这么多软件的快捷方式放在桌面上也并不是一个好办法。那么……能否放在一个随时可用或触手可及的地方呢？&lt;/p&gt;
 &lt;p&gt;这个电脑中，给软件和文档的“应许之地”就是 ALaunch，新建启动的方式采用拖拽，来自拟物直觉没有学习成本。&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://kaffa.im/static/img/2023/alaunch-demo.png"&gt;ALaunch Demo&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="ALaunch Snapshot" src="https://kaffa.im/static/img/2023/alaunch-demo.png" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;原型&lt;/h2&gt;

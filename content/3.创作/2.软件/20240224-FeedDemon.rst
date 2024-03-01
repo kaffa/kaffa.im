@@ -31,7 +31,7 @@ Feed 的确是极客思维的产物，天然反商业，它们最简单直白的
 
 商业不欢迎 Feed 的道理很简单，内容的创造着和消费者点对点了，没有中间商，哪里会还需要平台？
 
-Anyway，管它呢，我还是像使用 FeedDemon 来阅读我的 Feeds。
+Anyway，管它呢，我还是想使用 FeedDemon 来阅读我的 Feeds。
 
 Nick Bradbury 说，他使用了一些第三方组件，且升级了 Delphi 的 Unicode 支持，所以\ `不太容易开源`_\ 。
 

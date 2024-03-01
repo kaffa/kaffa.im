@@ -31,7 +31,9 @@ ALaunch
 
 这个电脑中，给软件和文档的“应许之地”就是 ALaunch，新建启动的方式采用拖拽，来自拟物直觉没有学习成本。
 
-`ALaunch Demo <https://kaffa.im/static/img/2023/alaunch-demo.png>`_
+.. image:: https://kaffa.im/static/img/2023/alaunch-demo.png
+    :alt: ALaunch Snapshot
+
 
 原型
 ====================
