@@ -17,7 +17,7 @@
 
 为解决中文单双引号不圆的问题，我特修改了引号的字体，采用最简单方法 unicode-range 魔改，本地存在 Times New Roman 者可见。
 
-:: css
+.. code-block:: css
 
     @font-face {
         font-family: "TimesNewRoman";
