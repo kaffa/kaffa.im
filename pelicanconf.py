@@ -55,7 +55,8 @@ LINKS = [
         ('十年之约', 'https://www.foreverblog.cn'),
         ('BlogFinder', 'https://bf.zzxworld.com'),
         ('个站商店', 'https://storeweb.cn/'),
-        ('博客志', 'http://www.jetli.com.cn'),)}
+        ('博客志', 'http://www.jetli.com.cn'),
+        ('积薪', 'https://firewood.news'),)}
 ]
 # Social widget
 SOCIAL = (('My GitHub', 'https://github.com/kaffa'),)
