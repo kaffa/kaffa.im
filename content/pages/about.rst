@@ -18,6 +18,9 @@
         margin-bottom: -1px;
         border-bottom: dotted 1px #999;
     }
+    h1 a, h1 a:visited, h1 a:hover {
+        border-bottom: none;
+    }
     </style>
     <script src="http://kaffa.im/static/js/jquery-3.7.1.min.js"></script>
     <script>
@@ -146,7 +149,9 @@ Hello，您好！
 
 1. 对行文不太满意，一顿操作，字数增加不少，自觉阅感更好。
 
+2024-03-03
 
+1. 增加了英文版本。还翻译了张岱的“痴”字，ChatGPT 确实难懂这些人类的想法，这里我读有种“诗意的执着”，但ChatGPT 给出的 foolish, naive, unwise，明显是难懂的。于是我找了 idealistic 替换之。
 
 脚注
 ====================
