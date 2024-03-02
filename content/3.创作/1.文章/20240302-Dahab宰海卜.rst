@@ -4,7 +4,7 @@ Dahab-宰海卜
 :date: 2024-03-02 18:00
 :author: Kaffa
 :category: article
-:tags: egypt
+:tags: egypt,dahab
 :slug: dahab-2046-for-everyone
 :summary: 此篇是关于一个人的未至之地。2402年，应该不存在【多图慎入】警告了。
 :image: /static/img/2024/peggy-anke-Fv6MLe28MIs-unsplash.jpg
