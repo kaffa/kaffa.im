@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - digital</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/digital.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-01T23:30:00+08:00</updated><entry><title>关于中文书写的标点符号</title><link href="https://kaffa.im/on-punctuation-marks-in-chinese-writing.html" rel="alternate"></link><published>2024-03-01T23:30:00+08:00</published><updated>2024-03-01T23:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-01:/on-punctuation-marks-in-chinese-writing.html</id><summary type="html">&lt;p class="first last"&gt;本文探讨的是本站中文书写中遇到的问题&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;中文标点&lt;/h2&gt;
-&lt;p&gt;本站在升级2.0主题时，使用了繁体习惯，如直角单引号和双引号，但终究感觉不如书名号和引号，从视觉上虽然整齐，但有一种喧宾夺主的体验。于是在今天，我又将本站所有的标点全部改回了中文简体习惯。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;中文理想版式&lt;/h2&gt;
-&lt;p&gt;看到许多中文版式的站点，从设计上没有使用宋体、仿宋、楷体、雅黑之类，也没有使用当下流行的“落霞与孤鹜齐飞，秋水共长天一色”的霞鹜文楷体，而是使用的思源宋体，有一种回到20年前看《21世纪经济报道》报纸的感觉，不禁让我想聊一下我喜欢的中文排版。&lt;/p&gt;
-&lt;p&gt;我将在新站点中尝试这种我设想的类似书籍和中文报纸感觉的搭配。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="digital"></category><category term="quotation marks"></category></entry><entry><title>鼠标微动故障、双击、滚动失灵的逻辑解法</title><link href="https://kaffa.im/solutions-to-mouse-micro-movement-double-click-and-scroll-reversed-failures.html" rel="alternate"></link><published>2024-02-12T18:30:00+08:00</published><updated>2024-02-12T18:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-12:/solutions-to-mouse-micro-movement-double-click-and-scroll-reversed-failures.html</id><summary type="html">&lt;p class="first last"&gt;本文探讨的是 problem-solving 能力的逻辑需基于经验。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - digital</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/digital.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-02-12T18:30:00+08:00</updated><entry><title>鼠标微动故障、双击、滚动失灵的逻辑解法</title><link href="https://kaffa.im/solutions-to-mouse-micro-movement-double-click-and-scroll-reversed-failures.html" rel="alternate"></link><published>2024-02-12T18:30:00+08:00</published><updated>2024-02-12T18:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-12:/solutions-to-mouse-micro-movement-double-click-and-scroll-reversed-failures.html</id><summary type="html">&lt;p class="first last"&gt;本文探讨的是 problem-solving 能力的逻辑需基于经验。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;关于某公司的有计划废止设计的吐槽&lt;/h2&gt;
 &lt;p&gt;1968年12月9日，世界上的第一个鼠标诞生于美国斯坦福大学。鼠标作为一种物品，设计和迭代经历了 50 多年，它还会在你购买一年或二年内，特别是保修期刚过时就产生故障，那大概率就是一种“恶意设计”。&lt;/p&gt;

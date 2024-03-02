@@ -15,6 +15,22 @@
 
 本站在升级2.0主题时，使用了繁体习惯，如直角单引号和双引号，但终究感觉不如书名号和引号，从视觉上虽然整齐，但有一种喧宾夺主的体验。于是在今天，我又将本站所有的标点全部改回了中文简体习惯。
 
+为解决中文单双引号不圆的问题，我特修改了引号的字体，采用最简单方法 unicode-range 魔改，本地存在 Times New Roman 者可见。
+
+:: css
+
+    @font-face {
+        font-family: "TimesNewRoman";
+        font-size: 1.2rem;
+        src: local("Times New Roman, Times");
+        unicode-range: U+2018, U+2019, U+201c, U+201d;
+    }
+
+    .content {
+        font-family: TimesNewRoman, BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+    }
+
+
 中文理想版式
 ====================
 
