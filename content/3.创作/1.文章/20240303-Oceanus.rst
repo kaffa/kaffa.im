@@ -75,12 +75,14 @@
     Mythosoftology 神话软件学
 
     Index 目录
-    1. Introduction 导论
-    2. Historical Background 历史背景
-    3. Methodology 方法论
-    4. Research Areas 研究领域
-    5. Applications and Future Prospects 应用与未来展望
-    6. Conclusion 结论
+
+    | 1. Introduction 导论
+    | 2. Historical Background 历史背景
+    | 3. Methodology 方法论
+    | 4. Research Areas 研究领域
+    | 5. Applications and Future Prospects 应用与未来展望
+    | 6. Conclusion 结论
+    |
 
     Introduction 导论
 
