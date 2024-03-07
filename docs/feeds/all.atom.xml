@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-03T23:00:00+08:00</updated><entry><title>2024年第09周周报</title><link href="https://kaffa.im/weekly-2024-w09.html" rel="alternate"></link><published>2024-03-03T23:00:00+08:00</published><updated>2024-03-03T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-03:/weekly-2024-w09.html</id><summary type="html">&lt;p class="first last"&gt;2024年第09周周报&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-07T09:26:00+08:00</updated><entry><title>罗翔-优绩主义</title><link href="https://kaffa.im/words-of-luo-xiang.html" rel="alternate"></link><published>2024-03-07T09:26:00+08:00</published><updated>2024-03-07T09:26:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-07:/words-of-luo-xiang.html</id><summary type="html">&lt;p class="first last"&gt;记录的罗翔言论&lt;/p&gt;
+</summary><content type="html"></content><category term="words"></category><category term="罗翔"></category></entry><entry><title>2024年第09周周报</title><link href="https://kaffa.im/weekly-2024-w09.html" rel="alternate"></link><published>2024-03-03T23:00:00+08:00</published><updated>2024-03-03T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-03:/weekly-2024-w09.html</id><summary type="html">&lt;p class="first last"&gt;2024年第09周周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第09周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;
@@ -3713,9 +3714,4 @@ Microsoft Edge Canary 浏览器。&lt;/p&gt;
 &lt;h2&gt;阅后&lt;/h2&gt;
 &lt;p&gt;肖申克于我阐述的是，无论人生处于怎样的境遇中，充满希望的心，会引领你穿越骨干的现实到达自由的彼岸。所以，剩下的就是行动。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="movie"></category><category term="Hope"></category></entry><entry><title>UNIX传奇</title><link href="https://kaffa.im/unix-a-history-and-a-memoir.html" rel="alternate"></link><published>2023-11-02T09:11:00+08:00</published><updated>2023-11-02T09:11:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-02:/unix-a-history-and-a-memoir.html</id><summary type="html">&lt;p class="first last"&gt;热爱计算机的人都会对 UNIX 产生兴趣，因它真正带给人类一套稳固灵活的操作系统软件，解决了人类进入数智时代的基础问题。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-1"&gt;
-&lt;h2&gt;读后&lt;/h2&gt;
-&lt;p&gt;热爱计算机的人都会对 UNIX 产生兴趣，因它真正带给人类一套稳固灵活的操作系统软件，解决了人类进入数智时代的基础问题。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"></category><category term="Unix"></category></entry></feed>
+</content><category term="movie"></category><category term="Hope"></category></entry></feed>

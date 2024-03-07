@@ -1,0 +1,10 @@
+罗翔-优绩主义
+############################################################
+
+:date: 2024-03-07 09:26
+:author: Kaffa
+:category: words
+:tags: 罗翔
+:slug: words-of-luo-xiang
+:summary: 记录的罗翔言论
+:image: /static/img/2023/eemm.jpg
