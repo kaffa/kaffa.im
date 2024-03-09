@@ -12,6 +12,15 @@ class Friend:
 def get_list():
     return [
         {
+            'ID': 5,
+            'Name': '印记',
+            'URL': 'https://yinji.org/',
+            'Intro': '君子可内敛不可懦弱，面不公可起而论之',
+            'Owner': 'Bruce，Blogger/摄影爱好者/数码发烧友',
+            'Icon': 'https://huhexian.s3.bitiful.net/2023/12/23/3b83cc067b2c3f1e45807dfdeb66e0c0.webp',
+            'Email': 'huhexian0206@gmail.com',
+        },
+        {
             'ID': 1,
             'Name': '槿呈Goidea',
             'URL': 'https://justgoidea.com/',
