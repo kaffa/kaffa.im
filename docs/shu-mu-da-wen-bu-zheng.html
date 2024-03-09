@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 书目答问补正</title>
+    <meta charset="utf-8" />
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+        href="https://kaffa.im/feeds/all.atom.xml"
+        type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed" />
+    <link
+        href="https://kaffa.im/feeds/book.atom.xml"
+        type="application/atom+xml" rel="alternate" title="Kaffa.im Categories Atom Feed" />
+
+
+
+
+    <meta name="tags" content="张之洞" />
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <h1 class="navbar-item">
+                    <a href="./"><span class="is-italic author_name">Kaffa</span>.im</a>
+                    <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+                </h1>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarGlobal">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarGlobal" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">专栏</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                                <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">笔记</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">创作</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">我的</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                                <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                                <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-grey">关于</a>
+                        <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                                <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                                <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                            <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                            Log in
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="has-background-grey-lighter pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./shu-mu-da-wen-bu-zheng.html" rel="bookmark" title="「书目答问补正」的永久链接">书目答问补正</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-02-22T14:00:00+08:00">2024-02-22 周四</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+        <div class="mb-2">
+            <span>分类:
+                <a class="tag is-medium" href="./category/book.html">书</a>
+            </span>
+            <span class="ml-2">标签:
+                <a class="tag is-primary is-light is-medium" href="./tag/zhang-zhi-dong.html">张之洞</a>
+            </span>
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+        <div class="columns is-centered box mt-5" id="subject">
+            <div class="column is-one-quarter">
+                <p class="image">
+                    <img title="书目答问补正" class="book-cover" src="/static/img/book/%E4%B9%A6%E7%9B%AE%E7%AD%94%E9%97%AE%E8%A1%A5%E6%AD%A3.jpg">
+                </p>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <span class="title">书目答问补正</span>
+                    <p>
+                        <strong>
+                            作者：[清] 张之洞 编撰&nbsp;范希曾 补正
+                        </strong>
+                    </p>
+                    <p class="is-size-7">
+                        《书目答问》是晚清重臣张之洞(1837—1909)针对学子读书不知要领而编撰的一部指示治学门径的目录书。全书五卷，收书两千两百多种，按照经、史、子、集、丛书五类编排，大类之下再设小类，每类中依据时代先后顺序，著录书名、作者姓名、版本等；版本以当世习见为主；重要图书还撰有按语，指明阅读方法；书后附《别录》和《国朝著述诸家姓名略》。本书是清代继《四库全书总目》之后一部影响最大的目录学著作。 范希曾在保持《书目答问》体例的基础上，纠正了原书中作者、姓名、版本方面的一些错误，补充了1874年以后各书的新版本，增加了1930年前出版的与原书所收性质相近的图书一千二百余种。《书目答问补正》备受重视，开始在各种版本中占据主流地位。 这次整理，以1963年中华书局影印本为底本，参校了1983年上海古籍出版社出版的瞿凤起先生校点本，并把江人度《书目答问笺补》在各小类末尾的钩乙符号“┙”下所加的文字说明补录进去，用〔〕括出。另外，张之洞的《輶轩语·语学第二》、《四川省城尊经书院记》、《劝学篇？内篇？守约第八》三篇文字收作附录。
+                    </p>
+                    <table class="table is-narrow is-striped is-hoverable is-size-7">
+                        <colgroup>
+                            <col style="width: 6rem" />
+                            <col/>
+                        </colgroup>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9787101134735</td>
+                            </tr>
+                            <tr>
+                                <td>出版社</td>
+                                <td>中华书局</td>
+                            </tr>
+                            <tr>
+                                <td>出版时间</td>
+                                <td>
+                                    2018年
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>装帧</td>
+                                <td>精装</td>
+                            </tr>
+                            <tr>
+                                <td>定价</td>
+                                <td>45.00元</td>
+                            </tr>
+                            <tr>
+                                <td>页数</td>
+                                <td>367</td>
+                            </tr>
+                            <tr>
+                                <td>系列</td>
+                                <td>中华国学文库</td>
+                            </tr>
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                        <a href="https://book.douban.com/subject/30355969/" target="_blank">
+                                                豆瓣
+                                        </a>&nbsp;
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+<h2>评分</h2>
+<p>⭐⭐⭐⭐⭐⭐⭐ 10/10</p>
+</div>
+<div class="section" id="section-3">
+<h2>张之洞</h2>
+<p>张之洞，1837年9月2日－1909年10月4日，字孝达，号香涛，又号香严，晚年自号抱冰老人。原籍直隶南皮（今属河北），生于贵州贵阳六洞桥。他是中国晚清重臣、后期洋务派代表人物。他主张学习和吸收西方文化，提出“中体西用”的思想主张。他还主张开办了京师大学堂，强调师范教育，后与张百熙主持制定新学制，时称“癸卯学制”。这是中国教育史上第一个正式颁布的在中国普遍实行的学制，奠定了中国现代学制的基石。</p>
+</div>
+<div class="section" id="section-4">
+<h2>内容</h2>
+<p>《书目答问补正》是为补正《书目答问》中的错误和疏漏而作。它补入与原书宗旨相关著作1200余种，也补上原书著录各书缺漏的作者、卷数、版本、时代等具体事项。纠正答问疏漏或讹误的书名、卷数、作者姓氏、刻书年代等近百处。</p>
+</div>
+<div class="section" id="section-5">
+<h2>为什么读</h2>
+<p>用软件作比，这是一本官方修的经、史、子、集数据库。如果古代有数据库，这些记录存储下来，也就是主表记录3000多条，但书目关系数据颇多。有此书，在国学典籍中就有罗盘，因为见得了至少是大部分全貌。晓得自己的位置，就知道用功力度。</p>
+<p>颇为可惜的是，就此 3000 条目，世人接触者不过 500 条，通读的更少，可能大部分人都没有读过超过 60 本。</p>
+<p>清代民国做训诂学问的人，阅读量也是不容小觑的。</p>
+<p>如果闲来无事，可以从中利用搜索做主题阅读，比如：“易经”主题，“历史”主题。</p>
+<p>更重要的，本书除前面的按经史子集列举书目外，还有附录，如国学人物地图：《国朝著述诸家姓名略》，一共 500 多人，分别是：</p>
+<ul class="simple">
+<li>经学家 203 人</li>
+<li>史学家：90 人</li>
+<li>理学家：22 人</li>
+<li>经学史学兼理学家：5 人</li>
+<li>小说家：63 人</li>
+<li>文学选家 15 人</li>
+<li>算学家： 124 人</li>
+<li>校勘之学家：31 人</li>
+<li>金石学家： 46 人</li>
+<li>古文家： 44 人</li>
+<li>骈体文家： 22 人</li>
+<li>诗家： 8 人</li>
+<li>词家： 12 人</li>
+<li>经济家： 25 人</li>
+</ul>
+<p>看到这里，你会发现在清四大家之一的书中，值得书面化的当朝人物只 500 人。</p>
+<p>我国历史长远，光是经史就耗费人生大部分经历，所以理学家稀少，但算学家多凸显出，还是会数学的人多。</p>
+</div>
+<div class="section" id="section-6">
+<h2>摘录</h2>
+<p>“书海无涯，从何处着手？这是初学者常常困惑的问题。晚清洋务运动领袖张之洞为回答上述问题而编纂了《书目答问补正》。全书分经史子集丛书几a部分，另增“丛书目“一类列出该类最重要的著作及较好的版式本，并加适当的比较和评论，颇便初学者，在当时流传极广。五十年后，因新书和善本不断问世，清末民初学者范希曾又对原书进行了补正，增加了不少新的内容，也改正了原书的一些讹误。”</p>
+<p>读书不知要领，劳而无功。</p>
+<p>读书欲知门径，必须有师。师不易得，莫如即以国朝著述名家为师。</p>
+<p>经史小学、天算地舆、金石校勘之属皆然。理学、经济、词章，虽不能过古人，然考辨最明确，说最详，法最备，仍需读今人书，方可执以学古之权衡耳。</p>
+</div>
+<div class="section" id="section-7">
+<h2>版本</h2>
+<p><a class="reference external" href="https://kaffa.im/ye-hang-chuan.html">中书上古国家队，有中书选中书。</a></p>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+    </main>
+    <footer class="footer is-max-widescreen">
+        <div class="content has-text-centered">
+            版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+            <p>
+                本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+            </p>
+            <p>
+                <a href="https://www.foreverblog.cn/" target="_blank" >
+                    <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;">
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <div id="modal-project" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+              <p>项目明细在建设中...</p>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /*====================
+              Modal
+             ====================*/
+
+            // Functions to open and close a modal
+            function openModal($el) {
+                $el.classList.add('is-active');
+            }
+
+            function closeModal($el) {
+                $el.classList.remove('is-active');
+            }
+
+            function closeAllModals() {
+            (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                    closeModal($modal);
+                });
+            }
+
+            // Add a click event on buttons to open a specific modal
+            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                const modal = $trigger.dataset.target;
+                const $target = document.getElementById(modal);
+                $trigger.addEventListener('click', () => {
+                     openModal($target);
+                });
+            });
+
+            // Add a click event on various child elements to close the parent modal
+            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                const $target = $close.closest('.modal');
+
+                $close.addEventListener('click', () => {
+                    closeModal($target);
+                });
+            });
+
+            // Add a keyboard event to close all modals
+            document.addEventListener('keydown', (event) => {
+                if (event.code === 'Escape') {
+                    closeAllModals();
+                }
+            });
+
+            /*====================
+              navbar
+             ====================*/
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+            /*====================
+              Projects
+             ====================*/
+            const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+            $panelTab.forEach(el => {
+                el.addEventListener('click', () => {
+                    const $siblings = el.parentNode.children;
+                    for (let i = 0; i < $siblings.length; i++) {
+                        $siblings[i].classList.remove('is-active');
+                    }
+                    el.classList.add('is-active');
+
+                    if (el.title == 'all') {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.remove("is-hidden");
+                        }
+                    } else {
+                        const $panelBlock = document.querySelectorAll(".panel-block");
+                        for (let i = 0; i < $panelBlock.length; i++) {
+                            $panelBlock[i].classList.add("is-hidden");
+                        }
+
+                        const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                        for (let i = 0; i < $targetPanelBlock.length; i++) {
+                            $targetPanelBlock[i].classList.remove("is-hidden");
+                        }
+                    }
+                });
+            });
+
+            /*====================
+              Email
+             ====================*/
+            const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+            $email.forEach(el => {
+                el.innerText = ['admin', '@', 'kaffa.im'].join('');
+            });
+
+            /*====================
+              Table
+            ====================*/
+            var altKeyPressed = false;
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Alt' && !altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = true;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'table-row';
+                    });
+                }
+            });
+
+            document.addEventListener('keyup', function(event) {
+                if (event.key === 'Alt' && altKeyPressed) {
+                    event.preventDefault();
+                    altKeyPressed = false;
+                    var rows = document.querySelectorAll('.alt');
+                    rows.forEach(function(row) {
+                        row.style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

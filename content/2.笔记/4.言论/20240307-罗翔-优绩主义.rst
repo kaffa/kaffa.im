@@ -11,19 +11,28 @@
 
 
 .. image:: https://kaffa.im/static/img/2024/lx-01.jpg
+    :alt: lx-01
 
 .. image:: https://kaffa.im/static/img/2024/lx-02.jpg
+    :alt: lx-02
 
 .. image:: https://kaffa.im/static/img/2024/lx-03.jpg
+    :alt: lx-03
 
 .. image:: https://kaffa.im/static/img/2024/lx-04.jpg
+    :alt: lx-04
 
 .. image:: https://kaffa.im/static/img/2024/lx-05.jpg
+    :alt: lx-05
 
 .. image:: https://kaffa.im/static/img/2024/lx-06.jpg
+    :alt: lx-06
 
 .. image:: https://kaffa.im/static/img/2024/lx-07.jpg
+    :alt: lx-07
 
 .. image:: https://kaffa.im/static/img/2024/lx-08.jpg
+    :alt: lx-08
 
 .. image:: https://kaffa.im/static/img/2024/lx-09.jpg
+    :alt: lx-09
