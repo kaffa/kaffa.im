@@ -145,7 +145,7 @@
         <nav class="level is-mobile container is-max-desktop">
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="title">0</p>
+                    <p class="title">3</p>
                     <p class="heading">项目</p>
                 </div>
             </div>
@@ -184,6 +184,36 @@
                         <a title="done">完成</a>
                         <a title="ready">未开始</a>
                     </p>
+                    <a class="panel-block is-active panel-done is-hidden">
+                        <div style="width: 100%;">
+                            <strong>KaffaWeb.三合</strong>
+                            <strong class="is-pulled-right">100.0%</strong>
+                            <p class="subtitle is-7">Kunnect Adventures & Fun</p>
+                            <progress class="progress is-small" value="100.0" max="100" style="width: auto;">
+                                100.0%
+                            </progress>
+                        </div>
+                    </a>
+                    <a class="panel-block is-active panel-done is-hidden">
+                        <div style="width: 100%;">
+                            <strong>琅環笔记</strong>
+                            <strong class="is-pulled-right">100.0%</strong>
+                            <p class="subtitle is-7">sth. about everything & everything about sth.</p>
+                            <progress class="progress is-small" value="100.0" max="100" style="width: auto;">
+                                100.0%
+                            </progress>
+                        </div>
+                    </a>
+                    <a class="panel-block is-active panel-ready is-hidden">
+                        <div style="width: 100%;">
+                            <strong>ALaunch</strong>
+                            <strong class="is-pulled-right">0.0%</strong>
+                            <p class="subtitle is-7">be the first app</p>
+                            <progress class="progress is-small" value="0.0" max="100" style="width: auto;">
+                                0.0%
+                            </progress>
+                        </div>
+                    </a>
                 </nav>
             </section>
 
@@ -268,6 +298,20 @@
         </div>
 
         <div class="column is-3">
+            <section class="box">
+                <div class="is-divider" data-content="单向历"></div>
+                <meta name="referrer" content="same-origin">
+                <img class='dxl'>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const d = new Date();
+                        const year = d.getFullYear();
+                        const month = (d.getMonth() + 1).toString().padStart(2, '0');
+                        const day = d.getDay().toString().padStart(2, '0');
+                        document.querySelector('.dxl').src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
+                    });
+                </script>
+            </section>
 
             <section class="box">
                 <h3>动态小计</h3>
