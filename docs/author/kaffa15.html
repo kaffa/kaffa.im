@@ -495,7 +495,7 @@
                         const d = new Date();
                         const year = d.getFullYear();
                         const month = (d.getMonth() + 1).toString().padStart(2, '0');
-                        const day = d.getDay().toString().padStart(2, '0');
+                        const day = d.getDate().toString().padStart(2, '0');
                         document.querySelector('.dxl').src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
                     });
                 </script>
