@@ -151,7 +151,7 @@
             </div>
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="title">144</p>
+                    <p class="title">145</p>
                     <p class="heading">动态</p>
                 </div>
             </div>
@@ -369,17 +369,18 @@
         </div>
 
         <div class="column is-3">
-            <section class="box">
-                <div class="is-divider" data-content="单向历"></div>
+            <section class="box box-dxl">
                 <meta name="referrer" content="same-origin">
                 <img class='dxl'>
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
                         const d = new Date();
-                        const year = d.getFullYear();
+                        const year = d.getFullYear() - 200;
                         const month = (d.getMonth() + 1).toString().padStart(2, '0');
                         const day = d.getDate().toString().padStart(2, '0');
-                        document.querySelector('.dxl').src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
+                        const $dxl = document.querySelector('.dxl');
+                        $dxl.src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
+                        $dxl.onerror = document.querySelector('.box-dxl').style.display = 'none';
                     });
                 </script>
             </section>
@@ -388,7 +389,7 @@
                 <h3>动态小计</h3>
                 <div class="is-divider" data-content="Notes"></div>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-sticky-note-o mr-3" aria-hidden="true"></i>记录
-                    <strong>40</strong> 条笔记</p>
+                    <strong>41</strong> 条笔记</p>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-file-text-o mr-3" aria-hidden="true"></i>创作
                     <strong>34</strong> 篇文章</p>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-code mr-3" aria-hidden="true"></i>使用 <strong>3</strong> 个软件</p>
@@ -412,7 +413,7 @@
                             <li><a href="../category/project.html">项目</a> (2)</li>
                             <li><a href="../category/development.html">研发</a> (2)</li>
                             <li><a href="../category/programming.html">编程</a> (6)</li>
-                            <li><a href="../category/website.html">网站</a> (16)</li>
+                            <li><a href="../category/website.html">网站</a> (17)</li>
                             <li><a href="../category/reading.html">读书</a> (5)</li>
                             <li><a href="../category/digital.html">数智</a> (19)</li>
                             <li><a href="../category/words.html">言论</a> (4)</li>

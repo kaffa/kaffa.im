@@ -1,0 +1,47 @@
+增加单向历
+##################################################
+
+:date: 2024-03-11 12:00
+:author: Kaffa
+:category: website
+:tags: 单向历
+:slug: add-owspace-calendar
+:summary: 见群友说到单向历，于是加上了试试。
+
+单向历
+========================================
+
+在商圈发现单向历的布展，展览上挂着许多纸质单向历，到访展览的人可以撕掉喜欢的一页带走。这算是商业站和行为艺术的结合吧。
+
+单向历类似答案之书，背后的原理是“集体潜意识”与荣格的“共时性”，如果有兴趣此关键词，可在文后留言，我会在后续填坑。
+
+添加数字单向历
+========================================
+
+因为这是第三方图片，此处只是借用，因此本地没有缓存的必要，直接在前端处理。
+
+直接给代码，将这段代码插入到你想显示的地方，如果单向历源头的图片不存在时，.box-dxl 元素会隐藏。
+
+.. code-block:: html
+
+    <meta name="referrer" content="same-origin">
+    <img class="dxl">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const d = new Date();
+            const year = d.getFullYear();
+            const month = (d.getMonth() + 1).toString().padStart(2, '0');
+            const day = d.getDate().toString().padStart(2, '0');
+            const $dxl = document.querySelector('.dxl');
+            $dxl.src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
+            $dxl.onerror = document.querySelector('.box-dxl').style.display = 'none';
+        });
+    </script>
+
+如果想控制图片宽度，有两个方式，一个是外部控制，二个是自己设置。
+
+我用挺省事，用的是 bulma css 的组件，自己会控制宽度。如果自己设置，可以修改 <img class="dxl"> 为 <img class="dxl" style="width: auto;"> 或者你 auto 改为固定的像素值。
+
+加上 meta 那句是因为那边作了 referrer 的 same-origin 验证，否则会 Http 403 错误。
+
+如果喜欢，可以复制上述代码插入到你的网站想显示的地方。

@@ -215,17 +215,18 @@
         </div>
 
         <div class="column is-3">
-            <section class="box">
-                <div class="is-divider" data-content="单向历"></div>
+            <section class="box box-dxl">
                 <meta name="referrer" content="same-origin">
                 <img class='dxl'>
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
                         const d = new Date();
-                        const year = d.getFullYear();
+                        const year = d.getFullYear() - 200;
                         const month = (d.getMonth() + 1).toString().padStart(2, '0');
                         const day = d.getDate().toString().padStart(2, '0');
-                        document.querySelector('.dxl').src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
+                        const $dxl = document.querySelector('.dxl');
+                        $dxl.src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
+                        $dxl.onerror = document.querySelector('.box-dxl').style.display = 'none';
                     });
                 </script>
             </section>
