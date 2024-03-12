@@ -17,7 +17,7 @@ def generate_uml_image(path, plantuml_code, uml_filename, imgformat, global_plan
     with open(uml_path, 'w', encoding='utf-8') as f:
         f.write(content)
 
-    logger.debug("[plantuml] Temporary PlantUML source at " + uml_path)
+    # logger.debug("[plantuml] Temporary PlantUML source at " + uml_path)
 
     if imgformat == 'png':
         imgext = ".png"
@@ -38,8 +38,8 @@ def generate_uml_image(path, plantuml_code, uml_filename, imgformat, global_plan
     row = cursor.fetchone()
     md5 = hashlib.md5(content.encode('utf-8')).hexdigest()
 
-    logger.debug(md5)
-    logger.debug(type(md5))
+    # logger.debug(md5)
+    # logger.debug(type(md5))
 
     if not row or (row and row[3] != md5):
         cursor.execute("INSERT INTO plantuml(name, content, md5, updated_time) VALUES(?, ?, ?, DATETIME('now','localtime'))",
@@ -62,7 +62,7 @@ def generate_uml_image(path, plantuml_code, uml_filename, imgformat, global_plan
                    outopt, uml_path]
 
     try:
-        logger.debug("[plantuml] About to execute " + " ".join(cmdline))
+        # logger.debug("[plantuml] About to execute " + " ".join(cmdline))
 
         p = Popen(cmdline, stdout=PIPE, stderr=PIPE)
         out, err = p.communicate()

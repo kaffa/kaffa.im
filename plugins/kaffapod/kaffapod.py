@@ -8,6 +8,7 @@ from urllib.parse import urljoin, quote_plus
 from pelican import signals
 from pelican.contents import Article, Page
 from pelican.generators import ArticlesGenerator, PagesGenerator
+from pelican import logger
 
 import sqlite3
 
@@ -55,6 +56,7 @@ def download_cover(cover_image_url, cover_image_path):
     resp = u.read()
     with open(cover_image_path, 'wb') as f:
         f.write(resp)
+
 
 def fetch_subject(instance):
     if type(instance) not in (Article, Page):
