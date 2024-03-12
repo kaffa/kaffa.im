@@ -146,8 +146,9 @@
 &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;如果想控制图片宽度，有两个方式，一个是外部控制，二个是自己设置。&lt;/p&gt;
-&lt;p&gt;我用挺省事，用的是 bulma css 的组件，自己会控制宽度。如果自己设置，可以修改 &amp;lt;img class=&amp;quot;dxl&amp;quot;&amp;gt; 为 &amp;lt;img class=&amp;quot;dxl&amp;quot; style=&amp;quot;width: auto;&amp;quot;&amp;gt; 或者你 auto 改为固定的像素值。&lt;/p&gt;
-&lt;p&gt;加上 meta 那句是因为那边作了 referrer 的 same-origin 验证，否则会 Http 403 错误。&lt;/p&gt;
+&lt;p&gt;我用的是 bulma css 的组件，省事，自己会控制宽度。&lt;/p&gt;
+&lt;p&gt;如果选择自己设置，可以修改 &amp;lt;img class=&amp;quot;dxl&amp;quot;&amp;gt; 为 &amp;lt;img class=&amp;quot;dxl&amp;quot; style=&amp;quot;width: auto;&amp;quot;&amp;gt; 或者其中的 auto 改为固定的像素值。&lt;/p&gt;
+&lt;p&gt;加上 &amp;lt;meta name=&amp;quot;referrer&amp;quot; content=&amp;quot;same-origin&amp;quot;&amp;gt; 这句是因为彼端作了 referrer 的 same-origin 验证，不加会 HTTP 403 错误。&lt;/p&gt;
 &lt;p&gt;如果喜欢，可以复制上述代码插入到你的网站想显示的地方。&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="website"></category><category term="单向历"></category></entry><entry><title>生命·缘</title><link href="https://kaffa.im/life-is-some-associatedness.html" rel="alternate"></link><published>2024-03-07T12:00:00+08:00</published><updated>2024-03-07T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-07:/life-is-some-associatedness.html</id><summary type="html">&lt;p class="first last"&gt;提示：文内有关于死亡的描述，建议有死亡忌讳者回避。此篇记录个人有关生命的小悟。&lt;/p&gt;

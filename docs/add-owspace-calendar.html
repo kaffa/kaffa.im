@@ -185,8 +185,9 @@
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 <p>如果想控制图片宽度，有两个方式，一个是外部控制，二个是自己设置。</p>
-<p>我用挺省事，用的是 bulma css 的组件，自己会控制宽度。如果自己设置，可以修改 &lt;img class=&quot;dxl&quot;&gt; 为 &lt;img class=&quot;dxl&quot; style=&quot;width: auto;&quot;&gt; 或者你 auto 改为固定的像素值。</p>
-<p>加上 meta 那句是因为那边作了 referrer 的 same-origin 验证，否则会 Http 403 错误。</p>
+<p>我用的是 bulma css 的组件，省事，自己会控制宽度。</p>
+<p>如果选择自己设置，可以修改 &lt;img class=&quot;dxl&quot;&gt; 为 &lt;img class=&quot;dxl&quot; style=&quot;width: auto;&quot;&gt; 或者其中的 auto 改为固定的像素值。</p>
+<p>加上 &lt;meta name=&quot;referrer&quot; content=&quot;same-origin&quot;&gt; 这句是因为彼端作了 referrer 的 same-origin 验证，不加会 HTTP 403 错误。</p>
 <p>如果喜欢，可以复制上述代码插入到你的网站想显示的地方。</p>
 </div>
 

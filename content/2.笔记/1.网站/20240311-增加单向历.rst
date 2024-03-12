@@ -40,8 +40,10 @@
 
 如果想控制图片宽度，有两个方式，一个是外部控制，二个是自己设置。
 
-我用挺省事，用的是 bulma css 的组件，自己会控制宽度。如果自己设置，可以修改 <img class="dxl"> 为 <img class="dxl" style="width: auto;"> 或者你 auto 改为固定的像素值。
+我用的是 bulma css 的组件，省事，自己会控制宽度。
 
-加上 meta 那句是因为那边作了 referrer 的 same-origin 验证，否则会 Http 403 错误。
+如果选择自己设置，可以修改 <img class="dxl"> 为 <img class="dxl" style="width: auto;"> 或者其中的 auto 改为固定的像素值。
+
+加上 <meta name="referrer" content="same-origin"> 这句是因为彼端作了 referrer 的 same-origin 验证，不加会 HTTP 403 错误。
 
 如果喜欢，可以复制上述代码插入到你的网站想显示的地方。
