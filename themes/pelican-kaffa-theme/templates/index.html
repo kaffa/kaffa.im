@@ -77,13 +77,13 @@
             </div>
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="title">{{ LINKS|count }}</p>
+                    <p class="title">{{ LINKS[0]['items']|length }}</p>
                     <p class="heading">关注</p>
                 </div>
             </div>
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="title">{{ FRIENDS|count }}</p>
+                    <p class="title">{{ FRIENDS|length }}</p>
                     <p class="heading">友链</p>
                 </div>
             </div>
@@ -257,9 +257,9 @@
                     ns.things_num }}</strong> 个物品</p>
                 <div class="is-divider" data-content="Links"></div>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-heart-o mr-3" aria-hidden="true"></i>添加 <strong>{{
-                    LINKS[0]['items']|count }}</strong> 条关注</p>
+                    LINKS[0]['items']|length }}</strong> 条关注</p>
                 <p class="is-size-6 has-text-grey"><i class="fa fa-user-o mr-3" aria-hidden="true"></i>新增 <strong>{{
-                    FRIENDS|count }}</strong> 条友链</p>
+                    FRIENDS|length }}</strong> 条友链</p>
             </section>
 
             <section class="box">
