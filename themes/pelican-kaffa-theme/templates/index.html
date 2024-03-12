@@ -226,7 +226,9 @@
                         const day = d.getDate().toString().padStart(2, '0');
                         const $dxl = document.querySelector('.dxl');
                         $dxl.src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
-                        $dxl.onerror = document.querySelector('.box-dxl').style.display = 'none';
+                        $dxl.onerror = function() {
+                            document.querySelector('.box-dxl').style.display = 'none';
+                        }
                     });
                 </script>
             </section>
