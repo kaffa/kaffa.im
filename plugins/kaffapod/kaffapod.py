@@ -95,6 +95,7 @@ def fetch_subject(instance):
         # .replace('(', '').replace(')', '').replace("'", '-') -> 1989-(taylor's-version)
         subject_obj['slug'] = ((subject_obj['title']
                                .replace(' ', '-')
+                               .replace(',', '-')
                                .replace(':', '')
                                .replace('(', '').replace(')', '').replace("'", '-'))
                                .lower().strip())
