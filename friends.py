@@ -12,15 +12,6 @@ class Friend:
 def get_list():
     return [
         {
-            'ID': 5,
-            'Name': '印记',
-            'URL': 'https://yinji.org/',
-            'Intro': '君子可内敛不可懦弱，面不公可起而论之',
-            'Owner': 'Bruce，Blogger/摄影爱好者/数码发烧友',
-            'Icon': 'https://huhexian.s3.bitiful.net/2023/12/23/3b83cc067b2c3f1e45807dfdeb66e0c0.webp',
-            'Email': 'huhexian0206@gmail.com',
-        },
-        {
             'ID': 1,
             'Name': '槿呈Goidea',
             'URL': 'https://justgoidea.com/',
@@ -52,5 +43,21 @@ def get_list():
             'Owner': 'Soulizer、欧阳桂花、谢让',
             'Icon': '/static/img/2024/ntiy_logo_o.png',
             'Email': 'collect@live.com',
+        }, {
+            'ID': 5,
+            'Name': '印记',
+            'URL': 'https://yinji.org/',
+            'Intro': '君子可内敛不可懦弱，面不公可起而论之',
+            'Owner': 'Bruce，Blogger/摄影爱好者/数码发烧友',
+            'Icon': 'https://huhexian.s3.bitiful.net/2023/12/23/3b83cc067b2c3f1e45807dfdeb66e0c0.webp',
+            'Email': 'huhexian0206@gmail.com',
+        }, {
+            'ID': 6,
+            'Name': '松易涅的写作分享站',
+            'URL': 'https://songyinie.com/',
+            'Intro': '回顾历史，审视当下，期盼未来',
+            'Owner': '松易涅',
+            'Icon': 'https://logo.songyinie.com/logo.png',
+            'Email': 'mail@songyinie.com',
         }
     ]
