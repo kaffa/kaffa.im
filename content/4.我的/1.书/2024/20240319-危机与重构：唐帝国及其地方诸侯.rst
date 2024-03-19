@@ -6,7 +6,7 @@
 :category: book
 :tags: science
 :slug: crisis-and-reconstruction-the-tang-empire-and-its-local-princes
-:summary: AIAgent告诉我本书将的是唐朝的地方藩镇势力崛起
+:summary: AIAgent告诉我本书讲的是有关唐朝的地方藩镇势力
 :image: /static/img/2024/hero.png
 :subject_url: https://neodb.social/book/4PTZ6OpnAxL5iz8HJydxbW
 
