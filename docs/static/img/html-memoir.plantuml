@@ -1,0 +1,35 @@
+@startuml
+[*] -> HTML4
+HTML4 -> XHTML
+XHTML -> HTML5
+HTML5 -> Ajax
+Ajax -> SPA
+SPA -> Angular
+Angular -> React
+React -> VUE
+VUE -> HTML
+HTML -> [*]
+
+HTML4: FrontPage
+HTML4: Dreamweaver
+HTML4: Flash
+HTML4: 蓝色理想
+HTML4: 闪客联盟
+XHTML: Eric Meyer
+XHTML: 《CSS禅意花园》
+XHTML: 《Don't Make Me Think》
+Ajax: Web 2.0
+Ajax: jQuery
+Ajax: Prototype and Scriptaculous
+Ajax: mootools and YUI
+Ajax: JavaScript: The good parts
+Ajax: HTML5 & CSS3
+SPA: web components
+SPA: backbone.js
+SPA: Angular
+SPA: Node.js and Webpack
+Angular: React
+React: facebook
+VUE: Evan You
+VUE: Vite
+@enduml

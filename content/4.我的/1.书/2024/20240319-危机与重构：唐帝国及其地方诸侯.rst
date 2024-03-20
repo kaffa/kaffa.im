@@ -4,7 +4,7 @@
 :date: 2024-03-19 14:00
 :author: Kaffa
 :category: book
-:tags: science
+:tags: history
 :slug: crisis-and-reconstruction-the-tang-empire-and-its-local-princes
 :summary: AIAgent告诉我本书讲的是有关唐朝的地方藩镇势力
 :image: /static/img/2024/hero.png

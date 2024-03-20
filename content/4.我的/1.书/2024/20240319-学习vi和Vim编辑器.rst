@@ -1,0 +1,38 @@
+学习vi和Vim编辑器
+########################################################
+
+:date: 2024-03-19 14:00
+:author: Kaffa
+:category: book
+:tags: vim
+:slug: learning-the-vi-and-vim-editors
+:summary: Vim 案头书
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/6I7yPJ4njBun06JUZjAe1g
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐ 10/10
+
+
+评价
+====================
+
+可爱的技术人著作，匠意盎然。
+
+vi 是禅，Vim 处处有禅机。看起来在用 vi，其实在参禅。
+
+命令是结印，非入 Vim 之道者不能明也。
+
+给多年后的V山之我
+====================
+::
+
+    愿，
+
+        至 Vim 途中，现真言。
+
+                  ——立E山之我
+                  于 20240329

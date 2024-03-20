@@ -1,0 +1,131 @@
+HTML回忆录
+############################################################
+
+:date: 2024-03-20 17:00
+:author: Kaffa
+:category: programming
+:tags: HTML回忆录
+:slug: html-memoir
+:summary: 毕业都爱写老人梗，Eric Meyer 也去凑热闹了。
+:image: /static/img/2024/hero.png
+
+起因
+==========
+
+Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://davidwalsh.name/im-so-old-1>`_ ，也让我想起了很多 HTML 老人梗。
+
+让我也想起了多年来我和 HTML 纠葛的脉络，列个图。
+
+.. uml::
+    :alt: 有关HTML的记忆
+    :format: svg
+    :filename: html-memoir
+
+    [*] -> HTML4
+    HTML4 -> XHTML
+    XHTML -> HTML5
+    HTML5 -> Ajax
+    Ajax -> SPA
+    SPA -> Angular
+    Angular -> React
+    React -> VUE
+    VUE -> HTML
+    HTML -> [*]
+
+    HTML4: FrontPage
+    HTML4: Dreamweaver
+    HTML4: Flash
+    HTML4: 蓝色理想
+    HTML4: 闪客联盟
+    XHTML: Eric Meyer
+    XHTML: 《CSS禅意花园》
+    XHTML: 《Don't Make Me Think》
+    Ajax: Web 2.0
+    Ajax: jQuery
+    Ajax: Prototype and Scriptaculous
+    Ajax: mootools and YUI
+    Ajax: JavaScript: The good parts
+    Ajax: HTML5 & CSS3
+    SPA: web components
+    SPA: backbone.js
+    SPA: Angular
+    SPA: Node.js and Webpack
+    Angular: React
+    React: facebook
+    VUE: Evan You
+    VUE: Vite
+
+
+回忆
+==========
+
+.. role:: strike
+    :class: strike
+
+HTML/CSS 是 :strike:`声明式` 描述性语言，基本你需要标题就写个 h(head)，需要段落，就写个 p(paragraph)，虽然不是 :strike:`图灵完美的` 啥都能实现的编程语言，但复杂起来，也需要一些绞劲脑汁地小把戏。
+
+在前 jQuery 时代，为页面在各种设备上可用，兼容性问题一定杀死过每一个 Web 开发者的脑细胞，特别是当时 IE 先进的 Quirks 模式，如 html5shiv，reset，polyfill 不可少用，还好遇见了 Eric Meyer 等一些领域专家给出了一些渐进式的解决方案，现在浏览器之间的差异性才逐渐缩小了。
+
+共鸣
+==========
+
+1. 最初，我们不知道还需要写 doctype，后来开始写时，发现我正处于一个过渡(transitional)时代。
+
+2. 网页布局是用 <table> 完成的，为缩小间距，可能需要 1 像素的透明图片来划线。
+
+3. 当左右都要显示内容时，可以 float right；颜色？<FONT COLOR="FF0000">
+
+4. 你采用先进的 DIV + CSS 布局，要格外小心，有些浏览器不太会计算，会把右边的 DIV 挤下去，为此，我们需要，先相对定位，先飘到很远的地方，再飘回来。
+
+5. 可能你不知道什么是 VML，它可以画一个动态的 clock。
+
+6. 那时的动态可以更容易，你只要 marqee 就可以，不需要 setInterval。哦，还可以 BLINK 哟。
+
+7. 哦，你需要圆角是吗？快打开 Photoshop，你会通道+动态模糊+调节层次吗？
+
+8. 要发布网站吗？你用 CuteFTP 还是 FTPRush
+
+9. 把他的代码从 CVS/SVN 里拉下来，什么，冲突了？
+
+10. 你记得 Firebug 吗？
+
+11. `<body onload="alert('Hello ' + prompt('你叫什么名字?'))">`
+
+12. 播放视频，需要正确解码器，你记得 realplayer 吗？
+
+13. Flash 背后居然是 ActionScript，ActionScript 就差不能读本地文件了。
+
+14. Dreamweaver 对 asp 和 php 3 的支持也挺好的啊。
+
+15. Delphi 也做过 Web 呢，Web Broker，XML 是数据结构的未来
+
+16. 你的网页上跳动的星星是用什么做的，什么 Java Applets？
+
+17. Adobe Air：我就要成功了。
+
+18. Web Voting meant refreshing web page.
+
+19. 哪一种 modem 声音更美妙？Dual ISDN 128K purrpurrr or ISDN 56K purrrrr?
+
+20. 什么，PNG24? BMP 也不是不可以。
+
+21. JavaScript vs JScript vs VBScript
+
+22. 你用过留言簿（guestbook）吗？
+
+23. 你记得 IE6 修复透明 PNG 的方法吗？
+
+24. .htc，懂？
+
+25. “正在建设中” / “Under construction”
+
+26. "optimized for Internet Explorer 5.5"
+
+27. "cgi-bin", "counter.pl"
+
+28. <HR>默认就具有时髦3D质感。
+
+
+如果上述描述，你看懂了 10 个共鸣点以上，可以悄悄地留言哦。
+
+如果你有更厉害的梗，也欢迎回复~

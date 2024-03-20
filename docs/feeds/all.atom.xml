@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-19T14:00:00+08:00</updated><entry><title>危机与重构：唐帝国及其地方诸侯</title><link href="https://kaffa.im/crisis-and-reconstruction-the-tang-empire-and-its-local-princes.html" rel="alternate"></link><published>2024-03-19T14:00:00+08:00</published><updated>2024-03-19T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-19:/crisis-and-reconstruction-the-tang-empire-and-its-local-princes.html</id><summary type="html">&lt;p class="first last"&gt;AIAgent告诉我本书讲的是有关唐朝的地方藩镇势力&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-20T17:00:00+08:00</updated><entry><title>HTML回忆录</title><link href="https://kaffa.im/html-memoir.html" rel="alternate"></link><published>2024-03-20T17:00:00+08:00</published><updated>2024-03-20T17:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-20:/html-memoir.html</id><summary type="html">&lt;p class="first last"&gt;毕业都爱写老人梗，Eric Meyer 也去凑热闹了。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;起因&lt;/h2&gt;
+&lt;p&gt;Mozilla 工程师 David Walsh 从公司毕业，写下了 &lt;a class="reference external" href="https://davidwalsh.name/im-so-old-1"&gt;回忆贴&lt;/a&gt; ，也让我想起了很多 HTML 老人梗。&lt;/p&gt;
+&lt;p&gt;让我也想起了多年来我和 HTML 纠葛的脉络，列个图。&lt;/p&gt;
+&lt;object class="uml" data="https://kaffa.im/static/img/html-memoir.svg" type="image/svg+xml"&gt;有关HTML的记忆&lt;/object&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;回忆&lt;/h2&gt;
+&lt;p&gt;HTML/CSS 是 &lt;span class="strike"&gt;声明式&lt;/span&gt; 描述性语言，基本你需要标题就写个 h(head)，需要段落，就写个 p(paragraph)，虽然不是 &lt;span class="strike"&gt;图灵完美的&lt;/span&gt; 啥都能实现的编程语言，但复杂起来，也需要一些绞劲脑汁地小把戏。&lt;/p&gt;
+&lt;p&gt;在前 jQuery 时代，为页面在各种设备上可用，兼容性问题一定杀死过每一个 Web 开发者的脑细胞，特别是当时 IE 先进的 Quirks 模式，如 html5shiv，reset，polyfill 不可少用，还好遇见了 Eric Meyer 等一些领域专家给出了一些渐进式的解决方案，现在浏览器之间的差异性才逐渐缩小了。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;共鸣&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;最初，我们不知道还需要写 doctype，后来开始写时，发现我正处于一个过渡(transitional)时代。&lt;/li&gt;
+&lt;li&gt;网页布局是用 &amp;lt;table&amp;gt; 完成的，为缩小间距，可能需要 1 像素的透明图片来划线。&lt;/li&gt;
+&lt;li&gt;当左右都要显示内容时，可以 float right；颜色？&amp;lt;FONT COLOR=&amp;quot;FF0000&amp;quot;&amp;gt;&lt;/li&gt;
+&lt;li&gt;你采用先进的 DIV + CSS 布局，要格外小心，有些浏览器不太会计算，会把右边的 DIV 挤下去，为此，我们需要，先相对定位，先飘到很远的地方，再飘回来。&lt;/li&gt;
+&lt;li&gt;可能你不知道什么是 VML，它可以画一个动态的 clock。&lt;/li&gt;
+&lt;li&gt;那时的动态可以更容易，你只要 marqee 就可以，不需要 setInterval。哦，还可以 BLINK 哟。&lt;/li&gt;
+&lt;li&gt;哦，你需要圆角是吗？快打开 Photoshop，你会通道+动态模糊+调节层次吗？&lt;/li&gt;
+&lt;li&gt;要发布网站吗？你用 CuteFTP 还是 FTPRush&lt;/li&gt;
+&lt;li&gt;把他的代码从 CVS/SVN 里拉下来，什么，冲突了？&lt;/li&gt;
+&lt;li&gt;你记得 Firebug 吗？&lt;/li&gt;
+&lt;li&gt;&lt;cite&gt;&amp;lt;body onload=&amp;quot;alert('Hello ' + prompt('你叫什么名字?'))&amp;quot;&amp;gt;&lt;/cite&gt;&lt;/li&gt;
+&lt;li&gt;播放视频，需要正确解码器，你记得 realplayer 吗？&lt;/li&gt;
+&lt;li&gt;Flash 背后居然是 ActionScript，ActionScript 就差不能读本地文件了。&lt;/li&gt;
+&lt;li&gt;Dreamweaver 对 asp 和 php 3 的支持也挺好的啊。&lt;/li&gt;
+&lt;li&gt;Delphi 也做过 Web 呢，Web Broker，XML 是数据结构的未来&lt;/li&gt;
+&lt;li&gt;你的网页上跳动的星星是用什么做的，什么 Java Applets？&lt;/li&gt;
+&lt;li&gt;Adobe Air：我就要成功了。&lt;/li&gt;
+&lt;li&gt;Web Voting meant refreshing web page.&lt;/li&gt;
+&lt;li&gt;哪一种 modem 声音更美妙？Dual ISDN 128K purrpurrr or ISDN 56K purrrrr?&lt;/li&gt;
+&lt;li&gt;什么，PNG24? BMP 也不是不可以。&lt;/li&gt;
+&lt;li&gt;JavaScript vs JScript vs VBScript&lt;/li&gt;
+&lt;li&gt;你用过留言簿（guestbook）吗？&lt;/li&gt;
+&lt;li&gt;你记得 IE6 修复透明 PNG 的方法吗？&lt;/li&gt;
+&lt;li&gt;.htc，懂？&lt;/li&gt;
+&lt;li&gt;“正在建设中” / “Under construction”&lt;/li&gt;
+&lt;li&gt;&amp;quot;optimized for Internet Explorer 5.5&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;cgi-bin&amp;quot;, &amp;quot;counter.pl&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;lt;HR&amp;gt;默认就具有时髦3D质感。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果上述描述，你看懂了 10 个共鸣点以上，可以悄悄地留言哦。&lt;/p&gt;
+&lt;p&gt;如果你有更厉害的梗，也欢迎回复~&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="programming"></category><category term="HTML回忆录"></category></entry><entry><title>危机与重构：唐帝国及其地方诸侯</title><link href="https://kaffa.im/crisis-and-reconstruction-the-tang-empire-and-its-local-princes.html" rel="alternate"></link><published>2024-03-19T14:00:00+08:00</published><updated>2024-03-19T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-19:/crisis-and-reconstruction-the-tang-empire-and-its-local-princes.html</id><summary type="html">&lt;p class="first last"&gt;AIAgent告诉我本书讲的是有关唐朝的地方藩镇势力&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;想读&lt;/h2&gt;
 &lt;p&gt;群友分享，mark&lt;/p&gt;
@@ -8,7 +55,30 @@
 &lt;h2&gt;用 AI Agent 读5分钟&lt;/h2&gt;
 &lt;img alt="《危机与重构：唐帝国及其地方诸侯》读5分钟" src="/static/img/2024/crisis-and-reconstruction-the-tang-empire-and-its-local-princes-in-five-minutes.png" /&gt;
 &lt;/div&gt;
-</content><category term="book"></category><category term="science"></category></entry><entry><title>2024年第11周周报</title><link href="https://kaffa.im/weekly-2024-w11.html" rel="alternate"></link><published>2024-03-17T23:00:00+08:00</published><updated>2024-03-17T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-17:/weekly-2024-w11.html</id><summary type="html">&lt;p class="first last"&gt;2024年第11周周报&lt;/p&gt;
+</content><category term="book"></category><category term="history"></category></entry><entry><title>学习vi和Vim编辑器</title><link href="https://kaffa.im/learning-the-vi-and-vim-editors.html" rel="alternate"></link><published>2024-03-19T14:00:00+08:00</published><updated>2024-03-19T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-19:/learning-the-vi-and-vim-editors.html</id><summary type="html">&lt;p class="first last"&gt;Vim 案头书&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;评分&lt;/h2&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐ 10/10&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;评价&lt;/h2&gt;
+&lt;p&gt;可爱的技术人著作，匠意盎然。&lt;/p&gt;
+&lt;p&gt;vi 是禅，Vim 处处有禅机。看起来在用 vi，其实在参禅。&lt;/p&gt;
+&lt;p&gt;命令是结印，非入 Vim 之道者不能明也。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="v"&gt;
+&lt;h2&gt;给多年后的V山之我&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+愿，
+
+    至 Vim 途中，现真言。
+
+              ——立E山之我
+              于 20240329
+&lt;/pre&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="vim"></category></entry><entry><title>2024年第11周周报</title><link href="https://kaffa.im/weekly-2024-w11.html" rel="alternate"></link><published>2024-03-17T23:00:00+08:00</published><updated>2024-03-17T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-17:/weekly-2024-w11.html</id><summary type="html">&lt;p class="first last"&gt;2024年第11周周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第11周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;
@@ -2399,12 +2469,14 @@ Photo by &lt;a href="https://unsplash.com/@darmau?utm_content=creditCopyText&amp
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;罗伊的职业选择公式：&lt;/p&gt;
 &lt;p&gt;职业选择=S[(eE+bB+cC+)+(fF,mM)+(lL+aA) +(pP×gG×tT×iI)]&lt;/p&gt;
-&lt;p&gt;S=性别 L=一般的学习和教育
-E=总体经济状况 A=掌握的特定技能
-B=家庭背景 P=生理特点
-C=机遇 G=认知能力或特殊天赋
-F=朋友，同伴群体 T=气质与个性
-M=婚姻状况 I=兴趣与价值观&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;S=性别 L=一般的学习和教育&lt;/div&gt;
+&lt;div class="line"&gt;E=总体经济状况 A=掌握的特定技能&lt;/div&gt;
+&lt;div class="line"&gt;B=家庭背景 P=生理特点&lt;/div&gt;
+&lt;div class="line"&gt;C=机遇 G=认知能力或特殊天赋&lt;/div&gt;
+&lt;div class="line"&gt;F=朋友，同伴群体 T=气质与个性&lt;/div&gt;
+&lt;div class="line"&gt;M=婚姻状况 I=兴趣与价值观&lt;/div&gt;
+&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Donald Super 舒伯的生活/生涯彩虹&lt;/p&gt;
 &lt;p&gt;将一生的发展排的很清楚，也很震撼。&lt;/p&gt;
@@ -3631,54 +3703,4 @@ themes\pelican-kaffa-theme\static\css\main.css
 &lt;p&gt;《思考的艺术》这本书不属于学科基础书，若想更准确了解关于思考的相关的学科内容，应阅读《心理学》，而想了解心理学，可以先读《心理学与生活》。&lt;/p&gt;
 &lt;p&gt;虽然搞不清楚思考到底是什么，有趣的是那些充满魅力的公司的总会强调它。IBM 就具有 THINK 的商标，Apple 说 Think Different，而收购了 IBM 的 Lenovo 说 Different is better，一个名叫创新的公司的 slogon，怎么读起来有一种附和的感觉。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="book"></category><category term="Think"></category><category term="思考"></category></entry><entry><title>思考，快与慢</title><link href="https://kaffa.im/thinking-fast-and-slow.html" rel="alternate"></link><published>2023-11-24T10:14:00+08:00</published><updated>2023-11-24T10:14:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-24:/thinking-fast-and-slow.html</id><summary type="html">&lt;p class="first last"&gt;十年前的书，作者是以色列裔美国心理学家，2002年获得诺贝尔经济学奖。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;读后&lt;/h2&gt;
-&lt;p&gt;试图提高认知内容不可绕过的底层书。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"></category><category term="Think"></category><category term="思考"></category></entry><entry><title>2023年第47周周报</title><link href="https://kaffa.im/weekly-2023-w47.html" rel="alternate"></link><published>2023-11-19T14:30:00+08:00</published><updated>2023-11-19T14:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-11-19:/weekly-2023-w47.html</id><summary type="html">&lt;p class="first last"&gt;包含 2023w47 数据、备忘和拾遗&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;2023年第47周周报&lt;/h2&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h3&gt;数据&lt;/h3&gt;
-&lt;table border="1" class="docutils"&gt;
-&lt;colgroup&gt;
-&lt;col width="20%" /&gt;
-&lt;col width="20%" /&gt;
-&lt;col width="20%" /&gt;
-&lt;col width="20%" /&gt;
-&lt;col width="20%" /&gt;
-&lt;/colgroup&gt;
-&lt;thead valign="bottom"&gt;
-&lt;tr&gt;&lt;th class="head"&gt;年周&lt;/th&gt;
-&lt;th class="head"&gt;项目&lt;/th&gt;
-&lt;th class="head"&gt;动态&lt;/th&gt;
-&lt;th class="head"&gt;关注&lt;/th&gt;
-&lt;th class="head"&gt;友链&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td&gt;2023W47&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;21&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-4"&gt;
-&lt;h3&gt;备忘&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;KaffaWeb：完成，开始写专栏。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-5"&gt;
-&lt;h3&gt;拾遗&lt;/h3&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;如果一笔未来 1 年后收入的钱是 10 万元，按无风险利率 3%，风险率 1%，2023年中国通货膨胀率 0% 计算，贴现率即 4%，10 / ( 1 + 3% + 1%) ≈ 9.6，就是说，未来 1 年 10 万的当前净现值是 9.62 万，若对方 354 提前 1 年付，也是可以接受的。&lt;/li&gt;
-&lt;li&gt;浮空秘境上线小游戏的版本速度很是惊人，如果不是提前做好的，两周一个迭代产生一套玩法简直不可思议，所以我相信它是提前做好的，每次只是迭代资源，游戏代码少量适配后进行测试即可更新。公开信息显示厦门魔兔网络科技有限公司员工是 31 人，但看起来公司还有其它游戏项目或游戏运营，这个人数明显也是hold不住的，若资源不外包的，感觉运营这个游戏国内至少需要 32 个人吧，稍微控制不好，100以上也是很容易的。(￣?￣)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content><category term="weekly"></category></entry></feed>
+</content><category term="book"></category><category term="Think"></category><category term="思考"></category></entry></feed>
