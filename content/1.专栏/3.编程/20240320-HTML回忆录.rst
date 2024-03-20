@@ -27,7 +27,7 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     Ajax -> SPA
     SPA -> Angular
     Angular -> React
-    React -> VUE
+    React -> Vue
     Vue -> [*]
 
     HTML4: FrontPage

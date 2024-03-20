@@ -6,7 +6,7 @@ HTML5 -> Ajax
 Ajax -> SPA
 SPA -> Angular
 Angular -> React
-React -> VUE
+React -> Vue
 Vue -> [*]
 
 HTML4: FrontPage
