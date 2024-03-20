@@ -131,24 +131,21 @@ def fetch_subject(instance):
     cursor.close()
     conn.close()
 
-    if 'growth' in instance.metadata:
-        if instance.metadata['growth'] not in ('1', '3', '5'):
-            return
+    if 'growth' in instance.metadata and instance.metadata['growth'] in ('1', '3', '5'):
+            instance.metadata['growth'] = {
+                '1': 'seedling',
+                '3': 'budding',
+                '5': 'evergreen'
+            }[instance.metadata['growth']]
+            subject_obj['growth'] = instance.metadata['growth']
 
-        instance.metadata['growth'] = {
-            '1': 'seedling',
-            '3': 'budding',
-            '5': 'evergreen'
-        }[instance.metadata['growth']]
-        subject_obj['growth'] = instance.metadata['growth']
-
-        '''
-        subject_obj['growth'] = {
-            1: 'seedling',
-            3: 'budding',
-            5: 'evergreen'
-        }[instance.metadata['growth']]
-        '''
+            '''
+            subject_obj['growth'] = {
+                1: 'seedling',
+                3: 'budding',
+                5: 'evergreen'
+            }[instance.metadata['growth']]
+            '''
 
     instance.subject = subject_obj
 
