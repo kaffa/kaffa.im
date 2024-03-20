@@ -132,13 +132,13 @@ def fetch_subject(instance):
     conn.close()
 
     if 'growth' in instance.metadata:
-        if instance.metadata['growth'] not in (1, 3, 5):
+        if instance.metadata['growth'] not in ('1', '3', '5'):
             return
 
         instance.metadata['growth'] = {
-            1: 'seedling',
-            3: 'budding',
-            5: 'evergreen'
+            '1': 'seedling',
+            '3': 'budding',
+            '5': 'evergreen'
         }[instance.metadata['growth']]
 
         '''
