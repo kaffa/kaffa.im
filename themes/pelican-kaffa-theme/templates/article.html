@@ -53,7 +53,7 @@
 
         {% if article.growth %}
         <div class="mb-2 has-text-centered">
-            <img src="/static/img/{{ article.growth }}.svg" alt="{{ article.growth }}" class="icon">
+            <img src="/static/img/{{ GROWTH_DICT[article.growth]['img'] }}" title="{{ GROWTH_DICT[article.growth]['title'] }}" class="icon">
         </div>
         {% endif %}
 

@@ -45,7 +45,7 @@
 &lt;p&gt;如果上述描述，你看懂了 10 个共鸣点以上，可以悄悄地留言哦。&lt;/p&gt;
 &lt;p&gt;如果你有更厉害的梗，也欢迎回复~&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="HTML回忆录"></category></entry><entry><title>C</title><link href="https://kaffa.im/me-and-the-c-programming-language.html" rel="alternate"></link><published>2023-09-26T12:11:00+08:00</published><updated>2023-09-26T12:11:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-09-26:/me-and-the-c-programming-language.html</id><summary type="html">&lt;p&gt;任何一个 Real 的程序员都考虑或学习过 C 语言（后文简称 C）。2023年，我试图在此说明 WHAT、HOW、WHICH、WHEN C 的问题，不说明 WHY C 的问题。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;绕不开的 C&lt;/h2&gt;
+</content><category term="programming"></category><category term="html"></category></entry><entry><title>C</title><link href="https://kaffa.im/me-and-the-c-programming-language.html" rel="alternate"></link><published>2023-09-26T12:11:00+08:00</published><updated>2023-09-26T12:11:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-09-26:/me-and-the-c-programming-language.html</id><summary type="html">&lt;p&gt;任何一个 Real 的程序员都考虑或学习过 C 语言（后文简称 C）。2023年，我试图在此说明 WHAT、HOW、WHICH、WHEN C 的问题，不说明 WHY C 的问题。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;绕不开的 C&lt;/h2&gt;
 &lt;p&gt;我在大学先学习的是 Pascal，然后学习谭浩强的 C，然而听课后练习 Turbo C，却并不太懂，后来通过一本 Pascal 与 C 的比较教程进行的进一步学习，然后购买了原版的 ANSI C，又阅读了 《K&amp;amp;R C 2nd》，至今有些习题依然不太会。话说，任何一个 Real 的程序员都考虑或学习过 C。2023年，我试图在此记录一点关于 C 的事。&lt;/p&gt;
 &lt;h3&gt;C 在哪&lt;/h3&gt;
 &lt;p&gt;C 是从 B 演化诞生的，B 是 BCPL 的简化，BCPL 来自 CPL 提议。&lt;/p&gt;

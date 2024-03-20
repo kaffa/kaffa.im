@@ -4,7 +4,7 @@ HTML回忆录
 :date: 2024-03-20 17:00
 :author: Kaffa
 :category: programming
-:tags: HTML回忆录
+:tags: html
 :slug: html-memoir
 :summary: 毕业都爱写老人梗，Eric Meyer 也去凑热闹了。
 :image: /static/img/2024/hero.png
@@ -19,7 +19,6 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     :alt: 有关HTML的记忆
     :format: svg
     :filename: html-memoir
-
 
     scale 750 width
     [*] -> HTML4

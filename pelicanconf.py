@@ -245,6 +245,12 @@ CATEGORY_DICT = {
     'things': {'name': '物', 'moment': '标记一个物品'},
 }
 
+GROWTH_DICT = {
+    '1': {'img': 'seedling.svg', 'title': '幼苗'},
+    '3': {'img': 'budding.svg', 'title': '发育中...'},
+    '5': {'img': 'evergreen.svg', 'title': '常青树'},
+}
+
 JAVASCRIPT_HEAD = ''
 JAVASCRIPT_FOOT = ''
 
