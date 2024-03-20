@@ -140,6 +140,7 @@ def fetch_subject(instance):
             '3': 'budding',
             '5': 'evergreen'
         }[instance.metadata['growth']]
+        subject_obj['growth'] = instance.metadata['growth']
 
         '''
         subject_obj['growth'] = {
@@ -148,7 +149,6 @@ def fetch_subject(instance):
             5: 'evergreen'
         }[instance.metadata['growth']]
         '''
-
 
     instance.subject = subject_obj
 

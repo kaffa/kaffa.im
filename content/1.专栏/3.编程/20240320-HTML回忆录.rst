@@ -19,8 +19,9 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     :alt: 有关HTML的记忆
     :format: svg
     :filename: html-memoir
-    :width: 80%
 
+
+    scale 750 width
     [*] -> HTML4
     HTML4 -> XHTML
     XHTML -> HTML5
