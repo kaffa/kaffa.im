@@ -28,7 +28,7 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     SPA -> Angular
     Angular -> React
     React -> VUE
-    Vue -> ?
+    Vue -> [*]
 
     HTML4: FrontPage
     HTML4: Dreamweaver
