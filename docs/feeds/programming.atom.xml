@@ -2,13 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - programming</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/programming.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-20T17:00:00+08:00</updated><entry><title>HTML回忆录</title><link href="https://kaffa.im/html-memoir.html" rel="alternate"></link><published>2024-03-20T17:00:00+08:00</published><updated>2024-03-20T17:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-20:/html-memoir.html</id><summary type="html">&lt;p class="first last"&gt;毕业都爱写老人梗，Eric Meyer 也去凑热闹了。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;起因&lt;/h2&gt;
-&lt;p&gt;Mozilla 工程师 David Walsh 从公司毕业，写下了 &lt;a class="reference external" href="https://davidwalsh.name/im-so-old-1"&gt;回忆贴&lt;/a&gt; ，也让我想起了很多 HTML 老人梗。&lt;/p&gt;
-&lt;p&gt;让我也想起了多年来我和 HTML 纠葛的脉络，列个图。&lt;/p&gt;
+&lt;p&gt;Mozilla 工程师 David Walsh 从公司毕业，写下了 &lt;a class="reference external" href="https://davidwalsh.name/im-so-old-1"&gt;回忆贴&lt;/a&gt; ，也让我想起了很多 HTML 老人梗。多年来，我与 HTML 纠葛的脉络，列个图。&lt;/p&gt;
 &lt;object class="uml" data="https://kaffa.im/static/img/html-memoir.svg" type="image/svg+xml"&gt;有关HTML的记忆&lt;/object&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;回忆&lt;/h2&gt;
-&lt;p&gt;HTML/CSS 是 &lt;span class="strike"&gt;声明式&lt;/span&gt; 描述性语言，基本你需要标题就写个 h(head)，需要段落，就写个 p(paragraph)，虽然不是 &lt;span class="strike"&gt;图灵完美的&lt;/span&gt; 啥都能实现的编程语言，但复杂起来，也需要一些绞劲脑汁地小把戏。&lt;/p&gt;
+&lt;p&gt;HTML/CSS 是 &lt;span class="strike"&gt;声明式&lt;/span&gt; 描述性语言，基本你需要标题就写个 h(head)，需要段落，就写个 p(paragraph)，虽然不是 &lt;span class="strike"&gt;图灵完备的&lt;/span&gt; 啥都能实现的编程语言，但复杂起来，也需要一些绞劲脑汁地小把戏。&lt;/p&gt;
 &lt;p&gt;在前 jQuery 时代，为页面在各种设备上可用，兼容性问题一定杀死过每一个 Web 开发者的脑细胞，特别是当时 IE 先进的 Quirks 模式，如 html5shiv，reset，polyfill 不可少用，还好遇见了 Eric Meyer 等一些领域专家给出了一些渐进式的解决方案，现在浏览器之间的差异性才逐渐缩小了。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-3"&gt;

@@ -12,9 +12,7 @@ HTML回忆录
 起因
 ==========
 
-Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://davidwalsh.name/im-so-old-1>`_ ，也让我想起了很多 HTML 老人梗。
-
-让我也想起了多年来我和 HTML 纠葛的脉络，列个图。
+Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://davidwalsh.name/im-so-old-1>`_ ，也让我想起了很多 HTML 老人梗。多年来，我与 HTML 纠葛的脉络，列个图。
 
 .. uml::
     :alt: 有关HTML的记忆
@@ -29,8 +27,7 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     SPA -> Angular
     Angular -> React
     React -> VUE
-    VUE -> HTML
-    HTML -> [*]
+    VUE -> ...
 
     HTML4: FrontPage
     HTML4: Dreamweaver
@@ -40,17 +37,17 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     XHTML: Eric Meyer
     XHTML: 《CSS禅意花园》
     XHTML: 《Don't Make Me Think》
+    HTML5: CSS3
     Ajax: Web 2.0
     Ajax: jQuery
     Ajax: Prototype and Scriptaculous
     Ajax: mootools and YUI
     Ajax: JavaScript: The good parts
-    Ajax: HTML5 & CSS3
-    SPA: web components
+    SPA: Web Components
     SPA: backbone.js
     SPA: Angular
     SPA: Node.js and Webpack
-    Angular: React
+    Angular: Google Gmail
     React: facebook
     VUE: Evan You
     VUE: Vite
@@ -62,7 +59,7 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
 .. role:: strike
     :class: strike
 
-HTML/CSS 是 :strike:`声明式` 描述性语言，基本你需要标题就写个 h(head)，需要段落，就写个 p(paragraph)，虽然不是 :strike:`图灵完美的` 啥都能实现的编程语言，但复杂起来，也需要一些绞劲脑汁地小把戏。
+HTML/CSS 是 :strike:`声明式` 描述性语言，基本你需要标题就写个 h(head)，需要段落，就写个 p(paragraph)，虽然不是 :strike:`图灵完备的` 啥都能实现的编程语言，但复杂起来，也需要一些绞劲脑汁地小把戏。
 
 在前 jQuery 时代，为页面在各种设备上可用，兼容性问题一定杀死过每一个 Web 开发者的脑细胞，特别是当时 IE 先进的 Quirks 模式，如 html5shiv，reset，polyfill 不可少用，还好遇见了 Eric Meyer 等一些领域专家给出了一些渐进式的解决方案，现在浏览器之间的差异性才逐渐缩小了。
 

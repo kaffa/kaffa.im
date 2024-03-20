@@ -7,8 +7,7 @@ Ajax -> SPA
 SPA -> Angular
 Angular -> React
 React -> VUE
-VUE -> HTML
-HTML -> [*]
+VUE -> ...
 
 HTML4: FrontPage
 HTML4: Dreamweaver
@@ -18,17 +17,17 @@ HTML4: 闪客联盟
 XHTML: Eric Meyer
 XHTML: 《CSS禅意花园》
 XHTML: 《Don't Make Me Think》
+HTML5: CSS3
 Ajax: Web 2.0
 Ajax: jQuery
 Ajax: Prototype and Scriptaculous
 Ajax: mootools and YUI
 Ajax: JavaScript: The good parts
-Ajax: HTML5 & CSS3
-SPA: web components
+SPA: Web Components
 SPA: backbone.js
 SPA: Angular
 SPA: Node.js and Webpack
-Angular: React
+Angular: Google Gmail
 React: facebook
 VUE: Evan You
 VUE: Vite
