@@ -135,11 +135,20 @@ def fetch_subject(instance):
         if instance.metadata['growth'] not in (1, 3, 5):
             return
 
+        instance.metadata['growth'] = {
+            1: 'seedling',
+            3: 'budding',
+            5: 'evergreen'
+        }[instance.metadata['growth']]
+
+        '''
         subject_obj['growth'] = {
             1: 'seedling',
             3: 'budding',
             5: 'evergreen'
         }[instance.metadata['growth']]
+        '''
+
 
     instance.subject = subject_obj
 
