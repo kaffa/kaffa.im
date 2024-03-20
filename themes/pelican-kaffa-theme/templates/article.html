@@ -31,7 +31,10 @@
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
-            ><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="「{{ article.title|striptags }}」的永久链接">{{ article.title }}</a></h2>
+            ><a href="{{ SITEURL }}/{{ article.url }}"
+                rel="bookmark"
+                title="「{{ article.title|striptags }}」的永久链接"
+            >{{ article.title }}</a></h2>
             <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
                 {% if article.authors %}
                     {% for author in article.authors %}
@@ -47,6 +50,13 @@
     </section>
 
     <section class="container is-max-desktop box content mt-4 p-6">
+
+        {% if article.growth %}
+        <div class="mb-2 has-text-centered">
+            <img src="/static/img/{{ article.growth }}.svg" alt="{{ article.growth }}" class="icon">
+        </div>
+        {% endif %}
+
         <div class="mb-2">
             {% if article.category %}
             <span>分类:
@@ -60,6 +70,7 @@
                 {% endfor %}
             </span>
             {% endif %}
+
         </div>
 
         <div class="mb-5">

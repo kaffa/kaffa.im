@@ -65,6 +65,8 @@ def fetch_subject(instance):
     if 'subject_url' not in instance.metadata:
         return
 
+
+
     subject_url = instance.metadata["subject_url"]
 
     # 兼容网址中未写 /api/
@@ -128,6 +130,16 @@ def fetch_subject(instance):
 
     cursor.close()
     conn.close()
+
+    if 'growth' in instance.metadata:
+        if instance.metadata['growth'] not in (1, 3, 5):
+            return
+
+        subject_obj['growth'] = {
+            1: 'seedling',
+            3: 'budding',
+            5: 'evergreen'
+        }[instance.metadata['growth']]
 
     instance.subject = subject_obj
 

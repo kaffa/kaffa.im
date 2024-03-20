@@ -7,7 +7,7 @@ Ajax -> SPA
 SPA -> Angular
 Angular -> React
 React -> VUE
-VUE -> ...
+Vue -> ?
 
 HTML4: FrontPage
 HTML4: Dreamweaver
@@ -29,6 +29,6 @@ SPA: Angular
 SPA: Node.js and Webpack
 Angular: Google Gmail
 React: facebook
-VUE: Evan You
-VUE: Vite
+Vue: Evan You
+Vue: Vite
 @enduml

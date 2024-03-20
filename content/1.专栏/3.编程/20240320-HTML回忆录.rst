@@ -8,6 +8,7 @@ HTML回忆录
 :slug: html-memoir
 :summary: 毕业都爱写老人梗，Eric Meyer 也去凑热闹了。
 :image: /static/img/2024/hero.png
+:growth: 3
 
 起因
 ==========
@@ -27,7 +28,7 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     SPA -> Angular
     Angular -> React
     React -> VUE
-    VUE -> ...
+    Vue -> ?
 
     HTML4: FrontPage
     HTML4: Dreamweaver
@@ -49,8 +50,8 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     SPA: Node.js and Webpack
     Angular: Google Gmail
     React: facebook
-    VUE: Evan You
-    VUE: Vite
+    Vue: Evan You
+    Vue: Vite
 
 
 回忆
