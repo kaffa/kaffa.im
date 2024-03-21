@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-21T22:30:00+08:00</updated><entry><title>从解决 libcurl 与 FreeBSD 13 兼容性问题中学到的</title><link href="https://kaffa.im/learned-from-solving-compatibility-problem-of-libcurl-and-freebsd-12.html" rel="alternate"></link><published>2024-03-21T22:30:00+08:00</published><updated>2024-03-21T22:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-21:/learned-from-solving-compatibility-problem-of-libcurl-and-freebsd-12.html</id><summary type="html">&lt;p class="first last"&gt;本文解决 EverEdit 的 sftp 兼容性问题的反思。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-21T22:30:00+08:00</updated><entry><title>从解决 libcurl 与 FreeBSD 13 兼容性问题中学到的</title><link href="https://kaffa.im/learned-from-solving-compatibility-problem-of-libcurl-and-freebsd-12.html" rel="alternate"></link><published>2024-03-21T22:30:00+08:00</published><updated>2024-03-21T22:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-21:/learned-from-solving-compatibility-problem-of-libcurl-and-freebsd-12.html</id><summary type="html">&lt;p class="first last"&gt;本文是解决 EverEdit 的 sftp 兼容性问题的反思。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;反思&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
@@ -264,11 +264,11 @@
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;strong&gt;“将重要紧急的时间框从 30 分钟逐步缩减为 20~25 分钟”&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;在重度使用番茄钟时，它常累积到99又翻转回0。但实体钟无法缩短一个番茄的时间，以至于我重来没有想过打破常规。&lt;/p&gt;
+&lt;p&gt;在重度使用番茄钟时，它常累积到99又翻转回0。但实体钟无法缩短一个番茄的时间，以至于我从来没有想过打破常规。&lt;/p&gt;
 &lt;ol class="arabic simple" start="2"&gt;
 &lt;li&gt;&lt;strong&gt;“插入一个重要不紧急 10 分钟，或紧急不重要 5 分钟”&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;在番茄钟的休息时间，其实可以安排掉ToDo List的重要不紧急和紧急不重要的，这取决于上面一点的达成。&lt;/p&gt;
+&lt;p&gt;在番茄钟的休息时间，其实可以安排掉 ToDo List 的重要不紧急和紧急不重要的，这取决于上面一点的达成。&lt;/p&gt;
 &lt;ol class="arabic simple" start="3"&gt;
 &lt;li&gt;&lt;strong&gt;“从制定 timeline 到计时 deadline；逐步缩短进入心流时间，甚至砍掉。”&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;

@@ -6,9 +6,9 @@
 :category: digital
 :tags: libcurl, freebsd
 :slug: learned-from-solving-compatibility-problem-of-libcurl-and-freebsd-12
-:summary: 本文解决 EverEdit 的 sftp 兼容性问题的反思。
+:summary: 本文是解决 EverEdit 的 sftp 兼容性问题的反思。
 :image: /static/img/2024/hero.png
-
+:growth: 5
 
 反思
 ====================
