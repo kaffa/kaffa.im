@@ -25,7 +25,7 @@
 
    如果依旧没有收获，可以返回出发点，检查假设。
 
-**问题最终的解决是我错误的假设 sftp 是 EverEdit.exe 实现的，且EverEdit 目录下只有一个 libcurl。**
+**问题最终的解决是意识两点：一、sftp 功能是 EverEdit.exe 实现的，二，且假设 EverEdit 目录下只有一个 libcurl。**
 
 
 事因

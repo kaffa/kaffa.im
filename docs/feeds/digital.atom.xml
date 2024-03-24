@@ -13,7 +13,7 @@
 &lt;p&gt;如果依旧没有收获，可以返回出发点，检查假设。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;问题最终的解决是我错误的假设 sftp 是 EverEdit.exe 实现的，且EverEdit 目录下只有一个 libcurl。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题最终的解决是意识两点：一、sftp 功能是 EverEdit.exe 实现的，二，且假设 EverEdit 目录下只有一个 libcurl。&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;事因&lt;/h2&gt;
