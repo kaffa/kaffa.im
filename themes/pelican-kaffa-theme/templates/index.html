@@ -205,7 +205,9 @@
                                 {% if article.subject is defined %}
                                     {{ article.subject.brief|truncate }}
                                 {% elif article.brief %}
-                                <sup class="is-size-1 has-text-grey-light" style="font-family: 'Times New Roman';">“</sup>{{ article.brief }}
+                                <sup class="is-size-1 has-text-grey-light"
+                                     style="font-family: 'Times New Roman'; display: inline-block; margin-bottom: -10px;"
+                                >“</sup>{{ article.brief }}
                                 {% endif %}
                             </div>
                         </article>
