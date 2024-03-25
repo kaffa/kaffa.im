@@ -82,7 +82,9 @@ Kaffa.im 的内容主要涉及信息技术、数字化、以及有些小趣味�
 
 .. raw:: html
 
-    <span style="color: hsl(171, 100%, 41%)">■</span>hsl(171, 100%, 41%) 转 RGB 是 rgb(0, 209, 178)
+    <p>
+        <span style="color: hsl(171, 100%, 41%)">■</span> hsl(171, 100%, 41%) 转 RGB 是 rgb(0, 209, 178)
+    </p>
 
 有资源或空闲我会换一种主色，但使用 bulma 的配色也有一种和聪明人共事的感觉。
 

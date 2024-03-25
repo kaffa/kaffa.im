@@ -149,7 +149,9 @@
 &lt;li&gt;我从配色主题书中进行选择，主题有：轻松流行、浪漫温柔、自然恬静、新鲜清爽、华丽高雅、奢华丰富、民族生机、神秘幻想、未来时尚、异国它乡、斑斓艺术、黑白银色，Kaffa.im 偏向于哪一种呢？&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;我想是新鲜清爽或神秘幻想，但目前似乎用的是黑白银及 bulma 默认色。&lt;/p&gt;
-&lt;span style="color: hsl(171, 100%, 41%)"&gt;■&lt;/span&gt;hsl(171, 100%, 41%) 转 RGB 是 rgb(0, 209, 178)&lt;p&gt;有资源或空闲我会换一种主色，但使用 bulma 的配色也有一种和聪明人共事的感觉。&lt;/p&gt;
+&lt;p&gt;
+    &lt;span style="color: hsl(171, 100%, 41%)"&gt;■&lt;/span&gt; hsl(171, 100%, 41%) 转 RGB 是 rgb(0, 209, 178)
+&lt;/p&gt;&lt;p&gt;有资源或空闲我会换一种主色，但使用 bulma 的配色也有一种和聪明人共事的感觉。&lt;/p&gt;
 &lt;ol class="arabic simple" start="4"&gt;
 &lt;li&gt;使用排除法的考虑？&lt;/li&gt;
 &lt;/ol&gt;
