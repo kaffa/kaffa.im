@@ -97,44 +97,45 @@ Q1 我输出一些字，当然和大多 Jamstack 一样以时间流的形式，�
 
 以下是 maggie 文中的有代表性的观察与观点::
 
-    They're not following the conventions of the "personal blog," as we've come to know it. Rather than presenting a set of polished articles, displayed in reverse chronological order, these sites act more like free form, work-in-progress wikis.
+|    They're not following the conventions of the "personal blog," as we've come to know it. Rather than presenting a set of polished articles, displayed in reverse chronological order, these sites act more like free form, work-in-progress wikis.
 
-    他们没有遵循我们知道的“个人博客”的惯例。这些网站不是以时间倒序显示的一组精美的文章，而是更像是自由形式的、正在进行中的维基。
+|    他们没有遵循我们知道的“个人博客”的惯例。这些网站不是以时间倒序显示的一组精美的文章，而是更像是自由形式的、正在进行中的维基。
 
 关于花园诞生的追溯::
 
-    Tracing back how Neologisms are born helps us understand why anyone needed this word in the first place. ... Naming is a political act as much as a poetic one.
+|    Tracing back how Neologisms are born helps us understand why anyone needed this word in the first place. ... Naming is a political act as much as a poetic one.
 
-    追溯新词是如何诞生的，有助于我们理解为什么有人首先需要这个词。……命名既是一种政治行为，也是一种诗意行为。
+|    追溯新词是如何诞生的，有助于我们理解为什么有人首先需要这个词。……命名既是一种政治行为，也是一种诗意行为。
 
 对早期花园的回顾和评论，奇妙的暗喻和文字癖::
 
-    "Unplanned hypertext sprawl is wilderness: complex and interesting, but uninviting. Interesting things await us in the thickets, but we may be reluctant to plough through the brush, subject to thorns and mosquitoes"
+|    "Unplanned hypertext sprawl is wilderness: complex and interesting, but uninviting. Interesting things await us in the thickets, but we may be reluctant to plough through the brush, subject to thorns and mosquitoes"
 
-    “计划之外的超文本蔓延是荒野：复杂而有趣，但并不吸引人。有趣的事情在灌木丛中等待着我们，但我们可能不愿意在灌木丛中强行穿越，因受到荆棘和蚊子的影响。
+|    “计划之外的超文本蔓延是荒野：复杂而有趣，但并不吸引人。有趣的事情在灌木丛中等待着我们，但我们可能不愿意在灌木丛中强行穿越，因受到荆棘和蚊子的影响。
 
 一些花园的关键词::
 
-    classically old and newly imagined, the desire for exploratory experiences, digital weirdness, a healthy amount of resistance to top-down structures.
+|    classically old and newly imagined, the desire for exploratory experiences, digital weirdness, a healthy amount of resistance to top-down structures.
 
 而后出现的关于数字园艺更类似于 PIM 概念::
 
-    简称之为 digital puttering，更多是分类、整理、相册，而不是播种和耕耘。
+|    简称之为 digital puttering，更多是分类、整理、相册，而不是播种和耕耘。
 
 然后是 Caufield::
 
-    Caufield 明确表示，数字园艺与特定工具无关——它不是 Wordpress 插件、Gastby 主题或 Jekyll 模板。这是一种思考我们围绕信息的在线行为的不同方式——一种在可探索的空间中随着时间的推移积累个人知识的方式。
-
-    但溪流只会浮现过去 24 小时的时代精神的思想。它们不是为了积累知识、连接不同的信息或随着时间的推移而成熟而设计的。
-
-    Gardens present information in a richly linked landscape that grows slowly over time. ... The garden helps us move away from time-bound streams and into contextual knowledge spaces.
-
-    花园在丰富联系的景观中呈现信息，随着时间的推移缓慢增长。……花园帮助我们摆脱了时间限制的溪流，进入了情境知识空间。
+|    Caufield 明确表示，数字园艺与特定工具无关——它不是 Wordpress 插件、Gastby 主题或 Jekyll 模板。这是一种思考我们围绕信息的在线行为的不同方式——一种在可探索的空间中随着时间的推移积累个人知识的方式。
+|
+|    但溪流只会浮现过去 24 小时的时代精神的思想。它们不是为了积累知识、连接不同的信息或随着时间的推移而成熟而设计的。
+|
+|    Gardens present information in a richly linked landscape that grows slowly over time. ... The garden helps us move away from time-bound streams and into contextual knowledge spaces.
+|
+|    花园在丰富联系的景观中呈现信息，随着时间的推移缓慢增长。……花园帮助我们摆脱了时间限制的溪流，进入了情境知识空间。
 
 然后是思潮转向了 writing in public，以及今天的现状，我们发布内容的位置都是表单的文本区域，而不是独立的编辑器。号召数字园艺是抵制我们现在理所当然的有限范围的原版网络格式和布局的一部分。::
 
-    "Suddenly people weren’t creating homepages or even web pages... they were writing web content in form fields and text areas inside a web page."
-    “突然间，人们不再创建主页，甚至网页......他们在网页内的表单字段和文本区域中编写 Web 内容。”
+|    "Suddenly people weren’t creating homepages or even web pages... they were writing web content in form fields and text areas inside a web page."
+
+|    “突然间，人们不再创建主页，甚至网页......他们在网页内的表单字段和文本区域中编写 Web 内容。”
 
 
 来自社区的萌芽
@@ -189,7 +190,7 @@ Q1 我输出一些字，当然和大多 Jamstack 一样以时间流的形式，�
 2. 持续耕耘；
 3. 接纳不完美，公开学习，在学习时分享，不做闭门修炼十年后成为“专家”的事。
 4. 风趣且个性，你的试验田，更保真的呈现自己，包括怪癖、矛盾和复杂性
-5. 支持各种媒介：客、视频、图表、插图、交互式网络动画、学术论文、推文粗略草图和代码片段都应该在花园里生活和成长。
+5. 支持各种媒介：播客、视频、图表、插图、交互式网络动画、学术论文、推文粗略草图和代码片段都应该在花园里生活和成长。
 6. 园主有一切内容控制权；
 
 一些更细致的：
