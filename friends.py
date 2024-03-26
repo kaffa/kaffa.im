@@ -53,6 +53,14 @@ def get_list():
             'Email': 'huhexian0206@gmail.com',
         }, {
             'ID': 6,
+            'Name': '陈仓颉',
+            'URL': 'https://imzm.im/',
+            'Intro': '以有涯随无涯',
+            'Owner': '陈仓颉',
+            'Icon': 'https://imzm.im/wp-content/uploads/2023/05/logo50px.png',
+            'Email': 'zm.rayme@gmail.com',
+        }, {
+            'ID': 7,
             'Name': '松易涅的写作分享站',
             'URL': 'https://songyinie.com/',
             'Intro': '回顾历史，审视当下，期盼未来',

@@ -43,6 +43,8 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = [
+    {'group': '数字花园', 'items': (
+        ('仿生猫不会梦见电子猫粮', 'https://jefftay.com/'),)},
     {'group': '链接', 'items': (
         ('Paul Graham', 'http://paulgraham.com'),
         ('Guido van Rossum', 'https://gvanrossum.github.io/'),
