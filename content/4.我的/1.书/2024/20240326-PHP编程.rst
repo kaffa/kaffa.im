@@ -1,0 +1,25 @@
+PHP编程
+########################################################
+
+:date: 2024-03-26 14:00
+:author: Kaffa
+:category: book
+:tags: php
+:slug: programming-php-4th-edtion
+:summary: 稍认真看过。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/1IU3YSaVv2GcFJSeKLYMYA
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐ 7/10
+
+
+评价
+====================
+
+总的来说不如第三版，浅显的讲了，好些地方显然工业代码早就不这么用了，作者也没说明白。
+
+什么“粘性表单”，难道没有受 front-ends 影响么？

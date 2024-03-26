@@ -1,0 +1,25 @@
+Linux源码趣读
+########################################################
+
+:date: 2024-03-26 14:00
+:author: Kaffa
+:category: book
+:tags: go
+:slug: learning-go
+:summary: 掠过
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/65GKtMthnt4RGbGRHwEc0s
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐ 7/10
+
+
+评价
+====================
+
+作者说自己的书排第一，我想可能是翻译不够原因吧，覆盖面很广，但挺中规中矩的。
+
+O'Reilly被机工带跑了。

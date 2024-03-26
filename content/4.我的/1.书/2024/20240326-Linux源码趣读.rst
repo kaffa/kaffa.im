@@ -1,0 +1,23 @@
+Linux源码趣读
+########################################################
+
+:date: 2024-03-26 14:00
+:author: Kaffa
+:category: book
+:tags: linux
+:slug: linux-source-code-fun-reading
+:summary: 掠过。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/2MzyoyiqSGnqzcVwJBwsKa
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐ 6/10
+
+
+评价
+====================
+
+以前没有读过《Linux内核源码剖析》，路过这本，顺便一看，无什收获。

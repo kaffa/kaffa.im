@@ -1,0 +1,25 @@
+PHP编程
+########################################################
+
+:date: 2024-03-26 14:00
+:author: Kaffa
+:category: book
+:tags: php
+:slug: laravel-up-and-running-2nd-edtion
+:summary: 作选型时的泛读。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/4fbqNg8hVSUvOmgieY1ulX
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐ 8/10
+
+
+评价
+====================
+
+书最大的缺点还是跟不上文档，好在读起来还可以。
+
+写书时 Laravel 5.8，出版时 Laravel 11 了。
