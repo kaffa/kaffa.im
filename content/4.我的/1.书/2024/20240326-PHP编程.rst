@@ -6,7 +6,7 @@ PHP编程
 :category: book
 :tags: php
 :slug: programming-php-4th-edtion
-:summary: 稍认真看过。
+:summary: 认真看过，背后的a索引挺好的。
 :image: /static/img/2024/hero.png
 :subject_url: https://neodb.social/book/1IU3YSaVv2GcFJSeKLYMYA
 

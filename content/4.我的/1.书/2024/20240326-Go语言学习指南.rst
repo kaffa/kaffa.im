@@ -6,7 +6,7 @@ Go语言学习指南
 :category: book
 :tags: go
 :slug: learning-go
-:summary: 掠过
+:summary: O'Reilly被机工带跑了
 :image: /static/img/2024/hero.png
 :subject_url: https://neodb.social/book/65GKtMthnt4RGbGRHwEc0s
 
