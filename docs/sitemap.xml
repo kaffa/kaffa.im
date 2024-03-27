@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-03-27T22:39:33-00:00</lastmod>
+<lastmod>2024-03-28T00:47:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-03-27T22:39:33-00:00</lastmod>
+<lastmod>2024-03-28T00:47:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-03-27T22:39:33-00:00</lastmod>
+<lastmod>2024-03-28T00:47:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-03-27T22:39:33-00:00</lastmod>
+<lastmod>2024-03-28T00:47:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -83,6 +83,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/programming-php-4th-edtion.html</loc>
 <lastmod>2024-03-26T14:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/write-great-code-volume-1-understanding-the-machine.html</loc>
+<lastmod>2024-03-26T00:30:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/write-great-code-volume-2-thinking-low-level-writing-high-level.html</loc>
+<lastmod>2024-03-26T00:30:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/write-great-code-volume-3-engineering-software.html</loc>
+<lastmod>2024-03-26T00:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>

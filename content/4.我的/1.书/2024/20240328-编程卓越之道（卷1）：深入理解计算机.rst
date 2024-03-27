@@ -1,0 +1,23 @@
+编程卓越之道（卷1）：深入理解计算机
+########################################################
+
+:date: 2024-03-26 00:30
+:author: Kaffa
+:category: book
+:tags: computer
+:slug: write-great-code-volume-1-understanding-the-machine
+:summary: Randall Hyde 决定写 6 卷书，这是卷 1，关于计算机基础知识。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/40Ngf57BLBYjsXA5cdqyeT
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐⭐⭐ 9/10
+
+
+评价
+====================
+
+大学时逛书店看到的，Randall Hyde 写的计算机基础知识。

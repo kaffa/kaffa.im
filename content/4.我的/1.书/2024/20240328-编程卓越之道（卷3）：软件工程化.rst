@@ -1,0 +1,34 @@
+编程卓越之道（卷3）：软件工程化
+########################################################
+
+:date: 2024-03-26 00:30
+:author: Kaffa
+:category: book
+:tags: software-engineering
+:slug: write-great-code-volume-3-engineering-software
+:summary: Randall Hyde 决定写 6 卷书，这是卷 3，关于软件工程，都不曾让人失望。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/1eV0qSNg677TTlPbQ6ZWjj
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐⭐⭐ 9/10
+
+
+评价
+====================
+
+Randall Hyde 以前写了一些计算机底层知识和汇编语言的书，毫无疑问软件行业硬核 OG。
+
+这一本是关于软件工程的书，虽然出版的有点晚，放到现在属于总结。
+
+但这些依然有两个重要作用：
+
+一、让一个学会编程的人，对软件工程有所认识；
+二、可以学到正宗的 UML 及标准的软件文档的要素和例子。
+
+所以，总的来说，值得一读。
+
+翻译尤佳，给译者点赞，整体达到 8.5 分，有 0.5 星给译者。

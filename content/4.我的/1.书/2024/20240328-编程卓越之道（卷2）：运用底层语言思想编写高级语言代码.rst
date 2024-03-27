@@ -1,0 +1,23 @@
+编程卓越之道（卷2）：运用底层语言思想编写高级语言代码
+########################################################
+
+:date: 2024-03-26 00:30
+:author: Kaffa
+:category: book
+:tags: computer
+:slug: write-great-code-volume-2-thinking-low-level-writing-high-level
+:summary: Randall Hyde 决定写 6 卷书，这是卷 2，从一种高阶汇编语言（HLA）视角看高级编程语言，可谓汇编之上，了无秘密。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/3ENIw9kLoiBeERYxEIOtGx
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐⭐⭐ 9/10
+
+
+评价
+====================
+
+原有一本搬家弄丢了，这本购于二手书店，但买回来就没翻过了，是的用汇编的时机基本没有了，这玩意连 AI 都难以弄懂，估计也是学习素材少，数据少。
