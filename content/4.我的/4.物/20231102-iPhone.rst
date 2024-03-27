@@ -10,7 +10,7 @@ iPhone
 :image: /static/img/2023/hero.png
 
 
-.. image:: /static/2024/iphone-13-starlight.png
+.. image:: /static/img/2024/iphone-13-starlight.png
     :alt: iPhone 14 星光色
     :width: 400px
 
@@ -23,11 +23,7 @@ iPhone13
 - 2532 x 1170 像素分辨率，460 ppi
 
 
-
-产品规格
-===========
-
-https://www.apple.com.cn/iphone-13/specs/
+`产品规格 <https://www.apple.com.cn/iphone-13/specs/>`_
 
 评论
 ===========
