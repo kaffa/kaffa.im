@@ -1,0 +1,48 @@
+Dell XPS 15 9550
+##################################################
+
+:date: 2023-03-27 12:00
+:author: Kaffa
+:category: things
+:tags: Dell
+:slug: dell-xps-15-9550
+:summary: 当我看到 Dell XPS 窄边框出了 15 寸时，就购入了顶配版。
+:image: /static/img/2024/dell-xps-15-9550.png
+
+.. image:: /static/img/2024/dell-xps-15-9550.png
+    :alt: Dell XPS 15 9550
+    :width: 400px
+
+Dell XPS 15 9550
+====================
+
+- 处理器：Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+- 内存：16.0 GB
+
+`产品规格 </static/file/xps_laptop_xps-15-9550-laptop_reference guide_en-us.pdf>`_
+
+评论
+===========
+
+看上它有两个原因，一是品牌，二是颜值。
+
+购买那年 Dell 属于值得推荐的笔记本品牌，微软 Surface 品控还不行；其次 XPS 的窄边框技术业内不多。
+
+DELL XPS 9550 电池鼓包问题
+----------------------------------------
+
+由于设计缺陷，DELL XPS 9550 电池在使用一年就产生鼓包问题，我自己掏钱在官方指定服务处更换了电池。
+
+后来官方发了可以免费更换电池的 Email，但我却错过了。
+
+几年后，新换的电池也鼓包了，将触摸板顶起来了，主板也受到了影响。
+
+现在，我都是插电使用，一直没什么问题。
+
+
+DELL XPS 9550 内存插槽接触不良问题
+----------------------------------------
+
+我也写过一篇：`Dell XPS 笔记本电脑内存插槽问题 <dell-xps-ram-slot-issue>`_
+
+

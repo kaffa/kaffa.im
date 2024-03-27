@@ -1,17 +1,17 @@
-iPhone
+iPhone 13
 ##################################################
 
 :date: 2023-11-02 16:08
 :author: Kaffa
 :category: things
 :tags: Steve Jobs
-:slug: iphone
+:slug: iphone-13
 :summary: 很多人看不清 iPhone 成功的根本原因，人云亦云，这一点那一点，要赶走现实中随处的堆砌和蒙蔽并不容易。
-:image: /static/img/2023/hero.png
+:image: /static/img/2024/iphone-13-starlight.png
 
 
 .. image:: /static/img/2024/iphone-13-starlight.png
-    :alt: iPhone 14 星光色
+    :alt: iPhone 13 星光色
     :width: 400px
 
 iPhone13
