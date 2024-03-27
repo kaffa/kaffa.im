@@ -43,6 +43,6 @@ DELL XPS 9550 电池鼓包问题
 DELL XPS 9550 内存插槽接触不良问题
 ----------------------------------------
 
-我也写过一篇：`Dell XPS 笔记本电脑内存插槽问题 <dell-xps-ram-slot-issue>`_
+我也写过一篇：`Dell XPS 笔记本电脑内存插槽问题 <https://kaffa.im/dell-xps-ram-slot-issue.html>`_
 
 

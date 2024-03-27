@@ -11,7 +11,7 @@ Apple MacBook Pro 13 A1502
 
 
 .. image:: /static/img/2024/apple-macbook-pro-13-a1502.jpg
-    :alt: Dell XPS 15 9550
+    :alt: Apple MacBook Pro 13 A1502
     :width: 400px
 
 Apple MacBook Pro 13 A1502
