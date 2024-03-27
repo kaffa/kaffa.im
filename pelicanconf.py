@@ -45,18 +45,18 @@ AUTHOR_FEED_RSS = None
 LINKS = [
     {'group': '数字花园', 'items': (
         ('仿生猫不会梦见电子猫粮', 'https://jefftay.com/'),)},
-    {'group': '链接', 'items': (
-        ('Paul Graham', 'http://paulgraham.com'),
-        ('Guido van Rossum', 'https://gvanrossum.github.io/'),
-        ("Coffee's", 'https://coffees.app'),
-        ('论道', 'https://lundao.pub/'),)},
     {'group': '收录', 'items': (
         ('十年之约', 'https://www.foreverblog.cn'),
         ('BlogFinder', 'https://bf.zzxworld.com'),
         ('个站商店', 'https://storeweb.cn/'),
         ('博客志', 'http://www.jetli.com.cn'),
         ('积薪', 'https://firewood.news'),
-        ('博客圈', 'https://bkq.net.cn/'),)}
+        ('博客圈', 'https://bkq.net.cn/'),)},
+    {'group': '链接', 'items': (
+        ('Paul Graham', 'http://paulgraham.com'),
+        ('Guido van Rossum', 'https://gvanrossum.github.io/'),
+        ("Coffee's", 'https://coffees.app'),
+        ('论道', 'https://lundao.pub/'),)},
 ]
 # Social widget
 SOCIAL = (('My GitHub', 'https://github.com/kaffa'),)

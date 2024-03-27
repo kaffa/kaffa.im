@@ -10,6 +10,25 @@ iPhone
 :image: /static/img/2023/hero.png
 
 
+.. image:: /static/2024/iphone-13-starlight.png
+    :alt: iPhone 14 星光色
+    :width: 400px
+
+iPhone13
+==========
+
+- 星光色，256G，重 173 克。
+- 宽度：71.5 毫米，高度：146.7 毫米，厚度：7.65 毫米
+- 6.1 英寸 OLED 全面屏
+- 2532 x 1170 像素分辨率，460 ppi
+
+
+
+产品规格
+===========
+
+https://www.apple.com.cn/iphone-13/specs/
+
 评论
 ===========
 
