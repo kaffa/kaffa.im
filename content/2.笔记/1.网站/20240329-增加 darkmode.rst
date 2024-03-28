@@ -6,7 +6,7 @@
 :category: website
 :tags: darkmode,bulma
 :slug: add-darkmode-to-website
-:summary: 主要 bulma.css 从 0.94 升到 1.0 了，增加了 darkmode
+:summary: 主要 bulma.css 从 0.94 升到 1.0 了，增加了 darkmode，已知缺陷：System mode 下默认色未设置，这将导致第一次加载后需要选择一次。
 
 Dark Mode
 ========================================
@@ -33,7 +33,10 @@ bulma 这次升级可谓仓促，虽然有很多新功能，但其中还有一�
 
 虽然做了小白鼠，但好在是自留地，不完美，不重要，重要的是完成了。
 
+
 提示
 ========================================
 
 bulma 0.94 在做充分评估前，不要贸然升级到 bulma 1.0，犹其是使用了 tile 或者希望增加 darkmode 的人。
+
+已知瑕疵：System mode 下，默认选了夜晚模式时，默认色未设置，这将导致第一次加载后需要选择一次模式。
