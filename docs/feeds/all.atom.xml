@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-26T14:00:00+08:00</updated><entry><title>Laravel入门与实战</title><link href="https://kaffa.im/laravel-up-and-running-2nd-edtion.html" rel="alternate"></link><published>2024-03-26T14:00:00+08:00</published><updated>2024-03-26T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-26:/laravel-up-and-running-2nd-edtion.html</id><summary type="html">&lt;p class="first last"&gt;作选型时的泛读。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-28T00:30:00+08:00</updated><entry><title>编程卓越之道（卷1）：深入理解计算机</title><link href="https://kaffa.im/write-great-code-volume-1-understanding-the-machine.html" rel="alternate"></link><published>2024-03-28T00:30:00+08:00</published><updated>2024-03-28T00:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-28:/write-great-code-volume-1-understanding-the-machine.html</id><summary type="html">&lt;p class="first last"&gt;Randall Hyde 决定写 6 卷书，这是卷 1，关于计算机基础知识。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;评分&lt;/h2&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐
+⭐⭐⭐⭐ 9/10&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;评价&lt;/h2&gt;
+&lt;p&gt;大学时逛书店看到的，Randall Hyde 写的计算机基础知识。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="computer"></category></entry><entry><title>编程卓越之道（卷2）：运用底层语言思想编写高级语言代码</title><link href="https://kaffa.im/write-great-code-volume-2-thinking-low-level-writing-high-level.html" rel="alternate"></link><published>2024-03-28T00:30:00+08:00</published><updated>2024-03-28T00:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-28:/write-great-code-volume-2-thinking-low-level-writing-high-level.html</id><summary type="html">&lt;p class="first last"&gt;Randall Hyde 决定写 6 卷书，这是卷 2，从一种高阶汇编语言（HLA）视角看高级编程语言，可谓汇编之上，了无秘密。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;评分&lt;/h2&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐
+⭐⭐⭐⭐ 9/10&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;评价&lt;/h2&gt;
+&lt;p&gt;原有一本搬家弄丢了，这本购于二手书店，但买回来就没翻过了，是的用汇编的时机基本没有了，这玩意连 AI 都难以弄懂，估计也是学习素材少，数据少。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="computer"></category></entry><entry><title>编程卓越之道（卷3）：软件工程化</title><link href="https://kaffa.im/write-great-code-volume-3-engineering-software.html" rel="alternate"></link><published>2024-03-28T00:30:00+08:00</published><updated>2024-03-28T00:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-28:/write-great-code-volume-3-engineering-software.html</id><summary type="html">&lt;p class="first last"&gt;Randall Hyde 决定写 6 卷书，这是卷 3，关于软件工程，都不曾让人失望。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;评分&lt;/h2&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐
+⭐⭐⭐⭐ 9/10&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;评价&lt;/h2&gt;
+&lt;p&gt;Randall Hyde 以前写了一些计算机底层知识和汇编语言的书，毫无疑问软件行业硬核 OG。&lt;/p&gt;
+&lt;p&gt;这一本是关于软件工程的书，虽然出版的有点晚，放到现在属于总结。&lt;/p&gt;
+&lt;p&gt;但这些依然有两个重要作用：&lt;/p&gt;
+&lt;p&gt;一、让一个学会编程的人，对软件工程有所认识；
+二、可以学到正宗的 UML 及标准的软件文档的要素和例子。&lt;/p&gt;
+&lt;p&gt;所以，总的来说，值得一读。&lt;/p&gt;
+&lt;p&gt;翻译尤佳，给译者点赞，整体达到 8.5 分，有 0.5 星给译者。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="software-engineering"></category></entry><entry><title>Laravel入门与实战</title><link href="https://kaffa.im/laravel-up-and-running-2nd-edtion.html" rel="alternate"></link><published>2024-03-26T14:00:00+08:00</published><updated>2024-03-26T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-26:/laravel-up-and-running-2nd-edtion.html</id><summary type="html">&lt;p class="first last"&gt;作选型时的泛读。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;评分&lt;/h2&gt;
 &lt;p&gt;⭐⭐⭐⭐⭐
@@ -42,43 +78,7 @@
 &lt;p&gt;总的来说不如第三版，浅显的讲了，好些地方显然工业代码早就不这么用了，作者也没说明白。&lt;/p&gt;
 &lt;p&gt;什么“粘性表单”，难道没有受 front-ends 影响么？&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="book"></category><category term="php"></category></entry><entry><title>编程卓越之道（卷1）：深入理解计算机</title><link href="https://kaffa.im/write-great-code-volume-1-understanding-the-machine.html" rel="alternate"></link><published>2024-03-26T00:30:00+08:00</published><updated>2024-03-26T00:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-26:/write-great-code-volume-1-understanding-the-machine.html</id><summary type="html">&lt;p class="first last"&gt;Randall Hyde 决定写 6 卷书，这是卷 1，关于计算机基础知识。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;评分&lt;/h2&gt;
-&lt;p&gt;⭐⭐⭐⭐⭐
-⭐⭐⭐⭐ 9/10&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;评价&lt;/h2&gt;
-&lt;p&gt;大学时逛书店看到的，Randall Hyde 写的计算机基础知识。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"></category><category term="computer"></category></entry><entry><title>编程卓越之道（卷2）：运用底层语言思想编写高级语言代码</title><link href="https://kaffa.im/write-great-code-volume-2-thinking-low-level-writing-high-level.html" rel="alternate"></link><published>2024-03-26T00:30:00+08:00</published><updated>2024-03-26T00:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-26:/write-great-code-volume-2-thinking-low-level-writing-high-level.html</id><summary type="html">&lt;p class="first last"&gt;Randall Hyde 决定写 6 卷书，这是卷 2，从一种高阶汇编语言（HLA）视角看高级编程语言，可谓汇编之上，了无秘密。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;评分&lt;/h2&gt;
-&lt;p&gt;⭐⭐⭐⭐⭐
-⭐⭐⭐⭐ 9/10&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;评价&lt;/h2&gt;
-&lt;p&gt;原有一本搬家弄丢了，这本购于二手书店，但买回来就没翻过了，是的用汇编的时机基本没有了，这玩意连 AI 都难以弄懂，估计也是学习素材少，数据少。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"></category><category term="computer"></category></entry><entry><title>编程卓越之道（卷3）：软件工程化</title><link href="https://kaffa.im/write-great-code-volume-3-engineering-software.html" rel="alternate"></link><published>2024-03-26T00:30:00+08:00</published><updated>2024-03-26T00:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-26:/write-great-code-volume-3-engineering-software.html</id><summary type="html">&lt;p class="first last"&gt;Randall Hyde 决定写 6 卷书，这是卷 3，关于软件工程，都不曾让人失望。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;评分&lt;/h2&gt;
-&lt;p&gt;⭐⭐⭐⭐⭐
-⭐⭐⭐⭐ 9/10&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;评价&lt;/h2&gt;
-&lt;p&gt;Randall Hyde 以前写了一些计算机底层知识和汇编语言的书，毫无疑问软件行业硬核 OG。&lt;/p&gt;
-&lt;p&gt;这一本是关于软件工程的书，虽然出版的有点晚，放到现在属于总结。&lt;/p&gt;
-&lt;p&gt;但这些依然有两个重要作用：&lt;/p&gt;
-&lt;p&gt;一、让一个学会编程的人，对软件工程有所认识；
-二、可以学到正宗的 UML 及标准的软件文档的要素和例子。&lt;/p&gt;
-&lt;p&gt;所以，总的来说，值得一读。&lt;/p&gt;
-&lt;p&gt;翻译尤佳，给译者点赞，整体达到 8.5 分，有 0.5 星给译者。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"></category><category term="software-engineering"></category></entry><entry><title>2024年第12周周报</title><link href="https://kaffa.im/weekly-2024-w12.html" rel="alternate"></link><published>2024-03-25T23:00:00+08:00</published><updated>2024-03-25T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-25:/weekly-2024-w12.html</id><summary type="html">&lt;p class="first last"&gt;2024年第12周周报&lt;/p&gt;
+</content><category term="book"></category><category term="php"></category></entry><entry><title>2024年第12周周报</title><link href="https://kaffa.im/weekly-2024-w12.html" rel="alternate"></link><published>2024-03-25T23:00:00+08:00</published><updated>2024-03-25T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-25:/weekly-2024-w12.html</id><summary type="html">&lt;p class="first last"&gt;2024年第12周周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第12周周报&lt;/h2&gt;
 &lt;div class="section" id="section-3"&gt;

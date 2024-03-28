@@ -4,14 +4,14 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'G-7H14T5KLFJ');
+        gtag('config', 'G-7H14T5KLFJ');
     </script>
     <title>Kaffa.im - CSS tag</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <!--
         Q1. 本站技术栈？
         A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
@@ -19,107 +19,143 @@
         Q2. 更多信息？
         A2. 微信公众号：Kaffa
     -->
-    <meta name="author" content="Kaffa" />
+    <meta name="author" content="Kaffa"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
     <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
     <link rel="stylesheet" href="/static/css/0.css">
     <link
-        href="https://kaffa.im/feeds/all.atom.xml"
-        type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed" />
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
 
 </head>
 <body>
-    <header>
-        <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <h1 class="navbar-item">
-                    <a href="../"><span class="is-italic author_name">Kaffa</span>.im</a>
-                    <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
-                </h1>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="../"><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
 
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarGlobal">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
             </div>
-            <div id="navbarGlobal" class="navbar-menu">
-                <div class="navbar-start">
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
                 </div>
-                <div class="navbar-end">
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link has-text-grey">专栏</a>
-                        <div class="navbar-dropdown is-boxed">
-                                <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
-                                <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
-                        </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
                     </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link has-text-grey">笔记</a>
-                        <div class="navbar-dropdown is-boxed">
-                                <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
-                        </div>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link has-text-grey">创作</a>
-                        <div class="navbar-dropdown is-boxed">
-                                <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
-                        </div>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link has-text-grey">我的</a>
-                        <div class="navbar-dropdown is-boxed">
-                                <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
-                                <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
-                                <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
-                        </div>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link has-text-grey">关于</a>
-                        <div class="navbar-dropdown is-boxed">
-                                <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
-                                <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
-                                <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
-                        </div>
-                    </div>
-                    <!--
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-primary">
-                            <strong>Sign up</strong>
-                            </a>
-                            <a class="button is-light">
-                            Log in
-                            </a>
-                        </div>
-                    </div>
-                    -->
                 </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
             </div>
-        </nav>
-    </header>
-    <main class="has-background-grey-lighter pb-4">
+        </div>
+    </nav>
+
+
+
+</header>
+<main class="pb-4">
 
 
 
@@ -127,7 +163,7 @@
 
 
 
-<section class="hero has-background-white" style="min-height: 400px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);">
+<section class="hero" style="min-height: 400px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);">
     <div class="hero-body">
         <div class="title is-family-primary is-max-desktop is-size-4 has-text-centered is-italic author_name mt-5">
             <figure class="image is-64x64 has-text-centered" style="margin: auto;">
@@ -135,33 +171,33 @@
             </figure>
             Kaffa
         </div>
-        <p class="is-size-6 has-text-centered has-text-grey mt-3">「探索」人生，共享「意趣」。</p>
+        <p class="is-size-6 has-text-centered has-text-grey my-3">探索人生　共享意趣</p>
         <div class="container is-max-desktop">
             <div class="is-divider" data-content="North"></div>
         </div>
         <nav class="level is-mobile container is-max-desktop">
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="title">0</p>
                     <p class="heading">项目</p>
+                    <p class="title">3</p>
                 </div>
             </div>
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="title">168</p>
                     <p class="heading">动态</p>
+                    <p class="title">168</p>
                 </div>
             </div>
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="title">1</p>
                     <p class="heading">关注</p>
+                    <p class="title">7</p>
                 </div>
             </div>
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="title">7</p>
                     <p class="heading">友链</p>
+                    <p class="title">7</p>
                 </div>
             </div>
         </nav>
@@ -174,64 +210,118 @@
 
             <section class="box">
                 <h3>花园向导</h3>
-                <div class="card mt-4">
-                    <div class="card-content is-size-67" style="text-indent: 2em;">
-                        <p>看到<a href="https://maggieappleton.com/garden-history" target="_blank">数字花园</a>的建设理念，是说博客的倒叙时间线伤害了互联网精神，而按产品标准来发布内容，失去了博主探索内容和内容自然生长的线索，不如对文章加上生长属性的元数据。</p>
-                        <p>我认同这个观点的，我会在 <a href="https://kaffa.im/kaffaweb-plugin.html" target="_blank" >KaffaPod</a> 插件中加入此元数据的标注功能。基于此，网站内容分为笔记（发芽小苗）的和文章（灌木丛），相同主题的内容 URL 会唯一存在，我会在不断的更新并保留更新历史在文末。</p>
-                        <p>另一方面，我保留了发布内容倒叙时间线，但您依旧可以从菜单<a href="http://kaffa.im/pages/about-website.html">[关于][网站]</a>来进入开始了解本站内容。</p>
-                        <p>如果您有兴趣，可以把此处当成您邻居的花园，我正像个园丁一样，持续地时不时地修整和更新它。如果您暂时没兴趣，既然来到这里也不妨先<a
-                            href='javascript:(function addFav(title, url) {
-                                try { window.external.addFavorite(url, title); } catch(e) {
-                                    try { window.sidebar.addPanel(title, url, ""); } catch(e) {
-                                        alert("您所使用的浏览器支持同时按键盘上的 CTRL 和 D 键进行收藏！");}}})("来杯咖啡！", "http://kaffa.im/");'
-                            >收藏</a>，等哪天想起来再来看看，因为，我正像个园丁一样，持续地时不时地修整和更新它，说不定哪天就对上您的胃口了。<p>
-                    </div>
+                <div class="is-size-67 mt-4" style="text-indent: 2em;">
+                    <p>看到<a href="https://maggieappleton.com/garden-history" target="_blank">数字花园</a>的建设理念，是说博客的倒叙时间线伤害了互联网精神，而按产品标准来发布内容，失去了博主探索内容和内容自然生长的线索，不如对文章加上生长属性的元数据。</p>
+                    <p>我认同这个观点的，我会在 <a href="https://kaffa.im/kaffaweb-plugin.html" target="_blank" >KaffaPod</a> 插件中加入此元数据的标注功能。基于此，网站内容分为笔记（发芽小苗）的和文章（灌木丛），相同主题的内容 URL 会唯一存在，我会在不断的更新并保留更新历史在文末。</p>
+                    <p>另一方面，我保留了发布内容倒叙时间线，但您依旧可以从菜单<a href="http://kaffa.im/pages/about-website.html">[关于][网站]</a>来进入开始了解本站内容。</p>
+                    <p>如果您有兴趣，可以把此处当成您邻居的花园，我正像个园丁一样，持续地时不时地修整和更新它。如果您暂时没兴趣，既然来到这里也不妨先<a
+                        href='javascript:(function addFav(title, url) {
+                            try { window.external.addFavorite(url, title); } catch(e) {
+                                try { window.sidebar.addPanel(title, url, ""); } catch(e) {
+                                    alert("您所使用的浏览器支持同时按键盘上的 CTRL 和 D 键进行收藏！");}}})("来杯咖啡！", "http://kaffa.im/");'
+                        >收藏</a>，等哪天想起来再来看看，因为，我正像个园丁一样，持续地时不时地修整和更新它，说不定哪天就对上您的胃口了。<p>
                 </div>
+            </section>
+
+            <section class="box box-dxl">
+                <meta name="referrer" content="same-origin">
+                <img class='dxl'>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const d = new Date();
+                        const year = d.getFullYear();
+                        const month = (d.getMonth() + 1).toString().padStart(2, '0');
+                        const day = d.getDate().toString().padStart(2, '0');
+                        const $dxl = document.querySelector('.dxl');
+                        $dxl.src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
+                        $dxl.onerror = function() {
+                            document.querySelector('.box-dxl').style.display = 'none';
+                        }
+                    });
+                </script>
             </section>
 
             <section class="box">
                 <h3>项目</h3>
                 <nav class="panel mt-4">
                     <p class="panel-tabs">
-                        <a title="all">所有</a>
-                        <a title="doing" class="is-active">进行中</a>
-                        <a title="done">完成</a>
-                        <a title="ready">未开始</a>
+                        <a title="all" class="is-size-7">所有</a>
+                        <a title="doing" class="is-size-7 is-active">进行中</a>
+                        <a title="done" class="is-size-7">完成</a>
+                        <a title="ready" class="is-size-7">未开始</a>
                     </p>
+                    <a class="panel-block is-active panel-done is-hidden">
+                        <div style="width: 100%;">
+                            <strong>KaffaWeb.三合</strong>
+                            <strong class="is-pulled-right">100.0%</strong>
+                            <p class="subtitle is-7">Kunnect Adventures & Fun</p>
+                            <progress class="progress is-small" value="100.0" max="100" style="width: auto;">
+                                100.0%
+                            </progress>
+                        </div>
+                    </a>
+                    <a class="panel-block is-active panel-done is-hidden">
+                        <div style="width: 100%;">
+                            <strong>琅環笔记</strong>
+                            <strong class="is-pulled-right">100.0%</strong>
+                            <p class="subtitle is-7">sth. about everything & everything about sth.</p>
+                            <progress class="progress is-small" value="100.0" max="100" style="width: auto;">
+                                100.0%
+                            </progress>
+                        </div>
+                    </a>
+                    <a class="panel-block is-active panel-ready is-hidden">
+                        <div style="width: 100%;">
+                            <strong>ALaunch</strong>
+                            <strong class="is-pulled-right">0.0%</strong>
+                            <p class="subtitle is-7">be the first app</p>
+                            <progress class="progress is-small" value="0.0" max="100" style="width: auto;">
+                                0.0%
+                            </progress>
+                        </div>
+                    </a>
                 </nav>
             </section>
 
             <section class="box">
                 <h3>琅環笔记</h3>
-                <div class="card mt-4">
-                    <div class="card-content is-size-67" style="text-indent: 2em;">
-                        友博学强记，尝为鹅厂从事。游于洞宫，遇一人于途，问逍遥曰：“君读书几何？”遥曰：“吾之未读者，则二十年内书盖有之也，若二十年外，则吾固已尽读之矣。”其人论议超然，遥颇内服，相与欢甚。因共至一处，大石中忽然有门，引遥入数歩，则别是天地，宫室嵯峨。引入一室中，陈书满架，其人曰：“此PL史也。”又至一室，则曰：“OS志也。”毎室各有奇书，惟一室屋宇颇高，封识甚严，有二犬守之。遥问故，答曰：“此皆操作系统、编程语言、算法分析、生发正骨诸秘籍。”指二犬曰：“此龙也。”历观诸室书，皆Windows以前事，多所未闻者，如「BeOS」、「Solaris」、「FreeBSD」、「LISP」亦皆在焉。遥心乐之，欲赁住数十日，其人笑曰：“君痴矣。此岂可赁地耶？”即命小童送出，遥问地名，对曰：“<strong><a href="https://note.tt4e.com" target="_blank">琅嬛福地</a></strong>也。”
-                    </div>
+                <div class="is-size-67 mt-4" style="text-indent: 2em;">
+                    友博学强记，尝为鹅厂从事。游于洞宫，遇一人于途，问逍遥曰：“君读书几何？”遥曰：“吾之未读者，则二十年内书盖有之也，若二十年外，则吾固已尽读之矣。”其人论议超然，遥颇内服，相与欢甚。因共至一处，大石中忽然有门，引遥入数歩，则别是天地，宫室嵯峨。引入一室中，陈书满架，其人曰：“此PL史也。”又至一室，则曰：“OS志也。”毎室各有奇书，惟一室屋宇颇高，封识甚严，有二犬守之。遥问故，答曰：“此皆操作系统、编程语言、算法分析、生发正骨诸秘籍。”指二犬曰：“此龙也。”历观诸室书，皆Windows以前事，多所未闻者，如「BeOS」、「Solaris」、「FreeBSD」、「LISP」亦皆在焉。遥心乐之，欲赁住数十日，其人笑曰：“君痴矣。此岂可赁地耶？”即命小童送出，遥问地名，对曰：“<strong><a href="https://note.tt4e.com" target="_blank">琅嬛福地</a></strong>也。”
                 </div>
             </section>
 
             <section class="box">
-                <h3>推荐订阅（AFF）</h3>
-                <div class="card mt-4">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-6"><a
-                                    href="https://xiaobot.net/p/2bfree?refer=20ca5446-77f3-4250-b173-511673f42818">「欧雷」的专栏</a>
-                                </p>
-                                <p class="subtitle is-7">——破局之路</p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <p>『在可言说的范围内尽量用简单的语言详细地记述雷叔如何突破 35
-                                周岁中年失业困境并实现自己理想生活方式的。』</p>
-                            <a class="tag" href="#">人生</a> <a class="tag" href="#">职业规划</a><br>
-                            <time datetime="2023-8-19">2023-8-19</time>
-                        </div>
-                    </div>
+                <h3>专栏推荐（AFF）</h3>
+                <div class="mt-4">
+                    <p class="mb-4">
+                        <a class="is-size-6" href="https://xiaobot.net/p/ywkh?refer=20ca5446-77f3-4250-b173-511673f42818">壹苇可航</a>
+                        <span class="subtitle is-6">——L,.G. 的专栏</span>
+                    </p>
+                    <p class="mb-4">
+                        专注构建 LifeOS （科学的、可持续的个人管理与身心健康系统），即通过系统思维的视角看待生活，应用第二大脑进行知识管理与信息管理，以生活禅的理念提高生活的品质。
+                    </p>
+                    <p class="mb-3">
+                        <a class="tag" href="#">读书</a> <a class="tag" href="#">新知</a> <a class="tag" href="#">生活禅</a> <time datetime="2024-3-28">2024-3-28</time>
+                    </p>
                 </div>
             </section>
+
+            <section class="box">
+                <h3>专栏推荐（AFF）</h3>
+                <div class="mt-4">
+                    <p class="mb-4">
+                        <a class="is-size-6" href="https://xiaobot.net/p/2bfree?refer=20ca5446-77f3-4250-b173-511673f42818">破局之路</a>
+                        <span class="subtitle is-6">——欧雷的专栏</span>
+                    </p>
+                    <p class="mb-4">
+                        在可言说的范围内尽量用简单的语言详细地记述雷叔如何突破 35 周岁中年失业困境并实现自己理想生活方式的。
+                    </p>
+                    <p class="mb-3">
+                        <a class="tag" href="#">人生</a> <a class="tag" href="#">职业规划</a> <time datetime="2023-8-19">2023-8-19</time>
+                    </p>
+                </div>
+            </section>
+
 
         </div>
 
@@ -245,7 +335,7 @@
                     </div>
                     <div class="media-content">
                         <address>
-                            <a class="author_name" href="../author/kaffa.html">Kaffa</a>
+                            <span class="author_name">Kaffa</span>
                         </address>
                         <div class="block is-size-7">
                             <time datetime="2023-12-22T00:30:00+08:00"> 2023-12-22 周五</time>
@@ -257,7 +347,7 @@
                     <p class="first last">须对技术怀有敬畏之心。</p>
 
                 </div>
-                <div class="media box has-background-light">
+                <div class="media box">
                     <div class="media-content">
                         <article>
                             <h2 class="title is-6">
@@ -285,7 +375,7 @@
                     </div>
                     <div class="media-content">
                         <address>
-                            <a class="author_name" href="../author/kaffa.html">Kaffa</a>
+                            <span class="author_name">Kaffa</span>
                         </address>
                         <div class="block is-size-7">
                             <time datetime="2023-12-22T00:30:00+08:00"> 2023-12-22 周五</time>
@@ -297,7 +387,7 @@
                     <p class="first last">CSS 选择器，你知道的不知道的，都在这里了。</p>
 
                 </div>
-                <div class="media box has-background-light">
+                <div class="media box">
                     <div class="media-content">
                         <article>
                             <h2 class="title is-6">
@@ -325,7 +415,7 @@
                     </div>
                     <div class="media-content">
                         <address>
-                            <a class="author_name" href="../author/kaffa.html">Kaffa</a>
+                            <span class="author_name">Kaffa</span>
                         </address>
                         <div class="block is-size-7">
                             <time datetime="2023-12-22T00:30:00+08:00"> 2023-12-22 周五</time>
@@ -337,7 +427,7 @@
                     <p class="first last">在新手村时，未遇见张鑫旭的书。</p>
 
                 </div>
-                <div class="media box has-background-light">
+                <div class="media box">
                     <div class="media-content">
                         <article>
                             <h2 class="title is-6">
@@ -359,48 +449,8 @@
         </div>
 
         <div class="column is-3">
-            <section class="box box-dxl">
-                <meta name="referrer" content="same-origin">
-                <img class='dxl'>
-                <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const d = new Date();
-                        const year = d.getFullYear();
-                        const month = (d.getMonth() + 1).toString().padStart(2, '0');
-                        const day = d.getDate().toString().padStart(2, '0');
-                        const $dxl = document.querySelector('.dxl');
-                        $dxl.src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
-                        $dxl.onerror = function() {
-                            document.querySelector('.box-dxl').style.display = 'none';
-                        }
-                    });
-                </script>
-            </section>
-
             <section class="box">
-                <h3>动态小计</h3>
-                <div class="is-divider" data-content="Notes"></div>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-sticky-note-o mr-3" aria-hidden="true"></i>记录
-                    <strong>43</strong> 条笔记</p>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-file-text-o mr-3" aria-hidden="true"></i>创作
-                    <strong>37</strong> 篇文章</p>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-code mr-3" aria-hidden="true"></i>使用 <strong>3</strong> 个软件</p>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-life-ring mr-3" aria-hidden="true"></i>汇报 <strong>21</strong> 次周报</p>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-list mr-3" aria-hidden="true"></i>精选 <strong>4</strong> 款书单</p>
-                <div class="is-divider" data-content="Life Stream"></div>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-book mr-3" aria-hidden="true"></i>阅读 <strong>53</strong> 本书籍</p>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-video-camera mr-3" aria-hidden="true"></i>观赏
-                    <strong>2</strong> 部电影</p>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-music mr-3" aria-hidden="true"></i>收藏 <strong>1</strong> 首音乐</p>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-asterisk mr-3" aria-hidden="true"></i>标记 <strong>4</strong> 个物品</p>
-                <div class="is-divider" data-content="Links"></div>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-heart-o mr-3" aria-hidden="true"></i>添加 <strong>1</strong> 条关注</p>
-                <p class="is-size-6 has-text-grey"><i class="fa fa-user-o mr-3" aria-hidden="true"></i>新增 <strong>7</strong> 条友链</p>
-            </section>
-
-            <section class="box">
-                <h3>分类法</h3>
-                <div class="is-divider" data-content="Categories"></div>
+                <h3 class="mb-3">目录</h3>
                 <ul>
                             <li><a href="../category/project.html">项目</a> (2)</li>
                             <li><a href="../category/development.html">研发</a> (2)</li>
@@ -418,17 +468,57 @@
                             <li><a href="../category/music.html">音</a> (1)</li>
                             <li><a href="../category/things.html">物</a> (4)</li>
                 </ul>
-                <div class="is-divider" data-content="Tags"></div>
+            </section>
+
+            <section class="box">
+                <h3 class="mb-3">标签</h3>
                 <div class="tags">
-<span class="tag"><a href="../tag/kaffaweb.html" title="6">kaffaweb</a></span><span class="tag"><a href="../tag/php.html" title="4">php</a></span><span class="tag"><a href="../tag/pelican.html" title="4">Pelican</a></span><span class="tag"><a href="../tag/restructuredtext.html" title="4">reStructuredText</a></span><span class="tag"><a href="../tag/html.html" title="3">html</a></span><span class="tag"><a href="../tag/zhang-dai.html" title="3">张岱</a></span><span class="tag"><a href="../tag/cyber-security.html" title="3">cyber-security</a></span><span class="tag"><a href="../tag/rust.html" title="3">Rust</a></span><span class="tag"><a href="../tag/css.html" title="3">CSS</a></span><span class="tag"><a href="../tag/psychology.html" title="3">Psychology</a></span><span class="tag"><a href="../tag/think.html" title="3">think</a></span><span class="tag"><a href="../tag/si-kao.html" title="3">思考</a></span><span class="tag"><a href="../tag/markdown.html" title="3">Markdown</a></span><span class="tag"><a href="../tag/p.html" title="3">P++</a></span><span class="tag"><a href="../tag/vscode.html" title="3">VSCode</a></span><span class="tag"><a href="../tag/computer.html" title="2">computer</a></span><span class="tag"><a href="../tag/software-engineering.html" title="2">software-engineering</a></span><span class="tag"><a href="../tag/science.html" title="2">science</a></span><span class="tag"><a href="../tag/software.html" title="2">software</a></span><span class="tag"><a href="../tag/2023.html" title="2">2023</a></span>                    <span class="tag is-primary is-light"><a href="../tags.html" title="All Tags">更多 ...</a></span>
+<span class="tag"><a href="../tag/kaffaweb.html" title="6">kaffaweb</a></span><span class="tag"><a href="../tag/php.html" title="4">php</a></span><span class="tag"><a href="../tag/pelican.html" title="4">Pelican</a></span><span class="tag"><a href="../tag/restructuredtext.html" title="4">reStructuredText</a></span><span class="tag"><a href="../tag/html.html" title="3">html</a></span><span class="tag"><a href="../tag/zhang-dai.html" title="3">张岱</a></span><span class="tag"><a href="../tag/cyber-security.html" title="3">cyber-security</a></span><span class="tag"><a href="../tag/rust.html" title="3">Rust</a></span><span class="tag"><a href="../tag/css.html" title="3">CSS</a></span><span class="tag"><a href="../tag/psychology.html" title="3">Psychology</a></span><span class="tag"><a href="../tag/think.html" title="3">think</a></span><span class="tag"><a href="../tag/si-kao.html" title="3">思考</a></span><span class="tag"><a href="../tag/markdown.html" title="3">Markdown</a></span><span class="tag"><a href="../tag/p.html" title="3">P++</a></span><span class="tag"><a href="../tag/vscode.html" title="3">VSCode</a></span><span class="tag"><a href="../tag/computer.html" title="2">computer</a></span><span class="tag"><a href="../tag/software-engineering.html" title="2">software-engineering</a></span><span class="tag"><a href="../tag/science.html" title="2">science</a></span><span class="tag"><a href="../tag/software.html" title="2">software</a></span><span class="tag"><a href="../tag/2023.html" title="2">2023</a></span>                        <p class="is-primary mt-3"><a href="../tags.html" title="所有标签">更多 ...</a></p>
                 </div>
             </section>
 
             <section class="box">
-                <h3>友链</h3>
-                <aside class="menu mt-3">
+                <h3 class="mb-3">动态小计</h3>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-sticky-note-o mx-3" aria-hidden="true"></i>
+                    记录 <strong>43</strong> 条笔记</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-file-text-o mx-3" aria-hidden="true"></i>创作
+                    <strong>37</strong> 篇文章</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-code mx-3" aria-hidden="true"></i>使用
+                    <strong>3</strong> 个软件</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-life-ring mx-3" aria-hidden="true"></i>汇报
+                    <strong>21</strong> 次周报</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-list mx-3" aria-hidden="true"></i>精选
+                    <strong>4</strong> 款书单</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-book mx-3" aria-hidden="true"></i>阅读
+                    <strong>53</strong> 本书籍</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-video-camera mx-3" aria-hidden="true"></i>观赏
+                    <strong>2</strong> 部电影</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-music mx-3" aria-hidden="true"></i>收藏
+                    <strong>1</strong> 首音乐</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-asterisk mx-3" aria-hidden="true"></i>标记
+                    <strong>4</strong> 个物品</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-heart-o mx-3" aria-hidden="true"></i>添加
+                    <strong>1</strong> 条关注</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-user-o mx-3" aria-hidden="true"></i>新增
+                    <strong>7</strong> 条友链</p>
+            </section>
+
+            <section class="box">
+                <h3 class="mb-3">友链</h3>
+                <aside class="menu">
                     <ul>
-                        <li>
+                        <li class="mb-2">
                             <a target="_blank" href="https://justgoidea.com/" title="读书｜新知｜生活禅">
                                 <div class="card">
                                     <div class="card-content">
@@ -447,7 +537,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a target="_blank" href="https://ourai.ws/" title="我叫欧雷，是一个出生于上世纪 80 年代的理想主义叛逆青年。喜欢日本，热爱咖啡，善于总结。这里有我对技术和语言的研究，也有对世界和生活的思考。">
                                 <div class="card">
                                     <div class="card-content">
@@ -466,7 +556,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a target="_blank" href="https://www.langhai.net/" title="收录各种类型的博客">
                                 <div class="card">
                                     <div class="card-content">
@@ -485,7 +575,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a target="_blank" href="https://www.ntiy.com/" title="“Never Try It Yourself”，记录、分享、学习">
                                 <div class="card">
                                     <div class="card-content">
@@ -504,7 +594,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a target="_blank" href="https://yinji.org/" title="君子可内敛不可懦弱，面不公可起而论之">
                                 <div class="card">
                                     <div class="card-content">
@@ -523,7 +613,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a target="_blank" href="https://imzm.im/" title="以有涯随无涯">
                                 <div class="card">
                                     <div class="card-content">
@@ -542,7 +632,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a target="_blank" href="https://songyinie.com/" title="回顾历史，审视当下，期盼未来">
                                 <div class="card">
                                     <div class="card-content">
@@ -566,14 +656,14 @@
             </section>
 
             <section class="box">
-                <h3>链接</h3>
-                <aside class="menu mt-3">
+                <h3 class="mb-3">链接</h3>
+                <aside class="menu">
                     <p class="menu-label">数字花园</p>
                     <ul class="menu-list">
                         <li><a target="_blank" href="https://jefftay.com/">仿生猫不会梦见电子猫粮</a></li>
                     </ul>
                 </aside>
-                <aside class="menu mt-3">
+                <aside class="menu">
                     <p class="menu-label">收录</p>
                     <ul class="menu-list">
                         <li><a target="_blank" href="https://www.foreverblog.cn">十年之约</a></li>
@@ -584,7 +674,7 @@
                         <li><a target="_blank" href="https://bkq.net.cn/">博客圈</a></li>
                     </ul>
                 </aside>
-                <aside class="menu mt-3">
+                <aside class="menu">
                     <p class="menu-label">链接</p>
                     <ul class="menu-list">
                         <li><a target="_blank" href="http://paulgraham.com">Paul Graham</a></li>
@@ -598,157 +688,114 @@
         </div>
     </div>
 </div>
-    </main>
-    <footer class="footer is-max-widescreen">
-        <div class="content has-text-centered">
-            版权所有 &copy; 2018-2024 <strong><a href=".."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
-            <p>
-                本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
-            </p>
-            <p>
-                <a href="https://www.foreverblog.cn/" target="_blank" >
-                    <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;">
-                </a>
-            </p>
-        </div>
-    </footer>
-
-    <div id="modal-project" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <div class="box">
-              <p>项目明细在建设中...</p>
-            </div>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href=".."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;">
+            </a>
+        </p>
     </div>
+</footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            /*====================
-              Modal
-             ====================*/
+<div id="modal-project" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>项目明细在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
 
-            // Functions to open and close a modal
-            function openModal($el) {
-                $el.classList.add('is-active');
-            }
-
-            function closeModal($el) {
-                $el.classList.remove('is-active');
-            }
-
-            function closeAllModals() {
-            (document.querySelectorAll('.modal') || []).forEach(($modal) => {
-                    closeModal($modal);
-                });
-            }
-
-            // Add a click event on buttons to open a specific modal
-            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
-                const modal = $trigger.dataset.target;
-                const $target = document.getElementById(modal);
-                $trigger.addEventListener('click', () => {
-                     openModal($target);
-                });
             });
+        });
 
-            // Add a click event on various child elements to close the parent modal
-            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
-                const $target = $close.closest('.modal');
-
-                $close.addEventListener('click', () => {
-                    closeModal($target);
-                });
-            });
-
-            // Add a keyboard event to close all modals
-            document.addEventListener('keydown', (event) => {
-                if (event.code === 'Escape') {
-                    closeAllModals();
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
                 }
-            });
+                el.classList.add('is-active');
 
-            /*====================
-              navbar
-             ====================*/
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            $navbarBurgers.forEach(el => {
-                el.addEventListener('click', () => {
-                    const target = el.dataset.target;
-                    const $target = document.getElementById(target);
-                    el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-
-                });
-            });
-
-            /*====================
-              Projects
-             ====================*/
-            const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
-            $panelTab.forEach(el => {
-                el.addEventListener('click', () => {
-                    const $siblings = el.parentNode.children;
-                    for (let i = 0; i < $siblings.length; i++) {
-                        $siblings[i].classList.remove('is-active');
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
                     }
-                    el.classList.add('is-active');
-
-                    if (el.title == 'all') {
-                        const $panelBlock = document.querySelectorAll(".panel-block");
-                        for (let i = 0; i < $panelBlock.length; i++) {
-                            $panelBlock[i].classList.remove("is-hidden");
-                        }
-                    } else {
-                        const $panelBlock = document.querySelectorAll(".panel-block");
-                        for (let i = 0; i < $panelBlock.length; i++) {
-                            $panelBlock[i].classList.add("is-hidden");
-                        }
-
-                        const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
-                        for (let i = 0; i < $targetPanelBlock.length; i++) {
-                            $targetPanelBlock[i].classList.remove("is-hidden");
-                        }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
                     }
-                });
-            });
 
-            /*====================
-              Email
-             ====================*/
-            const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
-            $email.forEach(el => {
-                el.innerText = ['admin', '@', 'kaffa.im'].join('');
-            });
-
-            /*====================
-              Table
-            ====================*/
-            var altKeyPressed = false;
-
-            document.addEventListener('keydown', function(event) {
-                if (event.key === 'Alt' && !altKeyPressed) {
-                    event.preventDefault();
-                    altKeyPressed = true;
-                    var rows = document.querySelectorAll('.alt');
-                    rows.forEach(function(row) {
-                        row.style.display = 'table-row';
-                    });
-                }
-            });
-
-            document.addEventListener('keyup', function(event) {
-                if (event.key === 'Alt' && altKeyPressed) {
-                    event.preventDefault();
-                    altKeyPressed = false;
-                    var rows = document.querySelectorAll('.alt');
-                    rows.forEach(function(row) {
-                        row.style.display = 'none';
-                    });
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
                 }
             });
         });
-    </script>
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
 </body>
 </html>
