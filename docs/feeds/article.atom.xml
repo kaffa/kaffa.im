@@ -28,7 +28,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;本地发布（这里发布后会自己先读一遍，消除语法语病）：&lt;ul&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;pelican &lt;span class="pre"&gt;-rl&lt;/span&gt;&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;pelican &lt;span class="pre"&gt;-r&lt;/span&gt; &lt;span class="pre"&gt;-l&lt;/span&gt;&lt;/tt&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;远程发布&lt;ul&gt;

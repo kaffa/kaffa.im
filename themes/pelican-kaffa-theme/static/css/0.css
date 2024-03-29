@@ -18,6 +18,7 @@
     --c-text-60: hsl(0, 0%, 40%);
     --c-link: hsl(0, 0%, 0%);
     --c-link-bdb: hsl(0, 0%, 40%);
+    --c-box-bg: hsl(0, 0%, 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,6 +43,7 @@
     --c-text-60: hsl(0, 0%, 60%);
     --c-link: hsl(0, 0%, 100%);
     --c-link-bdb: hsl(0, 0%, 60%);
+    --c-box-bg: hsl(0, 0%, 0%);
 }
 
 /*! divider */
@@ -65,6 +67,9 @@ a:not(.navbar a):not(.menu a):not(.nav a):not(.tag):hover {
 }
 .text-second {
     color: var(--c-text-60);
+}
+.box {
+    background-color: var(--c-box-bg);
 }
 
 body > header {
