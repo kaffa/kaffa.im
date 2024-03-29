@@ -11,17 +11,6 @@
 
 .. raw:: html
 
-    <style>
-    a, a:visited, a:hover {
-        color: #000;
-        padding-bottom: 1px;
-        margin-bottom: -1px;
-        border-bottom: dotted 1px #999;
-    }
-    h1 a, h1 a:visited, h1 a:hover {
-        border-bottom: none;
-    }
-    </style>
     <script src="http://kaffa.im/static/js/jquery-3.7.1.min.js"></script>
     <script>
         $(function() {

@@ -16,6 +16,8 @@
     --c-divider: hsl(0, 0%, 70%);
     --c-divider-bdt: hsl(0, 0%, 86%);
     --c-text-60: hsl(0, 0%, 40%);
+    --c-link: hsl(0, 0%, 0%);
+    --c-link-bdb: hsl(0, 0%, 40%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +40,8 @@
     --c-divider: hsl(0, 0%, 30%);
     --c-divider-bdt: hsl(0, 0%, 14%);
     --c-text-60: hsl(0, 0%, 60%);
+    --c-link: hsl(0, 0%, 100%);
+    --c-link-bdb: hsl(0, 0%, 60%);
 }
 
 /*! divider */
@@ -51,6 +55,14 @@
 /*~ divider */
 
 
+a:not(.navbar a):not(.menu a):not(.nav a):not(.tag),
+a:not(.navbar a):not(.menu a):not(.nav a):not(.tag):visited,
+a:not(.navbar a):not(.menu a):not(.nav a):not(.tag):hover {
+    color: var(--c-link);
+    padding-bottom: 1px;
+    margin-bottom: -1px;
+    border-bottom: dotted 1px var(--c-link-bdb);
+}
 .text-second {
     color: var(--c-text-60);
 }
@@ -68,7 +80,7 @@ main {
 section.hero {
     background-color: var(--c-hero-bg) !important;
 }
-.media.box {
+article.box {
     background-color: var(--media-box-bg-color) !important;
 }
 

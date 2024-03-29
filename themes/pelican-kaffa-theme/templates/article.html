@@ -59,16 +59,15 @@
 
         <div class="mb-2">
             {% if article.category %}
-            <span>分类:
-                <a class="tag is-medium" href="{{ SITEURL }}/{{ article.category.url }}">{{ CATEGORY_DICT[article.category]['name'] }}</a>
-            </span>
+            <span>分类:</span>
+            <a class="tag is-medium" href="{{ SITEURL }}/{{ article.category.url }}">{{ CATEGORY_DICT[article.category]['name'] }}</a>
             {% endif %}
             {% if article.tags %}
-            <span class="ml-2">标签:
-                {% for tag in article.tags %}
-                <a class="tag is-medium" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-                {% endfor %}
-            </span>
+            <span class="ml-2">标签:</span>
+            {% for tag in article.tags %}
+            <a class="tag is-medium" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            {% endfor %}
+
             {% endif %}
 
         </div>

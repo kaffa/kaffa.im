@@ -170,7 +170,7 @@
                         专注构建 LifeOS （科学的、可持续的个人管理与身心健康系统），即通过系统思维的视角看待生活，应用第二大脑进行知识管理与信息管理，以生活禅的理念提高生活的品质。
                     </p>
                     <p class="mb-3">
-                        <a class="tag" href="#">读书</a> <a class="tag" href="#">新知</a> <a class="tag" href="#">生活禅</a> <time datetime="2024-3-28">2024-3-28</time>
+                        <span class="tag">读书</span> <span class="tag">新知</span> <span class="tag">生活禅</span> <time datetime="2024-3-28">2024-3-28</time>
                     </p>
                 </div>
             </section>
@@ -186,7 +186,7 @@
                         在可言说的范围内尽量用简单的语言详细地记述雷叔如何突破 35 周岁中年失业困境并实现自己理想生活方式的。
                     </p>
                     <p class="mb-3">
-                        <a class="tag" href="#">人生</a> <a class="tag" href="#">职业规划</a> <time datetime="2023-8-19">2023-8-19</time>
+                        <span class="tag">人生</span> <span class="tag">职业规划</span> <time datetime="2023-8-19">2023-8-19</time>
                     </p>
                 </div>
             </section>
@@ -218,13 +218,13 @@
                 <div class="block is-size-6 mx-2 my-2">
                     {{ article.summary }}
                 </div>
-                <div class="media box">
-                    <div class="media-content">
-                        <article>
-                            <h2 class="title is-6">
-                                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-                                   title="「{{ article.title|striptags }}」的永久链接">{{ article.title }}</a>
-                            </h2>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                           title="「{{ article.title|striptags }}」的永久链接">{{ article.title }}</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
                             <div class="is-size-7">
                                 {% if article.subject is defined %}
                                     {{ article.subject.brief|truncate }}
@@ -236,22 +236,22 @@
                                 >“</sup>{{ article.brief }}
                                 {% endif %}
                             </div>
-                        </article>
+                        </div>
+                        {% if article.subject -%}
+                        <div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="{{ article.subject.cover_relative_path|safe }}" alt="cover_image">
+                            </figure>
+                        </div>
+                        {%- elif article.image and not article.image.endswith('/hero.png') -%}
+                        <div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="{{ article.image }}" alt="cover_image">
+                            </figure>
+                        </div>
+                        {%- endif %}
                     </div>
-                    {% if article.subject -%}
-                    <div class="media-right">
-                        <figure class="image" style="max-width: 96px">
-                            <img src="{{ article.subject.cover_relative_path|safe }}" alt="cover_image">
-                        </figure>
-                    </div>
-                    {%- elif article.image and not article.image.endswith('/hero.png') -%}
-                    <div class="media-right">
-                        <figure class="image" style="max-width: 96px">
-                            <img src="{{ article.image }}" alt="cover_image">
-                        </figure>
-                    </div>
-                    {%- endif %}
-                </div>
+                </article>
             </section>
             {% endfor %}
             {% if articles_page.has_other_pages() %}
@@ -278,11 +278,11 @@
                 <div class="tags">
                     {% for tag, articles in tags|sort_by_article_count %}
                         {%- if loop.index <= 20 -%}
-                        <span class="tag"><a href="{{ SITEURL }}/{{ tag.url }}" title="{{ articles|count }}">{{ tag }}</a></span>
+                        <a class="tag" href="{{ SITEURL }}/{{ tag.url }}" title="{{ articles|count }}">{{ tag }}</a>
                         {%- endif -%}
                     {% endfor %}
-                        <p class="is-primary mt-3"><a href="{{ SITEURL }}/tags.html" title="所有标签">更多 ...</a></p>
                 </div>
+                <p class="is-primary mt-3"><a href="{{ SITEURL }}/tags.html" title="所有标签">更多 ...</a></p>
             </section>
 
             <section class="box">
