@@ -65,6 +65,9 @@ a:not(.navbar a):not(.menu a):not(.nav a):not(.tag):hover {
     margin-bottom: -1px;
     border-bottom: dotted 1px var(--c-link-bdb);
 }
+h2 a {
+    border-bottom: none;
+}
 .text-second {
     color: var(--c-text-60);
 }
