@@ -73,6 +73,7 @@ h2 a {
 }
 .box {
     background-color: var(--c-box-bg);
+
 }
 
 body > header {
@@ -91,7 +92,11 @@ section.hero {
 article.box {
     background-color: var(--media-box-bg-color) !important;
 }
-
+.article_tri {
+    background-color: var(--media-box-bg-color) !important;
+    clip-path: polygon(16px 10px, 26px 0, 36px 10px);
+    height: 8px;
+}
 
 .navbar-brand a,
 .navbar-brand a:visited {
