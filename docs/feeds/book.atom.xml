@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-28T00:30:00+08:00</updated><entry><title>编程卓越之道（卷1）：深入理解计算机</title><link href="https://kaffa.im/write-great-code-volume-1-understanding-the-machine.html" rel="alternate"></link><published>2024-03-28T00:30:00+08:00</published><updated>2024-03-28T00:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-28:/write-great-code-volume-1-understanding-the-machine.html</id><summary type="html">&lt;p class="first last"&gt;Randall Hyde 决定写 6 卷书，这是卷 1，关于计算机基础知识。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - book</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/book.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-03-31T01:00:00+08:00</updated><entry><title>斯坦福算法博弈论二十讲</title><link href="https://kaffa.im/twenty-lectures-on-algorithmic-game-theory.html" rel="alternate"></link><published>2024-03-31T01:00:00+08:00</published><updated>2024-03-31T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-31:/twenty-lectures-on-algorithmic-game-theory.html</id><summary type="html">&lt;p class="first last"&gt;耶鲁大学的博弈论公开课，需要数学基础。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;评分&lt;/h2&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐ 10/10&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;评价&lt;/h2&gt;
+&lt;p&gt;应用是算法的最终目的，如果有应用场景时会看。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-4"&gt;
+&lt;h2&gt;笔记&lt;/h2&gt;
+&lt;p&gt;第一章&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;羽毛球赛规则漏洞&lt;/p&gt;
+&lt;p&gt;伦敦奥运会的羽毛球比赛发生的“丑闻”。&lt;/p&gt;
+&lt;p&gt;赛制规则：分两组，每组四队。小组赛阶段各组的前两名晋级，A1对B2，A2对B1，再两两淘汰赛。&lt;/p&gt;
+&lt;p&gt;TZ 是强队，已提前小组赛出线。WY 与 JK 进行下一场小组赛，二者之间的胜者将对阵 TZ，因此两队都不想赢而“打假赛”，最终两队均被取消资格。&lt;/p&gt;
+&lt;p&gt;结论：在一个由策略型参与者（理性）组成的系统中，规则是至关重要的。博弈参与者采取自私的策略无可非议，因此问题出在机制设计者上。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;布雷斯悖论&lt;/p&gt;
+&lt;p&gt;悖论内容：按常理，多修路可以缓解交通压力，但在简单公路网上增加一条线路，反而会增加整体的运行时间。&lt;/p&gt;
+&lt;p&gt;布雷斯悖论之所以是悖论就是因为与常识不符。&lt;/p&gt;
+&lt;p&gt;悖论发生来源于每一位司机都想要走最短的路，在不经过交流的情况下，很容易都“一拥而上”。&lt;/p&gt;
+&lt;p&gt;证明了个体最优选择不一定构成全局的最优选择。&lt;/p&gt;
+&lt;p&gt;无秩序的代价，定义为策略型参与者自组织情况下系统的表现与系统最优表现得比例。用于表示局部最优解汇总与全局最优解的接近程度。&lt;/p&gt;
+&lt;p&gt;部分系统中，局部最优解的汇总就是全局最优解。POA接近于1。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;均衡定义与均衡计算&lt;/p&gt;
+&lt;p&gt;大多博弈，一个参与者的最优动作要取决于其他参与者在做什么。&lt;/p&gt;
+&lt;p&gt;均衡就是系统的稳定状态。参与者的策略符合分布的是混合策略纳什均衡。&lt;/p&gt;
+&lt;p&gt;纳什定理：任何一个有限的双人博弈都含有纳什均衡，纳什定理在任何含有有限人数的博弈中都成立。&lt;/p&gt;
+&lt;p&gt;简单的博弈中，可以使用线性规划、迭代学习等算法求解纳什均衡，这些算法的结果使得我们相信纳什均衡对于零和博弈有很好的预测能力。但在非零和双人博弈中，并不存在能计算纳什均衡的快速算法。计算双人博弈的纳什均衡是一个少有的、自然的且展现出中等计算困难度的问题。只有存在有效算法快速求解均衡，均衡对于博弈的预测能力才具有意义。&lt;/p&gt;
+&lt;p&gt;博弈中也可能存在多个纳什均衡，均衡的不唯一性也削弱了均衡的预测能力。&lt;/p&gt;
+&lt;p&gt;对于计算机从业者来说，严格均衡的不可计算性使得我们开始研究计算可行的均衡概念。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="game-theory"></category></entry><entry><title>编程卓越之道（卷1）：深入理解计算机</title><link href="https://kaffa.im/write-great-code-volume-1-understanding-the-machine.html" rel="alternate"></link><published>2024-03-28T00:30:00+08:00</published><updated>2024-03-28T00:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-28:/write-great-code-volume-1-understanding-the-machine.html</id><summary type="html">&lt;p class="first last"&gt;Randall Hyde 决定写 6 卷书，这是卷 1，关于计算机基础知识。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;评分&lt;/h2&gt;
 &lt;p&gt;⭐⭐⭐⭐⭐
