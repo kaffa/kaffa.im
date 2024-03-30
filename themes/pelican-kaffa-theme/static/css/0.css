@@ -15,6 +15,10 @@
     --media-box-bg-color: hsl(0, 0%, 96%);
     --c-divider: hsl(0, 0%, 70%);
     --c-divider-bdt: hsl(0, 0%, 86%);
+    --c-text-80: hsl(0, 0%, 80%);
+    --c-text-20: hsl(0, 0%, 20%);
+    --c-text-bg-80: hsl(0, 0%, 80%);
+    --c-text-bg-20: hsl(0, 0%, 20%);
     --c-text-60: hsl(0, 0%, 40%);
     --c-link: hsl(0, 0%, 0%);
     --c-link-bdb: hsl(0, 0%, 40%);
@@ -40,6 +44,10 @@
     --media-box-bg-color: hsl(0, 0%, 4%);
     --c-divider: hsl(0, 0%, 30%);
     --c-divider-bdt: hsl(0, 0%, 14%);
+    --c-text-80: hsl(0, 0%, 20%);
+    --c-text-20: hsl(0, 0%, 80%);
+    --c-text-bg-80: hsl(0, 0%, 20%);
+    --c-text-bg-20: hsl(0, 0%, 80%);
     --c-text-60: hsl(0, 0%, 60%);
     --c-link: hsl(0, 0%, 100%);
     --c-link-bdb: hsl(0, 0%, 60%);
@@ -73,7 +81,6 @@ h2 a {
 }
 .box {
     background-color: var(--c-box-bg);
-
 }
 
 body > header {
@@ -98,6 +105,27 @@ article.box {
     height: 8px;
 }
 
+.title, strong {
+    color: var(--c-text-20);
+}
+section.box h1,
+section.box h2,
+section.box h3,
+section.box h4,
+section.box h5,
+section.box h6,
+section.box p,
+section.box span,
+section.box div,
+section.box time {
+    color: var(--c-text-20);
+}
+
+section.box .tag {
+    color: var(--c-text-20);
+    background: var(--c-text-bg-80);
+}
+
 .navbar-brand a,
 .navbar-brand a:visited {
     font-family: Georgia !important;
@@ -116,7 +144,6 @@ article.box {
 .author_name {
     font-family: Georgia !important;
 }
-
 
 
 .column {
