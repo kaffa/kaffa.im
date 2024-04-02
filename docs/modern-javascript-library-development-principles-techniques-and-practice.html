@@ -287,13 +287,36 @@
 <li>webpack</li>
 <li>rollup.js</li>
 </ul>
-<div class="line-block">
-<div class="line">打包输出文件      | 配置文件                    | 技术体系 | 模块规范  |</div>
-<div class="line">----------------- | --------------------------- | -------- | --------- |</div>
-<div class="line">dist/index.js     | config/rollup.config.js     | Node.js  | CommonJS  |</div>
-<div class="line">dist/index.esm.js | config/rollup.config.esm.js | webpack  | ES Module |</div>
-<div class="line">dist/index.aio.js | config/rollup.config.aio.js | 浏览器   | UMD       |</div>
-</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="42%" />
+<col width="14%" />
+<col width="16%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">打包输出文件</th>
+<th class="head">配置文件</th>
+<th class="head">技术体系</th>
+<th class="head">模块规范</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>dist/index.js
+dist/index.esm.js
+dist/index.aio.js</td>
+<td>config/rollup.config.js
+config/rollup.config.esm.js
+config/rollup.config.aio.js</td>
+<td>Node.js
+webpack
+浏览器</td>
+<td>CommonJS
+ES Module
+UMD</td>
+</tr>
+</tbody>
+</table>
 </div>
 
         <div class="is-divider" data-content="giscus"></div>

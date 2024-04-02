@@ -43,6 +43,6 @@
 | dist/index.js     | config/rollup.config.js     | Node.js  | CommonJS  |
 | dist/index.esm.js | config/rollup.config.esm.js | webpack  | ES Module |
 | dist/index.aio.js | config/rollup.config.aio.js | 浏览器   | UMD       |
-| ----------------- | --------------------------- | -------- | --------- |
++-------------------+-----------------------------+----------+-----------+
 
 
