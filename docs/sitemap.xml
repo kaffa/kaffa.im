@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-04-01T01:56:14-00:00</lastmod>
+<lastmod>2024-04-02T23:54:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-04-01T01:56:14-00:00</lastmod>
+<lastmod>2024-04-02T23:54:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-04-01T01:56:14-00:00</lastmod>
+<lastmod>2024-04-02T23:54:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-04-01T01:56:14-00:00</lastmod>
+<lastmod>2024-04-02T23:54:21-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,8 +60,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kaffa.im/modern-javascript-library-development-principles-techniques-and-practice.html</loc>
-<lastmod>2024-03-31T11:00:00+08:00</lastmod>
+<loc>https://kaffa.im/weekly-2024-w13.html</loc>
+<lastmod>2024-03-31T23:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -130,15 +130,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kaffa.im/weekly-2024-w12.html</loc>
-<lastmod>2024-03-25T23:00:00+08:00</lastmod>
+<loc>https://kaffa.im/any-conclusion-reflections-on-digital-gardening.html</loc>
+<lastmod>2024-03-26T01:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://kaffa.im/any-conclusion-reflections-on-digital-gardening.html</loc>
-<lastmod>2024-03-26T01:00:00+08:00</lastmod>
+<loc>https://kaffa.im/weekly-2024-w12.html</loc>
+<lastmod>2024-03-24T23:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1363,7 +1363,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2024-03-31T11:00:00+08:06</lastmod>
+<lastmod>2024-03-31T23:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
