@@ -53,6 +53,7 @@
 
 国外有 geoguessr 游戏付费玩法，可以互动，发布谜题，参与者可以订阅解题。
 
+下面是三个例子，可以尝试解题，不直接看答案：
 
 例子1：
 --------------------
@@ -63,7 +64,7 @@
 .. raw:: html
 
     <details>
-        <summary>可以尝试解题，不直接看答案</summary>
+        <summary>答案</summary>
         <p>从屋顶太能能热水器推测属于中国中南部，至少不像北方，植被不像南方，属于中国中部城市。图片提供者场外信息是具体的城市，但从图片上看，似是城市郊区结合处。</p>
         <p>另一个思路，从视角上看，可能拍摄于高铁，更高处的公路，但从树木倾斜方向看，可以排除可能。</p>
         <p>冒水汽的烟囱，可能是煤电站和生物质电站，或者化工厂等。</p>
@@ -76,8 +77,10 @@
 .. image:: /static/img/2024/geo-guessing-2.jpg
     :alt: geo-guessing-1.jpg
 
+.. raw:: html
+
     <details>
-        <summary>可以尝试解题，不直接看答案</summary>
+        <summary>答案</summary>
         <p>由XX酒店天之道搜索，得出天之道足浴在长沙非常多；搜索长沙高层建筑形态，很容易发现图中高层建筑顶是吻合的</p>
         <span>长沙</span>
     </details>
@@ -87,6 +90,8 @@
 
 .. image:: /static/img/2024/geo-guessing-3.jpg
     :alt: geo-guessing-1.jpg
+
+.. raw:: html
 
     <details>
         <summary>答案</summary>
