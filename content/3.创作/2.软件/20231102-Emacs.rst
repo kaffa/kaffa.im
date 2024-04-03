@@ -17,6 +17,113 @@ Emacs
 
 .. image:: https://kaffa.im/static/img/2023/emacs-img.svg
     :scale: 50
+    :alt: emacs-img.svg
+
+
+Powered By Emacs
+--------------------
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/created0.jpg
+    :alt: created0.jpg
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/created1.png
+    :alt: created1.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/created2.png
+    :alt: created2.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/created3.gif
+    :alt: created3.gif
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/created4.gif
+    :alt: created4.gif
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/created5.gif
+    :alt: created5.gif
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/created6.png
+    :alt: created6.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/designed0.png
+    :alt: designed0.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/emacs.png
+    :alt: emacs.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/emacsemacsemacs.gif
+    :alt: emacsemacsemacs.gif
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made0.png
+    :alt: made0.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made1.png
+    :alt: made1.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made10.png
+    :alt: made10.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made10.svg
+    :alt: made10.svg
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made2.png
+    :alt: made2.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made3.png
+    :alt: made3.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made4.gif
+    :alt: made4.gif
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made5.jpg
+    :alt: made5.jpg
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made6.gif
+    :alt: made6.gif
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made7.png
+    :alt: made7.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made8.png
+    :alt: made8.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/made9.png
+    :alt: made9.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/muse.png
+    :alt: muse.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/now0.gif
+    :alt: now0.gif
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/nxhtml.png
+    :alt: nxhtml.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/powered.jpg
+    :alt: powered.jpg
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/powered1.jpg
+    :alt: powered1.jpg
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/powered2.png
+    :alt: powered2.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/powered3.jpg
+    :alt: powered3.jpg
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/powered_green.png
+    :alt: powered_green.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/powered_orange.png
+    :alt: powered_orange.png
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/sink_animated.gif
+    :alt: sink_animated.gif
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/sink_gnu.gif
+    :alt: sink_gnu.gif
+
+.. image:: https://kaffa.im/static/img/2024/powered-by-emacs/sink_white.png
+    :alt: sink_white.png
 
 
 .. _Emacs: https://www.gnu.org/software/emacs/
