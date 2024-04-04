@@ -1,0 +1,25 @@
+Python 算法交易
+########################################################
+
+:date: 2024-04-05 01:00
+:author: Kaffa
+:category: book
+:tags: quant
+:slug: python-for-algorithmic-trading
+:summary:
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/4fy1iyusytVexDUZWvB0OC
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐⭐⭐ 9 / 10
+
+
+评价
+====================
+
+非常干，量化交易中重要的部分都有涉及，进阶可读。
+

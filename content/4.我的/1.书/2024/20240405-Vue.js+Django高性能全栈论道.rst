@@ -1,0 +1,34 @@
+Vue.js+Django高性能全栈论道
+########################################################
+
+:date: 2024-04-05 01:00
+:author: Kaffa
+:category: book
+:tags:
+:slug: vue.js+django-high-performance-full-stack-discussion
+:summary:
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/18AV0xZB7VZMDSVOkocGpv
+
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐ 7 / 10
+
+
+评论
+====================
+
+说的比较不客气，若说这本书的干货部分是部署和系统架构，还论不上什么道的高度。
+
+能在一本书篇幅内讲清vue.js、django、django rest framework、asyncio、pypy，以及全栈开发、高性能等主题，预想是走马观花的。
+
+实际翻看后发现比较可惜的作者挺有水平，但似乎没能掌握写作重点，书籍未匹配其水平，导致全书没有超出预期。
+
+若本书再更新，建议作者能略掉手册中也有的部分，直接更系统的叙述优化和案例实战，另提供一些超出此架构的更全局的思维。
+
+vue.js 部分不会比尤的书更好，django 本就有官方文档，drf、asyncio、pypy 也是，完全不必花费笔墨呈现个人理解。
+
