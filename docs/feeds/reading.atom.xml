@@ -3,8 +3,8 @@
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;网络迷踪体会&lt;/h2&gt;
 &lt;p&gt;网络迷踪：在互联网社区中，一种通过一张图片确定图片拍摄位置的游戏。&lt;/p&gt;
-&lt;p&gt;这个游戏的神奇之处在于，人们低估了一张图片带有的特征。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;任何一张远景带有一定要素的图片，都不难被找出具体。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这个游戏的神奇之处在于，人们低估了一张图片带有的特征信息。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;任何一张远景带有一定要素的图片，都不难被找出具体位置。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;最简单的解题莫过于：我见过，且天天见。我寻找摩天轮信息时，在一个抖音评论中看到说：我知道这在哪，我从我家窗子看出去天天见到。&lt;/p&gt;
 &lt;p&gt;这个现象的出现，一方面可以满足推理迷的侦破欲，一方面也可测试常识的意义。&lt;/p&gt;
 &lt;p&gt;我看到更高级的玩家可以使用&lt;a class="reference external" href="https://tyrasd.github.io/overpass-turbo/"&gt;编程方式&lt;/a&gt;查阅地图特征，这样可以搜索范围扩大到全球（前提是过滤条件要客观），然后极大的缩减排除范围。&lt;/p&gt;
@@ -54,7 +54,7 @@
     &lt;summary&gt;答案&lt;/summary&gt;
     &lt;p&gt;此题线索在摩天轮，此摩天轮有近60座仓，根据相似数据，120米直径的摩天轮，有近50座舱，而更多需要上到120米以上&lt;/p&gt;
     &lt;p&gt;此题场外信息是安徽，还有车牌皖H，我在安庆政府网站搜索摩天轮，但毫无收获，这类建筑政府都未提及。&lt;/p&gt;
-    &lt;p&gt;在新浪网有一个整理\ `安徽的摩天轮 &lt;https://k.sina.cn/article_1264474953_4b5e5b4900100gkeb.html&gt;`_\ 的帖子，时间是几年前，经过逐一排查摩天轮形态和座仓数量，均被排除。&lt;/p&gt;
+    &lt;p&gt;在新浪网有一个整理&lt;a href="https://k.sina.cn/article_1264474953_4b5e5b4900100gkeb.html" target="_blank"&gt;安徽的摩天轮&lt;/a&gt;的帖子，时间是几年前，经过逐一排查摩天轮形态和座仓数量，均被排除。&lt;/p&gt;
     &lt;p&gt;最终发现是安庆新建的摩天轮，互联网抖音也未有提及。&lt;/p&gt;
     &lt;span&gt;安庆&lt;/span&gt;
 &lt;/details&gt;&lt;/div&gt;
