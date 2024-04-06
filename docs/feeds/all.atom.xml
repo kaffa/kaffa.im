@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-04-05T01:00:00+08:00</updated><entry><title>Python 算法交易</title><link href="https://kaffa.im/python-for-algorithmic-trading.html" rel="alternate"></link><published>2024-04-05T01:00:00+08:00</published><updated>2024-04-05T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-05:/python-for-algorithmic-trading.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-1"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-04-06T16:00:00+08:00</updated><entry><title>解决 Obsidian 插件 Advanced Tables 不显示表格的问题</title><link href="https://kaffa.im/solution-to-obsidian-advanced-tables-not-display-problem.html" rel="alternate"></link><published>2024-04-06T16:00:00+08:00</published><updated>2024-04-06T16:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-06:/solution-to-obsidian-advanced-tables-not-display-problem.html</id><summary type="html">&lt;p class="first last"&gt;本文提供 Obsidian 插件 Advanced Tables 表格不显示的解决办法&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;问题现象&lt;/h2&gt;
+&lt;p&gt;进入原先带有表格的文章时，表格数据不显示。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;问题解决&lt;/h2&gt;
+&lt;div class="section" id="advanced-tables"&gt;
+&lt;h3&gt;方法一. 放弃 Advanced Tables&lt;/h3&gt;
+&lt;p&gt;Advanced Tables 大概是使用在 Obsidian 创立了一种新标记，标记指向一个表格，此表格的列定义和数据均保存在 SQLite 中。这种做法的弊端在于如果 SQLite 损坏，此目录下所有的数据可能难以恢复。&lt;/p&gt;
+&lt;p&gt;因此，我选择导出表格数据，采用原生格式表格插入原文。步骤如下：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;进入带有表格文章的仓库路径下，会发现 context.mdb 文件，虽然文件使用了 Microsoft Access 数据库的扩展名，但这文件其实是 SQLite 数据库，此时可以使用 SQLite 数据库客户端打开它（比如 Windows上的 heidisql）。&lt;/li&gt;
+&lt;li&gt;其中有三个定义表 files、m_fields、m_schema，然后用文本编辑器打开文章，会发现指向的表格名。例如：![![我的目录/#^Table2]]，在这里“我的目录”即目录名，Table2 即表格名，我们可在 context.mdb 中找到同名表格，并导出其数据。如此，导出除 files、m_fields、m_schema 之外的所有数据，并在原文中插入。&lt;/li&gt;
+&lt;li&gt;停用第三方插件 Advanced Tables，重启 Obsidian，检查所有表格数据。&lt;/li&gt;
+&lt;li&gt;如果数据正常，则可以用文本编辑器打开含有表格的 md 文件，删除其中的类似 ![![我的目录/#^Table2]] 的表格标记。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h3&gt;方法二. 给开发者提交缺陷，并等待修复&lt;/h3&gt;
+&lt;p&gt;很感慨的是，Windows 10 依然可以打开 Windows 3.1 版本的程序。&lt;/p&gt;
+&lt;p&gt;而作为应用软件的 Obsidian 和 Advanced Tables 居然产生了问题。&lt;/p&gt;
+&lt;p&gt;首先需定位问题的产生是因为升级了 Obsidian 还是升级了 Advanced Tables。&lt;/p&gt;
+&lt;p&gt;如果 Obsidian 的升级导致了第三方插件异常，可能是因为插件的接口有调整（这种可能性较低），另一个可能是插件的实现依赖了 Obsidian 的内部实现而不是接口。&lt;/p&gt;
+&lt;p&gt;搞清状况后，可以先提交 issue，如果有能力，可以下载源码进行修复并 PR 官方关闭 issue。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="obsidian"></category></entry><entry><title>Python 算法交易</title><link href="https://kaffa.im/python-for-algorithmic-trading.html" rel="alternate"></link><published>2024-04-05T01:00:00+08:00</published><updated>2024-04-05T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-05:/python-for-algorithmic-trading.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;评分&lt;/h2&gt;
 &lt;p&gt;⭐⭐⭐⭐⭐
 ⭐⭐⭐⭐ 9 / 10&lt;/p&gt;
@@ -3069,16 +3096,4 @@ Photo by &lt;a href="https://unsplash.com/@darmau?utm_content=creditCopyText&amp
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="weekly"></category></entry><entry><title>大语言模型的商业感觉</title><link href="https://kaffa.im/feelings-about-large-language-model.html" rel="alternate"></link><published>2023-12-30T15:30:00+08:00</published><updated>2023-12-30T15:30:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2023-12-30:/feelings-about-large-language-model.html</id><summary type="html">&lt;p class="first last"&gt;一些有意思摘录&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;大语言模型的商业生态&lt;/h2&gt;
-&lt;p&gt;一、大模型端，除了OpenAI，各大公司都训练了自己的LLM。在很长一段时间内，LLM一定还是分散的。&lt;/p&gt;
-&lt;p&gt;二、应用端，动作快的团队会胜出，做事有优先级、善于整合，有经验积累很重要。&lt;/p&gt;
-&lt;p&gt;三、平台级会出现在中间层。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;大语言模型的感觉&lt;/h2&gt;
-&lt;p&gt;有一个不错的比喻是像扑克牌，大多公司都是一副不好不坏的牌，可能没有同花顺，但也有个对子。&lt;/p&gt;
-&lt;p&gt;谁能胜出，就在于整合强项，安排优先级。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="digital"></category><category term="LLM"></category><category term="AI"></category></entry></feed>
+</content><category term="weekly"></category></entry></feed>
