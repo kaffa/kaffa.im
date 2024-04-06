@@ -1,5 +1,5 @@
 @startuml
-scale 750 width
+scale 960 width
 [*] -> HTML4
 HTML4 -> XHTML
 XHTML -> HTML5

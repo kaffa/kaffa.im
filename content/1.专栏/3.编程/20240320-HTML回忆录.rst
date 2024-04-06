@@ -20,7 +20,7 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     :format: svg
     :filename: html-memoir
 
-    scale 750 width
+    scale 960 width
     [*] -> HTML4
     HTML4 -> XHTML
     XHTML -> HTML5

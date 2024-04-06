@@ -126,6 +126,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const $target = document.getElementById(modal);
 
     $trigger.addEventListener("click", () => {
+        if (modal == 'modal-image') {
+            document.getElementById('img-modal-image').src = $trigger.src;
+        }
       openModal($target);
     });
   });

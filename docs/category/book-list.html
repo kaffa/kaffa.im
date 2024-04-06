@@ -160,9 +160,6 @@
             </div>
         </div>
     </nav>
-
-
-
 </header>
 <main class="pb-4">
 
@@ -180,7 +177,7 @@
             </figure>
             Kaffa
         </div>
-        <p class="is-size-6 has-text-centered has-text-grey my-3">探索人生　共享意趣</p>
+        <p class="is-size-6 has-text-centered has-text-grey my-3">探索人生　分享意趣</p>
         <div class="container is-max-desktop">
             <div class="is-divider" data-content="North"></div>
         </div>
@@ -233,7 +230,7 @@
 
             <section class="box box-dxl">
                 <meta name="referrer" content="same-origin">
-                <img class='dxl'>
+                <img class='dxl js-modal-trigger' data-target="modal-image">
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
                         const d = new Date();
@@ -754,15 +751,26 @@
     </div>
 </footer>
 
-<div id="modal-project" class="modal">
+<div class="modal" id="modal-project">
     <div class="modal-background"></div>
     <div class="modal-content">
         <div class="box">
-            <p>项目明细在建设中...</p>
+            <p>在建设中...</p>
         </div>
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
 </div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
 <script src="/static/js/base.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {

@@ -166,9 +166,6 @@
             </div>
         </div>
     </nav>
-
-
-
 </header>
 <main class="pb-4">
 <article class="content">
@@ -369,15 +366,26 @@
     </div>
 </footer>
 
-<div id="modal-project" class="modal">
+<div class="modal" id="modal-project">
     <div class="modal-background"></div>
     <div class="modal-content">
         <div class="box">
-            <p>项目明细在建设中...</p>
+            <p>在建设中...</p>
         </div>
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
 </div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
 <script src="/static/js/base.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
