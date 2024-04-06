@@ -23,6 +23,7 @@
     --c-link: hsl(0, 0%, 0%);
     --c-link-bdb: hsl(0, 0%, 40%);
     --c-box-bg: hsl(0, 0%, 100%);
+    --img-dxl: 0%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,8 +53,12 @@
     --c-link: hsl(0, 0%, 100%);
     --c-link-bdb: hsl(0, 0%, 60%);
     --c-box-bg: hsl(0, 0%, 0%);
+    --img-dxl: 100%;
 }
 
+.dxl {
+    filter: invert(var(--img-dxl));
+}
 /*! divider */
 .is-divider-vertical[data-content]::after, .is-divider[data-content]::after {
     background: var(--c-shadow);
