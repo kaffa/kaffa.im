@@ -45,7 +45,8 @@ AUTHOR_FEED_RSS = None
 LINKS = [
     {'group': '数字花园', 'items': (
         ('仿生猫不会梦见电子猫粮', 'https://jefftay.com/'),
-        ('MemEX', 'https://note.justgoidea.com/'),)},
+        ('MemEX', 'https://note.justgoidea.com/'),
+        ('咖啡寺', 'https://coffees.app/'),)},
     {'group': '收录', 'items': (
         ('十年之约', 'https://www.foreverblog.cn'),
         ('BlogFinder', 'https://bf.zzxworld.com'),
