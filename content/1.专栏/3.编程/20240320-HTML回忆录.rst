@@ -20,16 +20,15 @@ Mozilla 工程师 David Walsh 从公司毕业，写下了 `回忆贴 <https://da
     :format: svg
     :filename: html-memoir
 
-    scale 960 width
     [*] -> HTML4
     HTML4 -> XHTML
     XHTML -> HTML5
     HTML5 -> Ajax
-    Ajax -> SPA
-    SPA -> Angular
-    Angular -> React
-    React -> Vue
-    Vue -> [*]
+    Ajax -down-> SPA
+    SPA -left-> Angular
+    Angular -left-> React
+    React -left-> Vue
+    Vue -left-> [*]
 
     HTML4: FrontPage
     HTML4: Dreamweaver
