@@ -118,8 +118,9 @@
 &lt;li&gt;能发布到 Tiddly Wiki&lt;/li&gt;
 &lt;li&gt;能发布到任何自定义平台&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;开发周期&lt;/p&gt;
-&lt;hr class="docutils" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-7"&gt;
+&lt;h2&gt;开发周期&lt;/h2&gt;
 &lt;p&gt;将在后续《「Phoenix」终极笔记软件需求》中详评，现在拍脑袋估算为一年。&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="project"></category><category term="KN"></category></entry><entry><title>解决 Obsidian 插件 Advanced Tables 不显示表格的问题</title><link href="https://kaffa.im/solution-to-obsidian-advanced-tables-not-display-problem.html" rel="alternate"></link><published>2024-04-06T16:00:00+08:00</published><updated>2024-04-06T16:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-06:/solution-to-obsidian-advanced-tables-not-display-problem.html</id><summary type="html">&lt;p class="first last"&gt;本文提供 Obsidian 插件 Advanced Tables 表格不显示的解决办法&lt;/p&gt;
