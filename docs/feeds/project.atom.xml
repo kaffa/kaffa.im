@@ -101,7 +101,7 @@
 &lt;p&gt;但仔细看，还有些细节：&lt;/p&gt;
 &lt;ol class="arabic simple" start="3"&gt;
 &lt;li&gt;本地不可记笔记&lt;/li&gt;
-&lt;li&gt;存为草稿算私有化，但毕竟在鲜上，安全程度有限&lt;/li&gt;
+&lt;li&gt;存为草稿算私有化，但毕竟在线上，安全程度有限&lt;/li&gt;
 &lt;li&gt;存档版本过多&lt;/li&gt;
 &lt;li&gt;无法逐句注释和评论&lt;/li&gt;
 &lt;li&gt;弊端在有点固定成本 PHP + MySQL Server，年均几百。&lt;/li&gt;
