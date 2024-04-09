@@ -1,0 +1,18 @@
+升级了 ALaunch
+##################################################
+
+:date: 2024-04-10 01:00
+:author: Kaffa
+:category: digital
+:tags: ALaunch
+:slug: alaunch-a-friendship-software
+:summary: ALaunch 上一个版本已使用一年多，我没有给它添加新特性，因为它已满足了日常所需，其实 ALaunch 早前几个版本身边的朋友们都还在用，已经成了使用习惯。
+:image: /static/img/alaunch.png
+
+
+将 `ALaunch <https://kaffa.im/alaunch-your-first-productivity-software.html>`_ 升级到 v0.8 版本，增加了悬浮提示。
+
+ALaunch v0.9 版本，已规划了两个小特性。
+
+ALaunch v1.0 将转为友情软件：与此网站友情链接的朋友，我会送 1 枚注册码，赠送在达到预期数量时不定时取消。
+
