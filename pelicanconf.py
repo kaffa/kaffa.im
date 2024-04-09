@@ -57,7 +57,6 @@ LINKS = [
     {'group': '链接', 'items': (
         ('Paul Graham', 'http://paulgraham.com'),
         ('Guido van Rossum', 'https://gvanrossum.github.io/'),
-        ("Coffee's", 'https://coffees.app'),
         ('论道', 'https://lundao.pub/'),)},
 ]
 # Social widget
