@@ -48,7 +48,7 @@ ALaunch
 以往我的个体软件过程，Web类的效率较高，这次迁移到 Native Client，从开发软件选型到项目计划，从到用例到设计，从编码到测试，一共耗时 7 天，约 21 小时，升级了这个小软。ALaunch，一个用拖放来管理程序和文件的的启动器，希望它可以满足大部分人对于软件启动管理的预期。
 
 
-`alaunch v0.8 下载 <https://kaffa.im/static/file/alaunch-v0.8.7z>`_\ ，任何使用反馈都是欢迎的。
+`ALaunch v0.8 下载 <https://kaffa.im/static/file/alaunch-v0.8.7z>`_\ ，任何使用反馈都是欢迎的。
 
 若您发现 ALaunch 也节省了您的时间，或者单纯想表达谢意，可以留言。
 
