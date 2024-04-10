@@ -47,6 +47,9 @@ LINKS = [
         ('仿生猫不会梦见电子猫粮', 'https://jefftay.com/'),
         ('MemEX', 'https://note.justgoidea.com/'),
         ('咖啡寺', 'https://coffees.app/'),)},
+    {'group': '园艺先驱', 'items': (
+        ('Evergreen notes', 'http://andymatuschak.org'),
+        ('Maggie Appleton', 'https://maggieappleton.com/'),)},
     {'group': '收录', 'items': (
         ('十年之约', 'https://www.foreverblog.cn'),
         ('BlogFinder', 'https://bf.zzxworld.com'),
