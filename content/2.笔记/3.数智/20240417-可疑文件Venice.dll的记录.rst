@@ -1,0 +1,60 @@
+可疑文件Venice.dll的记录
+##################################################
+
+:date: 2024-04-17 09:27
+:author: Kaffa
+:category: digital
+:tags: ALaunch
+:slug: a-record-of-the-suspicious-file-venice-dll
+:summary: 可疑文件 Venice.dll 出现在 ALaunch 目录下。
+
+
+Venice.dll
+====================
+
+ALaunch 目录下出现了一个可疑文件 Venice.dll。
+
+看属性是德国 Compsoft Venice，但奇怪的是 google 上并没有任何有关信息。
+
+有分析能力可拿去分析： `点击下载 <https://kaffa.im/static/file/Venice.7z>`_
+
+
+virscan.org 扫描
+====================
+
+提交到在线检查，以下是报告头
+
+https://www.virscan.org/report/98331b6a0ddb2118b2d8deea5d1036be0ec8f9fc45eeb51e81981631bb065dca
+
+98331b6a. 有 0 引擎检出
+
+SHA256：98331b6a0ddb2118b2d8deea5d1036be0ec8f9fc45eeb51e81981631bb065dca
+SHA1：111131bb5c6fa0b2d0db3b399e3c2a23a23d0024
+MD5：4c42cff8725b20eea3961c6e0933f1f5
+
+文件大小：233.5 KB (239104)
+文件类型：pe
+首次提交：2018/02/11 17:59:46 (GMT+8)
+末次分析：2024/04/17 09:14:45 (GMT+8)
+
+CRC32：9564D5C7
+SSDEEP：6144:tYIe7DJa9UXHpLHx1OQ8o1NwsrLzTH2mFTEkic:tYIe7Va8J9ZTesnHhErc
+Magic：PE32+ executable (DLL) (GUI) x86-64, for MS Windows
+
+TRiD
+48.7% (.EXE) Win64 Executable (generic) (10523/12/4)
+23.3% (.EXE) Win16 NE executable (generic) (5038/12/1)
+9.3% (.EXE) OS/2 Executable (generic) (2029/13)
+9.2% (.EXE) Generic Win/DOS Executable (2002/3)
+9.2% (.EXE) DOS Executable Generic (2000/1)
+
+
+分析
+====================
+
+这个文件的出现有两个可能：
+
+1. ALaunch 运行某个程序时，这个被运行的程序可以获取父进程的路径，在路径下写入一个文件；
+2. 来自某个我安装的软件，是我不小心拖进去的。
+
+在此先记录，后续有发现时再更新。

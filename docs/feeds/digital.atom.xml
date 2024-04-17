@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - digital</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/digital.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-04-10T01:00:00+08:00</updated><entry><title>升级了 ALaunch</title><link href="https://kaffa.im/alaunch-a-friendship-software.html" rel="alternate"></link><published>2024-04-10T01:00:00+08:00</published><updated>2024-04-10T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-10:/alaunch-a-friendship-software.html</id><summary type="html">&lt;p class="first last"&gt;ALaunch 上一个版本已使用一年多，我没有给它添加新特性，因为它已满足了日常所需，其实 ALaunch 早前几个版本身边的朋友们都还在用，已经成了使用习惯。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im - digital</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/digital.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-04-17T09:27:00+08:00</updated><entry><title>可疑文件Venice.dll的记录</title><link href="https://kaffa.im/a-record-of-the-suspicious-file-venice-dll.html" rel="alternate"></link><published>2024-04-17T09:27:00+08:00</published><updated>2024-04-17T09:27:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-17:/a-record-of-the-suspicious-file-venice-dll.html</id><summary type="html">&lt;p class="first last"&gt;可疑文件 Venice.dll 出现在 ALaunch 目录下。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="venice-dll-1"&gt;
+&lt;h2&gt;Venice.dll&lt;/h2&gt;
+&lt;p&gt;ALaunch 目录下出现了一个可疑文件 Venice.dll。&lt;/p&gt;
+&lt;p&gt;看属性是德国 Compsoft Venice，但奇怪的是 google 上并没有任何有关信息。&lt;/p&gt;
+&lt;p&gt;有分析能力可拿去分析： &lt;a class="reference external" href="https://kaffa.im/static/file/Venice.7z"&gt;点击下载&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="virscan-org"&gt;
+&lt;h2&gt;virscan.org 扫描&lt;/h2&gt;
+&lt;p&gt;提交到在线检查，以下是报告头&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.virscan.org/report/98331b6a0ddb2118b2d8deea5d1036be0ec8f9fc45eeb51e81981631bb065dca"&gt;https://www.virscan.org/report/98331b6a0ddb2118b2d8deea5d1036be0ec8f9fc45eeb51e81981631bb065dca&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;98331b6a. 有 0 引擎检出&lt;/p&gt;
+&lt;p&gt;SHA256：98331b6a0ddb2118b2d8deea5d1036be0ec8f9fc45eeb51e81981631bb065dca
+SHA1：111131bb5c6fa0b2d0db3b399e3c2a23a23d0024
+MD5：4c42cff8725b20eea3961c6e0933f1f5&lt;/p&gt;
+&lt;p&gt;文件大小：233.5 KB (239104)
+文件类型：pe
+首次提交：2018/02/11 17:59:46 (GMT+8)
+末次分析：2024/04/17 09:14:45 (GMT+8)&lt;/p&gt;
+&lt;p&gt;CRC32：9564D5C7
+SSDEEP：6144:tYIe7DJa9UXHpLHx1OQ8o1NwsrLzTH2mFTEkic:tYIe7Va8J9ZTesnHhErc
+Magic：PE32+ executable (DLL) (GUI) x86-64, for MS Windows&lt;/p&gt;
+&lt;p&gt;TRiD
+48.7% (.EXE) Win64 Executable (generic) (10523/12/4)
+23.3% (.EXE) Win16 NE executable (generic) (5038/12/1)
+9.3% (.EXE) OS/2 Executable (generic) (2029/13)
+9.2% (.EXE) Generic Win/DOS Executable (2002/3)
+9.2% (.EXE) DOS Executable Generic (2000/1)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;分析&lt;/h2&gt;
+&lt;p&gt;这个文件的出现有两个可能：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;ALaunch 运行某个程序时，这个被运行的程序可以获取父进程的路径，在路径下写入一个文件；&lt;/li&gt;
+&lt;li&gt;来自某个我安装的软件，是我不小心拖进去的。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在此先记录，后续有发现时再更新。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="ALaunch"></category></entry><entry><title>升级了 ALaunch</title><link href="https://kaffa.im/alaunch-a-friendship-software.html" rel="alternate"></link><published>2024-04-10T01:00:00+08:00</published><updated>2024-04-10T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-10:/alaunch-a-friendship-software.html</id><summary type="html">&lt;p class="first last"&gt;ALaunch 上一个版本已使用一年多，我没有给它添加新特性，因为它已满足了日常所需，其实 ALaunch 早前几个版本身边的朋友们都还在用，已经成了使用习惯。&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;将 &lt;a class="reference external" href="https://kaffa.im/alaunch-your-first-productivity-software.html"&gt;ALaunch&lt;/a&gt; 升级到 v0.8 版本，增加了悬浮提示。&lt;/p&gt;
 &lt;p&gt;ALaunch v0.9 版本，已规划了两个小特性。&lt;/p&gt;
 &lt;p&gt;ALaunch v1.0 将转为友情软件：与此网站友情链接的朋友，我会送 1 枚注册码，赠送在达到预期数量时不定时取消。&lt;/p&gt;
