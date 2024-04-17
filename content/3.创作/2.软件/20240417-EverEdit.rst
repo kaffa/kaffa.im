@@ -7,7 +7,7 @@ EverEdit
 :tags: EverEdit
 :slug: everedit
 :summary: 朋友让我推荐一款 Windows 上的文本编辑器，毫无疑问，我会推荐 EverEdit。
-:image: /static/img/2024/everedit.png
+:image: /static/img/2024/everedit.svg
 
 推荐理由
 ==========
