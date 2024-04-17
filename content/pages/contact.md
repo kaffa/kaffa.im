@@ -10,6 +10,12 @@ Image: /static/img/2023/hero.png
 电子邮件：<email></email>
 
 
+## 购买 EverEdit
+
+1. 在 https://everedit.cn/ 注册用户；
+2. 给 <email></email> 发电子邮件，附上你注册的用户名和购买份数后申请折扣。
+3. 我将联系你完成购买流程。
+
 ## 交换链接
 
 若恰好你的兴趣含有咖啡、阅读、编程、心理学中的任一种，可以和我交换链接，通过 Email 发送以下给我：
