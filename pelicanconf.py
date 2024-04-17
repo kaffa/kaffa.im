@@ -56,7 +56,8 @@ LINKS = [
         ('个站商店', 'https://storeweb.cn/'),
         ('博客志', 'http://www.jetli.com.cn'),
         ('积薪', 'https://firewood.news'),
-        ('博客圈', 'https://bkq.net.cn/'),)},
+        ('博客圈', 'https://bkq.net.cn/'),
+        ('博友圈', 'https://www.boyouquan.com/home'),)},
     {'group': '链接', 'items': (
         ('Paul Graham', 'http://paulgraham.com'),
         ('Guido van Rossum', 'https://gvanrossum.github.io/'),
