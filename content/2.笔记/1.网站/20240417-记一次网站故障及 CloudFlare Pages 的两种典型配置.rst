@@ -21,6 +21,10 @@
 
 - ADS 即 Automated Deployment Services / System，即自动化发布服务/系统，可以触发发布编译调度服务，以自动地从源码构建并进行发布。
 
+
+.. image:: /static/img/2024/Network_Plus_Zero_Trust_Diagram_-_No_CF_Logo_smaller-CN.png
+    :alt: 零信任网络
+
 Cloudflare 自夸在全球网络标准类别获得 Forrester 报告中所有 SSE 供应商中的最高分，而 Netlify 体量相对小，但服务也算是不错。
 
 这里的 SSE，以及 SASE，都是相对较新的词，是一套适配现代企业架构的安全边缘计算服务和产品。

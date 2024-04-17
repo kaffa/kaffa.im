@@ -9,6 +9,7 @@
 &lt;li&gt;CDN 即 Content Delivery Network，将内容分发到全球的多个网络节点中，这样用户访问内容时，会从离用户近的节点返回内容，属于空间换时间。&lt;/li&gt;
 &lt;li&gt;ADS 即 Automated Deployment Services / System，即自动化发布服务/系统，可以触发发布编译调度服务，以自动地从源码构建并进行发布。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;img alt="零信任网络" src="/static/img/2024/Network_Plus_Zero_Trust_Diagram_-_No_CF_Logo_smaller-CN.png" /&gt;
 &lt;p&gt;Cloudflare 自夸在全球网络标准类别获得 Forrester 报告中所有 SSE 供应商中的最高分，而 Netlify 体量相对小，但服务也算是不错。&lt;/p&gt;
 &lt;p&gt;这里的 SSE，以及 SASE，都是相对较新的词，是一套适配现代企业架构的安全边缘计算服务和产品。&lt;/p&gt;
 &lt;p&gt;听起来陌生，倒不是因为它们出来晚，而是因为这套服务成本不低，阿里云也有类似服务，但头部还是&lt;a class="reference external" href="https://www.google.com/search?q=SASE"&gt;这些&lt;/a&gt;&lt;/p&gt;
