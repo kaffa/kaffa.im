@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-04-17T12:44:00+08:00</updated><entry><title>EverEdit</title><link href="https://kaffa.im/everedit.html" rel="alternate"></link><published>2024-04-17T12:44:00+08:00</published><updated>2024-04-17T12:44:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-17:/everedit.html</id><summary type="html">&lt;p class="first last"&gt;朋友让我推荐一款 Windows 上的文本编辑器，毫无疑问，我会推荐 EverEdit。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-04-19T20:00:00+08:00</updated><entry><title>THE TORTURED POETS DEPARTMENT</title><link href="https://kaffa.im/the-tortured-poets-department.html" rel="alternate"></link><published>2024-04-19T20:00:00+08:00</published><updated>2024-04-19T20:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-19:/the-tortured-poets-department.html</id><summary type="html">&lt;p class="first last"&gt;Who else decodes you?&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;凝听中&lt;/h2&gt;
+&lt;p&gt;And you're not Dylan Thomas, I'm not Patti Smith, This ain't the Chelsea Hotel, we're two idiots.&lt;/p&gt;
+&lt;p&gt;威尔士诗人迪伦·托马斯（Dylan Thomas）与妻子凯特琳·托马斯住在一起，在 205 号房间生病并于 1953 年去世。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="music"></category><category term="Taylor Swift"></category></entry><entry><title>EverEdit</title><link href="https://kaffa.im/everedit.html" rel="alternate"></link><published>2024-04-17T12:44:00+08:00</published><updated>2024-04-17T12:44:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-17:/everedit.html</id><summary type="html">&lt;p class="first last"&gt;朋友让我推荐一款 Windows 上的文本编辑器，毫无疑问，我会推荐 EverEdit。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;推荐理由&lt;/h2&gt;
 &lt;p&gt;EverEdit 的作者自 2008 年开始构思开发，前身叫做 MegaxEdit，其编辑器组件是完全自研的，并不是 Scintilla 之类。&lt;/p&gt;
@@ -3353,15 +3359,5 @@ Photo by &lt;a href="https://unsplash.com/@darmau?utm_content=creditCopyText&amp
 &lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;在读&lt;/h2&gt;
 &lt;p&gt;O'Reilly 的此系列少让人失望。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"></category><category term="Rust"></category></entry><entry><title>The Rust Programming Language, 2nd Edition</title><link href="https://kaffa.im/the-rust-programming-language-2nd-edition.html" rel="alternate"></link><published>2024-01-08T05:59:00+08:00</published><updated>2024-01-08T05:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-01-08:/the-rust-programming-language-2nd-edition.html</id><summary type="html">&lt;p class="first last"&gt;在读&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-1"&gt;
-&lt;h2&gt;评分&lt;/h2&gt;
-&lt;p&gt;⭐⭐⭐⭐⭐
-⭐⭐⭐ 8/10&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;在读&lt;/h2&gt;
-&lt;p&gt;几年前读过第一版，也看过一些在线书，这本易懂。&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="book"></category><category term="Rust"></category></entry></feed>
