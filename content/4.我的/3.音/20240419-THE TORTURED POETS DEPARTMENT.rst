@@ -10,7 +10,7 @@ THE TORTURED POETS DEPARTMENT
 :subject_url: https://neodb.social/album/6Ngbos1UZZKIl1zjCmBiBj
 
 
-凝听中
+欣赏中
 ===========
 
 And you're not Dylan Thomas, I'm not Patti Smith, This ain't the Chelsea Hotel, we're two idiots.
