@@ -1,5 +1,4 @@
-D:
-cd D:\code\github\kaffa\kaffa.github.io
+cd /d D:\code\github\kaffa\kaffa.github.io
 pelican
 git add . 
 git commit -am 'Kaffa'
