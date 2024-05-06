@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 年轻只是爱构建</title>
+    <meta charset="utf-8"/>
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feeds/digital.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Categories Atom Feed"/>
+
+
+
+
+    <meta name="tags" content="software-building" />
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="./"><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                        <button data-scheme="system" class="bd-nav-item is-system" aria-label="System mode">
+                            <span class="icon">
+                              <i class="fa fa-desktop" aria-hidden="true"></i>
+                            </span>
+                            <span>系统</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./youth-just-loves-to-build.html"
+                rel="bookmark"
+                title="「年轻只是爱构建」的永久链接"
+            >年轻只是爱构建</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-05-04T12:00:00+08:00">2024-05-04 周六</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/digital.html">数智</a>
+            <span class="ml-2">标签:</span>
+            <a class="tag is-medium" href="./tag/software-building.html">software-building</a>
+
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+
+        <div class="section" id="section-2">
+<h2>锤子找钉子</h2>
+<p>本文探讨的结构很简单，即大家常说过的：手里握着锤子，看什么都是钉子。</p>
+<p>很多人好奇新技术，学习新技术，验证学习的新技术时，便会使用新技术构建很多已构建的成熟软件。然而，如果新构建并未获得相比旧构建有比较优势的制品时，就命中了上述结构：手里握着锤子，眼里都是钉子。</p>
+<p>值得注意的是，现实中的“钉子”们存在很多细微的差异，比如有很多类似钉子的东西，其实是螺丝和针。锤子对付螺丝和针，也不是不行，但算不上好用。</p>
+</div>
+<div class="section" id="section-3">
+<h2>软件开发</h2>
+<p>上述是偏软件工程的叙述，换算为软件开发领域的表述就是：</p>
+<ol class="arabic simple">
+<li>掌握了一种编程语言则认为该编程语言适合开发任何软件。</li>
+<li>掌握了一种数据软件则认为该数据软件适合开发任何软件。</li>
+<li>掌握了一种操作系统则认为该操作系统适合开发任何软件。</li>
+<li>掌握了一种编程框架则认为该编程框架适合开发任何软件。</li>
+</ol>
+</div>
+<div class="section" id="section-4">
+<h2>任何代码都是成本</h2>
+<p>一些代码是业务规则，但任何代码的一面至少都是成本，它需要有人开发、有人测试、有人维护（重构、升级）。</p>
+<p>并不是任何软件都值得构建，但我非常理解那些掌握了新技术的年轻工程师，毕竟年轻只是爱构建，很少问为什么。</p>
+<p>但只要稍稍有十年经历，一旦有机会维护十年前的代码时，就能理解这里在说什么。</p>
+<p>如果可以不修改别人代码，较为便利地实现业务目的时，就不要修改别人代码。</p>
+<p>如果需要修改别人代码的逻辑，最好完整地、采用非耦合地方式利用软件，然后才是依赖开发框架，最后是第三发库。</p>
+<p>你几乎很难找到长达十年维护的非知名软件，所以，当需要在长期使用的软件中引入一个依赖时，要万分小心，此时有两种考虑：一，慢慢地自己研发；二、如果能看懂源码且源码对个人来说有可维护性时，再审慎依赖。</p>
+</div>
+<div class="section" id="section-5">
+<h2>绝大多数的构建都是无意义的</h2>
+<p>从五年的长度去看，绝大多数的构建都是无意义。公司活不过五年，五年后技术更新了，你的主要依赖升级了，你的第三方依赖更新了或下线了。公共领域已经有非常多且功能不错的软件，继续构建的大多软件都没有明显存在的理由。</p>
+<p>然而，年轻总是爱构建，当审视自身，年轻时也总是会做很多别人眼里无意义的事，这些别人眼里的无意义对当事人来说其实挺重要。</p>
+<p>这也许是张颂文老师<a class="reference external" href="https://movie.douban.com/subject/36640254/">《灿烂的花园》</a>中说的，去 <strong>“创造阅历”</strong> 。在第二集中，颂文听见了烟花，这种生活的好奇心来了，让他骑上三轮车在乌漆嘛黑的夜里出发，朝着“烟花”的方向出发，最后除了一路颠簸，只有伸手不见五指的乡路，众人折返，一无所获。然后就是这种看似无意义的行为，构成了一行人人生难忘的花园经历。</p>
+</div>
+<div class="section" id="section-6">
+<h2>所以</h2>
+<p>在这个内卷时代，现实让人不停提升经济环境效率，将社会推向充分竞争，竞争并非是缺点，但过度后就属于恶性竞争，产生内耗。在这个最好的年代，尤其更要注重和鼓励探索，竞争可以获得生存的机会，但在良性竞争下鼓励探索才能孕育变革，如 OpenAI 技术栈的诞生，靠的是八年的投入、几十亿美金的投资、软件研发的探索。在技术发展到数量级瓶颈时，这些关键的变革一旦成立，几乎决定的就是跨领域的恒久成立的国家竞争优势。</p>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

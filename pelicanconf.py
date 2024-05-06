@@ -59,7 +59,6 @@ LINKS = [
         ('博客圈', 'https://bkq.net.cn/'),
         ('博友圈', 'https://www.boyouquan.com/home'),)},
     {'group': '链接', 'items': (
-        ('Paul Graham', 'http://paulgraham.com'),
         ('Guido van Rossum', 'https://gvanrossum.github.io/'),
         ('论道', 'https://lundao.pub/'),)},
 ]
