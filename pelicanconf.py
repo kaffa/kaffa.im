@@ -48,7 +48,8 @@ LINKS = [
         ('MemEX', 'https://note.justgoidea.com/'),
         ('咖啡寺', 'https://coffees.app/'),)},
     {'group': '园艺先驱', 'items': (
-        ('Evergreen notes', 'http://andymatuschak.org'),
+        ('EastGate Garden', 'https://www.eastgate.com/garden/Enter.html'),
+        ('Evergreen Notes', 'http://andymatuschak.org'),
         ('Maggie Appleton', 'https://maggieappleton.com/'),)},
     {'group': '收录', 'items': (
         ('十年之约', 'https://www.foreverblog.cn'),
@@ -60,6 +61,8 @@ LINKS = [
         ('博友圈', 'https://www.boyouquan.com/home'),)},
     {'group': '链接', 'items': (
         ('Guido van Rossum', 'https://gvanrossum.github.io/'),
+        ('danluu.com', 'https://danluu.com/'),
+        ('Hacker News', 'https://news.ycombinator.com/'),
         ('论道', 'https://lundao.pub/'),)},
 ]
 # Social widget

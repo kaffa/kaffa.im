@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-05-06T11:01:19-00:00</lastmod>
+<lastmod>2024-05-16T19:03:38-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-05-06T11:01:19-00:00</lastmod>
+<lastmod>2024-05-16T19:03:38-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-05-06T11:01:19-00:00</lastmod>
+<lastmod>2024-05-16T19:03:38-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-05-06T11:01:19-00:00</lastmod>
+<lastmod>2024-05-16T19:03:38-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,8 +60,29 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/all-travelers-ai-geo-guessing-is-here.html</loc>
+<lastmod>2024-05-13T21:59:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/weekly-2024-w18.html</loc>
+<lastmod>2024-05-05T23:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/youth-just-loves-to-build.html</loc>
 <lastmod>2024-05-04T12:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/weekly-2024-w19.html</loc>
+<lastmod>2024-05-02T23:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -319,7 +340,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kaffa.im/experiences-of-one-photo-geo-guessing-three-timess.html</loc>
+<loc>https://kaffa.im/experiences-of-one-photo-geo-guessing-three-times.html</loc>
 <lastmod>2024-04-02T23:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -1636,7 +1657,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2024-05-04T12:00:00+08:06</lastmod>
+<lastmod>2024-05-13T21:59:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

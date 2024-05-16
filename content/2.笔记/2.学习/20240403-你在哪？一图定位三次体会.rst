@@ -5,7 +5,7 @@
 :author: Kaffa
 :category: reading
 :tags: geo-guessing
-:slug: experiences-of-one-photo-geo-guessing-three-timess
+:slug: experiences-of-one-photo-geo-guessing-three-times
 :summary: 网络迷踪游戏的亲身体会，用一张图片实现定位的体会。
 :image: /static/img/2024/geo-guessing-3.jpg
 
