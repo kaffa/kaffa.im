@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-05-17T09:59:29-00:00</lastmod>
+<lastmod>2024-05-17T10:02:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-05-17T09:59:29-00:00</lastmod>
+<lastmod>2024-05-17T10:02:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-05-17T09:59:29-00:00</lastmod>
+<lastmod>2024-05-17T10:02:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-05-17T09:59:29-00:00</lastmod>
+<lastmod>2024-05-17T10:02:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -67,6 +67,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/weekly-2024-w19.html</loc>
+<lastmod>2024-05-12T23:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/weekly-2024-w18.html</loc>
 <lastmod>2024-05-05T23:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -76,13 +83,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/youth-just-loves-to-build.html</loc>
 <lastmod>2024-05-04T12:00:00+08:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://kaffa.im/weekly-2024-w19.html</loc>
-<lastmod>2024-05-02T23:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
