@@ -21,7 +21,7 @@ MANTRA = '<span class="has-text-grey is-size-6"><span class="is-italic author_na
          '<sup class="has-text-grey is-size-7">'\
          '  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un'\
          '</sup>'
-AUTHOR_INTRO = '人生之短，似飞星过夜幕；人生之长，如磐石经岁月。探索人生，分享意趣。'
+AUTHOR_INTRO = '探索人生，分享意趣。'
 
 SITEURL = 'https://kaffa.im'
 TIMEZONE = 'Asia/Shanghai'
