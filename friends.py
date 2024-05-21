@@ -29,12 +29,12 @@ def get_list():
             'Email': ''
         }, {
             'ID': 3,
-            'Name': '浪海导航',
-            'URL': 'https://www.langhai.net/',
-            'Intro': '收录各种类型的博客',
-            'Owner': '浪海导航',
-            'Icon': 'https://www.langhai.net/assets/images/langhai-logo.png',
-            'Email': '676558206@qq.com'
+            'Name': '雅余',
+            'URL': 'https://yayu.net/',
+            'Intro': '一位爱喝咖啡的产品经理曾经是位设计师，偶尔捣腾代码，不玩摄影的时候也泡泡工夫茶。',
+            'Owner': '晨间风、Jeff',
+            'Icon': 'https://yayu.net/wp-content/themes/yayu/assets/images/logo.png',
+            'Email': 'hi@yayu.net',
         }, {
             'ID': 4,
             'Name': '非理勿试',
@@ -67,5 +67,13 @@ def get_list():
             'Owner': '松易涅',
             'Icon': 'https://cdn.sungyinieh.com/logo/logo-c-150.png',
             'Email': 'mail@songyinie.com',
+        }, {
+            'ID': 8,
+            'Name': '浪海导航',
+            'URL': 'https://www.langhai.net/',
+            'Intro': '收录各种类型的博客',
+            'Owner': '浪海导航',
+            'Icon': 'https://www.langhai.net/assets/images/langhai-logo.png',
+            'Email': '676558206@qq.com'
         }
     ]
