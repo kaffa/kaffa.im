@@ -77,7 +77,7 @@ def get_list():
             'Email': '676558206@qq.com'
         }, {
             'ID': 9,
-            'Name': '清阳（livingWithFCS）',
+            'Name': '清阳livingWithFCS',
             'URL': 'https://conge.livingwithfcs.org/',
             'Intro': '记录读过的书和跑过的路。',
             'Owner': 'Conge',
