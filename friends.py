@@ -75,5 +75,13 @@ def get_list():
             'Owner': '浪海导航',
             'Icon': 'https://www.langhai.net/assets/images/langhai-logo.png',
             'Email': '676558206@qq.com'
+        }, {
+            'ID': 9,
+            'Name': '清阳',
+            'URL': 'https://conge.livingwithfcs.org/',
+            'Intro': '记录读过的书和跑过的路。',
+            'Owner': 'Conge',
+            'Icon': 'https://conge.livingwithfcs.org/favicon.ico',
+            'Email': ''
         }
     ]
