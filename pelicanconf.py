@@ -46,7 +46,7 @@ LINKS = [
     {'group': '数字花园', 'items': (
         ('仿生猫不会梦见电子猫粮', 'https://jefftay.com/'),
         ('MemEX', 'https://note.justgoidea.com/'),
-        ('咖啡寺', 'https://coffees.app/'),)},
+        ('咖啡园', 'https://coffee.kaffa.im/'),)},
     {'group': '园艺先驱', 'items': (
         ('EastGate Garden', 'https://www.eastgate.com/garden/Enter.html'),
         ('Evergreen Notes', 'http://andymatuschak.org'),
