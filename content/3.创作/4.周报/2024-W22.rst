@@ -53,7 +53,7 @@
    * https://github.com/jbranchaud/til
    * https://github.com/thoughtbot/til
 
-6. Gemini：在玩耍软件中，无意中打开了 lagrange，然后打开了一个更人气的新世界。Gemini 这里是作为一种新的互联网协议，基于 Gopher，而 Gopher 除了在大学学过以外，现在主要就是一些 CTFer 用来构造 ssrf 数据包， Gemini 协议构建的网络类似一种 i 人的 Web，供你躲避网络焦虑症，更极客，也天然多了点门槛，天然商业无爱，因此 Gemini 在发展起来前，不会存在过度商业的内容。在我看来，它很类似一种玩无线电台的群体，但电台类似播客，而 Gemini 上媒体主要是文本、图片和二进制。
+6. Gemini：在玩耍软件中，无意中打开了 lagrange，然后打开了一个更具极客气息的新世界。Gemini 这里是作为一种新的互联网协议，基于 Gopher，而 Gopher 除了在大学学过以外，现在主要就是一些 CTFer 用来构造 ssrf 数据包， Gemini 协议构建的网络类似一种 i 人的 Web，供你躲避网络焦虑症，更极客，也天然多了点门槛，天然商业无爱，因此 Gemini 在发展起来前，不会存在过度商业的内容。在我看来，它很类似一种玩无线电台的群体，但电台类似播客，而 Gemini 上媒体主要是文本、图片和二进制。
 
    * YC上 Gemini 的讨论：https://news.ycombinator.com/item?id=23042424
    * Gemini 协议的历史：https://geminiprotocol.net/history/
