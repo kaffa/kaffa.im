@@ -42,7 +42,7 @@
 
    总结一下，如果我的需求是寻找一个适合的 RSS Reader，本地使用，支持订阅 1000 个源，占用资源小，浏览体验流畅，最好开源免费，支持永久收藏和清理，完美支持多语，支持分享和简单自动化，那 Windows 下确实没有满足我的软件，不知我的需求是否普遍。在我没有自己实现之前，在 Windows 下我用 Feedly，或者一些 `精选 RSS 源的聚合站 <https://www.bestblogs.dev/>`_
 
-3. IRC：也是在试用 Thunderbird 时，发现原本的 freenode 已然变成了 libera.chat，这是一场`社区政治抢夺 <https://gist.github.com/joepie91/df80d8d36cd9d1bde46ba018af497409>`_ 行为的失败，也显示出 libera 精神，fsf 也 `站到了 libera.chat <https://www.fsf.org/news/fsf-and-gnu-move-official-irc-channels-to-libera-chat-network>`_。另外，Web IRC 也挺好用的，https://web.libera.chat/，上一次用 IRC，还是去 tcl/tk 社群问问题，现在可以问 GPT 们了...
+3. IRC：也是在试用 Thunderbird 时，发现原本的 freenode 已然变成了 libera.chat，这是一场 `社区政治抢夺 <https://gist.github.com/joepie91/df80d8d36cd9d1bde46ba018af497409>`_ 行为的失败，也显示出 libera 精神，fsf 也 `站到了 libera.chat <https://www.fsf.org/news/fsf-and-gnu-move-official-irc-channels-to-libera-chat-network>`_ 。另外，Web IRC 也挺好用的，https://web.libera.chat/，上一次用 IRC，还是去 tcl/tk 社群问问题，现在可以问 GPT 们了...
 
 4. 破坏性升级：今天看到 `jQuery 的升级说明 <https://blog.jquery.com/2024/04/17/upgrading-jquery-working-towards-a-healthy-web/>`_ jQuery 作者的忍者秘笈也是读过的，如此成就的软件，升级显得谦逊和稳妥，而相比来说看到 1900 遭遇的 memos 破坏性升级就很糟心。我虽不善评断，一方面，我是软件作者，另一方面，我也是用户。对于会损坏用户数据的地方，最佳是提供升级指导，就像 jQuery migrate 一样。提供方法和工具，帮助用户处理好，如果成本或其它原因导致没事件处理好，至少需要先提示用户先不要升级。若开源作为公开的事，是有责任和义务的，如果很任性进行破坏性升级，是不成熟的做法，用户和软件作者双输。
 
