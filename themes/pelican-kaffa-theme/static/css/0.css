@@ -9,7 +9,10 @@
     --c-shadow: hsl(0, 0%, 100%);
     --c-nav-bg: hsl(0, 0%, 96%);
     --c-nav-bd: hsl(0, 0%, 79%);
+    /*
     --c-main-bg: hsl(0, 0%, 86%);
+    */
+    --c-main-bg: hsl(189, 100%, 97%);
     --c-hero-bg: hsl(0, 0%, 100%);
     --c-title-shadow: hsl(0, 0%, 100%);
     --media-box-bg-color: hsl(0, 0%, 96%);
