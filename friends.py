@@ -83,5 +83,13 @@ def get_list():
             'Owner': 'Conge',
             'Icon': 'https://conge.livingwithfcs.org/favicon.ico',
             'Email': ''
+        }, {
+            'ID': 10,
+            'Name': '@1900\'Blog',
+            'URL': 'https://1900.live/',
+            'Intro': 'All work and no play makes Jack a dull boy。',
+            'Owner': '1900',
+            'Icon': 'https://cdn.1900.live/20190640/ico.png',
+            'Email': ''
         }
     ]
