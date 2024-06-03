@@ -62,7 +62,7 @@ def get_list():
         }, {
             'ID': 7,
             'Name': '松易涅的写作分享站',
-            'URL': 'https://www.songyinieh.com/',
+            'URL': 'https://www.sungyinieh.com/flinks',
             'Intro': '回顾历史，审视当下，期盼未来',
             'Owner': '松易涅',
             'Icon': 'https://cdn.sungyinieh.com/logo/logo-c-150.png',
