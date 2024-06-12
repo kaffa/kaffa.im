@@ -32,11 +32,13 @@
 用 Keenan 的话来说，分享你那又大又笨又美丽的自己。
 
 脚注
+----------
 
 这篇博文标题的灵感来自于 David Cox 的“此网站是个人的（以一种好的方式）”，他在其中清晰地描述了他的新个人网站和目标。与这篇博文完全不同 😁
 
 
 Webmentions
+--------------------
 
 ✏️ https://www.macram.es/cajon-de-sastre/esta-semana-me-inspiro-iv/
 

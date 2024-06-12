@@ -11,12 +11,16 @@
 &lt;p&gt;作为一个长期的文字斗争者，我一直在寻求把东西写得更简洁、更有趣或更奇特。有时，我会写一些充满神秘色彩的微型小说，没有实际的情节点或答案。有时，我会选择一款单人日记游戏，例如《Be Like A Crow》或《Apothecaria》，但在故事真正取得任何成果之前就放弃了。我和一些朋友玩“Play by Post”游戏，每周写 200-400 个字左右。有时，我想出了一个博客文章的想法，却发现自己正在努力编写内容，并最终将其添加到我越来越多的被遗忘的草稿中。&lt;/p&gt;
 &lt;p&gt;但管它呢。这个网站是个人的。它可以而且将会展示我在写作方面的挣扎，我的语无伦次和不一致，因为那是我的经历，它也会分享我对生活的独特而有趣的观点，因为这也是我的经历。&lt;/p&gt;
 &lt;p&gt;用 Keenan 的话来说，分享你那又大又笨又美丽的自己。&lt;/p&gt;
-&lt;p&gt;脚注&lt;/p&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;脚注&lt;/h2&gt;
 &lt;p&gt;这篇博文标题的灵感来自于 David Cox 的“此网站是个人的（以一种好的方式）”，他在其中清晰地描述了他的新个人网站和目标。与这篇博文完全不同 😁&lt;/p&gt;
-&lt;p&gt;Webmentions&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="webmentions"&gt;
+&lt;h2&gt;Webmentions&lt;/h2&gt;
 &lt;p&gt;✏️ &lt;a class="reference external" href="https://www.macram.es/cajon-de-sastre/esta-semana-me-inspiro-iv/"&gt;https://www.macram.es/cajon-de-sastre/esta-semana-me-inspiro-iv/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;您发表过自己的帖子提到本文吗？让我知道网址。&lt;/p&gt;
 &lt;p&gt;（原表单请访问：&lt;a class="reference external" href="https://frills.dev/blog/070224-this-website-is-personal-girls/"&gt;https://frills.dev/blog/070224-this-website-is-personal-girls/&lt;/a&gt;）&lt;/p&gt;
+&lt;/div&gt;
 </content><category term="article"></category><category term="small-web"></category></entry><entry><title>清除 Microsoft Edge 自动跳转 https 的缓存</title><link href="https://kaffa.im/clear-the-301-automatic-redirection-to-https-cache-of-microsoft-edge.html" rel="alternate"></link><published>2024-06-09T12:00:00+08:00</published><updated>2024-06-09T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-09:/clear-the-301-automatic-redirection-to-https-cache-of-microsoft-edge.html</id><summary type="html">&lt;p class="first last"&gt;在配置 nginx 反代过程中，发现了 Edge 浏览器会缓存某个网址的 301 或 https 跳转，本文提供了清除该缓存的解决办法。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;问题现象&lt;/h2&gt;
