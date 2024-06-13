@@ -91,5 +91,13 @@ def get_list():
             'Owner': '1900',
             'Icon': 'https://cdn.1900.live/20190640/ico.png',
             'Email': ''
+        }, {
+            'ID': 11,
+            'Name': '拾月',
+            'URL': 'https://www.skyue.com/',
+            'Intro': '日常关注互联网、软件应用居多，也喜欢股票投资、社科历史。执着于掌控自己的数据，self-host 爱好者。',
+            'Owner': 'SKYue',
+            'Icon': 'https://www.skyue.com/favicon.ico',
+            'Email': 'skyue.hu@gmail.com'
         }
     ]
