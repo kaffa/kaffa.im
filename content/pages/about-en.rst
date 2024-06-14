@@ -123,6 +123,16 @@ Therefore, I often connect with experts in various fields, such as Jeremy Thomas
 
 In this best of times and worst of times, in this era of cognitive surplus and overwhelmed nerves, I hope to use my free time to engage in more creative activities, with Kaffa.im serving as a gathering place for online life.
 
+"This website is personal"
+========================================
+
+"This website is personal" means "\ `This website is personal <https://kaffa.im/this-website-is-personal.html>`_\ ", which is part of a "small web" movement in 2021. To put it bluntly, it is to achieve that personal content is controlled by individuals, rather than being "handled" and decided by giant companies and platforms.
+
+This requires us to proactively post all personal content on our personal websites and only post links to the original content on social media.
+
+The benefit of publishing content to a place where you can control it is that you can control the content. These places include but are not limited to home servers and cloud infrastructures. Use open source content publishing tools for content publishing, and then publish the recent activities of content publishing to social media, In this way, when people visit the content you create, they will eventually link to your website. Of course, you can also copy and publish it, but you can use some publishing chains and publishing timelines to ensure the originality of the content.
+
+There is a problem that needs to be solved here. The replies and discussions of your friends and fans on social media need to be centralized back to your website in some simple way. The Internet Standards Organization has discussed similar standards called webmention and microformat. You can search for open source implementations to achieve this goal through these two keywords.
 
 Records on My Exploration of the World
 ========================================
