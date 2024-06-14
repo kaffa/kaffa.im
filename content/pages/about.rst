@@ -118,7 +118,7 @@ Hello，您好！
 “这个网站是个人的”
 ====================
 
-这个网站是个人的是指 “\ `This website is personal <https://kaffa.im/this-website-is-personal.html>`_\ ” ，它属于 2021 年时的一场“小网”运动，直白的讲，就是为实现————个人内容由个人控制，而不是听由各大公司和平台去“处理”和说了算。
+这个网站是个人的是指 “\ `This website is personal <https://kaffa.im/this-website-is-personal.html>`_\ ” ，它属于 2021 年时的一场“小网”运动，直白的讲，就是为实现——个人内容由个人控制，而不是听由各大公司和平台去“处理”和说了算。
 
 这要我们主动去将所有个人内容发布在个人网站，只将带有原始内容的链接发布到社交媒体。
 
