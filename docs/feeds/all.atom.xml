@@ -134,7 +134,7 @@
 &lt;h2&gt;问题现象&lt;/h2&gt;
 &lt;p&gt;在配置 nginx 反向代理过程中，发现 Microsoft Edge 浏览器似乎缓存了网址的 http 习惯。&lt;/p&gt;
 &lt;p&gt;举例来说：对于 www.kaffa.im，如果访问过 &lt;a class="reference external" href="https://www.kaffa.im"&gt;https://www.kaffa.im&lt;/a&gt; 成功后，即使服务器取消了 https 访问，只提供 http 服务，当访问 &lt;a class="reference external" href="http://www.kaffa.im"&gt;http://www.kaffa.im&lt;/a&gt; 时，浏览器并不请求 80 端口的 http 服务，而是根据缓存继续会请求 443 端口的 https 服务。&lt;/p&gt;
-&lt;p&gt;由于很早之前第一次发现是在 Edge 中，本想写一篇吐槽微软对于这事处理的傲慢态度，今天又在豆包 AI 中询问了此事的翻译，结果豆包好像非常捍卫微软的品牌声誉似的，说这并不是微软的傲慢，而是处于安全考虑，这种回答还真是让我非常吃惊。&lt;/p&gt;
+&lt;p&gt;由于很早之前第一次发现是在 Edge 中，本想写一篇吐槽微软对于这事处理的傲慢态度，今天又在豆包 AI 中询问了此事的翻译，结果豆包好像非常捍卫微软的品牌声誉似的，说这并不是微软的傲慢，而是出于安全考虑，这种回答还真是让我非常吃惊。&lt;/p&gt;
 &lt;p&gt;我仔细阅读了关于这个问题源头的一些对话：&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://issues.chromium.org/issues/41266980"&gt;https://issues.chromium.org/issues/41266980&lt;/a&gt;&lt;/li&gt;
