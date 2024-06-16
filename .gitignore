@@ -13,3 +13,4 @@ _old_posts/
 .DS_Store
 /content.draft/
 dbconfig.py
+.env

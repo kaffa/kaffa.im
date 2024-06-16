@@ -190,7 +190,6 @@
                 </div>
             </section>
 
-
         </div>
 
         <div class="column is-6">
@@ -293,6 +292,22 @@
                     {% endfor %}
                 </div>
                 <p class="is-primary mt-3"><a href="{{ SITEURL }}/tags.html" title="所有标签">更多 ...</a></p>
+            </section>
+
+            <section class="box">
+                <h3 class="mb-3">最新回复</h3>
+                {% for node in comment_nodes %}
+                    {% for edge in node['comments']['edges'] %}
+                    <p>
+                        <a href="{{ SITEURL }}/{{ node['title'] }}" title="{{ SITEURL }}/{{ node['title'] }}">
+                            <img src="{{ edge['node']['author']['avatarUrl'] }}" >
+                            <span>{{ edge['node']['body'] }} </span>
+                            <span>{{ edge['node']['publishedAt'] }}</span>
+                        </a>
+                    </p>
+                    {% endfor %}
+                {% endfor %}
+                <p class="is-primary mt-3"><a href="{{ comment_all_url }}" title="所有评论">更多 ...</a></p>
             </section>
 
             <section class="box">

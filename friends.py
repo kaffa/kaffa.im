@@ -99,5 +99,13 @@ def get_list():
             'Owner': 'SKYue',
             'Icon': 'https://www.skyue.com/favicon.ico',
             'Email': 'skyue.hu@gmail.com'
+        }, {
+            'ID': 12,
+            'Name': '啤酒加冰',
+            'URL': 'http://teddy.bell.cf/',
+            'Intro': '一个技术宅的日常',
+            'Owner': 'SKYue',
+            'Icon': 'http://teddy.bell.cf/logo.jpg',
+            'Email': ''
         }
     ]
