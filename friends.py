@@ -104,8 +104,8 @@ def get_list():
             'Name': '啤酒加冰',
             'URL': 'http://teddy.bell.cf/',
             'Intro': '一个技术宅的日常',
-            'Owner': 'SKYue',
-            'Icon': 'http://teddy.bell.cf/logo.jpg',
+            'Owner': '',
+            'Icon': '/static/img/2024/teddy-logo.jpg',
             'Email': ''
         }
     ]
