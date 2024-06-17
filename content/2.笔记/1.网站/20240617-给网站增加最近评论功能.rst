@@ -1,0 +1,49 @@
+给网站增加最近评论功能
+##################################################
+
+:date: 2024-06-17 09:40
+:author: Kaffa
+:category: website
+:tags: comments, giscuss
+:slug: add-recent-giscuss-comments
+:summary: 本文记录给网站增加 giscuss 最近评论。
+
+痛点
+==========
+
+最近修改网站设置后，giscuss 评论未显示。直到我进入了项目的 Discussion 才看到有一些最新留言，但这些留言未显示在文章下方。为不错过留言，我决定为网站增加最新评论功能。
+
+分析
+==========
+
+那么是否有一种方式，可实现在网站上显示最新评论呢，对此，所有的回答都是肯定的。
+
+程序可以实现一切。如果是静态网站（SSG），实现方式稍一想，就有三种。
+
+方式一、直接从 https 抓取所有的评论网页，解析出评论。缺点是依赖页面结构，可能会失效，需要随着 Github 页面结构的更新而更新。
+
+方式二、使用 Github 提供的 API，需要查看 Github 文档，需要注意保护好授权 Token。
+
+方式三、使用 Github Action 和 Webhook 实现在评论时维护一个 comments.json 文件，缺点是每次生成前需要拉取这个文件，增加了生成时间。
+
+综合来看，如果官方支持，那选方式二是最佳选择。
+
+实现
+==========
+
+经过查阅文档和讨论，发现 Github 有 graphql 和 REST 两种形式的 API，未来有 REST API 迁移到 graphql 的趋势。且 Discussion 是一个较新的特性，获取 Discussion 目前只有 graphql API。
+
+编程助手已经改变了编程，经过一个提问，一次复制，我就获得了代码结构，此时，基于我对 graphql 的入门理解，我直接修改了 query，几次尝试后，我就获得了需要数据。整个过程确实节省了不少时间。
+
+至于 Token 保护，我还是选择了在 .gitignore 中增加 .env 文件，然后从 .env 读取的方式，而不是使用系统变量。PyCharm 或 IDEA 系，对系统变量的处理有点奇怪。系统变量更新了，你不通过搜索甚至不知道它什么时候更新，此时 .env 就没这问题，唯一要注意的是不要遗忘先添加 .gitignore 再添加 .env。
+
+`实现源码 <https://github.com/kaffa/kaffa.im/blob/master/comments.py>`_ ，然后在 jinja2 模板中循环展示，由于更新频率，此处只是简单实现以满足基本需求，并未严格按时间排序。
+
+未来计划
+==========
+
+对于评论功能，最开始使用的是 gitalk，后来有人反馈无法打开，于是增加了 giscuss。这两者之间，gitalk 使用 issue，giscuss 使用 discussion，相比来说，我认为 issue 会更基础一些。如果有一天未来要砍掉特性，discussion 必定在砍 issue 之前，当然了，砍特性这种事在公司还有现金流时，是不会发生的。
+
+gitalk 和 giscuss 的优点是免费，如果要说缺点，gitalk 和 giscuss 的就是依赖一种并不是为此设计的用法，Github 可以处理掉这种不合适的用法，那是评论就会失效，迁移数据也许挺麻烦的。
+
+所以，最好的方式是换自己支持评论的程序，或者依赖一些 serverless 的服务，将评论数据以开发的结构存放在可控的地方。
