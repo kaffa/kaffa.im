@@ -106,6 +106,6 @@ def get_list():
             'Intro': '一个技术宅的日常',
             'Owner': '',
             'Icon': '/static/img/2024/teddy-logo.jpg',
-            'Email': ''
+            'Email': 'Teddy Bell'
         }
     ]

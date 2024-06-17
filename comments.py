@@ -1,11 +1,10 @@
 import os
 import requests
-
-
-comment_url = 'https://github.com/kaffa/kaffa.im/discussions'
+from dotenv import load_dotenv
 
 
 def get_list():
+    load_dotenv()
     access_token = os.environ.get('GHP_ACCESS_TOKEN')
     if not access_token:
         return []
@@ -78,7 +77,8 @@ def get_list():
 
 
 def main():
-    for node in get_list():
+    nodes = get_list()
+    for node in nodes:
         print('-' * 100)
         print('Title: ' + node['title'])
 

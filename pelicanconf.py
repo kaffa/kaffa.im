@@ -10,7 +10,7 @@ from functools import partial
 sys.path.append(os.curdir)
 import projects
 import friends
-import github_discussions
+import comments
 
 
 AUTHOR = 'Kaffa'
@@ -267,5 +267,5 @@ JAVASCRIPT_FOOT = ''
 
 PROJECTS = projects.get_list()
 FRIENDS = friends.get_list()
-comment_nodes = github_discussions.get_list()
-comment_all_url = github_discussions.comment_url
+COMMENT_NODES = comments.get_list()
+COMMENT_ALL_URL = 'https://github.com/kaffa/kaffa.im/discussions'
