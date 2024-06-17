@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-06-17T09:40:00+08:00</updated><entry><title>给网站增加最近评论功能</title><link href="https://kaffa.im/add-recent-giscuss-comments.html" rel="alternate"></link><published>2024-06-17T09:40:00+08:00</published><updated>2024-06-17T09:40:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-17:/add-recent-giscuss-comments.html</id><summary type="html">&lt;p class="first last"&gt;本文记录给网站增加 giscuss 最近评论。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-06-17T09:40:00+08:00</updated><entry><title>给网站增加最近评论功能</title><link href="https://kaffa.im/add-recent-giscus-comments.html" rel="alternate"></link><published>2024-06-17T09:40:00+08:00</published><updated>2024-06-17T09:40:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-17:/add-recent-giscus-comments.html</id><summary type="html">&lt;p class="first last"&gt;本文记录给网站增加 giscus 最近评论。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;痛点&lt;/h2&gt;
-&lt;p&gt;最近修改网站设置后，giscuss 评论未显示。直到我进入了项目的 Discussion 才看到有一些最新留言，但这些留言未显示在文章下方。为不错过留言，我决定为网站增加最新评论功能。&lt;/p&gt;
+&lt;p&gt;最近修改网站设置后，giscus 评论未显示。直到我进入了项目的 Discussion 才看到有一些最新留言，但这些留言未显示在文章下方。为不错过留言，我决定为网站增加最新评论功能。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-3"&gt;
 &lt;h2&gt;分析&lt;/h2&gt;
@@ -22,11 +22,11 @@
 &lt;/div&gt;
 &lt;div class="section" id="section-5"&gt;
 &lt;h2&gt;未来计划&lt;/h2&gt;
-&lt;p&gt;对于评论功能，最开始使用的是 gitalk，后来有人反馈无法打开，于是增加了 giscuss。这两者之间，gitalk 使用 issue，giscuss 使用 discussion，相比来说，我认为 issue 会更基础一些。如果有一天未来要砍掉特性，discussion 必定在砍 issue 之前，当然了，砍特性这种事在公司还有现金流时，是不会发生的。&lt;/p&gt;
-&lt;p&gt;gitalk 和 giscuss 的优点是免费，如果要说缺点，gitalk 和 giscuss 的就是依赖一种并不是为此设计的用法，Github 可以处理掉这种不合适的用法，那是评论就会失效，迁移数据也许挺麻烦的。&lt;/p&gt;
+&lt;p&gt;对于评论功能，最开始使用的是 gitalk，后来有人反馈无法打开，于是增加了 giscus。这两者之间，gitalk 使用 issue，giscus 使用 discussion，相比来说，我认为 issue 会更基础一些。如果有一天未来要砍掉特性，discussion 必定在砍 issue 之前，当然了，砍特性这种事在公司还有现金流时，是不会发生的。&lt;/p&gt;
+&lt;p&gt;gitalk 和 giscus 的优点是免费，如果要说缺点，gitalk 和 giscus 的就是依赖一种并不是为此设计的用法，Github 可以处理掉这种不合适的用法，那是评论就会失效，迁移数据也许挺麻烦的。&lt;/p&gt;
 &lt;p&gt;所以，最好的方式是换自己支持评论的程序，或者依赖一些 serverless 的服务，将评论数据以开发的结构存放在可控的地方。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="website"></category><category term="comments"></category><category term="giscuss"></category></entry><entry><title>[翻译]制作自己的独立网站</title><link href="https://kaffa.im/indie-web-important.html" rel="alternate"></link><published>2024-06-13T01:00:00+08:00</published><updated>2024-06-13T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-13:/indie-web-important.html</id><summary type="html">&lt;p class="first last"&gt;本文翻译自 Dan Gillmor - Why the Indie Web movement is so important&lt;/p&gt;
+</content><category term="website"></category><category term="comments"></category><category term="giscus"></category></entry><entry><title>[翻译]制作自己的独立网站</title><link href="https://kaffa.im/indie-web-important.html" rel="alternate"></link><published>2024-06-13T01:00:00+08:00</published><updated>2024-06-13T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-13:/indie-web-important.html</id><summary type="html">&lt;p class="first last"&gt;本文翻译自 Dan Gillmor - Why the Indie Web movement is so important&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;原文：&lt;a class="reference external" href="https://dangillmor.com/2014/04/25/indie-web-important/"&gt;https://dangillmor.com/2014/04/25/indie-web-important/&lt;/a&gt;&lt;/p&gt;
 &lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;独立网络运动为何如此重要&lt;/h2&gt;
