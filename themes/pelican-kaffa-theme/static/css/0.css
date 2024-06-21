@@ -191,12 +191,28 @@ section.box .tag {
 }
 */
 
+@font-face {
+  font-family: "SimSun-Punc";
+  src: local("SimSun");
+  unicode-range: U+2018, U+2019, U+201C-201D;
+}
+
 .content {
     font-family:
+        "SimSun-Punc", "Open Sans", "Microsoft Yahei",
         BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,
         Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",
         Helvetica,Arial,sans-serif
 }
+
+[lang="zh"] {
+    font-family:
+        "SimSun-Punc", "Open Sans", "Microsoft Yahei",
+        BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,
+        Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",
+        Helvetica,Arial,sans-serif;
+}
+
 
 article section.hero a,
 article section.hero a:visited {
