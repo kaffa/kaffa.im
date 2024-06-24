@@ -2,10 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-06-24T19:36:00+08:00</updated><entry><title>当我们 Build in Public 时，我们谈些什么</title><link href="https://kaffa.im/what-we-talk-about-when-we-build-in-public.html" rel="alternate"></link><published>2024-06-24T19:36:00+08:00</published><updated>2024-06-24T19:36:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-24:/what-we-talk-about-when-we-build-in-public.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="build-in-public-1"&gt;
 &lt;h2&gt;Build in Public 是什么&lt;/h2&gt;
 &lt;p&gt;近在朋友圈常听闻 build in public 这组词。&lt;/p&gt;
-&lt;dl class="docutils"&gt;
-&lt;dt&gt;事实上，这个概念早在 2010 年就有了，&lt;a class="reference external" href="https://buffer.com/open"&gt;Buffer&lt;/a&gt;&lt;/dt&gt;
-&lt;dd&gt;采用透明文化经营公司，且一直延续至今。Buffer 如今有百万用户，且公司不但分享财务数据和工资，还与公众分享许多其他指标。它们的价值观是相信透明度的力量可以建立信任，保持高标准，并推动行业向前发展。&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;p&gt;事实上，这个概念早在 2010 年就有了，&lt;a class="reference external" href="https://buffer.com/open"&gt;Buffer&lt;/a&gt; 采用透明文化经营公司，且一直延续至今。Buffer 如今有百万用户，且公司不但分享财务数据和工资，还与公众分享许多其他指标。它们的价值观是相信透明度的力量可以建立信任，保持高标准，并推动行业向前发展。&lt;/p&gt;
 &lt;p&gt;Build in Public 中文意思是“公开构建”，即将构建产品的过程公开。初次听说时，略显得反商业直觉。但近 10 多年，每年都有采用此策略成功的公司。比如 2014 年的 Ghost，2018 年 Nomad List，Fast、Blogging for Devs、CopyAI、TailwindCSS、Vim.so、Affilimate 等。&lt;/p&gt;
 &lt;p&gt;想了解最新采用此策略的公司，只需要上社媒中查找 build-in-public 或 building-in-public 话题，就可以看到层出不群的新创公司。&lt;/p&gt;
 &lt;/div&gt;

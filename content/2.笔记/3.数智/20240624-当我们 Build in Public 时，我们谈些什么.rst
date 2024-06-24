@@ -14,8 +14,7 @@ Build in Public 是什么
 
 近在朋友圈常听闻 build in public 这组词。
 
-事实上，这个概念早在 2010 年就有了，`Buffer <https://buffer.com/open>`_
- 采用透明文化经营公司，且一直延续至今。Buffer 如今有百万用户，且公司不但分享财务数据和工资，还与公众分享许多其他指标。它们的价值观是相信透明度的力量可以建立信任，保持高标准，并推动行业向前发展。
+事实上，这个概念早在 2010 年就有了，`Buffer <https://buffer.com/open>`_ 采用透明文化经营公司，且一直延续至今。Buffer 如今有百万用户，且公司不但分享财务数据和工资，还与公众分享许多其他指标。它们的价值观是相信透明度的力量可以建立信任，保持高标准，并推动行业向前发展。
 
 Build in Public 中文意思是“公开构建”，即将构建产品的过程公开。初次听说时，略显得反商业直觉。但近 10 多年，每年都有采用此策略成功的公司。比如 2014 年的 Ghost，2018 年 Nomad List，Fast、Blogging for Devs、CopyAI、TailwindCSS、Vim.so、Affilimate 等。
 
