@@ -2,6 +2,7 @@
 ############################################################
 
 :date: 2024-03-01 23:30
+:updated: 2024-06-22 09:30
 :author: Kaffa
 :category: digital
 :tags: quotation marks
@@ -30,6 +31,60 @@
         font-family: TimesNewRoman, BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif
     }
 
+2024年6月22日更新：得空将中文标点改为了宋体。
+
+.. code-block:: css
+
+    @font-face {
+      font-family: "SimSun-Punc";
+      src: local("SimSun");
+      unicode-range:
+        U+2014, /* — */
+        U+2018, /* ‘ */
+        U+2019, /* ’ */
+        U+201C, /* “ */
+        U+201D, /* ” */
+        U+3001, /* 、 */
+        U+3002, /* 。 */
+        U+300A, /* 《 */
+        U+300B, /* 》 */
+        U+300C, /* 「 */
+        U+300D, /* 」 */
+        U+300E, /*『 */
+        U+300F, /* 』*/
+        U+2013, /* – */
+        U+3014, /* 〔 */
+        U+3015, /* 〕 */
+        U+3010, /* 【 */
+        U+3011, /* 】 */
+        U+2026, /* … */
+        U+3008, /* 〈 */
+        U+3009, /*  〉*/
+        U+FF01, /* ！ */
+        U+FF08, /* （ */
+        U+FF09, /* ） */
+        U+FF0C, /* ， */
+        U+FF0E, /* ．*/
+        U+FF1A, /* ： */
+        U+FF1B, /* ； */
+    　　 U+FF1F  /* ？ */
+    }
+
+    .content {
+        font-family:
+            "SimSun-Punc", "Open Sans", "Microsoft Yahei",
+            BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,
+            Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",
+            Helvetica,Arial,sans-serif
+    }
+
+    [lang="zh"] {
+        font-family:
+            "SimSun-Punc", "Open Sans", "Microsoft Yahei",
+            BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,
+            Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",
+            Helvetica,Arial,sans-serif;
+    }
 
 中文理想版式
 ====================

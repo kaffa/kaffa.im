@@ -217,6 +217,58 @@
 <span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">TimesNewRoman</span><span class="p">,</span><span class="w"> </span><span class="n">BlinkMacSystemFont</span><span class="p">,</span><span class="o">-</span><span class="n">apple-system</span><span class="p">,</span><span class="s2">&quot;Segoe UI&quot;</span><span class="p">,</span><span class="n">Roboto</span><span class="p">,</span><span class="n">Oxygen</span><span class="p">,</span><span class="n">Ubuntu</span><span class="p">,</span><span class="n">Cantarell</span><span class="p">,</span><span class="s2">&quot;Fira Sans&quot;</span><span class="p">,</span><span class="s2">&quot;Droid Sans&quot;</span><span class="p">,</span><span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span><span class="n">Helvetica</span><span class="p">,</span><span class="n">Arial</span><span class="p">,</span><span class="kc">sans-serif</span>
 <span class="p">}</span>
 </pre></div>
+<p>2024年6月22日更新：得空将中文标点改为了宋体。</p>
+<div class="highlight"><pre><span></span><span class="p">@</span><span class="k">font-face</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">font-family</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;SimSun-Punc&quot;</span><span class="o">;</span>
+<span class="w">  </span><span class="nt">src</span><span class="o">:</span><span class="w"> </span><span class="nt">local</span><span class="o">(</span><span class="s2">&quot;SimSun&quot;</span><span class="o">);</span>
+<span class="w">  </span><span class="nt">unicode-range</span><span class="o">:</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">2014</span><span class="o">,</span><span class="w"> </span><span class="c">/* — */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">2018</span><span class="o">,</span><span class="w"> </span><span class="c">/* ‘ */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">2019</span><span class="o">,</span><span class="w"> </span><span class="c">/* ’ */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">201C</span><span class="o">,</span><span class="w"> </span><span class="c">/* “ */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">201D</span><span class="o">,</span><span class="w"> </span><span class="c">/* ” */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">3001</span><span class="o">,</span><span class="w"> </span><span class="c">/* 、 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">3002</span><span class="o">,</span><span class="w"> </span><span class="c">/* 。 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">300A</span><span class="o">,</span><span class="w"> </span><span class="c">/* 《 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">300B</span><span class="o">,</span><span class="w"> </span><span class="c">/* 》 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">300C</span><span class="o">,</span><span class="w"> </span><span class="c">/* 「 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">300D</span><span class="o">,</span><span class="w"> </span><span class="c">/* 」 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">300E</span><span class="o">,</span><span class="w"> </span><span class="c">/*『 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">300F</span><span class="o">,</span><span class="w"> </span><span class="c">/* 』*/</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">2013</span><span class="o">,</span><span class="w"> </span><span class="c">/* – */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">3014</span><span class="o">,</span><span class="w"> </span><span class="c">/* 〔 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">3015</span><span class="o">,</span><span class="w"> </span><span class="c">/* 〕 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">3010</span><span class="o">,</span><span class="w"> </span><span class="c">/* 【 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">3011</span><span class="o">,</span><span class="w"> </span><span class="c">/* 】 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">2026</span><span class="o">,</span><span class="w"> </span><span class="c">/* … */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">3008</span><span class="o">,</span><span class="w"> </span><span class="c">/* 〈 */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">3009</span><span class="o">,</span><span class="w"> </span><span class="c">/*  〉*/</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">FF01</span><span class="o">,</span><span class="w"> </span><span class="c">/* ！ */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">FF08</span><span class="o">,</span><span class="w"> </span><span class="c">/* （ */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">FF09</span><span class="o">,</span><span class="w"> </span><span class="c">/* ） */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">FF0C</span><span class="o">,</span><span class="w"> </span><span class="c">/* ， */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">FF0E</span><span class="o">,</span><span class="w"> </span><span class="c">/* ．*/</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">FF1A</span><span class="o">,</span><span class="w"> </span><span class="c">/* ： */</span>
+<span class="w">    </span><span class="nt">U</span><span class="o">+</span><span class="nt">FF1B</span><span class="o">,</span><span class="w"> </span><span class="c">/* ； */</span>
+<span class="w">　　 </span><span class="nt">U</span><span class="o">+</span><span class="nt">FF1F</span><span class="w">  </span><span class="c">/* ？ */</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">content</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-family</span><span class="p">:</span>
+<span class="w">        </span><span class="s2">&quot;SimSun-Punc&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Open Sans&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Microsoft Yahei&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="n">BlinkMacSystemFont</span><span class="p">,</span><span class="o">-</span><span class="n">apple-system</span><span class="p">,</span><span class="s2">&quot;Segoe UI&quot;</span><span class="p">,</span><span class="n">Roboto</span><span class="p">,</span><span class="n">Oxygen</span><span class="p">,</span>
+<span class="w">        </span><span class="n">Ubuntu</span><span class="p">,</span><span class="n">Cantarell</span><span class="p">,</span><span class="s2">&quot;Fira Sans&quot;</span><span class="p">,</span><span class="s2">&quot;Droid Sans&quot;</span><span class="p">,</span><span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="n">Helvetica</span><span class="p">,</span><span class="n">Arial</span><span class="p">,</span><span class="kc">sans-serif</span>
+<span class="p">}</span>
+
+<span class="o">[</span><span class="nt">lang</span><span class="o">=</span><span class="s2">&quot;zh&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-family</span><span class="p">:</span>
+<span class="w">        </span><span class="s2">&quot;SimSun-Punc&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Open Sans&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Microsoft Yahei&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="n">BlinkMacSystemFont</span><span class="p">,</span><span class="o">-</span><span class="n">apple-system</span><span class="p">,</span><span class="s2">&quot;Segoe UI&quot;</span><span class="p">,</span><span class="n">Roboto</span><span class="p">,</span><span class="n">Oxygen</span><span class="p">,</span>
+<span class="w">        </span><span class="n">Ubuntu</span><span class="p">,</span><span class="n">Cantarell</span><span class="p">,</span><span class="s2">&quot;Fira Sans&quot;</span><span class="p">,</span><span class="s2">&quot;Droid Sans&quot;</span><span class="p">,</span><span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="n">Helvetica</span><span class="p">,</span><span class="n">Arial</span><span class="p">,</span><span class="kc">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
 <div class="section" id="section-3">
 <h2>中文理想版式</h2>
