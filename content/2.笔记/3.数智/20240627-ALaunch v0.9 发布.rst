@@ -1,0 +1,38 @@
+ALaunch v0.9 发布
+##################################################
+
+:date: 2024-06-27 22:34
+:author: Kaffa
+:category: digital
+:tags: ALaunch
+:slug: alaunch-v0.9-released
+:summary: 完成了 ALaunch 上一个版本已预告 v0.9 两个特性。
+:image: /static/img/alaunch.png
+
+
+将 `ALaunch <https://kaffa.im/alaunch-your-first-productivity-software.html>`_ 升级到 v0.9 版本，增加了快捷键修改的立即生效。
+
+ALaunch v0.9 版本
+====================
+
+新特性：
+
+1. 点击显示桌面按钮后，快捷键可以激活程序；
+2. 更改快捷键后，立即生效。
+
+
+预告
+====================
+
+ALaunch v1.0 将转为友情软件：与此网站友情链接的朋友，如果使用 Windows，可获得 1 枚注册码。
+
+注册码在达到预定数量时取消。
+
+实现过程花絮
+====================
+
+特性 1 的实现过程中，我甚至还去查看了 `ReactOS <https://reactos.org/>`_ 的源码，想弄明白 ShowDesktop 按钮点击后，是不是有啥特殊的消息。最终发现想复杂了，只要心静调试就够。
+
+特性 2 的实现引发了一些代码的坏味道，不过体验没有差别，甚至还更好。
+
+1.0 将是一个完整的重构版本，目前还没有太明显的特性。

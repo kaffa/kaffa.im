@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-06-24T19:36:00+08:00</updated><entry><title>当我们 Build in Public 时，我们谈些什么</title><link href="https://kaffa.im/what-we-talk-about-when-we-build-in-public.html" rel="alternate"></link><published>2024-06-24T19:36:00+08:00</published><updated>2024-06-24T19:36:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-24:/what-we-talk-about-when-we-build-in-public.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="build-in-public-1"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-06-27T22:34:00+08:00</updated><entry><title>ALaunch v0.9 发布</title><link href="https://kaffa.im/alaunch-v0.9-released.html" rel="alternate"></link><published>2024-06-27T22:34:00+08:00</published><updated>2024-06-27T22:34:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-27:/alaunch-v0.9-released.html</id><summary type="html">&lt;p class="first last"&gt;完成了 ALaunch 上一个版本已预告 v0.9 两个特性。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;将 &lt;a class="reference external" href="https://kaffa.im/alaunch-your-first-productivity-software.html"&gt;ALaunch&lt;/a&gt; 升级到 v0.9 版本，增加了快捷键修改的立即生效。&lt;/p&gt;
+&lt;div class="section" id="alaunch-v0-9-1"&gt;
+&lt;h2&gt;ALaunch v0.9 版本&lt;/h2&gt;
+&lt;p&gt;新特性：&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;点击显示桌面按钮后，快捷键可以激活程序；&lt;/li&gt;
+&lt;li&gt;更改快捷键后，立即生效。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-1"&gt;
+&lt;h2&gt;预告&lt;/h2&gt;
+&lt;p&gt;ALaunch v1.0 将转为友情软件：与此网站友情链接的朋友，如果使用 Windows，可获得 1 枚注册码。&lt;/p&gt;
+&lt;p&gt;注册码在达到预定数量时取消。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;实现过程花絮&lt;/h2&gt;
+&lt;p&gt;特性 1 的实现过程中，我甚至还去查看了 &lt;a class="reference external" href="https://reactos.org/"&gt;ReactOS&lt;/a&gt; 的源码，想弄明白 ShowDesktop 按钮点击后，是不是有啥特殊的消息。最终发现想复杂了，只要心静调试就够。&lt;/p&gt;
+&lt;p&gt;特性 2 的实现引发了一些代码的坏味道，不过体验没有差别，甚至还更好。&lt;/p&gt;
+&lt;p&gt;1.0 将是一个完整的重构版本，目前还没有太明显的特性。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital"></category><category term="ALaunch"></category></entry><entry><title>当我们 Build in Public 时，我们谈些什么</title><link href="https://kaffa.im/what-we-talk-about-when-we-build-in-public.html" rel="alternate"></link><published>2024-06-24T19:36:00+08:00</published><updated>2024-06-24T19:36:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-24:/what-we-talk-about-when-we-build-in-public.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="build-in-public-1"&gt;
 &lt;h2&gt;Build in Public 是什么&lt;/h2&gt;
 &lt;p&gt;近在朋友圈常听闻 build in public 这组词。&lt;/p&gt;
 &lt;p&gt;事实上，这个概念早在 2010 年就有了，&lt;a class="reference external" href="https://buffer.com/open"&gt;Buffer&lt;/a&gt; 采用透明文化经营公司，且一直延续至今。Buffer 如今有百万用户，且公司不但分享财务数据和工资，还与公众分享许多其他指标。它们的价值观是相信透明度的力量可以建立信任，保持高标准，并推动行业向前发展。&lt;/p&gt;
@@ -3375,57 +3396,5 @@ Photo by &lt;a href="https://unsplash.com/@darmau?utm_content=creditCopyText&amp
 &lt;p&gt;后追张岱，发现这本详细记载西湖的小书，亦很欢喜。&lt;/p&gt;
 &lt;p&gt;书名若翻译为英文，为《Dream Seeking At West Lake》较恰当。&lt;/p&gt;
 &lt;p&gt;若在人生不同时代，年少和年老，都游历西湖，此书会增添几多趣味，不应错过。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"></category><category term="张岱"></category></entry><entry><title>夜航船</title><link href="https://kaffa.im/ye-hang-chuan.html" rel="alternate"></link><published>2024-02-22T14:00:00+08:00</published><updated>2024-02-22T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-02-22:/ye-hang-chuan.html</id><summary type="html">&lt;p class="first last"&gt;此书应在 15 岁以前读，或在 50 岁以后读，既然 15 岁前未涉之，待 50 岁后再细品。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;注&lt;/h2&gt;
-&lt;p&gt;此词条特指明代张宗子《夜航船》，又有清人破额山人之笔记小说集《夜航船》，未读不表。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
-&lt;h2&gt;评分&lt;/h2&gt;
-&lt;p&gt;⭐⭐⭐⭐⭐
-⭐⭐⭐⭐ 9/10&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-4"&gt;
-&lt;h2&gt;张岱其人&lt;/h2&gt;
-&lt;p&gt;张岱出自书香门第，祖上四代为官，高祖至四品，云南按察副使，甘肃行太仆卿。他世居浙江山阴（绍兴），祖籍为四川绵竹（剑门关之南），字宗子，号陶庵、陶庵老人、蝶庵、古剑老人、古剑陶庵、古剑陶庵老人、古剑蝶庵老人，晚年号六休居士。&lt;/p&gt;
-&lt;p&gt;张岱祖辈虽织入官僚集团，但至他这代，家族已然没落，岱为长，存“公侯之后，必复其始”的心结，其十六岁考上秀才，但乡试总不中举，天启四年（1624年）、天启七年（1627年）、崇祯八年（1635年）三次参加，三次失利。举人够不着，更别说进士，眼看三四十岁了，也许张岱隐约感觉此生难登仕途，但数十载寒窗苦读，已然一身诗书才华，他产生了修明史的念头，此后也成为他的代表成就《石匮书》，共二百二十卷。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-5"&gt;
-&lt;h2&gt;本书&lt;/h2&gt;
-&lt;p&gt;本书是张编撰的百科全书，有4000多条目，拿今之高考语文作比，应不超1000考点，拿张岱之资质与努力，今天来做个博导肯定没问题。且有说，天下学问，惟夜航船中最难对付。依次看，若有幸15岁前读完本书的人，必通文学，除此，此间的知识拿到今天多是有趣而无用的，到 50 后再读也不为晚了。&lt;/p&gt;
-&lt;p&gt;书名若翻译为英文，为《the night ferry》比较恰当。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-6"&gt;
-&lt;h2&gt;版本&lt;/h2&gt;
-&lt;p&gt;版本。本书就是那种需要挑版本的，挑选古籍出版社的通识，我编了个段子，不必太较真：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;中书上古国家队，商印专译国图影。&lt;/div&gt;
-&lt;div class="line"&gt;浙古凤凰细甄别，广陵岳麓亦好看。&lt;/div&gt;
-&lt;div class="line"&gt;黄山齐鲁崇文寻，中州九州师大捡。&lt;/div&gt;
-&lt;div class="line"&gt;中社科学北京藏，三联生活高教专。&lt;/div&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;本书的浙古版就是原汁原味的，中书有好几个版本，常见版本是文白对照的，这本我拥有的是古吴轩，是苏州系，风格比较雅致。&lt;/p&gt;
-&lt;p&gt;我的选择逻辑是这样的，基本没有场景会与人就《夜航船》的内容论到字的级别，竖版留到 50 岁后读。古吴轩是有品质且有阅读快感的，但最主要的原因还是...(此处省略一个字)。&lt;/p&gt;
-&lt;p&gt;若你算个有闲人，最好寻一工作日午后，去到一间有夕阳西晒但也有空调的老书店中，站在书架前亲自选选读读，你在那个时间挑中的版本定最适合的版本。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-7"&gt;
-&lt;h2&gt;段子&lt;/h2&gt;
-&lt;p&gt;张公子的船，我的理解是指打破圈层的社交场合中的说话用典不出丑的人均通识。&lt;/p&gt;
-&lt;p&gt;容小僧伸脚，是说「秀才」认澹台灭明是两人而尧舜是一人的典故。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-8"&gt;
-&lt;h2&gt;摘录&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;九天&lt;/p&gt;
-&lt;p&gt;东方苍天，南方炎天，西方浩天，北方玄天，东北旻天，西北幽天，西南朱天，东南阳天，中央钧天。&lt;/p&gt;
-&lt;p&gt;二十八宿&lt;/p&gt;
-&lt;p&gt;东方七宿：角，木蛟；亢，金龙；氐，土貉；房，日兔；心，月狐；尾，火虎；箕，水豹。
-北方七宿；斗，木獬；牛，金牛；女，土蝠；虚，日鼠；危，月燕；室，火猪；壁，水㺄。
-西方七宿：奎，木狼；娄，金狗；胃，土雉；昴，日鸡；毕，月乌；觜，火猴；参，水猿。
-南方七宿：井，木犴；鬼，金羊；柳，土獐；星，日马；张，月鹿；翼，火蛇；轸，水蚓。&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;/div&gt;
 </content><category term="book"></category><category term="张岱"></category></entry></feed>
