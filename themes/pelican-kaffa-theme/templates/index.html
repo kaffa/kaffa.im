@@ -119,6 +119,30 @@
                 </nav>
             </section>
 
+            {% if COMMENT_NODES|count > 0 %}
+            <section class="box">
+                <h3 class="mb-3">最新回复</h3>
+                {% for node in COMMENT_NODES %}
+                    {% for edge in node['comments']['edges'] %}
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="{{ edge['node']['author']['avatarUrl'] }}" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7">
+                                <a href="{{ SITEURL }}/{{ node['title'] }}" title="点击跳转">{{ edge['node']['body'] }}</a>
+                                <time datetime="{{ edge['node']['publishedAt'] }}">{{ edge['node']['publishedAt'].split('T')[0] }}</time>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% endfor %}
+                <p class="is-primary mt-3"><a href="{{ COMMENT_ALL_URL }}" title="所有评论">更多 ...</a></p>
+            </section>
+            {% endif %}
+
             <section class="box">
                 <h3>专栏推荐（AFF）</h3>
                 <div class="mt-4">
@@ -294,30 +318,6 @@
                 </div>
                 <p class="is-primary mt-3"><a href="{{ SITEURL }}/tags.html" title="所有标签">更多 ...</a></p>
             </section>
-
-            {% if COMMENT_NODES|count > 0 %}
-            <section class="box">
-                <h3 class="mb-3">最新回复</h3>
-                {% for node in COMMENT_NODES %}
-                    {% for edge in node['comments']['edges'] %}
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img class="is-rounded" src="{{ edge['node']['author']['avatarUrl'] }}" alt="avatar">
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <div class="block is-size-7">
-                                <a href="{{ SITEURL }}/{{ node['title'] }}" title="点击跳转">{{ edge['node']['body'] }}</a>
-                                <time datetime="{{ edge['node']['publishedAt'] }}">{{ edge['node']['publishedAt'].split('T')[0] }}</time>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                {% endfor %}
-                <p class="is-primary mt-3"><a href="{{ COMMENT_ALL_URL }}" title="所有评论">更多 ...</a></p>
-            </section>
-            {% endif %}
 
             <section class="box">
                 <h3 class="mb-3">动态小计</h3>
