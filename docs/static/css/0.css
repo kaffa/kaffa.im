@@ -9,10 +9,10 @@
     --c-shadow: hsl(0, 0%, 100%);
     --c-nav-bg: hsl(0, 0%, 96%);
     --c-nav-bd: hsl(0, 0%, 79%);
-    /*
     --c-main-bg: hsl(0, 0%, 86%);
-    */
+    /*
     --c-main-bg: hsl(189, 100%, 97%);
+    */
     --c-hero-bg: hsl(0, 0%, 100%);
     --c-title-shadow: hsl(0, 0%, 100%);
     --media-box-bg-color: hsl(0, 0%, 96%);
@@ -212,7 +212,7 @@ section.box .tag {
 
 .content {
     font-family:
-        "SimSun-Punc", "Open Sans", "Microsoft Yahei",
+        "SimSun-Punc", "Microsoft Yahei", "Open Sans",
         BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,
         Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",
         Helvetica,Arial,sans-serif
@@ -220,7 +220,7 @@ section.box .tag {
 
 [lang="zh"] {
     font-family:
-        "SimSun-Punc", "Open Sans", "Microsoft Yahei",
+        "SimSun-Punc", "Microsoft Yahei", "Open Sans",
         BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,
         Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",
         Helvetica,Arial,sans-serif;
