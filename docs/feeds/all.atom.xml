@@ -67,12 +67,11 @@
 &lt;div class="section" id="section-13"&gt;
 &lt;h3&gt;3. 系统特性&lt;/h3&gt;
 &lt;p&gt;1）本地优先&lt;/p&gt;
-&lt;p&gt;2）支持 Windows 和 macOS&lt;/p&gt;
+&lt;p&gt;2）支持 Windows 和 macOS，支持 Windows 10 及以上系统，支持 32 位系统&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-14"&gt;
 &lt;h3&gt;4. 非功能需求&lt;/h3&gt;
-&lt;p&gt;1）支持 Windows 10 及以上系统，支持 32 位系统。&lt;/p&gt;
-&lt;p&gt;2）操作响应 1s 以内。&lt;/p&gt;
+&lt;p&gt;1）操作响应 1s 以内。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content><category term="project"></category><category term="KN"></category></entry><entry><title>ALaunch v0.9 发布</title><link href="https://kaffa.im/alaunch-v0.9-released.html" rel="alternate"></link><published>2024-06-27T22:34:00+08:00</published><updated>2024-06-27T22:34:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-27:/alaunch-v0.9-released.html</id><summary type="html">&lt;p class="first last"&gt;完成了 ALaunch 上一个版本已预告 v0.9 两个特性。&lt;/p&gt;
