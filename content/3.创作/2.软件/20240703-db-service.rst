@@ -44,3 +44,18 @@ OLAP 或者 OLTP 之争由来已久，在使用中体会 PostgreSQL 的复杂度
 Talk is cheap, show me the code: `db_service.py <https://github.com/kaffa/kaffa.im/blob/master/content/code/db_service.py>`_
 
 状态变化后刷新，用处不大，后面有用再说。
+
+
+价值
+==========
+
+写成 .cmd 文件，结合 ALaunch 的以管理员启动，再配置一个热键，处理效率明显提升。
+
+以前需要::
+
+    ShowDesktop -> 右键点击我的电脑 -> G -> 服务 -> 按键按名称查找服务 -> 右键 -> 操作动作（启动 / 停止 / 重启）
+
+现在简化为::
+
+    快捷键 -> 选中要处理的服务 -> 点按钮操作
+

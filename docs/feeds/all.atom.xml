@@ -29,6 +29,18 @@
 &lt;p&gt;Talk is cheap, show me the code: &lt;a class="reference external" href="https://github.com/kaffa/kaffa.im/blob/master/content/code/db_service.py"&gt;db_service.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;状态变化后刷新，用处不大，后面有用再说。&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;价值&lt;/h2&gt;
+&lt;p&gt;写成 .cmd 文件，结合 ALaunch 的以管理员启动，再配置一个热键，处理效率明显提升。&lt;/p&gt;
+&lt;p&gt;以前需要:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ShowDesktop -&amp;gt; 右键点击我的电脑 -&amp;gt; G -&amp;gt; 服务 -&amp;gt; 按键按名称查找服务 -&amp;gt; 右键 -&amp;gt; 操作动作（启动 / 停止 / 重启）
+&lt;/pre&gt;
+&lt;p&gt;现在简化为:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+快捷键 -&amp;gt; 选中要处理的服务 -&amp;gt; 点按钮操作
+&lt;/pre&gt;
+&lt;/div&gt;
 </content><category term="software"></category><category term="database"></category><category term="windows-service"></category></entry><entry><title>2024年第25周周报</title><link href="https://kaffa.im/weekly-2024-w26.html" rel="alternate"></link><published>2024-06-30T23:00:00+08:00</published><updated>2024-06-30T23:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-06-30:/weekly-2024-w26.html</id><summary type="html">&lt;p class="first last"&gt;2024年第26周周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第26周周报&lt;/h2&gt;
