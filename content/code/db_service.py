@@ -130,7 +130,7 @@ def init_ctl(root):
     btn_service.grid(column=5, row=1, pady=GAP)
 
     services = get_services()
-    tree = Treeview(frm, height=10, columns=('名称', '描述', '状态'), padding=GAP)
+    tree = Treeview(frm, height=20, columns=('名称', '描述', '状态'), padding=GAP)
     tree.heading('名称', text='名称')
     tree.heading('描述', text='描述')
     tree.heading('状态', text='状态')

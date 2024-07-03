@@ -24,15 +24,16 @@
 &lt;/div&gt;
 &lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;解决&lt;/h2&gt;
-&lt;p&gt;用较少的依赖，在 AI 加持下，几小时自己写了一个 这些数据库服务的管理器。&lt;/p&gt;
+&lt;p&gt;用较少的依赖，在 AI 加持下，几小时自己写了一个管理这些数据库服务的管理器。&lt;/p&gt;
 &lt;p&gt;类似 Apache httpd 的那个，支持启动、停止、重启、启用、禁用等。&lt;/p&gt;
+&lt;img alt="db service manager" src="/static/img/2024/db-service.png" /&gt;
 &lt;p&gt;Talk is cheap, show me the code: &lt;a class="reference external" href="https://github.com/kaffa/kaffa.im/blob/master/content/code/db_service.py"&gt;db_service.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;状态变化后刷新，用处不大，后面有用再说。&lt;/p&gt;
 &lt;p&gt;确实，AI 帮助我更快的完成了这个工具，大约是十多年前，我使用 C# + WinForm 完成过一个也许更健壮的版本，这次是第二次实现，从以前的 16 hours 缩短为 2 hours，看来只要有经验，在 AI 的加持下，10x 程序员也许不容易得，但 2x 4x 8x 也是不难的。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-3"&gt;
 &lt;h2&gt;价值&lt;/h2&gt;
-&lt;p&gt;写成 .cmd 文件，结合 ALaunch 的以管理员启动，再配置一个热键，处理效率明显提升。&lt;/p&gt;
+&lt;p&gt;写成 .cmd 文件，结合 &lt;a class="reference external" href="https://kaffa.im/alaunch-your-first-productivity-software"&gt;ALaunch&lt;/a&gt; 的以管理员启动，再配置一个热键，处理效率明显提升。&lt;/p&gt;
 &lt;p&gt;以前需要:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 ShowDesktop -&amp;gt; 右键点击我的电脑 -&amp;gt; G -&amp;gt; 服务 -&amp;gt; 按键按名称查找服务 -&amp;gt; 右键 -&amp;gt; 操作动作（启动 / 停止 / 重启）

@@ -7,6 +7,7 @@ DB Service
 :tags: database, windows-service
 :slug: db-service
 :summary: DB Service 是为了减少管理数据库时间而写的小脚本，此等工具在 AI 加持下，从以前的可能需要 16 hours，缩短为 2 hours。
+:image: /static/img/2024/db-service.png
 
 痛点
 ==========
@@ -37,9 +38,12 @@ OLAP 或者 OLTP 之争由来已久，在使用中体会 PostgreSQL 的复杂度
 解决
 ==========
 
-用较少的依赖，在 AI 加持下，几小时自己写了一个 这些数据库服务的管理器。
+用较少的依赖，在 AI 加持下，几小时自己写了一个管理这些数据库服务的管理器。
 
 类似 Apache httpd 的那个，支持启动、停止、重启、启用、禁用等。
+
+.. image:: /static/img/2024/db-service.png
+    :alt: db service manager
 
 Talk is cheap, show me the code: `db_service.py <https://github.com/kaffa/kaffa.im/blob/master/content/code/db_service.py>`_
 
@@ -51,7 +55,7 @@ Talk is cheap, show me the code: `db_service.py <https://github.com/kaffa/kaffa.
 价值
 ==========
 
-写成 .cmd 文件，结合 ALaunch 的以管理员启动，再配置一个热键，处理效率明显提升。
+写成 .cmd 文件，结合 `ALaunch <https://kaffa.im/alaunch-your-first-productivity-software>`_ 的以管理员启动，再配置一个热键，处理效率明显提升。
 
 以前需要::
 
