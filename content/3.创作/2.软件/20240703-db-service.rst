@@ -6,7 +6,7 @@ DB Service
 :category: software
 :tags: database, windows-service
 :slug: db-service
-:summary: 每次
+:summary: DB Service 是为了减少管理数据库时间而写的小脚本，此等工具在 AI 加持下，从以前的可能需要 16 hours，缩短为 2 hours。
 
 痛点
 ==========
@@ -44,6 +44,8 @@ OLAP 或者 OLTP 之争由来已久，在使用中体会 PostgreSQL 的复杂度
 Talk is cheap, show me the code: `db_service.py <https://github.com/kaffa/kaffa.im/blob/master/content/code/db_service.py>`_
 
 状态变化后刷新，用处不大，后面有用再说。
+
+确实，AI 帮助我更快的完成了这个工具，大约是十多年前，我使用 C# + WinForm 完成过一个也许更健壮的版本，这次是第二次实现，从以前的 16 hours 缩短为 2 hours，看来只要有经验，在 AI 的加持下，10x 程序员也许不容易得，但 2x 4x 8x 也是不难的。
 
 
 价值

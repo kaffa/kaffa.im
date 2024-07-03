@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-07-03T12:00:00+08:00</updated><entry><title>DB Service</title><link href="https://kaffa.im/db-service.html" rel="alternate"></link><published>2024-07-03T12:00:00+08:00</published><updated>2024-07-03T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-07-03:/db-service.html</id><summary type="html">&lt;p class="first last"&gt;每次&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-07-03T12:00:00+08:00</updated><entry><title>DB Service</title><link href="https://kaffa.im/db-service.html" rel="alternate"></link><published>2024-07-03T12:00:00+08:00</published><updated>2024-07-03T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-07-03:/db-service.html</id><summary type="html">&lt;p class="first last"&gt;DB Service 是为了减少管理数据库时间而写的小脚本，此等工具在 AI 加持下，从以前的可能需要 16 hours，缩短为 2 hours。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;痛点&lt;/h2&gt;
 &lt;p&gt;本机安装了非常多的数据库服务以供开发和备份，每次需要启动和停止服务，操作比较费时间。&lt;/p&gt;
@@ -28,6 +28,7 @@
 &lt;p&gt;类似 Apache httpd 的那个，支持启动、停止、重启、启用、禁用等。&lt;/p&gt;
 &lt;p&gt;Talk is cheap, show me the code: &lt;a class="reference external" href="https://github.com/kaffa/kaffa.im/blob/master/content/code/db_service.py"&gt;db_service.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;状态变化后刷新，用处不大，后面有用再说。&lt;/p&gt;
+&lt;p&gt;确实，AI 帮助我更快的完成了这个工具，大约是十多年前，我使用 C# + WinForm 完成过一个也许更健壮的版本，这次是第二次实现，从以前的 16 hours 缩短为 2 hours，看来只要有经验，在 AI 的加持下，10x 程序员也许不容易得，但 2x 4x 8x 也是不难的。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="section-3"&gt;
 &lt;h2&gt;价值&lt;/h2&gt;
