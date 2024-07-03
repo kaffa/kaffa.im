@@ -1,4 +1,4 @@
-2024年第25周周报
+2024年第26周周报
 ##################################################
 
 :date: 2024-06-30 23:00
@@ -32,8 +32,7 @@
 
 1. 空调已维修，使用的京东服务。有一部检测后，师傅说不需要加雪种，但产生100高空作业费，另外一台加了雪种，但师傅说业内一般加到4，我也不知道4是什么，难道是4帕斯卡，加完后，我也不知是否到了4，师傅小心翼翼的找我要了个好评。
 
-2. 看到一个有意思的项目，可以将自己 GitHub 上的项目按编程语言或技术作一个总结，我试了一下，最后\ `呈现的结果 <https://github.com/kaffa/starred>`_\ 。以前统计过，自己的职业生涯涉及了 21 种计算机语言，这里居然统计出 47 种之多：
-Assembly、Batchfile、C、C#、C++、CSS、Clojure、Common Lisp、D、Dart、Dockerfile、Emacs Lisp、F*、Go、HTML、Java、JavaScript、Julia、Jupyter Notebook、Kotlin、Lua、MDX、Makefile、Markdown、Mojo、Nim、Objective-C、Others、PHP、Pascal、Perl、PowerShell、Pug、Python、Red、Ruby、Rust、SCSS、Scheme、Shell、Solidity、Svelte、Swift、Tcl、TypeScript、V、Vue
+2. 看到一个有意思的项目，可以将自己 GitHub 上的项目按编程语言或技术作一个总结，我试了一下，最后\ `呈现的结果 <https://github.com/kaffa/starred>`_\ 。以前统计过，自己的职业生涯涉及了 21 种计算机语言，这里居然统计出 47 种之多：Assembly、Batchfile、C、C#、C++、CSS、Clojure、Common Lisp、D、Dart、Dockerfile、Emacs Lisp、F*、Go、HTML、Java、JavaScript、Julia、Jupyter Notebook、Kotlin、Lua、MDX、Makefile、Markdown、Mojo、Nim、Objective-C、Others、PHP、Pascal、Perl、PowerShell、Pug、Python、Red、Ruby、Rust、SCSS、Scheme、Shell、Solidity、Svelte、Swift、Tcl、TypeScript、V、Vue
 。其中，有几个我也不知道是啥，比如 Pug 和 Red，似乎后者是从 EE 作者那边的得知的，还需去掉 Others，加上一种 Cangji。我看差不多也有 40 种，因为之中有一些是技术框架，比如 Svelte，以及一些文件格式，Dockerfile。
 
 3. 每次用 RSS 关键字去挖掘信息源，总会挖出一些不错的内容，比如一些聚合站点，一些内容不错的周刊，https://morss.it/。我们可以订阅、聚合各种信息源，按很少想过我们是否需要它们。此时，老婆关于扔东西的方法启发了我，不要一一挑选你要扔掉什么，而是把所有的东西摆出来，从中选择你需要的，剩余的就是要扔的。这个方法对待 RSS 订阅也是一样，尤其是当你进入 10000+ Feeds 俱乐部时。其实对于大多数人，10个订阅就足够了，但这里的 10 个必然不是个人的，而是领域聚合的。比如阮一峰的博客就还不错。
