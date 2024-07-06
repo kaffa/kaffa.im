@@ -1,0 +1,17 @@
+工作的原理·发现问题篇
+########################################################
+
+:date: 2024-05-18 22:00
+:author: Kaffa
+:category: book
+:tags: work
+:slug: the-principle-of-work-the-problem-discovering-chapter
+:summary: 作为工作的原理的上篇，下次遇到我会翻看翻看的。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/2LSidbLDU4yvTvU3ZpDLdx
+
+
+想读
+====================
+
+解决问题篇中凸显了思考技术关键点，我对这本也有一个较高预期。
