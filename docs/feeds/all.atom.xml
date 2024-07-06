@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-07-05T09:00:00+08:00</updated><entry><title>工作的原理·解决问题篇</title><link href="https://kaffa.im/the-principle-of-work-the-problem-solving-chapter.html" rel="alternate"></link><published>2024-07-05T09:00:00+08:00</published><updated>2024-07-05T09:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-07-05:/the-principle-of-work-the-problem-solving-chapter.html</id><summary type="html">&lt;p class="first last"&gt;如果你从事咨询有关的工作，可以找麦肯锡的素材来翻看翻看。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-07-05T22:00:00+08:00</updated><entry><title>工作的原理·发现问题篇</title><link href="https://kaffa.im/the-principle-of-work-the-problem-discovering-chapter.html" rel="alternate"></link><published>2024-07-05T22:00:00+08:00</published><updated>2024-07-05T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-07-05:/the-principle-of-work-the-problem-discovering-chapter.html</id><summary type="html">&lt;p class="first last"&gt;作为工作的原理的上篇，下次遇到我会翻看翻看的。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;想读&lt;/h2&gt;
+&lt;p&gt;解决问题篇中凸显了思考技术关键点，我对这本也有一个较高预期。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="book"></category><category term="work"></category></entry><entry><title>工作的原理·解决问题篇</title><link href="https://kaffa.im/the-principle-of-work-the-problem-solving-chapter.html" rel="alternate"></link><published>2024-07-05T09:00:00+08:00</published><updated>2024-07-05T09:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-07-05:/the-principle-of-work-the-problem-solving-chapter.html</id><summary type="html">&lt;p class="first last"&gt;如果你从事咨询有关的工作，可以找麦肯锡的素材来翻看翻看。&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;评分&lt;/h2&gt;
 &lt;p&gt;⭐⭐⭐⭐⭐
@@ -1063,12 +1068,7 @@ container.append(svg.node());
 &lt;h2&gt;评论&lt;/h2&gt;
 &lt;p&gt;理解商业和管理业务最重要的几本书之一。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="book"></category><category term="marketing"></category></entry><entry><title>工作的原理·发现问题篇</title><link href="https://kaffa.im/the-principle-of-work-the-problem-discovering-chapter.html" rel="alternate"></link><published>2024-05-18T22:00:00+08:00</published><updated>2024-05-18T22:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-05-18:/the-principle-of-work-the-problem-discovering-chapter.html</id><summary type="html">&lt;p class="first last"&gt;作为工作的原理的上篇，下次遇到我会翻看翻看的。&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;想读&lt;/h2&gt;
-&lt;p&gt;解决问题篇中凸显了思考技术关键点，我对这本也有一个较高预期。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"></category><category term="work"></category></entry><entry><title>所有旅生，AI的一图定位来了</title><link href="https://kaffa.im/all-travelers-ai-geo-guessing-is-here.html" rel="alternate"></link><published>2024-05-13T21:59:00+08:00</published><updated>2024-05-13T21:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-05-13:/all-travelers-ai-geo-guessing-is-here.html</id><summary type="html">&lt;p class="first last"&gt;AI 参与的网络迷踪，效果如何呢？&lt;/p&gt;
+</content><category term="book"></category><category term="marketing"></category></entry><entry><title>所有旅生，AI的一图定位来了</title><link href="https://kaffa.im/all-travelers-ai-geo-guessing-is-here.html" rel="alternate"></link><published>2024-05-13T21:59:00+08:00</published><updated>2024-05-13T21:59:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-05-13:/all-travelers-ai-geo-guessing-is-here.html</id><summary type="html">&lt;p class="first last"&gt;AI 参与的网络迷踪，效果如何呢？&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="ai-1"&gt;
 &lt;h2&gt;AI 网络迷踪来啦&lt;/h2&gt;
 &lt;p&gt;网络迷踪：在互联网社区中，一种通过一张图片确定图片拍摄位置的游戏。这个游戏的神奇之处在于，人们低估了一张图片带有的特征信息。&lt;/p&gt;
