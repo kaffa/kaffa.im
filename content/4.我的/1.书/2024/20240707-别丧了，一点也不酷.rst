@@ -8,7 +8,7 @@
 :slug: dont-be-sad-it-s-not-cool-at-all
 :summary: 作为类似的心理学书籍，所用的方法主要是认知行为疗法，分析行为根因，拆解，并且矫正观念。
 :image: /static/img/2024/hero.png
-:subject_url: https://neodb.social/book/1HiY7wgL6jxnTmO2q5nST4
+:subject_url: https://neodb.social/book/4dGxrH5v2kQwHoa1oZH9tV
 
 
 
