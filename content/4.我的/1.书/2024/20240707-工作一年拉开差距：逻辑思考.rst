@@ -4,11 +4,11 @@
 :date: 2024-07-07 00:31
 :author: Kaffa
 :category: book
-:tags: 
+:tags: work
 :slug: one-year-of-work-widens-the-gap-logical-thinking
 :summary: 记录以为你避坑。
 :image: /static/img/2024/hero.png
-:subject_url: https://book.douban.com/subject/36109139/
+:subject_url: https://neodb.social/book/406Xtdr0VW1ZCRuAVJgdoV
 
 
 
