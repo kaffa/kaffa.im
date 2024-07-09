@@ -22,7 +22,7 @@ mark 备读"""
 评分
 ====================
 
-""" + ('⭐⭐⭐⭐⭐' if rank >= 5 else '') + '\n' + '⭐' * (rank - 5) + f' {rank} / 10')
+""" + ('⭐⭐⭐⭐⭐' if rank >= 5 else '⭐' * rank) + '\n' + '⭐' * (rank - 5) + f' {rank} / 10')
 
     with open('book/' + filename, 'w', encoding="utf-8") as f:
         f.write(f"""{book['name']}
