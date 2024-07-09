@@ -11,6 +11,7 @@ Kaffa.im v2.0 - KaffaWeb: Kunnect Adventures & Fun
 
 - Python
 - Pelican
+- featured_image: python -m pip install pelican-featured-image
 - Pelican-Kaffa-Theme
 - PlantUML-Kaffa-Plugin  
 - Bash
