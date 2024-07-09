@@ -8,7 +8,7 @@ book_list = data.to_dict('index')
 for i, book in book_list.items():
     date_ = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     book_name = book['name']
-    filename = f"20240403-{book_name}.rst"
+    filename = f"20240707-{book_name}.rst"
     slug = hashlib.md5(book['subject_url'].encode('utf-8')).hexdigest()
     rank = int(book['rank'])
     rank_section = """
