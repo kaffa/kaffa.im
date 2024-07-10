@@ -20,7 +20,8 @@ WordPress 忘记密码无法登录的解决方法
 
 假设用户名是 admin_username，在数据库中运行下面的 SQL::
 
-UPDATE wp_users SET user_pass=MD5('NEW_PASSWORD') WHERE wp_users.user_login='admin_username';
+    UPDATE wp_users SET user_pass=MD5('NEW_PASSWORD') WHERE wp_users.user_login='admin_username';
+
 
 这条语句会将管理员密码更新为 MD5 加密字符串，此时，就可以使用 NEW_PASSWORD 登录，登录后，WordPress 会自动更新密码为新加密字符格式。
 
