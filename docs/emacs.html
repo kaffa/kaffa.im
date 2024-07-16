@@ -10,7 +10,7 @@
 
         gtag('config', 'G-7H14T5KLFJ');
     </script>
-        <title>Kaffa.im - Emacs</title>
+        <title>Kaffa.im - 终于有人把 Emacs 说透了，浓缩精华</title>
     <meta charset="utf-8"/>
     <!--
         Q1. 本站技术栈？
@@ -177,17 +177,21 @@
                 style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
             ><a href="./emacs.html"
                 rel="bookmark"
-                title="「Emacs」的永久链接"
-            >Emacs</a></h2>
+                title="「终于有人把 Emacs 说透了，浓缩精华」的永久链接"
+            >终于有人把 Emacs 说透了，浓缩精华</a></h2>
             <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
                     <a href="./author/kaffa.html">Kaffa</a>
                 发布于 <time datetime="2023-11-02T16:25:00+08:00">2023-11-02 周四</time>
+                最后修改 <time datetime="2024-07-10T07:46:00+08:00">2024-07-10 周三</time>
             </p>
         </div>
     </section>
 
     <section class="container is-max-desktop box content mt-4 p-6">
 
+        <div class="mb-2 has-text-centered">
+            <img src="/static/img/evergreen.svg" title="常青树" class="icon">
+        </div>
 
         <div class="mb-2">
             <span>分类:</span>
@@ -204,10 +208,99 @@
         </div>
 
 
-        <div class="section" id="section-1">
-<h2>简介</h2>
-<p><a class="reference external" href="https://www.gnu.org/software/emacs/">Emacs</a> 是我最想记录的软件之一，我将在此记录 Emacs Lisp 脚本。</p>
-<object data="https://kaffa.im/static/img/2023/emacs-img.svg" type="image/svg+xml">emacs-img.svg</object>
+        <object data="https://kaffa.im/static/img/2023/emacs-img.svg" type="image/svg+xml">emacs-img.svg</object>
+<pre class="literal-block">
+Emacs is an operating system with God's text editor included.
+</pre>
+<div class="section" id="emacs-1">
+<h2>闲聊 Emacs</h2>
+<p>标题党的用途是带领读者点击标题，这样内容才有被阅概率。就像你会在 Reddit、Emacs China 看到许多名人或爱好者论述和谈论 Emacs，以“宗教式”的狂热方式，这些言论都还不错，它们或浮夸或充满争议，但在传播环节立功了。这些方式中，相较来说，我个人更喜欢幽默一些的方式。</p>
+<p>诚如题记，“文本编辑器圣战”中 Emacs 被喻为神的编辑器和自带编辑器的操作系统。这说法很传神，它的设计和理念都很了不起。</p>
+<div class="section" id="freeware">
+<h3>Freeware 穿越软件生命周期</h3>
+<p>我所知道的，软件都有生命周期，但像它这个年龄段软件（40多年），大多都已在互联网博物馆中存档或更新得面目全非。</p>
+<p>这里我还不想像 Emacs 信徒一般鼓吹它，毕竟，内含 LSP 的当红辣子鸡 VSCode 才是如今市场份额第一的编辑器，还有如 Sublime Text 般，优秀到要不是欧元汇率我也想付费的存在。</p>
+<p>从文本编辑器的发展史上看，出现过的叫得出名字的文本编辑器至少有百种，现代依然活跃在公众视野的也有几十种。但其中的大多数从文本编辑基础需求角度上看是类似的，只含少量（10%）自定义能力的差异，从产品角度，它们相互竞争却卷不开差距。</p>
+<p>虽然大多这些编辑器通过编程都可以继续升级以集成多种场景，但更新软件很花钱和时间，而且我们不能将未集成的功能纳入相互比较的差异点。</p>
+<p>对多种文本编辑任务场景的支持很关键，但不是你有我无，只是你有我优。从这点来说，拉平差异是成本投入问题。</p>
+<p>文本编辑器赛道非常长，一个高级程序员的诞生需要好几年时间，在这种人人所需的基础工具上，产品特性几年的时间产生的差异可以忽略，也很少有什么软件特性是软件 A 可以集成但软件 B 没法集成的。</p>
+<p>那么回到 Emacs，它与其他编辑器真正的差异是什么呢？这是一件需要生活慢下来才能弄明白的东西，简单来说，它更加长期主义。</p>
+<p>如果问下个 50 年之后 VSCode 还会不会存在，你也许和我一样不太确定，毕竟 VSCode 是微软发薪水的团队开发的，而 Emacs 是开源运动鼻祖 RMS 的 Freeware 代表作。</p>
+<p>这是自发与半强制的差异。</p>
+<blockquote>
+It's not about the money, money, money. We don't need your money, money, money. We just wanna make the world dance.</blockquote>
+<p>维护 Freeware 没有 Money 的回报，纯粹是因为总有一群人想 make the world dance，就和孩子喜欢飞机和火箭一样，所以可以确定 50 年后的 Emacs 一定还会有人升级和更新它，它会比现在的版本更进化。</p>
+</div>
+<div class="section" id="emacs-2">
+<h3>Emacs 是一颗生长的树</h3>
+<p>一方面，它的根是历史更加悠久的编程语言 C，它的树枝是 Emacs Lisp，因此它会像树一样有生命力，自带进化内驱力，能分支，能合并，能吸纳其它先进技术，随着操作系统进化的编辑器；另一方面，它的主模式和辅助模式设计，也是一颗能复用能生长的使用场景树，它能将每种模式下的一个用户行为定义为一个命令，用户可以选择将高频场景绑定为逐级快捷键，从而实现对高频问题解决方案的手指肌肉记忆，从认知心理学角度看，这是最佳效率神器。</p>
+<p>这一切都和它的设计有关，它以 C 实现核心编辑、缓冲区及回显，百万级 Emacs Lisp 动态解析实现易变化的部分 <a class="footnote-reference" href="#f1" id="footnote-reference-1">[1]</a>，变与不变在 Emacs 中统一起来。Emacs 是能实现定制化最高的文本编辑器，因为它选择开源、详细充分的文档与内置简单的语言 <a class="footnote-reference" href="#f2" id="footnote-reference-2">[2]</a> Emacs Lisp 的原因，几乎实现了每个软件的每个“细胞”可被自定义。</p>
+</div>
+<div class="section" id="section-1">
+<h3>蠢蠢欲动</h3>
+<p>现在你也许对 Emacs 关键之处有所认识，但我想说的是，即便是软件专业人士，也最好在有几年编写程序的经验后再去系统学习 Emacs，尤其是 Windows 使用者而言，Windows 上 Emacs 的快捷键和系统其他软件相异，这需要使用者的头脑能适应两套模式。当然，如果你对心智的系统1和系统2有认识，也有过二套以上思维模式并行的体验，比如黑客与画家，文学与编程，或者读过《Thinking, Fast and Slow》，就知道我在说什么。而原生的 macOS 就简单一些。当然，你如果听闻这个软件后感到好奇，我也鼓励你尝试用用它，几周后看能否学会和适应它的操作，然后试试自学一些 Emacs Lisp 编程。</p>
+<p>如果你此时能观察到自己的念头，发现自己并没耐心阅读完整篇文字，而是想从中获得一些有用的结论性的东西，你可以停止阅读，直接跳转到它的设计论文 <a class="footnote-reference" href="#f3" id="footnote-reference-3">[3]</a> 。但这可能显示出你还没有必要也没有准备好学习 Emacs，个人建议是，先使用 VSCode 或体验其他专有的编辑器，不要先在 Emacs 上花任何时间，这对于现阶段的你收益是最高的，学习 Emacs 还不是你的待办中优先级最高的。</p>
+<p>在职业生涯最初几年，我曾学习并使用 Emacs，也曾因职业变化而中断过使用，可能很多人也和我一样的经历。我在本文此刻要谈的是我现阶段我对 Emacs 的认识，并没有讲太多 Emacs 的使用和扩展，那些内容在软件自带的文档和互联网的其它地方已有很好的学习素材，比如 RMS 的旧书，21 天系列，李杀教程等。所以，你即不会通过阅读本文成为一名 Emacs 宗教人士，也不会通过阅读本文马上学会 Emacs。</p>
+</div>
+</div>
+<div class="section" id="emacs-3">
+<h2>对 Emacs 的认识</h2>
+<p>为照顾到广泛的读者，下面将采用一种断言与解释的递归节奏书写。</p>
+<p>Emacs 是一个文本编辑器家族名。GNU Emacs 是其中最主要的版本，它最初是一组 RMS <a class="footnote-reference" href="#f4" id="footnote-reference-4">[4]</a> 在 1974 年至 1976 年在 MIT 编写的 TECO 语言文本编辑宏，现在最新的 Emacs 是发源于 1984 年 RMS 受当时各分枝的 Emacs 版本启发，决定重新使用 C 和 Emacs Lisp 语言编写的。</p>
+<p>文本编辑器是计算机上用来处理文本的软件。计算机最常见的需求是处理文本、图片和视频。文本比图片更加信息精确紧凑，从大尺度上看，文本让人更有效率地与计算机“对话”（人机交互）；而图片和视频，Emacs 内也可以使用，它借助类似 WebView 的技术，在这个时代，以本机算力使用 WASM 技术在简化的浏览器核心中处理轻度甚至是中度的图片或视频计算，也已是非常成熟的事。从使用角度，Emacs 内我们能完成任何事情，如果有一件事需要在 Emacs 下完成但还无法完成，那一定是那个人没有提出来，如果这件事已被提出来了，再过几年也会实现了，它可能躺在某位爱好者的硬盘里或者 GitHub 的某个低星仓库中。</p>
+<p>我发现用美剧《西部世界》中的隐喻最终可以很好的说明 Emacs 到底是什么：假设你是《西部世界》中的 Dolores，那么 Emacs 就是那个隐藏在世界中的迷宫和迷宫中间的门。</p>
+<div class="section" id="tutorial-living-with-it">
+<h3>第一层：从 Tutorial 到 Living with it</h3>
+<p>大多数人会从自带的 Emacs Tutorial 开始学习，通过在不同时间、不同场景下多次对此入门教程的练习，你就能学会 Emacs 的基本使用。</p>
+<p>会用是第一步，根据每个人对编程的理解差异，除开日常的文本编辑和常用操作，大约花费几个月的不断学习和配置，你会渐渐熟悉起来。</p>
+<p>如果你在此阶段累计花费时间少于三个月，那说明你至少英文比较好，且很有学习天赋。</p>
+<p>经过这个阶段，你会习惯在打开计算机后的第一时间启动 Emacs，并大部分时候不会离开它，那时，从表像上观察，你的手指会对 PC 常用场景存有肌肉记忆。</p>
+</div>
+<div class="section" id="lisp">
+<h3>第二层：Lisp 编程语言与认知心理学</h3>
+<p>若想在 Emacs 上留下点什么，你至少需要非常熟悉 Emacs Lisp 语言编程，且多次阅读 Emacs 帮助。</p>
+<p>在这个阶段，你完全理解了 Emacs 是将计算机的所有能力场景化，并进行归并以简化及效率提高。</p>
+<p>你是否路过了 Spacemacs、Doom Emacs 或 Centaur Emacs，又回到 Vanilla Emacs，这都不重要。重要的是，这个阶段的标志是在心智中内化了 Emacs，且能以 Emacs 的模式解决问题。（等同于近期看的爱奇艺恰饭剧《虎鹤妖师录》中金刚橛的菩提心橛阶段）</p>
+<p>具体来说，你会配置好你的 Emacs，并扩展了你的 Emacs，定义了一套你的快捷键，你的 Emacs 函数以你的网名简称作前缀，你在随时完善优化它们。</p>
+</div>
+<div class="section" id="emacs-4">
+<h3>第三层：源码阅读，及以 Emacs 之名</h3>
+<p>在这个阶段，你一定有富余的时间，用来部分或整体阅读 Emacs 的源代码，闭上眼，你心智的一部分就是 Emacs 本身。</p>
+<p>也许 Emacs 的源码中会有你的贡献，也许没有，但 Emacs Lisp 社区中一定有你的创作和传说，而是否留名，这取决于你的人生观。</p>
+<p>这个阶段，草木竹石，皆可为剑，文本编辑，不滞于 Emacs。</p>
+</div>
+</div>
+<div class="section" id="the-maze">
+<h2>The Maze 和我的中心</h2>
+<p>Emacs 和现代计算机科学、C 语言、Linux 内核一样悠久。这几十年中优秀文本编辑器也有不少，VSCode、Sublime Text、Geany、Kate 等，它们和 Emacs 最大的区别是，它们都不是你的编辑器，也不会引导你沉思这个世界。而 Emacs 则可以和你一起变成任何你想要的样子，它永远不会完美，它会随着你的成长而成长。只要你愿意不断学习和完善自己，为它加一些 Emacs Lisp 代码。</p>
+<p>还记得上节提到的《西部世界》的迷宫吗？The Maze 是阿诺德留给服务员的内心的声音，最终导致了服务员的觉醒。而 Emacs 相对于个人，也是类似的东西，它引导你进入沉思时，它几乎就是你本身。</p>
+</div>
+<div class="section" id="section-2">
+<h2>脚注</h2>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td>由此可以看出，Emacs Lisp 解析器非常快。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[2]</a></td><td>简单的语言：随 Emacs 发布的 Introduction to Programming in Emacs Lisp 是面向大众的，打开 Help -&gt; More Manuals 就能看到，作者最初就希望每个使用 Emacs 的人都能自己定制。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-3">[3]</a></td><td>学习 Emacs 很好的起点是&quot;设计论文&quot;:<a class="reference external" href="https://www.gnu.org/software/emacs/emacs-paper.html">https://www.gnu.org/software/emacs/emacs-paper.html</a> 。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-4">[4]</a></td><td>RMS：指 Richard Matthew Stallman，有关 RMS 和 GNU 及 Freeware 的篇幅需要至少 Double 本文的篇幅，放在以后撰文。</td></tr>
+</tbody>
+</table>
 <div class="section" id="powered-by-emacs">
 <h3>Powered By Emacs</h3>
 <img alt="created0.jpg" src="https://kaffa.im/static/img/2024/powered-by-emacs/created0.jpg" />

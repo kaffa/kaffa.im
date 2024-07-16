@@ -10,7 +10,7 @@
 :summary: Emacs 是我最想记录的软件之一。
 :image: /static/img/2023/emacs-img.svg
 :brief: 本文讲的是对 Emacs 的三重认识，旨在有缘人心中埋下一枚种子。。
-:growth: 4
+:growth: 5
 
 
 .. image:: https://kaffa.im/static/img/2023/emacs-img.svg
