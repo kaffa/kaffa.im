@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-07-25T16:00:00+08:00</updated><entry><title>关于工具和编程语言的思考</title><link href="https://kaffa.im/thoughts-on-the-accumulator-in-book-the-hacker-and-the-painter.html" rel="alternate"></link><published>2024-07-25T16:00:00+08:00</published><updated>2024-07-25T16:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-07-25:/thoughts-on-the-accumulator-in-book-the-hacker-and-the-painter.html</id><summary type="html">&lt;p class="first last"&gt;本篇是关于《黑客与画家》中 Paul 用累加器作为例子营销 Lisp，第一次读他的书时，还看不太懂，多年后我大约能理解一点了。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-07-25T16:00:00+08:00</updated><entry><title>《黑客与画家》中累加器的引发的思考</title><link href="https://kaffa.im/thoughts-on-the-accumulator-in-book-the-hacker-and-the-painter.html" rel="alternate"></link><published>2024-07-25T16:00:00+08:00</published><updated>2024-07-25T16:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-07-25:/thoughts-on-the-accumulator-in-book-the-hacker-and-the-painter.html</id><summary type="html">&lt;p class="first last"&gt;本篇是关于《黑客与画家》中 Paul 用累加器作为例子营销 Lisp，第一次读他的书时，还看不太懂，多年后我大约能理解一点了。&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;本篇是关于《黑客与画家》中 Paul 用累加器作为例子营销 Lisp，第一次读他的书时，还看不太懂，多年后我大约能理解一点了。我想就此问题本身和此问题的外延讨论一番，当然，你也看到本文的成熟度为 3 / 5，说明随着我对技术的理解，后续会持续修订。&lt;/p&gt;
-&lt;p&gt;实现，了解本篇探讨的内容时，需先了解一点背景。Paul Graham 因创办 Y Combinator （创业公司孵化器）而成为美国“创业教父”。在他的随笔集《黑客与画家》中举了一个例子，用 lisp 编写累加器来说明 lisp 语言能力。怎么理解这个累加器，其实每个人都懂，基本上可等于计算器上的那个 M 键在计算机软件中的实现。其次，Lisp 是一门如此久远而特别的编程语言，用 Paul Graham 《On Lisp》一书中的话来说，就是 lisp 是一种可编程的编程语言。&lt;/p&gt;
-&lt;p&gt;这里的可编程，也类似编程语言中的 Lambda（常以希腊字母 λ 表示），Y Combinator Y 也许也有此意义。&lt;/p&gt;
+&lt;p&gt;了解本篇探讨的内容时，需先了解一点背景。Paul Graham 因创办 Y Combinator （创业公司孵化器）而成为美国“创业教父”。在他的随笔集《黑客与画家》中举了一个例子，用 lisp 编写累加器来说明 lisp 语言能力。怎么理解这个累加器，其实每个人都见过，基本上可等于计算器上的那个 M+ 键在计算机软件中的实现。其次，Lisp 是一门如此久远而特别的编程语言，用 Paul Graham 《On Lisp》一书中的话来说，就是 lisp 是一种可编程的编程语言。&lt;/p&gt;
+&lt;p&gt;这里的可编程，也类似编程语言中的 Lambda（常以希腊字母 λ 表示）以及宏代表的元编程能力，Ruby 语言的作者特别描述了这块，Y Combinator Y 也许也有此意义。&lt;/p&gt;
 &lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;累加器问题本身&lt;/h2&gt;
 &lt;p&gt;Paul 提出一个类似编程问题：写一个函数，它能够生成累加器，即这个函数接受一个参数 n，然后返回另一个函数，后者接受参数 i，然后返回 n 增加了 i 后的值。就是说，写一个能生成函数的函数。&lt;/p&gt;
@@ -47,7 +47,7 @@ def foo(n):
     def bar(i):
         nonlocal n
         return (n := n + i)
-return bar
+    return bar
 &lt;/pre&gt;
 &lt;p&gt;第二个实现，属于老油条代码，这个程序员至少理解引用:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
