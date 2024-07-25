@@ -25,7 +25,7 @@
 &lt;pre class="literal-block"&gt;
 const foo = n =&amp;gt; i =&amp;gt; n + i;
 &lt;/pre&gt;
-&lt;p&gt;Rust 显得格外严谨也显得强约束，其次整数类型还需要仔细斟酌:&lt;/p&gt;
+&lt;p&gt;Rust 显得格外严谨也显得强约束，其次整数类型 i32 还需要仔细斟酌:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 fn foo(n: i32) -&amp;gt; Box&amp;lt;dyn Fn(i32) -&amp;gt; i32&amp;gt; {
     Box::new(move |i| n + i)
@@ -63,7 +63,7 @@ def foo(n):
 &lt;/div&gt;
 &lt;div class="section" id="section-3"&gt;
 &lt;h2&gt;累加器问题外延&lt;/h2&gt;
-&lt;p&gt;累加器问题外延其实是技术竞争优势。&lt;/p&gt;
+&lt;p&gt;累加器问题外延其实是技术竞争优势，对强抽象表达的编程语言带来的软件质量，这属于高智商的智力游戏。&lt;/p&gt;
 &lt;p&gt;事出一个精通 lisp 的人选择使用 lisp 开发商业应用，并利用 lisp 语言优势快速开发了 Web 程序。&lt;/p&gt;
 &lt;p&gt;这一切都是开创性的，我非常理解这个过程，这意味着没有轮子，大部分需要自己造。&lt;/p&gt;
 &lt;p&gt;所有的编程都是开拓性的，而不是使用已有的成熟方案，lisp 正是这种 10X 程序员的秘密武器。&lt;/p&gt;
