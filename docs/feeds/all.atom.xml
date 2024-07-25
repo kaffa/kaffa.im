@@ -37,7 +37,7 @@ proc foo {n} {
     return [lambda {i} {expr {$n} + $i}]
 }
 &lt;/pre&gt;
-&lt;p&gt;唯独 Python 的实现要丑陋一点，原因是 lambda 匿名函数的不支持 return，要不支持象牙符后，以下代码也确实合理:&lt;/p&gt;
+&lt;p&gt;唯独 Python 的实现要丑陋一点，原因是 lambda 匿名函数的不支持 return，要不，支持象牙符后的 Python，以下代码也确实合理:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 def foo(n):
     return lambda i : return (n := n + i)

@@ -58,7 +58,7 @@ Rust 显得格外严谨也显得强约束，其次整数类型还需要仔细斟
         return [lambda {i} {expr {$n} + $i}]
     }
 
-唯独 Python 的实现要丑陋一点，原因是 lambda 匿名函数的不支持 return，要不支持象牙符后，以下代码也确实合理::
+唯独 Python 的实现要丑陋一点，原因是 lambda 匿名函数的不支持 return，要不，支持象牙符后的 Python，以下代码也确实合理::
 
 
     def foo(n):
