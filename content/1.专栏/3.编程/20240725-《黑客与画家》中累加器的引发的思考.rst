@@ -4,7 +4,7 @@
 :date: 2024-07-25 16:00
 :author: Kaffa
 :category: programming
-:tags: accumulator,lamda,closure
+:tags: accumulator,lambda,closure
 :slug: thoughts-on-the-accumulator-in-book-the-hacker-and-the-painter
 :summary: 本篇是关于《黑客与画家》中 Paul 用累加器作为例子营销 Lisp，第一次读他的书时，还看不太懂，多年后我大约能理解一点了。
 :image: /static/img/2024/hero.png
@@ -58,7 +58,7 @@ Rust 显得格外严谨也显得强约束，其次整数类型还需要仔细斟
         return [lambda {i} {expr {$n} + $i}]
     }
 
-唯独 Python 的实现要丑陋一点，原因是 lamda 匿名函数的不支持 return，要不支持象牙符后，以下代码也确实合理::
+唯独 Python 的实现要丑陋一点，原因是 lambda 匿名函数的不支持 return，要不支持象牙符后，以下代码也确实合理::
 
 
     def foo(n):

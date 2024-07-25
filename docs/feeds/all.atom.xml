@@ -37,7 +37,7 @@ proc foo {n} {
     return [lambda {i} {expr {$n} + $i}]
 }
 &lt;/pre&gt;
-&lt;p&gt;唯独 Python 的实现要丑陋一点，原因是 lamda 匿名函数的不支持 return，要不支持象牙符后，以下代码也确实合理:&lt;/p&gt;
+&lt;p&gt;唯独 Python 的实现要丑陋一点，原因是 lambda 匿名函数的不支持 return，要不支持象牙符后，以下代码也确实合理:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 def foo(n):
     return lambda i : return (n := n + i)
@@ -81,7 +81,7 @@ def foo(n):
 &lt;p&gt;值得学习的是思考方式和背后的精神；前者能给特立独行的创业者在混沌的商业环境之中获得优势分，后者确保思考方式。&lt;/p&gt;
 &lt;p&gt;至于思考能力，那可以在事上练就。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="accumulator"></category><category term="lamda"></category><category term="closure"></category></entry><entry><title>2024年第27-28周周报</title><link href="https://kaffa.im/weekly-w27-w28.html" rel="alternate"></link><published>2024-07-14T08:00:00+08:00</published><updated>2024-07-14T08:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-07-14:/weekly-w27-w28.html</id><summary type="html">&lt;p class="first last"&gt;2024年第27-28周双周报&lt;/p&gt;
+</content><category term="programming"></category><category term="accumulator"></category><category term="lambda"></category><category term="closure"></category></entry><entry><title>2024年第27-28周周报</title><link href="https://kaffa.im/weekly-w27-w28.html" rel="alternate"></link><published>2024-07-14T08:00:00+08:00</published><updated>2024-07-14T08:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-07-14:/weekly-w27-w28.html</id><summary type="html">&lt;p class="first last"&gt;2024年第27-28周双周报&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="section-2"&gt;
 &lt;h2&gt;2024年第27-28周双周报&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;见字如晤。&lt;/strong&gt;&lt;/p&gt;
