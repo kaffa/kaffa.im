@@ -45,6 +45,14 @@ def get_list():
             'Email': 'collect@live.com',
         }, {
             'ID': 5,
+            'Name': '有思想的芦苇',
+            'URL': 'https://thinking-reed.cn/'
+            'Intro' "我是一名正在川渝地区某高校攻读人工智能方向的研究生，喜欢编程，技术，哲学，心理学，期待与您交朋友!"
+            'Owner' '芦苇'
+            'Icon' 'https://t`hinking-reed.cn/images/avatar.png',
+            'Email': '',
+        }, {
+            'ID': 6,
             'Name': '印记',
             'URL': 'https://yinji.org/',
             'Intro': '君子可内敛不可懦弱，面不公可起而论之',
@@ -52,7 +60,7 @@ def get_list():
             'Icon': 'https://huhexian.s3.bitiful.net/2023/12/23/3b83cc067b2c3f1e45807dfdeb66e0c0.webp',
             'Email': 'huhexian0206@gmail.com',
         }, {
-            'ID': 6,
+            'ID': 7,
             'Name': '陈仓颉',
             'URL': 'https://imzm.im/',
             'Intro': '以有涯随无涯',
@@ -60,7 +68,7 @@ def get_list():
             'Icon': 'https://imzm.im/wp-content/uploads/2023/05/logo50px.png',
             'Email': 'zm.rayme@gmail.com',
         }, {
-            'ID': 7,
+            'ID': 8,
             'Name': '松易涅的写作分享站',
             'URL': 'https://www.sungyinieh.com/flinks',
             'Intro': '回顾历史，审视当下，期盼未来',
@@ -68,7 +76,7 @@ def get_list():
             'Icon': 'https://cdn.sungyinieh.com/logo/logo-c-150.png',
             'Email': 'mail@songyinie.com',
         }, {
-            'ID': 8,
+            'ID': 9,
             'Name': '浪海导航',
             'URL': 'https://www.langhai.net/',
             'Intro': '收录各种类型的博客',
@@ -76,7 +84,7 @@ def get_list():
             'Icon': 'https://www.langhai.net/assets/images/langhai-logo.png',
             'Email': '676558206@qq.com'
         }, {
-            'ID': 9,
+            'ID': 10,
             'Name': '清阳livingWithFCS',
             'URL': 'https://conge.livingwithfcs.org/',
             'Intro': '记录读过的书和跑过的路。',
@@ -84,7 +92,7 @@ def get_list():
             'Icon': 'https://conge.livingwithfcs.org/favicon.ico',
             'Email': ''
         }, {
-            'ID': 10,
+            'ID': 11,
             'Name': '@1900\'Blog',
             'URL': 'https://1900.live/',
             'Intro': 'All work and no play makes Jack a dull boy。',
@@ -92,7 +100,7 @@ def get_list():
             'Icon': 'https://cdn.1900.live/20190640/ico.png',
             'Email': ''
         }, {
-            'ID': 11,
+            'ID': 12,
             'Name': '拾月',
             'URL': 'https://www.skyue.com/',
             'Intro': '日常关注互联网、软件应用居多，也喜欢股票投资、社科历史。执着于掌控自己的数据，self-host 爱好者。',
@@ -100,7 +108,7 @@ def get_list():
             'Icon': 'https://www.skyue.com/favicon.ico',
             'Email': 'skyue.hu@gmail.com'
         }, {
-            'ID': 12,
+            'ID': 13,
             'Name': '啤酒加冰',
             'URL': 'http://teddy.bell.cf/',
             'Intro': '一个技术宅的日常',

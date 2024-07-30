@@ -16,6 +16,16 @@ GROUPS = ('Postgres', 'MySQL', 'MariaDB')
 
 tree = None
 
+SERVICE_STATUS_DICT = {
+    win32service.SERVICE_CONTINUE_PENDING: "continue pending",
+    win32service.SERVICE_PAUSE_PENDING: "pause pending",
+    win32service.SERVICE_PAUSED: "paused",
+    win32service.SERVICE_RUNNING: "running",
+    win32service.SERVICE_START_PENDING: "start pending",
+    win32service.SERVICE_STOP_PENDING: "stop pending",
+    win32service.SERVICE_STOPPED: "stoped"
+}
+
 
 def get_services():
     return win32service.EnumServicesStatus(
@@ -105,7 +115,8 @@ def disable_service(event):
 
 
 def init_ctl(root):
-    global tree
+    global tree, SERVICE_STATUS_DICT
+
     frm = Frame(root, borderwidth=GAP, width=WIN_WIDTH, height=WIN_HEIGHT)
     frm.grid()
 
@@ -141,17 +152,8 @@ def init_ctl(root):
         tree.column('状态', width=100, minwidth=100, )
         for (service_name, service_desc, service_status) in services:
             if group.lower() in service_name.lower():
-                service_status_dict = {
-                    win32service.SERVICE_CONTINUE_PENDING: "continue pending",
-                    win32service.SERVICE_PAUSE_PENDING: "pause pending",
-                    win32service.SERVICE_PAUSED: "paused",
-                    win32service.SERVICE_RUNNING: "running",
-                    win32service.SERVICE_START_PENDING: "start pending",
-                    win32service.SERVICE_STOP_PENDING: "stop pending",
-                    win32service.SERVICE_STOPPED: "stoped"
 
-                }
-                service_status = service_status_dict.get(service_status[1], "unknown")
+                service_status = SERVICE_STATUS_DICT.get(service_status[1], "unknown")
                 tree.insert(id_, END, values=(service_name, service_desc, service_status))
                 tree.grid(column=0, row=2, columnspan=6, padx=GAP, pady=GAP)
 
