@@ -49,7 +49,7 @@ def get_list():
             'URL': 'https://thinking-reed.cn/'
             'Intro' "我是一名正在川渝地区某高校攻读人工智能方向的研究生，喜欢编程，技术，哲学，心理学，期待与您交朋友!"
             'Owner' '芦苇'
-            'Icon' 'https://t`hinking-reed.cn/images/avatar.png',
+            'Icon' 'https://thinking-reed.cn/images/avatar.png',
             'Email': '',
         }, {
             'ID': 6,
