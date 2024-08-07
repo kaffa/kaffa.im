@@ -1,0 +1,25 @@
+Rust系统编程
+########################################################
+
+:date: 2024-08-07 11:43
+:author: Kaffa
+:category: book
+:tags: rust
+:slug: practical-system-programming-for-rust
+:summary: 刷过的技术类书籍
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/3yWkIeA6UAnbwOygM95NAj
+
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐ 7 / 10
+
+
+评论
+====================
+
+很宽泛的编程类项目，有空可读。

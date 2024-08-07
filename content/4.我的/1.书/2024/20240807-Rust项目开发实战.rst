@@ -1,0 +1,25 @@
+Rust项目开发实战
+########################################################
+
+:date: 2024-08-07 11:43
+:author: Kaffa
+:category: book
+:tags: rust
+:slug: creative-projects-for-rust-programmers
+:summary: 
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/3OhxKm8zpnJBFzubxZ6goZ
+
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐ 6 / 10
+
+
+评论
+====================
+
+简单的实现，2024 年的 AI 们也能做到，价值不太大。

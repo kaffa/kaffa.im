@@ -1,0 +1,25 @@
+大话机器智能
+########################################################
+
+:date: 2024-08-07 11:43
+:author: Kaffa
+:category: book
+:tags: ai
+:slug: talk-about-machine-intelligence
+:summary: 类似 ai 101
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/36FqlKp3sgbe4ALFR1zmJ4
+
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐ 6 / 10
+
+
+评论
+====================
+
+机器智能基本概念书。
