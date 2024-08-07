@@ -7,7 +7,7 @@
 :tags: legacy code
 :slug: legacy-code-maintenance
 :summary: 本文记录前两周维护遗产代码的心得。
-:image: /static/img/2024/legacy-code-maintenance
+:image: /static/img/2024/legacy-code-maintenance.png
 
 
 十七年前的代码
