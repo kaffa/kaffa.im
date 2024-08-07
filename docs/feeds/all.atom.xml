@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-08-07T11:43:00+08:00</updated><entry><title>Rust项目开发实战</title><link href="https://kaffa.im/creative-projects-for-rust-programmers.html" rel="alternate"></link><published>2024-08-07T11:43:00+08:00</published><updated>2024-08-07T11:43:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-08-07:/creative-projects-for-rust-programmers.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-1"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"></link><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"></link><id>https://kaffa.im/</id><updated>2024-08-07T12:00:00+08:00</updated><entry><title>关于遗产代码维护</title><link href="https://kaffa.im/legacy-code-maintenance.html" rel="alternate"></link><published>2024-08-07T12:00:00+08:00</published><updated>2024-08-07T12:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-08-07:/legacy-code-maintenance.html</id><summary type="html">&lt;p class="first last"&gt;本文记录前两周维护遗产代码的心得。&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="section-2"&gt;
+&lt;h2&gt;十七年前的代码&lt;/h2&gt;
+&lt;p&gt;如果有机会维护了十七年前的代码，你一定能学到很多。&lt;/p&gt;
+&lt;p&gt;我维护的是 Windows 2008 下 PHP 5、MySQL 5、Apache 2.2、Python 3 的代码。&lt;/p&gt;
+&lt;p&gt;总结了一下，首先需要了解平台规格，运行时最小化支持版本。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="windows-2008"&gt;
+&lt;h2&gt;Windows 2008&lt;/h2&gt;
+&lt;p&gt;Windows 2008 不算很旧的服务器，毕竟我还用过 Windows 2000、Windows 2003。&lt;/p&gt;
+&lt;p&gt;准备环境，开始十分不方便，依次下载 7-zip、Firefox、Python，一个带高亮的文本编辑器，然后方便多了。&lt;/p&gt;
+&lt;p&gt;Windows 2008 在 Python 方面最高支持 Python 3.4。&lt;/p&gt;
+&lt;p&gt;安装 pip，会提示下载一个旧版本的 get-pip.py，使用旧版本 get-pip.py 后，终于可以安装一些旧版本包。&lt;/p&gt;
+&lt;p&gt;但需要编译的包，还会依赖旧版本的 VSBuild 环境。&lt;/p&gt;
+&lt;p&gt;某些旧版本包，国内镜像不支持，估计是没有全部镜像的缘故。&lt;/p&gt;
+&lt;p&gt;整理这些复杂的依赖关系，就够喝一壶了。&lt;/p&gt;
+&lt;p&gt;而 PHP 5、MySQL 5、Apache 2.2 相对就好一些，我还能在我本机找到一套配置好的，其中包含了 Zend 优化和 XDebug。&lt;/p&gt;
+&lt;p&gt;这些源代码估计还在，但若要凑上相互配合一套，要自己编辑时，准备环境这件事来说，拿给小白，没几周是不够的。&lt;/p&gt;
+&lt;p&gt;预计十年后，我也许还会维护升级这些代码，若有时间，放到虚拟机中更好，可以不受硬件限制的启动，而直接进入环境。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="section-3"&gt;
+&lt;h2&gt;最大的心得&lt;/h2&gt;
+&lt;p&gt;之所以现在还能维护，主要是因为之前我也是亲自配置的，具有经验，另外，多年之前考虑过维护，作了少量当时环境的打包。&lt;/p&gt;
+&lt;p&gt;若让一位无经验的人配合 AI 完成这些，也会有不少坑。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="development"></category><category term="legacy code"></category></entry><entry><title>Rust项目开发实战</title><link href="https://kaffa.im/creative-projects-for-rust-programmers.html" rel="alternate"></link><published>2024-08-07T11:43:00+08:00</published><updated>2024-08-07T11:43:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-08-07:/creative-projects-for-rust-programmers.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h2&gt;评分&lt;/h2&gt;
 &lt;p&gt;⭐⭐⭐⭐⭐
 ⭐ 6 / 10&lt;/p&gt;
@@ -3345,27 +3370,4 @@ UMD&lt;/td&gt;
 &lt;h2&gt;用 AI Agent 读5分钟&lt;/h2&gt;
 &lt;img alt="《危机与重构：唐帝国及其地方诸侯》读5分钟" src="/static/img/2024/crisis-and-reconstruction-the-tang-empire-and-its-local-princes-in-five-minutes.png" /&gt;
 &lt;/div&gt;
-</content><category term="book"></category><category term="history"></category></entry><entry><title>学习vi和Vim编辑器</title><link href="https://kaffa.im/learning-the-vi-and-vim-editors.html" rel="alternate"></link><published>2024-03-19T14:00:00+08:00</published><updated>2024-03-19T14:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-03-19:/learning-the-vi-and-vim-editors.html</id><summary type="html">&lt;p class="first last"&gt;Vim 案头书&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="section-1"&gt;
-&lt;h2&gt;评分&lt;/h2&gt;
-&lt;p&gt;⭐⭐⭐⭐⭐
-⭐⭐⭐⭐⭐ 10/10&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="section-2"&gt;
-&lt;h2&gt;评价&lt;/h2&gt;
-&lt;p&gt;可爱的技术人著作，匠意盎然。&lt;/p&gt;
-&lt;p&gt;vi 是禅，Vim 处处有禅机。看起来在用 vi，其实在参禅。&lt;/p&gt;
-&lt;p&gt;命令是结印，非入 Vim 之道者不能明也。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="v"&gt;
-&lt;h2&gt;给多年后的V山之我&lt;/h2&gt;
-&lt;pre class="literal-block"&gt;
-愿，
-
-    至 Vim 途中，现真言。
-
-              ——立E山之我
-              于 20240329
-&lt;/pre&gt;
-&lt;/div&gt;
-</content><category term="book"></category><category term="vim"></category></entry></feed>
+</content><category term="book"></category><category term="history"></category></entry></feed>
