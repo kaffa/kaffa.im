@@ -1,0 +1,61 @@
+安全意识、记一次MySQL勒索
+##################################################
+
+:date: 2024-08-12 01:00
+:author: Kaffa
+:category: development
+:tags: weak-password
+:slug: record-an-instance-of-mysql-ransomware
+:summary: 本文记录一次 MySQL 勒索以提高数据安全意识。
+
+
+遭遇 MySQL 勒索
+====================
+
+表现为，打开 MySQL 或 MongoDB 时，发现数据库被删除了，多了一个 RECOVER_YOUR_DATA 表，其中的内容为::
+
+    All your data is backed up. You must pay 0.0131 BTC to 1JjzBZ8MdxFpecDgp24FrrHwQmzXXM4hTr In 48 hours, your data will be publicly disclosed and deleted. (more information: go to https://is.gd/dayuwi)
+
+    After payment send mail to us: dzen+2xh5w@onionmail.org and we will provide a link for you to download your data. Your DBCODE is: ABCDEF
+
+上述 DBCODE 每人的都不同，但比特币钱包地址相同，经过查阅，`地址 1JjzBZ8MdxFpecDgp24FrrHwQmzXXM4hTr <https://explorer.btc.com/zh-CN/btc/search/1JjzBZ8MdxFpecDgp24FrrHwQmzXXM4hTr>`_ 目前还并未收到任何交易。
+
+
+比特币勒索套路
+====================
+
+Oracle、MongoDB、MySQL 等容易被劫持，删除存储数据，要求支付比特币的赎金。
+
+借助 AI 完成这个程序非常容易，扫描开放端口上的管理员弱口令，要做的是删除数据，并插入勒索消息数据。
+
+对于普通目标，压根不必全表拉取并备份，只要获得几条数据用于验证即可。
+
+我相信很少有做这事的人一单一单手工完成，那样是没有投入产出比的。
+
+
+千万不要支付赎金
+====================
+
+因为支付的结果大概率是没人理你，这样做对于勒索者是最安全的。
+
+解决办法
+====================
+
+1. 寻求专业人士帮助，利用硬盘文件恢复
+2. 利用数据库 bin log 恢复
+3. 利用备份恢复
+
+根因分析
+====================
+
+根因：安全意识弱，感觉数据没有那么重要。
+
+防范办法
+====================
+
+1. 永不使用弱口令；
+2. 不在 Internet 公开数据库服务端口；
+3. 如果确实需要公开，则按固定 IP 或受信子网指定可访问 IP，禁止配置允许任何地址的远程连接。
+
+
+
