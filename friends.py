@@ -73,7 +73,7 @@ def get_list():
             'URL': 'https://www.sungyinieh.com/flinks',
             'Intro': '回顾历史，审视当下，期盼未来',
             'Owner': '松易涅',
-            'Icon': 'https://cdn.sungyinieh.com/logo/logo-c-150.png',
+            'Icon': 'https://avatars.githubusercontent.com/u/115633657?u=6bb5bee98c33bbd8d80a0e3ea0308d716504de33&v=4',
             'Email': 'mail@songyinie.com',
         }, {
             'ID': 9,
