@@ -10,7 +10,9 @@
 :image: /static/img/2024/green-tea-6078275.jpg
 :brief: 茶源自中国，作为中国人怎能不懂如何将茶泡得好喝呢？
 
-该图片由<a href="https://pixabay.com/zh/users/mirkostoedter-20529864/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6078275">Mirko Stödter</a>在<a href="https://pixabay.com/zh//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6078275">Pixabay</a>上发布
+.. raw:: html
+
+    该图片由<a href="https://pixabay.com/zh/users/mirkostoedter-20529864/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6078275">Mirko Stödter</a>在<a href="https://pixabay.com/zh//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6078275">Pixabay</a>上发布
 
 茶
 ==========
