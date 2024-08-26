@@ -77,6 +77,13 @@ def get_list():
             'Email': 'mail@songyinie.com',
         }, {
             'ID': 9,
+            'Name': '七仔的博客',
+            'URL': 'https://www.baby7blog.com',
+            'Intro': '主要记录自己在写程序过程中的发现、问题、成果',
+            'Owner': '七仔',
+            'Icon': 'https://www.baby7blog.com/favicon.ico',
+        }, {
+            'ID': 10,
             'Name': '浪海导航',
             'URL': 'https://www.langhai.net/',
             'Intro': '收录各种类型的博客',
@@ -84,7 +91,7 @@ def get_list():
             'Icon': 'https://www.langhai.net/assets/images/langhai-logo.png',
             'Email': '676558206@qq.com'
         }, {
-            'ID': 10,
+            'ID': 11,
             'Name': '清阳livingWithFCS',
             'URL': 'https://conge.livingwithfcs.org/',
             'Intro': '记录读过的书和跑过的路。',
@@ -92,7 +99,7 @@ def get_list():
             'Icon': 'https://conge.livingwithfcs.org/favicon.ico',
             'Email': ''
         }, {
-            'ID': 11,
+            'ID': 12,
             'Name': '@1900\'Blog',
             'URL': 'https://1900.live/',
             'Intro': 'All work and no play makes Jack a dull boy。',
@@ -100,7 +107,7 @@ def get_list():
             'Icon': 'https://cdn.1900.live/20190640/ico.png',
             'Email': ''
         }, {
-            'ID': 12,
+            'ID': 13,
             'Name': '拾月',
             'URL': 'https://www.skyue.com/',
             'Intro': '日常关注互联网、软件应用居多，也喜欢股票投资、社科历史。执着于掌控自己的数据，self-host 爱好者。',
@@ -108,7 +115,7 @@ def get_list():
             'Icon': 'https://www.skyue.com/favicon.ico',
             'Email': 'skyue.hu@gmail.com'
         }, {
-            'ID': 13,
+            'ID': 14,
             'Name': '啤酒加冰',
             'URL': 'http://teddy.bell.cf/',
             'Intro': '一个技术宅的日常',
