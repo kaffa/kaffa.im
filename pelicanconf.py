@@ -92,6 +92,7 @@ EXTRA_PATH_METADATA = {
     'static/favicon/favicon.ico': {'path': 'favicon.ico'},
     'static/CNAME': {'path': 'CNAME'},
     'static/robots.txt': {'path': 'robots.txt'},
+    'static/tencent18389128716212478341.txt': {'path': 'tencent18389128716212478341.txt'},
 }
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
