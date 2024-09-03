@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-08-27T19:51:56-00:00</lastmod>
+<lastmod>2024-09-03T12:23:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-08-27T19:51:56-00:00</lastmod>
+<lastmod>2024-09-03T12:23:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-08-27T19:51:56-00:00</lastmod>
+<lastmod>2024-09-03T12:23:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-08-27T19:51:56-00:00</lastmod>
+<lastmod>2024-09-03T12:23:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1602,6 +1602,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/me-and-the-c-programming-language.html</loc>
 <lastmod>2023-09-26T12:11:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/hoegaarden-white-beer.html</loc>
+<lastmod>2023-09-03T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
