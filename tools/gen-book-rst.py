@@ -6,11 +6,12 @@ import pandas as pd
 
 data = pd.read_excel("book.xlsx")
 book_list = data.to_dict('index')
+formatted_date = datetime.datetime.now().strftime('%Y%m%d')
 
 for i, book in book_list.items():
     date_ = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     book_name = book['name']
-    filename = f"20240807-{book_name}.rst"
+    filename = f"{formatted_date}-{book_name}.rst"
     slug = hashlib.md5(book['subject_url'].encode('utf-8')).hexdigest()
     rank = int(book['rank'])
     rank_section = """

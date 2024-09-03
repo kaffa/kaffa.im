@@ -1,0 +1,27 @@
+事件流实战
+########################################################
+
+:date: 2024-09-03 14:23
+:author: Kaffa
+:category: book
+:tags: kafka
+:slug: event-streams-in-action
+:summary: 如果你想知道如何处理多个大型系统的日志，可以读读这本。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/3QhqMfYY6Y3sJxB3qPnT8a
+
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐⭐ 8 / 10
+
+
+摘录
+====================
+        
+* single-event process (SEP)
+* multi-evets process (MEP)
+* complex-event process (CEP)
