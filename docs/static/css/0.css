@@ -73,15 +73,15 @@
 /*~ divider */
 
 
-a:not(.navbar a):not(.menu a):not(.nav a):not(.tag),
-a:not(.navbar a):not(.menu a):not(.nav a):not(.tag):visited,
-a:not(.navbar a):not(.menu a):not(.nav a):not(.tag):hover {
+a:not(.navbar a):not(.menu a):not(.nav a):not(.tag):not(.breadcrumb a),
+a:not(.navbar a):not(.menu a):not(.nav a):not(.tag):not(.breadcrumb a):visited,
+a:not(.navbar a):not(.menu a):not(.nav a):not(.tag):not(.breadcrumb a):hover {
     color: var(--c-link);
     padding-bottom: 1px;
     margin-bottom: -1px;
     border-bottom: dotted 1px var(--c-link-bdb);
 }
-h2 a, .breadcrumb a {
+h2 a {
     border-bottom: none;
 }
 .text-second {
