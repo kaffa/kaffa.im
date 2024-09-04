@@ -68,6 +68,32 @@ LINKS = [
         ('Hacker News', 'https://news.ycombinator.com/'),
         ('论道', 'https://lundao.pub/'),)},
 ]
+CATEGORY_LINKS = {
+    'project': [],
+    'development': [],
+    'programming': [],
+
+    'website': [],
+    'reading': [],
+    'digital': [],
+    'words': [],
+
+    'article': [],
+    'software': [],
+    'book-list': [],
+    'weekly': [],
+
+    'book': [],
+    'movie': [
+        {'group': '影片库', 'items': (
+            ('IMDB', 'https://www.imdb.com/'),)},
+        {'group': '评论', 'items': (
+            ('豆瓣', 'https://www.douban.com/'),)},
+    ],
+    'music': [],
+    'things': [],
+}
+
 # Social widget
 SOCIAL = (('My GitHub', 'https://github.com/kaffa'),)
 
@@ -83,8 +109,8 @@ DISPLAY_CATEGORIES_ON_MENU = False
 # 20231019 修改
 DISPLAY_PAGES_ON_MENU = False
 
-# THEME = "D:/code/github/kaffa/kaffa.github.io/themes/pelican-octopress-theme-cn"
-THEME = "D:/code/github/kaffa/kaffa.github.io/themes/pelican-kaffa-theme"
+# THEME = "D:/code/github/kaffa/kaffa.github.io/theme/pelican-octopress-theme-cn"
+THEME = "D:/code/github/kaffa/kaffa.github.io/theme/pelican-kaffa-theme"
 THEME_STATIC_DIR = 'static'
 
 STATIC_PATHS = ['static']

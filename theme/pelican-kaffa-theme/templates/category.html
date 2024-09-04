@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ SITENAME|striptags }} - {{ CATEGORY_DICT[category]['name'] }} 分类
+{% endblock %}
+
+{% block content_title %}
+<h1>分类 {{ CATEGORY_DICT[category] }} 的文章</h1>
+{% endblock %}
+
+{% block content %}
+
+{% set ns = namespace() %}
+
+{% set ns.note_num = 0 %}
+
+{% set ns.article_num = 0 %}
+{% set ns.software_num = 0 %}
+{% set ns.weekly_num = 0 %}
+{% set ns.book_list_num = 0 %}
+
+{% set ns.book_num = 0 %}
+{% set ns.movie_num = 0 %}
+{% set ns.music_num = 0 %}
+{% set ns.things_num = 0 %}
+
+{% for category, articles in categories|sort %}
+{% for article in articles %}
+{% if category in ('website', 'reading', 'digital',) %}
+{% set ns.note_num = ns.note_num + 1 %}
+{% elif category == 'article' %}
+{% set ns.article_num = ns.article_num + 1 %}
+{% elif category == 'software' %}
+{% set ns.software_num = ns.software_num + 1 %}
+{% elif category == 'weekly' %}
+{% set ns.weekly_num = ns.weekly_num + 1 %}
+{% elif category == 'book-list' %}
+{% set ns.book_list_num = ns.book_list_num + 1 %}
+{% elif category == 'book' %}
+{% set ns.book_num = ns.book_num + 1 %}
+{% elif category == 'movie' %}
+{% set ns.movie_num = ns.movie_num + 1 %}
+{% elif category == 'music' %}
+{% set ns.music_num = ns.music_num + 1 %}
+{% elif category == 'things' %}
+{% set ns.things_num = ns.things_num + 1 %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% set moments_num = ns.note_num
++ ns.article_num
++ ns.software_num
++ ns.weekly_num
++ ns.book_list_num
++ ns.book_num
++ ns.movie_num
++ ns.music_num
++ ns.things_num
+%}
+<section class="hero" style="min-height: 400px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);">
+    <div class="hero-body">
+        <div class="title is-family-primary is-max-desktop is-size-4 has-text-centered is-italic author_name mt-5">
+            <figure class="image is-64x64 has-text-centered" style="margin: auto;">
+                <img class="is-rounded" src="{{ AVATAR_URL }}" alt="avatar">
+            </figure>
+            {{ AUTHOR_NAME }}
+        </div>
+        <p class="is-size-6 has-text-centered has-text-grey my-3">{{ AUTHOR_INTRO }}</p>
+        <div class="container is-max-desktop">
+            <div class="is-divider" data-content="North"></div>
+        </div>
+        <nav class="level is-mobile container is-max-desktop">
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">项目</p>
+                    <p class="title">{{ PROJECTS|count }}</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">动态</p>
+                    <p class="title">{{ moments_num }}</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">关注</p>
+                    <p class="title">{{ (LINKS[0]['items'] + LINKS[1]['items'])|length }}</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">友链</p>
+                    <p class="title">{{ FRIENDS|length }}</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<div class="container is-max-widescreen mt-4">
+    <div class="columns is-variable is-2">
+
+        <div class="column is-9">
+            <section class="box">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            所在位置：
+                        </div>
+                        <div class="level-item">
+                            <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+                                <ul>
+                                    <li>
+                                        <a href="/">
+                                            <span>首页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span>{{CATEGORY_DICT[category]['name']}}</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {% for article in articles_page.object_list %}
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="{{ AVATAR_URL }}" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            {% for author in article.authors %}
+                            <span class="author_name">{{ author }}</span>
+                            {% endfor %}
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}</time>
+                            {{ CATEGORY_DICT[article.category]['moment'] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    {{ article.summary }}
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                           title="「{{ article.title|striptags }}」的永久链接">{{ article.title }}</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                {% if article.subject is defined %}
+                                {{ article.subject.brief|truncate }}
+                                {% elif article.brief %}
+                                <sup class="is-size-1 has-text-grey-light"
+                                     style="font-family: 'Times New Roman';
+                                            display: inline-block;
+                                            margin: -30px 0 -10px 0;"
+                                >“</sup>{{ article.brief }}
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% if article.subject -%}
+                        <div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="{{ article.subject.cover_relative_path|safe }}" alt="cover_image">
+                            </figure>
+                        </div>
+                        {%- elif article.image and not article.image.endswith('/hero.png') -%}
+                        <div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="{{ article.image }}" alt="cover_image">
+                            </figure>
+                        </div>
+                        {%- endif %}
+                    </div>
+                </article>
+            </section>
+            {% endfor %}
+            {% if articles_page.has_other_pages() %}
+            {% include 'pagination.html' %}
+            {% endif %}
+        </div>
+
+        <div class="column is-3">
+
+            <section class="box">
+                <h3 class="mb-3">目录</h3>
+                <ul>
+                    {% for sorted_category in CATEGORY_DICT.keys() %}
+                    {% for category, articles in categories %}
+                    {% if sorted_category==category %}
+                    <li><a href="{{ SITEURL }}/{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{
+                        articles|count }})
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </section>
+
+            {% if CATEGORY_LINKS[category]|count > 0 %}
+            <section class="box">
+                <h3 class="mb-3">链接</h3>
+                {% for link in CATEGORY_LINKS[category] %}
+                <aside class="menu">
+                    <p class="menu-label">{{ link['group'] }}</p>
+                    <ul class="menu-list">
+                        {% for item in link['items'] %}
+                        <li><a target="_blank" href="{{ item[1] }}">{{ item[0] }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </aside>
+                {% endfor %}
+            </section>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

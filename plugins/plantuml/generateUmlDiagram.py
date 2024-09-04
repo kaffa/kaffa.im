@@ -12,6 +12,8 @@ from pelican import logger
 def generate_uml_image(path, plantuml_code, uml_filename, imgformat, global_plantuml):
     uml_path = os.path.join(path, uml_filename + '.plantuml')
     img_path = os.path.join(path, uml_filename + f'.{imgformat}')
+    if os.path.exists(img_path):
+        return
 
     content = f'@startuml{os.linesep}{plantuml_code}{os.linesep}@enduml'
     with open(uml_path, 'w', encoding='utf-8') as f:
