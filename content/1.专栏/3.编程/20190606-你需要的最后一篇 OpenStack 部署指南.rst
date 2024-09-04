@@ -22,7 +22,7 @@
 题记
 ==============================
 
-.. image:: https://kaffa.im/static/img/2019/openstack-logo-full.png
+.. image:: https://kaffa.im/static/img/2019/openstack-logo.png
     :alt: OpenStack
     :width: 25%
 
