@@ -10,7 +10,7 @@
 
         gtag('config', 'G-7H14T5KLFJ');
     </script>
-        <title>Kaffa.im - 给网站增加最近评论功能</title>
+        <title>Kaffa.im - 给网站增加了 DIŸgöd 的 follow。</title>
     <meta charset="utf-8"/>
     <!--
         Q1. 本站技术栈？
@@ -28,12 +28,15 @@
     <link
             href="https://kaffa.im/feeds/all.atom.xml"
             type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
 
 
 
 
-    <meta name="tags" content="comments" />
-    <meta name="tags" content="giscus" />
+    <meta name="tags" content="follow" />
+    <meta name="tags" content="DIYgod" />
 
 
 </head>
@@ -175,13 +178,13 @@
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
-            ><a href="./add-recent-giscus-comments.html"
+            ><a href="./add-follow-claim.html"
                 rel="bookmark"
-                title="「给网站增加最近评论功能」的永久链接"
-            >给网站增加最近评论功能</a></h2>
+                title="「给网站增加了 DIŸgöd 的 follow。」的永久链接"
+            >给网站增加了 DIŸgöd 的 follow。</a></h2>
             <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
                     <a href="./author/kaffa.html">Kaffa</a>
-                发布于 <time datetime="2024-06-17T09:40:00+08:00">2024-06-17 周一</time>
+                发布于 <time datetime="2024-09-07T11:40:00+08:00">2024-09-07 周六</time>
             </p>
         </div>
     </section>
@@ -193,8 +196,8 @@
             <span>分类:</span>
             <a class="tag is-medium" href="./category/website.html">网站</a>
             <span class="ml-2">标签:</span>
-            <a class="tag is-medium" href="./tag/comments.html">comments</a>
-            <a class="tag is-medium" href="./tag/giscus.html">giscus</a>
+            <a class="tag is-medium" href="./tag/follow.html">follow</a>
+            <a class="tag is-medium" href="./tag/diygod.html">DIYgod</a>
 
 
         </div>
@@ -204,33 +207,9 @@
         </div>
 
 
-        <div class="section" id="section-2">
-<h2>痛点</h2>
-<p>最近修改网站设置后，giscus 评论未显示。直到我进入了项目的 Discussion 才看到有一些最新留言，但这些留言未显示在文章下方。为不错过留言，我决定为网站增加最新评论功能。</p>
-</div>
-<div class="section" id="section-3">
-<h2>分析</h2>
-<p>那么是否有一种方式，可实现在网站上显示最新评论呢，对此，所有的回答都是肯定的。</p>
-<p>程序可以实现一切。如果是静态网站（SSG），实现方式稍一想，就有三种。</p>
-<p>方式一、直接从 https 抓取所有的评论网页，解析出评论。缺点是依赖页面结构，可能会失效，需要随着 Github 页面结构的更新而更新。</p>
-<p>方式二、使用 Github 提供的 API，需要查看 Github 文档，需要注意保护好授权 Token。</p>
-<p>方式三、使用 Github Action 和 Webhook 实现在评论时维护一个 comments.json 文件，缺点是每次生成前需要拉取这个文件，增加了生成时间。</p>
-<p>综合来看，如果官方支持，那选方式二是最佳选择。</p>
-</div>
-<div class="section" id="section-4">
-<h2>实现</h2>
-<p>经过查阅文档和讨论，发现 Github 有 graphql 和 REST 两种形式的 API，未来有 REST API 迁移到 graphql 的趋势。且 Discussion 是一个较新的特性，获取 Discussion 目前只有 graphql API。</p>
-<p>编程助手已经改变了编程，经过一个提问，一次复制，我就获得了代码结构，此时，基于我对 graphql 的入门理解，我直接修改了 query，几次尝试后，我就获得了需要数据。整个过程确实节省了不少时间。</p>
-<p>至于 Token 保护，我还是选择了在 .gitignore 中增加 .env 文件，然后从 .env 读取的方式，而不是使用系统变量。PyCharm 或 IDEA 系，对系统变量的处理有点奇怪。系统变量更新了，你不通过搜索甚至不知道它什么时候更新，此时 .env 就没这问题，唯一要注意的是不要遗忘先添加 .gitignore 再添加 .env。</p>
-<p><a class="reference external" href="https://github.com/kaffa/kaffa.im/blob/master/comments.py">实现源码</a> ，然后在 jinja2 模板中循环展示，由于更新频率，此处只是简单实现以满足基本需求，并未严格按时间排序。</p>
-</div>
-<div class="section" id="section-5">
-<h2>未来计划</h2>
-<p>对于评论功能，最开始使用的是 gitalk，后来有人反馈无法打开，于是增加了 giscus。这两者之间，gitalk 使用 issue，giscus 使用 discussion，相比来说，我认为 issue 会更基础一些。如果有一天未来要砍掉特性，discussion 必定在砍 issue 之前，当然了，砍特性这种事在公司还有现金流时，是不会发生的。</p>
-<p>gitalk 和 giscus 的优点是免费，如果要说缺点，gitalk 和 giscus 的就是依赖一种并不是为此设计的用法，Github 可以处理掉这种不合适的用法，那是评论就会失效，迁移数据也许挺麻烦的。</p>
-<p>所以，最好的方式是换自己支持评论的程序，或者依赖一些 serverless 的服务，将评论数据以开发的结构存放在可控的地方。</p>
-</div>
-
+        <p>follow 是 DIYgod 出的关于 RSS 的新产品，其中整合了 RSSHub 和 Web3 的内容。</p>
+<p>产品都是联合在一起的。</p>
+<!-- This message is used to verify that this feed (feedId:41342818708527123) belongs to me (userId:41447029693323264). Join me in enjoying RSS on the next generation information browser https://follow.is. -->
         <div class="is-divider" data-content="giscus"></div>
 
         <script src="https://giscus.app/client.js"

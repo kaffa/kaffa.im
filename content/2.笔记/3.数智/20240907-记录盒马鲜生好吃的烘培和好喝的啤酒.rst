@@ -1,0 +1,63 @@
+记录盒马鲜生好吃的烘培和好喝的啤酒
+##################################################
+
+:date: 2024-09-07 11:56
+:author: Kaffa
+:category: digital
+:tags: freshippo, craft-beer, baked-food
+:slug: craft-beer-and-baked-food-i-like-in-freshippo
+:summary: 记录我喜欢的盒马鲜生的烘焙食品和精酿啤酒
+
+评分水位：
+==========
+
+青岛1903
+
+⭐⭐⭐⭐⭐
+⭐ 7/10 星
+
+
+精酿啤酒
+====================
+
+
+1. 浑浊IPA精酿原浆鲜啤酒
+
+.. image:: /static/image/2024/craft-ipa.jpg
+    :width: 300px
+
+⭐⭐⭐⭐⭐
+⭐⭐⭐ 8/10
+
+有性价比的一款。
+
+
+2. 暖姜西打（Craft Ginger Flavored Cider）
+
+.. image:: /static/image/2024/craft-ginder-flavoured-cider.jpg
+    :width: 300px
+
+⭐⭐⭐⭐⭐
+⭐⭐⭐ 8/10
+
+适合女生。
+
+
+3. 皮尔森啤酒黄油风味（Butter Flavor Pilsner Beer）
+
+.. image:: /static/image/2024/butter-flavor-pilsner-beer.jpg
+    :width: 300px
+
+⭐⭐⭐⭐⭐
+⭐⭐ 7/10
+
+有软软黄油风味，适合软男。
+
+
+烘培食品
+====================
+
+* 原味麻薯 330g
+* 原味&伯爵红茶味瑞士卷 560g
+* 猫山王榴莲千层蛋糕 470g
+* 经典生巧卷 190g
