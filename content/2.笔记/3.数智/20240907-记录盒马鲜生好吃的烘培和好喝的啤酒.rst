@@ -22,7 +22,7 @@
 
 1. 浑浊IPA精酿原浆鲜啤酒（印度淡色艾尔）
 
-.. image:: /static/image/2024/craft-ipa.jpg
+.. image:: /static/img/2024/craft-ipa.jpg
     :width: 300px
     :alt: 浑浊IPA精酿原浆鲜啤酒
 
@@ -34,7 +34,7 @@
 
 2. 暖姜西打（Craft Ginger Flavored Cider）
 
-.. image:: /static/image/2024/craft-ginder-flavoured-cider.jpg
+.. image:: /static/img/2024/craft-ginder-flavoured-cider.jpg
     :width: 300px
     :alt: 暖姜西打
 
@@ -46,7 +46,7 @@
 
 3. 皮尔森啤酒黄油风味（Butter Flavor Pilsner Beer）
 
-.. image:: /static/image/2024/butter-flavor-pilsner-beer.jpg
+.. image:: /static/img/2024/butter-flavor-pilsner-beer.jpg
     :width: 300px
     :alt: 皮尔森啤酒黄油风味
 
