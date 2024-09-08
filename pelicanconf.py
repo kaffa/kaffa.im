@@ -165,7 +165,6 @@ JINJA_FILTERS = {
     'sort_by_article_count': partial(sorted, key=lambda tag: len(tag[1]), reverse=True)
 }
 
-
 # plugin: plantuml
 PLANTUML = {
     'java_path': r'D:\Java\jdk-19\bin\java.exe',
