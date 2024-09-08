@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-09-08T14:45:02-00:00</lastmod>
+<lastmod>2024-09-08T15:22:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-09-08T14:45:02-00:00</lastmod>
+<lastmod>2024-09-08T15:22:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-09-08T14:45:02-00:00</lastmod>
+<lastmod>2024-09-08T15:22:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-09-08T14:45:02-00:00</lastmod>
+<lastmod>2024-09-08T15:22:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,15 +60,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kaffa.im/craft-beer-and-baked-food-i-like-in-freshippo.html</loc>
-<lastmod>2024-09-07T11:56:00+08:00</lastmod>
+<loc>https://kaffa.im/add-diy-god-follow-claim.html</loc>
+<lastmod>2024-09-08T12:40:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://kaffa.im/add-follow-claim.html</loc>
-<lastmod>2024-09-07T11:40:00+08:00</lastmod>
+<loc>https://kaffa.im/craft-beer-and-baked-food-i-like-in-freshippo.html</loc>
+<lastmod>2024-09-07T11:56:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2049,7 +2049,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2024-09-07T11:56:00+08:06</lastmod>
+<lastmod>2024-09-08T12:40:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
