@@ -125,7 +125,8 @@ PLUGINS = [
     'sitemap',
     'plantuml',
     'featured_image',
-    'kaffapod'
+    'kaffapod',
+    'followclaim'
     # 'statics',
     # 'minify'
     # 'gravatar',
