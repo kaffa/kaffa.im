@@ -25,7 +25,8 @@ def add_rss_description(context, feed):
     file_path = os.path.join(context['OUTPUT_PATH'], context['FEED_ALL_RSS'])
     try:
         dom = parse(file_path)
-        channel = dom.getElementsByTagName('channel')[0]
+        rss = dom.getElementsByTagName('rss')[0]
+        channel = rss.getElementsByTagName('channel')[0]
         descriptions = channel.getElementsByTagName('description')
         if descriptions[0].hasChildNodes():
             descriptions[0].childNodes[0].data = 'feedId:55805414897308672+userId:41447029693323264'
