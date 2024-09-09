@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 夜航船</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+
+
+
+    <meta name="tags" content="张岱" />
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="./"><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./ye-hang-chuan.html"
+                rel="bookmark"
+                title="「夜航船」的永久链接"
+            >夜航船</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-02-22T14:00:00+08:00">2024-02-22 周四</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/book.html">书</a>
+            <span class="ml-2">标签:</span>
+            <a class="tag is-medium" href="./tag/zhang-dai.html">张岱</a>
+
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+        <div class="columns is-centered box mt-5" id="subject">
+            <div class="column is-one-quarter">
+                <p class="image">
+                    <img title="夜航船（全2册）" class="book-cover" src="/static/img/book/%E5%A4%9C%E8%88%AA%E8%88%B9%EF%BC%88%E5%85%A82%E5%86%8C%EF%BC%89.jpg">
+                </p>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <span class="title">夜航船（全2册）</span>
+                    <p>
+                        <strong>
+                            作者：(明) 张岱
+                        </strong>
+                    </p>
+                    <p class="is-size-7">
+                        《夜航船》（上下册）共分为二十卷，依照门类划分为二十部，以词条的方式进行撰写介绍，收录四千余条目。内容囊括天文地理、人伦考古、经史百家、礼乐典章，以及日用宝玩、植物四灵、三教九流、物理方术，广采博收，涉及范围广，堪称中国的“小型百科全书”。
+                    </p>
+                    <table class="table is-narrow is-striped is-hoverable is-size-7">
+                        <colgroup>
+                            <col style="width: 6rem" />
+                            <col/>
+                        </colgroup>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9787554618097</td>
+                            </tr>
+                            <tr>
+                                <td>出版社</td>
+                                <td>古吴轩出版社</td>
+                            </tr>
+                            <tr>
+                                <td>出版时间</td>
+                                <td>
+                                    2022年
+                                        3月
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>装帧</td>
+                                <td>平装</td>
+                            </tr>
+                            <tr>
+                                <td>定价</td>
+                                <td>88.00</td>
+                            </tr>
+                            <tr>
+                                <td>页数</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>系列</td>
+                                <td>中国古典文学雅读系列</td>
+                            </tr>
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                        <a href="https://book.douban.com/subject/35698720/" target="_blank">
+                                                豆瓣
+                                        </a>&nbsp;
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+<h2>注</h2>
+<p>此词条特指明代张宗子《夜航船》，又有清人破额山人之笔记小说集《夜航船》，未读不表。</p>
+</div>
+<div class="section" id="section-3">
+<h2>评分</h2>
+<p>⭐⭐⭐⭐⭐
+⭐⭐⭐⭐ 9/10</p>
+</div>
+<div class="section" id="section-4">
+<h2>张岱其人</h2>
+<p>张岱出自书香门第，祖上四代为官，高祖至四品，云南按察副使，甘肃行太仆卿。他世居浙江山阴（绍兴），祖籍为四川绵竹（剑门关之南），字宗子，号陶庵、陶庵老人、蝶庵、古剑老人、古剑陶庵、古剑陶庵老人、古剑蝶庵老人，晚年号六休居士。</p>
+<p>张岱祖辈虽织入官僚集团，但至他这代，家族已然没落，岱为长，存“公侯之后，必复其始”的心结，其十六岁考上秀才，但乡试总不中举，天启四年（1624年）、天启七年（1627年）、崇祯八年（1635年）三次参加，三次失利。举人够不着，更别说进士，眼看三四十岁了，也许张岱隐约感觉此生难登仕途，但数十载寒窗苦读，已然一身诗书才华，他产生了修明史的念头，此后也成为他的代表成就《石匮书》，共二百二十卷。</p>
+</div>
+<div class="section" id="section-5">
+<h2>本书</h2>
+<p>本书是张编撰的百科全书，有4000多条目，拿今之高考语文作比，应不超1000考点，拿张岱之资质与努力，今天来做个博导肯定没问题。且有说，天下学问，惟夜航船中最难对付。依次看，若有幸15岁前读完本书的人，必通文学，除此，此间的知识拿到今天多是有趣而无用的，到 50 后再读也不为晚了。</p>
+<p>书名若翻译为英文，为《the night ferry》比较恰当。</p>
+</div>
+<div class="section" id="section-6">
+<h2>版本</h2>
+<p>版本。本书就是那种需要挑版本的，挑选古籍出版社的通识，我编了个段子，不必太较真：</p>
+<blockquote>
+<div class="line-block">
+<div class="line">中书上古国家队，商印专译国图影。</div>
+<div class="line">浙古凤凰细甄别，广陵岳麓亦好看。</div>
+<div class="line">黄山齐鲁崇文寻，中州九州师大捡。</div>
+<div class="line">中社科学北京藏，三联生活高教专。</div>
+</div>
+</blockquote>
+<p>本书的浙古版就是原汁原味的，中书有好几个版本，常见版本是文白对照的，这本我拥有的是古吴轩，是苏州系，风格比较雅致。</p>
+<p>我的选择逻辑是这样的，基本没有场景会与人就《夜航船》的内容论到字的级别，竖版留到 50 岁后读。古吴轩是有品质且有阅读快感的，但最主要的原因还是...(此处省略一个字)。</p>
+<p>若你算个有闲人，最好寻一工作日午后，去到一间有夕阳西晒但也有空调的老书店中，站在书架前亲自选选读读，你在那个时间挑中的版本定最适合的版本。</p>
+</div>
+<div class="section" id="section-7">
+<h2>段子</h2>
+<p>张公子的船，我的理解是指打破圈层的社交场合中的说话用典不出丑的人均通识。</p>
+<p>容小僧伸脚，是说「秀才」认澹台灭明是两人而尧舜是一人的典故。</p>
+</div>
+<div class="section" id="section-8">
+<h2>摘录</h2>
+<blockquote>
+<p>九天</p>
+<p>东方苍天，南方炎天，西方浩天，北方玄天，东北旻天，西北幽天，西南朱天，东南阳天，中央钧天。</p>
+<p>二十八宿</p>
+<p>东方七宿：角，木蛟；亢，金龙；氐，土貉；房，日兔；心，月狐；尾，火虎；箕，水豹。
+北方七宿；斗，木獬；牛，金牛；女，土蝠；虚，日鼠；危，月燕；室，火猪；壁，水㺄。
+西方七宿：奎，木狼；娄，金狗；胃，土雉；昴，日鸡；毕，月乌；觜，火猴；参，水猿。
+南方七宿：井，木犴；鬼，金羊；柳，土獐；星，日马；张，月鹿；翼，火蛇；轸，水蚓。</p>
+</blockquote>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.im"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

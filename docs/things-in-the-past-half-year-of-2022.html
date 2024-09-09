@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 2022H2半年小记</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+
+
+
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="./"><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./things-in-the-past-half-year-of-2022.html"
+                rel="bookmark"
+                title="「2022H2半年小记」的永久链接"
+            >2022H2半年小记</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2022-09-29T12:00:00+08:00">2022-09-29 周四</time>
+                最后修改 <time datetime="2022-09-29T12:00:00+08:00">2022-09-29 周四</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/article.html">文章</a>
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+
+        <h2>ALaunch 和 Leetcode</h2>
+<p>在上半年设计了 <a href="https://kaffa.im/alaunch-your-first-productivity-software.html">ALaunch</a>，后因参加面试停更了两个月，去 Leetcode 刷完几十题，通过了算法面试，但 ALaunch 更新却放下了，后因面试流程挂起，让停更显得很无谓，空耗费时间，唯一的收益是发现面试刷 Leetcode 只是一个同其他考试雷同的小游戏，你只需要掌握每种语言及其有限的特性和标准库/包、基本算法和基本数据结构就可以玩转。</p>
+<p>到最后在线面试，发现帮你通过面试的，其实还是那些过去的几十年中积累的基础技能，可在程序世界的公司们喜欢使用此类游戏化的方式挑选员工。类似的还有很多类似的测评，如一些更难的认证和考试，如 PMP，CFA，GRE/GMAT 等，找一个智力水平正常的中国大学生脱产投入，一定可以在 5 次以内通过，这是学习的认知心理学规律决定的。</p>
+<h2>商业、业务和信息技术的关系</h2>
+<p>经典概念因为难以准确定义，在不同的领域通常会演化出不同的名词，中文商业和业务是 Business 的翻译，一体两面，商业偏学术沙盘，业务偏企业实操，信息技术即业务模式的固化。信息技术与商业模式的关联上有两种，一是商业模式验证后，利用信息技术加速复制业务；二是信息技术本身作为产品和服务。对于个人创业 PMP 很有用，但在企业工作，学习了 <a href="https://www.opengroup.org/togaf">TOGAF</a> 后更能打通理解商业的任督二脉，从而理解企业运作和经营。</p>
+<p>武器之中，棍的优势是长，且力出一线，适合武术精英；良好的架构好比双截棍，让普通人也能打出百斤之力。因为双截棍有一个分割结构，更灵活多变，好适应对手打法。在创业初期，需集中资源开拓创新时，职能分离的灵活结构并不是理想的组织结构，但在守业阶段，分层和分离，却可以更好的保护和固化商业模式。毕竟创业是短期主义，企业是马拉松，长期主义更吃防守和抗风险能力。</p>
+<h2>Mark Russinovich 推 Rust，Bjarne Stroustrup 讽之</h2>
+<p>作为一名编程语言爱好者，这二十年间我至少用过二十种以上的编程语言。有些一直在用如 Python，有些只用过那么几次，如C、Object Pascal、Objective C、Lisp。如果把这些语言看作一颗世界之树，你会发现基本的毛细根系都是Assembly、C 和 Shell，再上是 C++、Java、C#，然后是 Python、Go、JavaScript/TypeScript系、PHP系、Ruby等，还有一些如 Lisp，还有一些离我们很远。</p>
+<p><a href="https://www.stroustrup.com/">Bjarne Stroustrup</a> 和 <a href="http://www.markrussinovich.com/">Mark Russinovich</a>，此两人都是世界少有的开发者，前者是 C++ 之父，后者是使用 C++ 编程几十年，原来的 Sysinternal 公司创始人后被 Microsoft 收入囊中，现在的 Azure CTO，前者都在学术世界取得非凡成就，后者在商业世界成功非凡，Russinovich 是顶峰，Stroustrup 更是顶峰之巅。</p>
+<p>C++ 的诞生就是 Bjarne Stroustrup 的连续性哲学的体现，它完全实现了 C 的后向兼容，这样便继承了 C 的财富，而同等的语言变革的例子 Python 2 到 Python 3 就是另外一种哲学，<a href="https://gvanrossum.github.io/">Guido van Rossum</a> 仁慈的独裁也让 Python 取得了另一种成功，现在正和 <a href="https://github.com/ahejlsberg">Anders Hejlsberg</a> 共同在 Microsoft 工作着，致力于将 Python 性能翻倍，而后者是另一个天才，Turbo Pascal 编译器的主要作者，Delphi、C# 和 TypeScript 之父；而进化失败的例子也比比皆是，如从来没有的 Perl 6 变成了 Raku。</p>
+<p>2202年了，这个商业世界并不缺少语言，缺少的能满足人们欲望的语言，清晰，灵活，紧凑，开发与运行效率兼顾，且安全。</p>
+<p>Rust 为什么还有机会？要从编程语言的大局说起，每一种久负盛名的语言背后都有一个成功的商业生态。</p>
+<p>C++ 是所有商业生态的基石，Java 能成功，相对于 C++ 来说，是因为 JVM 解决了平台差异封装了变化，同时抹平了菜鸟程序员和普通程序员之间的差异，满足生产率需求，也就是成本的需求，再遇上了 Web 时代后，虽然 PHP 商业友好，但深入后遇到瓶颈后都只能自己撸，坑多，标准轮子少；dotNet 出身于 Windows 平台，商业上需 Windows Server 授权，研发上需 Visual Studio 授权，天然对创业企业不友好，而 JavaScript 抓住了 v8 和 异步，加上移动互联网的前端机会牢牢站稳了脚跟，Go 把并发平民化了获得了一定的市场份额，其实 Rust 在 Firefox 48 中走入公众视线，距今不到 7 年，如今编程世界的生产率相较于 10 年前，也并没有质的飞跃，只是变得更分散了，痛点也更碎片化了。这导致计算和人更近，而对商业逻辑计算的看护成本更高，随着安全产品化后，对安全主题的关注逐渐从水下浮出水面。</p>
+<p>但这些却不是我这一个月来学习 Rust 的原因，之所以开始磕 Rust，是从系统论的角度考虑，我的假设是，一，商业世界的底层是 C/C++，那些属于顶级极客，基础建设被解决了；商业世界的上层，被 Java 和 JavaScript 解决了，包括 Go 它们都是靠 GC 的；二，对于在校学习了 C、Java、Python 的年轻人来说，再学习 Rust 和 C++ 的成本基本一致，而 Rust 更潮更高薪，还能收获零开销的内存安全。</p>
+<h2>“你也是个 Rapper”</h2>
+<p>我也不是一个追新者，Bjarne Stroustrup 暗讽说某些高管总是迷恋新事物，让我想到了老舅，未来可能没有新说唱，但 Rap 会一直存在；可能其工作的行业影响其认知吧，Stroustrup 先是从事研究和教育，后转入大摩，会不会是因为教育和金融都是亘古不易旧事物，总在不变中思考变化。而 Russinovich 却一直在变化中。</p>
+<p>在此留下未来10～20年关于 C++ 和 Rust 的判断：Rust 会拿走 C++ 2/3 的份额。世界的发展是连贯的，但从来都不是线性平滑的，旧事物已然太卷时，年轻人需要变革，甚至是颠覆，Rust 正是这样的新赛道。</p>
+<p>感谢阅读。</p>
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.im"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+    <title>Kaffa.im - 数智 分类
+</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="../"><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+
+
+
+
+
+
+<section class="hero" style="min-height: 400px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);">
+    <div class="hero-body">
+        <div class="title is-family-primary is-max-desktop is-size-4 has-text-centered is-italic author_name mt-5">
+            <figure class="image is-64x64 has-text-centered" style="margin: auto;">
+                <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+            </figure>
+            Kaffa
+        </div>
+        <p class="is-size-6 has-text-centered has-text-grey my-3">探索人生，分享意趣。</p>
+        <div class="container is-max-desktop">
+            <div class="is-divider" data-content="North"></div>
+        </div>
+        <nav class="level is-mobile container is-max-desktop">
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">项目</p>
+                    <p class="title">5</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">动态</p>
+                    <p class="title">263</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">关注</p>
+                    <p class="title">6</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">友链</p>
+                    <p class="title">14</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<div class="container is-max-widescreen mt-4">
+    <div class="columns is-variable is-2">
+
+        <div class="column is-9">
+            <section class="box">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            所在位置：
+                        </div>
+                        <div class="level-item">
+                            <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+                                <ul>
+                                    <li>
+                                        <a href="/">
+                                            <span>首页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span>数智</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2021-01-03T12:00:00+08:00"> 2021-01-03 周日</time>
+                            记录一条笔记
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p>因准备找一份新工作，注册了新的 Github 账号，顺便尝试使用 Hugo 和 Hugo Theme 编写简历，这篇是过程的记录以帮助未来再次写简历的我和你。</p>
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../try-to-write-a-resume-with-hugo.html" rel="bookmark"
+                           title="「尝试用 Hugo 写简历」的永久链接">尝试用 Hugo 写简历</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2019-08-07T12:00:00+08:00"> 2019-08-07 周三</time>
+                            记录一条笔记
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">本文简单讲解如何拆解 Microsoft Designer Mouse</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../disassemble-the-microsoft-designer-mouse.html" rel="bookmark"
+                           title="「Microsoft Designer Mouse 拆解」的永久链接">Microsoft Designer Mouse 拆解</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2019-08-05T12:00:00+08:00"> 2019-08-05 周一</time>
+                            记录一条笔记
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">本文简单聊聊 Linux 发行版</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../linxu-distributions.html" rel="bookmark"
+                           title="「Linux 版本」的永久链接">Linux 版本</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2019-06-09T05:04:00+08:00"> 2019-06-09 周日</time>
+                            记录一条笔记
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">想介绍几种在访达（Finder）中拷贝文件路径的方法，但一小时后不小心按下浏览器回退，再写便就此篇加上了一些 macOS 的历史。</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../macos-history-and-copy-file-path-in-finder-app.html" rel="bookmark"
+                           title="「macOS 的前世今生及访达中拷贝文件的路径的方法」的永久链接">macOS 的前世今生及访达中拷贝文件的路径的方法</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2019-05-15T12:00:00+08:00"> 2019-05-15 周三</time>
+                            记录一条笔记
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p>修改 Microsoft Code Markdown 格式的快捷键</p>
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html" rel="bookmark"
+                           title="「修改 Microsoft Code Markdown 格式的快捷键」的永久链接">修改 Microsoft Code Markdown 格式的快捷键</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2018-07-18T12:30:00+08:00"> 2018-07-18 周三</time>
+                            记录一条笔记
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">本文描述用 VSCode 预览 reStructuredText 文件的配置办法</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../preview-restructuredtext-file-in-vscode.html" rel="bookmark"
+                           title="「用 VSCode 预览 reStructuredText 文件」的永久链接">用 VSCode 预览 reStructuredText 文件</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2018-06-28T10:55:00+08:00"> 2018-06-28 周四</time>
+                            记录一条笔记
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">本文描述数据和信息两个概念的差别</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../data-vs-information.html" rel="bookmark"
+                           title="「数据与信息的描述与差别」的永久链接">数据与信息的描述与差别</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2018-06-20T02:52:00+08:00"> 2018-06-20 周三</time>
+                            记录一条笔记
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">本文提供消除 Windows 下使用 VSCode 编辑 *.rst 文件的错误提示的方法</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../vscode-restructuredtext-warnings.html" rel="bookmark"
+                           title="「Windows 下使用 VSCode 编辑 *.rst 文件的错误提示」的永久链接">Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+<nav class="pagination is-small box" role="navigation" aria-label="pagination">
+    <a class="pagination-previous"
+       href="../category/digital2.html" title="Previous">上一页</a>
+    <span class="pagination-list">
+        第 3 页 / 共 3 页
+    </span>
+    <a class="pagination-next is-disabled"
+       href="../" title="Previous">下一页</a>
+</nav>
+        </div>
+
+        <div class="column is-3">
+
+            <section class="box">
+                <h3 class="mb-3">目录</h3>
+                <ul>
+                    <li><a href="../category/project.html">项目</a> (4)
+                    </li>
+                    <li><a href="../category/development.html">研发</a> (4)
+                    </li>
+                    <li><a href="../category/programming.html">编程</a> (9)
+                    </li>
+                    <li><a href="../category/website.html">网站</a> (21)
+                    </li>
+                    <li><a href="../category/reading.html">读书</a> (8)
+                    </li>
+                    <li><a href="../category/digital.html">数智</a> (32)
+                    </li>
+                    <li><a href="../category/words.html">言论</a> (4)
+                    </li>
+                    <li><a href="../category/article.html">文章</a> (42)
+                    </li>
+                    <li><a href="../category/software.html">软件</a> (6)
+                    </li>
+                    <li><a href="../category/book-list.html">书单</a> (4)
+                    </li>
+                    <li><a href="../category/weekly.html">周报</a> (39)
+                    </li>
+                    <li><a href="../category/book.html">书</a> (101)
+                    </li>
+                    <li><a href="../category/movie.html">影</a> (3)
+                    </li>
+                    <li><a href="../category/music.html">音</a> (2)
+                    </li>
+                    <li><a href="../category/things.html">物</a> (5)
+                    </li>
+                </ul>
+            </section>
+
+
+        </div>
+    </div>
+</div>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href=".."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

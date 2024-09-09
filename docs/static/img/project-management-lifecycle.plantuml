@@ -1,0 +1,8 @@
+@startuml
+start
+:开始项目;
+:组织与准备;
+:执行项目工作;
+:结束项目;
+stop
+@enduml

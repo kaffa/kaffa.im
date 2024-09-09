@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 科学革命的结构</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+
+
+
+    <meta name="tags" content="science" />
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="./"><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./the-structure-of-scientific-revolutions.html"
+                rel="bookmark"
+                title="「科学革命的结构」的永久链接"
+            >科学革命的结构</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-03-13T21:00:00+08:00">2024-03-13 周三</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/book.html">书</a>
+            <span class="ml-2">标签:</span>
+            <a class="tag is-medium" href="./tag/science.html">science</a>
+
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+        <div class="columns is-centered box mt-5" id="subject">
+            <div class="column is-one-quarter">
+                <p class="image">
+                    <img title="科学革命的结构" class="book-cover" src="/static/img/book/%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%E7%9A%84%E7%BB%93%E6%9E%84.jpg">
+                </p>
+                <div class="is-divider" data-content="Rating"></div>
+                <p class="has-text-centered">
+                    评分：<span class="title">9.0 </span>
+                </p>
+                <p class="has-text-centered">
+                    47 人评分
+                </p>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <span class="title">科学革命的结构</span>
+                        <br><span>The Structure of Scientific Revolutions</span>
+                    <p>
+                        <strong>
+                            作者：[美]托马斯·库恩&nbsp;[美]伊安·哈金 (导读)
+                        </strong>
+                        <strong class="ml-3">
+                            译者：金吾伦&nbsp;胡新和
+                        </strong>
+                    </p>
+                    <p class="is-size-7">
+                        本书是20世纪学术史上最有影响的著作之一，是科学史与科学哲学研究的学者们不可不读的基本文献。它引导了科学哲学界的一场认识论的大变革，成为科学哲学史上一道重要的分水岭。其影响不仅在于科学史、科学哲学、科学社会学等相关领域，而且延伸到社会学、文化人类学、文学史、艺术史、政治 史、宗教史等人文和社会科学领域，甚至在社会公众领域也产生了深刻的影响。书中提出的“范式转换”一语如今已成为我们耳熟能详的一个重要词汇。本书自1962年面世以来就引起强烈反响，掀起了一股世界性的研究热潮，其影响至今不衰。本版是芝加哥大学出版社为庆祝本书问世五十周年而作，新加入加拿大哲学家伊安·哈金教授所写的导读。“自然科学的发展除了按常规科学一点一滴地积累之外，还必然要出现“科学革命”。科学革命不仅仅使科学的面貌焕然一新，而且还会引起人们世界观的变革。” - 托马斯·库恩
+                    </p>
+                    <table class="table is-narrow is-striped is-hoverable is-size-7">
+                        <colgroup>
+                            <col style="width: 6rem" />
+                            <col/>
+                        </colgroup>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9787301214268</td>
+                            </tr>
+                            <tr>
+                                <td>语言</td>
+                                <td>zh</td>
+                            </tr>
+                            <tr>
+                                <td>出版社</td>
+                                <td>北京大学出版社</td>
+                            </tr>
+                            <tr>
+                                <td>出版时间</td>
+                                <td>
+                                    2012年
+                                        11月
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>装帧</td>
+                                <td>平装</td>
+                            </tr>
+                            <tr>
+                                <td>定价</td>
+                                <td>29.00元</td>
+                            </tr>
+                            <tr>
+                                <td>页数</td>
+                                <td>252</td>
+                            </tr>
+                            <tr>
+                                <td>系列</td>
+                                <td>北京大学科技哲学丛书</td>
+                            </tr>
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                        <a href="https://book.douban.com/subject/20376550/" target="_blank">
+                                                豆瓣
+                                        </a>&nbsp;
+                                        <a href="https://books.google.com/books?id=lxDtoAEACAAJ" target="_blank">
+                                                link.url
+                                        </a>&nbsp;
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+<h2>评分</h2>
+<p>⭐⭐⭐⭐⭐
+⭐⭐⭐⭐ 9/10</p>
+<p>20240313</p>
+</div>
+<div class="section" id="section-3">
+<h2>部分已读</h2>
+<p>这本书存入我的购物车是在口罩时代前，那是京东还发300-100图书券的时代。</p>
+<p>当每一个充满科技好奇心的人展开学科全景图时，都会遇到它。</p>
+<p>今天读它，主因在写一篇笔记时用到“范式”这个词，最后我也和大多使用这个词的人一样，并没有理解它真正的意义。</p>
+<p>这时，你可以用“方法”来替代它。</p>
+<p>在夜购回家的三十分钟里，我阅读了关于范式的解释：Paradigm一词第一位的用法是语法学中的用法，但是它也常被用作于各种隐喻。除了令人瞩目之外，科学成就还必须：1.“空前地吸引一批坚定的拥护者”，使他们脱离科学活动的其他竞争模式。2.它们必须是开放性的，具有许多的问题，以留待“重新组成的一批实践者去解决”。库恩总结说：“凡是共有这两点特征的成就，我此后便称之为‘范式’。”</p>
+<p>我们这时代也正是范式转变（Paradigm shift）的时代。例如，我们的生活范式是，读书、工作、租房、努力赚钱、结婚生子，然后继续做焦虑的打工人，希望着过上自己憧憬的生活，在忙碌内卷的职场争斗之余，抽出闲暇，在公众节假日选择一两个网红地打卡，去规划了好久的地方去旅游，这些就是大多人最深层次的信念。</p>
+<p>然而，科技的发展也让时代产生的种种变化，冲击着我们的共同想法和假设。AI的出现到AGI的曙光，超级个体、远程工作、数字游牧、房车旅行的出现，KOL、人均运营账号到副业赚钱，正是人们对抗时代范式转变的种种尝试。这些正是科学革命结构中描述的转型和变革时的现象。</p>
+<p>待持有旧范式的人群逐渐老去，新的生活范式就会像离离原上草一般生长出来，冲破既得利益者压在固着基土上的顽石。</p>
+<p>从依靠经验和领域知识解决问题，到通过搜索和问答，通过类比思维提出问题来逐步解决问题。</p>
+<p>这些也只是暂时看到的，黄仁勋说：别让你的孩子长大后成为程序员，别再学计算机了，去学生物学。编程语言可以普及成为人类的语言，现在世界上每个人都是程序员，这就是人工智能的奇迹。更有李彦宏者说：未来的编程语言只会剩下两种，一种叫做英文，一种叫做中文。我一直在劝，我说大家不要去卷模型了，卷应用吧，只有应用真正直接创造价值。</p>
+<p>首先，我曾是一个程序员，使用过20种以上的编程语言进行编程。我也同大多数人一样，不相信这样的“爆论”，至少在我人生所剩的几十年中，这些事不会那么夸张，即使有生之年，AGI出现了，它也一定是很昂贵的，昂贵过大多数聪明的头脑，更能肯定是的，AGI也许在许多领域有非常大的功效，但最终对AGI的治理，不也需要更有智慧的人才来操持。</p>
+<p>遥想三十年以后，AGI出现了，并完成了自举，希望那一天仁勋仁兄还安在，通过与人类与AGI共治委员会的讨论的会议达成的结论，下达最后一条对 AGI 的 Prompt，哦，也许 AGI 产生了原始的自由意志不需要第一推动力。“这是我交付的三亿 GPU，含有的 CUDA 单元足够你们全球的公司挥霍了，我留给你们的农场已上线，现在不需要YWD，未来的世界是我们的，也是你们的，最终，世界的就靠你们了。”</p>
+<p>我下线了。</p>
+</div>
+<div class="section" id="section-4">
+<h2>关于范式的摘录</h2>
+<p>“历史如果不是被我们看成是轶事或年表的堆栈的话，那么，它就能对我们现在所深信不疑的科学形象产生一个决定性的转变。”</p>
+<p>《科学革命的结构》或许（我并没有说就是）更相关于科学史上已过去了的那个时代，而不尽然是今天被实践着的科学。</p>
+<p>科学革命的结构如下：起先，是具有一个范式和致力于解谜的常规科学；随后，是严重的反常，引发危机;最终，由于新范式的诞生，危机得以平息。另一个因他而著名的词语没有出现在章节标题中，这就是不可通约性。这一概念意即在革命和范式转换过程中，新的思想和主张无法与旧的做严格的比较。即便是同样的用词，它们的真实含义也已改变。由此导致的一个观念是，一个新理论之所以被选择来取代旧理论，与其说是因为其真，还不如说是因为一种世界观的转变（第十章）。</p>
+<p>此书结束于一个令人不安的思想：科学中的进步并非通往单一真理的简单直线。我们所说的进步，体现在去追求更为恰当的世界观念，和更为融洽地与世界的互动。“范式是共有的范例，这是我现在认为本书中最有新意而最不为人所理解的那些方面中的核心内容”</p>
+<p>在亚里士多德的论证理论，尤其是在他的《修辞学》一书中，希腊语是一个重要的概念。《修辞学》是一本探讨演说者与听众双方之间的实践性论辩的著作，其中的演说者与听众共有着众多无须多言的信念。在英语翻译中，我们的 paradigm 一词的前身通常认为是“例子”（exemple)。然而，亚里士多德的意谓似乎更接近于“范例&quot;（exemplar)，一种最好的、最具指导性的例子。亚里士多德认为论证有两种基本类型,一种本质上是演绎的，但带有许多未明言的前提；而另一种本质上是类比的。</p>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.im"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

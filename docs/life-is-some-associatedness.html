@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 生命·缘</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+
+
+
+    <meta name="tags" content="2024" />
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="./"><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./life-is-some-associatedness.html"
+                rel="bookmark"
+                title="「生命·缘」的永久链接"
+            >生命·缘</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-03-07T12:00:00+08:00">2024-03-07 周四</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/article.html">文章</a>
+            <span class="ml-2">标签:</span>
+            <a class="tag is-medium" href="./tag/2024.html">2024</a>
+
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+
+        <div class="section" id="section-2">
+<h2>生命</h2>
+<p>艾米与臭臭是今年一月好上的，六十六天后的午后两点，艾米开始分娩，到晚十点已生出五只猫宝宝。</p>
+<p>老大、老二、老三和老五都顺利，不幸的是，老四诞出时感觉不到生命体征，也没有呼吸，我和LP轮流对它用热水暖，再揉搓背部，并进行了心肺复苏和人工呼吸，但这些抢救措施却依然无法唤回老四点点的生命迹象......</p>
+<p>此时，老四已葬在我家对面花圃繁草丛中。</p>
+</div>
+<div class="section" id="section-3">
+<h2>缘</h2>
+<p>“缘”字，在英文中很难找到同等表达，打开 Google 会翻译为 Edge（“像话吗？”），以上是个机器预判不了人的典型案例。</p>
+<p>当输入“缘分”时，会译成 Fate，希腊神话中 Fate 是三个女神，负责编织神和凡人的命运之线索。在这种理解下，命运是一种交织的关联，让我想到了复杂系统，当命运的丝线相互交错，顺序，叠加，充满了玄机，人生初始选择的微小差异最终导致令人惊讶的差别。</p>
+<p>放入中文语境，会发现“邂逅”一词配得上“缘”，“缘”在此时，不是理不清的复杂，也不是完全随机相遇，更不只是概率的 by chance。</p>
+<p>“缘”是命中的关连，至少一方要去牵动线索，产生联系。</p>
+<p>我们与老四缘未到罢...</p>
+</div>
+<div class="section" id="section-4">
+<h2>以下有一些与死有关的事，旧时代的事，请慎重展开。</h2>
+<details close>
+    <summary><dt>生死之间</dt></summary>
+
+    <p>在每只小猫来到世界时，我们既紧张又开心。老四走时，猫妈妈也许不知情，它继续喂养着剩余的四只猫仔子。</p>
+
+    <p>老四与兄妹们的生死永隔，就发生在几小时间，时间甚至没有留给我和LP接受和自我说服的缝隙，只能事后记录下与老四的几个小时。</p>
+
+    <p>死是一种熄灭吧，在它躺在花圃的泥土下时，我忆起了人生中与死相遇的经历。</p>
+
+    <p>有关死亡最早的记忆，是发生于我自己身上的，在我约4岁时，在公园玩耍，公园有一个湖心小岛，我跟着朋友奔跑，跨越石头时落水了。在落水的瞬间，我只是感觉时间非常的慢，从水下看岸上是很安静的，我安静的没有思考任何问题，咕噜咕噜喝了很多水，还好有一个好心的叔叔，背着相机来拍照，也许再晚一点，我的生命就终止于那一天。</p>
+
+    <p>在我五岁的那个时代，人老去离世后,会在住所附近的公共空间里用钢管、脚手架与绿色的防水布搭建一间很大的灵堂。然后运来很大的冰块将死者陈列在冰块上方，放在灵堂后半空间中，在灵堂的前半空间，是守灵的人。通常是故者的家属、亲戚或一生或晚年的至交，有的人还会请来乐队。在灵堂的前面中间是故者的遗像，亲人们在故者前面聊天、打麻将、吃饭，故者身前的朋友来悼念时，有乐队会奏一段哀乐，有人献上花圈，家属会燃放鞭炮以感谢回应，朋友哭泣着讲诉死者的生前事，此时只会念已故者的好和成就，以及一些只有朋友知晓的事迹，讲述给家属。就这样，到晚上家属守夜、喝茶、闲谈，有的人第二天依旧会去上班，或者去公司或厂里溜达一圈就早早下班，或者管理松的地方，请假的人也就和自己的师傅、科长、厂长打声招呼，一般这些领导在“白事”上都很通情达理，不会记录异常出勤。在那个大锅饭的时代，有一种朋友和街坊邻里间的团结和宽容。也正由于我还小，喜欢钻来钻去，不知怎么就从油布钻入了灵堂后半空间，陡然看到白布遮盖下老人皱缩的脸。毫无生机的躯体，今天抢救老四两小时后的样子也类似。如果人有灵，猫有魂，灵使用身体时，身体才是活物。初时老四的魂似还在那小身体里，但后来就感觉不到了，没有了生机，体温也渐渐降低，冷去了，小猫的身体也就只有躯体的形，没有了魂的生机。生命既无常，会在泥土中散去，可谓尘归尘，土归土。</p>
+
+    <p>我爷爷离世时，在街区搭建灵堂的习俗已经迁移到殡仪馆中了。记得我小时候，家族的叔伯姑姨们都年轻，家家都有三五兄弟姊妹，两三代间，一个家族开枝散叶至少二三十人。小辈们如我，都少不经事，装不来哀伤与惆怅，也依然不太懂生死。</p>
+
+    <p>初得悟是看过一本日本教授写的有关生死的书，记载了中国日本和世界从古至今的名人有关生死的言论。让我开始思考个体死亡和群体新生的关系。</p>
+
+    <p>看《天道》讲述芮小丹的生死观最为触动，“当生则生，当死则死”，境界高绝。</p>
+
+    <p>读《论生命之短暂》，从 Seneca 传奇又命运多舛的一生中读到了惜时与给自己分配时间，意外和明天不知道哪个会先来，不要等到意外来临时，幡觉人生短暂，人生的可支配时间对一个人其实够长。</p>
+
+    <p>最难理解之处，还是在于与老四的无缘，难道因为生产耗时长，它个头大，没有等到从猫妈肚子中呱呱坠地就已然窒息，难道它的魂动力不强，没能抓稳诞生的间隙。生命在此时，毫无疑问有太多的未接之处，同样的幼小躯体，老四与其它有什么不同呢，难道栖居其中的它不适应这身体吗？它飘去了哪儿呢？为什么不选择再降落回身体里呢？</p>
+
+    <p>悲观的一面是，亘古无尽时，死亡最后的回答竟是在有生之年停下牵联，无言以对，无物存哀伤。</p>
+
+    <p>我向对茫茫环宇低喃：曾有一只小猫仔，我们叫他老四，它穿过了六十六天的黑暗，离我那么近，却又远去了。</p>
+
+    <p>但也还有温暖的一面，也许有一天我们与它一样回到共同的来处，源于星尘，归于星尘。</p>
+
+</details></div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.im"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 三步解决所有编程领域问题</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+
+
+
+    <meta name="tags" content="问题解决" />
+    <meta name="tags" content="problem-solving" />
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="./"><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('https://kaffa.im/static/img/reward.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./three-steps-problem-solving-solutions-to-all-programming-problems.html"
+                rel="bookmark"
+                title="「三步解决所有编程领域问题」的永久链接"
+            >三步解决所有编程领域问题</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2018-06-18T02:22:00+08:00">2018-06-18 周一</time>
+                最后修改 <time datetime="2023-11-18T06:53:00+08:00">2023-11-18 周六</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/article.html">文章</a>
+            <span class="ml-2">标签:</span>
+            <a class="tag is-medium" href="./tag/wen-ti-jie-jue.html">问题解决</a>
+            <a class="tag is-medium" href="./tag/problem-solving.html">problem-solving</a>
+
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+
+        <div class="section" id="section-2">
+<h2>问题解决是否有通用方法？</h2>
+<p>当然，先看看几个典型。</p>
+<div class="section" id="section-3">
+<h3>一、解数学题</h3>
+<p>我们做过很多的数学题，证明、计算、应用题，我们解数学题时通常需要：</p>
+<ol class="arabic simple">
+<li>先读懂题，了解已知条件与未知</li>
+<li>如果从已知条件加上解题经验就可以抵达答案<ul>
+<li>是，即完成解题；</li>
+<li>否则，则需要引入新知识；</li>
+</ul>
+</li>
+<li>验证是否解决<ul>
+<li>如果未解决，则跳到第1步</li>
+</ul>
+</li>
+</ol>
+<p>一图胜千言</p>
+<object class="uml" data="https://kaffa.im/static/img/math-problem-solving-flowchart.svg" type="image/svg+xml">Math problem-solving</object>
+<p>从图上看解题家的能力在于读题能力和解题锦囊的大小，其中玄妙的一步在于“引入新知”。</p>
+</div>
+<div class="section" id="section-4">
+<h3>二、造火箭</h3>
+<p>Musk 成功了领导了猎鹰运载和重载火箭的制造，如果解决造火箭这个问题具有通用方法，那么将领导者换作其它人，使用这个通用方法，是否可以制造一枚火箭呢？</p>
+<p>理论上也许可行，但实操上几乎没人相信。</p>
+<ol class="arabic">
+<li><p class="first">这里的第一个问题是提问不清晰：</p>
+<p>制造一枚火箭这个问题很模糊，没有定义是模型，还是能飞上天的，还是能飞上火星的？</p>
+</li>
+<li><p class="first">如果假设是能上火星的，还存在人的问题：</p>
+<p>是一个人造，还是一个团队造？</p>
+</li>
+<li><p class="first">假设是由笔者带上专家团队，还有新问题：</p>
+<p>笔者是否具备管理团队的技能，会如何管理团队？</p>
+<ul class="simple">
+<li>专家和其他团队成员、外界，与各利益方怎么沟通？</li>
+<li>风险怎么管理？问题怎么处理？</li>
+<li>进度、成本怎么控制？</li>
+<li>质量怎么控制？</li>
+</ul>
+</li>
+</ol>
+<p>这些问题的答案指向——曼哈顿计划 <a class="footnote-reference" href="#f1" id="footnote-reference-1">[1]</a> 在上世纪40年代，运用了一套通用方法论，现名为“项目管理”知识体系，它为解决类似造火箭的武器工程问题提供了一个解决方案，曼哈顿计划也是常被公认的第一个全面应用项目管理理念和技术的大型项目。当然，除了项目管理方法论，如果曼哈顿计划是属于炼金活动，可能还需要向炼金炉中投入至少一个 Einstein 和一个 Oppenheimer 吧。</p>
+<p>《项目管理知识体系指南》（《PMBOK® 指南》）第六版中，定义的生命周期通常如下：</p>
+<object class="uml" data="https://kaffa.im/static/img/project-management-lifecycle.svg" type="image/svg+xml">Project Management Lifecycle</object>
+<p>其中阶段间并没有明显的分割点，每个阶段又包含一些过程组：启动、规划、执行、监控、收尾。实际上是一些拆分的工作，这些工作又可以从10大知识领域去理解，即：整合、范围、进度、成本、质量、资源、沟通、风险、采购、相关方。</p>
+<p>所以，造火箭所需要的是有投资方、人和组织资源的方法论。</p>
+</div>
+<div class="section" id="section-5">
+<h3>三、打仗</h3>
+<p>如何在一场战争中获胜，显然和解一道数学题、造一枚火箭所使用的方法不一样。打仗不仅使用武器，还需掌握信息，使用兵法，进行决策。</p>
+<p>“不战而屈人之兵”是战的最高境界，为达到这个境界，需要深入考察研究五个对象：道天地将法。简单地说：道是自然规律，天地是客观条件，将和法适配在项目上，就是项目管理方法论。</p>
+</div>
+<div class="section" id="section-6">
+<h3>共性是什么？</h3>
+<p>看起来，从解数学题，到造火箭，再到打仗，复杂程度递增，这里想说的是三者之间的联系，如果将打仗比看作生物体，解数学题就是细胞，造火箭就是组织。打仗所需要的思路和能力，并不超出解数学题和造火箭。</p>
+<p>在不同复杂程度上的 Problem，都有解决方法论。对于 problem-solving，我能想到的最深刻的模式就是学习和理解本身，更可以说所有问题的解决会回归到一个字——懂。</p>
+<p>如果把最能解决问题的人定义为“懂王”，那么阻碍大家成为懂王的最大的障碍就是绝对难度。</p>
+<p>在解数学题的层面上，一个未知因素会导致绝对难度的产生，这个未知因素往往是带着一些“折叠的结构”，比如一种快速开平方的方法，一种求最大公约数的欧几里德算法(Euclidean algorithm)，这些翻译中通常有叫做 Method。</p>
+<p>在造火箭的层面上，基础科学的问题，人的能力的问题会成为绝对难度。</p>
+<p>在打仗的层面上，战略决策，优先级和最优解是绝对难度。</p>
+<p>但在这三个领域都有做得非常棒的人，这说明两点：</p>
+<ol class="arabic simple">
+<li>在TA们的思维中建立了领域问题解决的通用方法；</li>
+<li>在TA们的经验中，有足够的“折叠的结构”以解决复杂度。</li>
+</ol>
+</div>
+</div>
+<div class="section" id="section-7">
+<h2>编程领域的问题解决是否有通用方法？</h2>
+<p>从抽象到具体，在编程领域的问题解决是否有通用方法？</p>
+<p>首先说我的结论，编程领域的问题难有通用解法，主要因为“编程领域”是一个经典概念。语言学中，经典概念属于人与人交流中的模糊地带，并没有明确的范围，很难说编程中遇到的某个问题是属于编程领域，还是非编程领域。所以，严格来说，编程领域的问题没有通解。</p>
+<p>其次，虽然没有通用解法，但存在有效方法。有效方法是指，一个问题采用一种方法后，可验证是否解决。所以，我们讨论的“编程领域”问题虽然没有通解，但可以采用经验去推演，或者在已知解空间去搜索。</p>
+<div class="section" id="section-8">
+<h3>为什么会有编程领域的难题？</h3>
+<p>现实世界很复杂，编程是世界的抽象和理想模型，理想和现实的差距存在于细节上，编程经常会遇到这些细节带来的鸿沟。</p>
+</div>
+<div class="section" id="section-9">
+<h3>那有效方法是什么？</h3>
+<p>我的方法提炼就剩下三个字：懂、干、议</p>
+<ol class="arabic simple">
+<li>懂</li>
+</ol>
+<blockquote>
+<p>如何衡量懂，窍门在于依赖自我认知，补全假设，然后提问。</p>
+<ul>
+<li><p class="first">内求：可以自问，独立思考后推演后自答；</p>
+<p>参考书 <a class="reference external" href="https://kaffa.im/the-art-of-thinking.html">《思考的艺术》</a></p>
+<p>一般来讲，大多数问题都是读的太少而想的太多带来的。我接触到的编程领域，从计算机系统结构，到网络，到编程语言，到软件工程，在时间允许的情况下，我总推荐独立阅读和思考的方式来解决。</p>
+</li>
+<li><p class="first">外求：可以通过寻找能解决的人群和社区，逐步搜索，然后提问，找到合适的人，追问。</p>
+<p>参考书 <a class="reference external" href="https://kaffa.im/asking-the-right-questions-a-guide-to-critical-thinking.html">《学会提问》</a></p>
+<p>为了解决一个具体问题，第一步是将问题定义清楚，第二步将问题复杂度降维，例如采用正交的方式分解。在决定向外部求助时，首选当然是浏览官方网站文档，毫无疑问，这是最新一手参考资料。如果再推荐一个有效而快速的解决，无疑是 <a class="reference external" href="https://www.stackoverflow.com">StackOverFlow</a> 和 <a class="reference external" href="https://chat.openai.com/">ChatGPT</a></p>
+</li>
+</ul>
+</blockquote>
+<ol class="arabic simple" start="2">
+<li>干</li>
+<li>议</li>
+</ol>
+</div>
+<div class="section" id="section-10">
+<h3>采用搜索解决问题的捷径是知识树</h3>
+<ol class="arabic simple">
+<li><dl class="first docutils">
+<dt>按平台和设备</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>桌面系统</dt>
+<dd><ul class="first last">
+<li>Windows：最佳效率桌面系统，更能打</li>
+<li>macOS：更有设计</li>
+<li><dl class="first docutils">
+<dt>GUN/Linux：建议玩 Debian 或 Ubuntu</dt>
+<dd><ul class="first last">
+<li>Debian：以服务稳定闻名</li>
+<li>Ubuntu：最流行易用</li>
+<li>openSUSE：界面好看</li>
+<li>Fedora：RHEL创新实验田</li>
+<li>CentOS：以前是一个靠谱的服务器版选择</li>
+<li>CentOS Stream：若有选择，可不选它</li>
+<li>Arch Linux：有品位的专家玩家爱用</li>
+<li>Gentoo：开局一堆码，功能全靠编</li>
+<li>Manjaro：不失为一个好选择</li>
+<li>Raspbian：极客爱玩</li>
+<li>Deepin：中文玩家适用</li>
+<li>中标麒麟：政府采购较多</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Unix</dt>
+<dd><ul class="first last">
+<li>FreeBSD：玩BSD桌面首选</li>
+<li>OpenBSD：最安全的系统</li>
+<li>NetBSD：多CPU架构</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Chrome OS：基于浏览器的计算环境</li>
+<li>Xfce：轻量级多媒体桌面</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>移动设备</dt>
+<dd><ul class="first last">
+<li>Android：移动设备半边天</li>
+<li>iOS：昂贵流畅的算力</li>
+<li>Windows Phone：输在放弃</li>
+<li>Firefox OS：低端机好用，已弃</li>
+<li>Sailfish/Meego：寄予厚望却错过时代</li>
+<li>Sybian/WinCE/PalmOS/NucleusOS：已是历史</li>
+<li>纯血鸿蒙：孕育中</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>穿戴设备</dt>
+<dd><ul class="first last">
+<li>watchOS：目前最成功的手表OS</li>
+<li>Android Wear：没有机会用，也不打算用</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>平板设备</dt>
+<dd><ul class="first last">
+<li>iPad：打破PC思维，基于场景的资讯、娱乐和媒体平台</li>
+<li>Android Tablet：生产力平板</li>
+<li>Kindle：读书人最好</li>
+<li>Windows RT：不能运行传统程序的 Windows 大家不买单</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>浏览器</dt>
+<dd><ul class="first last">
+<li>Trident：作古</li>
+<li>Webkit：将作古</li>
+<li>Gecko：作古</li>
+<li>Presto：有前景</li>
+<li>Servo：有前景</li>
+<li>Blink：有前景</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Web</dt>
+<dd><ul class="first last">
+<li>Java：对程序员友好的平台</li>
+<li>.Net：一种相对优秀的方案</li>
+<li>PHP：互联网内容基础，开源成品程序最多</li>
+<li>Python：并不快，但相伴金融、科学和 AI 友好</li>
+<li>Rust：未来的基础设施</li>
+<li>Go：介于 C 和 Rust 之间</li>
+<li>Ruby：爱用的人最爱用</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>按语言：</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>按类型模型</dt>
+<dd><ul class="first last">
+<li>强类型</li>
+<li>弱类型</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>按范式</dt>
+<dd><ul class="first last">
+<li>面向对象</li>
+<li>函数式</li>
+<li>过程式</li>
+<li>多范式</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>按交互</dt>
+<dd><ul class="first last">
+<li>编译型</li>
+<li>解释型</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>按热度</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>不会不好意思打招呼系列</dt>
+<dd><ul class="first last">
+<li>JavaScript / ECMAScript</li>
+<li>HTML / XML</li>
+<li>CSS</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>大公司都用系列</dt>
+<dd><ul class="first last">
+<li>C/C++</li>
+<li>Java</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>创业公司都用系列</dt>
+<dd><ul class="first last">
+<li>PHP</li>
+<li>Python</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>聪明系列</dt>
+<dd><ul class="first last">
+<li>C#</li>
+<li>Delphi</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>敏捷系列</dt>
+<dd><ul class="first last">
+<li>Ruby / RoR</li>
+<li>PHP / Laravel</li>
+<li>Python / Django</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>有钱景/有局限/不好用系列</dt>
+<dd><ul class="first last">
+<li>Rust</li>
+<li>Go</li>
+<li>TypeScript</li>
+<li>Kotlin</li>
+<li>Swift</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>科研系列</dt>
+<dd><ul class="first last">
+<li>F#</li>
+<li>R</li>
+<li>Matlab</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>极客系列</dt>
+<dd><ul class="first last">
+<li>Clojure</li>
+<li>Scala</li>
+<li>Perl</li>
+<li>Assembly</li>
+<li>Rust</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="section-11">
+<h3>编程领域问题的根本难度</h3>
+<p>编程领域问题不仅仅只有分类，金字塔原理，分类是一种通用且重要的思维模式，解决问题最终依赖的是网状的知识图谱。从长远来看问题的解决最终依赖于自我的学习力，而决定编程领域问题的根本难度可能在于：</p>
+<ol class="arabic simple">
+<li>语言障碍</li>
+</ol>
+<blockquote>
+语言学习本身不是短时间能解决的问题，所以如果当待解决的问题所依赖的知识与提问的人之间存在语言障碍，那么解决此问题将会面临一个较高难度。</blockquote>
+<ol class="arabic simple" start="2">
+<li>自我认知</li>
+</ol>
+<blockquote>
+有一本书叫做《提问的艺术》可以参考。从测试的角度上，一个好提问，需给回答的人创造一个条件，方便回答者重现或进入问题的场景，一个自我认知好的人容易提好问题。</blockquote>
+</div>
+</div>
+<div class="section" id="section-12">
+<h2>结论</h2>
+<ol class="arabic simple">
+<li>计算理论是经证明的，编程领域属于应用领域，并不存在绝对难度的问题，只有对资源的权衡和妥协。</li>
+<li>编程领域问题最难的不在事，而在人。</li>
+<li>编程领域没有通用解法，只有相对有效的方法。</li>
+<li>如果三步能解决所有编程领域的问题那就是：一、懂；二、干；三、循环一和二直到完成。</li>
+</ol>
+<img alt="望读有所获。" src="https://kaffa.im/static/img/reward.png" />
+</div>
+<div class="section" id="section-13">
+<h2>脚注</h2>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td>曼哈顿计划：美国陆军部于1942年6月开始利用核裂变反应来研制原子弹的计划。</td></tr>
+</tbody>
+</table>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.im"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
