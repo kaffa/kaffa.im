@@ -36,7 +36,7 @@ DEFAULT_DATE_FORMAT = '%Y-%m-%d %a'
 DEFAULT_LANG = 'zh-CN'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_RSS = 'feed'
+FEED_ALL_RSS = 'feed.xml'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
