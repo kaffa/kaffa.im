@@ -24,22 +24,22 @@ follow.is 是 DIYgod 的新产品，其中可以 Clain 一个 Feed 为自己的�
 
 1. Content
 
-在 Feed 最新内容中增加如下文字
+在 Feed 最新内容中增加如下文字::
 
-This message is used to verify that this feed (feedId:41342818708527123) belongs to me (userId:41447029693323264). Join me in enjoying RSS on the next generation information browser https://follow.is.
+    This message is used to verify that this feed (feedId:41342818708527123) belongs to me (userId:41447029693323264). Join me in enjoying RSS on the next generation information browser https://follow.is.
 
 2. Description
 
-在 Feed 的 xml 文件中，增加 Description 标签，内容如下
+在 Feed 的 xml 文件中，增加 Description 标签，内容如下::
 
-<description>feedId:41342818708527123+userId:41447029693323264</description>
+    <description>feedId:41342818708527123+userId:41447029693323264</description>
 
-3. 在 Feed 中增加如下内容。
+3. 在 Feed 中增加如下内容::
 
-<follow_challenge>
-    <feedId>41342818708527123</feedId>
-    <userId>41447029693323264</userId>
-</follow_challenge>
+    <follow_challenge>
+        <feedId>41342818708527123</feedId>
+        <userId>41447029693323264</userId>
+    </follow_challenge>
 
 
 Pelican 增加 claim 的方式
