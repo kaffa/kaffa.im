@@ -45,3 +45,10 @@ def add_claim(context, feed):
 
 def register():
     signals.feed_generated.connect(add_claim)
+
+
+if __name__ == '__main__':
+    add_atom_description({
+        'OUTPUT_PATH': 'D:/code/github/kaffa/kaffa.github.io/docs',
+        'FEED_ALL_ATOM': 'feeds/all.atom.xml'
+    }, None)
