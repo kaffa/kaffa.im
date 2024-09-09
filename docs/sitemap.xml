@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-09-09T15:30:35-00:00</lastmod>
+<lastmod>2024-09-09T15:50:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-09-09T15:30:35-00:00</lastmod>
+<lastmod>2024-09-09T15:50:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-09-09T15:30:35-00:00</lastmod>
+<lastmod>2024-09-09T15:50:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-09-09T15:30:35-00:00</lastmod>
+<lastmod>2024-09-09T15:50:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -61,7 +61,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/add-diygod-follow-claim.html</loc>
-<lastmod>2024-09-08T12:40:00+08:00</lastmod>
+<lastmod>2024-09-09T15:30:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2056,7 +2056,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2024-09-08T12:40:00+08:06</lastmod>
+<lastmod>2024-09-09T15:30:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
