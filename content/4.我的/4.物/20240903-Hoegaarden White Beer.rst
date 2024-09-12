@@ -36,6 +36,18 @@
 
 出于饮酒认知成长过程，或者出于男子气概包袱，不排除有人不再喜欢福佳白啤，但无论男女，我相信初饮至少是喜欢过它的；而如果你的生命中还未路过它，我愿它也能出现在你的愿望清单中，而且它可以一直呆在其中。
 
+.. image:: /static/img/2024/hoegaarden1.png
+    :alt: hoegaarden1
+    :width: 400px
+
+.. image:: /static/img/2024/hoegaarden2.png
+    :alt: hoegaarden2
+    :width: 400px
+
+.. image:: /static/img/2024/hoegaarden-3.svg
+    :alt: hoegaarden-3
+    :width: 400px
+
 评论
 ===========
 
