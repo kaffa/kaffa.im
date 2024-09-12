@@ -9,6 +9,11 @@ Money Focused Freestyle
 :summary: 我在房间里洗个澡，同时在思考中国有哪个 rapper能比我屌
 :subject_url: https://neodb.social/album/3UEQSaFCA3ooft4Z3DKFQv
 
+听过
+===========
+
+神来之笔为第一句。
+
 
 歌词
 ===========
