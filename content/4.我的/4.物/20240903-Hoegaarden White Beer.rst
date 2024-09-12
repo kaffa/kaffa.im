@@ -38,18 +38,15 @@
 
 .. image:: /static/img/2024/hoegaarden1.png
     :alt: hoegaarden1
-    :max-width: 400px
-    :max-height: 300px
+    :style: max-width: 400px, max-height: 300px
 
 .. image:: /static/img/2024/hoegaarden2.png
     :alt: hoegaarden2
-    :max-width: 400px
-    :max-height: 300px
+    :style: max-width: 400px, max-height: 300px
 
 .. image:: /static/img/2024/hoegaarden-3.svg
     :alt: hoegaarden-3
-    :max-width: 400px
-    :max-height: 300px
+    :style: max-width: 400px, max-height: 300px
 
 评论
 ===========
