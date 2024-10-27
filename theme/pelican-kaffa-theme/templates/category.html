@@ -156,7 +156,7 @@
                 </div>
                 <article class="box">
                     <h2 class="title is-6">
-                        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                        <a href="{{ SITEURL }}{{ article.url }}" rel="bookmark"
                            title="「{{ article.title|striptags }}」的永久链接">{{ article.title }}</a>
                     </h2>
                     <div class="media">
@@ -203,7 +203,7 @@
                     {% for sorted_category in CATEGORY_DICT.keys() %}
                     {% for category, articles in categories %}
                     {% if sorted_category==category %}
-                    <li><a href="{{ SITEURL }}/{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{
+                    <li><a href="{{ SITEURL }}{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{
                         articles|count }})
                     </li>
                     {% endif %}

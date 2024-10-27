@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-09-12T20:00:05-00:00</lastmod>
+<lastmod>2024-10-27T12:32:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-09-12T20:00:05-00:00</lastmod>
+<lastmod>2024-10-27T12:32:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-09-12T20:00:05-00:00</lastmod>
+<lastmod>2024-10-27T12:32:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-09-12T20:00:05-00:00</lastmod>
+<lastmod>2024-10-27T12:32:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,6 +60,41 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/yayu-independent-blog-self-examination-questionnaire-15-questions.html</loc>
+<lastmod>2024-10-24T10:24:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/weekly-w41-w42.html</loc>
+<lastmod>2024-10-20T08:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/solution-for-macos-and-windows-cannot-communicate-on-a-lan.html</loc>
+<lastmod>2024-10-12T10:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/weekly-w39-w40.html</loc>
+<lastmod>2024-10-06T08:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/weekly-w37-w38.html</loc>
+<lastmod>2024-09-22T08:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/money-focused-freestyle.html</loc>
 <lastmod>2024-09-12T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -76,6 +111,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/add-follow-claim.html</loc>
 <lastmod>2024-09-08T12:40:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/weekly-w35-w36.html</loc>
+<lastmod>2024-09-08T08:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2056,7 +2098,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2024-09-12T12:00:00+08:06</lastmod>
+<lastmod>2024-10-24T10:24:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

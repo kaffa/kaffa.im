@@ -32,7 +32,7 @@
   {% endfor %}
   {% if DISPLAY_PAGES_ON_MENU %}
     {% for page in PAGES %}
-      <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+      <li><a href="{{ SITEURL }}{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
   {% endif %}
   {% if MENUITEMS_MIDDLE %}
@@ -43,7 +43,7 @@
   {% if DISPLAY_CATEGORIES_ON_MENU %}
     {% for cat, null in categories %}
       <li {% if cat == category %}class="active"{% endif %}>
-        <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a>
+        <a href="{{ SITEURL }}{{ cat.url }}">{{ cat | capitalize }}</a>
       </li>
     {% endfor %}
   {% endif %}

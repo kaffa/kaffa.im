@@ -19,7 +19,7 @@ Dell XPS 15 9550
 - 处理器：Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
 - 内存：16.0 GB
 
-`产品规格 </static/file/xps_laptop_xps-15-9550-laptop_reference guide_en-us.pdf>`_
+`产品规格 <https://dl.dell.com/manuals/all-products/esuprt_laptop/esuprt_xps_laptop/xps-15-9550-laptop_reference%20guide_en-us.pdf>`_
 
 评论
 ===========

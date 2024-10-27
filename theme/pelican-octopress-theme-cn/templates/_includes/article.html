@@ -2,7 +2,7 @@
       {% include '_includes/qr_code.html' %}
     {% if index %}
       <h1 class="entry-title">
-        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title|striptags }}</a>
+        <a href="{{ SITEURL }}{{ article.url }}">{{ article.title|striptags }}</a>
       </h1>
     {% else %}
       <h1 class="entry-title">{{ article.title|striptags }}</h1>
@@ -17,7 +17,7 @@
   <div class="entry-content">{{ article.summary }}</div>
   {% if article.summary != article.content %}
   <footer>
-    <a rel="full-article" href="{{ SITEURL }}/{{ article.url }}">继续阅读 &crarr;</a>
+    <a rel="full-article" href="{{ SITEURL }}{{ article.url }}">继续阅读 &crarr;</a>
   </footer>
   {% endif %}
 {% else %}

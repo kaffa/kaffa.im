@@ -16,7 +16,7 @@
     <section class="box content container is-max-desktop mt-4">
         <ul>
         {% for category, articles in categories|sort %}
-        <li><a href="{{ SITEURL }}/{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{ articles|count }})</li>
+        <li><a href="{{ SITEURL }}{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{ articles|count }})</li>
         {% endfor %}
         </ul>
     </section>
