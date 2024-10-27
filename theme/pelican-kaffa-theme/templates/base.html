@@ -117,12 +117,12 @@
                 {% endfor %}
                 {% if DISPLAY_PAGES_ON_MENU %}
                 {% for p in pages %}
-                <a class="navbar-item{% if p==page %} active{% endif %}" href="{{ SITEURL }}{{ p.url }}">{{ p.title }}</a>
+                <a class="navbar-item{% if p==page %} active{% endif %}" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
                 {% endfor %}
                 {% endif %}
                 {% if DISPLAY_CATEGORIES_ON_MENU %}
                 {% for cat, null in categories %}
-                <a class="navbar-item{% if cat==category %} active{% endif %}" href="{{ SITEURL }}{{ cat.url }}">{{ cat }}</a>
+                <a class="navbar-item{% if cat==category %} active{% endif %}" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
                 {% endfor %}
                 {% endif %}
 

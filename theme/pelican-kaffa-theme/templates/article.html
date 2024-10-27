@@ -31,14 +31,14 @@
         <div class="hero-body">
             <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
                 style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
-            ><a href="{{ SITEURL }}{{ article.url }}"
+            ><a href="{{ SITEURL }}/{{ article.url }}"
                 rel="bookmark"
                 title="「{{ article.title|striptags }}」的永久链接"
             >{{ article.title }}</a></h2>
             <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
                 {% if article.authors %}
                     {% for author in article.authors %}
-                    <a href="{{ SITEURL }}{{ author.url }}">{{ author }}</a>
+                    <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
                     {% endfor %}
                 {% endif %}
                 发布于 <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
@@ -60,12 +60,12 @@
         <div class="mb-2">
             {% if article.category %}
             <span>分类:</span>
-            <a class="tag is-medium" href="{{ SITEURL }}{{ article.category.url }}">{{ CATEGORY_DICT[article.category]['name'] }}</a>
+            <a class="tag is-medium" href="{{ SITEURL }}/{{ article.category.url }}">{{ CATEGORY_DICT[article.category]['name'] }}</a>
             {% endif %}
             {% if article.tags %}
             <span class="ml-2">标签:</span>
             {% for tag in article.tags %}
-            <a class="tag is-medium" href="{{ SITEURL }}{{ tag.url }}">{{ tag }}</a>
+            <a class="tag is-medium" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
             {% endfor %}
 
             {% endif %}

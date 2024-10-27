@@ -2,7 +2,7 @@
   <span class="byline author vcard">
     发布人： <span class="fn">
       {% if AUTHORS_SAVE_AS %}
-        <a href="{{ SITEURL }}{{ article.author.url }}">{{ article.author }}</a>
+        <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
       {% else %}
         {{ article.author }}
       {% endif %}
@@ -10,12 +10,12 @@
   </span>
   {% include '_includes/article_time.html' %}
   <span class="categories">
-    <a class='category' href='{{ SITEURL }}{{ article.category.url }}'>{{ article.category }}</a>
+    <a class='category' href='{{ SITEURL }}/{{ article.category.url }}'>{{ article.category }}</a>
   </span>
   {% if article.tags %}
   <span class="categories">
     {% for tag in article.tags %}
-    <a class="category" href="{{ SITEURL }}{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+    <a class="category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
     {% endfor %}
   </span>
   {% endif %}

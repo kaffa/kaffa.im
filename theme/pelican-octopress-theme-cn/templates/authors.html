@@ -8,7 +8,7 @@
     	</header>
 
 	{% for author, articles in authors|sort %}
-		<p><a href="{{ SITEURL }}{{ author.url }}">{{ author.name }}</a> ({{ articles|count }})</p>
+		<p><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a> ({{ articles|count }})</p>
 	{% endfor %}
 	</article>
 </div>

@@ -132,7 +132,7 @@
                         </div>
                         <div class="media-content">
                             <div class="block is-size-7" style="word-break: break-all">
-                                <a href="{{ SITEURL }}{{ node['title'] }}" title="点击跳转">{{ edge['node']['body'] }}</a>
+                                <a href="{{ SITEURL }}/{{ node['title'] }}" title="点击跳转">{{ edge['node']['body'] }}</a>
                                 <time datetime="{{ edge['node']['publishedAt'] }}">{{ edge['node']['publishedAt'].split('T')[0] }}</time>
                             </div>
                         </div>
@@ -245,7 +245,7 @@
                 </div>
                 <article class="box">
                     <h2 class="title is-6">
-                        <a href="{{ SITEURL }}{{ article.url }}" rel="bookmark"
+                        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                            title="「{{ article.title|striptags }}」的永久链接">{{ article.title }}</a>
                     </h2>
                     <div class="media">
@@ -291,7 +291,7 @@
                     {% for sorted_category in CATEGORY_DICT.keys() %}
                         {% for category, articles in categories %}
                             {% if sorted_category==category %}
-                            <li><a href="{{ SITEURL }}{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{ articles|count }})</li>
+                            <li><a href="{{ SITEURL }}/{{ category.url }}">{{ CATEGORY_DICT[category]['name'] }}</a> ({{ articles|count }})</li>
                             {% endif %}
                         {% endfor %}
                     {% endfor %}
@@ -312,7 +312,7 @@
                 <div class="tags">
                     {% for tag, articles in tags|sort_by_article_count %}
                         {%- if loop.index <= 20 -%}
-                        <a class="tag" href="{{ SITEURL }}{{ tag.url }}" title="{{ articles|count }}">{{ tag }}</a>
+                        <a class="tag" href="{{ SITEURL }}/{{ tag.url }}" title="{{ articles|count }}">{{ tag }}</a>
                         {%- endif -%}
                     {% endfor %}
                 </div>

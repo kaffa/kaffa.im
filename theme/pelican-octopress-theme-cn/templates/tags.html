@@ -9,7 +9,7 @@
 
 	<p>
 	{% for tag, articles in tags|sort %}
-		<a href="{{ SITEURL }}{{ tag.url }}">{{ tag.name }}</a> ({{ articles|count }})<br>
+		<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a> ({{ articles|count }})<br>
 	{% endfor %}
 	</p>
 	</article>

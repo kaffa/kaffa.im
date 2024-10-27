@@ -1,10 +1,10 @@
 <div class="pagination">
   {% if articles_page.has_next() %}
-    <a class="prev" href="{{ SITEURL }}{{ articles_next_page.url }}">上一页</a>
+    <a class="prev" href="{{ SITEURL }}/{{ articles_next_page.url }}">上一页</a>
   {% endif %}
 
   {% if articles_page.has_previous() %}
-    <a class="next" href="{{ SITEURL }}{{ articles_previous_page.url }}">下一页</a>
+    <a class="next" href="{{ SITEURL }}/{{ articles_previous_page.url }}">下一页</a>
   {% endif %}
   <br />
 </div>

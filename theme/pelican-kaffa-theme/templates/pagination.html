@@ -3,12 +3,12 @@
 {% set last_page = articles_paginator.page(articles_paginator.num_pages) %}
 <nav class="pagination is-small box" role="navigation" aria-label="pagination">
     <a class="pagination-previous{% if not articles_page.has_previous() %} is-disabled{% endif %}"
-       href="{{ SITEURL }}{{ articles_previous_page.url }}" title="Previous">上一页</a>
+       href="{{ SITEURL }}/{{ articles_previous_page.url }}" title="Previous">上一页</a>
     <span class="pagination-list">
         第 {{ articles_page.number }} 页 / 共 {{ articles_paginator.num_pages }} 页
     </span>
     <a class="pagination-next{% if not articles_page.has_next() %} is-disabled{% endif %}"
-       href="{{ SITEURL }}{{ articles_next_page.url }}" title="Previous">下一页</a>
+       href="{{ SITEURL }}/{{ articles_next_page.url }}" title="Previous">下一页</a>
 </nav>
 {% endif %}
 
