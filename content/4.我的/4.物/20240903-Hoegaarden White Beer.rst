@@ -38,15 +38,19 @@
 
 .. image:: /static/img/2024/hoegaarden1.png
     :alt: hoegaarden1
-    :style: max-width: 400px, max-height: 300px
 
 .. image:: /static/img/2024/hoegaarden2.png
     :alt: hoegaarden2
-    :style: max-width: 400px, max-height: 300px
 
 .. image:: /static/img/2024/hoegaarden-3.svg
     :alt: hoegaarden-3
-    :style: max-width: 400px, max-height: 300px
+
+.. raw:: html
+
+    <style>
+        [alt~=hogaarden*]: { max-width: 400px, max-height: 300px }
+    </style>
+
 
 评论
 ===========
