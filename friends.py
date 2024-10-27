@@ -1,7 +1,3 @@
-import os
-import sys
-import MySQLdb
-
 
 class Friend:
     ID = 0
