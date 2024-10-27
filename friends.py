@@ -17,7 +17,7 @@ def get_list():
             'URL': 'https://justgoidea.com/',
             'Intro': '读书｜新知｜生活禅',
             'Owner': '槿呈Goidea',
-            'Icon': 'https://justgoidea.com/icon.svg',
+            'Icon': 'https://justgoidea.com/favicon.svg',
             'Email': 'me@hhzz.top',
         }, {
             'ID': 2,
