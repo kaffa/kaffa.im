@@ -24,7 +24,7 @@ MANTRA = '<span class="has-text-grey is-size-6"><span class="is-italic author_na
          '</sup>'
 AUTHOR_INTRO = '探索人生，分享意趣。'
 
-SITEURL = 'https://kaffa.im/'
+SITEURL = 'https://kaffa.im'
 TIMEZONE = 'Asia/Shanghai'
 
 GITHUB_URL = 'http://github.com/kaffa/'
