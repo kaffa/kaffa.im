@@ -8,7 +8,7 @@
 :slug: china-quantitative-investment
 :summary: 可以从这本相对官方视角的书去了解中国量化投资历程，但民间那是另外一套。
 :image: /static/img/2024/hero.png
-:subject_url: https://book.douban.com/subject/36533221/
+:subject_url: https://neodb.social/book/5DZAQNqjTTgwPC4z2z412i
 
 
 

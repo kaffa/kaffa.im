@@ -8,7 +8,7 @@
 :slug: in-depth-combat-vue-development
 :summary: 腾讯专家写的，很扎实，细节也多，从中可以学习专家是如何用技术的。
 :image: /static/img/2024/hero.png
-:subject_url: https://book.douban.com/subject/35602983/
+:subject_url: https://neodb.social/book/4v86mhZzQTDphGDg6aB7Tk
 
 
 
