@@ -128,7 +128,9 @@ section.box div,
 section.box time {
     color: var(--c-text-20);
 }
-
+section.box aside.menu {
+    margin-top: 1rem;
+}
 section.box .tag {
     color: var(--c-text-20);
     background: var(--c-text-bg-80);
@@ -167,8 +169,8 @@ section.box .tag {
 .strike {
   text-decoration: line-through;
 }
-.content li+li {
-    margin-top: 1rem;
+.content li li {
+    line-height: 1.618rem;
 }
 
 .box:not(:last-child) {
