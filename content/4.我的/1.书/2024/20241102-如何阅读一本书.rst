@@ -1,0 +1,22 @@
+如何阅读一本书
+########################################################
+
+:date: 2024-10-31 01:00
+:author: Kaffa
+:category: book
+:tags: 读书
+:slug: how-to-read-a-book
+:summary: 好书
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/49XSNmS9ibx0g8bpPHQm7H
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐⭐⭐
+9 / 10
+
+.. image:: /static/img/2024/how-to-read-a-book.png
+    :alt: How to Read a Book

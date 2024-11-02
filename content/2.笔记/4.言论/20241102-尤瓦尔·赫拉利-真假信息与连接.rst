@@ -1,0 +1,14 @@
+尤瓦尔·赫拉利-真假信息与连接
+############################################################
+
+:date: 2024-11-02 00:34
+:author: Kaffa
+:category: words
+:tags: 尤瓦尔·赫拉利
+:slug: words-of-who
+:summary: 关于信息的认知
+:image: /static/img/2024/hero.png
+
+
+.. image:: https://kaffa.im/static/img/2024/ceo-information.jpeg
+    :alt: information

@@ -1,0 +1,14 @@
+结构性优势
+############################################################
+
+:date: 2024-11-02 00:34
+:author: Kaffa
+:category: words
+:tags: 王川
+:slug: words-of-wang-chuan
+:summary: 结构性优势
+:image: /static/img/2024/hero.png
+
+
+.. image:: https://kaffa.im/static/img/2024/wangchuan-structural-advantages.jpg
+    :alt: 结构性优势
