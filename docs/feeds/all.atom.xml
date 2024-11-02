@@ -51,7 +51,7 @@ if __name__ == '__main__':
 &lt;p&gt;然后，我浏览了交友网站 GitHub，发现世界上还有几个和我有一样需求的人，并且有几个 Geek 动手实现了 AudioSwitch 软件，以及还有几个 C# 和 vbs 的实现，经过比较，我还是喜欢 C++ 实现的版本。&lt;/p&gt;
 &lt;p&gt;AudioSwitch 软件运行后，按 F12 就能自动切换系统默认的音频设备。我于是下载源码，发现它使用一个叫做 SCons-win32 的编译工具进行了编译，我又查阅了 SCons-win32 帮助，成功编译出了 AudioSwitch.exe&lt;/p&gt;
 &lt;p&gt;当我完成编译，微软的安全软件居然报 Trojan:Win32/Bearfoos.A!ml，我去微软官方查询了 &lt;a class=&quot;reference external&quot; href=&quot;https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?name=Trojan%3AWin32%2FBearfoos.A!ml&amp;amp;threatid=2147731250&quot;&gt;Bearfoos.A!ml&lt;/a&gt; 解释带 !ml 的是机器学习判断的木马。&lt;/p&gt;
-&lt;p&gt;我查看了它的源代码，然后 SCons-win32 作为可能引入病毒的第二个可能，风险也不高，我的编译器也是本地，安全软件扫描过的，所以我认为它大概率是误报，于是向微软提交了改二进制软件，几天后，我发现微软排除了它的威胁。&lt;/p&gt;
+&lt;p&gt;我查看了它的源代码，然后 SCons-win32 作为可能引入病毒的第二个可能，风险也不高，我的编译器也是本地，安全软件扫描过的，所以我认为它大概率是误报，于是向微软提交了该二进制软件，几天后，我发现微软排除了它的威胁。&lt;/p&gt;
 &lt;p&gt;随后的几天中，我感觉都非常方便。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;section&quot; id=&quot;section-3&quot;&gt;
