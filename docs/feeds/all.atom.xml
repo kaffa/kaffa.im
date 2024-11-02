@@ -5,9 +5,9 @@
 &lt;/div&gt;
 &lt;div class=&quot;section&quot; id=&quot;section-2&quot;&gt;
 &lt;h2&gt;解决过程&lt;/h2&gt;
-&lt;p&gt;我拥有 Windows 编程能力，在 AI 时代想到的第一解决途径就是问 AI，Windows 中切换音频设备的 API 什么，我想着通过一个简单的 C 程序一键在多个音频设备之间切换，我的基本思路是：先列出设备，再在设备间循环激活。&lt;/p&gt;
-&lt;p&gt;过程就不列举了，AI 提供的代码，都是无法运行的，我后来使用一段复杂的 Python 代码调用了一个本地的 DLL 实现了切换。&lt;/p&gt;
-&lt;p&gt;以下是 AI 给出的代码，都无法运行。&lt;/p&gt;
+&lt;p&gt;我拥有 Windows 编程能力，在 AI 时代想到的第一解决途径就是Prompt，AI 帮我编写一段小功能：你是 Windows 编程的高级程序员，我需要实现一个最简的功能，我需要界面上提供系统音频设备列表供选择，计划用 Python Tkinter 实现，可以用一组单选框，竖直排列，选中设备后设置为 Windows 默认音频设备。请得到代码后复查一遍可能的问题，提供最终可运行的代码。&lt;/p&gt;
+&lt;p&gt;得到代码后，我表示没看出 API 是什么，于是问 Windows 中切换音频设备的 API 什么，我想着实现 Python 后，可转化为一个简单的 C 程序一键在多个音频设备之间切换，我的基本思路是：先列出设备，再在设备间循环激活为默认。&lt;/p&gt;
+&lt;p&gt;后续过程就不列举了，AI 提供的代码，都是无法运行的，以下列举 AI 的关键代码。&lt;/p&gt;
 &lt;p&gt;实现方式一:&lt;/p&gt;
 &lt;pre class=&quot;literal-block&quot;&gt;
 import comtypes
@@ -46,7 +46,7 @@ if __name__ == '__main__':
    device_id = get_speaker_device_id()
    set_default_audio_endpoint(device_id)
 &lt;/pre&gt;
-&lt;p&gt;然后，为了去掉这个不明就里的 dll，把问题弄得更明白一点，我查阅了 Microsoft 的文档，文档中居然没有提！&lt;/p&gt;
+&lt;p&gt;我后来使用一段复杂的 Python 代码调用了一个本地 dll 文件作为桥梁实现了切换。然后，为去掉这个不明就里的 dll，把问题弄得更明白一点，我查阅了 Microsoft 的文档，文档中居然没有提！&lt;/p&gt;
 &lt;p&gt;最后我发现实现切换的是 Microsoft Windows Undocumented API，列举和操纵此设置，居然分属在不同的 COM 接口中，未有文档的是 PolicyConfigClient 接口，它是一个特殊的 COM 接口，脚本无法创建和使用它的属性和方法，需要 Native 代码通过最基本的结构去调用。&lt;/p&gt;
 &lt;p&gt;然后，我浏览了交友网站 GitHub，发现世界上还有几个和我有一样需求的人，并且有几个 Geek 动手实现了 AudioSwitch 软件，以及还有几个 C# 和 vbs 的实现，经过比较，我还是喜欢 C++ 实现的版本。&lt;/p&gt;
 &lt;p&gt;AudioSwitch 软件运行后，按 F12 就能自动切换系统默认的音频设备。我于是下载源码，发现它使用一个叫做 SCons-win32 的编译工具进行了编译，我又查阅了 SCons-win32 帮助，成功编译出了 AudioSwitch.exe&lt;/p&gt;
