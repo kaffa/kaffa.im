@@ -1,4 +1,80 @@
-<?xml version="1.0" ?><feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"/><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"/><id>https://kaffa.im/</id><updated>2024-10-31T02:00:00+08:00</updated><entry><title>小狗钱钱</title><link href="https://kaffa.im/ein-hund-namens-money.html" rel="alternate"/><published>2024-10-31T02:00:00+08:00</published><updated>2024-10-31T02:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-10-31:/ein-hund-namens-money.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;让小朋友去读真不容易，但读完还是有收获的。&lt;/p&gt;
+<?xml version="1.0" ?><feed xmlns="http://www.w3.org/2005/Atom"><title>Kaffa.im</title><link href="https://kaffa.im/" rel="alternate"/><link href="https://kaffa.im/feeds/all.atom.xml" rel="self"/><id>https://kaffa.im/</id><updated>2024-11-02T22:54:00+08:00</updated><entry><title>Windows 音频设备控制之旅</title><link href="https://kaffa.im/windows-audio-device-control-tour.html" rel="alternate"/><published>2024-11-02T22:54:00+08:00</published><updated>2024-11-02T22:54:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-11-02:/windows-audio-device-control-tour.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;本文记录我解决切换音频设备的过程&lt;/p&gt;
+</summary><content type="html">&lt;div class=&quot;section&quot; id=&quot;section-1&quot;&gt;
+&lt;h2&gt;我的需求&lt;/h2&gt;
+&lt;p&gt;笔记本通过 TypeC-DP 1.4 口连接了显示器，听音乐时，我使用笔记本连接的音频输出设备，看视频时，我使用显示器的音频输出口，因此，我有了需要在笔记本和显示器之间快速切换音频设备的需求。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;section-2&quot;&gt;
+&lt;h2&gt;解决过程&lt;/h2&gt;
+&lt;p&gt;我拥有 Windows 编程能力，在 AI 时代想到的第一解决途径就是问 AI，Windows 中切换音频设备的 API 什么，我想着通过一个简单的 C 程序一键在多个音频设备之间切换，我的基本思路是：先列出设备，再在设备间循环激活。&lt;/p&gt;
+&lt;p&gt;过程就不列举了，AI 提供的代码，都是无法运行的，我后来使用一段复杂的 Python 代码调用了一个本地的 DLL 实现了切换。&lt;/p&gt;
+&lt;p&gt;以下是 AI 给出的代码，都无法运行。&lt;/p&gt;
+&lt;p&gt;实现方式一:&lt;/p&gt;
+&lt;pre class=&quot;literal-block&quot;&gt;
+import comtypes
+from comtypes import GUID, COMObject, POINTER
+from comtypes.client import CreateObject
+from comtypes.gen import PolicyConfigClient
+
+def set_default_audio_endpoint(device_id):
+   # 使用comtypes创建PolicyConfigClient对象
+   pPolicyConfig = CreateObject(PolicyConfigClient.CLSID_PolicyConfigClient,
+                                interface = PolicyConfigClient.IPolicyConfig)
+   # 调用SetDefaultEndpoint方法设置默认音频端点
+   hr = pPolicyConfig.SetDefaultEndpoint(device_id, 0)
+   if hr == 0:
+       print(&amp;quot;默认音频端点设置成功&amp;quot;)
+   else:
+       print(&amp;quot;默认音频端点设置失败&amp;quot;)
+
+
+if __name__ == '__main__':
+   # 这里需要替换为实际的设备ID
+   device_id = &amp;quot;{0.0.0.0}&amp;quot;
+   set_default_audio_endpoint(device_id)
+&lt;/pre&gt;
+&lt;p&gt;实现方式二：:&lt;/p&gt;
+&lt;pre class=&quot;literal-block&quot;&gt;
+from pycaw.pycaw import AudioUtilities, IMMDeviceEnumerator
+
+def get_speaker_device_id():
+   device_enumerator = IMMDeviceEnumerator()
+   speakers = AudioUtilities.GetSpeakers()
+   device_id = speakers.GetId()
+   return device_id
+
+if __name__ == '__main__':
+   device_id = get_speaker_device_id()
+   set_default_audio_endpoint(device_id)
+&lt;/pre&gt;
+&lt;p&gt;然后，为了去掉这个不明就里的 dll，把问题弄得更明白一点，我查阅了 Microsoft 的文档，文档中居然没有提！&lt;/p&gt;
+&lt;p&gt;最后我发现实现切换的是 Microsoft Windows Undocumented API，列举和操纵此设置，居然分属在不同的 COM 接口中，未有文档的是 PolicyConfigClient 接口，它是一个特殊的 COM 接口，脚本无法创建和使用它的属性和方法，需要 Native 代码通过最基本的结构去调用。&lt;/p&gt;
+&lt;p&gt;然后，我浏览器了同性交友网站 GitHub，发现世界上还有几个和我有一样需求的人，并且有几个 Geek 动手实现了 AudioSwitch 软件，以及还有几个 C# 和 vbs 的实现，经过比较，我还是喜欢 C++ 实现的版本。&lt;/p&gt;
+&lt;p&gt;AudioSwitch 软件运行后，按 F12 就能自动切换系统默认的音频设备。我于是下载源码，发现它使用一个叫做 SCons-win32 的编译工具进行了编译，我又查阅了 SCons-win32 帮助，成功编译出了 AudioSwitch.exe&lt;/p&gt;
+&lt;p&gt;当我完成编译，微软的安全软件居然报 Trojan:Win32/Bearfoos.A!ml，我去微软官方查询了 &lt;a class=&quot;reference external&quot; href=&quot;https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?name=Trojan%3AWin32%2FBearfoos.A!ml&amp;amp;threatid=2147731250&quot;&gt;Bearfoos.A!ml&lt;/a&gt; 解释带 !ml 的是机器学习判断的木马。&lt;/p&gt;
+&lt;p&gt;我查看了它的源代码，然后 SCons-win32 作为可能引入病毒的第二个可能，风险也不高，我的编译器也是本地，安全软件扫描过的，所以我认为它大概率是误报，于是向微软提交了改二进制软件，几天后，我发现微软排除了它的威胁。&lt;/p&gt;
+&lt;p&gt;随后的几天中，我感觉都非常方便。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;section-3&quot;&gt;
+&lt;h2&gt;新的发现&lt;/h2&gt;
+&lt;p&gt;突然有一天，我发现 Windows 托盘区的小喇叭似乎自带切换功能，只是这个功能，我才发现。相比开机自动运行一个小软件然后按 F12，和点击托盘区的小图标再点展开再点设备的三次操作来说，我觉得已经差不多了。&lt;/p&gt;
+&lt;p&gt;按一次键盘和点击三次鼠标，我感觉还是键盘轻松点，但弊端是 F12 是容易和其它热键冲突的。比如 MadEdit 中 F12 就是进入一个 PostIt 模式，如果从菜单进入了，再 F12 时，就无法生效了。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;section-4&quot;&gt;
+&lt;h2&gt;结论&lt;/h2&gt;
+&lt;ol class=&quot;arabic simple&quot;&gt;
+&lt;li&gt;虽然 AI 编程已经很厉害，你讲清楚了需求，它也无法写出切换音频设备的小功能。&lt;/li&gt;
+&lt;li&gt;AI 无法完成的原因是它使用了 Windows 未公开的技术。&lt;/li&gt;
+&lt;li&gt;新问题很少，这个问题 Windows 的发展过程的几十年间，已经被很多人用不同方式解决。&lt;/li&gt;
+&lt;li&gt;如果要解决电脑问题，通过编程解决只是一种直接的方式，你去问 AI 怎么编程，这时有两个结果，一个是 AI 实现了，二是 AI 未能实现，但无论是搜索还是 AI，最后都可以解决。&lt;/li&gt;
+&lt;li&gt;解决问题本来还有更简单的办法，也许是对问题解空间的搜索方向错误了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;但无论如何，现有的 AI 都不算能直接解决此问题，最后还得依靠专家的知识和一个灵感和一个机会。&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital"/><category term="audio-device"/></entry><entry><title>结构性优势</title><link href="https://kaffa.im/words-of-wang-chuan.html" rel="alternate"/><published>2024-11-02T00:34:00+08:00</published><updated>2024-11-02T00:34:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-11-02:/words-of-wang-chuan.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;结构性优势&lt;/p&gt;
+</summary><content type="html">&lt;img alt=&quot;结构性优势&quot; src=&quot;https://kaffa.im/static/img/2024/wangchuan-structural-advantages.jpg&quot; /&gt;
+</content><category term="words"/><category term="王川"/></entry><entry><title>尤瓦尔·赫拉利-真假信息与连接</title><link href="https://kaffa.im/words-of-who.html" rel="alternate"/><published>2024-11-02T00:34:00+08:00</published><updated>2024-11-02T00:34:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-11-02:/words-of-who.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;关于信息的认知&lt;/p&gt;
+</summary><content type="html">&lt;img alt=&quot;information&quot; src=&quot;https://kaffa.im/static/img/2024/ceo-information.jpeg&quot; /&gt;
+</content><category term="words"/><category term="尤瓦尔·赫拉利"/></entry><entry><title>小狗钱钱</title><link href="https://kaffa.im/ein-hund-namens-money.html" rel="alternate"/><published>2024-10-31T02:00:00+08:00</published><updated>2024-10-31T02:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-10-31:/ein-hund-namens-money.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;让小朋友去读真不容易，但读完还是有收获的。&lt;/p&gt;
 </summary><content type="html">&lt;div class=&quot;section&quot; id=&quot;section-2&quot;&gt;
 &lt;h2&gt;评分&lt;/h2&gt;
 &lt;p&gt;⭐⭐⭐⭐⭐
@@ -20,7 +96,15 @@
 ⭐
 6 / 10&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="book"/><category term="marketing"/></entry><entry><title>冰血暴第一季</title><link href="https://kaffa.im/fargo-season-1.html" rel="alternate"/><published>2024-10-29T01:00:00+08:00</published><updated>2024-10-29T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-10-29:/fargo-season-1.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;非常值得一看。&lt;/p&gt;
+</content><category term="book"/><category term="marketing"/></entry><entry><title>如何阅读一本书</title><link href="https://kaffa.im/how-to-read-a-book.html" rel="alternate"/><published>2024-10-31T01:00:00+08:00</published><updated>2024-10-31T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-10-31:/how-to-read-a-book.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;好书&lt;/p&gt;
+</summary><content type="html">&lt;div class=&quot;section&quot; id=&quot;section-2&quot;&gt;
+&lt;h2&gt;评分&lt;/h2&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐
+⭐⭐⭐⭐
+9 / 10&lt;/p&gt;
+&lt;img alt=&quot;How to Read a Book&quot; src=&quot;/static/img/2024/how-to-read-a-book.png&quot; /&gt;
+&lt;/div&gt;
+</content><category term="book"/><category term="读书"/></entry><entry><title>冰血暴第一季</title><link href="https://kaffa.im/fargo-season-1.html" rel="alternate"/><published>2024-10-29T01:00:00+08:00</published><updated>2024-10-29T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-10-29:/fargo-season-1.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;非常值得一看。&lt;/p&gt;
 </summary><content type="html">&lt;div class=&quot;section&quot; id=&quot;section-2&quot;&gt;
 &lt;h2&gt;阅后&lt;/h2&gt;
 &lt;p&gt;神剧&lt;/p&gt;
@@ -3427,101 +3511,4 @@ python caffeine.py /path-to-your-downloaded-tiddlywiki.html-file
 &lt;h2&gt;开发周期&lt;/h2&gt;
 &lt;p&gt;将在后续《「Phoenix」终极笔记软件需求》中详评，现在拍脑袋估算为一年。&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="project"/><category term="KN"/></entry><entry><title>解决 Obsidian 插件 Advanced Tables 不显示表格的问题</title><link href="https://kaffa.im/solution-to-obsidian-advanced-tables-not-display-problem.html" rel="alternate"/><published>2024-04-06T16:00:00+08:00</published><updated>2024-04-06T16:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-06:/solution-to-obsidian-advanced-tables-not-display-problem.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;本文提供 Obsidian 插件 Advanced Tables 表格不显示的解决办法&lt;/p&gt;
-</summary><content type="html">&lt;div class=&quot;section&quot; id=&quot;section-1&quot;&gt;
-&lt;h2&gt;问题现象&lt;/h2&gt;
-&lt;p&gt;进入原先带有表格的文章时，表格数据不显示。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;section-2&quot;&gt;
-&lt;h2&gt;问题解决&lt;/h2&gt;
-&lt;div class=&quot;section&quot; id=&quot;advanced-tables&quot;&gt;
-&lt;h3&gt;方法一. 放弃 Advanced Tables&lt;/h3&gt;
-&lt;p&gt;Advanced Tables 大概是使用在 Obsidian 创立了一种新标记，标记指向一个表格，此表格的列定义和数据均保存在 SQLite 中。这种做法的弊端在于如果 SQLite 损坏，此目录下所有的数据可能难以恢复。&lt;/p&gt;
-&lt;p&gt;因此，我选择导出表格数据，采用原生格式表格插入原文。步骤如下：&lt;/p&gt;
-&lt;ol class=&quot;arabic simple&quot;&gt;
-&lt;li&gt;进入带有表格文章的仓库路径下，会发现 context.mdb 文件，虽然文件使用了 Microsoft Access 数据库的扩展名，但这文件其实是 SQLite 数据库，此时可以使用 SQLite 数据库客户端打开它（比如 Windows上的 heidisql）。&lt;/li&gt;
-&lt;li&gt;其中有三个定义表 files、m_fields、m_schema，然后用文本编辑器打开文章，会发现指向的表格名。例如：![![我的目录/#^Table2]]，在这里“我的目录”即目录名，Table2 即表格名，我们可在 context.mdb 中找到同名表格，并导出其数据。如此，导出除 files、m_fields、m_schema 之外的所有数据，并在原文中插入。&lt;/li&gt;
-&lt;li&gt;停用第三方插件 Advanced Tables，重启 Obsidian，检查所有表格数据。&lt;/li&gt;
-&lt;li&gt;如果数据正常，则可以用文本编辑器打开含有表格的 md 文件，删除其中的类似 ![![我的目录/#^Table2]] 的表格标记。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;section-3&quot;&gt;
-&lt;h3&gt;方法二. 给开发者提交缺陷，并等待修复&lt;/h3&gt;
-&lt;p&gt;很感慨的是，Windows 10 依然可以打开 Windows 3.1 版本的程序。&lt;/p&gt;
-&lt;p&gt;而作为应用软件的 Obsidian 和 Advanced Tables 居然产生了问题。&lt;/p&gt;
-&lt;p&gt;首先需定位问题的产生是因为升级了 Obsidian 还是升级了 Advanced Tables。&lt;/p&gt;
-&lt;p&gt;如果 Obsidian 的升级导致了第三方插件异常，可能是因为插件的接口有调整（这种可能性较低），另一个可能是插件的实现依赖了 Obsidian 的内部实现而不是接口。&lt;/p&gt;
-&lt;p&gt;搞清状况后，可以先提交 issue，如果有能力，可以下载源码进行修复并 PR 官方关闭 issue。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content><category term="digital"/><category term="obsidian"/></entry><entry><title>Python 算法交易</title><link href="https://kaffa.im/python-for-algorithmic-trading.html" rel="alternate"/><published>2024-04-05T01:00:00+08:00</published><updated>2024-04-05T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-05:/python-for-algorithmic-trading.html</id><summary type="html"/><content type="html">&lt;div class=&quot;section&quot; id=&quot;section-1&quot;&gt;
-&lt;h2&gt;评分&lt;/h2&gt;
-&lt;p&gt;⭐⭐⭐⭐⭐
-⭐⭐⭐⭐ 9 / 10&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;section-2&quot;&gt;
-&lt;h2&gt;评价&lt;/h2&gt;
-&lt;p&gt;非常干，量化交易中重要的部分都有涉及，进阶可读。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"/><category term="quant"/></entry><entry><title>Vue.js+Django高性能全栈论道</title><link href="https://kaffa.im/vue.js+django-high-performance-full-stack-discussion.html" rel="alternate"/><published>2024-04-05T01:00:00+08:00</published><updated>2024-04-05T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-05:/vue.js+django-high-performance-full-stack-discussion.html</id><summary type="html"/><content type="html">&lt;div class=&quot;section&quot; id=&quot;section-1&quot;&gt;
-&lt;h2&gt;评分&lt;/h2&gt;
-&lt;p&gt;⭐⭐⭐⭐⭐
-⭐⭐ 7 / 10&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;section-2&quot;&gt;
-&lt;h2&gt;评论&lt;/h2&gt;
-&lt;p&gt;说的比较不客气，若说这本书的干货部分是部署和系统架构，还论不上什么道的高度。&lt;/p&gt;
-&lt;p&gt;能在一本书篇幅内讲清vue.js、django、django rest framework、asyncio、pypy，以及全栈开发、高性能等主题，预想是走马观花的。&lt;/p&gt;
-&lt;p&gt;实际翻看后发现比较可惜的作者挺有水平，但似乎没能掌握写作重点，书籍未匹配其水平，导致全书没有超出预期。&lt;/p&gt;
-&lt;p&gt;若本书再更新，建议作者能略掉手册中也有的部分，直接更系统的叙述优化和案例实战，另提供一些超出此架构的更全局的思维。&lt;/p&gt;
-&lt;p&gt;vue.js 部分不会比尤的书更好，django 本就有官方文档，drf、asyncio、pypy 也是，完全不必花费笔墨呈现个人理解。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="book"/></entry><entry><title>关于工具和编程语言的思考</title><link href="https://kaffa.im/thoughts-on-tools-and-programming-languages.html" rel="alternate"/><published>2024-04-04T01:00:00+08:00</published><updated>2024-04-04T01:00:00+08:00</updated><author><name>Kaffa</name></author><id>tag:kaffa.im,2024-04-04:/thoughts-on-tools-and-programming-languages.html</id><summary type="html">&lt;p class=&quot;first last&quot;&gt;这篇是关于编程语言和泛化工具断舍离的思考小记&lt;/p&gt;
-</summary><content type="html">&lt;div class=&quot;section&quot; id=&quot;magicget&quot;&gt;
-&lt;h2&gt;MagicGet&lt;/h2&gt;
-&lt;img alt=&quot;magicget&quot; src=&quot;/static/img/2024/magicget.png&quot; /&gt;
-&lt;p&gt;这是一段趣味回忆。&lt;/p&gt;
-&lt;p&gt;最近有人总问我会写爬虫吗？我去搜了搜 magicget，互联网依然还记得 20 年的软件。&lt;/p&gt;
-&lt;p&gt;最初一版，只是为了给晋江文学的一位写手写一抓文软件。&lt;/p&gt;
-&lt;p&gt;当时我刚毕业，只会 Pascal 与 C，而这两者写网络软件时有些力不从心。&lt;/p&gt;
-&lt;p&gt;接下去，我在闲暇间，自学了 C#，突然发现 WinForm 其实挺好写，这也是为啥 magicget 最初几个版本只有几十K大小的原因。&lt;/p&gt;
-&lt;p&gt;因为它依赖 .Net 运行时。&lt;/p&gt;
-&lt;p&gt;使用 WinForm，界面方面的问题解决了，为解决网络请求时主UI冻结的问题，我还学会了多线程。&lt;/p&gt;
-&lt;p&gt;但我依然只擅长写简短程序，且不知搜索开源库，以前并没有 Github，我常去 SourceForge、CodeProject 和 Google Code。&lt;/p&gt;
-&lt;p&gt;但我依然还不太会写大型软件。再然后，我个人对 .Net 的性能不满意了，而安装 .Net 1.1 运行时对用户来说，也是天然的使用门槛。&lt;/p&gt;
-&lt;p&gt;当时恰好出现了 Turbo Delphi 这种免费的东西，于是我想，何不我再用另外的新方法来实现呢。&lt;/p&gt;
-&lt;p&gt;于是，后来的版本，我主要使用 xml 技术来解析 xhtml 网页，最终，我学会了正则表达式，于是后续版本都改为了 Delphi 原生实现。&lt;/p&gt;
-&lt;p&gt;如果还有人问，我会不会写爬虫，我会把这张图发给他。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;feedtools&quot;&gt;
-&lt;h2&gt;FeedTools&lt;/h2&gt;
-&lt;p&gt;然后就是 20 年后，Vivaldi 浏览器我一直在用，有一天我把某站博客 100 多 Feed 一个个加进去，发现它居然不支持分组，也不支持导出。&lt;/p&gt;
-&lt;p&gt;后来我差不多花了一晚寻找这些 Feeds 到底在哪，一时心血来潮，又花了两晚，实现了一个导出 Vivaldi Feeds 的工具。&lt;/p&gt;
-&lt;img alt=&quot;FeedTools&quot; src=&quot;/static/img/2024/feedtools.png&quot; /&gt;
-&lt;p&gt;最初，我是准备使用 Lazarus，想着还可以兼容 macOS，但 Lazarus 的 json 就把我给唬住了，我很烦躁，并不想花太多时间去填坑，于是立即换上了 Delphi Community 版本来实现。&lt;/p&gt;
-&lt;p&gt;如果问我为啥不选其它，因为当时我存了一点私心，准备埋入一个 token 来支持导出 opml 时的支付。&lt;/p&gt;
-&lt;p&gt;后来我又改变了想法，决定还是免费提供 &lt;a class=&quot;reference external&quot; href=&quot;https://kaffa.im/static/file/FeedTools.zip&quot;&gt;这个程序&lt;/a&gt; ，或者在订阅中提供。&lt;/p&gt;
-&lt;p&gt;在多年后，我再次使用 Delphi 的过程中，发现它的发展非常缓慢，也依然没有完全修复稳定性的问题。&lt;/p&gt;
-&lt;p&gt;除了有些比如 Unicode 和跨平台数据组件的改进外，周边也都是停滞的。&lt;/p&gt;
-&lt;p&gt;其它不少地方，就像刚毕业的人的设计，可谓很难用，它的老本可真是厚啊。&lt;/p&gt;
-&lt;p&gt;同样类似的功能，还是 Python 好，差不多十几行就实现了一切。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;section-2&quot;&gt;
-&lt;h2&gt;编程语言的断舍离&lt;/h2&gt;
-&lt;p&gt;虽然用过许多编程语言，但在未来新增的项目上，我将主要使用 Python、JavaScript、Rust 这三种，另 PHP 用于旧项目维护，其余编程语言的有关资料和书籍，我将全部断舍离。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;section-3&quot;&gt;
-&lt;h2&gt;工具的断舍离&lt;/h2&gt;
-&lt;p&gt;如果你需要做一个工具的挑选，只能保留一种，你会怎么选：&lt;/p&gt;
-&lt;p&gt;一边是一套精美有美感且耐用的手动螺丝刀，另一边是一把普通的电动螺丝刀带有一套螺丝刀头？&lt;/p&gt;
-&lt;p&gt;两者间你会选什么？选易用有效率的工具，还是选有使用乐趣的工具？&lt;/p&gt;
-&lt;p&gt;这个问题对于不同性格的人来说，答案可能不一样。&lt;/p&gt;
-&lt;p&gt;而对于我来说，似乎就产生的选择困难症，很可能我非常难抉择，想要都保留。&lt;/p&gt;
-&lt;p&gt;到此，看似此问题只有三个选择，但还有一点考虑是，为啥你需要螺丝刀？（推翻问题本身）&lt;/p&gt;
-&lt;p&gt;这种思维模式我叫它 &lt;strong&gt;出家思维&lt;/strong&gt; 。&lt;/p&gt;
-&lt;p&gt;然后，我发现其实大部分人都不需要螺丝刀，然后就会发现，选择一件让人心情愉快的工具陪在生命里，是一件很惬意的事。&lt;/p&gt;
-&lt;p&gt;如为了解决效率的问题，可以花钱解决。&lt;/p&gt;
-&lt;p&gt;依赖的容易固化，所以需要变革。&lt;/p&gt;
-&lt;p&gt;不要让拥有的东西（知识、身份、头衔）反成了诅咒。&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="programming"/></entry><description>feedId:41342818708527123+userId:41447029693323264</description></feed>
+</content><category term="project"/><category term="KN"/></entry><description>feedId:41342818708527123+userId:41447029693323264</description></feed>

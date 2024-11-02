@@ -72,7 +72,7 @@ AudioSwitch 软件运行后，按 F12 就能自动切换系统默认的音频设
 
 当我完成编译，微软的安全软件居然报 Trojan:Win32/Bearfoos.A!ml，我去微软官方查询了 `Bearfoos.A!ml <https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?name=Trojan%3AWin32%2FBearfoos.A!ml&threatid=2147731250>`_ 解释带 !ml 的是机器学习判断的木马。
 
-我认为它大概率是误报，于是向微软提交了改二进制软件，几天后，我发现微软排除了它的威胁。
+我查看了它的源代码，然后 SCons-win32 作为可能引入病毒的第二个可能，风险也不高，我的编译器也是本地，安全软件扫描过的，所以我认为它大概率是误报，于是向微软提交了改二进制软件，几天后，我发现微软排除了它的威胁。
 
 随后的几天中，我感觉都非常方便。
 

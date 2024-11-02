@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/</loc>
-<lastmod>2024-11-01T10:27:56-00:00</lastmod>
+<lastmod>2024-11-02T23:44:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/archives.html</loc>
-<lastmod>2024-11-01T10:27:56-00:00</lastmod>
+<lastmod>2024-11-02T23:44:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/tags.html</loc>
-<lastmod>2024-11-01T10:27:56-00:00</lastmod>
+<lastmod>2024-11-02T23:44:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kaffa.im/categories.html</loc>
-<lastmod>2024-11-01T10:27:56-00:00</lastmod>
+<lastmod>2024-11-02T23:44:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,6 +60,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kaffa.im/windows-audio-device-control-tour.html</loc>
+<lastmod>2024-11-02T22:54:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/words-of-wang-chuan.html</loc>
+<lastmod>2024-11-02T00:34:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/words-of-who.html</loc>
+<lastmod>2024-11-02T00:34:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kaffa.im/ein-hund-namens-money.html</loc>
 <lastmod>2024-10-31T02:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -76,6 +97,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kaffa.im/explosive-innovation-the-new-era-explosive-creation-method.html</loc>
 <lastmod>2024-10-31T01:44:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kaffa.im/how-to-read-a-book.html</loc>
+<lastmod>2024-10-31T01:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2224,7 +2252,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kaffa.im/author/kaffa.html</loc>
-<lastmod>2024-10-31T02:00:00+08:06</lastmod>
+<lastmod>2024-11-02T22:54:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
