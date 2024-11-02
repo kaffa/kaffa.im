@@ -66,7 +66,7 @@ Windows 音频设备控制之旅
 
 最后我发现实现切换的是 Microsoft Windows Undocumented API，列举和操纵此设置，居然分属在不同的 COM 接口中，未有文档的是 PolicyConfigClient 接口，它是一个特殊的 COM 接口，脚本无法创建和使用它的属性和方法，需要 Native 代码通过最基本的结构去调用。
 
-然后，我浏览器了同性交友网站 GitHub，发现世界上还有几个和我有一样需求的人，并且有几个 Geek 动手实现了 AudioSwitch 软件，以及还有几个 C# 和 vbs 的实现，经过比较，我还是喜欢 C++ 实现的版本。
+然后，我浏览了交友网站 GitHub，发现世界上还有几个和我有一样需求的人，并且有几个 Geek 动手实现了 AudioSwitch 软件，以及还有几个 C# 和 vbs 的实现，经过比较，我还是喜欢 C++ 实现的版本。
 
 AudioSwitch 软件运行后，按 F12 就能自动切换系统默认的音频设备。我于是下载源码，发现它使用一个叫做 SCons-win32 的编译工具进行了编译，我又查阅了 SCons-win32 帮助，成功编译出了 AudioSwitch.exe
 

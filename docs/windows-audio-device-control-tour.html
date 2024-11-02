@@ -249,7 +249,7 @@ if __name__ == '__main__':
 </pre>
 <p>然后，为了去掉这个不明就里的 dll，把问题弄得更明白一点，我查阅了 Microsoft 的文档，文档中居然没有提！</p>
 <p>最后我发现实现切换的是 Microsoft Windows Undocumented API，列举和操纵此设置，居然分属在不同的 COM 接口中，未有文档的是 PolicyConfigClient 接口，它是一个特殊的 COM 接口，脚本无法创建和使用它的属性和方法，需要 Native 代码通过最基本的结构去调用。</p>
-<p>然后，我浏览器了同性交友网站 GitHub，发现世界上还有几个和我有一样需求的人，并且有几个 Geek 动手实现了 AudioSwitch 软件，以及还有几个 C# 和 vbs 的实现，经过比较，我还是喜欢 C++ 实现的版本。</p>
+<p>然后，我浏览了交友网站 GitHub，发现世界上还有几个和我有一样需求的人，并且有几个 Geek 动手实现了 AudioSwitch 软件，以及还有几个 C# 和 vbs 的实现，经过比较，我还是喜欢 C++ 实现的版本。</p>
 <p>AudioSwitch 软件运行后，按 F12 就能自动切换系统默认的音频设备。我于是下载源码，发现它使用一个叫做 SCons-win32 的编译工具进行了编译，我又查阅了 SCons-win32 帮助，成功编译出了 AudioSwitch.exe</p>
 <p>当我完成编译，微软的安全软件居然报 Trojan:Win32/Bearfoos.A!ml，我去微软官方查询了 <a class="reference external" href="https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?name=Trojan%3AWin32%2FBearfoos.A!ml&amp;threatid=2147731250">Bearfoos.A!ml</a> 解释带 !ml 的是机器学习判断的木马。</p>
 <p>我查看了它的源代码，然后 SCons-win32 作为可能引入病毒的第二个可能，风险也不高，我的编译器也是本地，安全软件扫描过的，所以我认为它大概率是误报，于是向微软提交了改二进制软件，几天后，我发现微软排除了它的威胁。</p>
