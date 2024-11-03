@@ -1,0 +1,32 @@
+ALaunch v1.0 发布
+##################################################
+
+:date: 2024-11-04 2:37
+:author: Kaffa
+:category: digital
+:tags: ALaunch
+:slug: alaunch-v1.0-released
+:summary: 来了，你们的标签页自由。
+:image: /static/img/alaunch.png
+
+
+将 `ALaunch <https://kaffa.im/alaunch-your-first-productivity-software.html>`_ 升级到 v1.0 版本，增加了标签的自由管理。
+
+ALaunch v1.0 版本
+====================
+
+新特性：
+
+1. 能创建和删除标签页；
+2. 能对标签页重命名。
+
+
+预告
+====================
+
+ALaunch v1.0 是友情软件：与此网站友情链接的朋友，可获赠授权码。
+
+在使用的朋友，建议下载新版本，没有注册码的，请发邮件给我，我会回邮件给你。
+
+* 1.5 将增加窗口控制
+* 2.0 实现启动布局
