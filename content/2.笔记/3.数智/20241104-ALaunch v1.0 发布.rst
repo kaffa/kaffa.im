@@ -10,6 +10,7 @@ ALaunch v1.0 发布
 :image: /static/img/alaunch.png
 
 
+
 将 `ALaunch <https://kaffa.im/alaunch-your-first-productivity-software.html>`_ 升级到 v1.0 版本，增加了标签的自由管理。
 
 ALaunch v1.0 版本
@@ -20,6 +21,10 @@ ALaunch v1.0 版本
 1. 能创建和删除标签页；
 2. 能对标签页重命名。
 
+.. image:: https://kaffa.im/static/img/2023/alaunch-demo.png
+    :alt: ALaunch Snapshot
+
+`ALaunch 下载 <https://kaffa.im/static/file/alaunch-1.0.7z>`_\ ，欢迎反馈和留言。
 
 预告
 ====================
