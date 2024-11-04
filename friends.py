@@ -64,14 +64,6 @@ def get_list():
             'Icon': 'https://imzm.im/wp-content/uploads/2023/05/logo50px.png',
             'Email': 'zm.rayme@gmail.com',
         }, {
-            'ID': 8,
-            'Name': '松易涅的写作分享站',
-            'URL': 'https://www.sungyinieh.com/flinks',
-            'Intro': '回顾历史，审视当下，期盼未来',
-            'Owner': '松易涅',
-            'Icon': 'https://avatars.githubusercontent.com/u/115633657?u=6bb5bee98c33bbd8d80a0e3ea0308d716504de33&v=4',
-            'Email': 'mail@songyinie.com',
-        }, {
             'ID': 9,
             'Name': '七仔的博客',
             'URL': 'https://www.baby7blog.com',
