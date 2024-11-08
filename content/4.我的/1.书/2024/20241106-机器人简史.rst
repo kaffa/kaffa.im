@@ -1,0 +1,22 @@
+机器人简史
+########################################################
+
+:date: 2024-11-06 21:18
+:author: Kaffa
+:category: book
+:tags: robot
+:slug: a-brief-history-of-robotics
+:summary: 有关美国机器人的文化书，综合学科
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/6sqEszHelDdsSdzkAgyL7H
+
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐⭐ 7 / 10
+
+
+原以为是本历史书，但翻开后发现是本文化书，就内容来说，读读也受启发，机器人不是机器人，是受奴役的人。

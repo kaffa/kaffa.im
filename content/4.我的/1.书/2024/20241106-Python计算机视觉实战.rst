@@ -1,0 +1,22 @@
+Python计算机视觉实战
+########################################################
+
+:date: 2024-11-06 21:18
+:author: Kaffa
+:category: book
+:tags: python,computer-vision
+:slug: python-computer-vision-in-action
+:summary: 内容有点旧，其它还行。
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/3Bc6eHV6z598X7g7NnMSI2
+
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐ 6 / 10
+
+
+内容有点旧，过去算本好书，现在没什么用。

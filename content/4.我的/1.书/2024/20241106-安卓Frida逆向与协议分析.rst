@@ -1,0 +1,23 @@
+安卓Frida逆向与协议分析
+########################################################
+
+:date: 2024-11-06 21:18
+:author: Kaffa
+:category: book
+:tags: frida,crack
+:slug: android-frida-reverse-and-protocol-analysis
+:summary: 此类书市场上不多
+:image: /static/img/2024/hero.png
+:subject_url: https://neodb.social/book/6x4jPiZvnQvB7pWv82KNqm
+
+
+
+评分
+====================
+
+⭐⭐⭐⭐⭐
+⭐ 6 / 10
+
+
+不知道 Frida 是啥翻看的，对无源码修改安卓 App 有点用。
+        
