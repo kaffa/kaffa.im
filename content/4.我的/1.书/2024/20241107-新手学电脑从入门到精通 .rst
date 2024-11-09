@@ -5,7 +5,7 @@
 :author: Kaffa
 :category: book
 :tags: computer-learning
-:slug: psychology-of-gamebeginners-learn-computers-from-beginner-to-master
+:slug: beginners-learn-computers-from-beginner-to-master
 :summary: 定位非常重要。
 :image: /static/img/2024/hero.png
 :subject_url: https://neodb.social/book/0j5NDF0nwzCMVF3hzrz8H8
