@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+    <title>Kaffa.im - Archives</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed.xml"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="."><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<h1>Archives for <span class="is-italic author_name">Kaffa</span>.im</h1>
+
+<dl>
+    <dt>2024-11-07 周四</dt>
+    <dd><a href="./beginners-learn-computers-from-beginner-to-master.html">新手学电脑从入门到精通</a></dd>
+    <dt>2024-11-06 周三</dt>
+    <dd><a href="./the-road-to-digital-transformation-from-digitization-to-digital-intelligence.html">数字化转型之路（从数字化到数智化）</a></dd>
+    <dt>2024-11-06 周三</dt>
+    <dd><a href="./a-brief-history-of-robotics.html">机器人简史</a></dd>
+    <dt>2024-11-06 周三</dt>
+    <dd><a href="./android-frida-reverse-and-protocol-analysis.html">安卓Frida逆向与协议分析</a></dd>
+    <dt>2024-11-06 周三</dt>
+    <dd><a href="./math-surprise.html">数学的惊奇</a></dd>
+    <dt>2024-11-06 周三</dt>
+    <dd><a href="./psychology-of-game.html">牌局心理学</a></dd>
+    <dt>2024-11-06 周三</dt>
+    <dd><a href="./python-computer-vision-in-action.html">Python计算机视觉实战</a></dd>
+    <dt>2024-11-04 周一</dt>
+    <dd><a href="./alaunch-v1.0-released.html">ALaunch v1.0 发布</a></dd>
+    <dt>2024-11-02 周六</dt>
+    <dd><a href="./windows-audio-device-control-tour.html">Windows 音频设备控制之旅</a></dd>
+    <dt>2024-11-02 周六</dt>
+    <dd><a href="./words-of-wang-chuan.html">结构性优势</a></dd>
+    <dt>2024-11-02 周六</dt>
+    <dd><a href="./words-of-who.html">尤瓦尔·赫拉利-真假信息与连接</a></dd>
+    <dt>2024-10-31 周四</dt>
+    <dd><a href="./ein-hund-namens-money.html">小狗钱钱</a></dd>
+    <dt>2024-10-31 周四</dt>
+    <dd><a href="./expert-in-short-video-editing-and-directing.html">短视频编导全能手</a></dd>
+    <dt>2024-10-31 周四</dt>
+    <dd><a href="./explosive-innovation-the-new-era-explosive-creation-method.html">爆品创新：新时代爆品打造法</a></dd>
+    <dt>2024-10-31 周四</dt>
+    <dd><a href="./how-to-read-a-book.html">如何阅读一本书</a></dd>
+    <dt>2024-10-29 周二</dt>
+    <dd><a href="./fargo-season-1.html">冰血暴第一季</a></dd>
+    <dt>2024-10-29 周二</dt>
+    <dd><a href="./fargo-season-2.html">冰血暴第二季</a></dd>
+    <dt>2024-10-29 周二</dt>
+    <dd><a href="./fargo-season-3.html">冰血暴第三季</a></dd>
+    <dt>2024-10-29 周二</dt>
+    <dd><a href="./fargo-season-4.html">冰血暴第四季</a></dd>
+    <dt>2024-10-29 周二</dt>
+    <dd><a href="./fargo-season-5.html">冰血暴第五季</a></dd>
+    <dt>2024-10-28 周一</dt>
+    <dd><a href="./26-great-ways-to-iterate-your-mind.html">思维迭代的26个卓越方法</a></dd>
+    <dt>2024-10-28 周一</dt>
+    <dd><a href="./awaken-the-world-again-selected-poems-by-wright.html">再度唤醒世界：赖特诗选</a></dd>
+    <dt>2024-10-28 周一</dt>
+    <dd><a href="./china-quantitative-investment.html">中国量化投资</a></dd>
+    <dt>2024-10-28 周一</dt>
+    <dd><a href="./clojure-recipes.html">Clojure Recipes</a></dd>
+    <dt>2024-10-28 周一</dt>
+    <dd><a href="./copywriting-to-sell-goods.html">文案卖货</a></dd>
+    <dt>2024-10-28 周一</dt>
+    <dd><a href="./impressionism-and-east-asian-art.html">印象派与东亚美术</a></dd>
+    <dt>2024-10-28 周一</dt>
+    <dd><a href="./in-depth-combat-vue-development.html">深入实战vue开发</a></dd>
+    <dt>2024-10-28 周一</dt>
+    <dd><a href="./racket-programming-the-fun-way.html">Racket Programming the Fun Way</a></dd>
+    <dt>2024-10-28 周一</dt>
+    <dd><a href="./why-do-we-love-to-drink.html">我们为什么爱喝酒</a></dd>
+    <dt>2024-10-24 周四</dt>
+    <dd><a href="./yayu-independent-blog-self-examination-questionnaire-15-questions.html">雅余的自省《独立博客自省问卷15题》</a></dd>
+    <dt>2024-10-20 周日</dt>
+    <dd><a href="./weekly-w41-w42.html">2024年第41-42周周报</a></dd>
+    <dt>2024-10-12 周六</dt>
+    <dd><a href="./solution-for-macos-and-windows-cannot-communicate-on-a-lan.html">莫名解决局域网内 macOS 与 Windows 不能互访的问题</a></dd>
+    <dt>2024-10-06 周日</dt>
+    <dd><a href="./weekly-w39-w40.html">2024年第39-40周周报</a></dd>
+    <dt>2024-09-22 周日</dt>
+    <dd><a href="./weekly-w37-w38.html">2024年第37-38周周报</a></dd>
+    <dt>2024-09-12 周四</dt>
+    <dd><a href="./money-focused-freestyle.html">Money Focused Freestyle</a></dd>
+    <dt>2024-09-09 周一</dt>
+    <dd><a href="./add-diygod-follow-claim.html">给网站增加了 DIŸgöd 的 follow（Description 方式）</a></dd>
+    <dt>2024-09-08 周日</dt>
+    <dd><a href="./add-follow-claim.html">给网站增加了 DIŸgöd 的 follow</a></dd>
+    <dt>2024-09-08 周日</dt>
+    <dd><a href="./weekly-w35-w36.html">2024年第35-36周周报</a></dd>
+    <dt>2024-09-07 周六</dt>
+    <dd><a href="./craft-beer-and-baked-food-i-like-in-freshippo.html">记录盒马鲜生好吃的烘培和好喝的啤酒</a></dd>
+    <dt>2024-09-03 周二</dt>
+    <dd><a href="./bian-shui-wang-shi-tt33098134.html">边水往事</a></dd>
+    <dt>2024-09-03 周二</dt>
+    <dd><a href="./event-streams-in-action.html">事件流实战</a></dd>
+    <dt>2024-09-03 周二</dt>
+    <dd><a href="./neuromancer.html">神经漫游者</a></dd>
+    <dt>2024-09-03 周二</dt>
+    <dd><a href="./neuromancer-2.html">重启蒙娜丽莎</a></dd>
+    <dt>2024-09-03 周二</dt>
+    <dd><a href="./neuromancer-3.html">零伯爵</a></dd>
+    <dt>2024-09-03 周二</dt>
+    <dd><a href="./programming-typescript.html">TypeScript编程</a></dd>
+    <dt>2024-09-03 周二</dt>
+    <dd><a href="./the-secret-life-of-books.html">唯有书籍——读书、藏书及与书有关的一切</a></dd>
+    <dt>2024-09-03 周二</dt>
+    <dd><a href="./hoegaarden-white-beer.html">福佳白啤</a></dd>
+    <dt>2024-08-25 周日</dt>
+    <dd><a href="./weekly-w33-w34.html">2024年第33-34周周报</a></dd>
+    <dt>2024-08-12 周一</dt>
+    <dd><a href="./record-an-instance-of-mysql-ransomware.html">安全意识、记一次MySQL勒索</a></dd>
+    <dt>2024-08-11 周日</dt>
+    <dd><a href="./weekly-w31-w32.html">2024年第31-32周周报</a></dd>
+    <dt>2024-08-07 周三</dt>
+    <dd><a href="./legacy-code-maintenance.html">关于遗产代码维护</a></dd>
+    <dt>2024-08-07 周三</dt>
+    <dd><a href="./creative-projects-for-rust-programmers.html">Rust项目开发实战</a></dd>
+    <dt>2024-08-07 周三</dt>
+    <dd><a href="./douyin-box-from-beginner-to-master-of-short-video-and-live-streaming.html">抖音盒子：短视频与直播带货从入门到精通</a></dd>
+    <dt>2024-08-07 周三</dt>
+    <dd><a href="./glitz-and-gold.html">浮华与金戈（中世纪上）</a></dd>
+    <dt>2024-08-07 周三</dt>
+    <dd><a href="./practical-system-programming-for-rust.html">Rust系统编程</a></dd>
+    <dt>2024-08-07 周三</dt>
+    <dd><a href="./talk-about-machine-intelligence.html">大话机器智能</a></dd>
+    <dt>2024-08-07 周三</dt>
+    <dd><a href="./why-greatness-cannot-be-planned-the-myth-of-the-objective.html">为什么伟大不能被计划——对创意、创新和创造的自由探索</a></dd>
+    <dt>2024-08-04 周日</dt>
+    <dd><a href="./alternative-to-electrolyte-water-and-whether-to-drink-alcohol-and-iq-worrying.html">电解质水平替、该不该喝酒及智商堪忧</a></dd>
+    <dt>2024-08-01 周四</dt>
+    <dd><a href="./two-ideas-for-integrating-ai-into-life.html">AI融入生活的两点想法</a></dd>
+    <dt>2024-07-28 周日</dt>
+    <dd><a href="./weekly-w29-w30.html">2024年第29-30周周报</a></dd>
+    <dt>2024-07-25 周四</dt>
+    <dd><a href="./thoughts-on-the-accumulator-in-book-the-hacker-and-the-painter.html">《黑客与画家》中累加器引发的思考</a></dd>
+    <dt>2024-07-14 周日</dt>
+    <dd><a href="./weekly-w27-w28.html">2024年第27-28周周报</a></dd>
+    <dt>2024-07-07 周日</dt>
+    <dd><a href="./dont-be-sad-it-s-not-cool-at-all.html">﻿别丧了，一点也不酷</a></dd>
+    <dt>2024-07-07 周日</dt>
+    <dd><a href="./mind-a-journey-to-the-heart-of-being-human.html">心智的本质</a></dd>
+    <dt>2024-07-07 周日</dt>
+    <dd><a href="./my-life-as-a-quant-reflections-on-physics-and-finance.html">宽客人生</a></dd>
+    <dt>2024-07-07 周日</dt>
+    <dd><a href="./one-year-of-work-makes-a-difference-problem-solving.html">工作一年拉开差距：问题解决</a></dd>
+    <dt>2024-07-07 周日</dt>
+    <dd><a href="./one-year-of-work-widens-the-gap-logical-thinking.html">工作一年拉开差距：逻辑思考</a></dd>
+    <dt>2024-07-07 周日</dt>
+    <dd><a href="./svelte-and-sapper-in-action.html">Svelte和Sapper实战</a></dd>
+    <dt>2024-07-07 周日</dt>
+    <dd><a href="./the-digital-factory-the-human-labor-of-automation.html">The Digital Factory</a></dd>
+    <dt>2024-07-07 周日</dt>
+    <dd><a href="./traveling-around-the-world-and-living-in-nature-a-critical-biography-of-zhuangzi.html">游世与自然生活——庄子评传</a></dd>
+    <dt>2024-07-05 周五</dt>
+    <dd><a href="./the-principle-of-work-the-problem-discovering-chapter.html">工作的原理·发现问题篇</a></dd>
+    <dt>2024-07-05 周五</dt>
+    <dd><a href="./the-principle-of-work-the-problem-solving-chapter.html">工作的原理·解决问题篇</a></dd>
+    <dt>2024-07-03 周三</dt>
+    <dd><a href="./db-service.html">DB Service</a></dd>
+    <dt>2024-06-30 周日</dt>
+    <dd><a href="./weekly-2024-w26.html">2024年第26周周报</a></dd>
+    <dt>2024-06-30 周日</dt>
+    <dd><a href="./kn-phoenix-software-requirements.html">「KN.phoenix」终极笔记软件需求</a></dd>
+    <dt>2024-06-27 周四</dt>
+    <dd><a href="./alaunch-v0.9-released.html">ALaunch v0.9 发布</a></dd>
+    <dt>2024-06-24 周一</dt>
+    <dd><a href="./what-we-talk-about-when-we-build-in-public.html">当我们 Build in Public 时，我们谈些什么</a></dd>
+    <dt>2024-06-23 周日</dt>
+    <dd><a href="./weekly-2024-w25.html">2024年第25周周报</a></dd>
+    <dt>2024-06-17 周一</dt>
+    <dd><a href="./add-recent-giscus-comments.html">给网站增加最近评论功能</a></dd>
+    <dt>2024-06-16 周日</dt>
+    <dd><a href="./weekly-2024-w24.html">2024年第24周周报</a></dd>
+    <dt>2024-06-13 周四</dt>
+    <dd><a href="./indie-web-important.html">[翻译]制作自己的独立网站</a></dd>
+    <dt>2024-06-13 周四</dt>
+    <dd><a href="./make-your-own-independent-website.html">[翻译]制作自己的独立网站</a></dd>
+    <dt>2024-06-13 周四</dt>
+    <dd><a href="./this-website-is-personal.html">[翻译]此网站是个人的</a></dd>
+    <dt>2024-06-09 周日</dt>
+    <dd><a href="./weekly-2024-w23.html">2024年第23周周报</a></dd>
+    <dt>2024-06-09 周日</dt>
+    <dd><a href="./clear-the-301-automatic-redirection-to-https-cache-of-microsoft-edge.html">清除 Microsoft Edge 自动跳转 https 的缓存</a></dd>
+    <dt>2024-06-05 周三</dt>
+    <dd><a href="./after-the-attendance-at-aws-aigc-marketing-events.html">参加 AWS 讲 AIGC 活动</a></dd>
+    <dt>2024-06-02 周日</dt>
+    <dd><a href="./weekly-2024-w22.html">2024年第22周周报</a></dd>
+    <dt>2024-05-26 周日</dt>
+    <dd><a href="./weekly-2024-w21.html">2024年第21周周报</a></dd>
+    <dt>2024-05-19 周日</dt>
+    <dd><a href="./weekly-2024-w20.html">2024年第20周周报</a></dd>
+    <dt>2024-05-18 周六</dt>
+    <dd><a href="./marketing-management.html">营销管理</a></dd>
+    <dt>2024-05-13 周一</dt>
+    <dd><a href="./all-travelers-ai-geo-guessing-is-here.html">所有旅生，AI的一图定位来了</a></dd>
+    <dt>2024-05-12 周日</dt>
+    <dd><a href="./weekly-2024-w19.html">2024年第19周周报</a></dd>
+    <dt>2024-05-05 周日</dt>
+    <dd><a href="./weekly-2024-w18.html">2024年第18周周报</a></dd>
+    <dt>2024-05-04 周六</dt>
+    <dd><a href="./youth-just-loves-to-build.html">年轻只是爱构建</a></dd>
+    <dt>2024-05-02 周四</dt>
+    <dd><a href="./tips-for-renting-and-moving-in-shenzhen.html">深圳租房搬家小记</a></dd>
+    <dt>2024-04-28 周日</dt>
+    <dd><a href="./weekly-2024-w17.html">2024年第17周周报</a></dd>
+    <dt>2024-04-21 周日</dt>
+    <dd><a href="./weekly-2024-w16.html">2024年第16周周报</a></dd>
+    <dt>2024-04-19 周五</dt>
+    <dd><a href="./the-tortured-poets-department.html">THE TORTURED POETS DEPARTMENT</a></dd>
+    <dt>2024-04-17 周三</dt>
+    <dd><a href="./everedit.html">EverEdit</a></dd>
+    <dt>2024-04-17 周三</dt>
+    <dd><a href="./website-failure-and-two-typical-configurations-of-cloudflare-pages.html">记一次网站故障及 CloudFlare Pages 的两种典型配置</a></dd>
+    <dt>2024-04-17 周三</dt>
+    <dd><a href="./a-record-of-the-suspicious-file-venice-dll.html">可疑文件Venice.dll的记录</a></dd>
+    <dt>2024-04-14 周日</dt>
+    <dd><a href="./weekly-2024-w15.html">2024年第15周周报</a></dd>
+    <dt>2024-04-13 周六</dt>
+    <dd><a href="./niklaus-wirth-inventor-of-pascal-dies.html">Pascal 作者 Niklaus Wirth 去世</a></dd>
+    <dt>2024-04-10 周三</dt>
+    <dd><a href="./how-to-take-notes.html">笔记的方法</a></dd>
+    <dt>2024-04-10 周三</dt>
+    <dd><a href="./caffeine.html">Caffeine</a></dd>
+    <dt>2024-04-10 周三</dt>
+    <dd><a href="./alaunch-a-friendship-software.html">升级了 ALaunch</a></dd>
+    <dt>2024-04-07 周日</dt>
+    <dd><a href="./weekly-2024-w14.html">2024年第14周周报</a></dd>
+    <dt>2024-04-07 周日</dt>
+    <dd><a href="./kn-phoenix-envisioning.html">「KN.phoenix」构想</a></dd>
+    <dt>2024-04-06 周六</dt>
+    <dd><a href="./solution-to-obsidian-advanced-tables-not-display-problem.html">解决 Obsidian 插件 Advanced Tables 不显示表格的问题</a></dd>
+    <dt>2024-04-05 周五</dt>
+    <dd><a href="./python-for-algorithmic-trading.html">Python 算法交易</a></dd>
+    <dt>2024-04-05 周五</dt>
+    <dd><a href="./vue.js+django-high-performance-full-stack-discussion.html">Vue.js+Django高性能全栈论道</a></dd>
+    <dt>2024-04-04 周四</dt>
+    <dd><a href="./thoughts-on-tools-and-programming-languages.html">关于工具和编程语言的思考</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./dark-slope-man-eating-tree.html">黑暗坡食人树</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./death-on-the-nile.html">尼罗河上的惨案</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./f1ba288a188d0e17f598dc52f796e8a2.html">孤岛之鬼</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./love-in-the-time-of-cholera.html">霍乱时期的爱情</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./murder-in-the-crooked-mansion.html">斜屋犯罪</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./murder-on-the-orient-express.html">东方快车谋杀案</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./psychological-crime-extra.html">心理罪·番外</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./psychological-crime-light-of-the-city.html">心理罪·城市之光</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./psychological-crime-portrait.html">心理罪·画像</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./psychological-crime-seventh-reader.html">心理罪·第七个读者</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./psychological-crime-training-field.html">心理罪·教化场</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./psychological-crime-underground-river.html">心理罪·暗河</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./subconscious-meaning-1.html">潜意识的意义（上）</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./subconscious-meaning-2.html">潜意识的意义（下）</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./the-devotion-of-suspect-x.html">嫌疑人X的献身</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./the-human-chair.html">人间椅子</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./thirty-years-of-excitement.html">激荡三十年</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./tokyo-zodiac-murders.html">占星术杀人魔法</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./white-night-walk.html">白夜行</a></dd>
+    <dt>2024-04-03 周三</dt>
+    <dd><a href="./yin-beast.html">阴兽</a></dd>
+    <dt>2024-04-02 周二</dt>
+    <dd><a href="./experiences-of-one-photo-geo-guessing-three-times.html">你在哪？一图定位三次体会</a></dd>
+    <dt>2024-03-31 周日</dt>
+    <dd><a href="./weekly-2024-w13.html">2024年第13周周报</a></dd>
+    <dt>2024-03-31 周日</dt>
+    <dd><a href="./modern-javascript-library-development-principles-techniques-and-practice.html">现代JavaScript库开发：原理、技术与实战</a></dd>
+    <dt>2024-03-31 周日</dt>
+    <dd><a href="./twenty-lectures-on-algorithmic-game-theory.html">斯坦福算法博弈论二十讲</a></dd>
+    <dt>2024-03-29 周五</dt>
+    <dd><a href="./add-darkmode-to-website.html">增加 darkmode</a></dd>
+    <dt>2024-03-28 周四</dt>
+    <dd><a href="./write-great-code-volume-1-understanding-the-machine.html">编程卓越之道（卷1）：深入理解计算机</a></dd>
+    <dt>2024-03-28 周四</dt>
+    <dd><a href="./write-great-code-volume-2-thinking-low-level-writing-high-level.html">编程卓越之道（卷2）：运用底层语言思想编写高级语言代码</a></dd>
+    <dt>2024-03-28 周四</dt>
+    <dd><a href="./write-great-code-volume-3-engineering-software.html">编程卓越之道（卷3）：软件工程化</a></dd>
+    <dt>2024-03-26 周二</dt>
+    <dd><a href="./laravel-up-and-running-2nd-edtion.html">Laravel入门与实战</a></dd>
+    <dt>2024-03-26 周二</dt>
+    <dd><a href="./learning-go.html">Go语言学习指南</a></dd>
+    <dt>2024-03-26 周二</dt>
+    <dd><a href="./linux-source-code-fun-reading.html">Linux源码趣读</a></dd>
+    <dt>2024-03-26 周二</dt>
+    <dd><a href="./programming-php-4th-edtion.html">PHP编程</a></dd>
+    <dt>2024-03-25 周一</dt>
+    <dd><a href="./any-conclusion-reflections-on-digital-gardening.html">有冇结论？数字园艺的反思</a></dd>
+    <dt>2024-03-24 周日</dt>
+    <dd><a href="./weekly-2024-w12.html">2024年第12周周报</a></dd>
+    <dt>2024-03-24 周日</dt>
+    <dd><a href="./distractions-time-does-not-exist-and-wishes-come-true.html">杂念，时间不存在与心想事成</a></dd>
+    <dt>2024-03-21 周四</dt>
+    <dd><a href="./learned-from-solving-compatibility-problem-of-libcurl-and-freebsd-12.html">从解决 libcurl 与 FreeBSD 13 兼容性问题中学到的</a></dd>
+    <dt>2024-03-20 周三</dt>
+    <dd><a href="./html-memoir.html">HTML回忆录</a></dd>
+    <dt>2024-03-19 周二</dt>
+    <dd><a href="./crisis-and-reconstruction-the-tang-empire-and-its-local-princes.html">危机与重构：唐帝国及其地方诸侯</a></dd>
+    <dt>2024-03-19 周二</dt>
+    <dd><a href="./learning-the-vi-and-vim-editors.html">学习vi和Vim编辑器</a></dd>
+    <dt>2024-03-17 周日</dt>
+    <dd><a href="./weekly-2024-w11.html">2024年第11周周报</a></dd>
+    <dt>2024-03-14 周四</dt>
+    <dd><a href="./paradigm-shift-shipshape-time-management.html">范式Shift，船新的时间管理</a></dd>
+    <dt>2024-03-13 周三</dt>
+    <dd><a href="./not-matter-how-you-use-th-video-content.html">只一种办法，视频怎么刷不重要</a></dd>
+    <dt>2024-03-13 周三</dt>
+    <dd><a href="./the-structure-of-scientific-revolutions.html">科学革命的结构</a></dd>
+    <dt>2024-03-12 周二</dt>
+    <dd><a href="./plato-republic.html">理想国</a></dd>
+    <dt>2024-03-12 周二</dt>
+    <dd><a href="./on-liberty.html">论自由</a></dd>
+    <dt>2024-03-12 周二</dt>
+    <dd><a href="./the-histories-herodotus.html">希罗多德历史（上下册）</a></dd>
+    <dt>2024-03-11 周一</dt>
+    <dd><a href="./add-owspace-calendar.html">增加单向历</a></dd>
+    <dt>2024-03-10 周日</dt>
+    <dd><a href="./weekly-2024-w10.html">2024年第10周周报</a></dd>
+    <dt>2024-03-09 周六</dt>
+    <dd><a href="./shu-mu-da-wen-bu-zheng.html">书目答问补正</a></dd>
+    <dt>2024-03-07 周四</dt>
+    <dd><a href="./life-is-some-associatedness.html">生命·缘</a></dd>
+    <dt>2024-03-07 周四</dt>
+    <dd><a href="./words-of-luo-xiang.html">罗翔-优绩主义</a></dd>
+    <dt>2024-03-03 周日</dt>
+    <dd><a href="./weekly-2024-w09.html">2024年第09周周报</a></dd>
+    <dt>2024-03-03 周日</dt>
+    <dd><a href="./oceanus-the-birth-of-mythosoftology.html">神话软件学——世界海</a></dd>
+    <dt>2024-03-02 周六</dt>
+    <dd><a href="./dahab-2046-for-everyone.html">Dahab-宰海卜</a></dd>
+    <dt>2024-03-01 周五</dt>
+    <dd><a href="./on-punctuation-marks-in-chinese-writing.html">关于中文书写的标点符号</a></dd>
+    <dt>2024-03-01 周五</dt>
+    <dd><a href="./solution-to-obsidian-black-background-window-problem.html">再次证明好用，解决Obsidian黑屏问题</a></dd>
+    <dt>2024-02-29 周四</dt>
+    <dd><a href="./confirmed-once-every-28-years-and-the-poor-man-s-package.html">定了，28年一次及穷鬼套餐</a></dd>
+    <dt>2024-02-27 周二</dt>
+    <dd><a href="./run-kaffa-run.html">Run Kaffa Run</a></dd>
+    <dt>2024-02-25 周日</dt>
+    <dd><a href="./weekly-2024-w08.html">2024年第08周周报</a></dd>
+    <dt>2024-02-25 周日</dt>
+    <dd><a href="./tai-yuan-zhi-lian.html">太原之恋</a></dd>
+    <dt>2024-02-24 周六</dt>
+    <dd><a href="./feeddemon.html">FeedDemon</a></dd>
+    <dt>2024-02-22 周四</dt>
+    <dd><a href="./tao-an-meng-yi.html">陶庵梦忆</a></dd>
+    <dt>2024-02-22 周四</dt>
+    <dd><a href="./xi-hu-meng-xun.html">西湖梦寻</a></dd>
+    <dt>2024-02-22 周四</dt>
+    <dd><a href="./ye-hang-chuan.html">夜航船</a></dd>
+    <dt>2024-02-18 周日</dt>
+    <dd><a href="./add-giscus-comment-system.html">增加 giscus 评论系统</a></dd>
+    <dt>2024-02-18 周日</dt>
+    <dd><a href="./ctf-special-training-camp-technical-explanation-problem-solving-and-competition-skills.html">CTF特训营：技术详解、解题方法与竞赛技巧</a></dd>
+    <dt>2024-02-18 周日</dt>
+    <dd><a href="./from-0-to-1-ctfer-s-path-to-growth.html">从0到1：CTFer成长之路</a></dd>
+    <dt>2024-02-17 周六</dt>
+    <dd><a href="./weekly-2024-w07.html">2024年第07周周报</a></dd>
+    <dt>2024-02-16 周五</dt>
+    <dd><a href="./the-situation-countries-societies-and-individuals-under-cyclical-fluctuations.html">时势：周期波动下的国家、社会和个人</a></dd>
+    <dt>2024-02-14 周三</dt>
+    <dd><a href="./2023-review.html">2023 回顾</a></dd>
+    <dt>2024-02-13 周二</dt>
+    <dd><a href="./fuze-tea.html">Fuze Tea</a></dd>
+    <dt>2024-02-12 周一</dt>
+    <dd><a href="./solutions-to-mouse-micro-movement-double-click-and-scroll-reversed-failures.html">鼠标微动故障、双击、滚动失灵的逻辑解法</a></dd>
+    <dt>2024-02-11 周日</dt>
+    <dd><a href="./weekly-2024-w06.html">2024年第06周周报</a></dd>
+    <dt>2024-02-11 周日</dt>
+    <dd><a href="./an-in-depth-introduction-to-vue-js.html">深入浅出Vue.js</a></dd>
+    <dt>2024-02-07 周三</dt>
+    <dd><a href="./the-problem-with-software-why-smart-engineers-write-bad-code.html">软件困局-为什么聪明的程序员会写出糟糕的代码</a></dd>
+    <dt>2024-02-06 周二</dt>
+    <dd><a href="./android-mobile-as-a-server-of-apache-php-mysql.html">使用闲置Android手机作Web服务器</a></dd>
+    <dt>2024-02-06 周二</dt>
+    <dd><a href="./be-a-member-of-foreverblog-cn.html">提交至十年之约</a></dd>
+    <dt>2024-02-04 周日</dt>
+    <dd><a href="./weekly-2024-w05.html">2024年第05周周报</a></dd>
+    <dt>2024-01-28 周日</dt>
+    <dd><a href="./weekly-2024-w04.html">2024年第04周周报</a></dd>
+    <dt>2024-01-21 周日</dt>
+    <dd><a href="./weekly-2024-w03.html">2024年第03周周报</a></dd>
+    <dt>2024-01-17 周三</dt>
+    <dd><a href="./the-world-and-you-starting-from-mispronounced-words.html">世界与你，从发音错的单词说开去</a></dd>
+    <dt>2024-01-14 周日</dt>
+    <dd><a href="./weekly-2024-w02.html">2024年第02周周报</a></dd>
+    <dt>2024-01-12 周五</dt>
+    <dd><a href="./detect-the-secrets-behind-via-logic.html">用逻辑探测事实背后的秘密</a></dd>
+    <dt>2024-01-11 周四</dt>
+    <dd><a href="./some-tiny-things-and-systemic-thinking.html">几件无关程序开发的事</a></dd>
+    <dt>2024-01-11 周四</dt>
+    <dd><a href="./the-altar-sutra.html">坛经</a></dd>
+    <dt>2024-01-08 周一</dt>
+    <dd><a href="./learning-rust-book-list.html">学习 Rust 书单</a></dd>
+    <dt>2024-01-08 周一</dt>
+    <dd><a href="./programming-rust-2nd-edition.html">Programming Rust, 2nd Edition</a></dd>
+    <dt>2024-01-08 周一</dt>
+    <dd><a href="./the-rust-programming-language-2nd-edition.html">The Rust Programming Language, 2nd Edition</a></dd>
+    <dt>2024-01-07 周日</dt>
+    <dd><a href="./weekly-2024-w01.html">2024年第01周周报</a></dd>
+    <dt>2024-01-06 周六</dt>
+    <dd><a href="./half-a-lifelong-romance.html">半生缘</a></dd>
+    <dt>2024-01-06 周六</dt>
+    <dd><a href="./little-reunions.html">小团圆</a></dd>
+    <dt>2024-01-04 周四</dt>
+    <dd><a href="./fooled-by-randomness.html">随机漫步的傻瓜</a></dd>
+    <dt>2024-01-04 周四</dt>
+    <dd><a href="./specialty-coffee-science-volume-1.html">精品咖啡学（上）</a></dd>
+    <dt>2024-01-04 周四</dt>
+    <dd><a href="./specialty-coffee-science-volume-2.html">精品咖啡学（下）</a></dd>
+    <dt>2024-01-04 周四</dt>
+    <dd><a href="./the-case-against-reality.html">眼见非实</a></dd>
+    <dt>2023-12-31 周日</dt>
+    <dd><a href="./weekly-2023-w53.html">2023年第53周周报</a></dd>
+    <dt>2023-12-30 周六</dt>
+    <dd><a href="./feelings-about-large-language-model.html">大语言模型的商业感觉</a></dd>
+    <dt>2023-12-26 周二</dt>
+    <dd><a href="./make-tea.html">泡茶的方法</a></dd>
+    <dt>2023-12-26 周二</dt>
+    <dd><a href="./hacking-for-dummies.html">Hacking For Dummies</a></dd>
+    <dt>2023-12-25 周一</dt>
+    <dd><a href="./business-at-the-speed-of-thought.html">未来时速-数字系统与商务新思维</a></dd>
+    <dt>2023-12-24 周日</dt>
+    <dd><a href="./weekly-2023-w52.html">2023年第52周周报</a></dd>
+    <dt>2023-12-24 周日</dt>
+    <dd><a href="./future-prediction-for-2040.html">2040年的未来预测</a></dd>
+    <dt>2023-12-22 周五</dt>
+    <dd><a href="./front-end-technology-architecture-and-engineering.html">前端技术架构与工程</a></dd>
+    <dt>2023-12-22 周五</dt>
+    <dd><a href="./css-new-world.html">CSS新世界</a></dd>
+    <dt>2023-12-22 周五</dt>
+    <dd><a href="./css-selector-world.html">CSS选择器世界</a></dd>
+    <dt>2023-12-22 周五</dt>
+    <dd><a href="./css-world.html">CSS世界</a></dd>
+    <dt>2023-12-21 周四</dt>
+    <dd><a href="./career-development-and-planning.html">职业生涯发展与规划</a></dd>
+    <dt>2023-12-21 周四</dt>
+    <dd><a href="./how-javascript-works.html">JavaScript悟道</a></dd>
+    <dt>2023-12-18 周一</dt>
+    <dd><a href="./words-of-anoniman.html">安诺莫斯言论</a></dd>
+    <dt>2023-12-17 周日</dt>
+    <dd><a href="./the-emperor-of-all-maladies-a-biography-of-cancer.html">The Emperor of All Maladies - A Biography of Cancer</a></dd>
+    <dt>2023-12-17 周日</dt>
+    <dd><a href="./the-psychology-of-computer-programming.html">程序开发心理学</a></dd>
+    <dt>2023-12-17 周日</dt>
+    <dd><a href="./weekly-2023-w51.html">2023年第51周周报</a></dd>
+    <dt>2023-12-14 周四</dt>
+    <dd><a href="./kaffaweb-theme-and-index-page.html">KaffaWeb 2.0 建设之主题与首页</a></dd>
+    <dt>2023-12-14 周四</dt>
+    <dd><a href="./engineers-programmer-and-code-farmers.html">工程师、程序员和码农</a></dd>
+    <dt>2023-12-12 周二</dt>
+    <dd><a href="./kaffaweb-plugin.html">KaffaWeb 2.0 建设之插件</a></dd>
+    <dt>2023-12-11 周一</dt>
+    <dd><a href="./kaffaweb-brand-building-notes.html">KaffaWeb 2.0 建设之品牌</a></dd>
+    <dt>2023-12-10 周日</dt>
+    <dd><a href="./weekly-2023-w50.html">2023年第50周周报</a></dd>
+    <dt>2023-12-10 周日</dt>
+    <dd><a href="./words-of-elon-musk.html">埃隆·马斯克言论</a></dd>
+    <dt>2023-12-09 周六</dt>
+    <dd><a href="./how-to-create-a-new-pelican-theme.html">如何为Pelican创建一个新主题</a></dd>
+    <dt>2023-12-09 周六</dt>
+    <dd><a href="./batch-update-photo-timestamp-of-sony-camera.html">批量修改Sony相机照片的时间</a></dd>
+    <dt>2023-12-07 周四</dt>
+    <dd><a href="./about-making-reservations-for-commemorative-coins.html">纪念币预约那点事</a></dd>
+    <dt>2023-12-07 周四</dt>
+    <dd><a href="./oppenheimer.html">奥本海默</a></dd>
+    <dt>2023-12-03 周日</dt>
+    <dd><a href="./crucial-conversations.html">关键对话</a></dd>
+    <dt>2023-12-03 周日</dt>
+    <dd><a href="./html5-and-css3-visual-quickstart-guide.html">HTML5与CSS3基础教程</a></dd>
+    <dt>2023-12-03 周日</dt>
+    <dd><a href="./weekly-2023-w49.html">2023年第49周周报</a></dd>
+    <dt>2023-11-29 周三</dt>
+    <dd><a href="./custom-domain-of-github-pages-site.html">为 GitHub Pages 站点添加独立域名</a></dd>
+    <dt>2023-11-28 周二</dt>
+    <dd><a href="./product-power.html">产品之力</a></dd>
+    <dt>2023-11-28 周二</dt>
+    <dd><a href="./wabi-sabi-for-artists-designers-poets-philosophers.html">Wabi-Sabi侘寂之美</a></dd>
+    <dt>2023-11-26 周日</dt>
+    <dd><a href="./no-charge-game-strategy-of-pixel-heroes.html">《浮空秘境》零氪玩法</a></dd>
+    <dt>2023-11-26 周日</dt>
+    <dd><a href="./weekly-2023-w48.html">2023年第48周周报</a></dd>
+    <dt>2023-11-25 周六</dt>
+    <dd><a href="./kaffaweb-sanhe-summary.html">「KaffaWeb.三合」总结</a></dd>
+    <dt>2023-11-24 周五</dt>
+    <dd><a href="./psychology-11th-edition.html">心理学</a></dd>
+    <dt>2023-11-24 周五</dt>
+    <dd><a href="./psychology-and-life.html">心理学与生活</a></dd>
+    <dt>2023-11-24 周五</dt>
+    <dd><a href="./asking-the-right-questions-a-guide-to-critical-thinking.html">学会提问</a></dd>
+    <dt>2023-11-24 周五</dt>
+    <dd><a href="./the-art-of-thinking.html">思考的艺术</a></dd>
+    <dt>2023-11-24 周五</dt>
+    <dd><a href="./thinking-fast-and-slow.html">思考，快与慢</a></dd>
+    <dt>2023-11-19 周日</dt>
+    <dd><a href="./weekly-2023-w47.html">2023年第47周周报</a></dd>
+    <dt>2023-11-19 周日</dt>
+    <dd><a href="./computer-port-in-a-nutshell.html">Computer Port 一文说清电脑接口</a></dd>
+    <dt>2023-11-15 周三</dt>
+    <dd><a href="./use-bluetooth-command-line-tools-to-remove-bluetooth-devices.html">在Windows10上移除无法常规移除的蓝牙设备</a></dd>
+    <dt>2023-11-12 周日</dt>
+    <dd><a href="./weekly-2023-w46.html">2023年第46周周报</a></dd>
+    <dt>2023-11-07 周二</dt>
+    <dd><a href="./windows-hotkey-alt-tab-not-work-in-edge.html">居然失灵？「Alt+Tab」的默认行为还原</a></dd>
+    <dt>2023-11-03 周五</dt>
+    <dd><a href="./kaffaweb-sanhe.html">《KaffaWeb.三合》规划</a></dd>
+    <dt>2023-11-02 周四</dt>
+    <dd><a href="./emacs.html">终于有人把 Emacs 说透了，浓缩精华</a></dd>
+    <dt>2023-11-02 周四</dt>
+    <dd><a href="./learning-html-book-list.html">学习 HTML 书单</a></dd>
+    <dt>2023-11-02 周四</dt>
+    <dd><a href="./learning-php-book-list.html">学习 PHP 书单</a></dd>
+    <dt>2023-11-02 周四</dt>
+    <dd><a href="./science-book-list.html">科学知识书单</a></dd>
+    <dt>2023-11-02 周四</dt>
+    <dd><a href="./weekly-2023-w45.html">2023年第45周周报</a></dd>
+    <dt>2023-11-02 周四</dt>
+    <dd><a href="./iphone-13.html">iPhone 13</a></dd>
+    <dt>2023-11-02 周四</dt>
+    <dd><a href="./1989-taylor-s-version.html">1989 (Taylor's Version)</a></dd>
+    <dt>2023-11-02 周四</dt>
+    <dd><a href="./the-shawshank-redemption.html">肖申克的救赎</a></dd>
+    <dt>2023-11-02 周四</dt>
+    <dd><a href="./unix-a-history-and-a-memoir.html">UNIX传奇</a></dd>
+    <dt>2023-10-30 周一</dt>
+    <dd><a href="./books-can-always-be-read.html">书，总可以读</a></dd>
+    <dt>2023-10-17 周二</dt>
+    <dd><a href="./on-kaffa-im-new-website.html">关于 KaffaWeb 改版的想法</a></dd>
+    <dt>2023-10-16 周一</dt>
+    <dd><a href="./the-end-of-life-is-actually-not-far-from-each-of-us.html">生命的终点其实离我们每个人都不远</a></dd>
+    <dt>2023-10-15 周日</dt>
+    <dd><a href="./mobile-phone-fast-charging-technology.html">手机快充技术</a></dd>
+    <dt>2023-09-26 周二</dt>
+    <dd><a href="./me-and-the-c-programming-language.html">C</a></dd>
+    <dt>2023-08-31 周四</dt>
+    <dd><a href="./about-reading.html">关于读书法的思考</a></dd>
+    <dt>2023-08-11 周五</dt>
+    <dd><a href="./dell-xps-ram-slot-issue.html">Dell XPS 笔记本电脑内存插槽问题</a></dd>
+    <dt>2023-07-09 周日</dt>
+    <dd><a href="./solution-for-forget-wordpress-password.html">WordPress 忘记密码无法登录的解决方法</a></dd>
+    <dt>2023-06-26 周一</dt>
+    <dd><a href="./on-job-and-distracting-thoughts.html">工作机会与杂念</a></dd>
+    <dt>2023-05-12 周五</dt>
+    <dd><a href="./side-projects-2023H1.html">2023H1进展</a></dd>
+    <dt>2023-04-16 周日</dt>
+    <dd><a href="./update-registrant-email-of-a-domain.html">在注册域名时使用了错误的Email的处理</a></dd>
+    <dt>2023-04-12 周三</dt>
+    <dd><a href="./consumer-rights-protection-in-xianyu-app.html">在咸鱼App进行消费者维权</a></dd>
+    <dt>2023-04-12 周三</dt>
+    <dd><a href="./lucid-dream-and-post-gpt-era.html">清明梦·后GPT时代</a></dd>
+    <dt>2023-03-27 周一</dt>
+    <dd><a href="./apple-macbook-pro-13-a1502.html">Apple MacBook Pro 13 A1502</a></dd>
+    <dt>2023-03-27 周一</dt>
+    <dd><a href="./dell-xps-15-9550.html">Dell XPS 15 9550</a></dd>
+    <dt>2023-02-28 周二</dt>
+    <dd><a href="./tcp-port-and-upd-port.html">TCP / UPD Port</a></dd>
+    <dt>2023-01-09 周一</dt>
+    <dd><a href="./hario-mss-1b-mss-1r-16.html">手摇磨豆器-HARIO-MSS-1B-MSS-1R-16-的 12 个零件</a></dd>
+    <dt>2023-01-08 周日</dt>
+    <dd><a href="./words-on-big-data.html">大数据的玩法</a></dd>
+    <dt>2023-01-07 周六</dt>
+    <dd><a href="./article-39-chapter-iv-of-labor-contract-law-of-China-and-buber-and-drip-bag-coffee.html">公司为什么会选择违法解除劳动合同、包焙儿和挂耳咖啡</a></dd>
+    <dt>2022-12-09 周五</dt>
+    <dd><a href="./review-2022.html">2022 回顾</a></dd>
+    <dt>2022-09-29 周四</dt>
+    <dd><a href="./things-in-the-past-half-year-of-2022.html">2022H2半年小记</a></dd>
+    <dt>2022-05-04 周三</dt>
+    <dd><a href="./alaunch-your-first-productivity-software.html">ALaunch</a></dd>
+    <dt>2022-01-11 周二</dt>
+    <dd><a href="./update-gitee-pages-with-playwright-2.html">自动更新 Gitee Pages 续</a></dd>
+    <dt>2021-08-02 周一</dt>
+    <dd><a href="./view-of-work.html">工作观</a></dd>
+    <dt>2021-01-28 周四</dt>
+    <dd><a href="./cat-and-tv-drama-and-programming.html">猫、电视剧和编程</a></dd>
+    <dt>2021-01-15 周五</dt>
+    <dd><a href="./learn-from-kobe-bryant-and-his-fabled-4-am-workouts.html">从科比的洛杉矶早晨四点传说中学到的</a></dd>
+    <dt>2021-01-14 周四</dt>
+    <dd><a href="./nine-practical-rules-on-markdown-grammar.html">Markdown 的九个实用语法</a></dd>
+    <dt>2021-01-12 周二</dt>
+    <dd><a href="./write-documentations-with-mkdocs.html">用 MkDocs 写文档</a></dd>
+    <dt>2021-01-11 周一</dt>
+    <dd><a href="./update-gitee-pages-with-playwright.html">自动更新 Gitee Pages</a></dd>
+    <dt>2021-01-03 周日</dt>
+    <dd><a href="./try-to-write-a-resume-with-hugo.html">尝试用 Hugo 写简历</a></dd>
+    <dt>2020-12-21 周一</dt>
+    <dd><a href="./on-computer-science-in-a-cafe-0.html">咖啡馆聊计算机科学（序）</a></dd>
+    <dt>2020-12-03 周四</dt>
+    <dd><a href="./design-flaws-on-official-pomodoro-clock.html">番茄工作法官方特许番茄钟的设计瑕疵</a></dd>
+    <dt>2020-12-01 周二</dt>
+    <dd><a href="./questions-and-detail-plan-about-my-domains.html">对手头域名重新规划后提问</a></dd>
+    <dt>2020-11-30 周一</dt>
+    <dd><a href="./site-planning-about-my-domains.html">对手头几个域名的重新规划</a></dd>
+    <dt>2020-04-04 周六</dt>
+    <dd><a href="./about-my-lost-books.html">关于几本丢失的书籍</a></dd>
+    <dt>2019-08-14 周三</dt>
+    <dd><a href="./pplusplus-faq-updated-at-201908121324.html">20190814-P++ 的想法：常见问题（Zeev 于 2019-08-12 13：24 更新）</a></dd>
+    <dt>2019-08-12 周一</dt>
+    <dd><a href="./pplusplus-faq-zh-CN.html">P++ 的想法：常见问题（ 全文翻译 ）</a></dd>
+    <dt>2019-08-11 周日</dt>
+    <dd><a href="./php-zeev-resigned-originally-he-wanted-to-start-pplusplus.html">PHP 联席架构师辞职，原来他想做 P++…</a></dd>
+    <dt>2019-08-07 周三</dt>
+    <dd><a href="./disassemble-the-microsoft-designer-mouse.html">Microsoft Designer Mouse 拆解</a></dd>
+    <dt>2019-08-05 周一</dt>
+    <dd><a href="./linxu-distributions.html">Linux 版本</a></dd>
+    <dt>2019-07-25 周四</dt>
+    <dd><a href="./nine-restructuredtext-grammar.html">reStructuredText 九个实用语法</a></dd>
+    <dt>2019-07-23 周二</dt>
+    <dd><a href="./vscode-extension-insert-filename.html">VSCode Insert Filename</a></dd>
+    <dt>2019-06-09 周日</dt>
+    <dd><a href="./macos-history-and-copy-file-path-in-finder-app.html">macOS 的前世今生及访达中拷贝文件的路径的方法</a></dd>
+    <dt>2019-06-06 周四</dt>
+    <dd><a href="./the-last-installation-and-deployment-guide-you-need.html">悟了，你所需要的最后一篇部署指南</a></dd>
+    <dt>2019-05-18 周六</dt>
+    <dd><a href="./common-logic-common-talk.html">普通的逻辑学我们普通的聊</a></dd>
+    <dt>2019-05-15 周三</dt>
+    <dd><a href="./change-font-bold-keyborad-shortcuts-in-code-markdown-mode.html">修改 Microsoft Code Markdown 格式的快捷键</a></dd>
+    <dt>2019-05-12 周日</dt>
+    <dd><a href="./about-homo-sapiens-and-homo-neanderthals.html">胸棘鲷、智人与尼安德特人</a></dd>
+    <dt>2019-04-24 周三</dt>
+    <dd><a href="./about-computer-science.html">关于计算机科学</a></dd>
+    <dt>2018-10-01 周一</dt>
+    <dd><a href="./multiple-careers-and-ding-fu-bao.html">知识斜杆及丁福保</a></dd>
+    <dt>2018-09-01 周六</dt>
+    <dd><a href="./my-reading-experience.html">我的阅读之路</a></dd>
+    <dt>2018-08-10 周五</dt>
+    <dd><a href="./add-comments-system-to-my-blog.html">为博客添加评论系统</a></dd>
+    <dt>2018-08-07 周二</dt>
+    <dd><a href="./update-my-new-blog-theme.html">更新博客主题</a></dd>
+    <dt>2018-07-27 周五</dt>
+    <dd><a href="./text-qrcode-in-console-or-terminal.html">在终端或控制台显示文本二维码</a></dd>
+    <dt>2018-07-18 周三</dt>
+    <dd><a href="./preview-restructuredtext-file-in-vscode.html">用 VSCode 预览 reStructuredText 文件</a></dd>
+    <dt>2018-06-28 周四</dt>
+    <dd><a href="./data-vs-information.html">数据与信息的描述与差别</a></dd>
+    <dt>2018-06-20 周三</dt>
+    <dd><a href="./vscode-restructuredtext-warnings.html">Windows 下使用 VSCode 编辑 *.rst 文件的错误提示</a></dd>
+    <dt>2018-06-18 周一</dt>
+    <dd><a href="./three-steps-problem-solving-solutions-to-all-programming-problems.html">三步解决所有编程领域问题</a></dd>
+    <dt>2018-06-06 周三</dt>
+    <dd><a href="./about-my-new-blog.html">新博客</a></dd>
+</dl>
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

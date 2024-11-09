@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+    <title>Kaffa.im - software tag</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed.xml"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href=".."><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+
+
+
+
+
+
+
+<section class="hero" style="min-height: 400px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);">
+    <div class="hero-body">
+        <div class="title is-family-primary is-max-desktop is-size-4 has-text-centered is-italic author_name mt-5">
+            <figure class="image is-64x64 has-text-centered" style="margin: auto;">
+                <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+            </figure>
+            Kaffa
+        </div>
+        <p class="is-size-6 has-text-centered has-text-grey my-3">探索人生，分享意趣。</p>
+        <div class="container is-max-desktop">
+            <div class="is-divider" data-content="North"></div>
+        </div>
+        <nav class="level is-mobile container is-max-desktop">
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">项目</p>
+                    <p class="title">5</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">动态</p>
+                    <p class="title">298</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">关注</p>
+                    <p class="title">6</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">友链</p>
+                    <p class="title">13</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<div class="container is-max-widescreen mt-4">
+    <div class="columns is-variable is-2">
+        <div class="column is-3">
+
+            <section class="box">
+                <h3>项目</h3>
+                <nav class="panel mt-4">
+                    <p class="panel-tabs">
+                        <a title="all" class="is-size-7">所有</a>
+                        <a title="doing" class="is-size-7 is-active">进行中</a>
+                        <a title="done" class="is-size-7">完成</a>
+                        <a title="ready" class="is-size-7">未开始</a>
+                    </p>
+                    <a class="panel-block is-active panel-done is-hidden">
+                        <div style="width: 100%;">
+                            <strong>KaffaWeb.三合</strong>
+                            <strong class="is-pulled-right">100.0%</strong>
+                            <p class="subtitle is-7">Kunnect Adventures & Fun</p>
+                            <progress class="progress is-small" value="100.0" max="100" style="width: auto;">
+                                100.0%
+                            </progress>
+                        </div>
+                    </a>
+                    <a class="panel-block is-active panel-done is-hidden">
+                        <div style="width: 100%;">
+                            <strong>琅環笔记</strong>
+                            <strong class="is-pulled-right">100.0%</strong>
+                            <p class="subtitle is-7">sth. about everything & everything about sth.</p>
+                            <progress class="progress is-small" value="100.0" max="100" style="width: auto;">
+                                100.0%
+                            </progress>
+                        </div>
+                    </a>
+                    <a class="panel-block is-active panel-ready is-hidden">
+                        <div style="width: 100%;">
+                            <strong>ALaunch</strong>
+                            <strong class="is-pulled-right">0.0%</strong>
+                            <p class="subtitle is-7">be the first app</p>
+                            <progress class="progress is-small" value="0.0" max="100" style="width: auto;">
+                                0.0%
+                            </progress>
+                        </div>
+                    </a>
+                    <a class="panel-block is-active panel-doing">
+                        <div style="width: 100%;">
+                            <strong>FeedTools</strong>
+                            <strong class="is-pulled-right">33.0%</strong>
+                            <p class="subtitle is-7">Your feeds be yours.</p>
+                            <progress class="progress is-small" value="33.0" max="100" style="width: auto;">
+                                33.0%
+                            </progress>
+                        </div>
+                    </a>
+                    <a class="panel-block is-active panel-ready is-hidden">
+                        <div style="width: 100%;">
+                            <strong>KN.phoenix</strong>
+                            <strong class="is-pulled-right">0.0%</strong>
+                            <p class="subtitle is-7">None</p>
+                            <progress class="progress is-small" value="0.0" max="100" style="width: auto;">
+                                0.0%
+                            </progress>
+                        </div>
+                    </a>
+                </nav>
+            </section>
+
+            <section class="box">
+                <h3 class="mb-3">最新回复</h3>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/115633657?u=6bb5bee98c33bbd8d80a0e3ea0308d716504de33&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../the-principle-of-work-the-problem-solving-chapter" title="点击跳转">我觉得“2”的合理性可能源于最简单的“是——否”判断，即二分法、二进制。然后根据二进制发展出其它更为复杂的情况。
+
+by the way，GitHub登录可能挡住了很多想要评论的人，hhh</a>
+                                <time datetime="2024-07-07T01:28:00Z">2024-07-07</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/1954009?u=10e68dc6b0e05965ea19dcf8ae1ed5b09b5c6cd0&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../event-streams-in-action" title="点击跳转">这本真的好看！ </a>
+                                <time datetime="2024-09-06T14:02:41Z">2024-09-06</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/7929884?v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../bian-shui-wang-shi-tt33098134" title="点击跳转">这篇赛道独特，题材之前基本上没有，大家都是带着猎奇心理看，而导演和编剧功力不错，虽然和原书出入很大，但是在这种审核制度下改变的依旧非常精彩。除了前几集前戏和最后几集的强价值观输出外的中间部分十分精彩，的确是部好剧。</a>
+                                <time datetime="2024-09-04T02:38:37Z">2024-09-04</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/7522530?u=4b285a2bc595c2c6c12c16f20403a773b42e8715&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../record-an-instance-of-mysql-ransomware" title="点击跳转">我感觉你的这个站点有bug。原因是我发现有大量来自这个站点的backlink。但点进去发现都是一些不应该存在，但是又能访问的地址，比如：
+https://kaffa.im/book/category/category/category/tag/tag/add-giscus-comment-system
+https://kaffa.im/category/category/category/tag/a-record-of-the-suspicious-file-venice-dll.html
+https://kaffa.im/things/category/tag/category/the-structure-of-scientific-revolutions
+。。。
+
+这应该是没做好重定向或404导致的。
+</a>
+                                <time datetime="2024-08-24T14:24:23Z">2024-08-24</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/108600201?v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../weekly-w29-w30" title="点击跳转">厉害了，全是我看不懂的😂😂😂</a>
+                                <time datetime="2024-07-29T02:45:40Z">2024-07-29</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/115633657?u=6bb5bee98c33bbd8d80a0e3ea0308d716504de33&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../youth-just-loves-to-build" title="点击跳转">有种积重难返的感觉，就像日本最近才废止使用软盘。</a>
+                                <time datetime="2024-07-07T01:32:02Z">2024-07-07</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/52073881?u=4edffb9b8d1a67491f1cabd859ba31a84f81c15b&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../clear-the-301-automatic-redirection-to-https-cache-of-microsoft-edge" title="点击跳转">其实还真是出于安全考虑，我记得之前看到过相关文章不过找不到了。我现在浏览器设置的也是默认直接访问https</a>
+                                <time datetime="2024-06-11T12:34:50Z">2024-06-11</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/108600201?v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../tips-for-renting-and-moving-in-shenzhen" title="点击跳转">恭喜你，终于在狂风暴雨中搬好家了</a>
+                                <time datetime="2024-05-06T08:49:32Z">2024-05-06</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/88482848?v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../weekly-2024-w22" title="点击跳转">RSS Reader的话我之前用过fluent reader，应该是有多端的，可以看一下</a>
+                                <time datetime="2024-06-04T01:01:10Z">2024-06-04</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/108600201?v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../psychological-crime-light-of-the-city" title="点击跳转">《心理罪》的几本我反复看了很多遍，很好的小说。也推荐周浩晖、法医秦明和九滴水的小说，同样精彩。</a>
+                                <time datetime="2024-04-03T13:51:39Z">2024-04-03</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/94725606?u=bf63289642ef8e707a668b8184c8f94106916ce9&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../the-structure-of-scientific-revolutions" title="点击跳转">mark一下，这本书看起来有点意思</a>
+                                <time datetime="2024-03-13T17:23:27Z">2024-03-13</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/36960109?v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../plato-republic" title="点击跳转">应是自己知识素养不够，读了几页，实在看不下去，放弃了。</a>
+                                <time datetime="2024-03-13T01:02:20Z">2024-03-13</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/55222315?u=37c0be5b7b15779838d42a3a0018cff02d71c31c&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../plato-republic" title="点击跳转">挺有意思的一本书，说是西方哲学基石。
+印象深刻的是妇女儿童公有制消除以家庭为单位的私有性。
+但是想读懂要了解的挺多的，最好找个导读课之类的。
+自己读可能会对比现代的一些常识，忽略一些当时的时代背景。</a>
+                                <time datetime="2024-03-13T03:05:49Z">2024-03-13</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/103190643?v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../plato-republic" title="点击跳转">罗翔老师一直在推荐这本书</a>
+                                <time datetime="2024-03-13T04:43:44Z">2024-03-13</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/15963652?u=9746dfc77d60f40875b95ac0f2b8adaa4405612b&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../words-of-luo-xiang" title="点击跳转">每个人都有自己的特势，只不过有些人的特势在当前社会规则下表现为优势，而另一些人的则表现为了劣势。</a>
+                                <time datetime="2024-03-07T14:06:36Z">2024-03-07</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/37507006?u=8a94e3b3fad2215ae19ad909b2c8abf5f8c67508&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../words-of-luo-xiang" title="点击跳转">物竞天则</a>
+                                <time datetime="2024-03-08T01:26:02Z">2024-03-08</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/4386281?u=f9394f7368ed4756d114d583b04d8e3621191abc&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../add-giscus-comment-system" title="点击跳转">Eating your own dog food</a>
+                                <time datetime="2024-02-18T13:25:08Z">2024-02-18</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/16400144?u=6abfeda3c868f6154dc1af702f88bbe80c7c8c57&v=4" alt="avatar">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="block is-size-7" style="word-break: break-all">
+                                <a href="../add-giscus-comment-system" title="点击跳转">可以把 Issue 转移到 Discussion，这样就完成了数据迁移，只用 giscus 就可以了。</a>
+                                <time datetime="2024-02-20T04:40:23Z">2024-02-20</time>
+                            </div>
+                        </div>
+                    </div>
+                <p class="is-primary mt-3"><a href="https://github.com/kaffa/kaffa.im/discussions" title="所有评论">更多 ...</a></p>
+            </section>
+
+            <section class="box">
+                <h3>专栏推荐（AFF）</h3>
+                <div class="mt-4">
+                    <p class="mb-4">
+                        <a class="is-size-6" href="https://xiaobot.net/p/ywkh?refer=20ca5446-77f3-4250-b173-511673f42818">壹苇可航</a>
+                        <span class="subtitle is-6">——L,.G. 的专栏</span>
+                    </p>
+                    <p class="mb-4">
+                        订阅它助你和谐、高效的生活。
+                        专栏主题在可持续的个人管理与身心健康系统，通过系统化思维看生活。
+                        愿一封封邮件带给订阅者提高生活品质的灵感。
+                    </p>
+                    <p class="mb-3">
+                        <span class="tag">读书</span> <span class="tag">新知</span> <span class="tag">生活禅</span> <time datetime="2024-3-28">2024-3-28</time>
+                    </p>
+                </div>
+            </section>
+
+            <section class="box">
+                <h3>专栏推荐（AFF）</h3>
+                <div class="mt-4">
+                    <p class="mb-4">
+                        <a class="is-size-6" href="https://xiaobot.net/p/2bfree?refer=20ca5446-77f3-4250-b173-511673f42818">破局之路</a>
+                        <span class="subtitle is-6">——欧雷的专栏</span>
+                    </p>
+                    <p class="mb-4">
+                        在可言说的范围内尽量用简单的语言详细地记述我是如何突破 35 周岁中年失业困境并实现自己理想生活方式的。
+                    </p>
+                    <p class="mb-3">
+                        <span class="tag">人生</span> <span class="tag">职业规划</span> <time datetime="2023-8-19">2023-8-19</time>
+                    </p>
+                </div>
+            </section>
+
+            <section class="box box-dxl">
+                <meta name="referrer" content="same-origin">
+                <img class='dxl js-modal-trigger' data-target="modal-image">
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const d = new Date();
+                        const year = d.getFullYear();
+                        const month = (d.getMonth() + 1).toString().padStart(2, '0');
+                        const day = d.getDate().toString().padStart(2, '0');
+                        const $dxl = document.querySelector('.dxl');
+                        $dxl.src = `https://img.owspace.com/Public/uploads/Download/${year}/${month}${day}.jpg`;
+                        $dxl.onerror = function() {
+                            document.querySelector('.box-dxl').style.display = 'none';
+                        }
+                    });
+                </script>
+            </section>
+
+            <section class="box">
+                <h3>花园向导</h3>
+                <div class="is-size-67 mt-4" style="text-indent: 2em;">
+                    <p>看到<a href="https://maggieappleton.com/garden-history" target="_blank">数字花园</a>的历史，是说博客的倒叙时间线伤害了最初的互联网精神的初心，而按产品标准来发布内容是一种表演式写作，失去了探索内容的过程和内容自然生长的线索。我认同这个观点，我已在 <a href="https://kaffa.im/kaffaweb-plugin.html" target="_blank" >KaffaPod</a> 插件中加入此元数据的标注功能。基于此，网站内容分为笔记（发芽小苗）的和文章（灌木丛），相同主题的内容 URL 会唯一存在，我会在不断的更新并保留更新历史在文末。</p>
+                    <p>另一方面，我保留了发布内容倒叙时间线，但您依旧可以从菜单<a href="http://kaffa.im/pages/about-website.html">[关于][网站]</a>来进入开始了解本站内容。</p>
+                    <p>如果您有兴趣，可以把此处当成您邻居的花园，我正像个园丁一样，持续地时不时地修整和更新它。如果您暂时没兴趣，既然来到这里也不妨先<a
+                        href='javascript:(function addFav(title, url) {
+                            try { window.external.addFavorite(url, title); } catch(e) {
+                                try { window.sidebar.addPanel(title, url, ""); } catch(e) {
+                                    alert("您所使用的浏览器支持同时按键盘上的 CTRL 和 D 键进行收藏！");}}})("来杯咖啡！", "http://kaffa.im/");'
+                        >收藏</a>，等哪天想起来再来看看，因为，我正像个园丁一样，持续地时不时地修整和更新它，说不定哪天就对上您的胃口了。<p>
+                </div>
+            </section>
+        </div>
+
+        <div class="column is-6">
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2024-03-03T11:00:00+08:00"> 2024-03-03 周日</time>
+                            创作一篇文章
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">这或是一篇披着小说外衣的科普向文本。</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../oceanus-the-birth-of-mythosoftology.html" rel="bookmark"
+                           title="「神话软件学——世界海」的永久链接">神话软件学——世界海</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                <sup class="is-size-1 has-text-grey-light"
+                                     style="font-family: 'Times New Roman';
+                                            display: inline-block;
+                                            margin: -30px 0 -10px 0;"
+                                >“</sup>2092年了，你理解的关于软件世界最好的暗喻是什么？Um..., Oceanus. 是否你有过这样一种感觉，你从远古的深渊中苏醒，发现自己活在一个巨大的梦中？
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/2024/pexels-aleksandra-żmuda-13829408.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-11-07T17:15:00+08:00"> 2023-11-07 周二</time>
+                            记录一条笔记
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p>用了好多年的热键，居然失灵了，在 Windows 的 Edge 浏览器中，当按下 <code>Alt+Tab</code> 时，如何切换到其它程序呢？</p>
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../windows-hotkey-alt-tab-not-work-in-edge.html" rel="bookmark"
+                           title="「居然失灵？「Alt+Tab」的默认行为还原」的永久链接">居然失灵？「Alt+Tab」的默认行为还原</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div class="column is-3">
+            <section class="box">
+                <h3 class="mb-3">目录</h3>
+                <ul>
+                            <li><a href="../category/project.html">项目</a> (4)</li>
+                            <li><a href="../category/development.html">研发</a> (4)</li>
+                            <li><a href="../category/programming.html">编程</a> (9)</li>
+                            <li><a href="../category/website.html">网站</a> (22)</li>
+                            <li><a href="../category/reading.html">读书</a> (8)</li>
+                            <li><a href="../category/digital.html">数智</a> (35)</li>
+                            <li><a href="../category/words.html">言论</a> (6)</li>
+                            <li><a href="../category/article.html">文章</a> (43)</li>
+                            <li><a href="../category/software.html">软件</a> (6)</li>
+                            <li><a href="../category/book-list.html">书单</a> (4)</li>
+                            <li><a href="../category/weekly.html">周报</a> (43)</li>
+                            <li><a href="../category/book.html">书</a> (121)</li>
+                            <li><a href="../category/movie.html">影</a> (8)</li>
+                            <li><a href="../category/music.html">音</a> (3)</li>
+                            <li><a href="../category/things.html">物</a> (5)</li>
+                </ul>
+            </section>
+
+            <section class="box">
+                <h3 class="mb-3">时空穿梭</h3>
+                <ul class="menu-list">
+                    <li>
+                        <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">开往</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="box">
+                <h3 class="mb-3">标签</h3>
+                <div class="tags">
+<a class="tag" href="../tag/weekly.html" title="8">weekly</a><a class="tag" href="../tag/move-place.html" title="6">move-place</a><a class="tag" href="../tag/kaffaweb.html" title="6">kaffaweb</a><a class="tag" href="../tag/alaunch.html" title="5">ALaunch</a><a class="tag" href="../tag/fargo.html" title="5">fargo</a><a class="tag" href="../tag/rust.html" title="5">rust</a><a class="tag" href="../tag/work.html" title="5">work</a><a class="tag" href="../tag/php.html" title="4">php</a><a class="tag" href="../tag/pelican.html" title="4">Pelican</a><a class="tag" href="../tag/restructuredtext.html" title="4">reStructuredText</a><a class="tag" href="../tag/marketing.html" title="3">marketing</a><a class="tag" href="../tag/ai.html" title="3">ai</a><a class="tag" href="../tag/small-web.html" title="3">small-web</a><a class="tag" href="../tag/html.html" title="3">html</a><a class="tag" href="../tag/zhang-dai.html" title="3">张岱</a><a class="tag" href="../tag/cyber-security.html" title="3">cyber-security</a><a class="tag" href="../tag/css.html" title="3">CSS</a><a class="tag" href="../tag/psychology.html" title="3">Psychology</a><a class="tag" href="../tag/think.html" title="3">think</a><a class="tag" href="../tag/si-kao.html" title="3">思考</a>                </div>
+                <p class="is-primary mt-3"><a href="..tags.html" title="所有标签">更多 ...</a></p>
+            </section>
+
+            <section class="box">
+                <h3 class="mb-3">动态小计</h3>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-sticky-note-o mx-3" aria-hidden="true"></i>
+                    记录 <strong>65</strong> 条笔记</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-file-text-o mx-3" aria-hidden="true"></i>创作
+                    <strong>43</strong> 篇文章</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-code mx-3" aria-hidden="true"></i>使用
+                    <strong>6</strong> 个软件</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-life-ring mx-3" aria-hidden="true"></i>汇报
+                    <strong>43</strong> 次周报</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-list mx-3" aria-hidden="true"></i>精选
+                    <strong>4</strong> 款书单</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-book mx-3" aria-hidden="true"></i>阅读
+                    <strong>121</strong> 本书籍</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-video-camera mx-3" aria-hidden="true"></i>观赏
+                    <strong>8</strong> 部电影</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-music mx-3" aria-hidden="true"></i>收藏
+                    <strong>3</strong> 首音乐</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-asterisk mx-3" aria-hidden="true"></i>标记
+                    <strong>5</strong> 个物品</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-heart-o mx-3" aria-hidden="true"></i>添加
+                    <strong>3</strong> 条关注</p>
+                <p class="is-size-6 text-second">
+                    <i class="fa fa-user-o mx-3" aria-hidden="true"></i>新增
+                    <strong>13</strong> 条友链</p>
+            </section>
+
+            <section class="box">
+                <h3 class="mb-3">友链</h3>
+                <aside class="menu">
+                    <ul>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://justgoidea.com/" title="读书｜新知｜生活禅">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://justgoidea.com/favicon.svg" alt="槿呈Goidea">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">槿呈Goidea</p>
+                                                <p class="subtitle is-7">槿呈Goidea</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://ourai.ws/" title="我叫欧雷，是一个出生于上世纪 80 年代的理想主义叛逆青年。喜欢日本，热爱咖啡，善于总结。这里有我对技术和语言的研究，也有对世界和生活的思考。">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://ourai.ws/assets/avatars/ourai-100px-3bcaa1cb0c7fa0547d15622572d74a8bbc98a5f62e4920ecddb72ca95e505d17.jpg" alt="欧雷流">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">欧雷流</p>
+                                                <p class="subtitle is-7">欧雷</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://yayu.net/" title="一位爱喝咖啡的产品经理曾经是位设计师，偶尔捣腾代码，不玩摄影的时候也泡泡工夫茶。">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://yayu.net/wp-content/themes/yayu/assets/images/logo.png" alt="雅余">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">雅余</p>
+                                                <p class="subtitle is-7">晨间风、Jeff</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://www.ntiy.com/" title="“Never Try It Yourself”，记录、分享、学习">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="/static/img/2024/ntiy_logo_o.png" alt="非理勿试">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">非理勿试</p>
+                                                <p class="subtitle is-7">Soulizer、欧阳桂花、谢让</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://thinking-reed.cn/" title="我是一名正在川渝地区某高校攻读人工智能方向的研究生，喜欢编程，技术，哲学，心理学，期待与您交朋友!">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://thinking-reed.cn/images/avatar.png" alt="有思想的芦苇">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">有思想的芦苇</p>
+                                                <p class="subtitle is-7">芦苇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://yinji.org/" title="君子可内敛不可懦弱，面不公可起而论之">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://huhexian.s3.bitiful.net/2023/12/23/3b83cc067b2c3f1e45807dfdeb66e0c0.webp" alt="印记">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">印记</p>
+                                                <p class="subtitle is-7">Bruce，Blogger/摄影爱好者/数码发烧友</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://imzm.im/" title="以有涯随无涯">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://imzm.im/wp-content/uploads/2023/05/logo50px.png" alt="陈仓颉">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">陈仓颉</p>
+                                                <p class="subtitle is-7">陈仓颉</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://www.baby7blog.com" title="主要记录自己在写程序过程中的发现、问题、成果">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://www.baby7blog.com/favicon.ico" alt="七仔的博客">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">七仔的博客</p>
+                                                <p class="subtitle is-7">七仔</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://www.langhai.net/" title="收录各种类型的博客">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://www.langhai.net/assets/images/langhai-logo.png" alt="浪海导航">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">浪海导航</p>
+                                                <p class="subtitle is-7">浪海导航</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://conge.livingwithfcs.org/" title="记录读过的书和跑过的路。">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://conge.livingwithfcs.org/favicon.ico" alt="清阳livingWithFCS">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">清阳livingWithFCS</p>
+                                                <p class="subtitle is-7">Conge</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://1900.live/" title="All work and no play makes Jack a dull boy。">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://cdn.1900.live/20190640/ico.png" alt="@1900'Blog">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">@1900'Blog</p>
+                                                <p class="subtitle is-7">1900</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="https://www.skyue.com/" title="日常关注互联网、软件应用居多，也喜欢股票投资、社科历史。执着于掌控自己的数据，self-host 爱好者。">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="https://www.skyue.com/favicon.ico" alt="拾月">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">拾月</p>
+                                                <p class="subtitle is-7">SKYue</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a target="_blank" href="http://teddy.bell.cf/" title="一个技术宅的日常">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-48x48">
+                                                    <img src="/static/img/2024/teddy-logo.jpg" alt="啤酒加冰">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-6">啤酒加冰</p>
+                                                <p class="subtitle is-7"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="box">
+                <h3 class="mb-3">链接</h3>
+                <aside class="menu">
+                    <p class="menu-label">数字花园</p>
+                    <ul class="menu-list">
+                        <li><a target="_blank" href="https://jefftay.com/">仿生猫不会梦见电子猫粮</a></li>
+                        <li><a target="_blank" href="https://note.justgoidea.com/">MemEX</a></li>
+                        <li><a target="_blank" href="https://coffee.kaffa.im/">蓝星梦寻</a></li>
+                    </ul>
+                </aside>
+                <aside class="menu">
+                    <p class="menu-label">园艺先驱</p>
+                    <ul class="menu-list">
+                        <li><a target="_blank" href="https://www.eastgate.com/garden/Enter.html">EastGate Garden</a></li>
+                        <li><a target="_blank" href="http://andymatuschak.org">Evergreen Notes</a></li>
+                        <li><a target="_blank" href="https://maggieappleton.com/">Maggie Appleton</a></li>
+                    </ul>
+                </aside>
+                <aside class="menu">
+                    <p class="menu-label">收录</p>
+                    <ul class="menu-list">
+                        <li><a target="_blank" href="https://www.foreverblog.cn">十年之约</a></li>
+                        <li><a target="_blank" href="https://bf.zzxworld.com">BlogFinder</a></li>
+                        <li><a target="_blank" href="https://storeweb.cn/">个站商店</a></li>
+                        <li><a target="_blank" href="http://www.jetli.com.cn">博客志</a></li>
+                        <li><a target="_blank" href="https://firewood.news">积薪</a></li>
+                        <li><a target="_blank" href="https://bkq.net.cn/">博客圈</a></li>
+                        <li><a target="_blank" href="https://www.boyouquan.com/home">博友圈</a></li>
+                    </ul>
+                </aside>
+                <aside class="menu">
+                    <p class="menu-label">链接</p>
+                    <ul class="menu-list">
+                        <li><a target="_blank" href="https://gvanrossum.github.io/">Guido van Rossum</a></li>
+                        <li><a target="_blank" href="https://danluu.com/">danluu.com</a></li>
+                        <li><a target="_blank" href="https://news.ycombinator.com/">Hacker News</a></li>
+                        <li><a target="_blank" href="https://lundao.pub/">论道</a></li>
+                    </ul>
+                </aside>
+            </section>
+
+        </div>
+    </div>
+</div>
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href=".."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

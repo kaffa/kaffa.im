@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 希罗多德历史（上下册）</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed.xml"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+
+
+
+    <meta name="tags" content="希罗多德" />
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="."><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./the-histories-herodotus.html"
+                rel="bookmark"
+                title="「希罗多德历史（上下册）」的永久链接"
+            >希罗多德历史（上下册）</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-03-12T22:00:00+08:00">2024-03-12 周二</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/book.html">书</a>
+            <span class="ml-2">标签:</span>
+            <a class="tag is-medium" href="./tag/xi-luo-duo-de.html">希罗多德</a>
+
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+        <div class="columns is-centered box mt-5" id="subject">
+            <div class="column is-one-quarter">
+                <p class="image">
+                    <img title="希罗多德历史" class="book-cover" src="/static/img/book/%E5%B8%8C%E7%BD%97%E5%A4%9A%E5%BE%B7%E5%8E%86%E5%8F%B2.jpg">
+                </p>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <span class="title">希罗多德历史</span>
+                        <br><span class="Subtitle">希腊波斯战争史</span>
+                        <br><span>Ἱστορίαι</span>
+                    <p>
+                        <strong>
+                            作者：[古希腊] 希罗多德
+                        </strong>
+                        <strong class="ml-3">
+                            译者：王以铸
+                        </strong>
+                    </p>
+                    <p class="is-size-7">
+                        《历史》全书可以明显地分成两部分。前半部只是以希腊波斯战争的历史为骨架，服它来贯串许多同正文关系不大的传说、故事、地理、人种志方面的记述等等（其中有关埃及的部分几乎可以独立成书），后半部才开始叙述战争本身，而插笔叙述退居次要地位。总的看来，不少材料是硬凑到一起的。
+《历史》传世钞本有十几种，大多是十到十五世纪时的。全书传统分为九卷，每卷各冠以一位缪司女神的名字，因此后世又把它称为《缪司书》。这种分法大概出自后来编订些书的亚力山大里亚学者之手，未必是原书的本来面貌。
+译者介绍些书的目的是给对历史、文学有兴趣的广大读者提供一部值得一读的世界古典名著，不是供专家研究之用，故在注释方面力避烦琐，而以简要为原则，凡牵涉考证、研究性质的注释均不收。本书所述历史事件都是公元前的事，为了简明起见，译注中年份都不再注明“公元前”了。
+                    </p>
+                    <table class="table is-narrow is-striped is-hoverable is-size-7">
+                        <colgroup>
+                            <col style="width: 6rem" />
+                            <col/>
+                        </colgroup>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9787100023511</td>
+                            </tr>
+                            <tr>
+                                <td>出版社</td>
+                                <td>商务印书馆</td>
+                            </tr>
+                            <tr>
+                                <td>出版时间</td>
+                                <td>
+                                    2005年
+                                        4月
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>装帧</td>
+                                <td>平装</td>
+                            </tr>
+                            <tr>
+                                <td>定价</td>
+                                <td>42.0（有2016年6月13印本，兩冊定價75元）</td>
+                            </tr>
+                            <tr>
+                                <td>页数</td>
+                                <td>702</td>
+                            </tr>
+                            <tr>
+                                <td>系列</td>
+                                <td>汉译世界学术名著丛书·历史地理</td>
+                            </tr>
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                        <a href="https://book.douban.com/subject/1511839/" target="_blank">
+                                                豆瓣
+                                        </a>&nbsp;
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+<h2>评分</h2>
+<p>⭐⭐⭐⭐⭐
+⭐⭐⭐ 8/10</p>
+</div>
+<div class="section" id="section-3">
+<h2>作者与书</h2>
+<p>希罗多德是一个小亚细亚的古希腊人，据考证的生平约为公元前484年至公元前425年，他游历古代世界，并进行采访，记录和收集故事。</p>
+<p>他被视为早期记录和书写历史的人，虽然他是希腊人，但他并不以希腊视角来描述这些故事。</p>
+<p>所以，他的书写常与两部有名的史诗《奥德赛》和《伊利亚特》一起提名，《历史》应是他引以为豪的作品。</p>
+<p>为与其它历史书区别开，《历史》也常被称作《希罗多德：历史》，希腊语是 Ἱστορίαι，Historíai，被认为是西方文学中历史学的奠基之作。</p>
+<p>在可以想象的早期，距今2500年之前，研究方法有限，他关于历史的记录虽不是完全公正，但仍是西方关于这些事件的最重要的来源之一。</p>
+<p>此外，它还确立了西方世界的历史流派和研究。</p>
+<p>《历史》的内容主要是讲公元前六至五世纪的战争，战争的冲突，一方面来自奴隶制的波斯人，另一方面来自由势力的雅典人和希腊城邦联盟。</p>
+<p>《历史》在某个时候被分为九本书，或九卷书，常以九位缪斯女神命名。</p>
+</div>
+<div class="section" id="section-4">
+<h2>关于商务印书馆翻译版本</h2>
+<p>《历史》也是我国的翻译名称，同荷马使用的方言一样，这本书是用伊奥利亚方言写的，商务印书馆初版是在1959年的翻译稿出版，在我出生后的年代中，它继续修订再版。</p>
+<p>可惜这本书并不是从原语种版本翻译，而是从英文翻译版《牛津古典丛书》作为原版，同时参考了其它英译、日译、波兰语的翻译版编定的。</p>
+<p>所以这本书的定位是一本供对历史和文学有兴趣的人提供的世界古典名著译本，而不是给专家做研究用的文本。</p>
+</div>
+<div class="section" id="section-5">
+<h2>为什么读（20年前）</h2>
+<p>最初接触到这本书是因为在2002年左右，我正在做“埃及”的主题阅读，当时互联网内容已经较多，还有不少的个人主页。</p>
+<p>当我通过互联网查阅“埃及”主题，大约就只有四个线索有价值。</p>
+<ol class="arabic simple">
+<li>希罗多德《历史》提到了埃及。</li>
+<li>埃及学学者博导刘文鹏的《古代埃及史》。</li>
+<li>大英博物馆官网。</li>
+<li>发现之旅丛书《古埃及探秘：尼罗河畔的金字塔世界》。</li>
+</ol>
+<p>当时的情况是，资源3的内容是免费的，虽然我办理了双ISDN，但下载网速最大只有12K每秒，下载图片非常难，但我学习了古埃及创世神话和诸神祇的传说。</p>
+<p>资源4容易获得，最大的收获是法国画家的插画和油画，以及古埃及王朝年表。</p>
+<p>资源2第一版出版非常少，估计2000年时也没什么人买，只有台湾书店有卖繁体版本，且价格太贵，以当时我的收入，也买不起。我于是给刘文鹏教授写过一封纸质信件寄送到他的学校，不知他是否收到过。大意就是表示对古埃及文化和历史非常感兴趣，想向他购买他的书籍用以学习，但却没能收到回信。在多年之后，随着埃及的热度升温和旅游市场的开放，这本书也再版了，我顺利的买到了，读起来却和想象的不一样。</p>
+<p>资源1当时也是可以买到的，且不太贵，但通篇阅读后，对比古埃及年表，发现其中描述的埃及，已是后期王朝时代的第二十六王朝的埃及，美索不达米亚已经征服埃及，将进入希腊化时代。</p>
+</div>
+<div class="section" id="section-6">
+<h2>为什么读</h2>
+<ol class="arabic">
+<li><p class="first">想重温一遍第二册（Euterpe）中关于埃及迷宫的故事和海伦的故事。</p>
+<ul class="simple">
+<li>埃及的地理、习俗和历史</li>
+<li>尼罗河的形成的推测</li>
+<li>埃及的宗教习俗，尤其是与希腊人不同的宗教习俗</li>
+<li>埃及的动物：猫、狗、鳄鱼、河马、水獭、凤凰、圣蛇、翼蛇、朱鹮</li>
+<li>埃及文化：医学、丧葬仪式、食物、船只</li>
+<li>埃及国王：梅内斯、尼托克里斯、莫里斯、塞索斯特里斯、费隆、普罗透斯</li>
+<li>海伦和帕里斯在特洛伊战争之前在埃及的停留 (2.112–120)</li>
+<li>更多埃及国王：Rhampsinit（以及聪明小偷的故事）、Cheops（以及使用机器建造吉萨大金字塔）、Chephren、Mycerinus、Asychis 和埃塞俄比亚征服者 Sabacos、Ansis、Sethos</li>
+<li>祭司的行列</li>
+<li>迷宫</li>
+<li>更多埃及国王：十二人、普萨梅蒂库斯（及其崛起）、内科斯、萨米斯、阿普里斯、阿马西斯二世（及其崛起）</li>
+</ul>
+</li>
+<li><p class="first">第六册（Erato）中关于波斯人攻打古希腊的马拉松战争的故事。</p>
+<p>马拉松战役的背景是波斯人来犯，菲迪波德斯跑去斯巴达求援，但被拒绝。当时希腊好几百个城邦只有三十个决意反抗波斯，所以希波战争波斯军中其实有很多希腊人。公元前490年，波斯海路大军长驱直入，横渡爱琴海，在马拉松战役中，雅典人以少胜多。想看看古希腊雅典用怎样的阵型阻击波斯人的进攻，最终以雅典阵亡192人波斯阵亡6400人的差距打败了来犯的敌人。当然，这些都是希罗多德写的，他甚至写到战场清点了敌军和我军的人数，精确到10人。</p>
+<p>这些描述，不知是翻译的缘故，还是历史久远的缘故，从阅读的直觉上降低了这本书中记录素材的可信度。</p>
+</li>
+</ol>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.im"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

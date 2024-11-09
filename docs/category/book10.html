@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+    <title>Kaffa.im - 书 分类
+</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed.xml"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href=".."><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+
+
+
+
+
+
+<section class="hero" style="min-height: 400px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);">
+    <div class="hero-body">
+        <div class="title is-family-primary is-max-desktop is-size-4 has-text-centered is-italic author_name mt-5">
+            <figure class="image is-64x64 has-text-centered" style="margin: auto;">
+                <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+            </figure>
+            Kaffa
+        </div>
+        <p class="is-size-6 has-text-centered has-text-grey my-3">探索人生，分享意趣。</p>
+        <div class="container is-max-desktop">
+            <div class="is-divider" data-content="North"></div>
+        </div>
+        <nav class="level is-mobile container is-max-desktop">
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">项目</p>
+                    <p class="title">5</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">动态</p>
+                    <p class="title">298</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">关注</p>
+                    <p class="title">6</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">友链</p>
+                    <p class="title">13</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<div class="container is-max-widescreen mt-4">
+    <div class="columns is-variable is-2">
+
+        <div class="column is-9">
+            <section class="box">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            所在位置：
+                        </div>
+                        <div class="level-item">
+                            <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+                                <ul>
+                                    <li>
+                                        <a href="/">
+                                            <span>首页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span>书</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-12-21T14:35:00+08:00"> 2023-12-21 周四</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">学过 JavaScript 语法并且写过 JavaScript 程序但依然遇到陷阱时，你可以读的书。</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../how-javascript-works.html" rel="bookmark"
+                           title="「JavaScript悟道」的永久链接">JavaScript悟道</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                本书首先介绍JavaScript的基本知识：命名、数值、布尔值和字符串等，并展示了其缺陷和局限性，但随后展示了如何解决这些问题；接着继续研究数据结构和函数，探索底层机制，并使用高阶函数来实现面向对象编程；然后还着眼于事件化编程、测试和纯度，以及对“下一门语言”的要求。大多数语言深深植根于FORTRAN时代的范式，作者攻击了这些根源，促使我们思考下一代范式。
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/javascript-%E6%82%9F%E9%81%93.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-12-17T16:48:00+08:00"> 2023-12-17 周日</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">想读</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../the-emperor-of-all-maladies-a-biography-of-cancer.html" rel="bookmark"
+                           title="「The Emperor of All Maladies - A Biography of Cancer」的永久链接">The Emperor of All Maladies - A Biography of Cancer</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                Starred Review. Mukherjee's debut book is a sweeping epic of obsession, brilliant researchers, dramatic new treatments, euphoric success and tragic failure, and the relentless battle by scientists and patients alike against an equally relentless,...
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/the-emperor-of-all-maladies.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-12-17T16:30:00+08:00"> 2023-12-17 周日</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">适合闲时慢读。</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../the-psychology-of-computer-programming.html" rel="bookmark"
+                           title="「程序开发心理学」的永久链接">程序开发心理学</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                《程序开发心理学(银年纪念版·中英对照)》出自软件领域著名思想家，美国计算机名人堂首批成员之一的Gerald...
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%BF%83%E7%90%86%E5%AD%A6.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-12-03T22:12:00+08:00"> 2023-12-03 周日</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">和小可爱提到本书，却无法一下给她讲明白。</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../crucial-conversations.html" rel="bookmark"
+                           title="「关键对话」的永久链接">关键对话</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                每个人生命中不可避免地会遇到“关键时刻”，它们可能是：
+向上司提出精心设计的方案，却被泼了一头冷水。
+想和配偶沟通，希望对方的家人不要干涉你们的生活。
+和孩子谈认真学习，却被当作耳边风。
+提醒朋友还钱，他却总找各种借口推脱。
+是隐忍不发，任由情况向对你不利的方向发展？
+还是冲冠一怒，说一些事后让自己后悔的话，把事情推向恶性循环？
+大多数人在面对难以解决却将对生活产生重大影响的“关键时刻”，都不知如何应对。其实，在隐忍和暴怒之间，还有一种方法，既能圆满地解决问题，又不会伤害或冒犯对方。
+本书作者团队基...
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/%E5%85%B3%E9%94%AE%E5%AF%B9%E8%AF%9D%EF%BC%9A%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E8%83%BD%E6%B2%9F%E9%80%9A%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88%EF%BC%89%EF%BC%88%E7%8F%8D%E8%97%8F%E7%89%88%EF%BC%89.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-12-03T22:12:00+08:00"> 2023-12-03 周日</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">一本适合 HTML 入门的中文书</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../html5-and-css3-visual-quickstart-guide.html" rel="bookmark"
+                           title="「HTML5与CSS3基础教程」的永久链接">HTML5与CSS3基础教程</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                代表下一代网页编写技术的HTML5，为网页提供布局和格式的CSS3，这两者构成了Web开发的基石，也是Web程序员和设计师必须熟练掌握的最基本技能。
+本书是风靡全球的HTML和CSS最佳入门教程的最新版，上一版单单英文版的销量就超过100万册，被翻译为十多种语言，并长期雄踞亚马逊书店计算机图书排行榜榜首。
+最新的第7版秉承前一版直观、透彻、全面、循序渐进的讲授特色，仍然采用独特的双栏图文并排方式，手把手指导读者从零开始轻松入门。在内容上，第7版是一个重大的修订版本，全面反映了HTML5和CSS3的最...
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/html5%E4%B8%8Ecss3%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%EF%BC%88%E7%AC%AC7%E7%89%88%EF%BC%89.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-11-28T20:12:00+08:00"> 2023-11-28 周二</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../product-power.html" rel="bookmark"
+                           title="「产品之力」的永久链接">产品之力</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                人类历史上每隔一段时间就会出现新的“革命”，每次“革命”都伴随着创造巨富的机会。经济的最终目的是不断地追求公平和效率，而互联网能够促成人类社会需求和资源的高效对接。可以预见，互联网会越来越多地渗透到传统领域中，不断地改造传统领域。这种改造可能是传统企业积极吸收互联网的精髓，进行产业升级，也有可能是互联网从业者依靠互联网的浪潮颠覆传统行业。作者根据自身的工作经验，完整讲述了在互联网领域如何从一个idea或一个现象开始，快速评估、快速找到合理的业务模式，并快速执行以获得成功，供互联网创业者和传统行业从业者借鉴。
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/%E4%BA%A7%E5%93%81%E4%B9%8B%E5%8A%9B.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-11-28T20:12:00+08:00"> 2023-11-28 周二</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../wabi-sabi-for-artists-designers-poets-philosophers.html" rel="bookmark"
+                           title="「Wabi-Sabi侘寂之美」的永久链接">Wabi-Sabi侘寂之美</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                写给产品经理、设计者、生活家的简约美学基础。
+苹果、宜家、无印良品、魅族等产品哲学的灵感之源...
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/wabi-sabi%E4%BE%98%E5%AF%82%E4%B9%8B%E7%BE%8E.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-11-24T12:18:00+08:00"> 2023-11-24 周五</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">一本非常好的心理学教材</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../psychology-11th-edition.html" rel="bookmark"
+                           title="「心理学」的永久链接">心理学</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                《心理学》(第7版)既包含传统的主题同时又与时俱进。这本教科书包括序幕，共有19章，其内容依次为心理学的故事、对心理科学的批判性思考、神经科学与行为、行为的天性与教养、人的发展、感觉、短觉、意识状态、学习、记忆、思维和语言智力、动机与工作、情绪、压力与健康、人格、心理障碍、心理治疗、社会心理学。它不仅系统地阐述了心理学的基本概念、基本原理和基本理论，而且还阐述了大量的心理学应用的内容；不仅阐述了普通心理学的传统主题，而且还反映了大量的最新研究成果，指出了这些传统主题的新的发展趋势。
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/%E5%BF%83%E7%90%86%E5%AD%A6.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-11-24T12:15:00+08:00"> 2023-11-24 周五</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">一本非常好的心理学入门教材</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../psychology-and-life.html" rel="bookmark"
+                           title="「心理学与生活」的永久链接">心理学与生活</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                《心理学与生活》是美国斯坦福大学多年来使用的教材，也是在美国许多大学里推广使用的经典教材，被ETS推荐为GRE心理学专项考试的主要参考用书，还是被许多国家大学的“普通心理学”课程选用的教材。这本教科书写作流畅，通俗易懂，深入生活，把心理学理论与知识联系人们的日常生活与工作，使它同样也成为一般大众了解心理学与自己的极好读物。
+作为一本包含着丰富的教育思想和独特教学方法的成熟教材，原书中所有元素——如由600余条词汇及解释组成的“专业术语表”，2000余条“参考文献”，以及近1000条的“人名和主题索引...
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/%E5%BF%83%E7%90%86%E5%AD%A6%E4%B8%8E%E7%94%9F%E6%B4%BB.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-11-24T10:14:00+08:00"> 2023-11-24 周五</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">泡过UNIX社区的人会读过「提问的艺术」的翻译版，这本学会提问更是一本关于提问和批判性思维的书，难得的是它不断引入最新的关于思考的科学结论。</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../asking-the-right-questions-a-guide-to-critical-thinking.html" rel="bookmark"
+                           title="「学会提问」的永久链接">学会提问</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                如果在你的家乡投资建一座核电厂，你会支持还是反对？
+如果学校出于安全考虑要对每一个学生进行安全检查，你会高兴还是愤怒？
+如果你的兄弟姐妹做了父母明令禁止的事，你会告诉父母还是隐瞒不说？
+无数专家都说股市要跌、房价要涨，或者激烈地唱着反调，你相信谁？质疑谁？结论是唯一的吗？
+所有这些问题背后，你自己的观点是什么？你的理由是什么？有确凿的证据来证实吗？
+在一个被泛滥信息包围的时代，每时每刻都会遇到各种问题，大到涉及世界经济发展趋势，小到个人生活的决策。面对别人兜售的观点——他们热衷于让你相信这是“事实”...
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-11-24T10:14:00+08:00"> 2023-11-24 周五</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">思考本身还是一个迷，本书属于有关「思考」常翻阅的书</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../the-art-of-thinking.html" rel="bookmark"
+                           title="「思考的艺术」的永久链接">思考的艺术</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                思考技能是天赋还是养成的习惯？视野狭窄、缺乏好奇心对思考有什么影响？……针对这类我们很少意识到的问题，本书从阐述思考的概念开始，教你打破思考的局限，克服思考的障碍，学会创造性、批判性地思考问题，并有效地沟通想法，从而传达给读者这样一个重要的理念——思考是一门需要学习且可以习得的艺术。
+在每一章末尾，作者都设置了极具挑战性的练习题，方便读者边学边练，将学到的知识融会贯通。本书最初为大学思考课程设计，因其简单易懂，逐渐被商业、人文、社科、科学等领域广泛采用，是一本兼具科学性与实用性的思考技能训练书。19...
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/%E6%80%9D%E8%80%83%E7%9A%84%E8%89%BA%E6%9C%AF.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+            <section class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="https://kaffa.im/static/img/kaffa-avatar.png" alt="avatar">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <address>
+                            <span class="author_name">Kaffa</span>
+                        </address>
+                        <div class="block is-size-7">
+                            <time datetime="2023-11-24T10:14:00+08:00"> 2023-11-24 周五</time>
+                            阅读一本书籍
+                        </div>
+                    </div>
+                </div>
+                <div class="block is-size-6 mx-2 my-2">
+                    <p class="first last">十年前的书，作者是以色列裔美国心理学家，2002年获得诺贝尔经济学奖。</p>
+
+                </div>
+                <div class="article_tri">
+                </div>
+                <article class="box">
+                    <h2 class="title is-6">
+                        <a href="../thinking-fast-and-slow.html" rel="bookmark"
+                           title="「思考，快与慢」的永久链接">思考，快与慢</a>
+                    </h2>
+                    <div class="media">
+                        <div class="media-content">
+                            <div class="is-size-7">
+                                本书介绍了很多经典有趣的行为实验, 指出我们在什么情况下可以相信自己的直觉, 什么时候不能相信;指导我们如何在商场, 职场和个人生活中做出更好的选择, 以及如何运用不同技巧来避免那些常常使我们陷入麻烦的思维失误.
+                            </div>
+                        </div>
+<div class="media-right">
+                            <figure class="image" style="max-width: 96px">
+                                <img src="/static/img/book/%E6%80%9D%E8%80%83%2C-%E5%BF%AB%E4%B8%8E%E6%85%A2.jpg" alt="cover_image">
+                            </figure>
+                        </div>                    </div>
+                </article>
+            </section>
+<nav class="pagination is-small box" role="navigation" aria-label="pagination">
+    <a class="pagination-previous"
+       href="../category/book9.html" title="Previous">上一页</a>
+    <span class="pagination-list">
+        第 10 页 / 共 11 页
+    </span>
+    <a class="pagination-next"
+       href="../category/book11.html" title="Previous">下一页</a>
+</nav>
+        </div>
+
+        <div class="column is-3">
+
+            <section class="box">
+                <h3 class="mb-3">目录</h3>
+                <ul>
+                    <li><a href="../category/project.html">项目</a> (4)
+                    </li>
+                    <li><a href="../category/development.html">研发</a> (4)
+                    </li>
+                    <li><a href="../category/programming.html">编程</a> (9)
+                    </li>
+                    <li><a href="../category/website.html">网站</a> (22)
+                    </li>
+                    <li><a href="../category/reading.html">读书</a> (8)
+                    </li>
+                    <li><a href="../category/digital.html">数智</a> (35)
+                    </li>
+                    <li><a href="../category/words.html">言论</a> (6)
+                    </li>
+                    <li><a href="../category/article.html">文章</a> (43)
+                    </li>
+                    <li><a href="../category/software.html">软件</a> (6)
+                    </li>
+                    <li><a href="../category/book-list.html">书单</a> (4)
+                    </li>
+                    <li><a href="../category/weekly.html">周报</a> (43)
+                    </li>
+                    <li><a href="../category/book.html">书</a> (121)
+                    </li>
+                    <li><a href="../category/movie.html">影</a> (8)
+                    </li>
+                    <li><a href="../category/music.html">音</a> (3)
+                    </li>
+                    <li><a href="../category/things.html">物</a> (5)
+                    </li>
+                </ul>
+            </section>
+
+
+        </div>
+    </div>
+</div>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href=".."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

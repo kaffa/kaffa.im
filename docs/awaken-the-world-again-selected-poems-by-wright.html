@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 再度唤醒世界：赖特诗选</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed.xml"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+
+
+
+    <meta name="tags" content="poem" />
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="."><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./awaken-the-world-again-selected-poems-by-wright.html"
+                rel="bookmark"
+                title="「再度唤醒世界：赖特诗选」的永久链接"
+            >再度唤醒世界：赖特诗选</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-10-28T00:47:00+08:00">2024-10-28 周一</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/book.html">书</a>
+            <span class="ml-2">标签:</span>
+            <a class="tag is-medium" href="./tag/poem.html">poem</a>
+
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+        <div class="columns is-centered box mt-5" id="subject">
+            <div class="column is-one-quarter">
+                <p class="image">
+                    <img title="再度唤醒世界：赖特诗选" class="book-cover" src="/static/img/book/%E5%86%8D%E5%BA%A6%E5%94%A4%E9%86%92%E4%B8%96%E7%95%8C%EF%BC%9A%E8%B5%96%E7%89%B9%E8%AF%97%E9%80%89.jpg">
+                </p>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <span class="title">再度唤醒世界：赖特诗选</span>
+                    <p>
+                        <strong>
+                            作者：[美] 詹姆斯·赖特
+                        </strong>
+                        <strong class="ml-3">
+                            译者：厄土
+                        </strong>
+                    </p>
+                    <p class="is-size-7">
+                        ※语言的炼金术士，自然的超现实主义
+※普利策奖诗人詹姆斯·赖特毕生诗歌唯一精选集，国内首次译介
+※诗人妻子安妮·赖特和挚友罗伯特·勃莱合力编选 | 诗人厄土倾心翻译
+詹姆斯·赖特本身就是一流的惠特曼风格的诗人。——哈罗德·布鲁姆
+比任何一位20世纪的北美诗人都更用心 写诗的诗人。——罗德尼·琼斯
+本诗集由赖特遗孀安妮·赖特及挚友罗伯特·勃莱于2005年合力编选，系赖特迄今为止唯一的诗选版本。该选本精选了赖特创作生涯50年间的82首作品，囊括了诗人各阶段最具代表性、最富影响力的作品；基于两位编选者对英语诗歌的深刻洞见和对赖特人生及创作理念的刻骨共情，凝练且全面地向读者呈现了一个亲切、纯粹的赖特，彰显了赖特诗歌中重新发现“此时此刻”和“照亮生活”的语言之光，意在重塑我们与世界的亲密性，进而唤起我们通向内在心灵，获得生命顿悟时刻的旅程。
+                    </p>
+                    <table class="table is-narrow is-striped is-hoverable is-size-7">
+                        <colgroup>
+                            <col style="width: 6rem" />
+                            <col/>
+                        </colgroup>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9787559671547</td>
+                            </tr>
+                            <tr>
+                                <td>出版社</td>
+                                <td>北京联合出版公司</td>
+                            </tr>
+                            <tr>
+                                <td>出版时间</td>
+                                <td>
+                                    2023年
+                                        10月
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>装帧</td>
+                                <td>精装</td>
+                            </tr>
+                            <tr>
+                                <td>定价</td>
+                                <td>58.00元</td>
+                            </tr>
+                            <tr>
+                                <td>页数</td>
+                                <td>248</td>
+                            </tr>
+                            <tr>
+                                <td>系列</td>
+                                <td>雅众诗丛·国外卷</td>
+                            </tr>
+                            <tr>
+                                <td>出品方</td>
+                                <td>雅众文化</td>
+                            </tr>
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                        <a href="https://book.douban.com/subject/36538053/" target="_blank">
+                                                豆瓣
+                                        </a>&nbsp;
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+<h2>评分</h2>
+<p>⭐⭐⭐⭐⭐
+⭐⭐⭐⭐
+9 / 10</p>
+</div>
+<div class="section" id="section-3">
+<h2>开篇译作</h2>
+<p>不知开篇为何引用了一首唐诗译作，英国诗人也喜欢过李白的诗，翻译为：</p>
+<blockquote>
+如果你问我，为何居住在青山中。
+我会默默地笑，我的灵魂宁静。
+盛开的桃花追随着流动的水，
+在尘世之外，有另一片天地。</blockquote>
+<p>原诗是：</p>
+<blockquote>
+问余何意栖碧山，笑而不答心自闲。
+桃花流水窅然去，别有天地非人间。</blockquote>
+<p>“窅” 读为 “yǎo”，基本字义是眼睛眍进去，喻深远，“窅然”用来描绘桃花流水渐渐远去的状态，给人一种悠远、深邃的感觉。在此，翻译者似译出来不同的心境，至少我感受到的李白表达的是内心的追求，宁静是少有读出的。</p>
+</div>
+<div class="section" id="section-4">
+<h2>致创造的造物</h2>
+<blockquote>
+孤独如同我的渴望，
+我没有女儿。
+我不会死于火，我
+会死于水。</blockquote>
+</div>
+<div class="section" id="section-5">
+<h2>冬末，我跨过水坑，想起中国古代的一位地方官</h2>
+<blockquote>
+<pre class="literal-block">
+况吾时与命，
+蹇舛不足恃。
+
+——白居易《初入峡有感》
+
+    作于819年
+</pre>
+</blockquote>
+<p>在网上找了一段他人的翻译:</p>
+<pre class="literal-block">
+白居易，开始谢顶的老政客，
+有何用？
+我想起你
+不安地进入长江峡谷，
+被拖曳着穿越激流而上
+为了官职或其他
+去忠州城。
+你到达时，我猜
+天都黑了。
+
+但现在是1960年，又将是春天了，
+明尼阿波利斯高耸的岩石，
+堆垒起我自己的
+竹索和水的昏黑暮色。
+元稹在哪里，这位你钟爱的朋友？
+大海在哪里，那曾终结中西部所有孤独的
+大海？明尼阿波利斯在哪里？我什么都看不见
+除了这棵随冬天变黑的可怕的橡树。
+你是否找到了群山之外隔绝尘世的人们的城池？
+或者说，你已把这根磨损的残绳的一端
+紧握了一千年？
+</pre>
+<p>还有 张文武/译:</p>
+<pre class="literal-block">
+白居易，你这开始秃顶的老政治家啊，
+有什么用呢？
+我想起了
+不安地进入三峡的你，
+为了那一官半职
+坐在被拉着逆流而上的船上，
+奔赴忠州城。
+我猜你到那儿的时候
+天已经黑了。
+
+
+而现在是1960年，眼看又是春天了，
+明尼阿波利斯高高的岩石，
+带来了我自己幽暗的黄昏，
+竹索和水的黄昏。
+你的好友元稹在哪里？
+那曾经将整个中西部的孤独都带走了的
+大海在哪里？明尼阿波利斯在哪里？除了这棵
+因为冬天的到来而变黑的可怕的橡树，我什么都看不见。
+你找到群山之外那座沦落人的城市了吗？
+抑或是，将一根已然磨损的绳子的一端
+握了一千年？
+
+(2007-11-23 03:03:39)
+</pre>
+<p>原诗:</p>
+<pre class="literal-block">
+As I Step Over A Puddle At The End Of Winter,
+　 I Think Of An Ancient Chinese Governor
+
+by James Wright
+
+
+And how can I, born in evil days
+And fresh from failure, ask a kindness of Fate?
+
+– Written A.D. 819
+
+
+Po Chu-i, balding old politician,
+What’s the use?
+I think of you,
+Uneasily entering the gorges of the Yang-Tze,
+When you were being towed up the rapids
+Toward some political job or other
+In the city of Chungshou.
+You made it, I guess,
+By dark.
+
+But it is 1960, it is almost spring again,
+And the tall rocks of Minneapolis
+Build me my own black twilight
+Of bamboo ropes and waters.
+Where is Yuan Chen, the friend you loved?
+Where is the sea, that once solved the whole loneliness
+Of the Midwest?Where is Minneapolis? I can see nothing
+But the great terrible oak tree darkening with winter.
+Did you find the city of isolated men beyond mountains?
+Or have you been holding the end of a frayed rope
+For a thousand years?
+</pre>
+</div>
+<div class="section" id="section-6">
+<h2>重新发现“此时此刻”</h2>
+<p>现在已无人读诗，但依然有诗人。</p>
+<p>诗歌是现实的犁耙，诗人是犁田的人。</p>
+<p>过去不够碎，现实之土在诗人词汇的翻耙下熠熠生辉，如今现实稀碎，诗歌亦可用来弥合罅隙的流光。</p>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.im"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

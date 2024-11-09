@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 书目答问补正</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed.xml"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+
+
+
+    <meta name="tags" content="张之洞" />
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="."><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./shu-mu-da-wen-bu-zheng.html"
+                rel="bookmark"
+                title="「书目答问补正」的永久链接"
+            >书目答问补正</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-03-09T00:01:00+08:00">2024-03-09 周六</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/book.html">书</a>
+            <span class="ml-2">标签:</span>
+            <a class="tag is-medium" href="./tag/zhang-zhi-dong.html">张之洞</a>
+
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+        <div class="columns is-centered box mt-5" id="subject">
+            <div class="column is-one-quarter">
+                <p class="image">
+                    <img title="书目答问补正" class="book-cover" src="/static/img/book/%E4%B9%A6%E7%9B%AE%E7%AD%94%E9%97%AE%E8%A1%A5%E6%AD%A3.jpg">
+                </p>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <span class="title">书目答问补正</span>
+                    <p>
+                        <strong>
+                            作者：[清] 张之洞 编撰&nbsp;范希曾 补正
+                        </strong>
+                    </p>
+                    <p class="is-size-7">
+                        《书目答问》是晚清重臣张之洞(1837—1909)针对学子读书不知要领而编撰的一部指示治学门径的目录书。全书五卷，收书两千两百多种，按照经、史、子、集、丛书五类编排，大类之下再设小类，每类中依据时代先后顺序，著录书名、作者姓名、版本等；版本以当世习见为主；重要图书还撰有按语，指明阅读方法；书后附《别录》和《国朝著述诸家姓名略》。本书是清代继《四库全书总目》之后一部影响最大的目录学著作。 范希曾在保持《书目答问》体例的基础上，纠正了原书中作者、姓名、版本方面的一些错误，补充了1874年以后各书的新版本，增加了1930年前出版的与原书所收性质相近的图书一千二百余种。《书目答问补正》备受重视，开始在各种版本中占据主流地位。 这次整理，以1963年中华书局影印本为底本，参校了1983年上海古籍出版社出版的瞿凤起先生校点本，并把江人度《书目答问笺补》在各小类末尾的钩乙符号“┙”下所加的文字说明补录进去，用〔〕括出。另外，张之洞的《輶轩语·语学第二》、《四川省城尊经书院记》、《劝学篇？内篇？守约第八》三篇文字收作附录。
+                    </p>
+                    <table class="table is-narrow is-striped is-hoverable is-size-7">
+                        <colgroup>
+                            <col style="width: 6rem" />
+                            <col/>
+                        </colgroup>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9787101134735</td>
+                            </tr>
+                            <tr>
+                                <td>出版社</td>
+                                <td>中华书局</td>
+                            </tr>
+                            <tr>
+                                <td>出版时间</td>
+                                <td>
+                                    2018年
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>装帧</td>
+                                <td>精装</td>
+                            </tr>
+                            <tr>
+                                <td>定价</td>
+                                <td>45.00元</td>
+                            </tr>
+                            <tr>
+                                <td>页数</td>
+                                <td>367</td>
+                            </tr>
+                            <tr>
+                                <td>系列</td>
+                                <td>中华国学文库</td>
+                            </tr>
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                        <a href="https://book.douban.com/subject/30355969/" target="_blank">
+                                                豆瓣
+                                        </a>&nbsp;
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+<h2>评分</h2>
+<p>⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐ 10/10</p>
+</div>
+<div class="section" id="section-3">
+<h2>张之洞</h2>
+<p>张之洞，1837年9月2日－1909年10月4日，字孝达，号香涛，又号香严，晚年自号抱冰老人。原籍直隶南皮（今属河北），生于贵州贵阳六洞桥。他是中国晚清重臣、后期洋务派代表人物。他主张学习和吸收西方文化，提出“中体西用”的思想主张。他还主张开办了京师大学堂，强调师范教育，后与张百熙主持制定新学制，时称“癸卯学制”。这是中国教育史上第一个正式颁布的在中国普遍实行的学制，奠定了中国现代学制的基石。</p>
+</div>
+<div class="section" id="section-4">
+<h2>内容</h2>
+<p>《书目答问补正》是为补正《书目答问》中的错误和疏漏而作。它补入与原书宗旨相关著作1200余种，也补上原书著录各书缺漏的作者、卷数、版本、时代等具体事项。纠正答问疏漏或讹误的书名、卷数、作者姓氏、刻书年代等近百处。</p>
+</div>
+<div class="section" id="section-5">
+<h2>为什么读</h2>
+<p>用软件作比，这是一本官方修的经、史、子、集数据库。如果古代有数据库，这些记录存储下来，也就是主表记录3000多条，但书目关系数据颇多。有此书，在国学典籍中就有罗盘，因为见得了至少是大部分全貌。晓得自己的位置，就知道用功力度。</p>
+<p>颇为可惜的是，就此 3000 条目，世人接触者不过 500 条，通读的更少，可能大部分人都没有读过超过 60 本。</p>
+<p>清代民国做训诂学问的人，阅读量也是不容小觑的。</p>
+<p>如果闲来无事，可以从中利用搜索做主题阅读，比如：“易经”主题，“历史”主题。</p>
+<p>更重要的，本书除前面的按经史子集列举书目外，还有附录，如国学人物地图：《国朝著述诸家姓名略》，一共 500 多人，分别是：</p>
+<ul class="simple">
+<li>经学家 203 人</li>
+<li>史学家：90 人</li>
+<li>理学家：22 人</li>
+<li>经学史学兼理学家：5 人</li>
+<li>小说家：63 人</li>
+<li>文学选家 15 人</li>
+<li>算学家： 124 人</li>
+<li>校勘之学家：31 人</li>
+<li>金石学家： 46 人</li>
+<li>古文家： 44 人</li>
+<li>骈体文家： 22 人</li>
+<li>诗家： 8 人</li>
+<li>词家： 12 人</li>
+<li>经济家： 25 人</li>
+</ul>
+<p>看到这里，你会发现在清四大家之一的书中，值得书面化的当朝人物只 500 人。</p>
+<p>我国历史长远，光是经史就耗费人生大部分经历，所以理学家稀少，但算学家多凸显出，还是会数学的人多。</p>
+</div>
+<div class="section" id="section-6">
+<h2>摘录</h2>
+<p>“书海无涯，从何处着手？这是初学者常常困惑的问题。晚清洋务运动领袖张之洞为回答上述问题而编纂了《书目答问补正》。全书分经史子集丛书几部分，另增“丛书目“一类列出该类最重要的著作及较好的版式本，并加适当的比较和评论，颇便初学者，在当时流传极广。五十年后，因新书和善本不断问世，清末民初学者范希曾又对原书进行了补正，增加了不少新的内容，也改正了原书的一些讹误。”</p>
+<p>读书不知要领，劳而无功。</p>
+<p>读书欲知门径，必须有师。师不易得，莫如即以国朝著述名家为师。</p>
+<p>经史小学、天算地舆、金石校勘之属皆然。理学、经济、词章，虽不能过古人，然考辨最明确，说最详，法最备，仍需读今人书，方可执以学古之权衡耳。</p>
+<p>为学之道，岂胜条举，根柢工夫，更非寥寥数行所能宜磬。此为初学者有志者约言之，乃阶梯之阶梯、门径之门径也。</p>
+<p>一、通经</p>
+<p>读经宜读全本。《周礼》、《礼记》、《左传》</p>
+<p>解经宜先识字。字有形、音、义。《说文》、《尔雅》</p>
+<p>读经宜明训诂。训诂有四忌。望文生义、向壁虚造、卤莽灭裂、自欺欺人。</p>
+<p>宜讲汉学。经是汉人所传，注是汉人创作，义有师承，语有根据。《十三经注疏》、《易》、《书》、《诗》、《春秋左转》、《礼记》。</p>
+<p>《十三经》岂能尽通，专精其一，即已不易。历代大儒，以一经名家者多，建通群经，古今止有数人。今且先治其一，再及其他。</p>
+<p>治经宜有次第。《毛诗》《三礼》，《诗》、《礼》兼明，他经方可着手。《书》道政事，《春秋》道名分。《诗》、《礼》可解，《尚书》之文、《春秋》之义不能尽解，《周易》则通儒毕生探索，终是解者少，而不解者多。</p>
+<p>故治经次第，自近及远，由显通微，如此为便，较有实获。</p>
+<p>治经贯通大义。</p>
+<p>二、读史</p>
+<p>宜读正史。《史记》、《汉书》、《后汉书》、《三国志》、《晋书》、《宋书》、《齐书》、《梁书》、《陈书》、《魏书》、《北齐书》、《周书》、《隋书》、《南史》、《北史》、《旧唐书》、《新唐书》、《旧五代史》、《新五代史》、《宋史》、《辽史》、《金史》、《元史》、《明史》，此廿四部为正史。</p>
+<p>正史中宜先读《四史》。《史记》、《汉书》、《后汉书》、《三国志》</p>
+<p>宜读《通鉴》。</p>
+<p>宜读《通考》。</p>
+<p>宜读《通鉴》。</p>
+<p>史学亦专精一种。</p>
+<p>读史宜读表、志。</p>
+<p>读史忌妄议论古人贤否、古事得失。事实详碻，善恶自分；首尾贯通，得失乃见。若不详年月，不考地理，不明制度，不揣时势，妄论苛求，横生褒贬，则舛误颠倒，徒供后人讪笑耳。</p>
+<p>读史忌批评文章。</p>
+<p>三、读诸子</p>
+<p>读子为通经。</p>
+<p>子有益于经者三：一佐证事实；二证补诸经；三兼通古训。</p>
+<p>读子宜求训诂，看古注。</p>
+<p>读子宜买丛书。</p>
+<p>四、读古人文集</p>
+<p>读古集宜知体要。</p>
+<p>词章家宜读专集。</p>
+<p>诗文一道，各有面目，各有意境。大家者，气体较大，所造较深，所能较多耳。</p>
+<p>《文选》宜看全本。读《文选》宜看注。</p>
+<p>读本宜择善者。</p>
+<p>五、通论读书</p>
+<p>读书宜求善本。</p>
+<p>善本之义有三：足本、精本、旧本。</p>
+<p>读书宜博。</p>
+<p>先博后约，《语》、《孟》通义。</p>
+<p>天下书，老死读不可遍。</p>
+<p>读书宜有门径。</p>
+<p>泛滥无归，终身无得。得门而入，事半功倍。</p>
+<p>《四库全书总目提要》，读一过，即略知学问门径矣。</p>
+<p>《汉学师承记》为经学之门径，顾炎武《音学五书》为韵学之门径，《史通》为史学之门径，齐召南《历代帝王年表》为读史之门径，《古今伪书考》为读诸子之门径，《文心雕龙》、《诗品》为诗文之门径，《声调谱》、《说诗晬语》、《瀛奎律髓刊误》、《四六丛话》、《历代赋话》为初学诗赋四六之门径，《书谱》、《续书谱》、《安吴四种》、《艺舟双楫》为学书之门径。</p>
+<p>读书宜多读古书。</p>
+<p>读书宜读有用书。有用者何？考古、经世、治身心。唐人崇尚词章，宋人笔墨繁沉，公私文字多以空论衍成长篇，明人好作应酬文字，喜谈赏鉴清供，又好蓝本陈编，改换敷衍，便成著作，以故累车连屋，眩人耳目，耗人精神，不能专意要籍。</p>
+<p>宋学书宜读《近思录》。</p>
+<p>讲宋学者，必先将《二程遗书》、《朱子语类》、《明儒学案》三书读过。</p>
+<p>为学忌分门户。</p>
+<p>读书宜先校书。</p>
+<p>读书贵博贵精尤贵通。</p>
+<p>作秀才后宜读书。</p>
+<p>读书不必畏难。</p>
+<p>读书勿诿记性不好。</p>
+<p>读书勿诿无书、无暇。能购购之，不能借之，随得随看，久久自富。若必待插架三万，然后议读，终身无此日矣。</p>
+<p>买书勿吝。田谷之利，不及什一；商贾之利，止于三倍；典籍之利，淑身化宗，化愚为贤，子孙永保，酌之不竭。</p>
+<p>读书期于明理，明理归于致用。</p>
+<div class="section" id="section-7">
+<h3>同治十三年四月</h3>
+<p>本义。读书何用，曰：成人材。延师购书、分业程课。语云：一人学站，教成十人；万人血战，教成三军。</p>
+<p>定志。学者之要如何？曰：在定志。</p>
+<p>择术。志在读书，宜读何书？曰：在择术。宜择何术？曰：无定。经、史、小学、舆地、推步、算术、经济、诗、古文辞、皆学也。非博不通，非专不精。</p>
+<p>务本。术听人择，何为必通经乎？曰：有本。</p>
+<p>知要。经学小学之书，繁而难记，为之奈何？曰：有要。《说文》、《四库提要》</p>
+<p>定课。即知要矣，如何而后有效？曰：在定课。人立日记一册，记每日看书之数，某书第几卷起，第几卷止。记其所疑，记其所得，无疑无得不可强。书不贵多，贵真过目；不贵猛，贵有恒；不贵涉猎，贵深思；不贵议论，贵校勘考订；不贵强记，贵能解；能解方能记，不解自不记。不贵创新解，贵通旧说；不贵更端，贵终卷。</p>
+<p>用心。有依课计功而无得者，何也？曰：不用心之咎也。</p>
+<p>笃信。用心而以为苦，何也？曰：信之不坚，中作而辍。</p>
+<p>息争。此可以祛不学之病矣，近世学者，多生门户之弊，奈何？曰，学术有门径，学人无党援。</p>
+<p>尊师。争端息矣，犹有虑乎？曰：在不尊师。无师功半，有师功倍。</p>
+<p>慎习。学如是足矣？曰：不然。不求进功，先求寡过。</p>
+</div>
+<div class="section" id="section-8">
+<h3>劝学篇·内篇</h3>
+<p>经学，通大义；史学，考治乱典制；诸子，知取舍；理学，看文案；词章，读有实事者；政治书，读近今者；地理，考今日有用者；算学，各随所习之事学之；小学，但通大旨大例。</p>
+<p>如资性平弱畏难者，先读《近思录》、《东塾读书记》、《御批通鉴辑录》、《文献通考详节》</p>
+</div>
+</div>
+<div class="section" id="section-9">
+<h2>版本</h2>
+<p><a class="reference external" href="https://kaffa.im/ye-hang-chuan.html">中书上古国家队，有中书选中书。</a></p>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.im"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H14T5KLFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H14T5KLFJ');
+    </script>
+        <title>Kaffa.im - 软件困局-为什么聪明的程序员会写出糟糕的代码</title>
+    <meta charset="utf-8">
+    <!--
+        Q1. 本站技术栈？
+        A1. 本站目前版本V2，主要技术栈有 reStructuredText, Markdown, Pelican with kaffa-theme, Bulma, Github Pages
+
+        Q2. 更多信息？
+        A2. 微信公众号：Kaffa
+    -->
+    <meta name="author" content="Kaffa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/static/css/0.css">
+    <link
+            href="https://kaffa.im/feeds/all.atom.xml"
+            type="application/atom+xml" rel="alternate" title="Kaffa.im Full Atom Feed"/>
+    <link
+            href="https://kaffa.im/feed.xml"
+            type="application/rss+xml" rel="alternate" title="Kaffa.im Full RSS Feed"/>
+
+
+
+
+    <meta name="tags" content="software-engineering" />
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <a href="."><span class="is-italic author_name">Kaffa</span>.im</a>
+                <span class="ml-3"><span class="has-text-grey is-size-6"><span class="is-italic author_name">K</span>unnect</span><sup class="has-text-grey is-size-7">  <span class="is-italic author_name">a</span>dventures & <span class="is-italic author_name">f</span>un</sup></span>
+            </h1>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarGlobal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarGlobal" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">专栏</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/project.html">项目</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/development.html">研发</a>
+                        <a class="navbar-item has-text-grey" href="/category/programming.html">编程</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">笔记</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/website.html">网站</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/reading.html">阅读</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/digital.html">数智</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/words.html">言论</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">创作</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/article.html">文章</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/software.html">软件</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/book-list.html">书单</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/weekly.html">周报</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">我的</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/category/book.html">书</a>
+                        <a class="navbar-item has-text-grey" href="/category/movie.html">影</a>
+                        <a class="navbar-item has-text-grey" href="/category/music.html">音</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="/category/things.html">物</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-grey">关于</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item has-text-grey" href="/pages/about.html">站长</a>
+                        <a class="navbar-item has-text-grey" href="/pages/about-website.html">网站</a>
+                        <a class="navbar-item has-text-grey" href="/pages/contact.html">联系我</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item has-text-grey" href="mailto:admin%40kaffa.im?subject=%E7%BD%91%E7%AB%99%E5%8F%8D%E9%A6%88&body=%E6%8F%90%E7%A4%BA%EF%BC%9A%E5%8F%AF%E5%8F%8D%E9%A6%88%E2%80%9C%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%EF%BC%8C%E5%81%9A%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E6%97%B6%EF%BC%8C%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E3%80%82%E2%80%9D">网站反馈</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item bd-nav-themes">
+                    <button id="js-cycle" class="bd-cycle js-burger is-moon" data-target="js-themes">
+                        <div class="bd-cycles">
+                            <div class="bd-cycle-sun">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-sun-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="bd-cycle-moon">
+                                <span class="icon">
+                                    <i class="fa fa-lg fa-moon-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+                        <button data-scheme="light" class="bd-nav-item is-sun" aria-label="Light mode">
+                            <span class="icon">
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            </span>
+                            <span>日光</span>
+                        </button>
+                        <button data-scheme="dark" class="bd-nav-item is-moon" aria-label="Dark mode">
+                            <span class="icon">
+                                 <i class="fa fa-moon-o" aria-hidden="true"></i>
+                            </span>
+                            <span>暗月</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pb-4">
+<article class="content">
+    <section class="hero" style="
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/2024/hero.png')">
+        <div class="hero-body">
+            <h2 class="title is-family-primary is-max-desktop has-text-white is-size-1 has-text-centered"
+                style="margin-top: calc(247px - 1rem - 3rem); text-shadow: 1px 1px 1px #000000;"
+            ><a href="./the-problem-with-software-why-smart-engineers-write-bad-code.html"
+                rel="bookmark"
+                title="「软件困局-为什么聪明的程序员会写出糟糕的代码」的永久链接"
+            >软件困局-为什么聪明的程序员会写出糟糕的代码</a></h2>
+            <p class="is-max-desktop has-text-white is-size-7 has-text-centered">
+                    <a href="./author/kaffa.html">Kaffa</a>
+                发布于 <time datetime="2024-02-07T11:00:00+08:00">2024-02-07 周三</time>
+            </p>
+        </div>
+    </section>
+
+    <section class="container is-max-desktop box content mt-4 p-6">
+
+
+        <div class="mb-2">
+            <span>分类:</span>
+            <a class="tag is-medium" href="./category/book.html">书</a>
+            <span class="ml-2">标签:</span>
+            <a class="tag is-medium" href="./tag/software-engineering.html">software-engineering</a>
+
+
+        </div>
+
+        <div class="mb-5">
+            
+        </div>
+
+        <div class="columns is-centered box mt-5" id="subject">
+            <div class="column is-one-quarter">
+                <p class="image">
+                    <img title="软件困局" class="book-cover" src="/static/img/book/%E8%BD%AF%E4%BB%B6%E5%9B%B0%E5%B1%80.jpg">
+                </p>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <span class="title">软件困局</span>
+                        <br><span class="Subtitle">为什么聪明的程序员会写出糟糕的代码</span>
+                        <br><span>The Problem With Software: Why Smart Engineers Write Bad Code</span>
+                    <p>
+                        <strong>
+                            作者：[美] 亚当·巴尔（Adam Barr）
+                        </strong>
+                        <strong class="ml-3">
+                            译者：桥海燕&nbsp;曾烈康
+                        </strong>
+                    </p>
+                    <p class="is-size-7">
+                        在外行看来，程序员们是一群聪明的工程师。他们整日思考复杂深奥的工程问题，编写逻辑缜密的程序代码，开发可靠易用的用户软件。然而，在内行看来，在软件工程这件事上，程序员们的工作往往不尽人意。为什么聪明的工程师们写不出聪明的代码呢？针对这个问题，作者结合多年的职业生涯经历，从多个角度进行了分析和讨论，涉及范围包括程序员的大学教育，软件开发的生命周期，软件工程的复杂性，程序设计语言发展历史，软件工程方法演变历程，等等。本书行文幽默风趣，将经典翔实的史料和形象生动的例子娓娓道来，不仅对软件工程的本质进行了深入的探讨，还为软件工程的从业者提出了实用的建议。
+                    </p>
+                    <table class="table is-narrow is-striped is-hoverable is-size-7">
+                        <colgroup>
+                            <col style="width: 6rem" />
+                            <col/>
+                        </colgroup>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9787111641933</td>
+                            </tr>
+                            <tr>
+                                <td>出版时间</td>
+                                <td>
+                                    2019年
+                                        11月
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>装帧</td>
+                                <td>平装</td>
+                            </tr>
+                            <tr>
+                                <td>定价</td>
+                                <td>79.00元</td>
+                            </tr>
+                            <tr>
+                                <td>页数</td>
+                                <td>385</td>
+                            </tr>
+                            <tr>
+                                <td>出品方</td>
+                                <td>华章科技</td>
+                            </tr>
+                            <tr class="alt" style="display: none;">
+                                <td>参考</td>
+                                <td>
+                                        <a href="https://book.douban.com/subject/34907888/" target="_blank">
+                                                豆瓣
+                                        </a>&nbsp;
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+<h2>评分</h2>
+<p>⭐⭐⭐⭐⭐
+⭐⭐ 7/10</p>
+</div>
+<div class="section" id="section-3">
+<h2>读后</h2>
+<div class="section" id="section-4">
+<h3>为什么读</h3>
+<p>当老婆问我为什么饥荒手游的发布日期为什么一再推迟（跳票）时，我告诉她游戏是一种软件，且是一种复杂度高的软件，需要集合多角色和团队来共同完成。从项目管理关键路径上理解，就能理解为什么游戏频繁跳票了，因为游戏的第一版基本就决定了好长时间努力的口碑，都不想投入那么长时间的投入打水漂，所以希望测试得更完备一些，设计得更合理一些，一旦尾期变更，那定是时间成本挺高的，别说跳票几个月，就是半年一年的，也是常有的。为什么软件项目总是延期或者甚至以失败告终，于是我想到了这本书。</p>
+</div>
+<div class="section" id="section-5">
+<h3>关于写作方式</h3>
+<p>同时，阅读这本书让我对自己的写字方式有反思：事情是这样的，在读者角度，这本书的阅读感受并不太好，因为它的观点是隐含在叙述中的，我一度认为这样的叙述方式是「润物细无声」，我也喜欢这么干，但看过这位老兄的文字，我意识到这样干的前提是遇到了如我一样耐心的读者，要不在这个时代得让读者先意识到你的文字是金玉其中，否则读者就划走了。在我年轻的时候，除非读小说，我其实也很没有耐心看那种论述性质的文字不将观点明确表达出来的。我以为选择这样干的作者可能是老了，絮絮叨叨的，年轻人会觉得「我没有空听完你的观点和故事」。</p>
+</div>
+<div class="section" id="section-6">
+<h3>关于论题的不理解</h3>
+<p>另外一个方面，为弄明白本书的核心提问：Is software development really hard, or are software developers not that good at it? 我认为这不是一体两面的故事吗？软件开发难，开发不擅长，两者其实有很强的关联性，并不适合 a or b 的选择。难道读者像表达的是，站在开发软件这件事的平均水准上，软件经过长时间的发展，从工程学的角度，造软件应当如制造飞机一样确定。甚至还是说软件工程其实没有多少工程的成分在内。</p>
+<p>我的观点是，事实上，设计软件和制造飞机确实有非常大的差异，比如制造10架大飞机用以服务5000名乘客，那就是将飞机零件制造10份，再组装起来，假设一架飞机平均载客500名，那么10架飞机就可以服务5000名乘客了，从载具的角度上讲，人的需求可以被抹平，从数字化的角度上说，这10架飞机就是1架飞机；但相较于设计10架飞机，在软件层面约等于设计1套软件或几 套软件，因为假设1套可以服务于500名用户，那么不考虑规模的情况下，这1套软件同样也可以服务于5000名用户，亦或者规模的增加导致原先设计的1套软件性能不达标了，需要重新投入设计修改新架构来适应更多用户，而二次投入的成本很可能多倍于第一次的成本。</p>
+<p>在这里，我们可以看出软件是完全不同，本质的区别是，软件抽象和复杂度带来的不确定性，很容易就击穿了人的计算能力，这样原本确定的路径变得不确定。这通常是非计算机专业人士难以理解的，而往往程序员或说软件设计师都很醉心于个人的创意和创作，也不屑于向非专业人士解释太多，才会有「你行你上」、「Show me your code」这样的说法。</p>
+</div>
+<div class="section" id="section-7">
+<h3>关于工程于学术的割裂</h3>
+<p>学术当引导工程，但现状是，工程钱多，学术穷苦，大多受教育的目的不过是为了赚钱生存，因而受学生需求的影响，学术越来越多地教授能立即赚钱的技能。但从长远看，这些技能在理论上并不好，学术于工业当相互沟通，共同参与到软件工程科学中。</p>
+</div>
+<div class="section" id="section-8">
+<h3>关于编程语言</h3>
+<p>书中举例了 MessageBox.Show 和 GOTO 语句的例子。也探讨了 C、C++、Pascal、BASIC、Java 等诸多语言。早期的计算机语言是在大学里创造的，如 Algol、BASIC、Pascal；然后语言开始诞生于实验室，比如C、C++和SmallTalk 等；之后个人开发者开发了许多语言，如 Perl、PHP、Python和Ruby，再之后就基本由大公司主导了，比如Java、Go、Swift 和 Kotlin 等，到现在的 Rust。</p>
+<p>很多时候实在讲述代码和事实本身，并没有直接给出观点，可能作者的意图是让读者自己领悟。</p>
+</div>
+<div class="section" id="section-9">
+<h3>感悟</h3>
+<p>我的本科计算机教育，除了编程语言 C 和 Pascal 的知识，其他都是毕业后自学的。事实上，我们的计算机世界包括互联网的设计者，程序设计技能都是自学的，计算机教育和工作技能是割裂的。</p>
+<p>也有很多学校和企业合作，所开设的专业就是服务于企业的，这种毕业后直接进入企业实习，窃以为如果是大学教育也是不妥的，教育应给人自由，而不是 Frame 住人。</p>
+<p>如今的计算机行业对计算机专业的人并不友好，和 40 年前一样，很多具备工程经验的人，每 20 年被换一轮，
+新进入行业的年轻人依然犯着 40 年前的错误，20 年后如上一批人一般被换走。职业市场容不下经验丰富的程序员，在学术上软件工程也没有将上一批精英程序员的经历和智慧沉淀下来，所以，软件工程的问题没有真正被解决。</p>
+<p>大公司花费着 10 倍的成本开发软件，你甚至可以怀疑其意图仅仅是让竞争对手无人可用，这种竞争属于准垄断人力资源的竞争，和信息科技的创新无关，其利润来源非常可耻，可能大部分源自被外包程序员的五险一金。</p>
+<p>东哥说，如果使用外包，人力成本可以轻轻松松省下100亿，而他没有选择这么干。而很多大厂，恰恰就这么干着，拿被 Frame 住人生的程序员工作 40 年后退休生活的品质贡献着可耻的利润率。</p>
+<p>所以，这个行业从教育到工业，存在着很大的问题，于其他行业不同的是，所有在此行业的人的努力和终极目标，似乎就是干掉这个行业。</p>
+</div>
+<div class="section" id="section-10">
+<h3>摘录</h3>
+<p>充满GOTO风格的程序设计被细称为「意大利面代码」。试图跟踪代码中的路径就像视图在碗中跟随一根意大利面条，它会消失在位置的地方，然后再出现在另一个地方，你完全不清楚中间到底发生了什么。</p>
+<p>Pascal 的发明者沃斯（ Wirth ）在2008年的“软件工程简中&quot;回顾中总结道： （学术界）一直是怠惰且自满的。不仅语言和设计方法论的研究失去了它的魅力和吸引力，更糟的是，工业中常见的工具被人们悄然接受而学术界对其没有任何争论和批评。对于工业界而言当前的这些语言可能是不可避免的，但对于教学而言，对于一个有序的、结构化的、系统化的、有根据的语言介绍来说，这些选择完全是错误的、过时的。</p>
+<p>这明显符合21世纪的趋势：我们只教授、学习和执行学生要求的、立即有利可图的东西。简而言之：我们关注的是什么好卖。在传统上，大学不受这种商业气息的干扰。大学是期待人们思考长远问题的地方。大学是精神上和智力上的领导者，它们展示了通往未来的道路。在我们的计算领域，恐怕大学已经成为温顺的追随者。他们似乎已经屈服于对持续创新的时髦渴望，并且已经失去了对严谨工艺的追求。</p>
+<p>如果我们能从过去学到什么，那就是计算机科学本质上是一门方法论学科。它应该发展（可教授的）知识和技术，这些知识和技术通常是有益于广泛的应用的。但这并不意味着计算机科学应该陷入这些不同的应用中而失去它原本的身份。软件工程行业应该是有规则程序设计专业教育的主要受益者。在所有程序设计工具中，程序设计语言是第一位的。一个拥有合理概念和结构而且基于清晰抽象的语言，能够指导艺术品的构建。在专业教育中，学习这样的语言应该是强制性的。自制的、人工的复杂性在其中没有一席之地。最后：使用这些语言工作一定是一种乐趣，因为它们能让我们创造出乐于展示且感到自豪的艺术品。</p>
+<p>Wirth, inventor of Pascal, concluded his 2008 “A Brief History of Software Engineering” retrospective with the statement that academia has remained inactive and complacent. Not only has research in languages and design methodology lost its glamour and attractivity, but worse, the tools common in industry have quietly been adopted without debate and criticism. Current languages may be inevitable in industry, but for teaching, for an orderly, structured, systematic, well-founded introduction they are entirely mistaken and obsolete.</p>
+<p>This is notably in accord with the trends of the 21st century: We teach, learn, and perform only what is immediately profitable, what is requested by students. In plain words: We focus on what sells. Universities have traditionally been exempt from this commercial run. They were places where people were expected to ponder about what matters in the long run. They were spiritual and intellectual leaders, showing the path into the future. In our field of computing, I am afraid, they have simply become docile followers. They appear to have succumbed to the trendy yearning for continual innovation, and to have lost sight of the need for careful craftsmanship.</p>
+<p>If we can learn anything from the past, it is that computer science is in essence a methodological subject. It is supposed to develop (teachable) knowledge and techniques that are generally beneficial in a wide variety of applications. This does not mean that computer science should drift into all these diverse applications and lose its identity. Software engineering would be the primary beneficiary of a professional education in disciplined programming. Among its tools languages figure in the forefront. A language with appropriate constructs and structure, resting on clean abstractions, is instrumental in building artefacts, and mandatory in education. Homemade, artificial complexity has no place in them. And finally: It must be a pleasure to work with them, because they enable us to create artefacts that we can show and be proud of.49</p>
+<p>当我们所有「年轻人」在20世纪80年代初联合起来，成功地击溃大型计算机时，我们把洗澡水（大型计算机）和孩子（工程情神）一起泼了出去。软件工程的挑战在于如何将这些都找回来。</p>
+</div>
+</div>
+
+        <div class="is-divider" data-content="giscus"></div>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="kaffa/kaffa.im"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkxMzczOTc1Mzk="
+                data-category="Announcements"
+                data-category-id="DIC_kwDOCDCFI84CdT9x"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="top"
+                data-theme="light_protanopia"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        <div class="is-divider" data-content="gitalk"></div>
+        <div id="gitalk-container"></div>
+
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+          var gitalk = new Gitalk({
+            clientID: '47c6091c4039fb3df197',
+            clientSecret: '8ed206e3b86fb7a90a0dd78d4ed3425d7384b45a',
+            repo: 'kaffa.github.io',
+            owner: 'kaffa',
+            admin: ['kaffa'],
+            id: location.pathname.substr(0, 50),
+            distractionFreeMode: false
+          });
+          gitalk.render('gitalk-container');
+        </script>
+
+    </section>
+</article>
+
+</main>
+<footer class="footer is-max-widescreen">
+    <div class="content has-text-centered">
+        版权所有 &copy; 2018-2024 <strong><a href="."><span class="is-italic author_name">Kaffa</span>.im</a></strong> 诚心良品 开放质造
+        <p>
+            本站内容采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>许可证
+        </p>
+        <p>
+            <a href="https://www.foreverblog.cn/" target="_blank" class="mr-3">
+                <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.boyouquan.com/planet-shuttle" target="_blank" class="mr-3">
+                <img src="https://www.boyouquan.com/assets/images/sites/logo/planet-shuttle.png" alt="" style="width:auto;height:24px;">
+            </a>
+            <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+                <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" style="width:auto;height:24px;">
+            </a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modal-project">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p>在建设中...</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<div class="modal" id="modal-image">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="img-modal-image" src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="/static/js/base.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        /*====================
+          navbar
+         ====================*/
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+        /*====================
+          Projects
+         ====================*/
+        const $panelTab = Array.prototype.slice.call(document.querySelectorAll('.panel-tabs a'), 0);
+        $panelTab.forEach(el => {
+            el.addEventListener('click', () => {
+                const $siblings = el.parentNode.children;
+                for (let i = 0; i < $siblings.length; i++) {
+                    $siblings[i].classList.remove('is-active');
+                }
+                el.classList.add('is-active');
+
+                if (el.title == 'all') {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.remove("is-hidden");
+                    }
+                } else {
+                    const $panelBlock = document.querySelectorAll(".panel-block");
+                    for (let i = 0; i < $panelBlock.length; i++) {
+                        $panelBlock[i].classList.add("is-hidden");
+                    }
+
+                    const $targetPanelBlock = document.querySelectorAll(".panel-block.panel-" + el.title);
+                    for (let i = 0; i < $targetPanelBlock.length; i++) {
+                        $targetPanelBlock[i].classList.remove("is-hidden");
+                    }
+                }
+            });
+        });
+
+        /*====================
+          Email
+         ====================*/
+        const $email = Array.prototype.slice.call(document.querySelectorAll('email'), 0);
+        $email.forEach(el => {
+            el.innerText = ['admin', '@', 'kaffa.im'].join('');
+        });
+
+        /*====================
+          Table
+        ====================*/
+        var altKeyPressed = false;
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt' && !altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = true;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'table-row';
+                });
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt' && altKeyPressed) {
+                event.preventDefault();
+                altKeyPressed = false;
+                var rows = document.querySelectorAll('.alt');
+                rows.forEach(function(row) {
+                    row.style.display = 'none';
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
