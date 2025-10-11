@@ -26,4 +26,4 @@
 
 https://www.reddit.com/r/bose/comments/ywx08b/comment/iwmj22i/?tl=zh-hans&translated=1
 
-krakos•3年前：笔记本电脑/音频接口的音量太低了。在那边调高音量，这样扬声器就不会因为信号太低而关闭。用扬声器的音量控制来控制扬声器的音量。
+krakos: 3年前：笔记本电脑/音频接口的音量太低了。在那边调高音量，这样扬声器就不会因为信号太低而关闭。用扬声器的音量控制来控制扬声器的音量。
