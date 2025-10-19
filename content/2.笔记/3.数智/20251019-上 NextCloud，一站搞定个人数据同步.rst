@@ -59,11 +59,12 @@ WebDAV
     sudo chmod 755 /tmp/nextcloudtemp
 
 
-3. "Call to undefined function Sabre\\\\HTTP\\\\mb_check_encoding()"::
+3. "Call to undefined function Sabre\\\\HTTP\\\\mb_check_encoding()"
 
 安装 php-mbstring 扩展，类似的还有 GD 库::
 
     sudo apt-get install php8.3-mbstring
+
 
 4. 看起来您正在尝试重新安装您的 Nextcloud。但您的 config 文件夹中没有 CAN_INSTALL 文件。请在您的 config 文件夹中创建 CAN_INSTALL 文件以继续。
 
