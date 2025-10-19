@@ -6,7 +6,7 @@
 :category: article
 :tags: trading
 :slug: the-essence-of-the-deal--the-wind-blows
-:summary: 本文
+:summary: 交易之道，可道，非常道
 :image: /static/img/2024/hero.png
 :growth: 3
 
