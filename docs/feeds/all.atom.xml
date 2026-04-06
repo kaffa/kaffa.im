@@ -4,10 +4,10 @@
 &lt;p&gt;过年时拧了一下魔方，似乎可按自己的逻辑复原1-2层，但第3层始终完成不了。&lt;/p&gt;
 &lt;p&gt;最近两周，索性买了一个回来玩，按着说明，仔细看了看，原来魔法复原方法被写成了公式，总体有 100 多个，如熟记下来，则可以按公式最快完成复原。&lt;/p&gt;
 &lt;p&gt;这本身有点无聊。&lt;/p&gt;
-&lt;p&gt;然而也有简单方法，就是 CFOF，记几个简单公式，以及桥式方法。&lt;/p&gt;
-&lt;div class=&quot;section&quot; id=&quot;cfof&quot;&gt;
-&lt;h3&gt;CFOF 方法&lt;/h3&gt;
-&lt;p&gt;CFOF，大概就是分四个步骤：&lt;/p&gt;
+&lt;p&gt;然而也有简单方法，就是 CFOP，记几个简单公式，以及桥式方法。&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;cfop&quot;&gt;
+&lt;h3&gt;CFOP 方法&lt;/h3&gt;
+&lt;p&gt;CFOP，大概就是分四个步骤：&lt;/p&gt;
 &lt;ol class=&quot;arabic simple&quot;&gt;
 &lt;li&gt;先作白色的底部十字，再完成底层；&lt;/li&gt;
 &lt;li&gt;用左右两个换棱公式完成第二层；&lt;/li&gt;
@@ -27,7 +27,7 @@
 &lt;div class=&quot;section&quot; id=&quot;section-5&quot;&gt;
 &lt;h2&gt;复原的难度&lt;/h2&gt;
 &lt;p&gt;魔方之所以很难复原，原因是它的复杂度其实不低，如果不花时间仔细研究，是难以在几天、几周内领悟魔方变化的规律的。魔法一共只有27-1=26块色块，每个色块随着拧转，又有2-3种状态，叠加在在一起，可能有数千种复原路径，这个数量级已经超越了人脑的记忆和简单计算范围。&lt;/p&gt;
-&lt;p&gt;为什么最近两周就学会了复原魔方呢？因为并不是通过自己的研究，而是现在的教程已经总结了复原步骤，其难度下降到记忆5-6个不超过12步的公式上了，这就是算法简化，按 CFOF 做到复原时，其实也没有什么成就感，更没有想通过练习提高复原速度的心理需求。&lt;/p&gt;
+&lt;p&gt;为什么最近两周就学会了复原魔方呢？因为并不是通过自己的研究，而是现在的教程已经总结了复原步骤，其难度下降到记忆5-6个不超过12步的公式上了，这就是算法简化，按 CFOP 做到复原时，其实也没有什么成就感，更没有想通过练习提高复原速度的心理需求。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;section&quot; id=&quot;section-6&quot;&gt;
 &lt;h2&gt;乐趣&lt;/h2&gt;
