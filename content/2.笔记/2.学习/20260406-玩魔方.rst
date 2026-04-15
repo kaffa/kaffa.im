@@ -4,7 +4,7 @@
 :date: 2026-04-06 22:55
 :author: Kaffa
 :category: reading
-:tags: rubik-cube
+:tags: Rubik Cube
 :slug: play-rubik-cube
 :summary: 本文记录了，我玩魔法的事。
 
