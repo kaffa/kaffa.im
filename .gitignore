@@ -1,8 +1,12 @@
+.vscode/
 .sass-cache/
+content.draft/
+docs.ai/
 _drafts/
 _site/
 _old_posts/
-.vscode/
+
+
 *.swp
 *.scssc
 *.psd
@@ -11,6 +15,7 @@ _old_posts/
 .rvmrc
 .ruby-version
 .DS_Store
-/content.draft/
+
 dbconfig.py
 .env
+
