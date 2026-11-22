@@ -19,3 +19,8 @@ _old_posts/
 dbconfig.py
 .env
 
+# 20261122 添加：排除 Python 字节码缓存，dbconfig.py 的 .pyc 会泄露明文库口令
+__pycache__/
+*.pyc
+*.pyo
+
