@@ -109,6 +109,14 @@ def get_list():
             'Intro': '一个技术宅的日常',
             'Owner': '',
             'Icon': '/static/img/2024/teddy-logo.jpg',
-            'Email': 'Teddy Bell'
+            'Email': ''
+        }, {
+            'ID': 15,
+            'Name': "Yutong's Site",
+            'URL': 'https://www.lyt0112.com/',
+            'Intro': 'My compass is curiosity.',
+            'Owner': '',
+            'Icon': 'https://www.lyt0112.com/favicon/favicon.svg',
+            'Email': ''
         }
     ]
